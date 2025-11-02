@@ -1,10 +1,38 @@
-# LunyScript 
+# LunyScript
+## Code gameplay once. Same outcome in Godot, Unity, Unreal, ..
 
-## Declarative game logic programming, portable between engines!
+Game Engines solved platform API fragmentation.
+LunyScript solves game engine API fragmentation.
 
-- Easier to learn than imperative or visual programming.
+Our Assets are already portable.
+Why not our gameplay code?
+
+## Same code? In any Engine?
+
+Yes.
+
+- Easier to learn than imperative or visual programming.  
+- For simple 3D games on short game jams. 
+- For digital experiences on tight budgets.
 - Write once, runs in any engine. Proven for Unity, Godot, and Unreal.
 - Minimal (5%) performance overhead, faster than unoptimized code.
+
+## Really?
+
+In 20 days from scratch to proof of concept.
+
+## But engines are so different!
+
+**Proof:** Same game, three engines, 20 days.
+
+[Video/screenshots showing identical behavior]
+
+The secret? 
+Engines have a huge span of gameplay features in common.
+LunyScript gives you the API to instrument these features:
+Input, Camera, Physics, Navigation, Audio, Animation, and more.
+
+
 
 # The Problem
 
