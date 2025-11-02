@@ -6,9 +6,22 @@
 - Write once, runs in any engine. Proven for Unity, Godot, and Unreal.
 - Minimal (5%) performance overhead, faster than unoptimized code.
 
-## The Problem
+# The Problem
 
-### Past Game Engine Scripting 
+## The Game Engine Irony: The Solution became The Problem!
+
+**2000s:** "I can't port my game from Windows to Mac, from Playstation to N64 - the APIs are completely different!"
+**Solution:** Use a game engine! Write once, deploy everywhere.
+
+**2020:** "I can't take my project from Unity to Godot — the APIs are completely different!"
+**Solution:** ???
+
+We solved platform lock-in by creating **engine lock-in**.
+
+We need to sideline this pattern: a portable game logic layer that works across engines,
+just like engines work across platforms. Our assets are already portable, why not our logic?
+
+## Past Game Engine Scripting 
 
 In 2014 UnrealScript, in 2017 UnityScript got removed.
 
@@ -19,7 +32,7 @@ Both:
 - exposed the engine's native API unchanged
 - ultimately, they impeded further engine development
 
-### Enter Godot's GDScript
+## Enter Godot's GDScript
 
 It is:
 - a custom engine DSL
@@ -40,9 +53,7 @@ As the 2023 Unity exodus proved:
 3. GDScript alienates C# users who don't get the same level of integration.
 4. GDScript alienates Python users through divergent keywords and functionality.
 
-**What if we could have the scripting language benefits without its drawbacks?**
-
-## The Vision
+# The Vision
 
 We need to re-think Game Engine scripting. A sustainable solution MUST be:
 
@@ -67,7 +78,7 @@ But we CAN change game engine's disparate APIs and languages.
 
 ---
 
-## The Solution
+# The Solution
 
 [Current "Description" section, trimmed to 2 paragraphs max]
 
