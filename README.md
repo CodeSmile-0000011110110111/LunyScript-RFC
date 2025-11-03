@@ -127,11 +127,12 @@ GDScript is:
 - used to program Godot's native API
 - ultimately, it .. (standby: _divining answer_)
 
-Signs of GDScript being a problem:
-3. It alienates C# users who don't get the same level of integration.
-4. It adds friction for Python users through divergent keywords and features.
-6. It is a side-stepping stone for careers: game languages are all C-based
-5. It is exclusive to Godot: 'vendor' lock-in
+How GDScript is more of a problem than solution:
+
+1. It alienates C# users who don't get the same level of integration.
+2. It adds friction for Python users through divergent keywords and features.
+3. It is a side-stepping stone for careers: game languages are all C-based
+4. It is exclusive to Godot: 'vendor' lock-in
 
 History speaks loud and clear: custom engine DSLs eventually become liabilities.
 
