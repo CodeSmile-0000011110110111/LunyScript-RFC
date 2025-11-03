@@ -80,22 +80,21 @@ Unreal Editor for Fortnite is a Roblox-like game creation platform, funneling yo
 
 Meanwhile, Amazon is pushing 'their' FOSS Open3D Engine. The irony: CryEngine is competing against itself!
 
-Godot is growing, but needs to convince a risk averse industry. While Unity is recovering from its runtime fee debacle.
+Godot is growing, but needs to convince a risk averse industry. Unity is recovering from its runtime fee debacle.
 
 Few heard of Flax, Stride, Unigine, Cocos - competitive alternatives. 
-No surprise, since our professional roles changed from "Game Programmer" to ie "Unreal Programmer".
+No surprise, since our professional roles specialized from "Game Programmer" to ie "Unreal Programmer".
 
 Career opportunities and uncertainties everywhere. Engine fragmentation is growing, the landscape changing.
 
 # The Engine Irony: From Solution to Problem!
 
-**2000s:** "I can't port my game from Windows to Mac, Playstation to N64 - the APIs are completely different!"
+|          | 2000s                                                                                                  | 2020s                                                                              |
+|----------|--------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| **Problem**  | "We can't port our game from Windows to Mac or Playstation - the APIs are completely different!" | "We can't port our project from Unity to Godot — the APIs are completely different!" |
+| **Solution** | Game engines! Write once, deploy cross-platform.                                          | ???                                                                    |
 
-**Solution:** Game engines! Write once, deploy cross-platform.
-
-**2020:** "I can't port my project from Unity to Godot — the APIs are completely different!"
-
-**Solution:** ???
+---
 
 We solved platform lock-in and API fragmentation, only to create **engine lock-in**.
 
