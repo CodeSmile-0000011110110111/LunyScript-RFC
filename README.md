@@ -14,6 +14,7 @@ I took this idea in 20 days from scratch to proof of concept in Unreal, Unity, a
 [![LunyScript](media/ProofOfConceptVideoPlayer.png)](https://youtu.be/Vn38VLNDsuw "LunyScript: Same Code, Three Engines - Proof of Concept Demo")
 
 ![test _blank](https://youtu.be/Vn38VLNDsuw)
+<a href="https://youtu.be/Vn38VLNDsuw" target="_blank">Go open in new window</a>
 
 
 ### Screenshots
