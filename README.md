@@ -37,20 +37,15 @@ Porting twice to engines I hadn't previously worked with took around 3 days each
 
 ## Repositories & Source Code
 
-Note: API in Proof of Concept represents an early first draft.
+Note: API in Proof of Concept represents an early first draft. Final API Design has not started.
 
 | [Godot PoC Repository](https://github.com/CodeSmile-0000011110110111/LunyScratch_Examples_Godot)            | [Unity PoC Repository](https://github.com/CodeSmile-0000011110110111/LunyScratch_Examples_Unity)  | [Unreal PoC Repository](https://github.com/CodeSmile-0000011110110111/LunyScratch_Examples_Unreal)|
 |---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 
-### Godot Sources
+### PoC Source Code Examples
 - [PoliceCarScratch.cs](2025-10_Proof_Of_Concept_Demo/PoliceCarScratch.cs)
 - [CompanionCubeScratch.cs](2025-10_Proof_Of_Concept_Demo/CompanionCubeScratch.cs)
 - [HitEffectScratch.cs](2025-10_Proof_Of_Concept_Demo/HitEffectScratch.cs)
-
-## Proposed API - Examples
-
-TBD ...
-
 
 ## What's it for?
 
@@ -66,23 +61,22 @@ TBD ...
 - **Phase 3:** Port to more engines, best candidates: Stride, Flax, Unreal, CryEngine
 
 ---
-
 ---
 
 # Background: A Market Of Uncertainties
 
 Unreal Editor for Fortnite is a Roblox-like game creation platform, funneling young talents into Unreal Engine.
 
-Meanwhile, Amazon is pushing 'their' FOSS Open3D Engine. The irony: CryEngine is competing against itself!
+Meanwhile, Tech Giant Amazon is pushing 'their' FOSS Open3D Engine. Ironic: CryEngine competing against itself!
 
 Godot is growing, but needs to convince a risk averse industry. Unity is recovering from its runtime fee debacle.
 
-Few heard of Flax, Stride, Unigine, Cocos - competitive alternatives. 
-No surprise, since our professional roles specialized from "Game Programmer" to "Unreal/Unity Programmer".
+Flax, Stride, Unigine, Cocos - competitive alternatives, little known. 
+No surprise: our specializations _evolved_ from "Game Programmer" to "Unreal/Unity Programmer".
 
 Career opportunities and uncertainties everywhere. Engine fragmentation is growing, the landscape changing.
 
-# The Engine Irony: Becoming the Problem they solved!
+# The Engine Irony: They Became The Problem They Solved!
 
 ## 2000s
 **Problem:** "We can't port our game from Windows to Mac or Playstation - the APIs are completely different!"
@@ -95,32 +89,39 @@ Career opportunities and uncertainties everywhere. Engine fragmentation is growi
 
 **Solution:** ???
 
-We solved platform lock-in and API fragmentation, only to create **engine lock-in**.
+---
 
-The solution: a portable gameplay programming API that works across engines. Porting logic should be no different than porting assets: import, setup, done. 
+We solved platform lock-in and API fragmentation, only to create **engine API lock-in**.
 
-# The Scripting Irony: DSLs don't stick 
+The solution: a portable gameplay programming API that works across engines, across languages. Porting logic should be no different than porting assets: import, setup, done. 
 
-Programming onramp? Add a scripting language! 
+# The Scripting Irony: DSLs Limited Lifecycles 
 
-Scripting is a lot less useful if the API remains the same.
+Programming onramp? Add a scripting language! But scripting is a lot less useful if the API remains the same. And ...
 
 ## UnrealScript & UnityScript
 
-UnrealScript (2014, 16 yrs) and UnityScript (2017, 12 yrs) both got removed from their engines.
+Both UnrealScript (2014, 16 yrs) and UnityScript (2017, 12 yrs) as well as Unity's Boo (2014, 9 yrs) were removed from their engines.
 
-Both were custom DSLs to program the engine's API. They derived from popular languages but differed in key aspects. Ultimately, both were an impediment to further engine development and got cut.
+Both were custom DSLs to program the engine's complete API. They derived from popular languages but differed in key aspects. They continued to receive more and more features. Ultimately, their maintenance became an impediment to further engine development.
 
 ## Enter Godot's GDScript
 
-GDScript (2014, 11 yrs) is a custom DSL to program the engine's API. It derived from Python but differs in key aspects. Ultimately, it .. (_divining answer_) .. is still prone to become a liability.
+GDScript (2014, 11 yrs) is a custom DSL to program the engine's complete API. It derived from Python but differs in key aspects. It continues to receive more and more features. Ultimately, it .. (_divining answer_) .. is prone to become a liability.
+
+GDScript started from a lower vantage point providing it with a longer lifetime. But its clock is already ticking. It will certainly be harder to learn 10 years from now.
 
 # The Vision
 
-We need to re-think Game Engine scripting! A sustainable solution MUST be:
+We need to re-think Game Engine scripting!
+
+We can't change game engine's unique workflows and user interfaces.
+But we CAN change game engine's disparate APIs and languages.
+
+A sustainable scripting solution MUST be:
 
 ** Portable & Open:**
-- Works across all engines, not just one
+- Works across many engines, not just one
 - Is an API, not a language
 - Is Free and Open Source
 
@@ -134,14 +135,15 @@ We need to re-think Game Engine scripting! A sustainable solution MUST be:
 - Supplements existing code and tools
 - <5% performance overhead
 
-We can't change game engine's unique workflows and user interfaces.
-But we CAN change game engine's disparate APIs and languages.
+## The Outcome
 
-# The Outcome
+Education adopts a single entry-level game programming curriculum.
 
-Pro-tier engines will become more approachable to beginners. They learn valuable concepts and patterns before diving into imperative programming. 
+Pro-tier engines across the board will be more approachable to beginners. They learn valuable concepts and patterns before diving into imperative programming.
 
+Learnfluencers provide valuable head-to-head comparisons and can afford time to demo lesser known engines.
 
+Simple projects complete faster. Game Jammers write reusable code. Prototypes struggle less with technical issues.
 
 # My Personal Experience
 
