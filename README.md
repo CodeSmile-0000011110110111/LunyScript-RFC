@@ -13,15 +13,21 @@ I took this idea in under 20 days from scratch to proof of concept in Unreal, Un
 
 [![LunyScript](media/ProofOfConceptVideoPlayer.png)](https://youtu.be/Vn38VLNDsuw "LunyScript: Same Code, Three Engines - Proof of Concept Demo")
 
-### Screenshots
+The engine-native code is just 30% - mostly automatable glue. 70% of LunyScript is fully portable, providing behavioural guarantees.
+
+## Screenshots
 | Godot| Unity| Unreal|
 |---|---|---|
 | ![PlayMode_Godot_Editor.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Godot_Editor.png) | ![PlayMode_Unity_Editor.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unity_Editor.png) | ![PlayMode_Unreal_Editor.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unreal_Editor.png) |
 | ![PlayMode_Godot.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Godot.png)| ![PlayMode_Unity.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unity.png)| ![PlayMode_Unreal.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unreal.png)|
 
-The engine-native code is just 30% - mostly automatable glue.
+## Repositories
+CAUTION: Proof of Concept only. Not representative.
+TBD:
+- link repos
+- side-by-side comparison of proposed API
 
-70% of LunyScript is fully portable, providing behavioural guarantees.
+
 
 ### LunyScript Benefits
 
@@ -33,88 +39,80 @@ The engine-native code is just 30% - mostly automatable glue.
 
 ### What's it for?
 
-- For learning to code in extremely complex engines.
+- For learning to code in highly complex engines.
 - For simple 3D games or individual features.
 - For short game jams or fast prototyping.
 - For low interactivity experiences or tight schedules.
 - For lucrative projects mandating unfamiliar engines.
 - For writing simple code to do simple things.
 
-## A Market Of Uncertainties
+---
+
+# A Market Of Uncertainties
 
 Unreal Editor for Fortnite is a Roblox-like game creation platform, funneling young talents into Unreal Engine.
 
-Meanwhile, Amazon is pushing 'their' FOSS Open3D Engine. The irony: CryEngine is competing against its own tech!
+Meanwhile, Amazon is pushing 'their' FOSS Open3D Engine. The irony: CryEngine is competing against itself!
 
-While Godot is growing, it's competing against giants. Unity is recovering from its runtime fee debacle.
+Godot is growing, but needs to convince a risk averse industry. While Unity is recovering from its runtime fee debacle.
 
-Few have heard of Flax, Stride, Unigine, Cocos - competitive alternatives. No wonder: Our professional roles changed from "Game Programmer" to "Unreal Programmer" and "Unity Programmer".
+Few heard of Flax, Stride, Unigine, Cocos - competitive alternatives. 
+No surprise, since our professional roles changed from "Game Programmer" to ie "Unreal Programmer".
 
 Career opportunities and uncertainties everywhere. Engine fragmentation is growing, the landscape changing.
 
-## Isn't this just another custom API?
+# The Engine Irony: From Solution to Problem!
 
-Here's the real problem: Engine API semantics are needlessly disparate: `BeginPlay`, `OnEnable`, `_enter_tree`. Yet they function practically identical.
+**2000s:** "I can't port my game from Windows to Mac, Playstation to N64 - the APIs are completely different!"
 
-That's **lock-in** with the first line of code. LunyScript loosens the grip of engines over our code!
+**Solution:** Game engines! Write once, deploy cross-platform.
 
-It's one uniform API to program them all!
+**2020:** "I can't port my project from Unity to Godot — the APIs are completely different!"
 
---------------------
---------------------------
--------------
-
--------------------
-
-- We used to be "Gameplay Specialists". Now we are "Unity Specialists".
-
-Engines, tooling, and assets have evolved so much that we could program the majority of games in ANY engine. Which one? I can't tell by playing.
-
-
-# The Game Engine Irony: The Solution became The Problem!
-
-**2000s:** "I can't port my game from Windows to Mac, from Playstation to N64 - the APIs are completely different!"
-**Solution:** Use a game engine! Write once, deploy everywhere.
-
-**2020:** "I can't take my project from Unity to Godot — the APIs are completely different!"
 **Solution:** ???
 
-We solved platform lock-in by creating **engine lock-in**.
+We solved platform lock-in and API fragmentation, only to create **engine lock-in**.
 
-We need to sideline this pattern: a portable game logic layer that works across engines,
-just like engines work across platforms. Our assets are already portable, why not our logic?
+The solution: a portable gameplay programming API that works across engines. 
 
-## Past Game Engine Scripting 
+# The Scripting Irony: DSLs don't stick 
 
-In 2014 UnrealScript, in 2017 UnityScript got removed.
+Programming onramp? Add a scripting language! 
+
+Unfortunately, I too fell for that notion. 
+Scripting is a lot less useful if the API remains the same.
+
+## UnrealScript & UnityScript
+
+UnrealScript (2014) and UnityScript (2017) both got removed from their engines.
 
 Both:
 - were custom engine DSLs
-- were based on a popular programming language, but differed in key aspects
-- grew to rival the engine's native language in complexity
-- exposed the engine's native API unchanged
-- ultimately, they impeded further engine development
+- were derived from popular languages, but differed in key aspects
+- continuously grew in complexity
+- used to program the engine's native API
+- ultimately, both were an impediment to further engine development
 
 ## Enter Godot's GDScript
 
-It is:
+GDScript is:
 - a custom engine DSL
-- based on Python, but differs in key aspects
-- continuously accruing imperative  language complexity
-- exposing the engine's native API unchanged
-- ultimately, it .. (_divining answer_)
+- derived from Python, but differs in key aspects
+- continously growing in complexity
+- used to program Godot's native API
+- ultimately, it .. (standby: _divining answer_)
 
-I know one thing for sure: 
+## Scripting is a Temporary Solution
 
-For the time being, it's a VALUABLE entry-level scripting language.
-But history speaks loud and clear: custom engine DSLs eventually become liabilities.
-DSLs only work for closed-source engines: it's the only choice they offer (GameMaker GML, Roblox Luau).
+The 2023 Unity exodus proved: An easy onramp scripting language helps attract users. 
 
-As the 2023 Unity exodus proved: 
-1. Developers WANT engine alternatives, but their code is 100% incompatible.
-2. An onramp scripting language attracts users. GDScript is applauded as entry-level, however ..
-3. GDScript alienates C# users who don't get the same level of integration.
-4. GDScript alienates Python users through divergent keywords and functionality.
+But GDScript already:
+3. alienates C# users who don't get the same level of integration.
+4. adds friction for Python users through divergent keywords and features.
+6. is a side-stepping stone for careers: game languages are all C-based
+5. is exclusive to Godot: 'vendor' lock-in
+
+History speaks loud and clear: custom engine DSLs eventually become liabilities.
 
 # The Vision
 
@@ -123,10 +121,10 @@ We need to re-think Game Engine scripting. A sustainable solution MUST be:
 ** Portable & Open:**
 - Works across all engines, not just one
 - Same logic -> same outcome, different engine
-- Is an API, not a language (same in C#, Lua, ..)
+- Is an API, not a language - applied in C#, Lua, GDScript, ..
 
 **Beginner-Friendly:**
-- Declarative, using natural language over CS jargon
+- Declarative, with natural language instead of CS jargon
 - Fault-tolerant, uses placeholders for missing references
 - On-screen instrumentation over debugger deep-dives
 
@@ -138,36 +136,56 @@ We need to re-think Game Engine scripting. A sustainable solution MUST be:
 We can't change game engine's unique workflows and user interfaces.
 But we CAN change game engine's disparate APIs and languages.
 
+## The Result
 
----
+Pro-tier game engines could become supreme mid-tier game creation tools. 
+They only lack a streamlined programming interface for entry-level users.
 
-# The Solution
+It would encourage users to step up from mid-tier creation tools (Construct, GameMaker, Roblox).
 
-[Current "Description" section, trimmed to 2 paragraphs max]
+I see every day that beginners can deal with complex editor UIs fairly well.
+It's the programming and API complexities they struggle with.
 
-LunyScript provides a uniform API for ubiquitous game engine features.
-Its declarative syntax reduces boilerplate by 80% while teaching proven
-patterns: behavior trees, state machines, reactive events.
+# My Personal Experience
 
-Think jQuery for game engines—simplify common tasks, work with any engine.
+- 1999 I used visual statemachines in my first game designer job (8+ GameBoy titles)
+- 2002 I created a declarative, statemachine-based Lua script API (SpellForce, BattleForge)
+- 2009 We had shipped three main titles, three add-ons, all heavily scripted. Onboarding was easy. 
+  - Script logic was 1-3% runtime CPU usage. The key? Lua transforms to native C++ on map load.
+- 2010 I worked freelance, wrote several game engine books. (Learn cocos2d, Learn SpriteBuilder)
+- 2015 I began working on digital marketing projects. Unity only.
+- 2022 I began creating FOSS projects. For fun. With an estranged feeling that _something is missing_.
+- 2025 I spent half a year integrating Lua in Unity ...
 
-## The Code 
+I made the same mistake as GDScript, UnityScript, UnrealScript!
+I thought: first the entire API. Then I can add a simple layer.
 
-(insert code comparison here)
+Now I'm convinced: we need the simple API first and foremost. 
+The language is entirely secondary.
 
---------
-CUT OR IMPROVE BELOW
-## My "Story"
+# Frequently Asked Questions (FAQ)
 
-- 1999 I worked with visual statemachines as a designer (8+ GameBoy titles)
-- 2002 I implemented statemachines in Lua, creating a declarative script API for SpellForce, BattleForge
-- 2009 We shipped three main titles and two add-ons, all heavily scripted. Onboarding was easy. Runtime script logic was just 1-3% CPU time. 
-- 2010 Indie games and engine market exploded during this decade.
-- 2020 Tribal communities formed around just two top-tier engines, despite 10+ competitive alternatives. 
-- 2023 Unity's "runtime fee" debacle forced many to reconsider. Few actually did jump ship. 
-- 2025 Godot proved: simple scripting is key. But: still imperative, and growing in complexity. History repeating...
+## Isn't LunyScript just another custom API?
 
-Engines share the same ubiquitous features, but code is highly unique. 
+Here's the real problem: Engine API semantics are needlessly disparate: `BeginPlay`, `OnEnable`, `_enter_tree`. Yet they function practically identical.
+
+That's **lock-in** with the first line of code. LunyScript loosens the grip of engines over our code!
+
+LunyScript is stickier: **the uniform API** to program in any engine! 
+
+
+-----------------------------------
+
+-----------------------------------
+-----------------------------------
+-----------------------------------
+-----------------------------------
+
+
+
+
+-----------
+Engines share the same ubiquitous features, but code is highly unique.
 As if car manufacturers each provided their unique or subtly different controls and instrumentation.
 In one word: it's complicating entry, beginners have to CHOOSE BEFORE THEY DRIVE!
 Most popular videos are about comparing engines, about decision making, often subjective and misleading.
@@ -179,13 +197,23 @@ This forces vendor lock-in and fosters tribal communities.
 - Why are designers using only visual graph tools? It's regarded as the only thing designers would want to work with. General purpose declarative programming is a lost art.
 - Why is FOSS viewed as immune to business risks? FOSS code is still a liability! Teams, let alone individuals, don't have the time, skill, or budget to maintain an engine they didn't write.
 
-As a book author (Learn Cocod2d, Learn SpriteBuilder) I see the learning issues are not for the lack of great material. 
+As a book author (Learn Cocod2d, Learn SpriteBuilder) I see the learning issues are not for the lack of great material.
 Tackling the complexities of game programming has everyone teach bad practices to cope with engine code complexities.
 First and foremost the engine providers themselves, since within a decade learners transform not into
 "Game Feature Specialists" but into "Xyz Game Engine Specialists". While Learnfluencers simply follow viewer's interests.
 
 Instead, we should provide EASIER TOOLING all across the board to onramp learners and to empower designers!
 
+
+------
+# The Solution
+
+## The Code 
+
+(insert code comparison here)
+
+--------
+CUT OR IMPROVE BELOW
 
 # Summary
 
@@ -313,7 +341,7 @@ LunyScript C# code shall look something like this, and will be available in Lua 
         }
     }
 
-You may notice hints of tried and true patterns such as Coroutines, Behaviour Trees, Statemachines. Perhaps even hints of SCUMM. 
+You may notice hints of tried and true patterns such as Coroutines, Behaviour Trees, Statemachines. 
 This is not coincidence. 
 
 Neither is discarding the CS terminology in favor of natural language semantics.
