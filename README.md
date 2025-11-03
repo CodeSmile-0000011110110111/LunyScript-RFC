@@ -25,7 +25,7 @@ I took this idea in under 20 days from scratch to proof of concept in Unreal, Un
 The engine-native code is just 30% - mostly automatable glue. 70% of LunyScript is fully portable, providing behavioral guarantees.
 
 ## Screenshots
-| Godot                                                                                             | Unity                                                                                             | Unreal                                                                                              |
+| Godot                                                                                           | Unity                                                                                             | Unreal                                                                                              |
 |---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | ![PlayMode_Godot_Editor.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Godot_Editor.png) | ![PlayMode_Unity_Editor.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unity_Editor.png) | ![PlayMode_Unreal_Editor.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unreal_Editor.png) |
 | ![PlayMode_Godot.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Godot.png)               | ![PlayMode_Unity.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unity.png)               | ![PlayMode_Unreal.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unreal.png)               |
@@ -34,10 +34,11 @@ Physics behaviour tuning merely required adjusting value scales.
 
 Porting twice to engines I hadn't previously worked with took around 3 days each. Including asset integration and writing engine adapters!
 
+It was also a very uplifting experience. I didn't intend to make a playable game - it evolved naturally!
 
 ## Repositories & Source Code
 
-Note: API in Proof of Concept represents an early first draft. Final API Design has not started.
+Note: API in Proof of Concept represents an early first draft. Final API will differ in key aspects.
 
 | [Godot PoC Repository](https://github.com/CodeSmile-0000011110110111/LunyScratch_Examples_Godot)            | [Unity PoC Repository](https://github.com/CodeSmile-0000011110110111/LunyScratch_Examples_Unity)  | [Unreal PoC Repository](https://github.com/CodeSmile-0000011110110111/LunyScratch_Examples_Unreal)|
 |---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
