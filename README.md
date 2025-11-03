@@ -118,7 +118,7 @@ But we CAN change their disparate APIs and languages!
 
 A sustainable scripting solution MUST be:
 
-** Portable & Open:**
+**Portable & Open:**
 - Works across many engines, not just one
 - Is an API, not a language
 - Is Free and Open Source
