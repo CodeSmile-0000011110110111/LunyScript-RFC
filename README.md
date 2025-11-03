@@ -211,7 +211,7 @@ We're long past the days when we needed to count bytes and CPU cycles.
 
 Our games are already full of layers of abstractions. 
 Code we write in C# crosses the language boundary to C++ - this is rather costly. 
-Yet it has proven to be extremely effective and efficient.
+Yet it has proven to be extremely effective and efficient for Unity.
 
 ## It's going to be a maintenance nightmare!
 
@@ -222,7 +222,15 @@ LunyScript will not chase fancy new features.
 Anyone can add whatever they want however.
 
 The engine adapters and observers are in separate, engine-specific repositories.
-I needn't necessarily maintain every engine integration myself.
+I needn't necessarily manage and maintain every engine integration myself.
+
+## Results won't replicate precisely!
+
+They needn't. Close enough is good enough.
+
+Even if you have to tweak every physics value once more, the logic itself is already running in the new engine, unchanged!
+
+That's a lot more productive than having to start with _no code_, or having to _fix and verify_ automatically converted code.
 
 
 -----------------------------------
