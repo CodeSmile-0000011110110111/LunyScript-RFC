@@ -188,7 +188,7 @@ LunyScript will not chase fancy new features.
 Anyone can add whatever they want however.
 
 The engine adapters and observers are in separate, engine-specific repositories.
-I needn't necessarily manage and maintain every engine integration myself.
+I needn't manage and maintain every engine integration myself.
 
 ## Results won't replicate precisely!
 
@@ -196,4 +196,4 @@ They needn't. Close enough is good enough.
 
 Even if you have to tweak every physics value once more, the logic itself is already running in the new engine, unchanged!
 
-That's a lot more productive than having to start with _no code_, or having to _fix and verify_ automatically converted code.
+That's a lot more productive than having to start with _no code_, or worse: having to _fix and verify_ automatically converted code in a foreign environment.
