@@ -95,28 +95,26 @@ We solved platform lock-in and API fragmentation, only to create **engine API lo
 
 The solution: a portable gameplay programming API that works across engines, across languages. Porting logic should be no different than porting assets: import, setup, done. 
 
-# Engine Scripting: Doomed From Birth 
+## Boo, UnrealScript, UnityScript
 
-Programming onramp? Add a scripting language! But scripting is a lot less useful if the API remains the same. And ...
+Programming onramp? Add a scripting language!
 
-## UnrealScript & UnityScript
+- Unity Boo    - RIP 2014 - Died age 9
+- UnrealScript - RIP 2014 - Died age 16
+- UnityScript  - RIP 2017 - Died age 12
+ 
+They were custom DSLs to program the engine's complete API. This didn't really affect the onramp. Ultimately, their maintenance became a burden. Their native languages were always far more popular anyway. 
 
-Both UnrealScript (2014, 16 yrs) and UnityScript (2017, 12 yrs) as well as Unity's Boo (2014, 9 yrs) were removed from their engines.
+Godot's GDScript is much better integrated. It also targets the engine's complete API. Godot is deemed beginner-friendly, yet even its API continues to accumulate complexity.
 
-Both were custom DSLs to program the engine's complete API. They derived from popular languages but differed in key aspects. They continued to receive more and more features. Ultimately, their maintenance became an impediment to further engine development.
-
-## Enter Godot's GDScript
-
-GDScript (2014, 11 yrs) is a custom DSL to program the engine's complete API. It derived from Python but differs in key aspects. It continues to receive more and more features. Ultimately, it .. (_divining answer_) .. is prone to become a liability.
-
-GDScript started from a lower vantage point providing it with a longer lifetime. But its clock is already ticking. It will certainly be harder to learn 10 years from now.
-
-# The Vision
+**The Problem:** It's complex engine APIs that hurt the programming onramp, not the language.
 
 We need to re-think Game Engine scripting!
 
-We can't change game engine's unique workflows and user interfaces.
-But we CAN change game engine's disparate APIs and languages.
+# The Vision
+
+We can't change game engines' unique workflows and user interfaces.
+But we CAN change their disparate APIs and languages!
 
 A sustainable scripting solution MUST be:
 
