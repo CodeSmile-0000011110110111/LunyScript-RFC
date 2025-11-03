@@ -9,13 +9,9 @@ Our assets are portable. Why not our gameplay code?
 
 ## This can't possibly work !!
 
-I took this idea in 20 days from scratch to proof of concept in Unreal, Unity, and Godot.
+I took this idea in under 20 days from scratch to proof of concept in Unreal, Unity, and Godot.
 
 [![LunyScript](media/ProofOfConceptVideoPlayer.png)](https://youtu.be/Vn38VLNDsuw "LunyScript: Same Code, Three Engines - Proof of Concept Demo")
-
-![test _blank](https://youtu.be/Vn38VLNDsuw)
-<a href="https://youtu.be/Vn38VLNDsuw" target="_blank">Go open in new window</a>
-
 
 ### Screenshots
 | Godot| Unity| Unreal|
@@ -25,42 +21,55 @@ I took this idea in 20 days from scratch to proof of concept in Unreal, Unity, a
 
 The engine-native code is just 30% - mostly automatable glue.
 
-The remaining 70% of LunyScript is fully portable, providing behavioural guarantees.
+70% of LunyScript is fully portable, providing behavioural guarantees.
 
-## Same code? In any Engine??
+### LunyScript Benefits
 
-Yes.
+- Increased portability, decreased vendor lock-in.
+- Learn once, apply anywhere. Declarative, with natural language.
+- Reach more audiences with tutorials and frameworks.
+- Less verbose than visual scripting and imperative programming.
+- Minimal (5%) performance overhead, can even be faster.
 
-LunyScript is:
+### What's it for?
 
-- Easier to learn than imperative or visual programming.  
-- For 3D games, game jams, prototypes, digital experiences, tight schedules.
-- Write once, runs in any engine. Proven for Unity, Godot, Unreal. More soon ...
-- Minimal (5%) performance overhead, faster than unoptimized code.
+- For learning to code in extremely complex engines.
+- For simple 3D games or individual features.
+- For short game jams or fast prototyping.
+- For low interactivity experiences or tight schedules.
+- For lucrative projects mandating unfamiliar engines.
+- For writing simple code to do simple things.
 
-## But engines are very different!!
+## A Market Of Uncertainties
 
-Yes. 
+Unreal Editor for Fortnite is a Roblox-like game creation platform, funneling young talents into Unreal Engine.
 
-But these don't matter to gameplay code!
+Meanwhile, Amazon is pushing 'their' FOSS Open3D Engine. The irony: CryEngine is competing against its own tech!
 
-It's the semantics that are needlessly disparate: `BeginPlay`, `OnEnable`, `_enter_tree`.
+While Godot is growing, it's competing against giants. Unity is recovering from its runtime fee debacle.
 
+Few have heard of Flax, Stride, Unigine, Cocos - competitive alternatives. No wonder: Our professional roles changed from "Game Programmer" to "Unreal Programmer" and "Unity Programmer".
 
+Career opportunities and uncertainties everywhere. Engine fragmentation is growing, the landscape changing.
 
-## But .. what for??
+## Isn't this just another custom API?
 
-check again
-------------
-Unreal Editor for Fortnite is a Roblox-like game creation platform with close ties to Unreal Engine. 
+Here's the real problem: Engine API semantics are needlessly disparate: `BeginPlay`, `OnEnable`, `_enter_tree`. Yet they function practically identical.
 
-Amazon is pushing Open3D Engine. Godot is growing. Unity is restructuring.
+That's **lock-in** with the first line of code. LunyScript loosens the grip of engines over our code!
 
-For developers there's opportunities everywhere. And uncertainties.  
+It's one uniform API to program them all!
 
-Many will have reasons to switch engines in the coming decades.
-We should enable them to take their code with them.
+--------------------
+--------------------------
 -------------
+
+-------------------
+
+- We used to be "Gameplay Specialists". Now we are "Unity Specialists".
+
+Engines, tooling, and assets have evolved so much that we could program the majority of games in ANY engine. Which one? I can't tell by playing.
+
 
 # The Game Engine Irony: The Solution became The Problem!
 
