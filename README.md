@@ -1,5 +1,5 @@
 # LunyScript - Request for Comments
-## Code gameplay once. Same outcome in Unity, Godot ..
+## Code gameplay once. Same outcome in Unity, Godot, Unreal ...
 
 Game Engines solved platform API fragmentation.
 
@@ -31,7 +31,7 @@ Including asset integration and writing engine adapters!
 
 
 ## Repositories & Source Code
-CAUTION: Proof of Concept only. Projects are not representative.
+CAUTION: Proof of Concept only. API is not representative!
 
 | [Godot PoC Repository](https://github.com/CodeSmile-0000011110110111/LunyScratch_Examples_Godot)            | [Unity PoC Repository](https://github.com/CodeSmile-0000011110110111/LunyScratch_Examples_Unity)  | [Unreal PoC Repository](https://github.com/CodeSmile-0000011110110111/LunyScratch_Examples_Unreal)|
 
@@ -39,7 +39,7 @@ CAUTION: Proof of Concept only. Projects are not representative.
 - [CompanionCubeScratch.cs](2025-10_Proof_Of_Concept_Demo/CompanionCubeScratch.cs)
 - [HitEffectScratch.cs](2025-10_Proof_Of_Concept_Demo/HitEffectScratch.cs)
 
-## Proposed API Examples
+## Proposed API - Examples
 
 TBD ...
 
@@ -62,22 +62,15 @@ TBD ...
 
 ## Roadmap
 
-**Phase 1:** API Design, Portable Core, Unity Implementation (6 months)
-**Phase 2:** Port to Godot, add Lua and GDScript, Demos & Docs, +1-2 engine quickports (6 months)
-**Phase 3:** Port to more engines, best candidates: Unreal, CryEngine, Stride, Flax
-
-
-## Implementation Targets
-- **Unity** initially, due to weight
-- **Godot** port next, for education
-- Later, one or more of: Unreal (via UnrealSharp), CryEngine, Stride, Flax, Unigine, Evergine
-- _Possibly_: Unreal (native), Open3D Engine, Cocos Creator, GDevelop
-- With vendor buy-in: Limitless ...
-
+- **Phase 1:** API Design, Unity Implementation, Portable Core, RFC Draft (6 months)
+- **Phase 2:** Port to Godot, with Lua and GDScript, Demos & Docs, +2 engine PoCs (6 months)
+- **Phase 3:** Port to more engines, best candidates: Stride, Flax, Unreal, CryEngine
 
 ---
 
-# A Market Of Uncertainties
+---
+
+# Background: A Market Of Uncertainties
 
 Unreal Editor for Fortnite is a Roblox-like game creation platform, funneling young talents into Unreal Engine.
 
