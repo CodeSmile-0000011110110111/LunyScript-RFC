@@ -5,47 +5,48 @@ Game Engines solved platform API fragmentation.
 
 LunyScript solves game engine API fragmentation.
 
-Our Assets are already portable.
+Our assets are portable. Why not our gameplay code?
 
-Why not our gameplay code?
-
-## Same code? In any Engine?
+## Same code? In any Engine??
 
 Yes.
+
+LunyScript is:
 
 - Easier to learn than imperative or visual programming.  
-- For simple 3D games on short game jams. 
-- For digital experiences on tight budgets.
-- Write once, runs in any engine. Proven for Unity, Godot, and Unreal.
+- For 3D games, game jams, prototypes, digital experiences, tight schedules.
+- Write once, runs in any engine. Proven for Unity, Godot, Unreal. More soon ...
 - Minimal (5%) performance overhead, faster than unoptimized code.
 
-## Really?
+## But engines are very different!!
 
-Yes.
+Yes. 
 
-In 20 days from scratch to proof of concept.
+But these don't matter to gameplay code!
 
-## But engines are so different!
+It's the semantics that are needlessly disparate: `BeginPlay`, `OnEnable`, `_enter_tree`.
 
-**Proof:** Same game, three engines, 20 days.
 
-[Video/screenshots showing identical behavior]
+## This is way too much work !!
 
-The secret? 
+No.
 
-Engines have a huge span of gameplay features in common.
+I took this idea in 20 days from scratch to proof of concept in Unreal, Unity, and Godot.
 
-LunyScript gives you the API to instrument these features:
+https://youtu.be/Vn38VLNDsuw
 
-- Input
-- Camera
-- Physics
-- Navigation
-- Audio
-- Animation
-- .. and more!
 
-# But what for?
+
+| Godot| Unity| Unreal|
+|---|---|---|
+| ![PlayMode_Godot_Editor.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Godot_Editor.png) | ![PlayMode_Unity_Editor.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unity_Editor.png) | ![PlayMode_Unreal_Editor.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unreal_Editor.png) |
+| ![PlayMode_Godot.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Godot.png)| ![PlayMode_Unity.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unity.png)| ![PlayMode_Unreal.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unreal.png)|
+ 
+The engine-native code is just 30% - mostly automatable glue. 
+
+The remaining 70% of LunyScript is fully portable, providing behavioural guarantees.
+
+## But .. what for??
 
 check again
 ------------
