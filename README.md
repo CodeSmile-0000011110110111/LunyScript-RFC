@@ -207,11 +207,12 @@ LunyScript is stickier: **the uniform API** to program in any engine!
 
 ## Any abstraction adds overhead! Games need performance!
 
-We're long past the days when we needed to count bytes and CPU cycles.
+We're long past the days when we needed to count bytes and CPU cycles. Our games are already full of layers of abstractions. 
 
-Our games are already full of layers of abstractions. 
 Code we write in C# crosses the language boundary to C++ - this is rather costly. 
-Yet it has proven to be extremely effective and efficient for Unity.
+It still worked wonderfully for Unity.
+
+Same with Blueprints: we know it's between 100x to 1,000x slower than C++ yet we use it extensively.
 
 ## It's going to be a maintenance nightmare!
 
