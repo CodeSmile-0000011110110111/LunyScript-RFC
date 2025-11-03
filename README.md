@@ -1,10 +1,12 @@
 # LunyScript
-## Code gameplay once. Same outcome in Godot, Unity, Unreal, ..
+## Code gameplay once. Same outcome in Unity, Godot ..
 
 Game Engines solved platform API fragmentation.
+
 LunyScript solves game engine API fragmentation.
 
 Our Assets are already portable.
+
 Why not our gameplay code?
 
 ## Same code? In any Engine?
@@ -19,6 +21,8 @@ Yes.
 
 ## Really?
 
+Yes.
+
 In 20 days from scratch to proof of concept.
 
 ## But engines are so different!
@@ -28,15 +32,34 @@ In 20 days from scratch to proof of concept.
 [Video/screenshots showing identical behavior]
 
 The secret? 
+
 Engines have a huge span of gameplay features in common.
+
 LunyScript gives you the API to instrument these features:
-Input, Camera, Physics, Navigation, Audio, Animation, and more.
 
+- Input
+- Camera
+- Physics
+- Navigation
+- Audio
+- Animation
+- .. and more!
 
+# But what for?
 
-# The Problem
+check again
+------------
+Unreal Editor for Fortnite is a Roblox-like game creation platform with close ties to Unreal Engine. 
 
-## The Game Engine Irony: The Solution became The Problem!
+Amazon is pushing Open3D Engine. Godot is growing. Unity is restructuring.
+
+For developers there's opportunities everywhere. And uncertainties.  
+
+Many will have reasons to switch engines in the coming decades.
+We should enable them to take their code with them.
+-------------
+
+# The Game Engine Irony: The Solution became The Problem!
 
 **2000s:** "I can't port my game from Windows to Mac, from Playstation to N64 - the APIs are completely different!"
 **Solution:** Use a game engine! Write once, deploy everywhere.
