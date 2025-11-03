@@ -105,7 +105,7 @@ Programming onramp? Add a scripting language!
  
 They were custom DSLs to program the engine's complete API. This didn't really affect the onramp. Ultimately, their maintenance became a burden. Their native languages were always far more popular anyway. 
 
-Godot's GDScript is much better integrated. It also targets the engine's complete API. Godot is deemed beginner-friendly, yet even its API continues to accumulate complexity.
+Godot's GDScript is much better integrated and positions. It also targets the engine's complete API. Godot is deemed beginner-friendly, yet even its API continues to accumulate complexity.
 
 **The Problem:** It's complex engine APIs that hurt the programming onramp, not the language.
 
