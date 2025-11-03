@@ -76,7 +76,7 @@ No surprise: our specializations _evolved_ from "Game Programmer" to "Unreal/Uni
 
 Career opportunities and uncertainties everywhere. Engine fragmentation is growing, the landscape changing.
 
-# The Engine Irony: They Became The Problem They Solved!
+# They Became The Problem They Solved!
 
 ## 2000s
 **Problem:** "We can't port our game from Windows to Mac or Playstation - the APIs are completely different!"
@@ -95,7 +95,7 @@ We solved platform lock-in and API fragmentation, only to create **engine API lo
 
 The solution: a portable gameplay programming API that works across engines, across languages. Porting logic should be no different than porting assets: import, setup, done. 
 
-# The Scripting Irony: DSLs Limited Lifecycles 
+# Engine Scripting: Doomed From Birth 
 
 Programming onramp? Add a scripting language! But scripting is a lot less useful if the API remains the same. And ...
 
