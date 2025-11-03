@@ -1,4 +1,4 @@
-# LunyScript
+# LunyScript - Request for Comments
 ## Code gameplay once. Same outcome in Unity, Godot ..
 
 Game Engines solved platform API fragmentation.
@@ -16,10 +16,20 @@ I took this idea in under 20 days from scratch to proof of concept in Unreal, Un
 The engine-native code is just 30% - mostly automatable glue. 70% of LunyScript is fully portable, providing behavioural guarantees.
 
 ## Screenshots
-| Godot| Unity| Unreal|
-|---|---|---|
+| Godot                                                                                             | Unity                                                                                             | Unreal                                                                                              |
+|---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | ![PlayMode_Godot_Editor.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Godot_Editor.png) | ![PlayMode_Unity_Editor.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unity_Editor.png) | ![PlayMode_Unreal_Editor.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unreal_Editor.png) |
-| ![PlayMode_Godot.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Godot.png)| ![PlayMode_Unity.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unity.png)| ![PlayMode_Unreal.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unreal.png)|
+| ![PlayMode_Godot.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Godot.png)               | ![PlayMode_Unity.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unity.png)               | ![PlayMode_Unreal.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unreal.png)               |
+| [Godot PoC Repository](https://github.com/CodeSmile-0000011110110111/LunyScratch_Examples_Godot)            | [Unity PoC Repository](https://github.com/CodeSmile-0000011110110111/LunyScratch_Examples_Unity)  | [Unreal PoC Repository](https://github.com/CodeSmile-0000011110110111/LunyScratch_Examples_Unreal)|
+
+Of course they LOOK different. May even feel a little different. 
+
+To straighten up Physics behaviour I merely needed to scale some numbers.
+It's _close enough_ to be considered equal.
+
+Porting twice to engines I hadn't previously worked with took around 3 days each.
+Including asset integration and writing engine adapters!
+
 
 ## Repositories
 CAUTION: Proof of Concept only. Not representative.
@@ -29,7 +39,7 @@ TBD:
 
 
 
-### LunyScript Benefits
+## LunyScript Benefits
 
 - Increased portability, decreased vendor lock-in.
 - Learn once, apply anywhere. Declarative, with natural language.
@@ -37,7 +47,7 @@ TBD:
 - Less verbose than visual scripting and imperative programming.
 - Minimal (5%) performance overhead, can even be faster.
 
-### What's it for?
+## What's it for?
 
 - For learning to code in highly complex engines.
 - For simple 3D games or individual features.
@@ -45,6 +55,21 @@ TBD:
 - For low interactivity experiences or tight schedules.
 - For lucrative projects mandating unfamiliar engines.
 - For writing simple code to do simple things.
+
+## Roadmap
+
+**Phase 1:** API Design, Portable Core, Unity Implementation (6 months)
+**Phase 2:** Port to Godot, add Lua and GDScript, Demos & Docs, +1-2 engine quickports (6 months)
+**Phase 3:** Port to more engines, best candidates: Unreal, CryEngine, Stride, Flax
+
+
+## Implementation Targets
+- **Unity** initially, due to weight
+- **Godot** port next, for education
+- Later, one or more of: Unreal (via UnrealSharp), CryEngine, Stride, Flax, Unigine, Evergine
+- _Possibly_: Unreal (native), Open3D Engine, Cocos Creator, GDevelop
+- With vendor buy-in: Limitless ...
+
 
 ---
 
@@ -84,7 +109,7 @@ Scripting is a lot less useful if the API remains the same.
 
 ## UnrealScript & UnityScript
 
-UnrealScript (2014) and UnityScript (2017) both got removed from their engines.
+UnrealScript (2014, 16 yrs) and UnityScript (2017, 12 yrs) both got removed from their engines.
 
 Both:
 - were custom engine DSLs
@@ -102,49 +127,56 @@ GDScript is:
 - used to program Godot's native API
 - ultimately, it .. (standby: _divining answer_)
 
-## Scripting is a Temporary Solution
-
-The 2023 Unity exodus proved: An easy onramp scripting language helps attract users. 
-
-But GDScript already:
-3. alienates C# users who don't get the same level of integration.
-4. adds friction for Python users through divergent keywords and features.
-6. is a side-stepping stone for careers: game languages are all C-based
-5. is exclusive to Godot: 'vendor' lock-in
+Signs of GDScript being a problem:
+3. It alienates C# users who don't get the same level of integration.
+4. It adds friction for Python users through divergent keywords and features.
+6. It is a side-stepping stone for careers: game languages are all C-based
+5. It is exclusive to Godot: 'vendor' lock-in
 
 History speaks loud and clear: custom engine DSLs eventually become liabilities.
 
 # The Vision
 
-We need to re-think Game Engine scripting. A sustainable solution MUST be:
+We need to re-think Game Engine scripting! A sustainable solution MUST be:
 
 ** Portable & Open:**
 - Works across all engines, not just one
 - Same logic -> same outcome, different engine
 - Is an API, not a language - applied in C#, Lua, GDScript, ..
+- Free and Open Source
 
 **Beginner-Friendly:**
 - Declarative, with natural language instead of CS jargon
-- Fault-tolerant, uses placeholders for missing references
+- Fault-tolerant, supplies placeholders for missing references
 - On-screen instrumentation over debugger deep-dives
 
 **Production-Ready:**
-- Applies proven design patterns, not language features
+- Provides proven design patterns, not language features
 - <5% performance overhead (or faster than imperative boilerplate)
 - Adaptable to user needs (direct-to-native API escape hatch)
 
 We can't change game engine's unique workflows and user interfaces.
 But we CAN change game engine's disparate APIs and languages.
+And we CAN add entry-level, text-based scripting to game engines.
 
-## The Result
+## The Results
 
 Pro-tier game engines could become supreme mid-tier game creation tools. 
 They only lack a streamlined programming interface for entry-level users.
 
-It would encourage users to step up from mid-tier creation tools (Construct, GameMaker, Roblox).
-
 I see every day that beginners can deal with complex editor UIs fairly well.
 It's the programming and API complexities they struggle with.
+
+LunyScript would encourage users to step up from mid-tier creation tools (Construct, GameMaker, Roblox).
+Perhaps even straight from Scratch to Godot or Unity.
+
+Developers at odds with both visual and conventional programming will find LunyScript just the right middle ground.
+
+Perhaps over time we may even come to standardize visual programming itself?
+But definitely other code-based, cross-engine frameworks. 
+LunyCore provides the necessary abstractions.
+
+I hope for an open ecosystem where we share patterns and plug'n'play recipes which just work, regardless of engine.
 
 # My Personal Experience
 
@@ -172,6 +204,25 @@ Here's the real problem: Engine API semantics are needlessly disparate: `BeginPl
 That's **lock-in** with the first line of code. LunyScript loosens the grip of engines over our code!
 
 LunyScript is stickier: **the uniform API** to program in any engine! 
+
+## Any abstraction adds overhead! Games need performance!
+
+We're long past the days when we needed to count bytes and CPU cycles.
+
+Our games are already full of layers of abstractions. 
+Code we write in C# crosses the language boundary to C++ - this is rather costly. 
+Yet it has proven to be extremely effective and efficient.
+
+## It's going to be a maintenance nightmare!
+
+The shared engine features have settled. 
+They are so fundamental to every project that they resist change.
+
+LunyScript will not chase fancy new features.
+Anyone can add whatever they want however.
+
+The engine adapters and observers are in separate, engine-specific repositories.
+I needn't necessarily maintain every engine integration myself.
 
 
 -----------------------------------
@@ -267,12 +318,6 @@ TBD rewrite
 - AI successfully ported engine adapters without human intervention
 
 
-## Roadmap
-
-**Phase 1:** API Design, Portable Core, Unity Implementation (6 months)
-**Phase 2:** Port to Godot, add Lua and GDScript, Demos & Docs, +1-2 engine quickports (6 months)
-**Phase 3:** Port to more engines, best candidates: Unreal, CryEngine, Stride, Flax
-
 
 ## Developer Track Record
 
@@ -281,14 +326,6 @@ TBD my history
 - Designer onboarding: days instead of weeks
 - Code reuse: extensive shared logic libraries
 - Maintainability: declarative code easier to debug and extend
-
-
-## Implementation Targets
-- **Unity** initially, due to weight
-- **Godot** port next, for education
-- Later, one or more of: Unreal (via UnrealSharp), CryEngine, Stride, Flax, Unigine, Evergine 
-- _Possibly_: Unreal (native), Open3D Engine, Cocos Creator, GDevelop
-- With vendor buy-in: Limitless ...
 
 
 -----------------------------------------------
