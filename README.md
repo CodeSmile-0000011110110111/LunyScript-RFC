@@ -159,7 +159,7 @@ We need to re-think Game Engine scripting! A sustainable solution MUST be:
 We can't change game engine's unique workflows and user interfaces.
 But we CAN change game engine's disparate APIs and languages.
 
-## The Results
+# The Outcome
 
 Pro-tier game engines could become supreme mid-tier game creation tools. 
 They only lack a streamlined programming interface for entry-level users.
