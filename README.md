@@ -158,7 +158,6 @@ We need to re-think Game Engine scripting! A sustainable solution MUST be:
 
 We can't change game engine's unique workflows and user interfaces.
 But we CAN change game engine's disparate APIs and languages.
-And we CAN add entry-level, text-based scripting to game engines.
 
 ## The Results
 
