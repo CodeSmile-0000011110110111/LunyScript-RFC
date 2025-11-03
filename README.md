@@ -16,13 +16,19 @@ I took this idea in under 20 days from scratch to proof of concept in Unreal, Un
 
 ## LunyScript Benefits
 
+- Learn once, apply anywhere. Declarative, with expressive semantics.
 - Increased portability, decreased vendor lock-in.
-- Learn once, apply anywhere. Declarative, with natural language.
 - Reach more audiences with tutorials and frameworks.
 - Less verbose than visual scripting and imperative programming.
-- Minimal (5%) performance overhead, can even be faster.
 
 The engine-native code is just 30% - mostly automatable glue. 70% of LunyScript is fully portable, providing behavioral guarantees.
+
+## What's it used for?
+
+- Learn to code complex engines faster.
+- Teach gameplay programming patterns first.
+- Ideal for game jams, prototyping, onboarding.
+- Projects requiring unfamiliar engines.
 
 ## Screenshots
 | Godot                                                                                           | Unity                                                                                             | Unreal                                                                                              |
@@ -30,9 +36,7 @@ The engine-native code is just 30% - mostly automatable glue. 70% of LunyScript 
 | ![PlayMode_Godot_Editor.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Godot_Editor.png) | ![PlayMode_Unity_Editor.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unity_Editor.png) | ![PlayMode_Unreal_Editor.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unreal_Editor.png) |
 | ![PlayMode_Godot.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Godot.png)               | ![PlayMode_Unity.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unity.png)               | ![PlayMode_Unreal.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unreal.png)               |
 
-Physics behaviour tuning merely required adjusting value scales.
-
-Porting twice to engines I hadn't previously worked with took around 3 days each. Including asset integration and writing engine adapters!
+Porting twice to engines I hadn't previously worked with (Godot, Unreal) took 3 days each. Including asset integration and writing engine adapters. Physics behaviour tuning merely required adjusting value scales.
 
 It was also a very uplifting experience. I didn't intend to make a playable game - it evolved naturally!
 
@@ -48,12 +52,6 @@ Note: API in Proof of Concept represents an early first draft. Final API will di
 - [CompanionCubeScratch.cs](2025-10_Proof_Of_Concept_Demo/CompanionCubeScratch.cs)
 - [HitEffectScratch.cs](2025-10_Proof_Of_Concept_Demo/HitEffectScratch.cs)
 
-## What's it for?
-
-- Teach gameplay programming patterns.
-- Learn to code complex engines faster.
-- Ideal for game jams, prototyping, scaffolding.
-- Projects requiring unfamiliar engines.
 
 ## Roadmap
 
@@ -64,7 +62,7 @@ Note: API in Proof of Concept represents an early first draft. Final API will di
 ---
 ---
 
-# Background: A Market Of Uncertainties
+# Background: Engines Of Uncertainties
 
 Unreal Editor for Fortnite is a Roblox-like game creation platform, funneling young talents into Unreal Engine.
 
@@ -72,10 +70,10 @@ Meanwhile, Tech Giant Amazon is pushing 'their' FOSS Open3D Engine. Ironic: CryE
 
 Godot is growing, but needs to convince a risk averse industry. Unity is recovering from its runtime fee debacle.
 
-Flax, Stride, Unigine, Cocos - competitive alternatives, little known. 
+Flax, Stride, Unigine, Cocos - competitive alternatives few use. 
 No surprise: our specializations _evolved_ from "Game Programmer" to "Unreal/Unity Programmer".
 
-Career opportunities and uncertainties everywhere. Engine fragmentation is growing, the landscape changing.
+Engine fragmentation is growing, the landscape changing. Career opportunities everywhere. Where to place your bets?
 
 # They Became The Problem They Solved!
 
@@ -92,9 +90,11 @@ Career opportunities and uncertainties everywhere. Engine fragmentation is growi
 
 ---
 
-We solved platform lock-in and API fragmentation, only to create **engine API lock-in**.
+We solved platform lock-in and API fragmentation, only to create **engine API lock-in**. This works against learners. Switching engines feels like throwing away everything you did and learned. But how can you make the right engine choice before you know how to drive?
 
-The solution: a portable gameplay programming API that works across engines, across languages. Porting logic should be no different than porting assets: import, setup, done. 
+The solution: a portable gameplay programming API that works across engines, across languages, and is easy to learn. You get faster results and get to keep both knowledge and code if you switch. It makes the initial choice less important, encourages experimentation.
+
+Porting logic should be no different than porting assets: import, setup, done. 
 
 ## Boo, UnrealScript, UnityScript
 
@@ -106,7 +106,7 @@ Programming onramp? Add a scripting language!
  
 They were custom DSLs to program the engine's complete API. This didn't really affect the onramp. Ultimately, their maintenance became a burden. Their native languages were always far more popular anyway. 
 
-Godot's GDScript is much better integrated and positions. It also targets the engine's complete API. Godot is deemed beginner-friendly, yet even its API continues to accumulate complexity.
+Godot's GDScript is much better integrated and positioned. It also targets the engine's complete API. Godot is deemed beginner-friendly, yet even its API continues to accumulate complexity.
 
 **The Problem:** It's complex engine APIs that hurt the programming onramp, not the language.
 
@@ -120,29 +120,31 @@ But we CAN change their disparate APIs and languages!
 A sustainable scripting solution MUST be:
 
 **Portable & Open:**
-- Works across many engines, not just one
+- Works across multiple engines, not just one
 - Is an API, not a language
 - Is Free and Open Source
 
 **Beginner-Friendly:**
-- Declarative, using natural language
+- Declarative, using expressive language
+- Bite-sized code teaches modular thinking 
 - Fault-tolerant, using placeholders instead of crashing
 - On-screen instrumentation over debugger deep-dives
 
 **Production-Ready:**
 - Provides proven design patterns
 - Supplements existing code and tools
-- <5% performance overhead
+- Target: <5% performance overhead
+- Direct-to-Native escape hatch
 
 ## The Outcome
 
-Education adopts a single entry-level game programming curriculum.
-
 Pro-tier engines across the board will be more approachable to beginners. They learn valuable concepts and patterns before diving into imperative programming.
 
-Learnfluencers provide valuable head-to-head comparisons and can afford time to demo lesser known engines.
+Education adopts a single entry-level game programming curriculum.
 
-Simple projects complete faster. Game Jammers write reusable code. Prototypes struggle less with technical issues.
+Learnfluencers provide valuable head-to-head comparisons and can afford time to demo less popular engines.
+
+Simple projects complete faster. Game Jams produce reusable code. Prototypes struggle less with technical issues. Visual Scripting aficionados enjoy text-based declarative programming as more productive.
 
 # My Personal Experience
 
