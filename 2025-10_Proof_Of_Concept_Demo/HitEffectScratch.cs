@@ -9,8 +9,7 @@
  * As such it clearly marks this script as a Godot script. Final LunyScripts will be agnostic!
  * Direct-to-Native escape hatch will continue to be supported of course.
  *
- * References to "Scratch" will be removed. While LunyScript is beginner-friendly,
- * it would incorrectly imply that it's a toy for children.
+ * References to "Scratch" will be removed. While LunyScript is beginner-friendly, it's far more than Scratch!
  *
  */
 
