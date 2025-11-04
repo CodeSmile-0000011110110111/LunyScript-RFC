@@ -34,7 +34,7 @@ LunyScript gives you **high-level game logic as code** — readable, customizabl
 
 **For learners:** Your hard-earned skills **AND** code transfer if you switch engines. No more restarting from scratch.
 
-**For multi-engine studios:** Teams don't fragment along engine-specific roles and your code works across projects.
+**For multi-engine studios:** Teams don't fragment along engine-specific roles **AND** your code works across projects.
 
 **For everyone:** Less boilerplate, more intent. Write behavior, not plumbing. Build reusable libraries.
 
