@@ -69,23 +69,21 @@ Note: API in Proof of Concept represents an early first draft. Final API will di
 ---
 ---
 
----
----
-
-
 # Frequently Asked Questions (FAQ)
 
-## Isn't LunyScript just another custom API?
+## Isn't LunyScript just adding another custom engine API?
 
-Here's the real problem: Engine API semantics are needlessly disparate: `BeginPlay`, `OnEnable`, `_enter_tree`. Yet they function practically identical.
+Engine API semantics are needlessly disparate: `BeginPlay`, `OnEnable`, `_enter_tree`. 
+Every engine has the same lifecycle events. Their semantics differ, their purpose is uniform.
 
-That's **lock-in** with the first line of code. LunyScript loosens the grip of engines over our code!
+And their behaviour? There's no contract. In which order children receive lifecycle events varies.
 
-LunyScript is stickier: **the uniform API** to program in any engine! 
+LunyScript is stickier: **the uniform API** to code them all!
+Different engine - same semantics, same behaviour.
 
 ## It's going to be a maintenance nightmare!
 
-The shared engine features have settled. 
+The shared engine features and behaviours have settled. 
 They are so fundamental to every project that they resist change.
 
 LunyScript will not chase fancy new features.
@@ -94,8 +92,44 @@ Anyone can add whatever they want however.
 The engine adapters and observers are in separate, engine-specific repositories.
 I needn't manage and maintain every engine integration myself.
 
-The engine-native code is just 30% - mostly automatable glue. 
-70% of LunyScript is fully portable, providing the behavioral guarantees.
+70% of LunyScript is fully portable, providing the behavioral guarantees. 
+The engine-native code is just 30% - mostly automatable glue.
+
+## Results won't replicate precisely!
+
+They needn't. Close enough is good enough.
+
+Even if you have to tweak every physics value once more, the logic itself is already running in the new engine, unchanged!
+
+That's a lot more productive than having to start with _no code_, or worse: having to _fix and verify_ automatically converted code in a foreign environment.
+
+## Isn't this just xyz Reactive?
+
+It is reactive. 
+
+Let's compare it with UniRx (Unity only): 
+
+    this.OnCollisionEnterAsObservable()
+        .Where(c => c.gameObject.CompareTag("ball"))
+        .Do(_ => audioSource.Play())
+        .Subscribe();
+    
+    this.OnCollisionExitAsObservable()
+        .Where(c => c.gameObject.CompareTag("ball"))
+        .SelectMany(_ => Observable.Timer(TimeSpan.FromSeconds(2.5)))
+        .Do(_ => Instantiate(sparkles, other.position))
+        .Subscribe(_ => sparkles.Despawn());
+
+The same code in LunyScript: 
+
+    When.Collision.With("ball")
+        .Begins(Audio.Play("ball_tagged_loop"))
+        .Ends(Spawn("sparkles").At(Other).Run(Wait.Seconds(2.5), Despawn()));
+
+LunyScript code is 66% less verbose than UniRx and reads like intent.
+
+CS jargon is loading semantics with assumptions, raising questions: "Why would I 'subscribe' to despawning sparkles?"
+
 
 ## Any abstraction adds overhead! Games need performance!
 
@@ -105,11 +139,3 @@ Code we write in C# crosses the language boundary to C++ - this is rather costly
 It still worked wonderfully for Unity.
 
 Same with Blueprints: we know it's between 100x to 1,000x slower than C++ yet we use it extensively.
-
-## Results won't replicate precisely!
-
-They needn't. Close enough is good enough.
-
-Even if you have to tweak every physics value once more, the logic itself is already running in the new engine, unchanged!
-
-That's a lot more productive than having to start with _no code_, or worse: having to _fix and verify_ automatically converted code in a foreign environment.
