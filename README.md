@@ -2,11 +2,11 @@
 
 ## Same code, same outcome! In Unity, Godot, Unreal ...
 
-High-level game logic that runs at near-native performance. Any engine, same behaviour.
-
     When.Collision.With("ball")
         .Begins(Audio.Play("ball_tagged_loop"))
         .Ends(Spawn("sparkles").At(Other).Run(Wait.Seconds(2.5), Despawn()))
+
+High-level game logic that runs at near-native performance. Any engine, same behaviour.
 
 ## This can't possibly work !!
 
@@ -16,9 +16,12 @@ It does! Here's the proof: same code, same game, runs in Unreal, Unity, and Godo
 
 Built from scratch in under 20 days. Started with Unity, then ported to Godot and Unreal in 3 days each.
 
+
 ## But why?
 
-Visual tools like PlayMaker ($65, >3.4k reviews, 20k favorites) prove there's massive demand for simplifying game logic — even among professionals. But visual tools create vendor lock-in, debugging headaches, and users still apply structured programming.
+Visual tools like PlayMaker ($65, >3.4k reviews, 20k favorites) prove there's massive demand for simplifying game logic — even among professionals.
+
+But visual programming is painful to debug and refactor, hard to document and collaborate on - while still requiring programming skills.
 
 LunyScript gives you **high-level game logic as code** — readable, customizable, and runs across engines.
 
@@ -26,7 +29,7 @@ LunyScript gives you **high-level game logic as code** — readable, customizabl
 
 **For multi-engine studios:** Teams don't fragment along engine-specific roles and your code works across projects.
 
-**For everyone:** Less boilerplate, more intent. Write behavior, not plumbing. Build your own reusable or native library.
+**For everyone:** Less boilerplate, more intent. Write behavior, not plumbing. Build reusable libraries.
 
 ## Use Cases
 
