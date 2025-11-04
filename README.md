@@ -40,7 +40,7 @@ LunyScript gives you **high-level game logic as code** — readable, customizabl
 
 **Teach to larger audiences:** Teach horizontally across engines with a single code curriculum.
 
-**Decrease engine lock-in:** Take your assets **and your code** with you.
+**Decrease engine lock-in:** Take your assets **and your code** with you. Build long-lasting behaviour libraries.
 
 **Wider reach, lower costs:** Multi-engine frameworks and plugins can build on LunyScript's abstractions.
 
