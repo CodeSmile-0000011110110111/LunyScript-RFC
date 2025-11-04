@@ -25,22 +25,15 @@ But visual programming is painful to debug and refactor, hard to document and co
 
 LunyScript gives you **high-level game logic as code** — readable, customizable, and runs across engines.
 
+## Use Cases
+
 **For learners:** Your hard-earned skills and code transfer when you switch engines — no more restarting from scratch.
 
 **For multi-engine studios:** Teams don't fragment along engine-specific roles and your code works across projects.
 
 **For everyone:** Less boilerplate, more intent. Write behavior, not plumbing. Build reusable libraries.
 
-## Use Cases
-
-- Learn to code in complex engines faster, with less lock-in.
-- Teach gameplay programming - same curriculum, multiple engines.
-- Ideal for game jams and prototyping - be faster and write reusable code.
-- Projects in unfamiliar engines pose less programming risk.
- 
-## Benefits
-
-Lunyscript: Learn more with less! 
+## Features
 
 Declarative API with expressive semantics in multiple engines and multiple languages. Initially targets C#, Lua, and GDScript.
 
