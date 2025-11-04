@@ -16,6 +16,12 @@ It does! Here's the proof: same code, same game, runs in Unreal, Unity, and Godo
 
 Built from scratch in under 20 days. Started with Unity, then ported to Godot and Unreal in 3 days each.
 
+### Screenshots
+| Godot                                                                                           | Unity                                                                                             | Unreal                                                                                              |
+|---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| ![PlayMode_Godot_Editor.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Godot_Editor.png) | ![PlayMode_Unity_Editor.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unity_Editor.png) | ![PlayMode_Unreal_Editor.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unreal_Editor.png) |
+| ![PlayMode_Godot.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Godot.png)               | ![PlayMode_Unity.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unity.png)               | ![PlayMode_Unreal.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unreal.png)               |
+
 I didn't intend to make a playable game - it evolved naturally!
 
 ## But why?
@@ -43,13 +49,6 @@ LunyScript gives you **high-level game logic as code** — readable, customizabl
 **Decrease engine lock-in:** Take your assets **and your code** with you. Build long-lasting behaviour libraries.
 
 **Wider reach, lower costs:** Multi-engine frameworks and plugins can build on LunyScript's abstractions.
-
-## More Details
-| Godot                                                                                           | Unity                                                                                             | Unreal                                                                                              |
-|---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| ![PlayMode_Godot_Editor.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Godot_Editor.png) | ![PlayMode_Unity_Editor.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unity_Editor.png) | ![PlayMode_Unreal_Editor.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unreal_Editor.png) |
-| ![PlayMode_Godot.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Godot.png)               | ![PlayMode_Unity.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unity.png)               | ![PlayMode_Unreal.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unreal.png)               |
-
 
 ## Repositories & Source Code
 
