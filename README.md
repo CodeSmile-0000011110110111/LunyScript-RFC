@@ -103,7 +103,7 @@ They needn't. Close enough is good enough. The behaviour contract is most import
 
 Even if you have to tweak every physics value once more, the logic itself is already running in the new engine, unchanged!
 
-That's a lot more productive than having to start with _no code_, or worse: having to _fix and verify_ automatically converted code in a foreign environment.
+That's a lot more productive than having to start with _no code_, or worse: having to _verify and fix_ automatically converted code in a foreign environment.
 
 ## Isn't this just xyz Reactive?
 
