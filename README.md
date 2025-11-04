@@ -17,14 +17,13 @@ It does! Here's the proof: same code, same game, runs in Unreal, Unity, and Godo
 A vertical slice from scratch in under 20 days. Started with Unity, then ported to Godot and Unreal in 3 days each.
 
 The proof of concept shows that LunyScript can exercise all relevant game systems across engines:
-- Input Events
-- Physics Motion
-- Collision Events
+- Physics: Motion, Collision Events
 - Logic: Timer, Game Over, Variables
+- Assets: Find & Load
 - Scene Graph: Find, Create, Destroy "Things"
-- UI Events, HUD Value Binding
+- UI: Events, Value Binding
+- Input Events
 - Audio Playback
-- Scene Reload
 
 ## Screenshots
 | Godot                                                                                           | Unity                                                                                             | Unreal                                                                                              |
