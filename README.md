@@ -83,6 +83,39 @@ And their behaviour? There's no contract. In which order children receive lifecy
 
 LunyScript is stickier: It's **the uniform API** to bind them all!<br/>
 
+
+## Isn't this just xyz Reactive?
+
+It is reactive.
+
+Let's compare it with general-purpose (but Unity-only) UniRx:
+
+    this.OnCollisionEnterAsObservable()
+        .Where(c => c.gameObject.CompareTag("ball"))
+        .Do(_ => audioSource.Play())
+        .Subscribe();
+    
+    this.OnCollisionExitAsObservable()
+        .Where(c => c.gameObject.CompareTag("ball"))
+        .SelectMany(_ => Observable.Timer(TimeSpan.FromSeconds(2.5)))
+        .Do(_ => Instantiate(sparkles, other.position))
+        .Subscribe(_ => sparkles.Despawn());
+
+The same code in LunyScript:
+
+    When.Collision.With("ball")
+        .Begins(Audio.Play("ball_tagged_loop"))
+        .Ends(Spawn("sparkles").At(Other).Run(Wait.Seconds(2.5), Despawn()));
+
+LunyScript code is 66% less verbose than UniRx and reads like intent.
+
+CS jargon is loading semantics with assumptions, raising questions:
+
+> "Hmm .. select many an observable timer?"
+
+If you read it out loud it just makes no sense!<br/>
+That's where beginners and designers walk away!
+
 ## It's going to be a maintenance nightmare!
 
 The shared engine features and behaviours have settled. 
@@ -104,38 +137,6 @@ They needn't. Close enough is good enough. The behaviour contract is most import
 Even if you have to tweak every physics value once more, the logic itself is already running in the new engine, unchanged!
 
 That's a lot more productive than having to start with _no code_, or worse: having to _verify and fix_ automatically converted code in a foreign environment.
-
-## Isn't this just xyz Reactive?
-
-It is reactive. 
-
-Let's compare it with general-purpose (but Unity-only) UniRx: 
-
-    this.OnCollisionEnterAsObservable()
-        .Where(c => c.gameObject.CompareTag("ball"))
-        .Do(_ => audioSource.Play())
-        .Subscribe();
-    
-    this.OnCollisionExitAsObservable()
-        .Where(c => c.gameObject.CompareTag("ball"))
-        .SelectMany(_ => Observable.Timer(TimeSpan.FromSeconds(2.5)))
-        .Do(_ => Instantiate(sparkles, other.position))
-        .Subscribe(_ => sparkles.Despawn());
-
-The same code in LunyScript: 
-
-    When.Collision.With("ball")
-        .Begins(Audio.Play("ball_tagged_loop"))
-        .Ends(Spawn("sparkles").At(Other).Run(Wait.Seconds(2.5), Despawn()));
-
-LunyScript code is 66% less verbose than UniRx and reads like intent.
-
-CS jargon is loading semantics with assumptions, raising questions:
-
-> "Hmm .. select many an observable timer?"
-
-If you read it out loud it just makes no sense!<br/> 
-That's where beginners and designers walk away!
 
 ## Like, how? Reflection? Source Generation?
 
