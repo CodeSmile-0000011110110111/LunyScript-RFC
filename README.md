@@ -16,6 +16,7 @@ It does! Here's the proof: same code, same game, runs in Unreal, Unity, and Godo
 
 Built from scratch in under 20 days. Started with Unity, then ported to Godot and Unreal in 3 days each.
 
+I didn't intend to make a playable game - it evolved naturally!
 
 ## But why?
 
@@ -33,27 +34,22 @@ LunyScript gives you **high-level game logic as code** — readable, customizabl
 
 **For everyone:** Less boilerplate, more intent. Write behavior, not plumbing. Build reusable libraries.
 
-## Features
+## Benefits
 
-Declarative API with expressive semantics in multiple engines and multiple languages. Initially targets C#, Lua, and GDScript.
+Impress with results: less code and fewer errors than with conventional or visual programming.
 
-Impress with results: less code and fewer errors than with conventional imperative programming.
+Increased portability decreases engine lock-in. Take your assets **and your code** with you.
 
-Don't worry about the right choice: Increased portability decreases engine lock-in. Take your assets **and your code** to the other engine.
+Teach to larger audiences with a single code curriculum / tutorial.
 
-As tutor you can speak to a larger audience for free: you still only prepare a single code curriculum / tutorial.
+Reach larger audiences with cross-engine frameworks. Lower the cost of multi-engine plugin development.
 
-As framework developer you can earn more targeting multiple ecosystems while spending less time integrating in multiple engines.
-
-## Screenshots
+## More Details
 | Godot                                                                                           | Unity                                                                                             | Unreal                                                                                              |
 |---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | ![PlayMode_Godot_Editor.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Godot_Editor.png) | ![PlayMode_Unity_Editor.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unity_Editor.png) | ![PlayMode_Unreal_Editor.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unreal_Editor.png) |
 | ![PlayMode_Godot.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Godot.png)               | ![PlayMode_Unity.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unity.png)               | ![PlayMode_Unreal.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unreal.png)               |
 
-Porting twice to engines I hadn't previously worked with (Godot, Unreal) took 3 days each. Including asset integration and writing engine adapters. Physics behaviour tuning merely required adjusting value scales.
-
-It was also a very uplifting experience. I didn't intend to make a playable game - it evolved naturally!
 
 ## Repositories & Source Code
 
@@ -72,6 +68,9 @@ Note: API in Proof of Concept represents an early first draft. Final API will di
 
 - **Phase 1:** API Design, Unity Implementation, Portable Core (6 months)
 - **Phase 2:** Port to Godot, with Lua and GDScript, Demos & Docs, +2 engine PoCs (6 months)
+
+---
+---
 
 ---
 ---
