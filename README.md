@@ -14,15 +14,13 @@ It does! Here's the proof: same code, same game, runs in Unreal, Unity, and Godo
 
 [![LunyScript](media/ProofOfConceptVideoPlayer.png)](https://youtu.be/Vn38VLNDsuw "LunyScript: Same Code, Three Engines - Proof of Concept Demo")
 
-## Screenshots
-I didn't intend to make a playable game - it evolved naturally!
+Built from scratch in under 20 days. Started with Unity, then ported to Godot and Unreal in 3 days each.
 
+## Screenshots
 | Godot                                                                                           | Unity                                                                                             | Unreal                                                                                              |
 |---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | ![PlayMode_Godot_Editor.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Godot_Editor.png) | ![PlayMode_Unity_Editor.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unity_Editor.png) | ![PlayMode_Unreal_Editor.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unreal_Editor.png) |
 | ![PlayMode_Godot.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Godot.png)               | ![PlayMode_Unity.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unity.png)               | ![PlayMode_Unreal.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unreal.png)               |
-
-Built from scratch in under 20 days. Started with Unity, then ported to Godot and Unreal in 3 days each.
 
 ## But why?
 
