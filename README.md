@@ -71,15 +71,15 @@ Note: API in Proof of Concept represents an early first draft. Final API will di
 
 # Frequently Asked Questions (FAQ)
 
-## Isn't LunyScript just adding another custom engine API?
+## Isn't LunyScript just adding one more custom engine API?
 
 Engine API semantics are needlessly disparate: `BeginPlay`, `OnEnable`, `_enter_tree`. 
 Every engine has the same lifecycle events. Their semantics differ, their purpose is uniform.
 
 And their behaviour? There's no contract. In which order children receive lifecycle events varies.
 
-LunyScript is stickier: **the uniform API** to code them all!
-Different engine - same semantics, same behaviour.
+LunyScript is stickier: It's **the uniform API** to bind them all!
+Different engine, different language - same behaviour, same semantics.
 
 ## It's going to be a maintenance nightmare!
 
