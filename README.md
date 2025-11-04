@@ -2,11 +2,11 @@
 
 ## Same code, same outcome! In Unity, Godot, Unreal ...
 
+High-level game logic that runs at near-native performance. Any engine, same behaviour.
+
     When.Collision.With("ball")
         .Begins(Audio.Play("ball_tagged_loop"))
         .Ends(Spawn("sparkles").At(Other).Run(Wait.Seconds(2.5), Despawn()))
-
-High-level game logic that runs at near-native performance. Any engine, same behaviour.
 
 ## This can't possibly work !!
 
