@@ -6,7 +6,7 @@
         .Begins(Audio.Play("ball_tagged_loop"))
         .Ends(Spawn("sparkles").At(Other).Run(Wait.Seconds(2.5), Despawn()))
 
-High-level game logic that runs at near-native performance. Any engine, same behaviour.
+Different engine, different language - same behaviour, same semantics!
 
 ## This can't possibly work !!
 
@@ -28,7 +28,7 @@ Built from scratch in under 20 days. Started with Unity, then ported to Godot an
 
 But visual programming is painful to debug and refactor, hard to document and collaborate on - yet still requiring imperative programming skills.
 
-LunyScript gives you **high-level game logic as code** — readable, customizable, and runs across engines.
+LunyScript gives you **high-level game logic as code at near-native performance** — readable, customizable, and runs across engines.
 
 ## Use Cases
 
@@ -79,7 +79,6 @@ Every engine has the same lifecycle events. Their semantics differ, their purpos
 And their behaviour? There's no contract. In which order children receive lifecycle events varies.
 
 LunyScript is stickier: It's **the uniform API** to bind them all!<br/>
-Different engine, different language - same behaviour, same semantics.
 
 ## It's going to be a maintenance nightmare!
 
