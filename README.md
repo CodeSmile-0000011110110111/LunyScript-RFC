@@ -129,10 +129,10 @@ The same code in LunyScript:
 LunyScript code is 66% less verbose than UniRx and reads like intent.
 
 CS jargon is loading semantics with assumptions, raising questions:
-"Hmm .. select many an observable Timer?"
+"Hmm .. select many an observable timer?"
 
 If you read it out loud it just makes no sense! 
-That's where beginners struggle.
+That's where beginners walk away.
 
 
 ## Like, how? Reflection? Source Generation?
