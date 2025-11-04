@@ -134,9 +134,8 @@ CS jargon is loading semantics with assumptions, raising questions:
 
 > "Hmm .. select many an observable timer?"
 
-If you read it out loud it just makes no sense! 
-That's where beginners walk away.
-
+If you read it out loud it just makes no sense!<br/> 
+**That's where you lose beginners and designers.**
 
 ## Like, how? Reflection? Source Generation?
 
