@@ -27,31 +27,35 @@ LunyScript C# code shall look something like this, and will be available in Lua 
 
     public class Police : LunyScript
     {
-        public Police()
+        public Police(ScriptData data)
         {
-            When(Collision.Enter("ball"), Run.InOrder(
-                Audio.Play(),
-                Prefab.Spawn("GoldCube").Times(3),
-                Variable.Global.Increment("Score"),
-                Collision.Other.SendMessage("EnableGlow"),
-                Wait.Seconds(1),
-                Collision.Other.SendMessage("DisableGlow"),
-            );
+            When.Collision.With("ball")
+                .Begins(
+                    Audio.Play(),
+                    Prefab["GoldCube"].Create().Position(Other).Amount(3),
+                    GlobalVariable["Score"].Increment(),
+                    Other.SendMessage("EnableGlow"))
+                .Ends(
+                    Wait.Seconds(1),
+                    Other.SendMessage("DisableGlow"));
         
             // user enters menu
-            When.Input(Key.Escape, ShowMenu());
-            When(Menu.Button.Pressed("Restart"), Run.AtOnce(
-                Audio.Play(button_click),
-                Variable.Global.Set("Score", 0),
-                Stage.Reload()
-            );
+            When.Input[Key.Escape].Pressed(ShowMenu());
+            When.Button["Restart"]
+                .Hovered(Audio.Play(data.ButtonHoverSound))
+                .Pressed(
+                    Self.Disable(),
+                    GlobalVariable["Score"].Assign(0),
+                    Audio.Play(data.ButtonClickSound),
+                    Stage.Reload());
         
-            // police car signal lights
-            var police = SceneGraph["PoliceCar"]; // "Find" operation internally cached
-            Forever(Run.InOrder(
-                police.Enable("RedLight"), police.Disable("BlueLight"), Wait.Seconds(0.1),
-                police.Disable("RedLight"), police.Enable("BlueLight"), Wait.Seconds(0.12)
-            );
+            // police car signal lights; "Find" results internally cached
+            var police = SceneGraph["PoliceCar"];
+            Repeat.Forever(
+                police.Enable("RedLight").Disable("BlueLight"),
+                Wait.Seconds(0.1),
+                police.Disable("RedLight").Enable("BlueLight"), 
+                Wait.Seconds(0.12));
         }
     }
 
