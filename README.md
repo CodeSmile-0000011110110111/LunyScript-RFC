@@ -172,4 +172,4 @@ the commonplace trainwrecks:
         gameObject.transform.GetComponent<Rigidbody>().Sleep();
     }
 
-We all see it on a worryingly regular basis.
+As seen on a worryingly regular basis.
