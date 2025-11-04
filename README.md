@@ -97,7 +97,7 @@ The engine-native code is just 30% - mostly automatable glue.
 
 ## Results won't replicate precisely!
 
-They needn't. Close enough is good enough.
+They needn't. Close enough is good enough. The behaviour contract is most important!
 
 Even if you have to tweak every physics value once more, the logic itself is already running in the new engine, unchanged!
 
