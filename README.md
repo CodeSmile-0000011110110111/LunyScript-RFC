@@ -1,17 +1,32 @@
 # LunyScript
 
-## Code gameplay once. Same outcome in Unity, Godot, Unreal ...
+## Same code, same outcome! In Unity, Godot, Unreal ...
 
-Bet on the wrong horse? Our assets are already portable. LunyScript makes your gameplay code portable, too. 
+    When.Collision.With("ball")
+        .Begins(Audio.Play("ball_tagged_loop"))
+        .Ends(Spawn("sparkles").At(Other).Run(Wait.Seconds(2.5), Despawn()))
+
+High-level game logic that runs at near-native performance. Any engine, same behaviour.
 
 ## This can't possibly work !!
 
-I took this idea in under 20 days from scratch to proof of concept in Unreal, Unity, and Godot.
+It does! Here's the proof: same code, same game, runs in Unreal, Unity, and Godot.
 
 [![LunyScript](media/ProofOfConceptVideoPlayer.png)](https://youtu.be/Vn38VLNDsuw "LunyScript: Same Code, Three Engines - Proof of Concept Demo")
 
-The engine-native code is just 30% - mostly automatable glue. 70% of LunyScript is fully portable, providing behavioral guarantees.
+Built from scratch in under 20 days. Started with Unity, then ported to Godot and Unreal in 3 days each.
 
+## But why?
+
+Visual tools like PlayMaker (60€, 3.4k reviews, 20k favorites) prove there's massive demand for simplifying game logic — even among professionals. But visual tools create vendor lock-in, debugging headaches, and users still need to know structured programming concepts.
+
+LunyScript gives you **high-level game logic as code** — readable, customizable, and runs across engines.
+
+**For learners:** Your hard-earned skills and code transfer when you switch engines — no more restarting from scratch.
+
+**For multi-engine studios:** Teams don't fragment along engine-specific roles and your code works across projects.
+
+**For everyone:** Less boilerplate, more intent. Write behavior, not plumbing. Build your own reusable or native library.
 
 ## Use Cases
 
@@ -76,7 +91,7 @@ Godot is growing strong but faces challenges convincing a risk averse industry o
 Market leader Unity has recovered from its 2023 runtime fee debacle. But continues to lose 1-2% market share year over year. 
 
 Flax, Stride, Cocos, Unigine - competitive alternatives few even know. 
-No surprise: our specializations _evolved_ from "Game Programmer" to "Unreal/Unity Programmer".
+No surprise: our specializations _evolved_ from "Game Programmer" to "Unreal Programmer" and "Unity Programmer".
 
 Engine fragmentation is growing, the landscape shifting. Career opportunities everywhere, but where to place your bets? 
 
@@ -178,15 +193,6 @@ That's **lock-in** with the first line of code. LunyScript loosens the grip of e
 
 LunyScript is stickier: **the uniform API** to program in any engine! 
 
-## Any abstraction adds overhead! Games need performance!
-
-We're long past the days when we needed to count bytes and CPU cycles. Our games are already full of layers of abstractions. 
-
-Code we write in C# crosses the language boundary to C++ - this is rather costly. 
-It still worked wonderfully for Unity.
-
-Same with Blueprints: we know it's between 100x to 1,000x slower than C++ yet we use it extensively.
-
 ## It's going to be a maintenance nightmare!
 
 The shared engine features have settled. 
@@ -197,6 +203,18 @@ Anyone can add whatever they want however.
 
 The engine adapters and observers are in separate, engine-specific repositories.
 I needn't manage and maintain every engine integration myself.
+
+The engine-native code is just 30% - mostly automatable glue. 
+70% of LunyScript is fully portable, providing the behavioral guarantees.
+
+## Any abstraction adds overhead! Games need performance!
+
+We're long past the days when we needed to count bytes and CPU cycles. Our games are already full of layers of abstractions.
+
+Code we write in C# crosses the language boundary to C++ - this is rather costly.
+It still worked wonderfully for Unity.
+
+Same with Blueprints: we know it's between 100x to 1,000x slower than C++ yet we use it extensively.
 
 ## Results won't replicate precisely!
 
