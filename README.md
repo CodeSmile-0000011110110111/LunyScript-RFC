@@ -24,7 +24,7 @@ Built from scratch in under 20 days. Started with Unity, then ported to Godot an
 
 ## But why?
 
-Visual tools like PlayMaker ($65, >3.4k reviews, 20k favorites) prove there's massive demand for simplifying game logic — even among professionals.
+**Visual tools like PlayMaker** ($65, >3.4k reviews, 20k favorites) prove there's massive demand for simplifying game logic — even among professionals.
 
 But visual programming is painful to debug and refactor, hard to document and collaborate on - while still requiring programming skills.
 
