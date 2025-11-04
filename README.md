@@ -158,9 +158,7 @@ language bindings (C# to Lua, C# to GDScript).
 We're long past the days when we needed to count bytes and CPU cycles. Our games are already full of layers of abstractions.
 
 Code we write in C# crosses the language boundary to C++ - this is rather costly.
-It still worked wonderfully for Unity.
-
-Same with Blueprints: we know it's between 100x to 1,000x slower than C++ yet we use it extensively.
+It still worked wonderfully for Unity. Same with Blueprints: we know it's between 100x to 1,000x slower than C++ yet we use it extensively.
 
 LunyScript, through its central processing concept and internal caching, may even
 prove to be faster when compared to ubiquitous uses of `GameObject.Find("")` or
