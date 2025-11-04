@@ -18,7 +18,7 @@ Built from scratch in under 20 days. Started with Unity, then ported to Godot an
 
 ## But why?
 
-Visual tools like PlayMaker (60€, 3.4k reviews, 20k favorites) prove there's massive demand for simplifying game logic — even among professionals. But visual tools create vendor lock-in, debugging headaches, and users still need to know structured programming concepts.
+Visual tools like PlayMaker ($65, >3.4k reviews, 20k favorites) prove there's massive demand for simplifying game logic — even among professionals. But visual tools create vendor lock-in, debugging headaches, and users still apply structured programming.
 
 LunyScript gives you **high-level game logic as code** — readable, customizable, and runs across engines.
 
