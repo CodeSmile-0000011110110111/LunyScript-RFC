@@ -107,7 +107,7 @@ That's a lot more productive than having to start with _no code_, or worse: havi
 
 It is reactive. 
 
-Let's compare it with UniRx (Unity only): 
+Let's compare it with general-purpose (but Unity-only) UniRx: 
 
     this.OnCollisionEnterAsObservable()
         .Where(c => c.gameObject.CompareTag("ball"))
@@ -128,17 +128,12 @@ The same code in LunyScript:
 
 LunyScript code is 66% less verbose than UniRx and reads like intent.
 
-CS jargon is loading semantics with assumptions, raising questions: "Why would I 'subscribe' to despawning sparkles?"
+CS jargon is loading semantics with assumptions, raising questions:
+"Hmm .. select many an observable Timer?"
 
+If you read it out loud it just makes no sense! 
+That's where beginners struggle.
 
-## Any abstraction adds overhead! Games need performance!
-
-We're long past the days when we needed to count bytes and CPU cycles. Our games are already full of layers of abstractions.
-
-Code we write in C# crosses the language boundary to C++ - this is rather costly.
-It still worked wonderfully for Unity.
-
-Same with Blueprints: we know it's between 100x to 1,000x slower than C++ yet we use it extensively.
 
 ## Like, how? Reflection? Source Generation?
 
@@ -157,3 +152,24 @@ while deferring native execution to the 'end of frame' event.
 A simple source generator will be used to create the API's static 
 language bindings (C# to Lua, C# to GDScript).
 
+## Any abstraction adds overhead! Games need performance!
+
+We're long past the days when we needed to count bytes and CPU cycles. Our games are already full of layers of abstractions.
+
+Code we write in C# crosses the language boundary to C++ - this is rather costly.
+It still worked wonderfully for Unity.
+
+Same with Blueprints: we know it's between 100x to 1,000x slower than C++ yet we use it extensively.
+
+LunyScript, through its central processing concept and internal caching, may even
+prove to be faster when compared to ubiquitous uses of `GameObject.Find("")` or
+the commonplace trainwrecks:
+
+    if (gameObject.transform.GetComponent<Rigidbody>() != null)
+    {
+        gameObject.transform.GetComponent<Rigidbody>().linearVelocity = 0;
+        gameObject.transform.GetComponent<Rigidbody>().angularVelocity = 0;
+        gameObject.transform.GetComponent<Rigidbody>().Sleep();
+    }
+
+We all see it on a worryingly regular basis.
