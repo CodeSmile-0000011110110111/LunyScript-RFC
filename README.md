@@ -20,10 +20,9 @@ The proof of concept shows that LunyScript can exercise relevant game systems:
 - Input Events
 - Physics Motion
 - Collision Events
+- Logic: Timer, Game Over, Variables
 - "Things": Show/Hide, Create/Destroy
-- Variables with UI Bindings
-- Logic: Timer, Game Over
-- UI Events
+- UI: Events, Value Binding
 - Audio Playback
 - Scene Reload
 
