@@ -36,13 +36,13 @@ LunyScript gives you **high-level game logic as code** — readable, customizabl
 
 ## Benefits
 
-Impress with results: less code and fewer errors than with conventional or visual programming.
+**Impress with results:** Less code and fewer errors than with conventional or visual programming.
 
-Increased portability decreases engine lock-in. Take your assets **and your code** with you.
+**Teach to larger audiences:** Teach horizontally across engines with a single code curriculum.
 
-Teach to larger audiences with a single code curriculum / tutorial.
+**Decrease engine lock-in:** Take your assets **and your code** with you.
 
-Reach larger audiences with cross-engine frameworks. Lower the cost of multi-engine plugin development.
+**Wider reach, lower costs:** Multi-engine frameworks and plugins can build on LunyScript's abstractions.
 
 ## More Details
 | Godot                                                                                           | Unity                                                                                             | Unreal                                                                                              |
