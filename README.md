@@ -78,7 +78,7 @@ Every engine has the same lifecycle events. Their semantics differ, their purpos
 
 And their behaviour? There's no contract. In which order children receive lifecycle events varies.
 
-LunyScript is stickier: It's **the uniform API** to bind them all!
+LunyScript is stickier: It's **the uniform API** to bind them all!<br/>
 Different engine, different language - same behaviour, same semantics.
 
 ## It's going to be a maintenance nightmare!
