@@ -16,10 +16,11 @@ It does! Here's the proof: same code, same game, runs in Unreal, Unity, and Godo
 
 A vertical slice from scratch in under 20 days. Started with Unity, then ported to Godot and Unreal in 3 days each.
 
-The proof of concept LunyScripts handle:
-- Input
-- Linear Motion
+The proof of concept shows that LunyScript can exercise:
+- Input Events
+- Physics Motion
 - Collision Events
+- Show & Hide "Things"
 - Create & Destroy "Things"
 - Timers & Score
 - Variables bind to HUD 
