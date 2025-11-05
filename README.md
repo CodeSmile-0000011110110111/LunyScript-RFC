@@ -53,10 +53,9 @@ LunyScript gives you **high-level game logic as code at near-native performance*
 
 ## Roadmap
 
-- **Phase 1:** API Design, Portable Abstractions, Unity Implementation + Demos, Docs (6 months => Q1/Q2 2026)
-- **Phase 2:** Port to Godot w/ Demos; Cross-Engine Verification Tests; Polish API & Onboarding (6 months => Q3/Q4 2026)
+- **Phase 1:** Unity Implementation; API Design; Portable Layer; Demos and Docs (6 months => Q1/Q2 2026)
+- **Phase 2:** Port to Godot w/ Demos; Cross-Engine Verification Tests; Polish Onboarding (6 months => Q3/Q4 2026)
 - **Phase 3:** Promote to Learners/Educators; Stabilize Architecture & Behaviour Contracts (4 months = Q1 2027)
-- **Phase 4:** (LunyScript Lua Modding in Published Project) || (More Languages/Engines) || ?? .. (6 months => Q2 2027)
 
 ### **Long-Term Goals** 
 

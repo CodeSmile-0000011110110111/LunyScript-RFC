@@ -13,7 +13,6 @@ navigation:
 # Exclude files from processing
 exclude:
   - private/
-  - scratchpad/
   - .idea/
   - Guidelines.md
   - QUESTIONS.md

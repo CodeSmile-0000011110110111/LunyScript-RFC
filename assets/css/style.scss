@@ -4,6 +4,13 @@
 @import "{{ site.theme }}";
 
 /* Fix navigation styling */
+#banner {
+  background: #1a1a1a;
+  border-bottom: 2px solid #0090ff;
+  padding: 20px 0;
+  margin-bottom: 40px;
+}
+
 #banner nav {
   text-align: center;
 }
