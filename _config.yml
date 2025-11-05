@@ -1,7 +1,7 @@
 # Jekyll configuration for GitHub Pages
 theme: jekyll-theme-midnight
 title: LunyScript
-description: Cross-engine scripting language for portable game logic
+description: Cross-Engine Gameplay Scripting
 
 # Navigation
 navigation:
@@ -27,6 +27,13 @@ exclude:
 include:
   - README.md
   - CHANGELOG.md
+
+# Markdown processor
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  parse_block_html: true
 
 # Plugins
 plugins:
