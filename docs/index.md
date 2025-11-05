@@ -10,6 +10,7 @@ Welcome to the LunyScript design documentation. This section covers the architec
 - [Paradigms](Paradigms.md) - Programming paradigms and design patterns
 - [Tech Talk](TechTalk.md) - Technical deep-dive and implementation details
 - [Background](Background.md) - Project motivation and context
+- [FAQ](../FAQ.md) - Frequently asked questions
 
 ### Design Decisions
 See [Architectural Decision Records](../decisions/) for detailed rationale behind key design choices:
@@ -20,5 +21,5 @@ See [Architectural Decision Records](../decisions/) for detailed rationale behin
 
 ## 🔗 Quick Links
 - [← Back to Home](../)
-- [Repository Index](../INDEX.md)
+- [Repository Index](../REPOSITORY-INDEX.md)
 - [Join Discussions →](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC/discussions/)
