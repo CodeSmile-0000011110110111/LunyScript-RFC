@@ -24,7 +24,7 @@ It does! Here's the proof: same code, same game, runs in Unreal, Unity, and Godo
 
 A vertical slice from scratch in under 20 days. Started with Unity, then ported to Godot and Unreal in 3 days each.
 
-The proof of concept shows that LunyScript can exercise all relevant game systems across engines:
+The proof of concept shows that LunyScript can orchestrate essential game systems across engines:
 - Input, Physics, Collision, Assets, Scene Graph, UI, Variables, Audio
 
 ## Screenshots
