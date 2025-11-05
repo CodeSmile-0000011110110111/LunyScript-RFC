@@ -1,0 +1,38 @@
+# Jekyll configuration for GitHub Pages
+theme: jekyll-theme-midnight
+title: LunyScript
+description: Cross-engine scripting language for portable game logic
+
+# Navigation
+navigation:
+  - title: Design
+    url: /docs/
+  - title: Discussions
+    url: https://github.com/CodeSmile-0000011110110111/LunyScript-RFC/discussions/
+
+# Exclude files from processing
+exclude:
+  - private/
+  - scratchpad/
+  - .idea/
+  - Guidelines.md
+  - QUESTIONS.md
+  - TODO.md
+  - .gitmodules
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+
+# Include specific root files
+include:
+  - README.md
+  - CHANGELOG.md
+
+# Plugins
+plugins:
+  - jekyll-relative-links
+
+# Convert README.md to index.html
+relative_links:
+  enabled: true
+  collections: false
