@@ -1,6 +1,6 @@
 # TODO
 
-## Architecture Design (Current Phase)
+## Design
 
 - [ ] Define core abstractions (ICoroutineScheduler, IStateMachine, IBehaviorTree, IEventDispatcher)
 - [ ] Design object registration system and identity management
@@ -13,11 +13,7 @@
 
 - [ ] Document remaining architectural decisions as they're made (in `/decisions/`)
 - [ ] Add concrete code comparisons to README (Unity vs Godot vs LunyScript)
-- [ ] Update roadmap - PoC is done, define Phase 1 milestones
 
-## README Improvements (Lower Priority)
+## README - Landing Page
 
-- [ ] add call to action (invite feedback), link to GitHub Disc./Issues, maybe Discord?
 - [ ] Reorganize sections: pitch → solution → use cases → proof → vision
-- [ ] Clarify the ask (feedback, collaborators, funding, users?)
-- [ ] Add how to try it (demo, playground, install instructions)
