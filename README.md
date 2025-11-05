@@ -6,8 +6,8 @@
         .Begins(Audio.Play("ball_tagged_loop"))
         .Ends(Spawn("sparkles").At(Other).Run(Wait.Seconds(2.5), Despawn()))
 
-Different engine - same behaviour!<br/>
-Different language - same semantics!
+Different Engine ==> Same Behaviour<br/>
+Different Language ==> Same Semantics
 
 ## Proof: Same Code, Three Engines
 
