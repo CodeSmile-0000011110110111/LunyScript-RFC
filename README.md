@@ -1,6 +1,6 @@
 # LunyScript - Cross-Engine Gameplay Scripting
 
-## Same code, same outcome! In Unity, Godot, Unreal ...
+## Works the same in Unity, Godot, Unreal, ...
 
     When.Collision.With("ball")
         .Begins(Audio.Play("ball_tagged_loop"))
