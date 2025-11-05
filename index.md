@@ -19,7 +19,8 @@ Different engine, different language - same behaviour, same semantics!
 
 It does! Here's the proof: same code, same game, runs in Unreal, Unity, and Godot.
 
-[![LunyScript](media/ProofOfConceptVideoPlayer.png)](https://youtu.be/Vn38VLNDsuw "LunyScript: Same Code, Three Engines - Proof of Concept Demo")
+[![LunyScript](media/LunyScript_Demo.gif)](https://youtu.be/Vn38VLNDsuw "LunyScript: Same Code, Three Engines - Proof of Concept Demo")<br/>
+**[Watch the full video on Youtube (1:20)](https://youtu.be/Vn38VLNDsuw "LunyScript: Same Code, Three Engines - Proof of Concept Demo")**
 
 A vertical slice from scratch in under 20 days. Started with Unity, then ported to Godot and Unreal in 3 days each.
 
