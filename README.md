@@ -16,7 +16,7 @@ Different engine, different language - same behaviour, same semantics!
 
 ## Why LunyScript?
 
-**For learners:** Skills and code transfer across engines. No more starting from scratch when switching.
+**For learners:** Simple, fun! Skills and code transfer across engines. No more starting from scratch!
 
 **For studios:** Teams don't fragment along engine-specific roles. Code works across projects.
 
