@@ -51,23 +51,45 @@ LunyScript gives you **high-level game logic as code at near-native performance*
 
 **Wider reach, lower costs:** Multi-engine frameworks and plugins can build on LunyScript's abstractions.
 
-## Repositories & Source Code
+## Roadmap
 
-Note: API in Proof of Concept represents an early first draft. Final API will differ in key aspects.
+- **Phase 1:** API Design, Portable Abstractions, Unity Implementation + Demos, Docs (6 months => Q1/Q2 2026)
+- **Phase 2:** Port to Godot w/ Demos; Cross-Engine Verification Tests; Polish API & Onboarding (6 months => Q3/Q4 2026)
+- **Phase 3:** Promote to Learners/Educators; Stabilize Architecture & Behaviour Contracts (4 months = Q1 2027)
+- **Phase 4:** (LunyScript Lua Modding in Published Project) || (More Languages/Engines) || ?? .. (6 months => Q2 2027)
+
+### **Long-Term Goals** 
+
+- Foster contributions, invite FOSS engines
+- Encourage autonomous maintainers of Engine Adapter (they know 'their' engine best)
+- Support Cross-Engine Framework (CEF) developers adopting _Luny_ (cross-engine abstraction layer)
+
+## Join the Discussion!
+
+**Share your thoughts, ask questions, propose ideas!** 
+
+[Join the Discussions](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC/discussions/) 
+to help shape the future of cross-engine software development!
+
+Luny: Adding value to multiple engines on an equal footing.
+
+---
+---
+
+# Proof of Concept Links
+
+## Repositories
 
 | [Godot PoC Repository](https://github.com/CodeSmile-0000011110110111/LunyScratch_Examples_Godot)            | [Unity PoC Repository](https://github.com/CodeSmile-0000011110110111/LunyScratch_Examples_Unity)  | [Unreal PoC Repository](https://github.com/CodeSmile-0000011110110111/LunyScratch_Examples_Unreal)|
 |---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 
-### PoC Source Code Examples
+### PoC Example Source Code
+
+Note: API in Proof of Concept represents an early first draft. Final API will differ in key aspects.
+
 - [PoliceCarScratch.cs](2025-10_Proof_Of_Concept_Demo/PoliceCarScratch.cs)
 - [CompanionCubeScratch.cs](2025-10_Proof_Of_Concept_Demo/CompanionCubeScratch.cs)
 - [HitEffectScratch.cs](2025-10_Proof_Of_Concept_Demo/HitEffectScratch.cs)
-
-
-## Roadmap
-
-- **Phase 1:** API Design, Unity Implementation, Portable Core (6 months)
-- **Phase 2:** Port to Godot, with Lua and GDScript, Demos & Docs, +2 engine PoCs (6 months)
 
 ---
 ---
