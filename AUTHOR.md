@@ -1,20 +1,66 @@
 # About the Author
 
-## My Personal Experience
+Hi! I'm Steffen from Germany. 
 
-- **1999** - Used visual state machines in my first game designer job (8+ GameBoy titles)
-- **2002** - Created a declarative, state machine-based Lua script API (SpellForce, BattleForge)
-- **2009** - Shipped three main titles and three add-ons, all heavily scripted. Onboarding was easy.
-  - Script logic was 1-3% runtime CPU usage. The key? Lua transforms to native C++ on map load.
-- **2010** - Worked freelance, wrote several game engine books (Learn cocos2d, Learn SpriteBuilder)
-- **2015** - Began working on digital marketing projects. Unity only.
-- **2022** - Began creating FOSS projects. For fun. With an estranged feeling that _something is missing_.
-- **2025** - Spent half a year integrating Lua in Unity...
+<img src="media/history/steffen.jpg" width="150">
+
+I've been modding and making games since the 1990s. I particularly enjoyed modding with scripting languages (Hexen, Quake). My first paycheck: beta-testing for 3D Realms. Work-Life perfectly balanced: "I'm not playing, mum. I'm working!" :)
+
+<img src="media/history/shadow-warrior.jpg" width="300">
+
+Around 2000 I worked as designer on eight GameBoy titles in three years. We used visual statemachines to script entire games. It was super productive and fun.
+
+<img src="media/history/Die-Maus-Verrueckte-Olympiade.png" width="300">
+
+Then I transferred the statemachines concept to a Lua-based declarative API: command units, script dialogue and cutscenes. Designers loved the power, onboarding was easy. We created three heavily scripted main titles with three add-ons (SpellForce, BattleForge). 
+
+<img src="media/history/spellforce2.jpg" width="300">
+
+Then I began freelancing for mobile as it exploded. I had fun writing game engine books (Learn cocos2d, Learn SpriteBuilder). 
+
+<img src="media/history/learn-cocos2d.jpg" width="150">
+<img src="media/history/learn-spritebuilder.jpg" width="150">
+
+2015 onwards I stepped into 'digital marketing'. As train buff, I just couldn't resist creating a realtime 3D Train Configurator in Unity for Siemens. It had a Virtual Reality mode with hand gesture interaction.
+
+<img src="media/history/SiemensInspiroConfigurator.png" width="300">
+
+What followed was an extreme mixture of serial low-budget projects and innovative high-tech entertainment experiences. Mostly Unity, plenty of Lidars and Projectors. 
+
+<img src="media/history/Nat-Geo-Encounter-NY.jpg" width="300">
+
+Since 2022 I've done excessive R&D, prototyping, frameworking. Searching for 'the one' - the project/product combining self-efficacy with self-sufficiency. It led to interesting discoveries...
+
+<img src="media/history/MultiPal.png" width="300">
+
+Finally, I just went ahead and spent months integrating Lua in Unity as alternative language. With Unity's full API exposed.
+
+<img src="media/history/LunyLogo.png" width="300">
+
+But .. this meant it was no different from removed UnityScript and UnrealScript: a simpler language alright, but with the engine's full API complexity!
+
+Researching into the history and future of game engines, I came across many beginner tutorials, calls for help, and code snippets.
+
+Then it struck me.
 
 ## The Realization
 
-I made the same mistake as GDScript, UnityScript, UnrealScript!
+We teach young game engine drivers Volkswagen here, Chrysler there. We caution: "Don't learn driving with a Porsche!"
 
-I thought: first the entire API. Then I can add a simple layer.
+### This makes no sense! 
 
-**Now I'm convinced: we need the simple API first and foremost.**
+[I proclaimed: all engines are created equal!](https://www.reddit.com/r/gamedev/comments/1nmtuqg/every_industrygrade_game_engine_has_the_same_api/) 
+
+The backlash was encouraging. It's impossible? 
+
+### Now I'm convinced: 
+
+We can, should, **MUST** standardize entry-level game engine programming! 
+
+It hurts everyone if beginners get locked into APIs and conceptual models - they needn't be different in the first place! It lowers the level of education since we're too focused on superficial details (language, boilerplate, API semantics) rather than teaching concepts, patterns, practices! 
+
+### I also recalled: 
+
+We frequently programmed the same things over and over again. Too small to abstract and reuse. Too many not to cause friction.  
+
+The client asks for Unreal. Minimal interactivity. Artists knew it, the programmers didn't. We denied: too risky.
