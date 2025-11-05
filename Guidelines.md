@@ -29,13 +29,14 @@
 ## File Organization
 
 ### Where Things Go
-- **Architecture.md** - Layer definitions, architectural concerns
-- **NamespaceStructure.md** - Namespace tree, usage patterns, repository structure
-- **QUESTIONS.md** - Centralized design questions (move to decisions/ when resolved)
+- **README.md** - Public-facing project overview
 - **TODO.md** - Current phase tasks, next steps
 - **CHANGELOG.md** - Completed work, design changes, decisions made
+- **QUESTIONS.md** - Centralized design questions (move to decisions/ when resolved)
+- **Guidelines.md** - Project conventions (this file)
+- **docs/Architecture.md** - Layer definitions, architectural concerns
+- **docs/NamespaceStructure.md** - Namespace tree, usage patterns, repository structure
 - **decisions/** - Architectural decision records
-- **README.md** - Public-facing project overview
 
 ## Naming Conventions
 
