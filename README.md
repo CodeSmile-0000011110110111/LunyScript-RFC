@@ -10,9 +10,8 @@ Different engine, different language - same behaviour, same semantics!
 
 ## Proof: Same Code, Three Engines
 
-![LunyScript Demo](media/LunyScript_Demo.gif)
-
-[![LunyScript Demo](media/LunyScript_Demo.gif)](https://youtu.be/Vn38VLNDsuw "LunyScript: Same Code, Three Engines - Proof of Concept Demo")
+[![LunyScript Demo](media/LunyScript_Demo.gif)](https://youtu.be/Vn38VLNDsuw "LunyScript: Same Code, Three Engines - Proof of Concept Demo")<br/>
+**[Watch the full video on Youtube (1:20)](https://youtu.be/Vn38VLNDsuw "LunyScript: Same Code, Three Engines - Proof of Concept Demo")**
 
 **✅ Same code, 3 engines, 20 days** | Unity → Godot: 3 days | Godot → Unreal: 3 days
 
