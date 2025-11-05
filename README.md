@@ -28,7 +28,7 @@ Common questions about LunyScript's approach, performance, maintenance, and tech
 
 ## 🎮 Proof of Concept
 
-Same code, same game, runs in three engines. Built in under 20 days.
+Same code, same game, runs in three engines. Built in under 20 days. [Demo Video](https://www.youtube.com/watch?v=Vn38VLNDsuw)
 
 | Godot | Unity | Unreal |
 |-------|-------|--------|
