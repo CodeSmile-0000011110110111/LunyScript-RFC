@@ -26,6 +26,11 @@
 - Purpose: "Why didn't I do X? Oh yeah, right..." - future reference
 - Update `/decisions/README.md` index when adding new decisions
 
+### Repository Index
+- **INDEX.md** provides a comprehensive overview of all repository contents
+- **Keep INDEX.md up to date** when adding/removing/reorganizing files
+- Update INDEX.md when creating new documentation, decisions, or major changes
+
 ## File Organization
 
 ### Where Things Go
