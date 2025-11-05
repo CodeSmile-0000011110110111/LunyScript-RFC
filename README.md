@@ -1,4 +1,4 @@
-# LunyScript
+# LunyScript - Cross-Engine Gameplay Scripting
 
 ## Same code, same outcome! In Unity, Godot, Unreal ...
 

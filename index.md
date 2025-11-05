@@ -1,6 +1,6 @@
 ---
 layout: default
-title: LunyScript - Cross-Engine Scripting Language
+title: LunyScript - Cross-Engine Gameplay Scripting
 ---
 
 # LunyScript
