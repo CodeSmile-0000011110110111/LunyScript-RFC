@@ -62,7 +62,7 @@ LunyScript gives you **high-level game logic as code at near-native performance*
 - **Phase 2:** Port to Godot w/ Demos; Cross-Engine Verification Tests; Polish Onboarding (6 months => Q3/Q4 2026)
 - **Phase 3:** Promote to Learners/Educators; Stabilize Architecture & Behaviour Contracts (4 months = Q1 2027)
 
-### **Long-Term Goals**
+### **Long-Term**
 
 - Foster contributions, invite FOSS engines
 - Encourage autonomous maintainers of Engine Adapter (they know 'their' engine best)
@@ -70,7 +70,7 @@ LunyScript gives you **high-level game logic as code at near-native performance*
 
 ---
 
-## Join the Discussion!
+# Join the Discussion!
 
 **Share your thoughts, ask questions, propose ideas!**
 
@@ -81,7 +81,7 @@ Luny: Adding value to multiple engines on an equal footing.
 
 ---
 
-# Proof of Concept Links
+# Proof of Concept
 
 ## Repositories
 
@@ -101,6 +101,6 @@ Note: API in Proof of Concept represents an early first draft. Final API will di
 
 ## Questions?
 
-**Check out the [Frequently Asked Questions (FAQ)](FAQ.md)** for answers about LunyScript's approach, performance, maintenance, and technical implementation.
+**Check out the [Frequently Asked Questions (FAQ)](FAQ.md)**
 
-Still have questions? [Join the discussion!](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC/discussions/)
+Then [koin the discussion!](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC/discussions/)
