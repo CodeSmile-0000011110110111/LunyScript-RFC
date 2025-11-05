@@ -1,0 +1,64 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Fix navigation styling */
+#banner nav {
+  text-align: center;
+}
+
+#banner nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+#banner nav li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+#banner nav li a {
+  background: #af0011;
+  border: 1px solid #0090ff;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: bold;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 12px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+  box-shadow: 0 1px 0 rgba(255,255,255,.1) inset;
+}
+
+#banner nav li a:hover {
+  background: #c90014;
+}
+
+/* Fix table rendering */
+table {
+  border-collapse: collapse;
+  margin: 20px 0;
+  width: 100%;
+}
+
+table th,
+table td {
+  border: 1px solid #373737;
+  padding: 8px 12px;
+}
+
+table th {
+  background: #212121;
+  font-weight: bold;
+}
+
+table tr:nth-child(even) {
+  background: #1a1a1a;
+}
