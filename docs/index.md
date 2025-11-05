@@ -6,6 +6,7 @@ Welcome to the LunyScript design documentation. This section covers the architec
 
 ### Core Documentation
 - [Vision](../VISION.md) - Long-term vision and desired outcomes
+- [Author](../AUTHOR.md) - About the author and personal experience
 - [Architecture](Architecture.md) - System architecture and layer structure
 - [Namespace Structure](NamespaceStructure.md) - API organization and usage patterns
 - [Paradigms](Paradigms.md) - Programming paradigms and design patterns

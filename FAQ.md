@@ -48,7 +48,7 @@ That's where beginners and designers walk away!
 
 The shared engine features and behaviours have settled. They are so fundamental to every project that they resist change.
 
-LunyScript will not chase fancy new features. Anyone can add whatever they want however.
+LunyScript will not chase fancy features. Anyone can add whatever they want however.
 
 The engine adapters and observers are in separate, engine-specific repositories. I needn't manage and maintain every engine integration myself.
 
