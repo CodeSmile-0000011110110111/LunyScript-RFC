@@ -27,9 +27,9 @@
 - Update `/decisions/README.md` index when adding new decisions
 
 ### Repository Index
-- **INDEX.md** provides a comprehensive overview of all repository contents
-- **Keep INDEX.md up to date** when adding/removing/reorganizing files
-- Update INDEX.md when creating new documentation, decisions, or major changes
+- **REPOSITORY-INDEX.md** provides a comprehensive overview of all repository contents
+- **Keep REPOSITORY-INDEX.md up to date** when adding/removing/reorganizing files
+- Update REPOSITORY-INDEX.md when creating new documentation, decisions, or major changes
 
 ## File Organization
 
