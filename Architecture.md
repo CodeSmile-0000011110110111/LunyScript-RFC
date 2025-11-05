@@ -2,20 +2,64 @@
 
 ## Core Layers
 
-### 1. Portable Core (70%)
-- **Pure abstractions** - no engine dependencies
-- **Behavioral contracts** - guaranteed execution order and semantics
-- **Decoupled implementations** - pluggable coroutines, state machines, behavior trees
+### 1. Luny
+**Namespace:** `Luny`
+**Change frequency:** Low - rarely changes once established
 
-#### Decoupled implementations => Notes
+- **Pure abstractions** - the cross-engine implementers' framework
+- **Core interfaces** - ICoroutineScheduler, IStateMachine, IBehaviorTree, IEventDispatcher
+- **Behavioral contracts** - execution order guarantees and semantic rules
+- **Zero engine dependencies** - foundation for any implementation
+
+#### Design Notes
   - Design contracts first - must think through abstraction boundaries before coding
   - Dependency injection - need initialization/configuration system to wire implementations
   - Boundary decisions - where to draw abstraction lines (too granular = verbose, too coarse = inflexible)
-- 
-### 2. Engine Adapter Layer (30%)
-- Engine-specific bindings and observers
-- Native event trapping and forwarding
-- Lifecycle management and integration
+
+### 2. LunyScript
+**Namespace:** `LunyScript`
+**Change frequency:** Medium - grows with API expansion, core logic stable
+
+- **Script execution logic** - processes user-written behaviors
+- **Built-in implementations** - default coroutines, FSMs, behavior trees
+- **Graph processing** - static graph traversal and evaluation
+- **Runtime services** - object registry, event dispatcher, frame scheduling
+- **Consumes Luny abstractions**
+- **Portable** - write once, runs on all engines
+
+### 3. Engine Adapters (per engine)
+**Namespaces:** `LunyScript.Unity`, `LunyScript.Godot`, `LunyScript.Unreal`
+**Change frequency:** High - evolves with engine API changes
+
+- **Engine-specific bindings** - Unity/Godot/Unreal integration
+- **Native event observers** - collision, input, lifecycle trapping
+- **Native API wrappers** - physics, audio, spawning, scene graph
+- **Lifecycle management** - heartbeat forwarding and frame synchronization
+- **Mostly mechanical glue** - straightforward bridging code
+
+#### Size Notes
+- Adapter complexity varies by engine (Unity simpler, Unreal more complex)
+- As API expands, adapter size grows proportionally
+
+---
+
+## Namespace Usage
+
+```csharp
+using Luny;                    // Implementers extending core (abstractions only)
+using LunyScript;              // Everyone - the main user-facing API
+using LunyScript.Unity;        // Unity projects - bootstrap and setup only
+
+// User code - just uses LunyScript
+When.Collision.With("ball")
+    .Begins(Audio.Play("sound"));
+
+// Implementer code - uses Luny abstractions
+class CustomScheduler : Luny.ICoroutineScheduler {
+    // Custom implementation
+}
+LunyScript.Configure(new CustomScheduler());
+```
 
 ---
 
@@ -125,15 +169,9 @@
 
 ---
 
-## Open Questions for Design Phase
+## Open Questions
 
-1. **Coroutine implementation:** Stackful vs stackless? How to handle across C#/Lua/GDScript?
-2. **FSM/BT ownership:** Per-object or shared/instanced?
-3. **Variable scope:** Global, per-scene, per-object? How to serialize?
-4. **Native interop:** How much native engine code should LunyScript scripts call directly?
-5. **Physics determinism:** Can we guarantee identical physics results? Should we?
-6. **Networking:** How does replication work across engines?
-7. **Asset references:** How to make asset paths portable across engines?
+See **QUESTIONS.md** for detailed list of unresolved design questions.
 
 ---
 
