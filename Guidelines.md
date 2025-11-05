@@ -16,8 +16,7 @@
 - **Actionable** - clear next steps, not just theory
 
 ### Terminology
-- Use "**Change frequency**" (Low/Medium/High) not "Stability" when describing layers
-- "Stability" sounds like "crashes often" - avoid this confusion
+- Use "**Change frequency**" (Low/Medium/High) when describing layers
 - Use "**Changes: Rare/Moderate/Frequent**" in visual diagrams
 
 ### Decision Recording
