@@ -17,6 +17,7 @@
 
 ## README Improvements (Lower Priority)
 
+- [ ] add call to action (invite feedback), link to GitHub Disc./Issues, maybe Discord?
 - [ ] Reorganize sections: pitch → solution → use cases → proof → vision
 - [ ] Clarify the ask (feedback, collaborators, funding, users?)
 - [ ] Add how to try it (demo, playground, install instructions)
