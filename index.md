@@ -42,7 +42,9 @@ The proof of concept shows that LunyScript can orchestrate essential game system
 
 But visual programming is painful to debug and refactor, hard to document and collaborate on - yet still requiring imperative programming skills.
 
-**Portability matters most for learners and educators:** switching engines means relearning everything from scratch. Skills, projects, and tutorials become engine-locked. Entry-level scripting shouldn't trap you.
+**Learners** are locked to the engine they learn: Skills and code don't transfer. Starting over hurts!
+**Educators** specialize in one engine, or heavily oversimplify. Patterns and best practices fall short.
+**Disparate engines** force us to reinvent wheels or use highly abstract, low-level libraries.
 
 LunyScript gives you **high-level game logic as code at near-native performance** — readable, customizable, and runs across engines.
 
