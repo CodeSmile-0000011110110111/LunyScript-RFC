@@ -3,11 +3,14 @@
 We can't change game engines' unique workflows and user interfaces.
 But we CAN lessen the impact of their disparate APIs and languages!
 
+## Statements
+
 A sustainable scripting solution shall be:
 
 **Portable & Open:**
 - Works across multiple engines, not just one
 - Is an API, not a language
+- Can be exposed in many languages
 - Is Free and Open Source
 
 **Beginner-Friendly:**
@@ -28,6 +31,8 @@ Pro-tier engines across the board will be more approachable to beginners. They l
 
 Education adopts a single entry-level game programming curriculum.
 
-Learnfluencers provide valuable head-to-head comparisons and can afford time to demo less popular engines.
+Learnfluencers provide valuable head-to-head engine comparisons and can afford time to demo less popular engines.
 
-Simple projects complete faster. Game Jams produce reusable code. Prototypes struggle less with technical issues. Visual Scripting users enjoy clarity of text-based declarative programming.
+Prototypes can be tested in multiple engines to find the most suitable solution.
+
+Simple projects complete faster. Game Jams produce reusable code. Prototypes struggle less with technical issues. Visual Scripting users find themselves more productive in text-based declarative programming.

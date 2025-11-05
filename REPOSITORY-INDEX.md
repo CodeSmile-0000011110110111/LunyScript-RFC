@@ -3,6 +3,7 @@
 ## 📋 Overview Documents
 - [README.md](README.md) - Project overview and introduction
 - [VISION.md](VISION.md) - Long-term vision and desired outcomes
+- [AUTHOR.md](AUTHOR.md) - About the author and personal experience
 - [FAQ.md](FAQ.md) - Frequently asked questions
 - [CHANGELOG.md](CHANGELOG.md) - Version history and changes
 - [QUESTIONS.md](QUESTIONS.md) - Open questions and considerations
