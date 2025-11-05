@@ -8,6 +8,20 @@
 
 Different engine, different language - same behaviour, same semantics!
 
+## Proof: Same Code, Three Engines
+
+[![LunyScript](media/ProofOfConceptVideoPlayer.png)](https://youtu.be/Vn38VLNDsuw "LunyScript: Same Code, Three Engines - Proof of Concept Demo")
+
+**✅ Same code, 3 engines, 20 days** | Unity → Godot: 3 days | Godot → Unreal: 3 days
+
+## Why LunyScript?
+
+**For learners:** Skills and code transfer across engines. No more starting from scratch when switching.
+
+**For studios:** Teams don't fragment along engine-specific roles. Code works across projects.
+
+**For everyone:** Less boilerplate, more intent. Write behavior, not plumbing. Build reusable libraries.
+
 ---
 
 ## 📖 Documentation & Resources
@@ -26,18 +40,16 @@ Common questions about LunyScript's approach, performance, maintenance, and tech
 
 ---
 
-## 🎮 Proof of Concept
+## 🎮 Proof of Concept Repositories
 
-Same code, same game, runs in three engines. Built in under 20 days. [Demo Video](https://www.youtube.com/watch?v=Vn38VLNDsuw)
-
-| Godot | Unity | Unreal |
+| [Godot PoC](https://github.com/CodeSmile-0000011110110111/LunyScratch_Examples_Godot) | [Unity PoC](https://github.com/CodeSmile-0000011110110111/LunyScratch_Examples_Unity) | [Unreal PoC](https://github.com/CodeSmile-0000011110110111/LunyScratch_Examples_Unreal) |
 |-------|-------|--------|
-| ![PlayMode_Godot_Editor.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Godot_Editor.png) | ![PlayMode_Unity_Editor.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unity_Editor.png) | ![PlayMode_Unreal_Editor.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unreal_Editor.png) |
-| ![PlayMode_Godot.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Godot.png) | ![PlayMode_Unity.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unity.png) | ![PlayMode_Unreal.png](2025-10_Proof_Of_Concept_Demo/screenshots/PlayMode_Unreal.png) |
+
+---
 
 ## 📋 Repository Contents
 
 - [REPOSITORY-INDEX.md](REPOSITORY-INDEX.md) - Complete file and folder index
 - [Guidelines.md](Guidelines.md) - Contribution and documentation guidelines
 - [CHANGELOG.md](CHANGELOG.md) - Version history and completed work
-- [TODO.md](TODO.md) - Current tasks, next steps
+- [TODO.md](TODO.md) - Current tasks and roadmap
