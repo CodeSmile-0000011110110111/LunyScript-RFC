@@ -11,7 +11,8 @@ title: LunyScript - Cross-Engine Gameplay Scripting
         .Begins(Audio.Play("ball_tagged_loop"))
         .Ends(Spawn("sparkles").At(Other).Run(Wait.Seconds(2.5), Despawn()))
 
-Different engine, different language - same behaviour, same semantics!
+Different Engine: Same Behaviour<br/>
+Different language: Same Semantics
 
 ---
 
