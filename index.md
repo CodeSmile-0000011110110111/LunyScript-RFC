@@ -25,11 +25,11 @@ It does! Here's the proof: same code, same game, runs in Unreal, Unity, and Godo
 
 A vertical slice from scratch in under 20 days. Started with Unity, then ported to Godot and Unreal in 3 days each.
 
+### What's Currently Implemented
+
 > 🚧 **Status: Proof of Concept - Not Production Ready**
 > LunyScript is currently in early research and design phase. The proof of concept demonstrates feasibility, but this is not ready for education / real projects.
 > See [Roadmap](#roadmap) for development timeline and [LIMITATIONS.md](LIMITATIONS.md) for current scope and boundaries.
-
-### What's Currently Implemented (Proof of Concept)
 
 The PoC demonstrates LunyScript orchestrating essential gameplay systems across all three engines:
 
