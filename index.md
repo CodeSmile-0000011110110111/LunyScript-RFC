@@ -66,7 +66,7 @@ LunyScript gives you **high-level game logic** — readable, customizable, and r
 ## Use Cases
 
 **For Learners & Educators (PRIMARY AUDIENCE)**
-- Simple and fun. Feel at ease: switch engines without starting from scratch, your hard-earned skills and code transfer.
+- Simple and fun, focus learning on creation and workflows. Feel at ease: your hard-earned skills and code will transfer.
 - Teach one code curriculum across multiple engines - focus on game design, patterns and tooling, not API memorization and syntax.
 - Lowers barrier of entry: less boilerplate, immediate results, ease into imperative, engine-native programming at your own pace.
 
