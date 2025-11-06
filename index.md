@@ -57,30 +57,30 @@ The PoC demonstrates LunyScript orchestrating essential gameplay systems across 
 
 ## But why?
 
-**Visual tools like PlayMaker** ($65, >3.4k reviews, 20k favorites) prove there's massive demand for simplifying game logic — even among professionals.
+**Visual tools like PlayMaker** ($65, >3.4k reviews, 20k favorites) and Blueprints prove there's massive demand for simplifying game logic — even among professionals.
 
 But visual programming is verbose, painful to debug, refactor, version control, document. Yet it still requires imperative programming skills.
 
-LunyScript gives you **high-level game logic as code** — readable, customizable, and runs across engines.
+LunyScript gives you **high-level game logic** — readable, customizable, and runs across engines. With all benefits of text-based editing and powerful IDEs.
 
 ## Use Cases
 
 **For Learners & Educators (PRIMARY AUDIENCE)**
-- Your skills and code transfer if you switch engines - feel at ease; can switch without starting from scratch
-- Teach one curriculum across multiple engines - focus on game design patterns and tooling, not API memorization
-- Lower barrier to entry: less boilerplate than native APIs, more productive than visual scripting, eases into imperative programming
+- Simple and fun. Feel at ease: switch engines without starting from scratch, your hard-earned skills and code transfer.
+- Teach one code curriculum across multiple engines - focus on game design, patterns and tooling, not API memorization and syntax.
+- Lowers barrier of entry: less boilerplate, immediate results, ease into imperative, engine-native programming at your own pace.
 
 **For Framework & Tool Developers** ([Share your pains/needs](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC/discussions))
-- Build integrated cross-engine solutions, instead of engine-locked or engine-agnostic
-- Leverage LunyScript's engine-agnostic abstractions to reach wider audiences, lower costs of distributed plugins
+- Build integrated cross-engine solutions, instead of engine-locked or engine-agnostic.
+- Leverage LunyScript's engine-agnostic abstractions to reach wider audiences, lower costs of distributed plugins.
 
 **For Multi-Engine Studios** ([Share your pains/needs](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC/discussions))
-- Share gameplay code across projects built with different engines
-- Staff and planning become more flexible, with faster onboarding
+- Share gameplay code across projects built with different engines.
+- Staff and planning become more flexible, with faster onboarding.
 
 **For Everyone**
-- Write behavior, not plumbing - less boilerplate, more intent
-- Insurance against engine ecosystem lock-in, easier to jump ship
+- Write behavior, not plumbing - less boilerplate, more intent.
+- Insurance against engine ecosystem lock-in, easier to jump ship.
 
 ## Roadmap
 
