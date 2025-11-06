@@ -63,28 +63,28 @@ The PoC demonstrates LunyScript orchestrating essential gameplay systems across 
 
 **Visual tools like PlayMaker** ($65, >3.4k reviews, 20k favorites) prove there's massive demand for simplifying game logic — even among professionals.
 
-But visual programming is painful to debug and refactor, hard to document and collaborate on - yet still requiring imperative programming skills.
-
-**Learners** are locked to the engine they learn: Skills and code don't transfer. Starting over hurts!
-**Educators** specialize in one engine, or heavily oversimplify. Patterns and best practices fall short.
-**Disparate engines** force us to reinvent wheels or use highly abstract, low-level libraries.
+But visual programming is verbose, painful to debug, refactor, version control, document. Yet it still requires imperative programming skills.
 
 LunyScript gives you **high-level game logic as code** — readable, customizable, and runs across engines.
 
-*Performance: Benchmarking planned for Phase 1. Design goal is minimal overhead through compile-time optimization and direct engine API calls.*
-
 ## Use Cases
 
-- **For learners:** Your hard-earned skills **AND** code transfer if you switch engines. No more restarting from scratch.
-- **For multi-engine studios:** Teams don't fragment along engine-specific roles **AND** code works across projects.
-- **For everyone:** Less boilerplate, more intent. Write behavior, not plumbing. Build reusable libraries.
+**For Learners & Educators**
+- Your skills and code transfer if you switch engines - feel at ease; can switch without starting from scratch
+- Teach one curriculum across multiple engines - focus on game design patterns and tooling, not API memorization
+- Lower barrier to entry: less boilerplate than native APIs, more productive than visual scripting, eases into imperative programming
 
-## Benefits
+**For Framework & Tool Developers**
+- Build integrated cross-engine solutions, instead of engine-locked or engine-agnostic
+- Leverage LunyScript's engine-agnostic abstractions to reach wider audiences, lower costs of distributed plugins
 
-- **Impress with results:** Less code and fewer errors than with conventional or visual programming.
-- **Teach to larger audiences:** Teach horizontally across engines with a single code curriculum.
-- **Decrease engine lock-in:** Take your assets **and your code** with you. Build long-lasting behaviour libraries.
-- **Wider reach, lower costs:** Multi-engine frameworks and plugins can build on LunyScript's abstractions.
+**For Multi-Engine Studios**
+- Share gameplay code across projects built with different engines
+- Staff and planning become more flexible, with faster onboarding
+
+**For Everyone**
+- Write behavior, not plumbing - less boilerplate, more intent
+- Reduce engine lock-in: Insurance against engine ecosystem changes
 
 ## Roadmap
 
