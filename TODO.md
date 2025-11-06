@@ -43,7 +43,28 @@
 
 ## README / INDEX - Landing Pages
 
+### Critical (Before Going Public)
+
+- [ ] Make target audience hierarchy clearer: learners/educators PRIMARY (EDIT in index) - mention that learners are troubled by API/language complexity and boilerplate (way more to program than eg GameMaker)
+- [ ] Add proof-of-concept status banner at top of index.md (ADD to index)
+- [ ] Add or link to "What LunyScript Is NOT" section (LINK to LIMITATIONS.md from index)
+- [ ] Add concrete "Before/After" code comparison examples (copy from FAQ, ADD to index)
+- [ ] Address maintenance strategy (refer to FAQ: engines are stable at high level)
+- [ ] Reframe pitch: emphasize "high-level gameplay scripting only" not engine replacement (EDIT in index)
+
+- [ ] Add "Why Not Just..." FAQ section addressing alternatives (ADD to index)
+- [ ] Add feature coverage matrix or detailed list showing implementation depth (ADD to index or separate doc + link)
+- [ ] Add Quick Questions FAQ section on index.md (ADD to index):
+  - Is this production-ready? (No, see roadmap)
+  - What can't it do? (Link to LIMITATIONS.md)
+  - Who maintains engine adapters? (Link to maintenance strategy)
+  - Why not just learn the engine? (Explain use cases)
+
+### Nice to Have
+
 - [ ] Add concrete code comparisons to README (Unity vs Godot vs LunyScript)
+- [ ] Add statistics/examples showing engine-switching is a real problem
+- [ ] Create visual diagram showing scope boundaries
 
 
 ## Research Tasks
