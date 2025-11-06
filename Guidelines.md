@@ -30,6 +30,11 @@
 - **Keep REPOSITORY-INDEX.md up to date** when adding/removing/reorganizing files
 - Update REPOSITORY-INDEX.md when creating new documentation, decisions, or major changes
 
+### Limitations Documentation
+- **LIMITATIONS.md** documents scope and boundaries of LunyScript
+- **Keep LIMITATIONS.md up to date** when encountering or solving known limitations
+- Update LIMITATIONS.md when design decisions create new boundaries or lift existing constraints
+
 ## File Organization
 
 ### Where Things Go
