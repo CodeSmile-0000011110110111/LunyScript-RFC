@@ -84,9 +84,11 @@ LunyScript gives you **high-level game logic** — readable, customizable, and r
 
 ## Roadmap
 
-- **Phase 1:** Unity Implementation; API Design; Portable Layer; Demos and Docs (6 months => Q1/Q2 2026)
-- **Phase 2:** Port to Godot w/ Demos; Cross-Engine Verification Tests; Polish Onboarding (6 months => Q3/Q4 2026)
+- **Phase 1:** Unity C# Implementation (+Lua); API Design; Portable Layer; Demos and Docs (6 months => Q1/Q2 2026)
+- **Phase 2:** Port to Godot (+GDScript); Cross-Engine Verification Tests; Improve onboarding (6 months => Q3/Q4 2026)
 - **Phase 3:** Promote to Learners/Educators; Stabilize Architecture & Behaviour Contracts (4 months = Q1 2027)
+
+Implementation language is C# since it is most widely usable: Unity, Godot, Stride, Flax, Unigine, Evergine, CryEngine and Unreal (via UnrealSharp). 
 
 ### **Long-Term**
 
