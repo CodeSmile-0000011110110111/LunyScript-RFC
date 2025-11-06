@@ -86,3 +86,85 @@ When encountering design questions:
 - When TODO items are completed, summarize changes in **CHANGELOG.md**
 - CHANGELOG captures design evolution, decisions made, features added
 - Keep both files updated to maintain project history
+
+---
+
+## Cross-Cutting Concerns Assessment
+
+### Scoring Criteria
+
+When evaluating architectural concerns that span multiple layers, use these criteria:
+
+#### 1. Correctness Impact (1-10)
+**Definition:** How severely does poor design break system guarantees?
+- **10** - Non-determinism, race conditions, data corruption
+- **7-9** - Logic errors, inconsistent state, wrong results
+- **4-6** - Edge case failures, degraded functionality
+- **1-3** - Cosmetic issues, minor inconveniences
+
+#### 2. Complexity (1-10)
+**Definition:** How difficult is the design space to reason about?
+- **10** - Multi-threaded, distributed, or order-dependent systems
+- **7-9** - State machines with many transitions, lifecycle management
+- **4-6** - Multiple interacting components, moderate state
+- **1-3** - Simple algorithms, stateless functions
+
+#### 3. Cross-Layer Penetration (1-10)
+**Definition:** How many architectural layers does this concern affect?
+- **10** - Affects Luny abstractions, LunyScript core, all engine adapters
+- **7-9** - Affects LunyScript core and multiple adapters
+- **4-6** - Affects single layer but with broad surface area
+- **1-3** - Localized to single component or subsystem
+
+#### 4. Performance Impact (1-10)
+**Definition:** How much does this concern affect runtime performance?
+- **10** - Hot path executed every frame (registration, queries, event dispatch)
+- **7-9** - Frequent operations (state transitions, memory allocation)
+- **4-6** - Periodic operations (serialization, garbage collection)
+- **1-3** - Rare operations (initialization, error handling)
+
+#### 5. Developer Experience (1-10)
+**Definition:** How much does this affect debugging, iteration speed, and usability?
+- **10** - Profiling, tracing, hot reload, clear error messages
+- **7-9** - Good documentation, intuitive APIs, helpful warnings
+- **4-6** - Basic error reporting, adequate tooling
+- **1-3** - Minimal impact on day-to-day development
+
+### Risk Levels
+
+Use star ratings to communicate overall priority:
+
+- ⭐⭐⭐⭐⭐ **Critical (90-100%)** - System inoperable without correct design
+- ⭐⭐⭐⭐ **High (70-89%)** - Major refactoring required if designed poorly
+- ⭐⭐⭐ **Medium (50-69%)** - Can be fixed with moderate effort
+- ⭐⭐ **Low (30-49%)** - Localized changes sufficient
+- ⭐ **Minimal (<30%)** - Trivial to change
+
+**Overall Score Calculation:**
+```
+Priority % = (Correctness × 0.3) + (Complexity × 0.2) + (Cross-Layer × 0.2) +
+             (Performance × 0.15) + (DevEx × 0.15)
+```
+
+Weight rationale:
+- **Correctness** weighted highest (30%) - wrong behavior breaks trust
+- **Complexity** and **Cross-Layer** tied (20% each) - indicates refactoring difficulty
+- **Performance** and **DevEx** tied (15% each) - important but less fundamental
+
+### Design Timing Decision
+
+**Design Now (Before Implementation):**
+- Changing later requires major refactoring
+- Affects public API contracts
+- Creates permanent performance bottlenecks
+- Cannot be retrofitted without invasive changes
+
+**Design Later (Incremental Addition):**
+- Can be added without breaking existing code
+- Isolated to single layer or component
+- Optional feature not required for MVP
+- Better to iterate after gaining real-world experience
+
+### Document Location
+
+Cross-cutting concerns analysis lives in **docs/CrossCuttingConcerns.md**.
