@@ -10,11 +10,11 @@ General purpose frameworks are too abstract for beginners. They are loaded with 
 
 ## Why not write your own game engine (perhaps based on SDL)?
 
-LunyScript is for ease of entry and productivity in pro-tier game engines. Creating a custom "Luny" game engine would defeat the purpose and only add to engine fragmentation.
+LunyScript is for ease of entry and productivity in pro-tier game engines, and perhaps contributes to popularizing emerging engines. Creating a custom "Luny" game engine would defeat those purposes. Currently, roughly 95% of Steam games published are made with Unity, Unreal, Godot, and proprietary engines.
 
 ## Why not just use visual scripting?
 
-Visual scripting tools (PlayMaker, Blueprints, etc.) are a great choice for many non-programmers. But they are currently the ONLY choice they have! Visual tools are verbose and space inefficient, even simple logic requires a high degree of UI interaction. They are painful to version control, code review, refactor, and document. LunyScript provides the same **high-level expressiveness** with all the benefits of text-based code and supporting IDEs.
+Visual scripting tools (PlayMaker, Blueprints, etc.) are a popular choice for many non-programmers. But they are currently the ONLY choice for users intimidated by conventional programming. Visual tools are frequently criticized for being verbose and space inefficient, and require a high degree of UI interaction even for simple logic. They are painful to version control, code review, refactor, and document. LunyScript provides the same **high-level expressiveness and simplicity** with all the benefits of text-based code.
 
 ## Isn't LunyScript just adding one more custom engine API?
 
