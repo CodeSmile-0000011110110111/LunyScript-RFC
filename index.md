@@ -5,12 +5,6 @@ title: LunyScript - Cross-Engine Gameplay Scripting
 
 # LunyScript - Cross-Engine Gameplay Scripting
 
-> 🚧 **Status: Proof of Concept - Not Production Ready**
-> LunyScript is currently in early research and design phase. The proof of concept demonstrates feasibility, but this is not yet ready for real projects.
-> See [Roadmap](#roadmap) for development timeline and [LIMITATIONS.md](LIMITATIONS.md) for current scope and boundaries.
-
----
-
 ## Works the same in Unity, Godot, Unreal, ...
 
     When.Collision.With("ball")
@@ -46,9 +40,11 @@ The PoC demonstrates LunyScript orchestrating essential gameplay systems across 
 | **Variables** | game state and progression, timer & score |
 | **Audio** | Sound effect playback |
 
-**Scope:** High-level gameplay scripting - orchestrating game logic, behaviors, and interactions.
+**Scope:** High-level gameplay scripting - orchestrating game logic, behaviors, and interactions. LunyScript is **not** a game engine API replacement.
 
-**Limitations:** See [LIMITATIONS.md](LIMITATIONS.md) for detailed scope boundaries. LunyScript is not a game engine API replacement.
+> 🚧 **Status: Proof of Concept - Not Production Ready**
+> LunyScript is currently in early research and design phase. The proof of concept demonstrates feasibility, but this is not ready for education / real projects.
+> See [Roadmap](#roadmap) for development timeline and [LIMITATIONS.md](LIMITATIONS.md) for current scope and boundaries.
 
 ## Screenshots
 
