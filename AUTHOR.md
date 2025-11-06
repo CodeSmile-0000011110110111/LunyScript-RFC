@@ -39,25 +39,29 @@ Finally, I just went ahead and spent months integrating Lua in Unity as alternat
 
 But .. this meant it was no different from removed UnityScript and UnrealScript: a simpler language alright, but with the engine's full API complexity!
 
-Researching into the history and future of game engines, I came across many beginner tutorials, calls for help, and code snippets.
+Researching into the history and future of game engines, I came across many beginner tutorials, calls for help, and code snippets - same content, different engines.
 
 Then it struck me.
 
 ## The Realization
 
-We teach young game engine drivers Volkswagen here, Chrysler there. We caution: "Don't learn driving with a Porsche!"
+We teach young game engine "drivers" Volkswagen here, Chrysler there. We caution: "Don't learn driving with a Porsche!"
 
 ### This makes no sense! 
 
 [I proclaimed: all engines are created equal!](https://www.reddit.com/r/gamedev/comments/1nmtuqg/every_industrygrade_game_engine_has_the_same_api/) 
 
-The backlash was encouraging. It's impossible? 
+The backlash was encouraging. We are so entrenched in „our“ engines and at such a low level, we are ignorant of beginners' challenges. 
+
+Between Scratch and Godot/Unity, there's a lot of learners going back and forth, struggling to make sense of the complexity of pro-tier engines.
 
 ### Now I'm convinced: 
 
 We can, should, **MUST** standardize entry-level game engine programming! 
 
-It hurts everyone if beginners get locked into APIs and conceptual models - they needn't be different in the first place! It lowers the level of education since we're too focused on superficial details (language, boilerplate, API semantics) rather than teaching concepts, patterns, practices! 
+It hurts everyone if beginners get locked into vendor APIs and their conceptual models - they needn't be different in the first place.
+
+In fact, the conceptual differences are superficial: Hierarchical content, lifecycle events, a widely shared set of features. The main differences are only in high-end features and editor UI.
 
 ### I also recalled: 
 
