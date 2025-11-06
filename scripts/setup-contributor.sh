@@ -40,11 +40,50 @@ if [ -z "$current_user" ] || [ -z "$current_email" ]; then
     echo ""
 fi
 
-# Configure automatic sign-off
-echo "Configuring automatic DCO sign-off..."
-git config format.signoff true
-echo "✅ Automatic sign-off enabled"
+# Configure automatic sign-off via git hook
+echo "Installing commit-msg hook for automatic DCO sign-off..."
+
+# Get git directory
+git_dir=$(git rev-parse --git-dir)
+hook_file="$git_dir/hooks/commit-msg"
+
+# Create hooks directory if it doesn't exist
+mkdir -p "$git_dir/hooks"
+
+# Create the commit-msg hook
+cat > "$hook_file" << 'EOF'
+#!/bin/sh
+# Automatically add Signed-off-by line to commit messages
+
+NAME=$(git config user.name)
+EMAIL=$(git config user.email)
+
+if [ -z "$NAME" ] || [ -z "$EMAIL" ]; then
+    echo "Error: Git user.name and user.email must be configured"
+    exit 1
+fi
+
+SIGNOFF="Signed-off-by: $NAME <$EMAIL>"
+
+# Check if sign-off already exists
+if ! grep -qs "^$SIGNOFF" "$1"; then
+    # Add sign-off after the commit message, before comments
+    sed -i.bak -e "/^#/i\\
+$SIGNOFF
+" "$1"
+    rm -f "$1.bak"
+fi
+EOF
+
+# Make hook executable
+chmod +x "$hook_file"
+
+echo "✅ Git hook installed - all commits will be auto-signed"
+echo "   (Works with command line, GUIs, and IDEs)"
 echo ""
+
+# Also set format.signoff for command-line users
+git config format.signoff true
 
 # Disable GPG signing (DCO doesn't require it)
 echo "Configuring commit signing..."
