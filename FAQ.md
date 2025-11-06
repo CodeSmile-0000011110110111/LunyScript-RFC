@@ -14,7 +14,7 @@ LunyScript is for ease of entry and productivity in pro-tier game engines, and p
 
 ## Why not just use visual scripting?
 
-Visual scripting tools (PlayMaker, Blueprints, etc.) are a popular choice for many non-programmers. But they are currently the ONLY choice for users intimidated by conventional programming. Visual tools are frequently criticized for being verbose and space inefficient, and require a high degree of UI interaction even for simple logic. They are painful to version control, code review, refactor, and document. LunyScript provides the same **high-level expressiveness and simplicity** with all the benefits of text-based code.
+Visual scripting tools (PlayMaker, Blueprints, etc.) are a popular choice for many non-programmers. But they are currently the ONLY choice for users intimidated by conventional programming. Visual tools are criticized for being verbose and space inefficient, and require a high degree of UI interactions. They are painful to version control, code review, refactor, and document. LunyScript provides the same **high-level expressiveness and simplicity** with all the benefits of text-based code - a **viable alternative** for beginners & designers based on my own experience.
 
 ## Isn't LunyScript just adding one more custom engine API?
 
