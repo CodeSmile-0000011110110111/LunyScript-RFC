@@ -40,8 +40,7 @@ The PoC demonstrates LunyScript orchestrating essential gameplay systems across 
 | **Variables** | game state and progression, timer & score |
 | **Audio** | Sound effect playback |
 
-**Scope:** High-level gameplay scripting - orchestrating game logic, behaviors, and interactions.<br/>
-⚠️ LunyScript is **not** a game engine API replacement.
+**Scope:** High-level gameplay scripting - orchestrating game logic, behaviors, and interactions. LunyScript is **not** a game engine API replacement.
 
 > 🚧 **Status: Proof of Concept - Not Production Ready**
 > LunyScript is currently in early research and design phase. The proof of concept demonstrates feasibility, but this is not ready for education / real projects.
