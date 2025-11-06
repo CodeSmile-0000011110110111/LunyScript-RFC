@@ -5,6 +5,12 @@ title: LunyScript - Cross-Engine Gameplay Scripting
 
 # LunyScript - Cross-Engine Gameplay Scripting
 
+> 🚧 **Status: Proof of Concept - Not Production Ready**
+> LunyScript is currently in early research and design phase. The proof of concept demonstrates feasibility, but this is not yet ready for real projects.
+> See [Roadmap](#roadmap) for development timeline and [LIMITATIONS.md](LIMITATIONS.md) for current scope and boundaries.
+
+---
+
 ## Works the same in Unity, Godot, Unreal, ...
 
     When.Collision.With("ball")
@@ -25,8 +31,24 @@ It does! Here's the proof: same code, same game, runs in Unreal, Unity, and Godo
 
 A vertical slice from scratch in under 20 days. Started with Unity, then ported to Godot and Unreal in 3 days each.
 
-The proof of concept shows that LunyScript can orchestrate essential game systems across engines:
-- Input, Physics, Collision, Assets, Scene Graph, UI, Variables, Audio
+### What's Currently Implemented (Proof of Concept)
+
+The PoC demonstrates LunyScript orchestrating essential gameplay systems across all three engines:
+
+| System | Features Demonstrated |
+|--------|---------------------|
+| **Input** | Keyboard input detection |
+| **Physics** | Rigidbody movement, forces, velocity control |
+| **Collision** | Collision detection events, collision filtering |
+| **Assets** | prefab addressing, instantiation |
+| **Scene Graph** | Object create/destroy, find children by name, transform |
+| **UI** | Text display, Variable binding, Button press events |
+| **Variables** | game state and progression, timer & score |
+| **Audio** | Sound effect playback |
+
+**Scope:** High-level gameplay scripting - orchestrating game logic, behaviors, and interactions.
+
+**Limitations:** See [LIMITATIONS.md](LIMITATIONS.md) for detailed scope boundaries. LunyScript is not a game engine API replacement.
 
 ## Screenshots
 
@@ -47,7 +69,9 @@ But visual programming is painful to debug and refactor, hard to document and co
 **Educators** specialize in one engine, or heavily oversimplify. Patterns and best practices fall short.
 **Disparate engines** force us to reinvent wheels or use highly abstract, low-level libraries.
 
-LunyScript gives you **high-level game logic as code at near-native performance** — readable, customizable, and runs across engines.
+LunyScript gives you **high-level game logic as code** — readable, customizable, and runs across engines.
+
+*Performance: Benchmarking planned for Phase 1. Design goal is minimal overhead through compile-time optimization and direct engine API calls.*
 
 ## Use Cases
 
@@ -73,6 +97,24 @@ LunyScript gives you **high-level game logic as code at near-native performance*
 - Foster contributions, invite FOSS engines
 - Encourage autonomous maintainers of Engine Adapter (they know 'their' engine best)
 - Support Cross-Engine Framework (CEF) developers adopting _Luny_ (cross-engine abstraction layer)
+
+**Maintenance:** See [MAINTENANCE.md](MAINTENANCE.md) for the long-term sustainability strategy and how engine adapters are maintained.
+
+---
+
+## Why Not Just...?
+
+**Q: Why not just learn the engine API properly?**
+A: LunyScript doesn't replace engine knowledge - it's for **gameplay scripting**, makes code read with intent, and significantly reduces boilerplate. You still need to understand engine fundamentals, but your gameplay code and skills become portable. Perfect for learners who might switch engines, educators teaching multiple platforms, or teams working across engines.
+
+**Q: Why not a general purpose framework, like Rx.NET?**
+A: General purpose frameworks are too abstract for beginners. They are loaded with CS jargon and concepts. LunyScript provides **high-level, fluent gameplay APIs** that read like game design intent. See the [FAQ](FAQ.md) for direct code comparison.
+
+**Q: Why not write your own game engine (perhaps based on SDL)?**
+A: LunyScript is for ease of entry and productivity in pro-tier game engines. Creating a custom "Luny" game engine would defeat the purpose and only add to engine fragmentation. 
+
+**Q: Why not just use visual scripting?**
+A: Visual scripting tools (PlayMaker, Blueprints, etc.) are a great choice for many non-programmers. But they are currently the ONLY choice they have! Visual tools are verbose and space inefficient, even simple logic requires a high degree of UI interaction. They are painful to version control, code review, refactor, and document. LunyScript provides the same **high-level expressiveness** with all the benefits of text-based code and supporting IDEs.
 
 ---
 
