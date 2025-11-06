@@ -2,7 +2,7 @@
 
 ## Why not just learn the engine API properly?
 
-LunyScript doesn't replace engine knowledge - it's for **gameplay scripting**, makes code read with intent, and significantly reduces boilerplate. You still need to understand engine fundamentals, but your gameplay code and skills become portable. Perfect for learners who might switch engines, educators teaching multiple platforms, or teams working across engines.
+LunyScript doesn't replace engine knowledge - it's for **gameplay scripting** which is a beginner's IMMEDIATE INTEREST! You still need to understand engine fundamentals, but LunyScript helps you ease into imperative programming and engine APIs at your own pace.
 
 ## Why not a general purpose framework, like Rx.NET?
 
