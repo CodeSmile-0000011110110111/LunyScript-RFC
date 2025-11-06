@@ -35,17 +35,26 @@
 - **Keep LIMITATIONS.md up to date** when encountering or solving known limitations
 - Update LIMITATIONS.md when design decisions create new boundaries or lift existing constraints
 
+### AI Usage Transparency
+- **AI-USAGE.md** documents how AI tools are used in this project
+- Maintains transparency with contributors and users about AI assistance
+- Update AI-USAGE.md when adopting new AI tools or changing usage policies
+
 ## File Organization
 
 ### Where Things Go
 - **README.md** - Public-facing project overview
+- **CONTRIBUTING.md** - Contribution guidelines and setup instructions
 - **TODO.md** - Current phase tasks, next steps
 - **CHANGELOG.md** - Completed work, design changes, decisions made
 - **QUESTIONS.md** - Centralized design questions (move to decisions/ when resolved)
 - **Guidelines.md** - Project conventions (this file)
+- **AI-USAGE.md** - AI tool policies and contributor requirements
+- **LIMITATIONS.md** - Project scope and boundaries
 - **docs/Architecture.md** - Layer definitions, architectural concerns
 - **docs/NamespaceStructure.md** - Namespace tree, usage patterns, repository structure
 - **decisions/** - Architectural decision records
+- **scripts/** - Contributor setup and utility scripts
 
 ## Naming Conventions
 
