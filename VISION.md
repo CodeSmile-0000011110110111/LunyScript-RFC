@@ -70,7 +70,7 @@ A sustainable scripting solution shall be:
 - Can be exposed in many languages
 - Is Free and Open Source
 
-**Beginner-Friendly:**
+**Beginner- & Designer-Friendly:**
 - Declarative, using expressive language
 - Bite-sized code teaches modular thinking
 - Fault-tolerant, using placeholders instead of crashing
@@ -92,4 +92,4 @@ Learnfluencers provide valuable head-to-head engine comparisons and can afford t
 
 Prototypes can be tested in multiple engines to find the most suitable solution.
 
-Simple projects complete faster. Game Jams produce reusable code. Prototypes struggle less with technical issues. Visual Scripting users find themselves more productive in text-based declarative programming.
+Visual Scripting users find themselves more productive in text-based declarative programming. Simple projects complete faster. Game Jams produce reusable code. Prototypes struggle less with technical issues.
