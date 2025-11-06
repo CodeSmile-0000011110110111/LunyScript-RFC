@@ -42,28 +42,12 @@
 
 ## README / INDEX - Landing Pages
 
-### Critical (Before Going Public)
-
-- Make target audience hierarchy clearer: learners/educators PRIMARY - mention that learners are troubled particularly by API/language complexity and boilerplate (way more to program than eg GameMaker) ON TOP of learning workflows/editor (very concise)
-- Add concrete "Before/After" code comparison examples (copy from FAQ)
-- Add Quick Questions FAQ section on index.md:
-  - Is this production-ready? (No, see roadmap)
-  - What can't it do? (Link to LIMITATIONS.md)
-  - Who maintains engine adapters? (Link to MAINTENANCE.md)
-  - Why not just learn the engine? (Explain use cases)
-
 ### Nice to Have
 
 - Add concrete code comparisons to README (Unity vs Godot vs LunyScript)
 - Add statistics/examples showing engine-switching is a real problem
 - Create visual diagram showing scope boundaries
 
-
 ## Research Tasks
 
 - GDScript is a lot less verbose than any other engine language / API. I have a hunch that the extra workload may be offset onto the UI. I recalled how much more clicking & dragging I had to do in Godot vs Unity. => Confirm by comparing code of 2+ simple tasks, and the editor click count to accomplish them.
-
-## Arguments
-
-- I noticed: we keep reinventing wheels in every engine. For instance, developers create tilemap terrain generators specifically tied to each engine despite the algorithms not requiring engine-specific code. Or if a engine framework/tool is popular in one engine (eg Tweening, A*, Character Controller), or a developer misses a feature in the other (eg Unity Cinemachine => Godot Phantom Camera, or multiple (!) Terrain extensions for Godot) - it gets RE-IMPLEMENTED! Duplicating efforts!
--

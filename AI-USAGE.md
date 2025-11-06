@@ -18,6 +18,12 @@ This document records how AI tools are used in the design, documentation, and im
 - **Risk**: Potential license contamination and legal liability
 - **Status**: Until legal disputes are resolved and training data provenance is clarified, Copilot-assisted contributions will not be accepted
 
+🚫 **OpenAI GPT Models (ChatGPT, GPT-4, etc.)** - **FORBIDDEN** for contributions to this project 🚫
+- **Reason**: Precaution due to high probability of public code repositories containing GPL code being used for training models; multiple ongoing copyright lawsuits against OpenAL
+- **Risk**: High probability of GPL code reproduction; unclear license provenance; potential legal liability
+- **Status**: Until training data provenance is clarified and legal disputes are resolved, GPT-assisted contributions will not be accepted
+- **Source**: Public repositories used in training data contain vast amounts of GPL-licensed code (ZDNet, Medium)
+
 **If other AI models become subject to similar legal disputes, they will be added to this prohibited list.**
 
 ---
