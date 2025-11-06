@@ -51,6 +51,7 @@
 - **Guidelines.md** - Project conventions (this file)
 - **AI-USAGE.md** - AI tool policies and contributor requirements
 - **LIMITATIONS.md** - Project scope and boundaries
+- **MAINTENANCE.md** - Long-term sustainability and adapter maintenance strategy
 - **docs/Architecture.md** - Layer definitions, architectural concerns
 - **docs/NamespaceStructure.md** - Namespace tree, usage patterns, repository structure
 - **decisions/** - Architectural decision records
