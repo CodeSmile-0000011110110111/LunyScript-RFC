@@ -102,7 +102,7 @@ LunyScript gives you **high-level game logic** — readable, customizable, and r
 
 **Why not just learn the engine API properly?**
 
-LunyScript doesn't replace engine knowledge - it's for **gameplay scripting** which is a beginner's **immediate interest**! LunyScript helps you ease into imperative programming and engine APIs at your own pace at a point during learning where the user simply cannot assess whether this or that engine is the best option for learning, project and career goals.
+LunyScript is for **gameplay scripting** which is a beginner's **immediate interest**! Fast results motivate learners. LunyScript then helps ease beginners into imperative programming and engine APIs slowly and at their own pace. Early during the learning period users simply cannot assess which engine is the best option for learning, project and career goals. LunyScript affords them greater flexibility.
 
 **Why not a general purpose framework, like Rx.NET?**
 
