@@ -12,7 +12,7 @@ title: LunyScript - Cross-Engine Gameplay Scripting
         .Ends(Spawn("sparkles").At(Other).Run(Wait.Seconds(2.5), Despawn()))
 
 Different Engine: Same Behaviour<br/>
-Different language: Same Semantics
+Different Language: Same Semantics
 
 ---
 
