@@ -110,7 +110,7 @@ General purpose frameworks are too abstract for beginners. They are loaded with 
 
 **Why not write your own game engine (perhaps based on SDL)?**
 
-LunyScript is for ease of entry and productivity in pro-tier game engines, and perhaps contributes to popularizing emerging engines. Creating a custom "Luny" game engine would defeat those purposes. Currently, roughly 95% of Steam games published are made with Unity, Unreal, Godot, and proprietary engines. 
+LunyScript is for ease of entry and productivity in pro-tier game engines, and perhaps contributes to popularizing emerging engines. Creating a custom "Luny" game engine would defeat those purposes. Currently, roughly 95% of Steam games published are made with Unity, Unreal, Godot, and proprietary engines. This is where the learning pains are felt most.
 
 **Why not just use visual scripting?**
 
@@ -123,9 +123,7 @@ More Questions? See the [FAQ](FAQ.md) or:
 **Share your thoughts, ask questions, propose ideas!**
 
 [Join the Discussions](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC/discussions/)
-to help shape the future of cross-engine software development!
-
-Luny: Adding value to multiple engines on an equal footing.
+to help shape the future of cross-engine gameplay code and framework development!
 
 ---
 
@@ -144,11 +142,3 @@ Note: API in Proof of Concept represents an early first draft. Final API will di
 - [PoliceCarScratch.cs](2025-10_Proof_Of_Concept_Demo/PoliceCarScratch.cs)
 - [CompanionCubeScratch.cs](2025-10_Proof_Of_Concept_Demo/CompanionCubeScratch.cs)
 - [HitEffectScratch.cs](2025-10_Proof_Of_Concept_Demo/HitEffectScratch.cs)
-
----
-
-## Questions?
-
-**Check out the [Frequently Asked Questions (FAQ)](FAQ.md)**
-
-Then [koin the discussion!](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC/discussions/)
