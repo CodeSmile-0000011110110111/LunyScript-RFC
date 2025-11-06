@@ -135,9 +135,11 @@ to help shape the future of cross-engine gameplay code and framework development
 |-------|-------|--------|
 | [Godot PoC Repository](https://github.com/CodeSmile-0000011110110111/LunyScratch_Examples_Godot) | [Unity PoC Repository](https://github.com/CodeSmile-0000011110110111/LunyScratch_Examples_Unity) | [Unreal PoC Repository](https://github.com/CodeSmile-0000011110110111/LunyScratch_Examples_Unreal) |
 
-### PoC Example Source Code
+## PoC Example Source Code
 
 Note: API in Proof of Concept represents an early first draft. Final API will differ in key aspects. It isn't supposed to leak engine details.
+
+This is the script for the "Police Car" which acts as both player controller and overall game state.
 
     using Godot;
     using LunyScratch;
