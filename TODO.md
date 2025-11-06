@@ -1,5 +1,15 @@
 # TODO
 
+## Notes
+
+Why?
+
+The definitive answer to the ultimate question:
+ Because .. if you make a creation tool more accessible, it widens appeal, and more people will create. As proven by programming languages and game engines. 
+ 
+ Empowering creators is what drives software technology forward.
+
+
 ## High-Level
 
 
