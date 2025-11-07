@@ -15,10 +15,6 @@ Different Engine: Same Behaviour -- Different Language: Same Semantics
 
 For Learners and Designers. A viable alternative for Visual Scripting.
 
-### Initial Implementations
-1. Unity (C# + Lua)
-2. Godot (C# + Lua + GDScript)
-
 ---
 
 ## This can't possibly work !!
@@ -75,12 +71,13 @@ LunyScript gives you **high-level game logic** — readable, customizable, and r
 Want to explore game engines without the frustration of learning completely different APIs? Anxious about betting on the wrong horse?
 
 **With LunyScript:**
-- **Try all engines** - Your programming skills transfer completely
+- **Try all engines** - Your programming skills and code transfer completely
 - **Fast results** - Less boilerplate, more game-making
-- **Learn at your pace** - Start simple, grow into native APIs when ready
+- **Your own pace** - Start simple, grow into native APIs when ready
 - **No regrets** - Switch engines without losing your hard-earned code knowledge
+- **AI learning** - AI output you can actually understand and learn from
 
-Perfect for Roblox creators wanting to "graduate" to pro engines, and anyone exploring which engine fits them best.
+Perfect for Roblox creators wanting to "graduate" to pro engines, and anyone exploring which engine is the best fit.
 
 ### 📹 Tutorial Creators & "Learnfluencers" (HIGH IMPACT)
 
@@ -89,10 +86,10 @@ Stop making essentially the same tutorial and video three times. **Teach ONE API
 **With LunyScript:**
 - **Reach all learners** - Unity **and** Godot audiences in one tutorial
 - **Comparisons** - Show workflows side-by-side, help users decide and transition
-- **Future-proof** - Your code curriculum doesn't break when engines update core APIs
-- **Lower production costs** - Record once, serve all platforms
+- **AI-friendly teaching** - Fewer engine-specific and engine-version gotchas
+- **Future-proof** - Your code curriculum doesn't break when engines update
 
-If you teach game development on YouTube, Udemy, or in bootcamps, LunyScript multiplies your reach while cutting your workload.
+If you teach game development on YouTube et al, LunyScript multiplies your reach while cutting your workload.
 
 ### 🏫 Formal Educators & Institutions
 
@@ -100,9 +97,9 @@ Teach **engine concepts** and **game design patterns**, not API memorization.
 
 **With LunyScript:**
 - One code curriculum across multiple engines
-- Students compare editor workflows and choose their preferred tools - code knowledge transfers
-- Focus learning on design, tools, and workflows instead of syntax differences
-- Easy engine switching mid-curriculum without losing progress
+- Students compare editor workflows and choose tools, not languages
+- Focus learning on design and workflows instead of API semantics
+- Less confusion when switching engines mid-curriculum or with specializations
 - Students graduate with transferable skills, not vendor lock-in
 
 ### 🔧 Framework & Tool Developers
@@ -120,6 +117,7 @@ Build **cross-engine solutions** instead of maintaining three separate plugins o
 - Build once using LunyScript abstractions, deploy to Unity, Godot, ..
 - Reach wider audiences with lower maintenance costs
 - Leverage engine features through unified abstractions (audio, UI, animation, etc.)
+- Simple API surface makes documentation clearer and AI code generation more reliable
 
 ### 🏢 Multi-Engine Studios
 
@@ -143,11 +141,11 @@ Build **cross-engine solutions** instead of maintaining three separate plugins o
 
 ## Roadmap
 
-- **Phase 1:** Unity C# Implementation (+Lua); API Design; Portable Layer; Demos and Docs (6 months => Q1/Q2 2026)
-- **Phase 2:** Port to Godot (+GDScript); Cross-Engine Verification Tests; Improve onboarding (6 months => Q3/Q4 2026)
+- **Phase 1:** **Unity** (C#/Lua); API Design; Portable Layer; Demos and Docs (6 months => Q1/Q2 2026)
+- **Phase 2:** **Godot** (C#/GDS/Lua); Cross-Engine Verification Tests; Improve onboarding (6 months => Q3/Q4 2026)
 - **Phase 3:** Promote to Self-Learners & Tutorial Creators; Stabilize Architecture & Behaviour Contracts (4 months = Q1 2027)
 
-Implementation language is C# since it is most widely usable: Unity, Godot, Stride, Flax, Unigine, Evergine, CryEngine and Unreal (via UnrealSharp). 
+Implementation language is C# since it is most widely usable: Unity, Godot, Stride, Flax, Unigine, Evergine, CryEngine and Unreal (via UnrealSharp). Primarily C++ engines are less common: O3DE (has Lua), Unreal.  
 
 ### **Long-Term**
 

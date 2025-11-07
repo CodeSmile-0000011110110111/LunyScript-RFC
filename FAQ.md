@@ -16,6 +16,10 @@ LunyScript is for ease of entry and productivity in pro-tier game engines, and p
 
 Visual scripting tools (PlayMaker, Blueprints, etc.) are a popular choice for many non-programmers. But they are currently the ONLY choice for users intimidated by conventional programming. Visual tools are criticized for being verbose and space inefficient, and require a high degree of UI interactions. They are painful to version control, code review, refactor, and document. LunyScript provides the same **high-level expressiveness and simplicity** with all the benefits of text-based code - a **viable alternative** for beginners & designers based on my own experience.
 
+## Why should beginners use LunyScript when they learn better with AI? 
+
+AI coding assistants are powerful learning tools. But they work even better with simple, consistent APIs! AI suggestions often mismatch the user's engine version and the output is far more verbose than need be. With LunyScript's simple, fluent API, AI assistants give **reliable, working code that learners can actually understand and reason about.** AI becomes a learning amplifier instead of a source of confusion.
+
 ## Isn't LunyScript just adding one more custom engine API?
 
 LunyScript is stickier: It's **the uniform API** to bind them all!
