@@ -16,7 +16,9 @@ Different Language: Same Semantics
 
 For Learners and Learnfluencers. A viable alternative for Visual Scripting.
 
-Unity + C# first -- then Godot + GDScript -- Lua for both
+### Initial Engine Targets
+1. Unity (C# + Lua)
+2. Godot (C# + Lua + GDScript)
 
 ---
 
