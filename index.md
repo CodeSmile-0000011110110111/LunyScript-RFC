@@ -11,10 +11,9 @@ title: LunyScript - Cross-Engine Gameplay Scripting
         .Begins(Audio.Play("ball_tagged_loop"))
         .Ends(Spawn("sparkles").At(Other).Run(Wait.Seconds(2.5), Despawn()))
 
-Different Engine: Same Behaviour<br/>
-Different Language: Same Semantics
+Different Engine: Same Behaviour -- Different Language: Same Semantics
 
-For Learners and Learnfluencers. A viable alternative for Visual Scripting.
+For Learners and Designers. A viable alternative for Visual Scripting.
 
 ### Initial Implementations
 1. Unity (C# + Lua)
@@ -69,30 +68,84 @@ But visual programming is verbose, painful to debug, refactor, version control, 
 
 LunyScript gives you **high-level game logic** — readable, customizable, and runs across engines. With all benefits of text-based editing and powerful IDEs.
 
-## Use Cases
+## Who This Is For
 
-**For Learners & Educators (PRIMARY AUDIENCE)**
-- Simple and fun, focus learning on creation and workflows. Feel at ease: your hard-earned skills and code will transfer.
-- Teach one code curriculum across multiple engines - focus on game design, patterns and tooling, not API memorization and syntax.
-- Lowers barrier of entry: less boilerplate, immediate results, ease into imperative, engine-native programming at your own pace.
+### 🎓 Self-Learners & Hobbyists (PRIMARY AUDIENCE)
 
-**For Framework & Tool Developers** ([Share your pains/needs](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC/discussions))
-- Build integrated cross-engine solutions, instead of engine-locked or engine-agnostic.
-- Leverage LunyScript's engine-agnostic abstractions to reach wider audiences, lower costs of distributed plugins.
+Want to explore game engines without the frustration of learning completely different APIs? Anxious about betting on the wrong horse?
 
-**For Multi-Engine Studios** ([Share your pains/needs](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC/discussions))
-- Share gameplay code across projects built with different engines.
-- Staff and planning become more flexible, with faster onboarding.
+**With LunyScript:**
+- **Try all engines** - Your programming skills transfer completely
+- **Fast results** - Less boilerplate, more game-making
+- **Learn at your pace** - Start simple, grow into native APIs when ready
+- **No regrets** - Switch engines without losing your hard-earned code knowledge
 
-**For Everyone**
-- Write behavior, not plumbing - less boilerplate, more intent.
-- Insurance against engine ecosystem lock-in, easier to jump ship.
+Perfect for Roblox creators wanting to "graduate" to pro engines, and anyone exploring which engine fits them best.
+
+### 📹 Tutorial Creators & "Learnfluencers" (HIGH IMPACT)
+
+Stop making essentially the same tutorial and video three times. **Teach ONE API that works everywhere.** Teach gameplay patterns and have fun creating!
+
+**With LunyScript:**
+- **Reach all learners** - Unity **and** Godot audiences in one tutorial
+- **Comparisons** - Show workflows side-by-side, help users decide and transition
+- **Future-proof** - Your code curriculum doesn't break when engines update core APIs
+- **Lower production costs** - Record once, serve all platforms
+
+If you teach game development on YouTube, Udemy, or in bootcamps, LunyScript multiplies your reach while cutting your workload.
+
+### 🏫 Formal Educators & Institutions
+
+Teach **engine concepts** and **game design patterns**, not API memorization.
+
+**With LunyScript:**
+- One code curriculum across multiple engines
+- Students compare editor workflows and choose their preferred tools - code knowledge transfers
+- Focus learning on design, tools, and workflows instead of syntax differences
+- Easy engine switching mid-curriculum without losing progress
+- Students graduate with transferable skills, not vendor lock-in
+
+### 🔧 Framework & Tool Developers
+
+([Share your needs](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC/discussions))
+
+Build **cross-engine solutions** instead of maintaining three separate plugins or compromising with fully engine-agnostic frameworks that can't leverage engine features.
+
+**The Problem Today:**
+- Systems for Dialogue, Quest, Inventory, Stats, Behaviour Trees, Statemachines: re-invented everywhere
+- Portable frameworks lack engine integration, are challenging to set up: limiting their application 
+- Cross-Engine tools forced to write custom engine abstractions: [Articy](https://www.articy.com/en/articydraft/integration/), [Yarn Spinner](https://www.yarnspinner.dev/)
+
+**With LunyScript:**
+- Build once using LunyScript abstractions, deploy to Unity, Godot, ..
+- Reach wider audiences with lower maintenance costs
+- Leverage engine features through unified abstractions (audio, UI, animation, etc.)
+
+### 🏢 Multi-Engine Studios
+
+([Share your needs](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC/discussions))
+
+**With LunyScript:**
+- Share gameplay code across projects using different engines
+- More flexible staffing - developers aren't siloed by engine expertise
+- Faster onboarding when switching between engine-specific projects
+
+---
+
+## Who This Is NOT For
+
+**❌ You DON'T need LunyScript if:**
+- You're already productive in your chosen engine and don't plan to switch
+- You work on the high-end (AAA titles, competitive multiplayer, complex simulations)
+- You require bleeding-edge engine features from day 1
+
+**LunyScript is a teaching tool and productivity layer for gameplay scripting, not a replacement for engine-native programming.**
 
 ## Roadmap
 
 - **Phase 1:** Unity C# Implementation (+Lua); API Design; Portable Layer; Demos and Docs (6 months => Q1/Q2 2026)
 - **Phase 2:** Port to Godot (+GDScript); Cross-Engine Verification Tests; Improve onboarding (6 months => Q3/Q4 2026)
-- **Phase 3:** Promote to Learners/Educators; Stabilize Architecture & Behaviour Contracts (4 months = Q1 2027)
+- **Phase 3:** Promote to Self-Learners & Tutorial Creators; Stabilize Architecture & Behaviour Contracts (4 months = Q1 2027)
 
 Implementation language is C# since it is most widely usable: Unity, Godot, Stride, Flax, Unigine, Evergine, CryEngine and Unreal (via UnrealSharp). 
 
@@ -110,7 +163,11 @@ Implementation language is C# since it is most widely usable: Unity, Godot, Stri
 
 **Why not just learn the engine API properly?**
 
-LunyScript is for **gameplay scripting** which is a beginner's **immediate interest**! Fast results motivate learners. LunyScript then helps ease beginners into imperative programming and engine APIs slowly and at their own pace. Early during the learning period users simply cannot assess which engine is the best option for learning, project and career goals. LunyScript affords them greater flexibility.
+Programming game logic is hard enough. Learning three different ways to do the same thing in Unity, Godot, and Unreal makes it harder. **LunyScript removes that duplication.**
+
+For learners, **gameplay scripting** is their immediate interest — fast results motivate learning. LunyScript helps ease into imperative programming and native engine APIs at their own pace. Early in the learning process, users can't assess which engine fits their goals best. LunyScript gives them flexibility to explore without costly restarts.
+
+For tutorial creators, remaking content for each engine triples workload with no pedagogical benefit. LunyScript lets you teach **one** clear API that works everywhere.
 
 **Why not a general purpose framework, like Rx.NET?**
 
