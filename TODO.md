@@ -2,12 +2,10 @@
 
 ## Notes
 
-Why?
+- Consider adding group think (tribalism) as problem. It's considered "normal" to code against engine APIs - we don't see how we have to do the same things differently in each engine. Nobody considers this a problem.
 
-The definitive answer to the ultimate question:
- Because .. if you make a creation tool more accessible, it widens appeal, and more people will create. As proven by programming languages and game engines. 
- 
- Empowering creators is what drives software technology forward.
+
+## URGENT
 
 
 ## High-Level
@@ -29,6 +27,8 @@ The definitive answer to the ultimate question:
 - Design execution tracing/profiling hooks (zero-overhead when disabled)
 - Design error handling and recovery strategy
 - Resolve open questions (coroutine implementation, FSM/BT ownership, variable scope, asset references)
+- Design code generator for language bindings (Lua, GDScript) - enable users to extend API themselves, not just core maintainers
+- Document LunyScript advantages over native GDScript: declarative vs imperative, fluent API vs full syntax, gameplay-focused vs general-purpose, portability
 
 ## Documentation - Technical Deep-Dive
 
@@ -45,6 +45,9 @@ The definitive answer to the ultimate question:
 
 - Early Performance Testbed: same tasks, measuring performance of native vs LunyScript implementation (Update vs Repeat.Forever loop incrementing a variable / stack of boxes, each handling collision enter/exit which makes them "light up" during contact)
 
+## Promotion
+- Short promo video (30s?) - generate storyboard
+- Post to social media, invite feedback
 
 ## Roadmap
 
