@@ -2,12 +2,36 @@
 
 ## Notes
 
-- Framing: Consider "education" isn't just universities et al. The great majority are movitated self-learners, and their educators are "Learnfluencers" plus each engine's teaching materials. I expect LunyScript early adoption will be almost certainly among this group.
+- ✅ COMPLETED: Reframed primary audience from "Educators" to "Self-Learners & Tutorial Creators (Learnfluencers)" in index.md and README.md (2025-11-07)
 
 - Consider adding group think (tribalism) as problem. It's considered "normal" to code against engine APIs - we don't see how we have to do the same things differently in each engine. Nobody considers this to be a problem. But it leads to reinventing the wheel everywhere. Software libraries like pathfinding are either abstract, agnostic, or are directly integrated in and locked to Unity, Godot, Unreal.
 
 
 ## URGENT
+
+### Evidence Gathering - Support "APIs as Barrier" Claim
+
+We currently lack hard evidence for claims about API complexity being a major barrier. Need to gather:
+
+1. **Quantitative Data:**
+   - Survey Reddit r/gamedev, r/godot, r/Unity3D for beginner pain points (search posts with "hard", "difficult", "struggling", "learning")
+   - Analyze PlayMaker/GameCreator review sentiment: what problems do buyers say these solve?
+   - Count tutorial videos: "Unity for beginners" vs "Godot for beginners" vs "switching from Unity to Godot" - how many focus on API differences?
+   - Engine switching pain: search "migrating from Unity to Godot" posts and extract common complaints
+
+2. **Qualitative Evidence:**
+   - Find 5-10 direct quotes from learners about API confusion/switching pain
+   - Screenshot Reddit responses showing confusion about engine differences (we already have these!)
+   - Find testimonials from educators about multi-engine teaching challenges
+
+3. **Honest Reframing (if evidence is thin):**
+   - Instead of "#1 barrier", say: "Programming game logic is hard enough. Learning three ways to do it makes it harder."
+   - Focus on duplication/inefficiency rather than absolute difficulty
+   - Lead with observable fact: "Visual tools like PlayMaker exist specifically to simplify game logic"
+
+**Priority:** HIGH - Needed before outreach to tutorial creators
+**Deadline:** Before Phase 3 promotion begins
+**Owner:** TBD
 
 
 ## High-Level
@@ -65,4 +89,31 @@
 
 ## Research Tasks
 
+### Reddit Response Analysis (COMPLETED 2025-11-07)
+- ✅ Extracted and categorized all Reddit criticisms from 3 posts
+- ✅ Assessed validity of each argument
+- ✅ Identified what's already addressed in index.md vs what needs work
+- ✅ Created prioritized list (see: private/reddit-responses/analysis.md - if created)
+
+**Key findings:**
+- Most objections stem from wrong audience assumptions (professionals vs learners)
+- "Just another standard" concern needs addressing
+- Need stronger framing around tutorial creators/learnfluencers
+- Evidence for "APIs as barrier" claim is weak (anecdotal only)
+
+### GDScript Verbosity vs UI Complexity
 - GDScript is a lot less verbose than any other engine language / API. I have a hunch that the extra workload may be offset onto the UI. I recalled how much more clicking & dragging I had to do in Godot vs Unity. => Confirm by comparing code of 2+ simple tasks, and the editor click count to accomplish them.
+
+### Tutorial Creator Market Research
+- **Survey YouTube game dev educators:**
+  - How many teach multiple engines?
+  - Pain points when creating multi-engine content?
+  - Would unified API reduce their workload?
+  - What would convince them to try LunyScript?
+- **Identify potential early adopters:**
+  - Tutorial creators who already teach Unity AND Godot
+  - Educators frustrated with engine switching overhead
+  - Bootcamps/courses teaching engine-agnostic game design
+- **Competition analysis:**
+  - What alternatives exist for tutorial creators? (none?)
+  - How do current educators handle multi-engine content?

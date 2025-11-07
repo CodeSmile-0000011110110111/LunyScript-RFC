@@ -18,9 +18,9 @@ Different language: Same Semantics
 
 ## Why LunyScript?
 
-**For learners:** Simple, fun! Skills and code transfer across engines. No more starting from scratch!
+**For self-learners:** Explore Unity, Godot, and Unreal without learning three APIs. Your skills transfer!
 
-**For studios:** Teams don't fragment along engine-specific roles. Code works across projects.
+**For tutorial creators:** Teach ONE API that works in all engines. 3x the reach, 1/3 the work.
 
 **For everyone:** Less boilerplate, more intent. Write behavior, not plumbing. Build reusable libraries.
 
