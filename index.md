@@ -40,7 +40,7 @@ Vertical slice from scratch in under 20 days. Unity → Godot: 3 days. Godot →
 
 But visual programming is verbose, painful to debug, refactor, version control, document. Yet it still requires imperative programming skills.
 
-**LunyScript gives you high-level game logic** — readable, customizable, runs across engines. With all benefits of text-based editing and powerful IDEs.
+**LunyScript gives you high-level game logic** — readable, customizable, runs across engines. With all benefits of text-based coding: powerful IDEs, AI assistance, and version control.
 
 ---
 
