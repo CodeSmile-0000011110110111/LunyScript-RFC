@@ -2,7 +2,9 @@
 
 ## Notes
 
-- Consider adding group think (tribalism) as problem. It's considered "normal" to code against engine APIs - we don't see how we have to do the same things differently in each engine. Nobody considers this a problem.
+- Framing: Consider "education" isn't just universities et al. The great majority are movitated self-learners, and their educators are "Learnfluencers" plus each engine's teaching materials. I expect LunyScript early adoption will be almost certainly among this group.
+
+- Consider adding group think (tribalism) as problem. It's considered "normal" to code against engine APIs - we don't see how we have to do the same things differently in each engine. Nobody considers this to be a problem. But it leads to reinventing the wheel everywhere. Software libraries like pathfinding are either abstract, agnostic, or are directly integrated in and locked to Unity, Godot, Unreal.
 
 
 ## URGENT
