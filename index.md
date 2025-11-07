@@ -17,6 +17,14 @@ When.Collision.With("ball")
 
 *For learners and designers. A viable alternative to visual scripting.*
 
+## Description
+
+LunyScript uniformly maps the high-level gameplay features found in all game engines. 
+
+With accessible Statemachines and Behaviour Trees it's powerful enough to make basic 3D games like _Megabonk_. Your code reads like intent: even in C# it's easier than Roblox or GameMaker scripting. 
+
+You can easily extend LunyScript with custom code, gradually easing you into free-form and engine programming. Already experienced? Drop it in, and make your life easier: code without boilerplate.
+
 ---
 
 ## This can't possibly work!!
@@ -61,12 +69,15 @@ But visual programming is verbose, painful to debug, refactor, version control, 
 ## Quick Questions
 
 **Why not just learn each engine properly?**
+
 Programming game logic is hard enough. Learning three different ways to do the same thing makes it harder. LunyScript removes that duplication.
 
 **Won't AI just solve this?**
+
 AI works better with simple, consistent APIs. LunyScript gives learners reliable, understandable code instead of engine-specific gotchas.
 
 **Isn't this just adding another standard?**
+
 LunyScript is *training wheels* - it helps beginners get started and transition between engines. Not a competitor to native APIs.
 
 **→ [Read full FAQ](FAQ.md)**
