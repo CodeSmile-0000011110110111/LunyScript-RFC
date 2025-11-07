@@ -138,7 +138,7 @@ Infrequent native events are observed and trapped for a single frame by handlers
 
 LunyScript handles 'structural changes' (eg destroy object) gracefully by activating associated events (ie `When.Self.Disables`, `When.Self.Destroys`) while deferring native execution to the 'end of frame' event.
 
-A simple source generator will be used to create the API's static language bindings (C# to Lua, C# to GDScript).
+A simple source generator will be used to create the API's static language bindings (C# to GDScript).
 
 ---
 

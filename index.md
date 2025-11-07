@@ -86,8 +86,8 @@ LunyScript is *training wheels* - it helps beginners get started and transition 
 
 ## Roadmap
 
-- **Phase 1:** Unity (C#/Lua); API Design; Portable Layer; Demos and Docs (6 months → Q1/Q2 2026)
-- **Phase 2:** Godot (C#/GDScript/Lua); Cross-Engine Tests; Improve onboarding (6 months → Q3/Q4 2026)
+- **Phase 1:** Unity (C#); API Design; Portable Layer; Demos and Docs (6 months → Q1/Q2 2026)
+- **Phase 2:** Godot (C#/GDScript); Cross-Engine Tests; Improve onboarding (6 months → Q3/Q4 2026)
 - **Phase 3:** Promote to Self-Learners & Tutorial Creators; Stabilize (4 months → Q1 2027)
 
 Implementation language is **C#** (most widely usable: Unity, Godot, Stride, Flax, Unigine, Evergine, CryEngine, Unreal via UnrealSharp).

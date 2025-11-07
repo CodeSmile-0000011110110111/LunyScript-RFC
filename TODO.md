@@ -42,7 +42,7 @@ We currently lack hard evidence for claims about API complexity being a major ba
 - Add section or document with list of foreseeable challenges, risks, and alternatives to pursue if risk materializes
 - Make note of design process: implement Unity, for each feature analyze other engine's API surface and feature limitations to avoid implementing non-shared functionality
 - Define goals and non-goals
-- Note implementation language (C#), and binding languages (Lua, GDScript)
+- Note implementation language (C#), and binding languages (GDScript)
 - Define feature coverage matrix (per engine) on high level (ie Camera, Input, Animation, Terrain, Navigation, ..)
 - Define optional / future features (without matrix) which may require logic within the core (eg Raycasts) or dependencies on extensions (eg Terrain)
 - Compile complete list of types to abstract, map, or use from .NET or other frameworks (eg RaycastHit, Math)
@@ -53,7 +53,7 @@ We currently lack hard evidence for claims about API complexity being a major ba
 - Design execution tracing/profiling hooks (zero-overhead when disabled)
 - Design error handling and recovery strategy
 - Resolve open questions (coroutine implementation, FSM/BT ownership, variable scope, asset references)
-- Design code generator for language bindings (Lua, GDScript) - enable users to extend API themselves, not just core maintainers
+- Design code generator for language bindings (GDScript) - enable users to extend API themselves, not just core maintainers
 - Document LunyScript advantages over native GDScript: declarative vs imperative, fluent API vs full syntax, gameplay-focused vs general-purpose, portability
 
 ## Documentation - Technical Deep-Dive
@@ -86,6 +86,10 @@ We currently lack hard evidence for claims about API complexity being a major ba
 - Add concrete code comparisons to README (Unity vs Godot vs LunyScript)
 - Add statistics/examples showing engine-switching is a real problem
 - Create visual diagram showing scope boundaries
+
+## Language Bindings
+
+- Consider binding to Lua (low priority - Phase 2+)
 
 ## Research Tasks
 
