@@ -3,9 +3,9 @@ layout: default
 title: LunyScript - Cross-Engine Gameplay Scripting
 ---
 
-# LunyScript - Cross-Engine Gameplay Scripting
+# LunyScript - Training Wheels for Game Engines 
 
-## Works the same in Unity, Godot, Unreal, ...
+## It works the same in Unity, Godot, Unreal, ...
 
     When.Collision.With("ball")
         .Begins(Audio.Play("ball_tagged_loop"))
@@ -13,6 +13,10 @@ title: LunyScript - Cross-Engine Gameplay Scripting
 
 Different Engine: Same Behaviour<br/>
 Different Language: Same Semantics
+
+For Learners and Learnfluencers. A viable alternative for Visual Scripting.
+
+Unity + C# first -- then Godot + GDScript -- Lua for both
 
 ---
 
