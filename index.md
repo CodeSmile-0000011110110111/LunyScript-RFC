@@ -13,21 +13,21 @@ When.Collision.With("ball")
 
 **Code That Reads Out Loud:** The minimalist and powerful alternative to visual scripting. 
 
-Works with Unity and Godot -- same code, same behaviour. For learners and designers.
-
 ## What if .. 
 
 .. all game engines shared the same, simple programming interface?
 
-LunyScript uniformly maps the high-level gameplay features every game engine already has. Input, Physics, Assets, Audio, Scene Graph, and so forth. 
-
-It borrows concepts from Scratch, literally. Code reads like intent. That makes it easier compared to Roblox and GameMaker scripting. 
+LunyScript borrows concepts from Scratch, literally. Code reads like intent. That makes it easier compared to Roblox and GameMaker scripting - but in pro-tier game engines. 
 
 With accessible Statemachines and Behaviour Trees it's powerful enough to make basic 3D games like _Megabonk_. 
 
 Ease yourself into free-form game and engine programming by extending LunyScript - one method at a time. 
 
-Already experienced, or just bored? Drop it in, write boilerplate-free code to create lovely details. 
+Already experienced? Drop it in, write boilerplate-free code to create lovely details. 
+
+LunyScript uniformly maps the high-level gameplay features every game engine already has: Input, Physics, Assets, Audio, Scene Graph, and so forth.
+
+That's why it works in Unity and Godot likewise. The same. Your gameplay code is portable.
 
 ---
 
