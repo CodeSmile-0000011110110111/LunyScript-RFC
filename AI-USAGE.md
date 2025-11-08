@@ -4,7 +4,7 @@
 
 ## FOSS Compliance
 
-**This project's use of AI complies with Free and Open Source Software (FOSS) principles.** All AI tools used are selected for their license compatibility, transparent terms of service, and respect for open source licensing. We follow established best practices for AI usage in open source development, ensuring outputs are properly reviewed, understood, and integrated by human developers while maintaining full compatibility with our MIT license.
+**This project's use of AI complies with Free and Open Source Software (FOSS) principles.** All AI tools used are selected for their license compatibility, transparent terms of service, and respect for open source licensing. We align with the core principles outlined by the [Open Source Initiative's approach to AI](https://opensource.org/ai), ensuring outputs are properly reviewed, understood, and integrated by human developers while maintaining full compatibility with our MIT license.
 
 ## Purpose
 
