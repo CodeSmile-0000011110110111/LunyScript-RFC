@@ -56,13 +56,13 @@ Vertical slice from scratch in under 20 days.
 
 ## Who This Is For
 
-**🎓 Self-Learners & Hobbyists** - Explore all engines without learning three APIs. Your skills transfer. Perfect for Roblox creators wanting to "graduate" to pro engines. [Learn more →](docs/TargetAudience.md#self-learners--hobbyists-primary-audience)
+**🎓 Self-Learners & Hobbyists** - Easier than Roblox scripting. [Learn more →](docs/TargetAudience.md#self-learners--hobbyists-primary-audience)
 
-**📹 Tutorial Creators** - Teach ONE API that works everywhere. 3x the reach, 1/3 the work. Create side-by-side engine comparison content while your code examples work in both. [Learn more →](docs/TargetAudience.md#tutorial-creators--learnfluencers-high-impact)
+**📹 Tutorial Creators** - Less code, more teaching. Pit engines head-to-head. [Learn more →](docs/TargetAudience.md#tutorial-creators--learnfluencers-high-impact)
 
-**🏫 Educators** - One code curriculum across multiple engines. Students focus on design and workflows, not API memorization. [Learn more →](docs/TargetAudience.md#formal-educators--institutions)
+**🏫 Educators** - One curriculum, many engines. Focus on workflows, not semantics. [Learn more →](docs/TargetAudience.md#formal-educators--institutions)
 
-**🔧 Framework Developers** - Build cross-engine dialogue/quest/inventory systems once, deploy everywhere. [Learn more →](docs/TargetAudience.md#framework--tool-developers)
+**🔧 Framework Developers** - Code for mankind, not engines. [Learn more →](docs/TargetAudience.md#framework--tool-developers)
 
 **→ [See full audience breakdown](docs/TargetAudience.md)**
 
@@ -71,10 +71,10 @@ Vertical slice from scratch in under 20 days.
 ## Roadmap
 
 - **Phase 1:** Unity (C#); API Design; Portable Layer; Demos and Docs (6 months → Q1/Q2 2026)
-- **Phase 2:** Godot (C#/GDScript); Cross-Engine Tests; Improve onboarding (6 months → Q3/Q4 2026)
+- **Phase 2:** Godot (C#); Cross-Engine Tests; Improve onboarding (6 months → Q3/Q4 2026)
 - **Phase 3:** Promote to Self-Learners & Tutorial Creators; Stabilize (4 months → Q1 2027)
 
-Implementation language is **C#** (most widely usable: Unity, Godot, Stride, Flax, Unigine, Evergine, CryEngine, Unreal via UnrealSharp).
+Implementation language is **C#** - the most widely used engine language: Unity, Godot, Stride, Flax, Unigine, Evergine, CryEngine, and Unreal (via UnrealSharp). Lua and GDScript support under consideration.
 
 **Long-term:** Foster contributions, invite FOSS engines, support cross-engine framework developers.
 
