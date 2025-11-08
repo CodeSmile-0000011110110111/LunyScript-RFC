@@ -16,27 +16,27 @@ The fluent and powerful alternative to visual scripting.
 
 ## What if .. 
 
-### .. programming in Unity and Godot were easier than Roblox?
+### .. programming Unity and Godot were easier than Roblox?
 
-LunyScript borrows concepts from Scratch, literally. Code reads like intent. Simple to extend: one method at a time.
+LunyScript borrows from Scratch, literally. Code reads like intent. Simple to extend: one method at a time.
+
+No event registration. No coroutine yielding. No async await anything. Just plain script, but still C#.
 
 ### .. it were powerful enough to create _Megabonk_?
 
-With accessible Statemachines and Behaviour Trees, but without the CS jargon: `Run.Together` instead of `Parallel`.  
+With accessible Statemachines and Behaviour Trees, but without the CS jargon: `Run.Together` instead of `Parallel`. You won't even miss a visual editor.
 
-### .. it came without boilerplate?
+### .. all game engines shared the same programming interface?
 
-No event registration or unsubscribe. No coroutine yielding. No async await anything. No overriding methods. No subclass hierarchies. Just plain script.
+LunyScript uniformly maps the high-level gameplay features all game engines have in common: Input, Physics, Assets, Audio, Scene Graph, and many more. One API to rule them all.
 
-### .. all game engines shared this same, simple programming interface?
+### .. code works in Unity the same as in Godot?
 
-LunyScript uniformly maps the high-level gameplay features every game engine already has: Input, Physics, Assets, Audio, Scene Graph, and so forth.
+Switch engines, not code: your assets already transfer, now your code follows you too. Already Pro? Build your own cross-engine framework on LunyScript's abstractions. 
 
-That's why it works in Unity and Godot likewise, the same. Portable game code!
+### .. it were free, and open source?
 
-### .. your code would be just as portable?
-
-Reach larger audiences: Build your own framework using the Luny cross-engine abstractions. It's free, and open source.
+It is.
 
 ---
 
