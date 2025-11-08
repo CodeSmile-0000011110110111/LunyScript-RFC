@@ -5,6 +5,8 @@ title: LunyScript - Cross-Engine Gameplay Scripting
 
 # LunyScript - Training Wheels for Game Engines
 
+---
+
 ## **Code That Reads Out Loud:**
 ```csharp
 When.Collision.With("ball")
@@ -13,6 +15,8 @@ When.Collision.With("ball")
 ```
 
 The fluent and powerful alternative to visual scripting. 
+
+---
 
 ## What if .. 
 ### .. programming Unity and Godot were easier than Roblox?
