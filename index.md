@@ -62,7 +62,7 @@ It does! Here's proof: same code, same game, runs in Unreal, Unity, and Godot - 
 
 ## Who This Is For
 
-**🎓 Self-Learners & Hobbyists** - Easier than Roblox scripting. [Learn more →](docs/TargetAudience.md#self-learners--hobbyists-primary-audience)
+**🎓 Self-Learners & Hobbyists** - Easier than Roblox scripting. Publish anywhere. [Learn more →](docs/TargetAudience.md#self-learners--hobbyists-primary-audience)
 
 **📹 Learnfluencers** - Less coding, more teaching. Pit engines head-to-head. [Learn more →](docs/TargetAudience.md#tutorial-creators--learnfluencers-high-impact)
 
