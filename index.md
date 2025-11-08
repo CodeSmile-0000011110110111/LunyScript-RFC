@@ -14,9 +14,11 @@ When.Collision.With("ball")
     .Ends(Spawn("sparkles").At(Other).Run(Wait.Seconds(2.5), Despawn()));
 ```
 
+The fluent and powerful alternative to visual scripting.
+
 [![LunyScript Demo](media/LunyScript_Demo.gif)](https://youtu.be/Vn38VLNDsuw "LunyScript: Same Code, Three Engines - Proof of Concept Demo")
 
-The fluent and powerful alternative to visual scripting.
+Works the same across engines.
 
 ---
 
