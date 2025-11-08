@@ -5,25 +5,33 @@ title: LunyScript - Cross-Engine Gameplay Scripting
 
 # LunyScript - Training Wheels for Game Engines
 
-## Works the same in Unity, Godot, Unreal, ...
-
 ```csharp
 When.Collision.With("ball")
     .Begins(Audio.Play("ball_tagged_loop"))
-    .Ends(Spawn("sparkles").At(Other).Run(Wait.Seconds(2.5), Despawn()))
+    .Ends(Spawn("sparkles").At(Other).Run(Wait.Seconds(2.5), Despawn()));
 ```
 
-**Different Engine: Same Behavior • Different Language: Same Semantics**
+**Code That Reads Out Loud**
 
-*For learners and designers. A viable alternative to visual scripting.*
+The minimalist and powerful alternative to visual scripting. 
 
-## Description
+Works with Unity and Godot - same code, same behaviour.
 
-LunyScript uniformly maps the high-level gameplay features found in all game engines. 
+For learners and designers.
 
-With accessible Statemachines and Behaviour Trees it's powerful enough to make basic 3D games like _Megabonk_. Your code reads like intent: even in C# it's easier than Roblox or GameMaker scripting. 
+## What the ... is this ??
 
-You can easily extend LunyScript with custom code, gradually easing you into free-form and engine programming. Already experienced? Drop it in, and make your life easier: code without boilerplate.
+The better question is: What if all game engines shared the same, simple programming interface?
+
+LunyScript uniformly maps the high-level gameplay features every game engine already has. Input, Physics, Assets, Scene Graph, and so forth. 
+
+The code reads like intent - easier compared to Roblox and GameMaker - borrowing concepts from Scratch, literally!
+
+With accessible Statemachines and Behaviour Trees it's powerful enough to make basic 3D games like _Megabonk_. 
+
+Ease yourself into free-form game programming by extending LunyScript - one method at a time. 
+
+Already experienced? Drop it in, write boilerplate-free code to create lovely details.
 
 ---
 
