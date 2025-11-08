@@ -80,7 +80,7 @@ Vertical slice from scratch in under 20 days.
 - **Phase 2:** Godot (C#); Cross-Engine Tests; Improve onboarding (6 months → Q3/Q4 2026)
 - **Phase 3:** Promote to Self-Learners & Tutorial Creators; Stabilize (4 months → Q1 2027)
 
-Implementation language is **C#** - the most widely used engine language: Unity, Godot, Stride, Flax, Unigine, Evergine, CryEngine, and Unreal (via UnrealSharp). Lua and GDScript support under consideration.
+LunyScipt would also port easily to Stride, Flax, Unigine, Evergine, CryEngine, and UnrealSharp. Lua and GDScript support under consideration.
 
 **→ [Maintenance strategy](MAINTENANCE.md)**
 
