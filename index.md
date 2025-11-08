@@ -52,8 +52,10 @@ It is.
 
 It does! Here's proof: same code, same game, runs in Unreal, Unity, and Godot - in less than 20 days. **[=> Watch the full video on YouTube (1:20)](https://youtu.be/Vn38VLNDsuw)**
 
-> 🚧 **Status: Proof of Concept**<br/> 
+> 🚧 **Status: Proof of Concept**<br/>
 > 📸 [View detailed PoC documentation, screenshots, and source code →](PoC_2025-10/)
+
+**→ [How LunyScript unifies different engine architectures](docs/EngineDifferences.md)**
 
 ---
 
@@ -65,7 +67,7 @@ It does! Here's proof: same code, same game, runs in Unreal, Unity, and Godot - 
 
 **🏫 Educators** - One curriculum, many engines. Focus on workflows, not semantics. [Learn more →](docs/TargetAudience.md#formal-educators--institutions)
 
-**🎮 Prototypers** - Jam **and** generate reusable code. [Learn more →](docs/PrototypersAndGameJammers.md)
+**🎮 Prototypers** - Jam fast while writing reusable code. [Learn more →](docs/PrototypersAndGameJammers.md)
 
 **🔧 Framework Developers** - Code for mankind, not engines. [Learn more →](docs/TargetAudience.md#framework--tool-developers)
 

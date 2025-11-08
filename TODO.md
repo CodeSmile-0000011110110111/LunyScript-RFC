@@ -40,6 +40,7 @@ We currently lack hard evidence for claims about API complexity being a major ba
 ## Documentation Review
 
 - Review docs/PrototypersAndGameJammers.md - preliminary content needs validation and refinement
+- **Review docs/EngineDifferences.md** - technical accuracy verification needed (especially Godot destruction handling, Unreal component hierarchy mapping, and API philosophy section)
 
 
 ## Design
