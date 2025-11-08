@@ -62,7 +62,7 @@ Vertical slice from scratch in under 20 days.
 
 **🏫 Educators** - One curriculum, many engines. Focus on workflows, not semantics. [Learn more →](docs/TargetAudience.md#formal-educators--institutions)
 
-**🎮 Prototypers & Game Jammers** - Fast iteration, reusable code. [Learn more →](docs/PrototypersAndGameJammers.md)
+**🎮 Prototypers** - Experiment and write reusable code. [Learn more →](docs/PrototypersAndGameJammers.md)
 
 **🔧 Framework Developers** - Code for mankind, not engines. [Learn more →](docs/TargetAudience.md#framework--tool-developers)
 
