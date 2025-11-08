@@ -19,8 +19,7 @@ The fluent and powerful alternative to visual scripting.
 
 Code reads like intent. Simple to extend: one method at a time. No event registration. No coroutine yielding. No async await anything. Just plain script, but in C#.
 
-## What if ..
-### .. it were powerful enough to create _Megabonk_?
+### And it were powerful enough to create _Megabonk_?
 
 With accessible Statemachines and Behaviour Trees, but without the CS jargon: `Run.Together` instead of `Parallel`. You won't even miss a visual editor.
 
@@ -29,10 +28,9 @@ With accessible Statemachines and Behaviour Trees, but without the CS jargon: `R
 
 LunyScript uniformly maps the high-level gameplay features all game engines have in common: Input, Physics, Assets, Audio, Scene Graph, and many more. One API to rule them all.
 
-## What if ..
-### .. code works in Unity the same as in Godot?
+### And code did the same in Unity and Godot?
 
-Switch engines, not code: your assets already transfer, now your code follows you too. Already Pro? Build your own cross-engine framework on LunyScript's abstractions. 
+Assets already transfer, now code has wider reach, too.  Already Pro? Build more valuable cross-engine logic libraries and coding tutorials.
 
 ## What if ..
 ### .. it were free, and open source?
