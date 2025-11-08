@@ -28,7 +28,7 @@ With accessible Statemachines and Behaviour Trees, but without the CS jargon: `R
 
 LunyScript uniformly maps the high-level gameplay features all game engines have in common: Input, Physics, Assets, Audio, Scene Graph, and many more. One API to rule them all.
 
-### And code did the same in Unity and Godot?
+### And code behaved the same in Unity and Godot?
 
 Assets already transfer, now code has wider reach, too.  Already Pro? Build more valuable cross-engine logic libraries and coding tutorials.
 
