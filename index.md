@@ -5,17 +5,18 @@ title: LunyScript - Cross-Engine Gameplay Scripting
 
 # LunyScript - Training Wheels for Game Engines
 
+## **Code That Reads Out Loud**
 ```csharp
 When.Collision.With("ball")
     .Begins(Audio.Play("ball_tagged_loop"))
     .Ends(Spawn("sparkles").At(Other).Run(Wait.Seconds(2.5), Despawn()));
 ```
 
-**Code That Reads Out Loud:** The minimalist and powerful alternative to visual scripting. 
+The fluent and powerful alternative to visual scripting. 
 
 ## What if .. 
 
-.. all game engines shared the same, simple programming interface?
+### .. all game engines shared the same, simple programming interface?
 
 LunyScript borrows concepts from Scratch, literally. Code reads like intent. That makes it easier compared to Roblox and GameMaker scripting - but in pro-tier game engines. 
 
