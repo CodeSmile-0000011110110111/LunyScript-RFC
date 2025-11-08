@@ -9,6 +9,11 @@
 
 ## URGENT
 
+- Address how code can be portable if language changes? Ie C# => GDScript
+	- Philosophy: syntax transformation is easily automated, but prefer to stay in C#. 
+	- Under consideration: integration Lua as 'game logic description language'. Lua would work in any engine, and is more common in game dev than any other scripting language (including Python).
+
+
 ### Evidence Gathering - Support "APIs as Barrier" Claim
 
 We currently lack hard evidence for claims about API complexity being a major barrier. Need to gather:

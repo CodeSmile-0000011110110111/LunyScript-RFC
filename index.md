@@ -56,7 +56,7 @@ It does! Here's proof: same code, same game, runs in Unreal, Unity, and Godot - 
 > 📸 [View detailed PoC documentation, screenshots, and source code →](PoC_2025-10/)
 
 **→ [How LunyScript unifies different engine architectures](docs/EngineDifferences.md)**<br/>
-**→ [API design philosophy and principles](docs/Philosophy.md)**
+**→ [API design philosophy and principles](docs/Philosophy.md)** — AI-assisted development following [FOSS-compliant guidelines](AI-USAGE.md); streamlines implementation without sacrificing code quality<br/>
 
 ---
 

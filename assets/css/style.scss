@@ -91,3 +91,8 @@ table tr:nth-child(even) {
     max-width: 1200px;
   }
 }
+
+/* Increase base font size */
+body {
+  font-size: 16px; /* Increased by 1px from default 15px */
+}
