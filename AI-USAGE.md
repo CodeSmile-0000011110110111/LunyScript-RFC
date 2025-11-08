@@ -2,6 +2,10 @@
 
 > **Transparency statement** about artificial intelligence assistance in this project
 
+## FOSS Compliance
+
+**This project's use of AI complies with Free and Open Source Software (FOSS) principles.** All AI tools used are selected for their license compatibility, transparent terms of service, and respect for open source licensing. We follow established best practices for AI usage in open source development, ensuring outputs are properly reviewed, understood, and integrated by human developers while maintaining full compatibility with our MIT license.
+
 ## Purpose
 
 This document records how AI tools are used in the design, documentation, and implementation of LunyScript to maintain transparency with contributors and users.
