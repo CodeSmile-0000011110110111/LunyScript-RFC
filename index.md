@@ -30,7 +30,7 @@ LunyScript uniformly maps the high-level gameplay features all game engines have
 
 ### And code behaved the same in Unity and Godot?
 
-Assets already transfer, now code has wider reach, too.  Already Pro? Build more valuable cross-engine logic libraries and coding tutorials.
+Assets already transfer, now code has wider reach, too.  Already Pro? Create more value: cross-engine libraries, coding tutorials, comparisons, ...
 
 ## What if ..
 ### .. it were free, and open source?
