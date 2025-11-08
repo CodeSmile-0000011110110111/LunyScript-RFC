@@ -52,7 +52,7 @@ It is.
 
 It does! Here's proof: same code, same game, runs in Unreal, Unity, and Godot - in less than 20 days. **[=> Watch the full video on YouTube (1:20)](https://youtu.be/Vn38VLNDsuw)**
 
-> 🚧 **Status: Proof of Concept** - 
+> 🚧 **Status: Proof of Concept**<br/> 
 > 📸 [View detailed PoC documentation, screenshots, and source code →](PoC_2025-10/)
 
 ---
