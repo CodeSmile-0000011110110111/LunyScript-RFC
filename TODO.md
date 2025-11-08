@@ -37,6 +37,11 @@ We currently lack hard evidence for claims about API complexity being a major ba
 ## High-Level
 
 
+## Documentation Review
+
+- Review docs/PrototypersAndGameJammers.md - preliminary content needs validation and refinement
+
+
 ## Design
 
 - Add section or document with list of foreseeable challenges, risks, and alternatives to pursue if risk materializes

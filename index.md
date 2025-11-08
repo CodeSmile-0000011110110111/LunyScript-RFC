@@ -58,9 +58,11 @@ Vertical slice from scratch in under 20 days.
 
 **🎓 Self-Learners & Hobbyists** - Easier than Roblox scripting. [Learn more →](docs/TargetAudience.md#self-learners--hobbyists-primary-audience)
 
-**📹 Tutorial Creators** - Less code, more teaching. Pit engines head-to-head. [Learn more →](docs/TargetAudience.md#tutorial-creators--learnfluencers-high-impact)
+**📹 Learnfluencers** - Less coding, more teaching. Pit engines head-to-head. [Learn more →](docs/TargetAudience.md#tutorial-creators--learnfluencers-high-impact)
 
 **🏫 Educators** - One curriculum, many engines. Focus on workflows, not semantics. [Learn more →](docs/TargetAudience.md#formal-educators--institutions)
+
+**🎮 Prototypers & Game Jammers** - Fast iteration, reusable code. [Learn more →](docs/PrototypersAndGameJammers.md)
 
 **🔧 Framework Developers** - Code for mankind, not engines. [Learn more →](docs/TargetAudience.md#framework--tool-developers)
 
