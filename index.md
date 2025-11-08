@@ -76,8 +76,6 @@ Vertical slice from scratch in under 20 days.
 
 Implementation language is **C#** - the most widely used engine language: Unity, Godot, Stride, Flax, Unigine, Evergine, CryEngine, and Unreal (via UnrealSharp). Lua and GDScript support under consideration.
 
-**Long-term:** Foster contributions, invite FOSS engines, support cross-engine framework developers.
-
 **→ [Maintenance strategy](MAINTENANCE.md)**
 
 ---
