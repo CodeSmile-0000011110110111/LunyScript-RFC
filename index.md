@@ -47,20 +47,10 @@ It does! Here's the proof: same code, same game, runs in Unreal, Unity, and Godo
 
 **[Watch the full video on YouTube (1:20)](https://youtu.be/Vn38VLNDsuw)**
 
-Vertical slice from scratch in under 20 days. Unity → Godot: 3 days. Godot → Unreal: 3 days.
+Vertical slice from scratch in under 20 days.
 
 > 🚧 **Status: Proof of Concept** - Not production ready. See [Roadmap](#roadmap) for timeline.
 > 📸 [View detailed PoC documentation, screenshots, and source code →](PoC_2025-10/)
-
----
-
-## Why LunyScript?
-
-**Visual tools like PlayMaker** ($65, >3.4k reviews, 20k favorites) and Blueprints prove there's massive demand for simplifying game logic — even among professionals.
-
-But visual programming is verbose, painful to debug, refactor, version control, document. Yet it still requires imperative programming skills.
-
-**LunyScript gives you high-level game logic** — readable, customizable, runs across engines. With all benefits of text-based coding: powerful IDEs, AI assistance, and version control.
 
 ---
 
@@ -75,24 +65,6 @@ But visual programming is verbose, painful to debug, refactor, version control, 
 **🔧 Framework Developers** - Build cross-engine dialogue/quest/inventory systems once, deploy everywhere. [Learn more →](docs/TargetAudience.md#framework--tool-developers)
 
 **→ [See full audience breakdown](docs/TargetAudience.md)**
-
----
-
-## Quick Questions
-
-**Why not just learn each engine properly?**
-
-Programming game logic is hard enough. Learning three different ways to do the same thing makes it harder. LunyScript removes that duplication.
-
-**Won't AI just solve this?**
-
-AI works better with simple, consistent APIs. LunyScript gives learners reliable, understandable code instead of engine-specific gotchas.
-
-**Isn't this just adding another standard?**
-
-LunyScript is *training wheels* - it helps beginners get started and transition between engines. Not a competitor to native APIs.
-
-**→ [Read full FAQ](FAQ.md)**
 
 ---
 
@@ -116,4 +88,6 @@ Implementation language is **C#** (most widely usable: Unity, Godot, Stride, Fla
 
 [💬 Join the Discussions](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC/discussions/) • [📖 Documentation](https://codesmile-0000011110110111.github.io/LunyScript-RFC/docs/) • [❓ FAQ](FAQ.md)
 
-Help shape the future of cross-engine gameplay code and framework development!
+Help shape the future of cross-engine, uniform game programming!
+
+---
