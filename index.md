@@ -18,7 +18,7 @@ When.Collision.With("ball")
 
 [![LunyScript Demo](media/LunyScript_Demo.gif)](https://youtu.be/Vn38VLNDsuw "LunyScript: Same Code, Three Engines - Proof of Concept Demo")
 
-The portable, powerful, and production-friendly alternative to visual scripting.
+**🎮 LunyScript 🎮** The portable, powerful, and production-friendly alternative to visual scripting.
 
 ---
 
