@@ -69,3 +69,25 @@ table th {
 table tr:nth-child(even) {
   background: #1a1a1a;
 }
+
+/* Increase content width by 200px */
+#container {
+  max-width: 1040px; /* Original midnight theme is ~840px */
+  width: 90%;
+}
+
+.inner {
+  max-width: 1040px;
+  width: 100%;
+}
+
+/* Adjust wrapper for better spacing on wider screens */
+@media (min-width: 1200px) {
+  #container {
+    max-width: 1200px;
+  }
+
+  .inner {
+    max-width: 1200px;
+  }
+}
