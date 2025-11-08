@@ -56,6 +56,7 @@ We currently lack hard evidence for claims about API complexity being a major ba
 - Define precise boundaries between Luny (cross-engine abstraction layer) and LunyScript (logic implementation, fluent API)
 - Design object registration system and identity management - assess portability and setup steps (goal: 100% automatable), assess user workflow (goal: least friction)
 - Specify event ordering contract (parent-first vs child-first, frame phases)
+- **Finalize lifecycle event semantics** - clarify distinction between Step vs Update (physics timestep vs per-frame), consider renaming for clarity
 - Design execution tracing/profiling hooks (zero-overhead when disabled)
 - Design error handling and recovery strategy
 - Resolve open questions (coroutine implementation, FSM/BT ownership, variable scope, asset references)
