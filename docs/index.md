@@ -12,6 +12,8 @@ Welcome to the LunyScript design documentation. This section covers the architec
 - [Paradigms](Paradigms.md) - Programming paradigms and design patterns
 - [Tech Talk](TechTalk.md) - Technical deep-dive and implementation details
 - [Background](Background.md) - Project motivation and context
+- [Philosophy](Philosophy.md) - API design philosophy and principles
+- [Engine Differences](EngineDifferences.md) - How engines differ and how LunyScript unifies them
 - [FAQ](../FAQ.md) - Frequently asked questions
 
 ### Design Decisions
