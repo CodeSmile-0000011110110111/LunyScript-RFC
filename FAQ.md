@@ -1,12 +1,12 @@
 # Frequently Asked Questions (FAQ)
 
-## Why not just learn each engine API properly?
+## Why not just learn one engine API properly?
 
-Programming game logic is hard enough. Learning three different ways to do the same thing in Unity, Godot, and Unreal makes it harder. **LunyScript removes that duplication.**
+Game programming is hard. It consistently ranks among the most challenging domains due to realtime programming, many cross-cutting concerns, and the sheer number of systems that interact. 
 
-For learners, **gameplay scripting** is their immediate interest — fast results motivate learning. LunyScript helps ease into imperative programming and native engine APIs at their own pace. Early in the learning process, users can't assess which engine fits their goals best. LunyScript gives them flexibility to explore without costly restarts.
+**LunyScript reduces that complexity** with high-level, declarative patterns. State machines and behavior trees instead of cargo cult coroutines. Fault-tolerant execution instead of null-references.
 
-For tutorial creators, remaking content for each engine triples workload with no pedagogical benefit. LunyScript lets you teach **one** clear API that works everywhere.
+And then you also learned to program in two or more engines. That makes it all the more exciting!
 
 ---
 
