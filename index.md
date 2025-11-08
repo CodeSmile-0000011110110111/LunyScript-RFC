@@ -5,7 +5,7 @@ title: LunyScript - Cross-Engine Gameplay Scripting
 
 # LunyScript - Training Wheels for Game Engines
 
-## **Code That Reads Out Loud**
+## **Code That Reads Out Loud:**
 ```csharp
 When.Collision.With("ball")
     .Begins(Audio.Play("ball_tagged_loop"))
@@ -16,19 +16,27 @@ The fluent and powerful alternative to visual scripting.
 
 ## What if .. 
 
-### .. all game engines shared the same, simple programming interface?
+### .. programming in Unity and Godot were easier than Roblox?
 
-LunyScript borrows concepts from Scratch, literally. Code reads like intent. That makes it easier compared to Roblox and GameMaker scripting - but in pro-tier game engines. 
+LunyScript borrows concepts from Scratch, literally. Code reads like intent. Simple to extend: one method at a time.
 
-With accessible Statemachines and Behaviour Trees it's powerful enough to make basic 3D games like _Megabonk_. 
+### .. it were powerful enough to create _Megabonk_?
 
-Ease yourself into free-form game and engine programming by extending LunyScript - one method at a time. 
+With accessible Statemachines and Behaviour Trees, but without the CS jargon: `Run.Together` instead of `Parallel`.  
 
-Already experienced? Drop it in, write boilerplate-free code to create lovely details. 
+### .. it came without boilerplate?
+
+No event registration or unsubscribe. No coroutine yielding. No async await anything. No overriding methods. No subclass hierarchies. Just plain script.
+
+### .. all game engines shared this same, simple programming interface?
 
 LunyScript uniformly maps the high-level gameplay features every game engine already has: Input, Physics, Assets, Audio, Scene Graph, and so forth.
 
-That's why it works in Unity and Godot likewise. The same. Your gameplay code is portable.
+That's why it works in Unity and Godot likewise, the same. Portable game code!
+
+### .. your code would be just as portable?
+
+Reach larger audiences: Build your own framework using the Luny cross-engine abstractions. It's free, and open source.
 
 ---
 
