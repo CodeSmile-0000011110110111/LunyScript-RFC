@@ -14,7 +14,9 @@ When.Collision.With("ball")
     .Ends(Spawn("sparkles").At(Other).Run(Wait.Seconds(2.5), Despawn()));
 ```
 
-The fluent and powerful alternative to visual scripting. 
+[![LunyScript Demo](media/LunyScript_Demo.gif)](https://youtu.be/Vn38VLNDsuw "LunyScript: Same Code, Three Engines - Proof of Concept Demo")
+
+The fluent and powerful alternative to visual scripting.
 
 ---
 
@@ -45,15 +47,9 @@ It is.
 
 ## This can't possibly work!!
 
-It does! Here's the proof: same code, same game, runs in Unreal, Unity, and Godot.
+It does! Here's proof: same code, same game, runs in Unreal, Unity, and Godot - in less than 20 days. **[=> Watch the full video on YouTube (1:20)](https://youtu.be/Vn38VLNDsuw)**
 
-[![LunyScript Demo](media/LunyScript_Demo.gif)](https://youtu.be/Vn38VLNDsuw "LunyScript: Same Code, Three Engines - Proof of Concept Demo")
-
-**[Watch the full video on YouTube (1:20)](https://youtu.be/Vn38VLNDsuw)**
-
-Vertical slice from scratch in under 20 days.
-
-> 🚧 **Status: Proof of Concept** - Not production ready. See [Roadmap](#roadmap) for timeline.
+> 🚧 **Status: Proof of Concept** - 
 > 📸 [View detailed PoC documentation, screenshots, and source code →](PoC_2025-10/)
 
 ---
