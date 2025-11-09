@@ -417,3 +417,11 @@ FodyWeavers.xsd
 *.msm
 *.msp
 .idea/
+
+# Jekyll local development
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+Gemfile.lock
+vendor/
