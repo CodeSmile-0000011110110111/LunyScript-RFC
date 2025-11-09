@@ -16,6 +16,10 @@ Welcome to the LunyScript design documentation. This section covers the architec
 - [Engine Differences](EngineDifferences.md) - How engines differ and how LunyScript unifies them
 - [FAQ](../FAQ.md) - Frequently asked questions
 
+### Design Risk Assessment
+- [Cross-Cutting Concerns](CrossCuttingConcerns.md) - Architectural concerns requiring upfront design
+- [Cross-Engine Functionality](CrossEngineFunctionality.md) - Feature requirements and portability risks
+
 ### Design Decisions
 See [Architectural Decision Records](../decisions/) for detailed rationale behind key design choices:
 - [Naming Scheme](../decisions/001-naming-scheme.md)

@@ -30,6 +30,11 @@
 - **Keep REPOSITORY-INDEX.md up to date** when adding/removing/reorganizing files
 - Update REPOSITORY-INDEX.md when creating new documentation, decisions, or major changes
 
+### Documentation Index
+- **docs/index.md** provides an organized entry point to all design documentation
+- **Keep docs/index.md up to date** when adding new documentation files to the docs/ directory
+- Update docs/index.md when adding new design documents, architecture analysis, or reference materials
+
 ### Limitations Documentation
 - **LIMITATIONS.md** documents scope and boundaries of LunyScript
 - **Keep LIMITATIONS.md up to date** when encountering or solving known limitations
