@@ -18,7 +18,7 @@ When.Collision.With("ball")
 [![LunyScript Demo](media/LunyScript_Demo.gif)](https://youtu.be/Vn38VLNDsuw "LunyScript: Same Code, Three Engines - Proof of Concept Demo")
 
 # **🎮 LunyScript 🎮**
-The powerful and production-friendly alternative to visual scripting. **Portable code!** 🤗
+The powerful and user-friendly alternative to visual scripting. **Portable code!** 🤗
 
 ---
 
@@ -47,7 +47,7 @@ It is.
 
 ---
 
-# This can't possibly work!!
+# **This can't possibly work!!**
 
 It does! Here's proof: same code, same game, runs in Unreal, Unity, and Godot - in less than 20 days. **[=> Watch the full video on YouTube (1:20)](https://youtu.be/Vn38VLNDsuw)**
 
@@ -60,7 +60,7 @@ It does! Here's proof: same code, same game, runs in Unreal, Unity, and Godot - 
 
 ---
 
-# Who This Is For
+# **Who This Is For**
 
 **🎓 Self-Learners & Hobbyists** - Easier than Roblox scripting. Publish anywhere. [Learn more →](docs/TargetAudience.md#self-learners--hobbyists-primary-audience)
 
@@ -76,19 +76,20 @@ It does! Here's proof: same code, same game, runs in Unreal, Unity, and Godot - 
 
 ---
 
-# Roadmap
+# **Roadmap**
 
 - **Phase 1:** Unity (C#); API Design; Portable Layer; Demos and Docs (6 months → Q1/Q2 2026)
 - **Phase 2:** Godot (C#); Cross-Engine Tests; Improve onboarding (6 months → Q3/Q4 2026)
-- **Phase 3:** Promote to Self-Learners & Tutorial Creators; Stabilize (4 months → Q1 2027)
+- **Phase 3:** Demos & Docs; Promote; Stabilize; (4 months → Q1 2027)
 
-LunyScipt would also port easily to Stride, Flax, Unigine, Evergine, CryEngine, and UnrealSharp. Lua and GDScript support under consideration.
+LunyScipt is portable to Stride, Flax, Unigine, Evergine, CryEngine, and Unreal (UnrealSharp).
+Lua Bindings under consideration. For even easier scripting and best portability.
 
 **→ [Maintenance strategy](MAINTENANCE.md)**
 
 ---
 
-# Join the Discussion!
+# **Join the Discussion!**
 
 **Share your thoughts, ask questions, propose ideas!**
 
