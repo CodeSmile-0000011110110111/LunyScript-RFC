@@ -3,10 +3,9 @@ layout: default
 title: LunyScript - Cross-Engine Gameplay Scripting
 ---
 
-# LunyScript - Training Wheels for Game Engines
+# LunyScript: Easy Game Logic (Unity, Godot, ..)
 
 ---
-
 ## **Code That Reads Out Loud:**
 ```csharp
 When.Collision.With("ball")
