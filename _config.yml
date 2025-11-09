@@ -21,6 +21,10 @@ exclude:
   - .gitignore
   - Gemfile
   - Gemfile.lock
+  - vendor/
+  - .bundle/
+  - node_modules/
+  - scripts/
 
 # Include specific root files
 include:
