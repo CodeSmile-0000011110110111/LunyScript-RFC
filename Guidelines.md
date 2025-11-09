@@ -35,6 +35,22 @@
 - **Keep docs/index.md up to date** when adding new documentation files to the docs/ directory
 - Update docs/index.md when adding new design documents, architecture analysis, or reference materials
 
+### Table of Contents for Multi-Page Documents
+- **Multi-page documents (>3 sections) must include a Table of Contents** at the top
+- TOC should list all heading levels 1-4 with anchor links
+- **Keep TOC up to date** when adding, removing, or renaming sections
+- Use markdown anchor link syntax: `[Section Name](#section-name)`
+- Place TOC immediately after document header and before first section
+- Example format:
+  ```markdown
+  # Document Title
+
+  ## Table of Contents
+  - [Section 1](#section-1)
+    - [Subsection 1.1](#subsection-11)
+  - [Section 2](#section-2)
+  ```
+
 ### Limitations Documentation
 - **LIMITATIONS.md** documents scope and boundaries of LunyScript
 - **Keep LIMITATIONS.md up to date** when encountering or solving known limitations
