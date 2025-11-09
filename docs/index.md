@@ -18,7 +18,7 @@ Welcome to the LunyScript design documentation. This section covers the architec
 
 ### Design Risk Assessment
 - [Cross-Cutting Concerns](CrossCuttingConcerns.md) - Architectural concerns requiring upfront design
-- [Cross-Engine Functionality](CrossEngineFunctionality.md) - Feature requirements and portability risks
+- [Cross-Engine Concerns](CrossEngineConcerns.md) - Feature requirements and portability risks
 
 ### Design Decisions
 See [Architectural Decision Records](../decisions/) for detailed rationale behind key design choices:
