@@ -3,22 +3,38 @@ layout: default
 title: LunyScript - Cross-Engine Gameplay Scripting
 ---
 
-# LunyScript - Easy Game Logic Scripting
+# LunyScript - Your Game Coding Heaven
 
 ---
-## **Code That Reads Out Loud:**
+## **Code That Speaks To You!**
+
 ```csharp
 When.Collision.With("ball")
-    .Begins(Audio.Play("ball_tagged_loop"))
-    .Ends(Spawn("sparkles").At(Other).Run(Wait.Seconds(2.5), Despawn()));
+    .Begins(Audio.Play("energy_buildup"))
+    .Ends(Spawn("sparkles"), Audio.Play("kick"));
 ```
 
-## **Works The Same Across Engines (Unity, Godot, ..):**
-
-[![LunyScript Demo](media/LunyScript_Demo.gif)](https://youtu.be/Vn38VLNDsuw "LunyScript: Same Code, Three Engines - Proof of Concept Demo")
+Game Over For Tutorial Hell! 🤗 _Coming soon: **Unity**<sup> Q2/2026</sup> - **Godot**<sup> Q4/2026</sup> - .._
 
 # **🎮 LunyScript 🎮**
-The powerful and user-friendly alternative to visual scripting. **Portable code!** 🤗
+The powerful and user-friendly alternative to visual scripting. **Portable code!**
+
+## **Same Code, Any Engine!**
+
+LunyScript unifies high level gameplay programming across engines. Enough to create the next _Megabonk_. 
+
+- Learn valuable concepts and patterns without the science talk.
+- Visible placeholders instead of _NullReference_ crashes.
+- Extensible with 'real' code - bite-sized. When you're ready.
+- Try another engine? Keep your assets **and** your code!
+- Vibe coding generates relatable results to learn from.
+- The best? LunyScript is fast with 66% less boilerplate.  
+
+## **Any Engine?? Das Crazy!**
+
+Engines diverge only in high-end features and the front-end (UI). **Proof**: Same Code, Three Engines:
+
+[![LunyScript Demo](media/LunyScript_Demo.gif)](https://youtu.be/Vn38VLNDsuw "LunyScript: Same Code, Three Engines - Proof of Concept Demo")
 
 ---
 
