@@ -62,15 +62,15 @@ It does! Here's proof: same code, same game, runs in Unreal, Unity, and Godot - 
 
 # **Who This Is For**
 
-**🎓 Self-Learners & Hobbyists** - Easier than Roblox scripting. Publish anywhere. [Learn more →](docs/TargetAudience.md#self-learners--hobbyists-primary-audience)
+**🎓 Self-Learners & Hobbyists**<br/>Easier than Roblox scripting. Publish anywhere. [Learn more →](docs/TargetAudience.md#self-learners--hobbyists-primary-audience)
 
-**📹 Learnfluencers** - Less coding, more teaching. Pit engines head-to-head. [Learn more →](docs/TargetAudience.md#tutorial-creators--learnfluencers-high-impact)
+**📹 Learnfluencers**<br/>Less coding, more teaching. Pit engines head-to-head. [Learn more →](docs/TargetAudience.md#tutorial-creators--learnfluencers-high-impact)
 
-**🏫 Educators** - One curriculum, many engines. Focus on workflows, not semantics. [Learn more →](docs/TargetAudience.md#formal-educators--institutions)
+**🏫 Educators**<br/>One curriculum, many engines. Focus on workflows, not semantics. [Learn more →](docs/TargetAudience.md#formal-educators--institutions)
 
-**🎮 Prototypers** - Jam fast while writing reusable code. [Learn more →](docs/PrototypersAndGameJammers.md)
+**🎮 Prototypers**<br/>Jam fast while writing reusable code. [Learn more →](docs/PrototypersAndGameJammers.md)
 
-**🔧 Framework Developers** - Code for mankind, not engines. [Learn more →](docs/TargetAudience.md#framework--tool-developers)
+**🔧 Framework Developers**<br/>Code for mankind, not engines. [Learn more →](docs/TargetAudience.md#framework--tool-developers)
 
 **→ [See full audience breakdown](docs/TargetAudience.md)**
 
@@ -78,12 +78,12 @@ It does! Here's proof: same code, same game, runs in Unreal, Unity, and Godot - 
 
 # **Roadmap**
 
-- **Phase 1:** Unity (C#); API Design; Portable Layer; Demos and Docs (6 months → Q1/Q2 2026)
-- **Phase 2:** Godot (C#); Cross-Engine Tests; Improve onboarding (6 months → Q3/Q4 2026)
-- **Phase 3:** Demos & Docs; Promote; Stabilize; (4 months → Q1 2027)
+- **Phase 1:**<br/>Unity (C#); API Design; Portable Layer; Demos and Docs (6 months → Q1/Q2 2026)
+- **Phase 2:**<br/>Godot (C#); Cross-Engine Tests; Improve onboarding (6 months → Q3/Q4 2026)
+- **Phase 3:**<br/>Demos & Docs; Promote; Stabilize; (4 months → Q1 2027)
 
-LunyScipt is portable to Stride, Flax, Unigine, Evergine, CryEngine, and Unreal (UnrealSharp).
-Lua Bindings under consideration. For even easier scripting and best portability.
+Lua Bindings under consideration: For even easier scripting and best portability.<br/>
+LunyScipt could be ported to Stride, Flax, Unigine, Evergine, CryEngine, and Unreal (UnrealSharp).
 
 **→ [Maintenance strategy](MAINTENANCE.md)**
 
