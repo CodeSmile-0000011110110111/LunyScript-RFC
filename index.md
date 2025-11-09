@@ -16,16 +16,16 @@ When.Collision.With("ball")
 
 Game Over For Tutorial Hell! 🤗
 
-# **🎮 LunyScript 🎮**
+# **🎮LunyScript🎮**
 The powerful and user-friendly alternative to visual scripting. **Portable code!**
 
-## 🟰 **Same Code - Any Engine** 🟰 
+## **✨Same Code - Any Engine✨** 
 
 LunyScript unifies high level gameplay programming across engines. Enough to create the next _Megabonk_.
 
 _Coming soon: **Unity**<sup> Q2/2026</sup> - **Godot**<sup> Q4/2026</sup> - .._
 
-## 🤨 **Any Engine?? Das Crazy!** 🤯
+## **🤨Any Engine?? Das Crazy!🤯** 
 
 Pro-Tier engines diverge only in high-end features, and the front-end (UI). **Proof**: Same Code, Three Engines:
 
@@ -43,26 +43,41 @@ Pro-Tier engines diverge only in high-end features, and the front-end (UI). **Pr
 
 ---
 
-# What if ..❔
-## .. programming Unity and Godot were easier than Roblox?
+## What if ..❔
+### .. programming Unity and Godot were easier than Roblox?
 
-Code reads like intent. Simple to extend: one method at a time. No event registration. No coroutine yielding. No async await anything. Just plain script, but in C#.
+C# code that reads like intent, extends one method at a time. Build building blocks, not spaghetti code.
 
-## And it were powerful enough to create _Megabonk_?
+```csharp
+public TryAgainButton()
+{
+    When(ButtonClicked("TryAgain"), ReloadCurrentScene());
+}
+```
 
-With accessible Statemachines and Behaviour Trees, but without the CS jargon: `Run.Together` instead of `Parallel`. You won't even miss a visual editor.
+### And it were powerful enough to create _Megabonk_?
 
-# What if ..❔
-## .. all game engines shared the same programming interface?
+With Statemachines and Behaviour Trees, but without the CS jargon. 
 
-LunyScript uniformly maps the high-level gameplay features all game engines have in common: Input, Physics, Assets, Audio, Scene Graph, and many more. One API to rule them all.
+```csharp
+Behavior.For("Enemy", 
+  If(HealthBelow(30), Flee()),
+  If(InRange(5).To("Player"), Attack()),
+  Else(Patrol()) 
+);
+```
 
-## And code behaved the same in Unity and Godot?
+## What if ..❔
+### .. all game engines shared the same programming interface?
+
+LunyScript uniformly maps the high-level gameplay features all game engines have in common: Input, Physics, Assets, Audio, Scene Graph, and more.
+
+### And code behaved the same in Unity and Godot?
 
 Assets already transfer, now code is portable, too. Create more value: integrated cross-engine libraries, multi-engine coding tutorials, ...
 
-# What if ..❔
-## .. it were free, and open source?
+## What if ..❔
+### .. it were free, and open source?
 
 It is.
 
