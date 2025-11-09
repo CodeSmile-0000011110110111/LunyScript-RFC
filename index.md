@@ -38,7 +38,7 @@ LunyScript uniformly maps the high-level gameplay features all game engines have
 
 ### And code behaved the same in Unity and Godot?
 
-Assets already transfer, now code has wider reach, too.  Already Pro? Create more value: cross-engine libraries, coding tutorials, comparisons, ...
+Assets already transfer, now code is portable, too. Create more value: integrated cross-engine libraries, multi-engine coding tutorials, ...
 
 ## What if ..
 ### .. it were free, and open source?
@@ -57,6 +57,8 @@ It does! Here's proof: same code, same game, runs in Unreal, Unity, and Godot - 
 **→ [How LunyScript unifies different engine architectures](docs/EngineDifferences.md)**<br/>
 **→ [API design philosophy and principles](docs/Philosophy.md)**<br/>
 **→ [FOSS-compliant AI-assisted development](AI-USAGE.md)**<br/>
+
+Planned API would port well to Stride, Flax, Unigine, Evergine, CryEngine, and Unreal (UnrealSharp).
 
 ---
 
@@ -78,12 +80,11 @@ It does! Here's proof: same code, same game, runs in Unreal, Unity, and Godot - 
 
 # **Roadmap**
 
-- **Phase 1:**<br/>Unity (C#); API Design; Portable Layer; Demos and Docs (6 months → Q1/Q2 2026)
-- **Phase 2:**<br/>Godot (C#); Cross-Engine Tests; Improve onboarding (6 months → Q3/Q4 2026)
-- **Phase 3:**<br/>Demos & Docs; Promote; Stabilize; (4 months → Q1 2027)
+- **Phase 1:**<br/>Unity (C#); API Design; Portable Layer; Demos and Docs (Q2 2026)
+- **Phase 2:**<br/>Godot (C#); Cross-Engine Tests; Improve onboarding (Q4 2026)
+- **Phase 3:**<br/>Demos & Docs; Promote; Stabilize; (Q2 2027)
 
 Lua Bindings under consideration: For even easier scripting and best portability.<br/>
-LunyScipt could be ported to Stride, Flax, Unigine, Evergine, CryEngine, and Unreal (UnrealSharp).
 
 **→ [Maintenance strategy](MAINTENANCE.md)**
 
