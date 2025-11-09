@@ -26,7 +26,7 @@ Coming soon: For **Unity**<sup> Q2/2026</sup> and **Godot**<sup> Q4/2026</sup> a
 
 ## **🤨 Any Engine?? Das Crazy! 🤯** 
 
-Pro-tier Game Engines only diverge at the high-end. The basics created _Megabonk_.
+These game engines only diverge in high-end features. The basics created _Megabonk_.
 
 [![LunyScript Demo](media/LunyScript_Demo.gif)](https://youtu.be/Vn38VLNDsuw "LunyScript: Same Code, Three Engines - Proof of Concept Demo")
 
