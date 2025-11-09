@@ -14,50 +14,55 @@ When.Collision.With("ball")
     .Ends(Spawn("sparkles"), Audio.Play("kick"));
 ```
 
-Game Over For Tutorial Hell! 🤗 _Coming soon: **Unity**<sup> Q2/2026</sup> - **Godot**<sup> Q4/2026</sup> - .._
+Game Over For Tutorial Hell! 🤗
 
 # **🎮 LunyScript 🎮**
 The powerful and user-friendly alternative to visual scripting. **Portable code!**
 
-## **Same Code, Any Engine!**
+## 🟰 **Same Code - Any Engine** 🟰 
 
-LunyScript unifies high level gameplay programming across engines. Enough to create the next _Megabonk_. 
+LunyScript unifies high level gameplay programming across engines. Enough to create the next _Megabonk_.
 
-- Learn valuable concepts and patterns without the science talk.
+_Coming soon: **Unity**<sup> Q2/2026</sup> - **Godot**<sup> Q4/2026</sup> - .._
+
+## 🤨 **Any Engine?? Das Crazy!** 🤯
+
+Pro-Tier engines diverge only in high-end features, and the front-end (UI). **Proof**: Same Code, Three Engines:
+
+[![LunyScript Demo](media/LunyScript_Demo.gif)](https://youtu.be/Vn38VLNDsuw "LunyScript: Same Code, Three Engines - Proof of Concept Demo")
+
+## 🙌 Benefits 🎉
+
+- Code without the boilerplate mumbojumbo.
+- Learn valuable concepts like a scientist: by experimenting.
 - Visible placeholders instead of _NullReference_ crashes.
 - Extensible with 'real' code - bite-sized. When you're ready.
 - Try another engine? Keep your assets **and** your code!
 - Vibe coding generates relatable results to learn from.
-- The best? LunyScript is fast with 66% less boilerplate.  
-
-## **Any Engine?? Das Crazy!**
-
-Engines diverge only in high-end features and the front-end (UI). **Proof**: Same Code, Three Engines:
-
-[![LunyScript Demo](media/LunyScript_Demo.gif)](https://youtu.be/Vn38VLNDsuw "LunyScript: Same Code, Three Engines - Proof of Concept Demo")
+- The best? LunyScript is fast with 66% less boilerplate.
 
 ---
 
-## What if .. 
-### .. programming Unity and Godot were easier than Roblox?
+# What if ..❔
+## .. programming Unity and Godot were easier than Roblox?
 
 Code reads like intent. Simple to extend: one method at a time. No event registration. No coroutine yielding. No async await anything. Just plain script, but in C#.
 
-### And it were powerful enough to create _Megabonk_?
+## And it were powerful enough to create _Megabonk_?
 
 With accessible Statemachines and Behaviour Trees, but without the CS jargon: `Run.Together` instead of `Parallel`. You won't even miss a visual editor.
 
-## What if ..
-### .. all game engines shared the same programming interface?
+# What if ..❔
+## .. all game engines shared the same programming interface?
 
 LunyScript uniformly maps the high-level gameplay features all game engines have in common: Input, Physics, Assets, Audio, Scene Graph, and many more. One API to rule them all.
 
-### And code behaved the same in Unity and Godot?
+## And code behaved the same in Unity and Godot?
 
 Assets already transfer, now code is portable, too. Create more value: integrated cross-engine libraries, multi-engine coding tutorials, ...
 
-## What if ..
-### .. it were free, and open source?
+# What if ..❔
+## .. it were free, and open source?
 
 It is.
 
