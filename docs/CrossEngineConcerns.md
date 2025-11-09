@@ -22,29 +22,41 @@
 
 ---
 
-## 1. Input System 🔴 ⚠️
+## 1. Input System 🔴 ✅
 
 **Priority:** Critical - Core gameplay interaction for Megabonk
 
-**Portability Risk:** Medium
+**Portability Risk:** Low (with constraints)
+
+**Scope Decision:**
+- **Primary:** Input event callbacks (action-based)
+- **Minimal polling:** Key/Mouse only for quick prototyping, debugging, jamming (values not normalized)
+- **Gamepad/Touch:** Only via input action mappings (no direct polling)
+- **Dead zones/sensitivity:** users must tune engine values once after porting 
 
 **Differences:**
-- Unity: Input System package (modern) vs legacy Input Manager; action-based events; rebinding API
-- Godot: Built-in InputMap; action/axis model; different device polling approach
+- Unity: Input System package (modern)
+- Godot: Built-in InputMap; input sampled at start of _process by adapter
+- **Device polling timing:** Unity events fire mid-frame; Godot snapshots input before frame starts
+- **Mouse capture/lock:** Unity requires re-lock on focus loss; Godot persists better but differs per platform
+- **Mouse delta:** Unity reports screen pixels; Godot reports mouse units (high-DPI variation)
 
 **Challenges:**
-- Dead zones and sensitivity curves differ by default
-- Touch/multitouch handling inconsistencies
+- **Mouse lock behavior:** Unity needs explicit re-locking after focus loss; platform-specific quirks
+- **Value normalization:** Delta vs absolute, pixels vs DPI-independent units vary between engines and devices (check if action map can normalize)
 - Gamepad button mapping (Xbox vs PlayStation layouts)
-- Mouse capture/lock behavior varies
+- Touch/multitouch handling inconsistencies (out of scope for MVP)
 
-**Impact:** Players experience different control feel between engines
+**Impact:** With event-driven approach and minimal polling, portability is manageable
 
 **Mitigation:**
-- Normalize input values through Luny abstraction
-- Provide tunable dead zones/curves
-- Map to virtual buttons/axes, not physical hardware
-- Document behavioral quirks that can't be normalized
+- **Input state consistency:** Buffer input events in Update or FixedUpdate
+- **Event callbacks primary:** Wrap Unity's InputAction callbacks and Godot's _input() into unified event model
+- **Minimal polling API:** Expose only Key.IsPressed() / Mouse.Delta for quick debugging (not production-ready)
+- **Mouse lock abstraction:** Input.Cursor.Lock() / Unlock() handles platform re-locking internally
+- **Value normalization:** Normalize delta vs absolute, pixels vs DPI-agnostic units at abstraction layer if action map doesn't handle it
+- **Virtual actions only:** Map to logical actions (Jump, Move), not physical hardware
+- Document that mouse sensitivity and gamepad dead zones may need per-engine tuning initially
 
 ---
 
@@ -536,7 +548,7 @@
 ## Summary: Critical Path for Megabonk
 
 **Must Have (MVP):**
-1. Input System (⚠️ Medium risk)
+1. Input System (✅ Low risk - with event-driven approach)
 2. Physics & Collision (❌ High risk - **biggest challenge**)
 3. Object Lifecycle (⚠️ Medium risk)
 4. Transform & Hierarchy (✅ Low risk)
