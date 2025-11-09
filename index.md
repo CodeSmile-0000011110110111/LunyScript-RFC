@@ -34,7 +34,7 @@ Pro-tier Game Engines only diverge at the high-end. The basics created _Megabonk
 
 ## 🙌 Benefits 🎉
 
-- <font size="3px">Code without the boilerplate gibberish. 🗑️</font>
+- <font size="3px">Code without the tech talk gibberish. 🗑️</font>
 - <font size="3px">Learn like a scientist: through experimentation. 🧪</font>
 - <font size="3px">Visible placeholders instead of _NullReference_ crashes. 🧘‍♂️</font>
 - <font size="3px">Extensible with 'real' code - bite-sized. When you're ready. 😎</font>
