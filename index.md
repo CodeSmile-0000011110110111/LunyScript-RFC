@@ -84,7 +84,9 @@ Planned API would port well to Stride, Flax, Unigine, Evergine, CryEngine, and U
 - **Phase 2:**<br/>Godot (C#); Cross-Engine Tests; Improve onboarding (Q4 2026)
 - **Phase 3:**<br/>Demos & Docs; Promote; Stabilize; (Q2 2027)
 
-Lua Bindings under consideration: For even easier scripting and best portability.<br/>
+_Under Consideration_
+- Lua Bindings: For even easier scripting.<br/>
+- 2D Support: Initial focus is on 3D games.
 
 **→ [Maintenance strategy](MAINTENANCE.md)**
 
