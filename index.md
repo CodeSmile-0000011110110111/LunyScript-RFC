@@ -3,7 +3,7 @@ layout: default
 title: LunyScript - Cross-Engine Gameplay Scripting
 ---
 
-# LunyScript: Easy Game Logic (Unity, Godot, ..)
+# LunyScript - Easy Game Logic Scripting
 
 ---
 ## **Code That Reads Out Loud:**
@@ -13,7 +13,7 @@ When.Collision.With("ball")
     .Ends(Spawn("sparkles").At(Other).Run(Wait.Seconds(2.5), Despawn()));
 ```
 
-## **Works The Same Across Engines:**
+## **Works The Same Across Engines (Unity, Godot, ..):**
 
 [![LunyScript Demo](media/LunyScript_Demo.gif)](https://youtu.be/Vn38VLNDsuw "LunyScript: Same Code, Three Engines - Proof of Concept Demo")
 
