@@ -20,8 +20,7 @@ Enjoy experimenting: It's Game Over For Tutorial Hell! 🤗
 
 ## **✨ Same Code - Any Engine ✨** 
 
-LunyScript aims to unify beginner-friendly, high-level gameplay programming across pro-tier game engines. 
-It reduces entry-level friction and API lock-in while encouraging cross-engine tutoring and frameworks.
+LunyScript is beginner-friendly, high-level gameplay programming that works uniformly across pro-tier game engines.
 
 ## **🤨 Any Engine?? Das Crazy! 🤯** 
 
