@@ -3,7 +3,7 @@ layout: default
 title: LunyScript - Cross-Engine Gameplay Scripting
 ---
 
-# **🎮 LunyScript 🎮** for Unity<sup> Q2/26</sup>, Godot<sup> Q4/26</sup>, ..
+# **🎮 LunyScript 🎮** for Unity<sup> Q2/26</sup> and Godot<sup> Q4/26</sup>
 The powerful and user-friendly alternative to visual scripting. Write portable code!
 
 ---
@@ -43,8 +43,6 @@ It does! It's not rocket science, just applied software design patterns. Made in
 **→ [API design philosophy and principles](docs/Philosophy.md)**<br/>
 **→ [FOSS-compliant AI-assisted development](AI-USAGE.md)**<br/>
 _Note: Physics behaviour will deviate between physics engines, requires scaling values._
-
-LunyScript can adapt to: [Stride](https://stride3d.net/), [Flax](https://flaxengine.com/), [UnrealSharp](https://www.unrealsharp.com/), [CryEngine](https://www.cryengine.com/), [Unigine](https://unigine.com/), [Evergine](https://evergine.com/)
 
 ---
 

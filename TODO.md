@@ -41,6 +41,13 @@ We currently lack hard evidence for claims about API complexity being a major ba
 
 ## High-Level
 
+- bebilderte (hypothetische) codebeispiele einfügen für gesamteindruck, diskussion
+- is there teaching bias? ie teachers teach how they learned?
+- fragmentation of game dev tools and patterns (incl. visual scripting) => any rhyme or reason to that? benefits vs negatives? are there comparable large "tool" fragmentation in other software development, or other digital areas, or even in non-technical?
+- add document: learner benefits summary (put on website)
+    - semantics, consistency, portability => standardization, patterns, no null, event driven, no outside references, sequential thinking => statemachines - bt
+- add/update vision document (with outcome), and put on website
+
 
 ## Documentation Review
 
@@ -50,6 +57,9 @@ We currently lack hard evidence for claims about API complexity being a major ba
 
 ## Design
 
+- Design goal: LunyScript provides key debugging insights: name resolution, event propagation and receivers (count, names), execution trace, ..
+- Design goal: all sequences are created up-front, and are re-usable (templates). What changes is the context (running object). It should help avoid creating instances when spawning a prefab with associated LunyScript.
+- Design goal: avoid external references. Use "SendEvent" only to make things happen on other objects. Caution: order of operations! Ideally a "same-frame" guarantee of SendEvent and event handling would be great, ie move event handlers to end of processing list (events sent by event handlers are delayed which would be an okay compromise).
 - Add section or document with list of foreseeable challenges, risks, and alternatives to pursue if risk materializes
 - Make note of design process: implement Unity, for each feature analyze other engine's API surface and feature limitations to avoid implementing non-shared functionality
 - Define goals and non-goals
