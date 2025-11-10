@@ -118,6 +118,8 @@ It is! -- Ready to cross-develop? -- [Join the Discussions 💬](https://github.
 
 **🎮 Prototypers**<br/>Jam fast and still write reusable code. [Learn more →](docs/PrototypersAndGameJammers.md)
 
+**🎮 Visual Scripters**<br/>Tired of dragging noodly nodes? Text is 'visual' too. ;)
+
 **🔧 Framework Developers**<br/>Code for mankind, not engines. [Learn more →](docs/TargetAudience.md#framework--tool-developers)
 
 **→ [See full audience breakdown](docs/TargetAudience.md)**
