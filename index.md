@@ -23,9 +23,7 @@ Coming soon: For **Unity**<sup> Q2/2026</sup> and **Godot**<sup> Q4/2026</sup> a
 ## **✨ Same Code - Any Engine ✨** 
 
 LunyScript aims to unify beginner-friendly, high-level gameplay programming across pro-tier game engines. 
-Its core abstractions can be used by others to build more cross-engine integrated frameworks and tools.
-
-My vision is to reduce the API lock-in and migration friction, and to boost both less popular engines and a shared ecosystem.
+It reduces entry-level friction and API lock-in while encouraging cross-engine tutoring and frameworks.
 
 ## **🤨 Any Engine?? Das Crazy! 🤯** 
 
@@ -33,11 +31,11 @@ Game engines all share the same fundamental features needed to create _Megabonk_
 
 [![LunyScript Demo](media/LunyScript_Demo.gif)](https://youtu.be/Vn38VLNDsuw "LunyScript: Same Code, Three Engines - Proof of Concept Demo")
 
-Programming languages aren't as fragmented as most perceive: Eight pro-tier game engines will run C# while only two are C++ exclusive (O3DE, Cocos).
+LunyScript is C# because that'll work in up to eight pro-tier game engines. Only two are C++ exclusive (O3DE, Cocos).
 
 ## **🧐This can't possibly work!!🤥**
 
-It does! Made in 20 days. It's not rocket science, just applied software design patterns.
+It does! It's not rocket science, just applied software design patterns. Made in 20 days.
 **[=> Watch the full video on YouTube (1:20)](https://youtu.be/Vn38VLNDsuw)**
 
 > 🚧 **Status: Proof of Concept**<br/>
