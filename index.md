@@ -4,7 +4,7 @@ title: LunyScript - Cross-Engine Gameplay Scripting
 ---
 
 # **🎮 LunyScript 🎮** for Unity<sup> Q2/'26</sup>, Godot<sup> Q4/'26</sup>, ..
-The powerful and user-friendly alternative to visual scripting.
+The powerful and user-friendly alternative to visual scripting. Write portable code!
 
 ---
 
