@@ -83,7 +83,7 @@ Behavior.For("Enemy",
 ```
 
 ## **<font color="#ee2255">What if ..</font>❓**
-### .. all game engines shared the same programming interface?
+### .. all game engines shared that same programming interface?
 
 LunyScript uniformly maps high-level gameplay features all engines have in common.
 
@@ -96,8 +96,8 @@ LunyScript uniformly maps high-level gameplay features all engines have in commo
 
 ### And code behaved the same across engines?
 
-Assets transfer. 🚀
-<br/>Code transfers. ✂️
+Assets already transfer. 🚀
+<br/>Now code transfers too. ✂️
 <br/>Engine anxiety? Cured! 💊
 
 ### And it were free, and open source?
