@@ -55,6 +55,22 @@ Level
 | **Script Attachment** | Node property | Component | Component or blueprint |
 | **Transform** | Inherited from node type | Component | Component (SceneComponent) |
 
+### Differences in Layman's Terms
+
+Think of the grouping elements as folders and files in an Explorer/Finder tree view:
+
+- **Godot** only has folders (Node 🧩). There are over 200 specialized folder types to make up for the lack of files.
+- **Unity** has folders (GameObject) with files in them (MonoBehaviour 🧩). There is exactly one type of folder, with hundreds of file types available.
+- **Unreal** has folders (Actor 🧩) with files in them (Component 🧩), which can have more nested files inside. There are dozens of folder types, hundreds of file types, and they cannot be freely mixed and matched.
+
+The 🧩symbol denotes the types we subclass to write logic. The above analogy also maps perfectly to the perceived complexity of each engine. 
+
+- In Godot, we can attach a single GDScript to each folder.
+- In Unity, we can attach multiple MonoBehaviour scripts or built-in components to each folder.
+- In Unreal, we have to subclass the 'correct' Actor type to create a folder. We then add files to the folder in a separate tree view. The files also need to inherit the 'correct' file type for the intended use.
+
+Unreal Engine so incredibly challenging for new users due to the explosion of subclassing and arrangement choices. Each class has built-in use-cases and restrictions.
+
 ### LunyScript Unification
 
 LunyScript treats all entities uniformly as **Objects** with **Behaviors**:
