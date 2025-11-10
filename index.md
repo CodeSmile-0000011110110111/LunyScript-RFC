@@ -51,14 +51,11 @@ LunyScript can adapt to: [Stride](https://stride3d.net/), [Flax](https://flaxeng
 ---
 # But .. Why ??
 
-It bothered me for a long time that we need to write so much boilerplate code for trivial tasks. This should be simple! 
+It bothered me for a long time that we need to write so much boilerplate code for trivial tasks. Simple tasks should be simple! 
 
-For the longest time I thought it's a great thing to have so many entry-level tutorials for self-learners.
+I thought it's a great thing to have so many entry-level tutorials for self-learners.
 But then I realized how rampant tutorial hell is among self-learners. 
-How influencers dumb down their content for the quick wins.
-
-What gets taught is nothing but reinventing wheels all the time. 
-Different engine, different code, same content, zero patterns.
+And how influencers are damaging coding skills, favoring quick wins by teaching bad practices.
 
 I began asking heretic questions ...
 
