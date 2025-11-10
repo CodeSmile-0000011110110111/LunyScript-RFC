@@ -16,8 +16,7 @@ When.Collision.With("ball")
     .Ends(Spawn("sparkles"), Audio.Play("kick"));
 ```
 
-It's Game Over For Tutorial Hell! 🤗
-
+Enjoy experimenting: It's Game Over For Tutorial Hell! 🤗
 
 ## **✨ Same Code - Any Engine ✨** 
 
