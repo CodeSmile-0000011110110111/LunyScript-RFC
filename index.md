@@ -3,7 +3,7 @@ layout: default
 title: LunyScript - Cross-Engine Gameplay Scripting
 ---
 
-# **🎮 LunyScript 🎮** (Unity, Godot, ..)
+# **🎮 LunyScript 🎮** for Unity<sup> Q2/2026</sup>, Godot<sup> Q4/2026</sup>, ..
 The powerful and user-friendly alternative to visual scripting.
 
 ## **Code That Speaks To You!**
