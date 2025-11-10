@@ -69,7 +69,7 @@ The 🧩symbol denotes the types we write logic for. The above analogy also maps
 - In Unity, we can attach multiple MonoBehaviour scripts or built-in components to each folder.
 - In Unreal, we have to subclass the 'correct' Actor type to create a folder. We then add files to the folder in a separate tree view. The files also need to inherit the 'correct' file type for the intended use.
 
-Unreal Engine so incredibly challenging for new users due to the explosion of subclassing and arrangement choices. Each class has built-in use-cases and restrictions.
+Unreal Engine is significantly more challenging for new users due to the explosion of subclassing and arrangement choices. Each class has built-in use-cases and restrictions.
 
 ### LunyScript Unification
 
