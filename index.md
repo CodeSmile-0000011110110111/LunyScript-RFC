@@ -3,8 +3,10 @@ layout: default
 title: LunyScript - Cross-Engine Gameplay Scripting
 ---
 
-# **🎮 LunyScript 🎮** for Unity<sup> Q2/2026</sup>, Godot<sup> Q4/2026</sup>, ..
+# **🎮 LunyScript 🎮** for Unity<sup> Q2/'26</sup>, Godot<sup> Q4/'26</sup>, ..
 The powerful and user-friendly alternative to visual scripting.
+
+---
 
 ## **Code That Speaks To You!**
 
@@ -16,9 +18,6 @@ When.Collision.With("ball")
 
 It's Game Over For Tutorial Hell! 🤗
 
-Coming soon: For **Unity**<sup> Q2/2026</sup> and **Godot**<sup> Q4/2026</sup> and ..
-
----
 
 ## **✨ Same Code - Any Engine ✨** 
 
@@ -49,6 +48,7 @@ _Note: Physics behaviour will deviate between physics engines, requires scaling 
 LunyScript can adapt to: [Stride](https://stride3d.net/), [Flax](https://flaxengine.com/), [UnrealSharp](https://www.unrealsharp.com/), [CryEngine](https://www.cryengine.com/), [Unigine](https://unigine.com/), [Evergine](https://evergine.com/)
 
 ---
+
 # But .. Why ??
 
 It bothered me for a long time that we need to write so much boilerplate code for trivial tasks. Simple tasks should be simple! 
