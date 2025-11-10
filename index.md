@@ -50,8 +50,19 @@ _Note: Physics behaviour will deviate between physics engines, requires scaling 
 
 LunyScript can adapt to: [Stride](https://stride3d.net/), [Flax](https://flaxengine.com/), [UnrealSharp](https://www.unrealsharp.com/), [CryEngine](https://www.cryengine.com/), [Unigine](https://unigine.com/), [Evergine](https://evergine.com/)
 
-
 ---
+# But .. Why ??
+
+It bothered me for a long time that we need to write so much boilerplate code for trivial tasks. This should be simple! 
+
+For the longest time I thought it's a great thing to have so many entry-level tutorials for self-learners.
+But then I realized how rampant tutorial hell is among self-learners. 
+How influencers dumb down their content for the quick wins.
+
+What gets taught is nothing but reinventing wheels all the time. 
+Different engine, different code, same content, zero patterns.
+
+I began asking heretic questions ...
 
 ## **<font color="#ee2255">What if ..</font>❓**
 ### .. programming Unity and Godot were easier than Roblox?
@@ -122,11 +133,11 @@ It is! -- Ready to cross-develop? -- [Join the Discussions 💬](https://github.
 
 - **Phase 1:**<br/>Unity (C#); API Design; Portable Layer; Demos and Docs (Q2 2026)
 - **Phase 2:**<br/>Godot (C#); Cross-Engine Tests; Improve onboarding (Q4 2026)
-- **Phase 3:**<br/>Demos & Docs; Promote; Stabilize; (Q2 2027)
+- **Phase 3:**<br/>Demos & Docs; Promote; Stabilize API (Q2 2027)
 
 _Under Consideration_
-- Lua/GDScript Bindings: For even easier scripting.<br/>
-- 2D Support: Initial focus is on 3D games.
+- Lua and/or GDScript Bindings<br/>
+- 2D Support: Initial focus is on 3D games
 
 **→ [Maintenance strategy](MAINTENANCE.md)**
 
