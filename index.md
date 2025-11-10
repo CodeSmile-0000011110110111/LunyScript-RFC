@@ -55,7 +55,7 @@ It bothered me for a long time that we need to write so much boilerplate code fo
 
 I thought it's a great thing to have so many entry-level tutorials for self-learners.
 But then I realized how rampant tutorial hell is among self-learners. 
-And how influencers are damaging coding skills, favoring quick wins by teaching bad practices.
+And how influencers are damaging coding skills, favoring quick wins through teaching bad practices.
 
 I began asking heretic questions ...
 
