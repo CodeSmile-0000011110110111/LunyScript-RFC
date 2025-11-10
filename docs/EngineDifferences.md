@@ -63,7 +63,7 @@ Think of the grouping elements as folders and files in an Explorer/Finder tree v
 - **Unity** has folders (GameObject) with files in them (MonoBehaviour 🧩). There is exactly one type of folder, with hundreds of file types available.
 - **Unreal** has folders (Actor 🧩) with files in them (Component 🧩), which can have more nested files inside. There are dozens of folder types, hundreds of file types, and they cannot be freely mixed and matched.
 
-The 🧩symbol denotes the types we subclass to write logic. The above analogy also maps perfectly to the perceived complexity of each engine. 
+The 🧩symbol denotes the types we write logic for. The above analogy also maps perfectly to the perceived complexity of each engine. 
 
 - In Godot, we can attach a single GDScript to each folder.
 - In Unity, we can attach multiple MonoBehaviour scripts or built-in components to each folder.
