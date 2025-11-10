@@ -4,7 +4,7 @@ title: LunyScript - Cross-Engine Gameplay Scripting
 ---
 
 # **🎮 LunyScript 🎮**
-The powerful and user-friendly alternative to Unity & Godot visual scripting.
+The powerful and user-friendly alternative to visual scripting.
 
 ## **Code That Speaks To You!**
 
@@ -20,13 +20,13 @@ It's Game Over For Tutorial Hell! 🤗
 
 ## **✨ Same Code - Any Engine ✨** 
 
-LunyScript unifies high level gameplay programming across pro-tier game engines.
+LunyScript unifies high-level gameplay programming across pro-tier game engines.
 
 Coming soon: For **Unity**<sup> Q2/2026</sup> and **Godot**<sup> Q4/2026</sup> and ..
 
 ## **🤨 Any Engine?? Das Crazy! 🤯** 
 
-These game engines only diverge in high-end features. The basics created _Megabonk_.
+These engines all share the same fundamental features needed to create _Megabonk_.
 
 [![LunyScript Demo](media/LunyScript_Demo.gif)](https://youtu.be/Vn38VLNDsuw "LunyScript: Same Code, Three Engines - Proof of Concept Demo")
 
