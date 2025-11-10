@@ -33,7 +33,7 @@ Game engines all share the same fundamental features needed to create _Megabonk_
 
 LunyScript is C# because that'll work in up to eight pro-tier game engines. Only two are C++ exclusive (O3DE, Cocos).
 
-## **🧐This can't possibly work!!🤥**
+## 🧐This can't possibly work!!🤥
 
 It does! It's not rocket science, just applied software design patterns. Made in 20 days.
 **[=> Watch the full video on YouTube (1:20)](https://youtu.be/Vn38VLNDsuw)**
