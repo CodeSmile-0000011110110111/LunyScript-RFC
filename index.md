@@ -16,31 +16,40 @@ When.Collision.With("ball")
 
 It's Game Over For Tutorial Hell! 🤗
 
+Coming soon: For **Unity**<sup> Q2/2026</sup> and **Godot**<sup> Q4/2026</sup> and ..
+
 ---
 
 ## **✨ Same Code - Any Engine ✨** 
 
-LunyScript unifies high-level gameplay programming across pro-tier game engines.
+LunyScript aims to unify beginner-friendly, high-level gameplay programming across pro-tier game engines. 
+Its core abstractions can be used by others to build more cross-engine integrated frameworks and tools.
 
-Coming soon: For **Unity**<sup> Q2/2026</sup> and **Godot**<sup> Q4/2026</sup> and ..
+My vision is to reduce the API lock-in and migration friction, and to boost both less popular engines and a shared ecosystem.
 
 ## **🤨 Any Engine?? Das Crazy! 🤯** 
 
-These engines all share the same fundamental features needed to create _Megabonk_.
+Game engines all share the same fundamental features needed to create _Megabonk_.
 
 [![LunyScript Demo](media/LunyScript_Demo.gif)](https://youtu.be/Vn38VLNDsuw "LunyScript: Same Code, Three Engines - Proof of Concept Demo")
 
+Programming languages aren't as fragmented as most perceive: Eight pro-tier game engines will run C# while only two are C++ exclusive (O3DE, Cocos).
 
+## **🧐This can't possibly work!!🤥**
 
-## 🙌 Benefits 🎉
+It does! Made in 20 days. It's not rocket science, just applied software design patterns.
+**[=> Watch the full video on YouTube (1:20)](https://youtu.be/Vn38VLNDsuw)**
 
-- <font size="3px">Code without the tech talk gibberish. 🗑️</font>
-- <font size="3px">Learn like a scientist: through experimentation. 🧪</font>
-- <font size="3px">Visible placeholders instead of _NullReference_ crashes. 🧘‍♂️</font>
-- <font size="3px">Extensible with 'real' code - bite-sized. When you're ready. 😎</font>
-- <font size="3px">Try another engine? Keep your assets and your code! 🧳</font>
-- <font size="3px">Vibe coding generates relatable results to learn from. 💡</font>
-- <font size="3px">The best? LunyScript is fast with 66% less boilerplate. 🤏</font>
+> 🚧 **Status: Proof of Concept**<br/>
+> 📸 [View detailed PoC documentation, screenshots, and source code →](PoC_2025-10/)
+
+**→ [How LunyScript unifies different engine architectures](docs/EngineDifferences.md)**<br/>
+**→ [API design philosophy and principles](docs/Philosophy.md)**<br/>
+**→ [FOSS-compliant AI-assisted development](AI-USAGE.md)**<br/>
+_Note: Physics behaviour will deviate between physics engines, requires scaling values._
+
+LunyScript can adapt to: [Stride](https://stride3d.net/), [Flax](https://flaxengine.com/), [UnrealSharp](https://www.unrealsharp.com/), [CryEngine](https://www.cryengine.com/), [Unigine](https://unigine.com/), [Evergine](https://evergine.com/)
+
 
 ---
 
@@ -89,22 +98,6 @@ Assets transfer. 🚀
 ### And it were free, and open source?
 
 It is! -- Ready to cross-develop? -- [Join the Discussions 💬](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC/discussions/)
-
----
-
-# **🧐This can't possibly work!!🤥**
-
-It does! Made in 20 days. **[=> Watch the full video on YouTube (1:20)](https://youtu.be/Vn38VLNDsuw)**
-
-> 🚧 **Status: Proof of Concept**<br/>
-> 📸 [View detailed PoC documentation, screenshots, and source code →](PoC_2025-10/)
-
-**→ [How LunyScript unifies different engine architectures](docs/EngineDifferences.md)**<br/>
-**→ [API design philosophy and principles](docs/Philosophy.md)**<br/>
-**→ [FOSS-compliant AI-assisted development](AI-USAGE.md)**<br/>
-_Physics behaviour will deviate between physics engines._
-
-LunyScript can adapt to: [Stride](https://stride3d.net/), [Flax](https://flaxengine.com/), [UnrealSharp](https://www.unrealsharp.com/), [CryEngine](https://www.cryengine.com/), [Unigine](https://unigine.com/), [Evergine](https://evergine.com/)
 
 
 ---
