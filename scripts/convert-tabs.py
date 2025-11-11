@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
 Convert Jekyll tabs syntax to HTML tabs for GitHub Pages compatibility.
+NO INDENTATION for Kramdown to parse correctly.
 """
 
 import re
-import sys
 
 def convert_tabs_to_html(content):
     """Convert {% tabs %} syntax to HTML tabs."""
@@ -23,25 +23,25 @@ def convert_tabs_to_html(content):
         if not tabs:
             return match.group(0)  # Return original if no tabs found
 
-        # Build HTML
-        html = f'<div class="code-tabs" data-group="{group_name}">\n'
-        html += '  <div class="tab-buttons">\n'
+        # Build HTML with NO INDENTATION (Kramdown treats indented HTML as code)
+        html = '\n<div class="code-tabs" data-group="' + group_name + '">\n'
+        html += '<div class="tab-buttons">\n'
 
         # Add tab buttons
         for i, tab in enumerate(tabs):
             tab_label = tab.group(1)
             active_class = 'tab-button active' if i == 0 else 'tab-button'
-            html += f'    <button class="{active_class}">{tab_label}</button>\n'
+            html += f'<button class="{active_class}">{tab_label}</button>\n'
 
-        html += '  </div>\n'
+        html += '</div>\n\n'
 
-        # Add tab contents
+        # Add tab contents - markdown="1" tells Kramdown to process markdown inside
         for i, tab in enumerate(tabs):
             tab_body = tab.group(2).strip()
             active_class = ' active' if i == 0 else ''
-            html += f'  <div class="tab-content{active_class}">\n\n{tab_body}\n\n  </div>\n'
+            html += f'<div class="tab-content{active_class}" markdown="1">\n\n{tab_body}\n\n</div>\n\n'
 
-        html += '</div>\n'
+        html += '</div>\n\n'
 
         return html
 
