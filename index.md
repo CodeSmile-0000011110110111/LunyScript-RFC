@@ -3,7 +3,7 @@ layout: default
 title: LunyScript - Cross-Engine Gameplay Scripting
 ---
 
-# **LunyScript 🎮** Makes Making Games Fun Again!
+# **LunyScript 🎮** Makes Making Games Fun!
 
 <sup>Coming soon for **Unity** (Q2/2026) and **Godot** (Q4/2026) ...</sup>
 
