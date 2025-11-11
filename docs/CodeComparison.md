@@ -16,8 +16,9 @@ With LunyScript, learners are far more likely to find early successes and stay m
 ![Chart_Lines_of_Code.png](../media/Chart_Lines_of_Code.png)
 <sup>[View Interactive Chart](https://docs.google.com/spreadsheets/d/e/2PACX-1vQYteK-tn0qLcvssVP5sLEcTg7adjtRbbE56Usj-BUmtx033RVY9lLt0aPpL_Ef4uEp8DNvRpBgWLTh/pubchart?oid=2073524744&format=interactive)</sup>
 
-**Conclusion:** GDScript is widely considered as beginner-friendly because it reduces cognitive load by 38% on average when compared to Godot C# code. LunyScript however reduces the cognitive load by 83% on average - over twice as much as GDScript!
+**Conclusion:** GDScript is widely considered as beginner-friendly. This can be attributed to reducing cognitive load by 38% on average compared to Godot C# code. LunyScript reduces the cognitive load over twice as much, by 82% on average! In addition, it also removes common paint points like NullReference exceptions. 
 
+---
 
 ## 1. Collision Detection & Response
 
