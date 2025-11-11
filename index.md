@@ -4,23 +4,29 @@ title: LunyScript - Cross-Engine Gameplay Scripting
 ---
 
 # **🎮 LunyScript 🎮** for Unity<sup> Q2/26</sup> and Godot<sup> Q4/26</sup>
-The powerful and user-friendly alternative to visual scripting.
+
+Restoring joy to game development: LunyScript is the powerful and user-friendly alternative to visual scripting.
 
 ---
 
-## **Code That Speaks To You!**
+## **Code That You Can Navigate**
 
 ```csharp
-When.Collision.With("ball")
-    .Begins(Audio.Play("energy_buildup"))
-    .Ends(Spawn("sparkles"), Audio.Play("kick"));
+public MyPlayer()
+{
+    When.Collision.With("ball")
+        .Begins(Audio.Play("energy_buildup"))
+        .Ends(Spawn("sparkles"), Event.Send("kick").To("ball"));
+}
 ```
+
+Extend it with your own blocks by writing simple C# extension methods.
 
 Enjoy experimenting: It's Game Over For Tutorial Hell! 🤗
 
 ## **✨ Same Code - Any Engine ✨** 
 
-LunyScript is beginner-friendly, high-level gameplay programming that works uniformly across pro-tier game engines.
+LunyScript is beginner-friendly, high-level gameplay programming that **works uniformly across game engines**.
 
 ## **🤨 Any Engine?? Das Crazy! 🤯** 
 
@@ -38,6 +44,7 @@ It does! It's not rocket science, just applied software design patterns. Made in
 
 **→ [How LunyScript unifies different engine architectures](docs/EngineDifferences.md)**<br/>
 **→ [API design philosophy and principles](docs/Philosophy.md)**<br/>
+**→ [Code comparison: LunyScript vs traditional approaches](docs/CodeComparison.md)**<br/>
 **→ [FOSS-compliant AI-assisted development](AI-USAGE.md)**<br/>
 _Note: Physics behaviour will deviate between physics engines, requires scaling values._
 

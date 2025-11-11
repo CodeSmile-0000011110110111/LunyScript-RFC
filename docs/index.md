@@ -14,6 +14,7 @@ Welcome to the LunyScript design documentation. This section covers the architec
 - [Background](Background.md) - Project motivation and context
 - [Philosophy](Philosophy.md) - API design philosophy and principles
 - [Engine Differences](EngineDifferences.md) - How engines differ and how LunyScript unifies them
+- [Code Comparison](CodeComparison.md) - Side-by-side comparison: LunyScript vs traditional approaches
 - [FAQ](../FAQ.md) - Frequently asked questions
 
 ### Design Risk Assessment
