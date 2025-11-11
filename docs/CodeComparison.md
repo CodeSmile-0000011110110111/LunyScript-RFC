@@ -1,6 +1,6 @@
 # Code Comparison: LunyScript vs Traditional Approaches
 
-This document compares LunyScript with traditional game engine code across common beginner tasks. Each comparison demonstrates how LunyScript reduces cognitive load (overwhelming) and boilerplate code (boring, frustrating). 
+This document compares LunyScript with traditional game engine code across common beginner tasks. Each comparison demonstrates how LunyScript reduces cognitive load (overwhelm, frustration) and boilerplate code (boredom). 
 
 With LunyScript, learners are far more likely to find early successes and stay motivated. The risk of entering _tutorial hell_ is significantly reduced because LunyScript encourages exploration and experimentation.
 
@@ -14,15 +14,8 @@ With LunyScript, learners are far more likely to find early successes and stay m
 
 ## Summary Table
 
-[Interactive Chart](https://docs.google.com/spreadsheets/d/e/2PACX-1vQYteK-tn0qLcvssVP5sLEcTg7adjtRbbE56Usj-BUmtx033RVY9lLt0aPpL_Ef4uEp8DNvRpBgWLTh/pubchart?oid=2073524744&format=interactive)
-
-![Interactive Chart](https://docs.google.com/spreadsheets/d/e/2PACX-1vQYteK-tn0qLcvssVP5sLEcTg7adjtRbbE56Usj-BUmtx033RVY9lLt0aPpL_Ef4uEp8DNvRpBgWLTh/pubchart?oid=2073524744&format=interactive)
-
-png
-![Lines of Code_ LunyScript vs Engines.png](../media/Lines%20of%20Code_%20LunyScript%20vs%20Engines.png)
-
-svg
-![Lines of Code_ LunyScript vs Engines.svg](../media/Lines%20of%20Code_%20LunyScript%20vs%20Engines.svg)
+![Lines of Code.png](../media/Lines%20of%20Code.png)
+<sup>[View Interactive Chart](https://docs.google.com/spreadsheets/d/e/2PACX-1vQYteK-tn0qLcvssVP5sLEcTg7adjtRbbE56Usj-BUmtx033RVY9lLt0aPpL_Ef4uEp8DNvRpBgWLTh/pubchart?oid=2073524744&format=interactive)</sup>
 
 | Concept | LunyScript LOC | Unity C# LOC | Godot C# LOC | GDScript LOC | Overwhelm Reduction |
 |---------|----------------|--------------|--------------|--------------|---------------------|
