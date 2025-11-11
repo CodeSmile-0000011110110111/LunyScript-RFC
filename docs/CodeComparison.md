@@ -1,8 +1,8 @@
 # Code Comparison: LunyScript vs Traditional Approaches
 
-LunyScript compared with traditional game engine code across common beginner tasks. 
+LunyScript compared with traditional game engine code across common beginner tasks.
 
-Each comparison demonstrates how LunyScript reduces cognitive load (overwhelm, frustration) and boilerplate code (boredom) . 
+Each comparison demonstrates how LunyScript reduces cognitive load (overwhelm, frustration) and boilerplate code (boredom) .
 
 With LunyScript, learners are far more likely to find early successes and stay motivated. The risk of entering _tutorial hell_ is significantly reduced because LunyScript encourages exploration and experimentation.
 
@@ -27,8 +27,9 @@ With LunyScript, learners are far more likely to find early successes and stay m
 
 **Overwhelm Reduction:** 90%
 
-### LunyScript (Cross-Engine)
+{% tabs collision %}
 
+{% tab collision LunyScript %}
 ```csharp
 protected override void OnReady()
 {
@@ -37,11 +38,10 @@ protected override void OnReady()
 ```
 
 **Concepts needed:** 0 new concepts (reads as intent)
+**Lines of code:** 3
+{% endtab %}
 
----
-
-### Unity C#
-
+{% tab collision Unity C# %}
 ```csharp
 [SerializeField] private AudioClip paddleHitSound;
 private AudioSource audioSource;
@@ -64,13 +64,10 @@ private void OnCollisionEnter(Collision collision)
 ```
 
 **Concepts needed:** MonoBehaviour lifecycle, SerializeField, AudioSource component, GetComponent, OnCollisionEnter callback, Collision object, tag comparison, null checking
+**Lines of code:** 16
+{% endtab %}
 
-**Lines of code:** 16 vs 3 (LunyScript)
-
----
-
-### Godot C#
-
+{% tab collision Godot C# %}
 ```csharp
 [Export] private AudioStream _paddleHitSound;
 private AudioStreamPlayer3D _audioPlayer;
@@ -104,13 +101,10 @@ private void _OnBodyEntered(Node3D body)
 ```
 
 **Concepts needed:** Node lifecycle, Export attribute, AudioStreamPlayer3D, GetNode, Groups/tags, Signal connections (not shown), manual setup
+**Lines of code:** 25+
+{% endtab %}
 
-**Lines of code:** 25+ vs 3 (LunyScript)
-
----
-
-### GDScript
-
+{% tab collision GDScript %}
 ```gdscript
 @export var paddle_hit_sound: AudioStream
 @onready var audio_player: AudioStreamPlayer3D = $AudioStreamPlayer3D
@@ -130,8 +124,10 @@ func _on_body_entered(body: Node3D):
 ```
 
 **Concepts needed:** @export, @onready, node paths, signal.connect(), is_in_group(), null safety
+**Lines of code:** 14
+{% endtab %}
 
-**Lines of code:** 14 vs 3 (LunyScript)
+{% endtabs %}
 
 ---
 
@@ -141,8 +137,9 @@ func _on_body_entered(body: Node3D):
 
 **Overwhelm Reduction:** 85%
 
-### LunyScript (Cross-Engine)
+{% tabs input %}
 
+{% tab input LunyScript %}
 ```csharp
 protected override void OnReady()
 {
@@ -154,11 +151,10 @@ protected override void OnReady()
 ```
 
 **Concepts needed:** 0 new concepts (reads as intent)
+**Lines of code:** 6
+{% endtab %}
 
----
-
-### Unity C#
-
+{% tab input Unity C# %}
 ```csharp
 [SerializeField] private float moveSpeed = 10f;
 private Rigidbody rb;
@@ -192,13 +188,10 @@ private void FixedUpdate()
 ```
 
 **Concepts needed:** SerializeField, Rigidbody, GetComponent, FixedUpdate vs Update, Input.GetKey, KeyCode enum, Vector3, transform.forward, Time.fixedDeltaTime, physics integration
+**Lines of code:** 28
+{% endtab %}
 
-**Lines of code:** 28 vs 6 (LunyScript)
-
----
-
-### Godot C#
-
+{% tab input Godot C# %}
 ```csharp
 [Export] private float _moveSpeed = 10f;
 private RigidBody3D _rigidbody;
@@ -235,13 +228,10 @@ public override void _PhysicsProcess(double delta)
 ```
 
 **Concepts needed:** Export, RigidBody3D, _PhysicsProcess vs _Process, Input.IsKeyPressed, Key enum, Vector3, GlobalTransform.Basis, delta time, coordinate system differences
+**Lines of code:** 31
+{% endtab %}
 
-**Lines of code:** 31 vs 6 (LunyScript)
-
----
-
-### GDScript
-
+{% tab input GDScript %}
 ```gdscript
 @export var move_speed: float = 10.0
 @onready var rigidbody: RigidBody3D = self
@@ -264,8 +254,10 @@ func _physics_process(delta):
 ```
 
 **Concepts needed:** @export, @onready, _physics_process, Input.is_key_pressed, KEY_ constants, Vector3, global_transform.basis, delta, coordinate systems
+**Lines of code:** 18
+{% endtab %}
 
-**Lines of code:** 18 vs 6 (LunyScript)
+{% endtabs %}
 
 ---
 
@@ -275,8 +267,9 @@ func _physics_process(delta):
 
 **Overwhelm Reduction:** 80%
 
-### LunyScript (Cross-Engine)
+{% tabs audio %}
 
+{% tab audio LunyScript %}
 ```csharp
 protected override void OnReady()
 {
@@ -285,11 +278,10 @@ protected override void OnReady()
 ```
 
 **Concepts needed:** 0 new concepts
+**Lines of code:** 3
+{% endtab %}
 
----
-
-### Unity C#
-
+{% tab audio Unity C# %}
 ```csharp
 [SerializeField] private AudioClip bumpSound;
 private AudioSource audioSource;
@@ -316,13 +308,10 @@ private void OnCollisionEnter(Collision collision)
 ```
 
 **Concepts needed:** AudioClip vs AudioSource, SerializeField, GetComponent, AddComponent, PlayOneShot vs Play, null checking, component architecture
+**Lines of code:** 21
+{% endtab %}
 
-**Lines of code:** 21 vs 3 (LunyScript)
-
----
-
-### Godot C#
-
+{% tab audio Godot C# %}
 ```csharp
 [Export] private AudioStream _bumpSound;
 private AudioStreamPlayer3D _audioPlayer;
@@ -347,13 +336,10 @@ private void _OnBodyEntered(Node3D body)
 ```
 
 **Concepts needed:** AudioStream vs AudioStreamPlayer3D, Export, node creation, AddChild, setting Stream before Play, groups
+**Lines of code:** 18
+{% endtab %}
 
-**Lines of code:** 18 vs 3 (LunyScript)
-
----
-
-### GDScript
-
+{% tab audio GDScript %}
 ```gdscript
 @export var bump_sound: AudioStream
 @onready var audio_player: AudioStreamPlayer3D = AudioStreamPlayer3D.new()
@@ -370,8 +356,10 @@ func _on_body_entered(body: Node3D):
 ```
 
 **Concepts needed:** @export, @onready, AudioStream vs Player, new() instantiation, add_child, signal connections, groups
+**Lines of code:** 12
+{% endtab %}
 
-**Lines of code:** 12 vs 3 (LunyScript)
+{% endtabs %}
 
 ---
 
@@ -381,8 +369,9 @@ func _on_body_entered(body: Node3D):
 
 **Overwhelm Reduction:** 75%
 
-### LunyScript (Cross-Engine)
+{% tabs button %}
 
+{% tab button LunyScript %}
 ```csharp
 protected override void OnReady()
 {
@@ -391,11 +380,10 @@ protected override void OnReady()
 ```
 
 **Concepts needed:** 0 new concepts
+**Lines of code:** 3
+{% endtab %}
 
----
-
-### Unity C#
-
+{% tab button Unity C# %}
 ```csharp
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -435,13 +423,10 @@ private void OnTryAgainClicked()
 ```
 
 **Concepts needed:** UnityEngine.UI namespace, Button component, SerializeField, GameObject.Find, GetComponent, AddListener/RemoveListener, OnDestroy cleanup, SceneManager, GetActiveScene, scene lifecycle
+**Lines of code:** 30
+{% endtab %}
 
-**Lines of code:** 30 vs 3 (LunyScript)
-
----
-
-### Godot C#
-
+{% tab button Godot C# %}
 ```csharp
 private Button _tryAgainButton;
 
@@ -479,13 +464,10 @@ private void OnTryAgainPressed()
 ```
 
 **Concepts needed:** Button node, GetNode vs FindChild, node paths, Pressed signal/event, += event subscription, -= cleanup, _ExitTree lifecycle, GetTree(), ReloadCurrentScene()
+**Lines of code:** 28
+{% endtab %}
 
-**Lines of code:** 28 vs 3 (LunyScript)
-
----
-
-### GDScript
-
+{% tab button GDScript %}
 ```gdscript
 @onready var try_again_button: Button = $TryAgain
 
@@ -507,8 +489,10 @@ func _on_try_again_pressed():
 ```
 
 **Concepts needed:** @onready, $ node path, Button, find_child, signal.connect/disconnect, _exit_tree, get_tree(), reload_current_scene()
+**Lines of code:** 16
+{% endtab %}
 
-**Lines of code:** 16 vs 3 (LunyScript)
+{% endtabs %}
 
 ---
 
@@ -518,8 +502,9 @@ func _on_try_again_pressed():
 
 **Overwhelm Reduction:** 70%
 
-### LunyScript (Cross-Engine)
+{% tabs variables %}
 
+{% tab variables LunyScript %}
 ```csharp
 protected override void OnReady()
 {
@@ -535,11 +520,10 @@ protected override void OnReady()
 ```
 
 **Concepts needed:** 0 new concepts (automatic binding)
+**Lines of code:** 9
+{% endtab %}
 
----
-
-### Unity C#
-
+{% tab variables Unity C# %}
 ```csharp
 using UnityEngine.UI;
 
@@ -586,13 +570,10 @@ private void PlayCoinSound()
 ```
 
 **Concepts needed:** Text component, SerializeField, GameObject.Find, manual UI updates, ToString(), string concatenation, separation of concerns (UpdateScoreDisplay method)
+**Lines of code:** 37
+{% endtab %}
 
-**Lines of code:** 37 vs 9 (LunyScript)
-
----
-
-### Godot C#
-
+{% tab variables Godot C# %}
 ```csharp
 [Export] private Label _scoreLabel;
 private int _score = 0;
@@ -637,13 +618,10 @@ private void PlayCoinSound()
 ```
 
 **Concepts needed:** Label node, Export, FindChild, manual UI updates, string interpolation, separation of concerns, signal connections (not shown)
+**Lines of code:** 36
+{% endtab %}
 
-**Lines of code:** 36 vs 9 (LunyScript)
-
----
-
-### GDScript
-
+{% tab variables GDScript %}
 ```gdscript
 @export var score_label: Label
 var score: int = 0
@@ -674,8 +652,10 @@ func play_coin_sound():
 ```
 
 **Concepts needed:** @export, Label, find_child, manual UI updates, str() conversion, signal connections, separation of concerns
+**Lines of code:** 26
+{% endtab %}
 
-**Lines of code:** 26 vs 9 (LunyScript)
+{% endtabs %}
 
 ---
 
@@ -685,8 +665,9 @@ func play_coin_sound():
 
 **Overwhelm Reduction:** 65%
 
-### LunyScript (Cross-Engine)
+{% tabs timers %}
 
+{% tab timers LunyScript %}
 ```csharp
 protected override void OnReady()
 {
@@ -702,11 +683,10 @@ protected override void OnReady()
 ```
 
 **Concepts needed:** 0 new concepts (reads as sequence)
+**Lines of code:** 10
+{% endtab %}
 
----
-
-### Unity C#
-
+{% tab timers Unity C# %}
 ```csharp
 using System.Collections;
 using UnityEngine.UI;
@@ -766,13 +746,10 @@ private void EndGame()
 ```
 
 **Concepts needed:** Coroutines, IEnumerator, yield return, WaitForSeconds, StartCoroutine, StopCoroutine, OnDestroy cleanup, while loops, manual UI updates
+**Lines of code:** 49
+{% endtab %}
 
-**Lines of code:** 49 vs 10 (LunyScript)
-
----
-
-### Godot C#
-
+{% tab timers Godot C# %}
 ```csharp
 [Export] private Label _timeLabel;
 [Export] private float _startTime = 60f;
@@ -835,13 +812,10 @@ private void EndGame()
 ```
 
 **Concepts needed:** SceneTreeTimer, CreateTimer, Timeout signal/event, += event subscription, recursive timer restart, _ExitTree cleanup, manual UI updates
+**Lines of code:** 53
+{% endtab %}
 
-**Lines of code:** 53 vs 10 (LunyScript)
-
----
-
-### GDScript
-
+{% tab timers GDScript %}
 ```gdscript
 @export var time_label: Label
 @export var start_time: float = 60.0
@@ -878,8 +852,10 @@ func end_game():
 ```
 
 **Concepts needed:** get_tree().create_timer(), SceneTreeTimer, timeout signal, signal.connect, recursive timer restart, ceili() for ceiling, manual UI updates
+**Lines of code:** 32
+{% endtab %}
 
-**Lines of code:** 32 vs 10 (LunyScript)
+{% endtabs %}
 
 ---
 
@@ -897,6 +873,54 @@ func end_game():
 
 ---
 
+## Key Observations
+
+### LunyScript Advantages:
+
+1. **Consistent API Across Engines**
+   - Same code works in Unity, Godot, and beyond
+   - No need to relearn patterns for different engines
+   - Skills transfer completely
+
+2. **Zero Boilerplate**
+   - No component management
+   - No manual event subscription/unsubscription
+   - No lifecycle method complexity
+
+3. **Intent-Driven Code**
+   - Reads like what you want to happen
+   - No technical jargon barriers
+   - Natural language flow
+
+4. **Automatic Management**
+   - UI binding happens automatically
+   - Audio components created as needed
+   - Event cleanup handled internally
+
+5. **Lines of Code Reduction**
+   - **81% fewer lines** vs Unity C#
+   - **82% fewer lines** vs Godot C#
+   - **71% fewer lines** vs GDScript
+
+### Traditional Approach Challenges:
+
+1. **Concept Overload**
+   - Each task requires understanding 5-10 new concepts
+   - Engine-specific terminology and patterns
+   - Separation between logic and setup code
+
+2. **Boilerplate Tax**
+   - Null checking, component management, event cleanup
+   - Manual UI updates
+   - Lifecycle method understanding
+
+3. **Non-Transferable Knowledge**
+   - Unity patterns don't apply to Godot
+   - C# patterns differ from GDScript
+   - Relearning required per engine
+
+---
+
 ## Notes
 
 - **LOC (Lines of Code):** Excluding blank lines and comments
@@ -904,54 +928,6 @@ func end_game():
 - **LunyScript examples** based on October 2025 Proof of Concept API
 - Traditional examples represent **common beginner patterns**, not necessarily optimal advanced patterns
 - All examples assume 3D physics-based games
-
----
-
-## Key Observations
-
-### LunyScript Advantages:
-
-1. **Consistent API Across Engines**
-    - Same code works in Unity, Godot, and beyond
-    - No need to relearn patterns for different engines
-    - Skills transfer completely
-
-2. **Zero Boilerplate**
-    - No component management
-    - No manual event subscription/unsubscription
-    - No lifecycle method complexity
-
-3. **Intent-Driven Code**
-    - Reads like what you want to happen
-    - No technical jargon barriers
-    - Natural language flow
-
-4. **Automatic Management**
-    - UI binding happens automatically
-    - Audio components created as needed
-    - Event cleanup handled internally
-
-5. **Lines of Code Reduction**
-    - **81% fewer lines** vs Unity C#
-    - **82% fewer lines** vs Godot C#
-    - **71% fewer lines** vs GDScript
-
-### Traditional Approach Challenges:
-
-1. **Concept Overload**
-    - Each task requires understanding 5-10 new concepts
-    - Engine-specific terminology and patterns
-    - Separation between logic and setup code
-
-2. **Boilerplate Tax**
-    - Null checking, component management, event cleanup
-    - Manual UI updates
-    - Lifecycle method understanding
-
-3. **Non-Transferable Knowledge**
-    - Unity patterns don't apply to Godot
-    - C# patterns differ from GDScript
-    - Relearning required per engine
 
 ---
 
