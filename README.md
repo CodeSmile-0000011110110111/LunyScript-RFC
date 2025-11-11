@@ -1,4 +1,7 @@
-# LunyScript - Cross-Engine Gameplay Scripting
+# LunyScript - Makes Making Games Fun Again!
+<sup>Coming soon for **Unity** (Q2/2026) and **Godot** (Q4/2026) ...</sup>
+
+LunyScript is the powerful and user-friendly alternative to visual scripting.
 
 ## Works the same in Unity, Godot, Unreal, ...
 
@@ -6,8 +9,9 @@
         .Begins(Audio.Play("ball_tagged_loop"))
         .Ends(Spawn("sparkles").At(Other).Run(Wait.Seconds(2.5), Despawn()))
 
-Different Engine: Same Behaviour<br/>
-Different language: Same Semantics
+Something missing? Extend these bite-sized blocks by writing C# extension methods.
+
+**Game Over For Tutorial Hell!** 🤗
 
 ## Proof: Same Code, Three Engines
 
