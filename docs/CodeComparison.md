@@ -1,12 +1,86 @@
 # Code Comparison: LunyScript vs Traditional Approaches
 
-This document compares LunyScript with traditional game engine scripting approaches across the most common beginner tasks. Each comparison demonstrates how LunyScript reduces cognitive load and boilerplate code.
+This document compares LunyScript with traditional game engine code across common beginner tasks. Each comparison demonstrates how LunyScript reduces cognitive load (overwhelming) and boilerplate code (boring, frustrating). 
+
+With LunyScript, learners are far more likely to find early successes and stay motivated. The risk of entering _tutorial hell_ is significantly reduced because LunyScript encourages exploration and experimentation.
 
 **Engines Compared:**
-- **LunyScript** (Cross-engine)
-- **Unity C#** (Traditional Unity approach)
-- **Godot C#** (Traditional Godot C# approach)
-- **GDScript** (Traditional Godot scripting language)
+- **LunyScript** (Cross-engine C#)
+- **Unity C#** (Unity C#)
+- **Godot C#** (Godot C#)
+- **GDScript** (Godot domain specific language)
+
+---
+
+## Summary Table
+
+| Concept | LunyScript LOC | Unity C# LOC | Godot C# LOC | GDScript LOC | Overwhelm Reduction |
+|---------|----------------|--------------|--------------|--------------|---------------------|
+| Collision Detection | 3 | 16 | 25+ | 14 | 90% |
+| Input Handling | 6 | 28 | 31 | 18 | 85% |
+| Audio Playback | 3 | 21 | 18 | 12 | 80% |
+| UI Button Events | 3 | 30 | 28 | 16 | 75% |
+| Variables & HUD Binding | 9 | 37 | 36 | 26 | 70% |
+| Timers & Sequences | 10 | 49 | 53 | 32 | 65% |
+| **Total** | **34** | **181** | **191** | **118** | **77% average** |
+
+---
+
+## Notes
+
+- **LOC (Lines of Code):** Excluding blank lines and comments
+- **Overwhelm Reduction:** Based on concept count and code clarity differences
+- **LunyScript examples** based on October 2025 Proof of Concept API
+- Traditional examples represent **common beginner patterns**, not necessarily optimal advanced patterns
+- All examples assume 3D physics-based games
+
+---
+
+## Key Observations
+
+### LunyScript Advantages:
+
+1. **Consistent API Across Engines**
+    - Same code works in Unity, Godot, and beyond
+    - No need to relearn patterns for different engines
+    - Skills transfer completely
+
+2. **Zero Boilerplate**
+    - No component management
+    - No manual event subscription/unsubscription
+    - No lifecycle method complexity
+
+3. **Intent-Driven Code**
+    - Reads like what you want to happen
+    - No technical jargon barriers
+    - Natural language flow
+
+4. **Automatic Management**
+    - UI binding happens automatically
+    - Audio components created as needed
+    - Event cleanup handled internally
+
+5. **Lines of Code Reduction**
+    - **81% fewer lines** vs Unity C#
+    - **82% fewer lines** vs Godot C#
+    - **71% fewer lines** vs GDScript
+
+### Traditional Approach Challenges:
+
+1. **Concept Overload**
+    - Each task requires understanding 5-10 new concepts
+    - Engine-specific terminology and patterns
+    - Separation between logic and setup code
+
+2. **Boilerplate Tax**
+    - Null checking, component management, event cleanup
+    - Manual UI updates
+    - Lifecycle method understanding
+
+3. **Non-Transferable Knowledge**
+    - Unity patterns don't apply to Godot
+    - C# patterns differ from GDScript
+    - Relearning required per engine
 
 ---
 
@@ -869,78 +943,6 @@ func end_game():
 **Concepts needed:** get_tree().create_timer(), SceneTreeTimer, timeout signal, signal.connect, recursive timer restart, ceili() for ceiling, manual UI updates
 
 **Lines of code:** 32 vs 10 (LunyScript)
-
----
-
-## Summary Table
-
-| Concept | LunyScript LOC | Unity C# LOC | Godot C# LOC | GDScript LOC | Overwhelm Reduction |
-|---------|----------------|--------------|--------------|--------------|---------------------|
-| Collision Detection | 3 | 16 | 25+ | 14 | 90% |
-| Input Handling | 6 | 28 | 31 | 18 | 85% |
-| Audio Playback | 3 | 21 | 18 | 12 | 80% |
-| UI Button Events | 3 | 30 | 28 | 16 | 75% |
-| Variables & HUD Binding | 9 | 37 | 36 | 26 | 70% |
-| Timers & Sequences | 10 | 49 | 53 | 32 | 65% |
-| **Total** | **34** | **181** | **191** | **118** | **77% average** |
-
----
-
-## Key Observations
-
-### LunyScript Advantages:
-
-1. **Consistent API Across Engines**
-   - Same code works in Unity, Godot, and beyond
-   - No need to relearn patterns for different engines
-   - Skills transfer completely
-
-2. **Zero Boilerplate**
-   - No component management
-   - No manual event subscription/unsubscription
-   - No lifecycle method complexity
-
-3. **Intent-Driven Code**
-   - Reads like what you want to happen
-   - No technical jargon barriers
-   - Natural language flow
-
-4. **Automatic Management**
-   - UI binding happens automatically
-   - Audio components created as needed
-   - Event cleanup handled internally
-
-5. **Lines of Code Reduction**
-   - **81% fewer lines** vs Unity C#
-   - **82% fewer lines** vs Godot C#
-   - **71% fewer lines** vs GDScript
-
-### Traditional Approach Challenges:
-
-1. **Concept Overload**
-   - Each task requires understanding 5-10 new concepts
-   - Engine-specific terminology and patterns
-   - Separation between logic and setup code
-
-2. **Boilerplate Tax**
-   - Null checking, component management, event cleanup
-   - Manual UI updates
-   - Lifecycle method understanding
-
-3. **Non-Transferable Knowledge**
-   - Unity patterns don't apply to Godot
-   - C# patterns differ from GDScript
-   - Relearning required per engine
-
----
-
-## Notes
-
-- **LOC (Lines of Code):** Excluding blank lines and comments
-- **Overwhelm Reduction:** Based on concept count and code clarity differences
-- **LunyScript examples** based on October 2025 Proof of Concept API
-- Traditional examples represent **common beginner patterns**, not necessarily optimal advanced patterns
-- All examples assume 3D physics-based games
 
 ---
 
