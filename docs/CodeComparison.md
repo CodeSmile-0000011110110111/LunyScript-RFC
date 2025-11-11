@@ -14,6 +14,16 @@ With LunyScript, learners are far more likely to find early successes and stay m
 
 ## Summary Table
 
+[Interactive Chart](https://docs.google.com/spreadsheets/d/e/2PACX-1vQYteK-tn0qLcvssVP5sLEcTg7adjtRbbE56Usj-BUmtx033RVY9lLt0aPpL_Ef4uEp8DNvRpBgWLTh/pubchart?oid=2073524744&format=interactive)
+
+![Interactive Chart](https://docs.google.com/spreadsheets/d/e/2PACX-1vQYteK-tn0qLcvssVP5sLEcTg7adjtRbbE56Usj-BUmtx033RVY9lLt0aPpL_Ef4uEp8DNvRpBgWLTh/pubchart?oid=2073524744&format=interactive)
+
+png
+![Lines of Code_ LunyScript vs Engines.png](../media/Lines%20of%20Code_%20LunyScript%20vs%20Engines.png)
+
+svg
+![Lines of Code_ LunyScript vs Engines.svg](../media/Lines%20of%20Code_%20LunyScript%20vs%20Engines.svg)
+
 | Concept | LunyScript LOC | Unity C# LOC | Godot C# LOC | GDScript LOC | Overwhelm Reduction |
 |---------|----------------|--------------|--------------|--------------|---------------------|
 | Collision Detection | 3 | 16 | 25+ | 14 | 90% |
