@@ -1,8 +1,11 @@
 // Diagram modal functionality
 document.addEventListener('DOMContentLoaded', function() {
-  const diagramContainer = document.getElementById('diagram-container');
+  const diagramContainers = [
+    document.getElementById('diagram-container'),
+    document.getElementById('extensibility-diagram-container')
+  ].filter(Boolean); // Remove null entries
 
-  if (!diagramContainer) return;
+  if (diagramContainers.length === 0) return;
 
   // Create modal overlay
   const modal = document.createElement('div');
@@ -54,8 +57,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
   document.body.appendChild(modal);
 
-  // Click diagram to open modal
-  diagramContainer.addEventListener('click', function(e) {
+  // Add click handler to all diagram containers
+  diagramContainers.forEach(function(diagramContainer) {
+    diagramContainer.addEventListener('click', function(e) {
     // Find the mermaid SVG
     const svg = diagramContainer.querySelector('svg');
     if (!svg) return;
@@ -120,17 +124,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Show modal
     modal.style.display = 'block';
     document.body.style.overflow = 'hidden';
+    });
   });
 
-  // Click modal to close
-  modal.addEventListener('click', function() {
+  // Click modal to close (clicking dark background or anywhere)
+  modal.addEventListener('click', function(e) {
     modal.style.display = 'none';
     document.body.style.overflow = 'auto';
-  });
-
-  // Prevent closing when clicking the diagram itself in modal
-  enlargedContainer.addEventListener('click', function(e) {
-    e.stopPropagation();
   });
 
   // ESC key to close

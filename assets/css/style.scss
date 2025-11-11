@@ -97,6 +97,23 @@ body {
   font-size: 16px; /* Increased by 1px from default 15px */
 }
 
+/* Increase heading sizes for h3 and below */
+h3 {
+  font-size: 20px; /* Increased by 2px */
+}
+
+h4 {
+  font-size: 18px; /* Increased by 2px */
+}
+
+h5 {
+  font-size: 16px; /* Increased by 2px */
+}
+
+h6 {
+  font-size: 14px; /* Increased by 2px */
+}
+
 /* Code comparison tabs */
 .code-tabs {
   margin: 20px 0;

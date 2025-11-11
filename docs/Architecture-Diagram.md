@@ -108,8 +108,8 @@ When.Collision.With("Enemy").Begins(
 - **Who uses it:** Advanced users extending LunyScript, not typical game developers
 
 ### 🔧 Engine Abstraction Layer (EAL)
-- **What:** Engine-agnostic interfaces for physics, audio, scene management, and input
-- **Benefit:** LunyScript code calls these interfaces, adapters implement them for each engine
+- **What:** Engine-agnostic interfaces for physics, audio, scene, input, etc.
+- **Benefit:** LunyScript calls interfaces, adapters implement them for each engine
 
 **Examples:**
 - **IPhysics:** Collision detection, raycasts, forces
@@ -128,7 +128,118 @@ When.Collision.With("Enemy").Begins(
 
 ### 🎯 Game Engine Layer
 - **What:** The actual game engines (Unity, Godot, etc.)
-- **Benefit:** Use the engine's native tools (editor, debugger, profiler) alongside LunyScript
+- **Benefit:** Use the engine's tools (editor, debugger, profiler) alongside LunyScript
+
+---
+
+## Extensibility: Build Your Own Cross-Engine Framework
+
+LunyScript's architecture enables other developers to build their own cross-engine frameworks by reusing and extending the abstraction layers and engine adapters.
+
+<div id="extensibility-diagram-container" style="width: 100%; overflow-x: auto; cursor: pointer; position: relative;">
+<div style="text-align: center; font-size: 12px; color: #666; margin-bottom: 10px;">
+  <em>Click diagram to view full size ⤢</em>
+</div>
+
+```mermaid
+%%{init: {'theme':'base', 'themeVariables': {
+  'fontSize':'16px',
+  'edgeLabelBackground':'#ffffff',
+  'labelBoxBorderColor':'#999'
+}}}%%
+graph TB
+    subgraph User["<b>👥 Framework Users</b>"]
+        UserCode["Game Developers using<br/>LunyScript or Custom Frameworks"]
+    end
+
+    subgraph Frameworks[" "]
+        FrameworkTitle["<b>🎮 Cross-Engine Frameworks</b>"]
+        LunyScript["LunyScript<br/><i>Declarative Gameplay API</i>"]
+        CustomFW["Your Framework<br/><i>Custom Domain-Specific API</i>"]
+    end
+
+    subgraph Luny[" "]
+        LunyTitle["<b>⚙️ Shared Foundation</b>"]
+        Abstractions["Luny Abstractions<br/>Core Interfaces & Contracts"]
+        EAL["Engine Abstraction Layer<br/>IPhysics, IAudio, IInput, ISceneGraph"]
+    end
+
+    subgraph EngineLayer[" "]
+        EngineTitle["<b>🎯 Engine Integration</b>"]
+        Adapters["Engine Adapters + Game Engines<br/>Unity, Godot, Future Engines"]
+    end
+
+    UserCode -->|uses| LunyScript
+    UserCode -->|uses| CustomFW
+
+    LunyScript -->|built on| Abstractions
+    LunyScript -->|calls| EAL
+    CustomFW -->|built on| Abstractions
+    CustomFW -->|calls| EAL
+
+    EAL -->|implemented by| Adapters
+    Abstractions -.->|defines contracts for| EAL
+
+    classDef userLayer fill:#e1f5ff,stroke:#0077cc,stroke-width:2px,color:#2d3748
+    classDef frameworkLayer fill:#d4edda,stroke:#28a745,stroke-width:2px,color:#2d3748
+    classDef foundationLayer fill:#fff3cd,stroke:#ffc107,stroke-width:2px,color:#2d3748
+    classDef engineLayer fill:#e2e3e5,stroke:#6c757d,stroke-width:2px,color:#2d3748
+    classDef titleStyle fill:none,stroke:none,color:#2d3748,font-size:20px
+    classDef customHighlight fill:#ffe5cc,stroke:#ff8c00,stroke-width:3px,color:#2d3748
+
+    class UserCode userLayer
+    class LunyScript frameworkLayer
+    class CustomFW customHighlight
+    class Abstractions,EAL foundationLayer
+    class Adapters engineLayer
+    class FrameworkTitle,LunyTitle,EngineTitle titleStyle
+```
+
+</div>
+
+### How It Works
+
+**1. LunyScript provides the foundation:**
+- ⚙️ **Luny Abstractions** - Interfaces for schedulers, state machines, behavior trees
+- 🔧 **Engine Abstraction Layer (EAL)** - Engine-agnostic interfaces for physics, audio, input, scenes, etc.
+- 🔌 **Engine Adapters** - Implementations for Unity, Godot, and future engines
+
+**2. You build on top:**
+- 🎨 Create your own domain-specific API (e.g., visual novel framework, RTS framework, card game framework)
+- 🔗 Use Luny Abstractions for behavior and state management
+- 🎯 Call EAL interfaces for cross-engine functionality
+- ✨ Focus on your framework's unique features, not engine integration
+
+**3. Benefits for framework developers:**
+- ✅ **Skip the hard part** - Engine integration already done
+- ✅ **Instant multi-engine support** - Works on Unity, Godot, etc. automatically
+- ✅ **Share the ecosystem** - All frameworks benefit from new engine adapters
+- ✅ **Focus on your domain** - Build features, not plumbing
+- ✅ **Provide more value** - Write for mankind, not engines.
+
+**Example: A Visual Novel Framework**
+```csharp
+// Your custom framework built on LunyScript foundation
+public class VisualNovelScene : LunyScriptBehavior
+{
+    protected override void OnReady()
+    {
+        // Use EAL for audio/input
+        When(ButtonClicked("Choice1"),
+            Audio.Play("choice_sound"),
+            LoadScene("chapter2")
+        );
+
+        // Use Luny Abstractions for state management
+        var dialogueState = StateMachine.Create()
+            .State("Intro", ShowDialogue("Welcome..."))
+            .State("Choice", ShowChoices())
+            .Transition("Intro", "Choice", After(5));
+    }
+}
+```
+
+---
 
 ## Key Benefits
 
@@ -165,9 +276,14 @@ Write in C#, GDScript, or Lua - same API across all languages
 
 ### Supported Languages
 
-- **C#** (Primary) - Full API support
-- **Lua** (Secondary) - Bindings via code generator
-- **GDScript** (Godot, Secondary) - Bindings via code generator
+- **C#** (Primary) - Full API support for C# engines
+- **Lua** (Secondary) - Bindings via code generator, all engines, uses LuaCSharp
+
+_Under Consideration:_
+- **GDScript** (Godot) - Wait for demand, fluent syntax would be awkward (newline backslashes!) 
+- **C++** (Last) - Years away. Would provide native Unreal and O3DE, Cocos support.
+
+Note: With additional C++ re-implementation Lua code would be fully portable.
 
 ## Example: The Same Code, Multiple Engines
 
