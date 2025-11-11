@@ -20,9 +20,9 @@ public MyPlayer()
 }
 ```
 
-Extend it with your own blocks by writing simple C# extension methods.
+Something missing? Extend these bite-sized blocks by writing C# extension methods.
 
-Enjoy experimenting: It's Game Over For Tutorial Hell! 🤗
+**Game Over For Tutorial Hell!** 🤗
 
 ## **✨ Same Code - Any Engine ✨** 
 
