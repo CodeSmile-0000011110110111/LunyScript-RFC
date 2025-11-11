@@ -1,15 +1,11 @@
-# LunyScript - Makes Making Games Fun Again!
+# LunyScript 🎮 Makes Making Games Fun Again!
 <sup>Coming soon for **Unity** (Q2/2026) and **Godot** (Q4/2026) ...</sup>
-
-LunyScript is the powerful and user-friendly alternative to visual scripting.
 
 ## Works the same in Unity, Godot, Unreal, ...
 
     When.Collision.With("ball")
         .Begins(Audio.Play("ball_tagged_loop"))
         .Ends(Spawn("sparkles").At(Other).Run(Wait.Seconds(2.5), Despawn()))
-
-Something missing? Extend these bite-sized blocks by writing C# extension methods.
 
 **Game Over For Tutorial Hell!** 🤗
 
@@ -18,15 +14,7 @@ Something missing? Extend these bite-sized blocks by writing C# extension method
 [![LunyScript Demo](media/LunyScript_Demo.gif)](https://youtu.be/Vn38VLNDsuw "LunyScript: Same Code, Three Engines - Proof of Concept Demo")<br/>
 **[Watch the full video on Youtube (1:20)](https://youtu.be/Vn38VLNDsuw "LunyScript: Same Code, Three Engines - Proof of Concept Demo")**
 
-**✅ Same code, 3 engines, 20 days** | Unity → Godot: 3 days | Godot → Unreal: 3 days
-
-## Why LunyScript?
-
-**For self-learners:** Explore Unity, Godot, and Unreal without learning three APIs. Your skills transfer!
-
-**For tutorial creators:** Teach ONE API that works in all engines. 3x the reach, 1/3 the work.
-
-**For everyone:** Less boilerplate, more intent. Write behavior, not plumbing. Build reusable libraries.
+**✅ Same code, 3 engines, 20 days**
 
 ---
 
