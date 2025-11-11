@@ -27,9 +27,15 @@ With LunyScript, learners are far more likely to find early successes and stay m
 
 **Overwhelm Reduction:** 90%
 
-{% tabs collision %}
+<div class="code-tabs" data-group="collision">
+  <div class="tab-buttons">
+    <button class="tab-button active">LunyScript</button>
+    <button class="tab-button">Unity C#</button>
+    <button class="tab-button">Godot C#</button>
+    <button class="tab-button">GDScript</button>
+  </div>
+  <div class="tab-content active">
 
-{% tab collision LunyScript %}
 ```csharp
 protected override void OnReady()
 {
@@ -39,9 +45,10 @@ protected override void OnReady()
 
 **Concepts needed:** 0 new concepts (reads as intent)
 **Lines of code:** 3
-{% endtab %}
 
-{% tab collision Unity C# %}
+  </div>
+  <div class="tab-content">
+
 ```csharp
 [SerializeField] private AudioClip paddleHitSound;
 private AudioSource audioSource;
@@ -65,9 +72,10 @@ private void OnCollisionEnter(Collision collision)
 
 **Concepts needed:** MonoBehaviour lifecycle, SerializeField, AudioSource component, GetComponent, OnCollisionEnter callback, Collision object, tag comparison, null checking
 **Lines of code:** 16
-{% endtab %}
 
-{% tab collision Godot C# %}
+  </div>
+  <div class="tab-content">
+
 ```csharp
 [Export] private AudioStream _paddleHitSound;
 private AudioStreamPlayer3D _audioPlayer;
@@ -102,9 +110,10 @@ private void _OnBodyEntered(Node3D body)
 
 **Concepts needed:** Node lifecycle, Export attribute, AudioStreamPlayer3D, GetNode, Groups/tags, Signal connections (not shown), manual setup
 **Lines of code:** 25+
-{% endtab %}
 
-{% tab collision GDScript %}
+  </div>
+  <div class="tab-content">
+
 ```gdscript
 @export var paddle_hit_sound: AudioStream
 @onready var audio_player: AudioStreamPlayer3D = $AudioStreamPlayer3D
@@ -125,9 +134,10 @@ func _on_body_entered(body: Node3D):
 
 **Concepts needed:** @export, @onready, node paths, signal.connect(), is_in_group(), null safety
 **Lines of code:** 14
-{% endtab %}
 
-{% endtabs %}
+  </div>
+</div>
+
 
 ---
 
@@ -137,9 +147,15 @@ func _on_body_entered(body: Node3D):
 
 **Overwhelm Reduction:** 85%
 
-{% tabs input %}
+<div class="code-tabs" data-group="input">
+  <div class="tab-buttons">
+    <button class="tab-button active">LunyScript</button>
+    <button class="tab-button">Unity C#</button>
+    <button class="tab-button">Godot C#</button>
+    <button class="tab-button">GDScript</button>
+  </div>
+  <div class="tab-content active">
 
-{% tab input LunyScript %}
 ```csharp
 protected override void OnReady()
 {
@@ -152,9 +168,10 @@ protected override void OnReady()
 
 **Concepts needed:** 0 new concepts (reads as intent)
 **Lines of code:** 6
-{% endtab %}
 
-{% tab input Unity C# %}
+  </div>
+  <div class="tab-content">
+
 ```csharp
 [SerializeField] private float moveSpeed = 10f;
 private Rigidbody rb;
@@ -189,9 +206,10 @@ private void FixedUpdate()
 
 **Concepts needed:** SerializeField, Rigidbody, GetComponent, FixedUpdate vs Update, Input.GetKey, KeyCode enum, Vector3, transform.forward, Time.fixedDeltaTime, physics integration
 **Lines of code:** 28
-{% endtab %}
 
-{% tab input Godot C# %}
+  </div>
+  <div class="tab-content">
+
 ```csharp
 [Export] private float _moveSpeed = 10f;
 private RigidBody3D _rigidbody;
@@ -229,9 +247,10 @@ public override void _PhysicsProcess(double delta)
 
 **Concepts needed:** Export, RigidBody3D, _PhysicsProcess vs _Process, Input.IsKeyPressed, Key enum, Vector3, GlobalTransform.Basis, delta time, coordinate system differences
 **Lines of code:** 31
-{% endtab %}
 
-{% tab input GDScript %}
+  </div>
+  <div class="tab-content">
+
 ```gdscript
 @export var move_speed: float = 10.0
 @onready var rigidbody: RigidBody3D = self
@@ -255,9 +274,10 @@ func _physics_process(delta):
 
 **Concepts needed:** @export, @onready, _physics_process, Input.is_key_pressed, KEY_ constants, Vector3, global_transform.basis, delta, coordinate systems
 **Lines of code:** 18
-{% endtab %}
 
-{% endtabs %}
+  </div>
+</div>
+
 
 ---
 
@@ -267,9 +287,15 @@ func _physics_process(delta):
 
 **Overwhelm Reduction:** 80%
 
-{% tabs audio %}
+<div class="code-tabs" data-group="audio">
+  <div class="tab-buttons">
+    <button class="tab-button active">LunyScript</button>
+    <button class="tab-button">Unity C#</button>
+    <button class="tab-button">Godot C#</button>
+    <button class="tab-button">GDScript</button>
+  </div>
+  <div class="tab-content active">
 
-{% tab audio LunyScript %}
 ```csharp
 protected override void OnReady()
 {
@@ -279,9 +305,10 @@ protected override void OnReady()
 
 **Concepts needed:** 0 new concepts
 **Lines of code:** 3
-{% endtab %}
 
-{% tab audio Unity C# %}
+  </div>
+  <div class="tab-content">
+
 ```csharp
 [SerializeField] private AudioClip bumpSound;
 private AudioSource audioSource;
@@ -309,9 +336,10 @@ private void OnCollisionEnter(Collision collision)
 
 **Concepts needed:** AudioClip vs AudioSource, SerializeField, GetComponent, AddComponent, PlayOneShot vs Play, null checking, component architecture
 **Lines of code:** 21
-{% endtab %}
 
-{% tab audio Godot C# %}
+  </div>
+  <div class="tab-content">
+
 ```csharp
 [Export] private AudioStream _bumpSound;
 private AudioStreamPlayer3D _audioPlayer;
@@ -337,9 +365,10 @@ private void _OnBodyEntered(Node3D body)
 
 **Concepts needed:** AudioStream vs AudioStreamPlayer3D, Export, node creation, AddChild, setting Stream before Play, groups
 **Lines of code:** 18
-{% endtab %}
 
-{% tab audio GDScript %}
+  </div>
+  <div class="tab-content">
+
 ```gdscript
 @export var bump_sound: AudioStream
 @onready var audio_player: AudioStreamPlayer3D = AudioStreamPlayer3D.new()
@@ -357,9 +386,10 @@ func _on_body_entered(body: Node3D):
 
 **Concepts needed:** @export, @onready, AudioStream vs Player, new() instantiation, add_child, signal connections, groups
 **Lines of code:** 12
-{% endtab %}
 
-{% endtabs %}
+  </div>
+</div>
+
 
 ---
 
@@ -369,9 +399,15 @@ func _on_body_entered(body: Node3D):
 
 **Overwhelm Reduction:** 75%
 
-{% tabs button %}
+<div class="code-tabs" data-group="button">
+  <div class="tab-buttons">
+    <button class="tab-button active">LunyScript</button>
+    <button class="tab-button">Unity C#</button>
+    <button class="tab-button">Godot C#</button>
+    <button class="tab-button">GDScript</button>
+  </div>
+  <div class="tab-content active">
 
-{% tab button LunyScript %}
 ```csharp
 protected override void OnReady()
 {
@@ -381,9 +417,10 @@ protected override void OnReady()
 
 **Concepts needed:** 0 new concepts
 **Lines of code:** 3
-{% endtab %}
 
-{% tab button Unity C# %}
+  </div>
+  <div class="tab-content">
+
 ```csharp
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -424,9 +461,10 @@ private void OnTryAgainClicked()
 
 **Concepts needed:** UnityEngine.UI namespace, Button component, SerializeField, GameObject.Find, GetComponent, AddListener/RemoveListener, OnDestroy cleanup, SceneManager, GetActiveScene, scene lifecycle
 **Lines of code:** 30
-{% endtab %}
 
-{% tab button Godot C# %}
+  </div>
+  <div class="tab-content">
+
 ```csharp
 private Button _tryAgainButton;
 
@@ -465,9 +503,10 @@ private void OnTryAgainPressed()
 
 **Concepts needed:** Button node, GetNode vs FindChild, node paths, Pressed signal/event, += event subscription, -= cleanup, _ExitTree lifecycle, GetTree(), ReloadCurrentScene()
 **Lines of code:** 28
-{% endtab %}
 
-{% tab button GDScript %}
+  </div>
+  <div class="tab-content">
+
 ```gdscript
 @onready var try_again_button: Button = $TryAgain
 
@@ -490,9 +529,10 @@ func _on_try_again_pressed():
 
 **Concepts needed:** @onready, $ node path, Button, find_child, signal.connect/disconnect, _exit_tree, get_tree(), reload_current_scene()
 **Lines of code:** 16
-{% endtab %}
 
-{% endtabs %}
+  </div>
+</div>
+
 
 ---
 
@@ -502,9 +542,15 @@ func _on_try_again_pressed():
 
 **Overwhelm Reduction:** 70%
 
-{% tabs variables %}
+<div class="code-tabs" data-group="variables">
+  <div class="tab-buttons">
+    <button class="tab-button active">LunyScript</button>
+    <button class="tab-button">Unity C#</button>
+    <button class="tab-button">Godot C#</button>
+    <button class="tab-button">GDScript</button>
+  </div>
+  <div class="tab-content active">
 
-{% tab variables LunyScript %}
 ```csharp
 protected override void OnReady()
 {
@@ -521,9 +567,10 @@ protected override void OnReady()
 
 **Concepts needed:** 0 new concepts (automatic binding)
 **Lines of code:** 9
-{% endtab %}
 
-{% tab variables Unity C# %}
+  </div>
+  <div class="tab-content">
+
 ```csharp
 using UnityEngine.UI;
 
@@ -571,9 +618,10 @@ private void PlayCoinSound()
 
 **Concepts needed:** Text component, SerializeField, GameObject.Find, manual UI updates, ToString(), string concatenation, separation of concerns (UpdateScoreDisplay method)
 **Lines of code:** 37
-{% endtab %}
 
-{% tab variables Godot C# %}
+  </div>
+  <div class="tab-content">
+
 ```csharp
 [Export] private Label _scoreLabel;
 private int _score = 0;
@@ -619,9 +667,10 @@ private void PlayCoinSound()
 
 **Concepts needed:** Label node, Export, FindChild, manual UI updates, string interpolation, separation of concerns, signal connections (not shown)
 **Lines of code:** 36
-{% endtab %}
 
-{% tab variables GDScript %}
+  </div>
+  <div class="tab-content">
+
 ```gdscript
 @export var score_label: Label
 var score: int = 0
@@ -653,9 +702,10 @@ func play_coin_sound():
 
 **Concepts needed:** @export, Label, find_child, manual UI updates, str() conversion, signal connections, separation of concerns
 **Lines of code:** 26
-{% endtab %}
 
-{% endtabs %}
+  </div>
+</div>
+
 
 ---
 
@@ -665,9 +715,15 @@ func play_coin_sound():
 
 **Overwhelm Reduction:** 65%
 
-{% tabs timers %}
+<div class="code-tabs" data-group="timers">
+  <div class="tab-buttons">
+    <button class="tab-button active">LunyScript</button>
+    <button class="tab-button">Unity C#</button>
+    <button class="tab-button">Godot C#</button>
+    <button class="tab-button">GDScript</button>
+  </div>
+  <div class="tab-content active">
 
-{% tab timers LunyScript %}
 ```csharp
 protected override void OnReady()
 {
@@ -684,9 +740,10 @@ protected override void OnReady()
 
 **Concepts needed:** 0 new concepts (reads as sequence)
 **Lines of code:** 10
-{% endtab %}
 
-{% tab timers Unity C# %}
+  </div>
+  <div class="tab-content">
+
 ```csharp
 using System.Collections;
 using UnityEngine.UI;
@@ -747,9 +804,10 @@ private void EndGame()
 
 **Concepts needed:** Coroutines, IEnumerator, yield return, WaitForSeconds, StartCoroutine, StopCoroutine, OnDestroy cleanup, while loops, manual UI updates
 **Lines of code:** 49
-{% endtab %}
 
-{% tab timers Godot C# %}
+  </div>
+  <div class="tab-content">
+
 ```csharp
 [Export] private Label _timeLabel;
 [Export] private float _startTime = 60f;
@@ -813,9 +871,10 @@ private void EndGame()
 
 **Concepts needed:** SceneTreeTimer, CreateTimer, Timeout signal/event, += event subscription, recursive timer restart, _ExitTree cleanup, manual UI updates
 **Lines of code:** 53
-{% endtab %}
 
-{% tab timers GDScript %}
+  </div>
+  <div class="tab-content">
+
 ```gdscript
 @export var time_label: Label
 @export var start_time: float = 60.0
@@ -853,9 +912,10 @@ func end_game():
 
 **Concepts needed:** get_tree().create_timer(), SceneTreeTimer, timeout signal, signal.connect, recursive timer restart, ceili() for ceiling, manual UI updates
 **Lines of code:** 32
-{% endtab %}
 
-{% endtabs %}
+  </div>
+</div>
+
 
 ---
 

@@ -72,6 +72,9 @@ echo.
 REM Start Jekyll with explicit configuration
 bundle exec jekyll serve --host 0.0.0.0 --port 4000 --livereload --trace
 
+REM in case run fails, it may be due to missing bundles, so just try to get them here
+bundle install
+
 echo.
 echo ======================================
 echo Server stopped

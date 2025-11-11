@@ -96,3 +96,58 @@ table tr:nth-child(even) {
 body {
   font-size: 16px; /* Increased by 1px from default 15px */
 }
+
+/* Code comparison tabs */
+.code-tabs {
+  margin: 20px 0;
+}
+
+.code-tabs .tab-buttons {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 0;
+  border-bottom: 2px solid #373737;
+}
+
+.code-tabs .tab-button {
+  background: #1a1a1a;
+  border: 1px solid #373737;
+  border-bottom: none;
+  color: #b0b0b0;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+.code-tabs .tab-button:hover {
+  background: #252525;
+  color: #fff;
+}
+
+.code-tabs .tab-button.active {
+  background: #0090ff;
+  color: #fff;
+  border-color: #0090ff;
+}
+
+.code-tabs .tab-content {
+  display: none;
+  padding: 20px;
+  background: #1a1a1a;
+  border: 1px solid #373737;
+  border-top: none;
+}
+
+.code-tabs .tab-content.active {
+  display: block;
+}
+
+.code-tabs .tab-content p:first-child {
+  margin-top: 0;
+}
+
+.code-tabs .tab-content p:last-child {
+  margin-bottom: 0;
+}

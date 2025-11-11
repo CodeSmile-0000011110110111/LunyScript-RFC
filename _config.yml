@@ -41,7 +41,6 @@ kramdown:
 # Plugins
 plugins:
   - jekyll-relative-links
-  - jekyll-tabs
 
 # Convert README.md to index.html
 relative_links:
