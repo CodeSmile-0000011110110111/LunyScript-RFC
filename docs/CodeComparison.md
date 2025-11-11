@@ -1,6 +1,8 @@
 # Code Comparison: LunyScript vs Traditional Approaches
 
-This document compares LunyScript with traditional game engine code across common beginner tasks. Each comparison demonstrates how LunyScript reduces cognitive load (overwhelm, frustration) and boilerplate code (boredom). 
+LunyScript compared with traditional game engine code across common beginner tasks. 
+
+Each comparison demonstrates how LunyScript reduces cognitive load (overwhelm, frustration) and boilerplate code (boredom) . 
 
 With LunyScript, learners are far more likely to find early successes and stay motivated. The risk of entering _tutorial hell_ is significantly reduced because LunyScript encourages exploration and experimentation.
 
@@ -9,6 +11,39 @@ With LunyScript, learners are far more likely to find early successes and stay m
 - **Unity C#** (Unity C#)
 - **Godot C#** (Godot C#)
 - **GDScript** (Godot domain specific language)
+
+--------
+
+testing collapsible
+
+<details>
+  <summary>Click me</summary>
+
+### Heading
+1. Foo
+2. Bar
+    * Baz
+    * Qux
+
+### Some Javascript
+  ```js
+  function logSomething(something) {
+    console.log('Something', something);
+  }
+  ```
+</details>
+
+<details open>
+  <summary>Hello</summary>
+  World!
+</details>
+
+<details>
+  <summary><i>Wow, so fancy</i></summary>
+  <b>WOW, SO BOLD</b>
+</details>
+
+-------
 
 ## Summary Chart
 
