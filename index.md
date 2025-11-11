@@ -3,9 +3,11 @@ layout: default
 title: LunyScript - Cross-Engine Gameplay Scripting
 ---
 
-# **🎮 LunyScript 🎮** for Unity<sup> Q2/26</sup> and Godot<sup> Q4/26</sup>
+# **LunyScript 🎮** Makes Making Games Fun Again!
 
-Restoring joy to game development: LunyScript is the powerful and user-friendly alternative to visual scripting.
+<sup>Coming soon for **Unity** (Q2/2026) and **Godot** (Q4/2026) ...</sup>
+
+LunyScript is the powerful and user-friendly alternative to visual scripting.
 
 ---
 
@@ -19,6 +21,7 @@ public MyPlayer()
         .Ends(Spawn("sparkles"), Event.Send("kick").To("ball"));
 }
 ```
+<sup>[More Code Samples with Godot/Unity comparison](docs/CodeComparison.md)</sup>
 
 Something missing? Extend these bite-sized blocks by writing C# extension methods.
 
