@@ -51,9 +51,9 @@ _Note: Physics behaviour will deviate between physics engines, requires scaling 
 
 ---
 
-# **🥴 Code Anxiety? LunyScript Is The Cure! 💊**
+# **🥴 LunyScript Cures Boilerplate Boredom 💊**
 
-LunyScript is 3-5 times less verbose than GDScript and reads like intent!
+LunyScript is 3-5 times less verbose than GDScript!
 ![Chart_Lines_of_Code.png](media/Chart_Lines_of_Code.png)
 <sup>[View Interactive Chart](https://docs.google.com/spreadsheets/d/e/2PACX-1vQYteK-tn0qLcvssVP5sLEcTg7adjtRbbE56Usj-BUmtx033RVY9lLt0aPpL_Ef4uEp8DNvRpBgWLTh/pubchart?oid=2073524744&format=interactive)</sup>
 
