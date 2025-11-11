@@ -4,7 +4,6 @@ Comparing code for beginner's tasks demonstrates how LunyScript reduces cognitiv
 
 With LunyScript, learners are far more likely to find early successes and stay motivated by removing boilerplate by encouraging exploration and experimentation in a safer environment. This significantly reduces the risk of entering _tutorial hell_.
 
----
 
 ## Summary Chart
 
@@ -19,7 +18,6 @@ With LunyScript, learners are far more likely to find early successes and stay m
 
 **Conclusion:** GDScript is widely considered as beginner-friendly because it reduces cognitive load by 38% on average when compared to Godot C# code. LunyScript however reduces the cognitive load by 83% on average - over twice as much as GDScript!
 
----
 
 ## 1. Collision Detection & Response
 
@@ -36,6 +34,10 @@ With LunyScript, learners are far more likely to find early successes and stay m
 </div>
 <div class="tab-content active" markdown="1">
 
+**Lines of code:** 3
+
+**Concepts needed:** 0 new concepts (reads as intent)
+
 ```csharp
 protected override void OnReady()
 {
@@ -43,13 +45,12 @@ protected override void OnReady()
 }
 ```
 
-**Lines of code:** 3
-
-**Concepts needed:** 0 new concepts (reads as intent)
-
-
 </div>
 <div class="tab-content" markdown="1">
+
+**Lines of code:** 14
+
+**Concepts needed:** @export, @onready, node paths, signal.connect(), is_in_group(), null safety
 
 ```gdscript
 @export var paddle_hit_sound: AudioStream
@@ -69,13 +70,12 @@ func _on_body_entered(body: Node3D):
           audio_player.play()
 ```
 
-**Lines of code:** 14
-
-**Concepts needed:** @export, @onready, node paths, signal.connect(), is_in_group(), null safety
-
-
 </div>
 <div class="tab-content" markdown="1">
+
+**Lines of code:** 25+
+
+**Concepts needed:** Node lifecycle, Export attribute, AudioStreamPlayer3D, GetNode, Groups/tags, Signal connections (not shown), manual setup
 
 ```csharp
 [Export] private AudioStream _paddleHitSound;
@@ -109,13 +109,12 @@ private void _OnBodyEntered(Node3D body)
 }
 ```
 
-**Lines of code:** 25+
-
-**Concepts needed:** Node lifecycle, Export attribute, AudioStreamPlayer3D, GetNode, Groups/tags, Signal connections (not shown), manual setup
-
-
 </div>
 <div class="tab-content" markdown="1">
+
+**Lines of code:** 16
+
+**Concepts needed:** MonoBehaviour lifecycle, SerializeField, AudioSource component, GetComponent, OnCollisionEnter callback, Collision object, tag comparison, null checking
 
 ```csharp
 [SerializeField] private AudioClip paddleHitSound;
@@ -138,17 +137,11 @@ private void OnCollisionEnter(Collision collision)
 }
 ```
 
-**Lines of code:** 16
-
-**Concepts needed:** MonoBehaviour lifecycle, SerializeField, AudioSource component, GetComponent, OnCollisionEnter callback, Collision object, tag comparison, null checking
-
-
 </div>
 </div>
 
 
 
----
 
 ## 2. Input Handling (Keyboard)
 
@@ -165,6 +158,10 @@ private void OnCollisionEnter(Collision collision)
 </div>
 <div class="tab-content active" markdown="1">
 
+**Lines of code:** 6
+
+**Concepts needed:** 0 new concepts (reads as intent)
+
 ```csharp
 protected override void OnReady()
 {
@@ -175,13 +172,12 @@ protected override void OnReady()
 }
 ```
 
-**Lines of code:** 6
-
-**Concepts needed:** 0 new concepts (reads as intent)
-
-
 </div>
 <div class="tab-content" markdown="1">
+
+**Lines of code:** 18
+
+**Concepts needed:** @export, @onready, _physics_process, Input.is_key_pressed, KEY_ constants, Vector3, global_transform.basis, delta, coordinate systems
 
 ```gdscript
 @export var move_speed: float = 10.0
@@ -204,13 +200,12 @@ func _physics_process(delta):
       global_position += movement
 ```
 
-**Lines of code:** 18
-
-**Concepts needed:** @export, @onready, _physics_process, Input.is_key_pressed, KEY_ constants, Vector3, global_transform.basis, delta, coordinate systems
-
-
 </div>
 <div class="tab-content" markdown="1">
+
+**Lines of code:** 31
+
+**Concepts needed:** Export, RigidBody3D, _PhysicsProcess vs _Process, Input.IsKeyPressed, Key enum, Vector3, GlobalTransform.Basis, delta time, coordinate system differences
 
 ```csharp
 [Export] private float _moveSpeed = 10f;
@@ -247,13 +242,12 @@ public override void _PhysicsProcess(double delta)
 }
 ```
 
-**Lines of code:** 31
-
-**Concepts needed:** Export, RigidBody3D, _PhysicsProcess vs _Process, Input.IsKeyPressed, Key enum, Vector3, GlobalTransform.Basis, delta time, coordinate system differences
-
-
 </div>
 <div class="tab-content" markdown="1">
+
+**Lines of code:** 28
+
+**Concepts needed:** SerializeField, Rigidbody, GetComponent, FixedUpdate vs Update, Input.GetKey, KeyCode enum, Vector3, transform.forward, Time.fixedDeltaTime, physics integration
 
 ```csharp
 [SerializeField] private float moveSpeed = 10f;
@@ -287,17 +281,11 @@ private void FixedUpdate()
 }
 ```
 
-**Lines of code:** 28
-
-**Concepts needed:** SerializeField, Rigidbody, GetComponent, FixedUpdate vs Update, Input.GetKey, KeyCode enum, Vector3, transform.forward, Time.fixedDeltaTime, physics integration
-
-
 </div>
 </div>
 
 
 
----
 
 ## 3. Audio Playback
 
@@ -314,6 +302,10 @@ private void FixedUpdate()
 </div>
 <div class="tab-content active" markdown="1">
 
+**Lines of code:** 3
+
+**Concepts needed:** 0 new concepts
+
 ```csharp
 protected override void OnReady()
 {
@@ -321,13 +313,12 @@ protected override void OnReady()
 }
 ```
 
-**Lines of code:** 3
-
-**Concepts needed:** 0 new concepts
-
-
 </div>
 <div class="tab-content" markdown="1">
+
+**Lines of code:** 12
+
+**Concepts needed:** @export, @onready, AudioStream vs Player, new() instantiation, add_child, signal connections, groups
 
 ```gdscript
 @export var bump_sound: AudioStream
@@ -344,13 +335,12 @@ func _on_body_entered(body: Node3D):
           audio_player.play()
 ```
 
-**Lines of code:** 12
-
-**Concepts needed:** @export, @onready, AudioStream vs Player, new() instantiation, add_child, signal connections, groups
-
-
 </div>
 <div class="tab-content" markdown="1">
+
+**Lines of code:** 18
+
+**Concepts needed:** AudioStream vs AudioStreamPlayer3D, Export, node creation, AddChild, setting Stream before Play, groups
 
 ```csharp
 [Export] private AudioStream _bumpSound;
@@ -375,13 +365,12 @@ private void _OnBodyEntered(Node3D body)
 }
 ```
 
-**Lines of code:** 18
-
-**Concepts needed:** AudioStream vs AudioStreamPlayer3D, Export, node creation, AddChild, setting Stream before Play, groups
-
-
 </div>
 <div class="tab-content" markdown="1">
+
+**Lines of code:** 21
+
+**Concepts needed:** AudioClip vs AudioSource, SerializeField, GetComponent, AddComponent, PlayOneShot vs Play, null checking, component architecture
 
 ```csharp
 [SerializeField] private AudioClip bumpSound;
@@ -408,17 +397,11 @@ private void OnCollisionEnter(Collision collision)
 }
 ```
 
-**Lines of code:** 21
-
-**Concepts needed:** AudioClip vs AudioSource, SerializeField, GetComponent, AddComponent, PlayOneShot vs Play, null checking, component architecture
-
-
 </div>
 </div>
 
 
 
----
 
 ## 4. UI Button Events
 
@@ -435,6 +418,10 @@ private void OnCollisionEnter(Collision collision)
 </div>
 <div class="tab-content active" markdown="1">
 
+**Lines of code:** 3
+
+**Concepts needed:** 0 new concepts
+
 ```csharp
 protected override void OnReady()
 {
@@ -442,13 +429,12 @@ protected override void OnReady()
 }
 ```
 
-**Lines of code:** 3
-
-**Concepts needed:** 0 new concepts
-
-
 </div>
 <div class="tab-content" markdown="1">
+
+**Lines of code:** 16
+
+**Concepts needed:** @onready, $ node path, Button, find_child, signal.connect/disconnect, _exit_tree, get_tree(), reload_current_scene()
 
 ```gdscript
 @onready var try_again_button: Button = $TryAgain
@@ -470,13 +456,12 @@ func _on_try_again_pressed():
   get_tree().reload_current_scene()
 ```
 
-**Lines of code:** 16
-
-**Concepts needed:** @onready, $ node path, Button, find_child, signal.connect/disconnect, _exit_tree, get_tree(), reload_current_scene()
-
-
 </div>
 <div class="tab-content" markdown="1">
+
+**Lines of code:** 28
+
+**Concepts needed:** Button node, GetNode vs FindChild, node paths, Pressed signal/event, += event subscription, -= cleanup, _ExitTree lifecycle, GetTree(), ReloadCurrentScene()
 
 ```csharp
 private Button _tryAgainButton;
@@ -514,13 +499,12 @@ private void OnTryAgainPressed()
 }
 ```
 
-**Lines of code:** 28
-
-**Concepts needed:** Button node, GetNode vs FindChild, node paths, Pressed signal/event, += event subscription, -= cleanup, _ExitTree lifecycle, GetTree(), ReloadCurrentScene()
-
-
 </div>
 <div class="tab-content" markdown="1">
+
+**Lines of code:** 30
+
+**Concepts needed:** UnityEngine.UI namespace, Button component, SerializeField, GameObject.Find, GetComponent, AddListener/RemoveListener, OnDestroy cleanup, SceneManager, GetActiveScene, scene lifecycle
 
 ```csharp
 using UnityEngine.UI;
@@ -560,17 +544,11 @@ private void OnTryAgainClicked()
 }
 ```
 
-**Lines of code:** 30
-
-**Concepts needed:** UnityEngine.UI namespace, Button component, SerializeField, GameObject.Find, GetComponent, AddListener/RemoveListener, OnDestroy cleanup, SceneManager, GetActiveScene, scene lifecycle
-
-
 </div>
 </div>
 
 
 
----
 
 ## 5. Variables & HUD Binding
 
@@ -587,6 +565,10 @@ private void OnTryAgainClicked()
 </div>
 <div class="tab-content active" markdown="1">
 
+**Lines of code:** 9
+
+**Concepts needed:** 0 new concepts (automatic binding)
+
 ```csharp
 protected override void OnReady()
 {
@@ -601,13 +583,12 @@ protected override void OnReady()
 }
 ```
 
-**Lines of code:** 9
-
-**Concepts needed:** 0 new concepts (automatic binding)
-
-
 </div>
 <div class="tab-content" markdown="1">
+
+**Lines of code:** 26
+
+**Concepts needed:** @export, Label, find_child, manual UI updates, str() conversion, signal connections, separation of concerns
 
 ```gdscript
 @export var score_label: Label
@@ -638,13 +619,12 @@ func play_coin_sound():
   pass
 ```
 
-**Lines of code:** 26
-
-**Concepts needed:** @export, Label, find_child, manual UI updates, str() conversion, signal connections, separation of concerns
-
-
 </div>
 <div class="tab-content" markdown="1">
+
+**Lines of code:** 36
+
+**Concepts needed:** Label node, Export, FindChild, manual UI updates, string interpolation, separation of concerns, signal connections (not shown)
 
 ```csharp
 [Export] private Label _scoreLabel;
@@ -689,13 +669,12 @@ private void PlayCoinSound()
 }
 ```
 
-**Lines of code:** 36
-
-**Concepts needed:** Label node, Export, FindChild, manual UI updates, string interpolation, separation of concerns, signal connections (not shown)
-
-
 </div>
 <div class="tab-content" markdown="1">
+
+**Lines of code:** 37
+
+**Concepts needed:** Text component, SerializeField, GameObject.Find, manual UI updates, ToString(), string concatenation, separation of concerns (UpdateScoreDisplay method)
 
 ```csharp
 using UnityEngine.UI;
@@ -742,17 +721,11 @@ private void PlayCoinSound()
 }
 ```
 
-**Lines of code:** 37
-
-**Concepts needed:** Text component, SerializeField, GameObject.Find, manual UI updates, ToString(), string concatenation, separation of concerns (UpdateScoreDisplay method)
-
-
 </div>
 </div>
 
 
 
----
 
 ## 6. Timers & Sequences
 
@@ -769,6 +742,10 @@ private void PlayCoinSound()
 </div>
 <div class="tab-content active" markdown="1">
 
+**Lines of code:** 10
+
+**Concepts needed:** 0 new concepts (reads as sequence)
+
 ```csharp
 protected override void OnReady()
 {
@@ -783,13 +760,12 @@ protected override void OnReady()
 }
 ```
 
-**Lines of code:** 10
-
-**Concepts needed:** 0 new concepts (reads as sequence)
-
-
 </div>
 <div class="tab-content" markdown="1">
+
+**Lines of code:** 32
+
+**Concepts needed:** get_tree().create_timer(), SceneTreeTimer, timeout signal, signal.connect, recursive timer restart, ceili() for ceiling, manual UI updates
 
 ```gdscript
 @export var time_label: Label
@@ -826,13 +802,12 @@ func end_game():
   pass
 ```
 
-**Lines of code:** 32
-
-**Concepts needed:** get_tree().create_timer(), SceneTreeTimer, timeout signal, signal.connect, recursive timer restart, ceili() for ceiling, manual UI updates
-
-
 </div>
 <div class="tab-content" markdown="1">
+
+**Lines of code:** 53
+
+**Concepts needed:** SceneTreeTimer, CreateTimer, Timeout signal/event, += event subscription, recursive timer restart, _ExitTree cleanup, manual UI updates
 
 ```csharp
 [Export] private Label _timeLabel;
@@ -895,13 +870,12 @@ private void EndGame()
 }
 ```
 
-**Lines of code:** 53
-
-**Concepts needed:** SceneTreeTimer, CreateTimer, Timeout signal/event, += event subscription, recursive timer restart, _ExitTree cleanup, manual UI updates
-
-
 </div>
 <div class="tab-content" markdown="1">
+
+**Lines of code:** 49
+
+**Concepts needed:** Coroutines, IEnumerator, yield return, WaitForSeconds, StartCoroutine, StopCoroutine, OnDestroy cleanup, while loops, manual UI updates
 
 ```csharp
 using System.Collections;
@@ -961,17 +935,11 @@ private void EndGame()
 }
 ```
 
-**Lines of code:** 49
-
-**Concepts needed:** Coroutines, IEnumerator, yield return, WaitForSeconds, StartCoroutine, StopCoroutine, OnDestroy cleanup, while loops, manual UI updates
-
-
 </div>
 </div>
 
 
 
----
 
 ## Summary Table
 
@@ -985,7 +953,6 @@ private void EndGame()
 | Timers & Sequences | 10 | 49 | 53 | 32 | 65% |
 | **Total** | **34** | **181** | **191** | **118** | **77% average** |
 
----
 
 ## Key Observations
 
@@ -1033,7 +1000,6 @@ private void EndGame()
  - C# patterns differ from GDScript
  - Relearning required per engine
 
----
 
 ## Notes
 
@@ -1043,7 +1009,6 @@ private void EndGame()
 - Traditional examples represent **common beginner patterns**, not necessarily optimal advanced patterns
 - All examples assume 3D physics-based games
 
----
 
 **For more information:**
 - [LunyScript Philosophy](Philosophy.md)

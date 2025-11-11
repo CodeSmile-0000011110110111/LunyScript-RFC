@@ -106,12 +106,12 @@ body {
   display: flex;
   gap: 5px;
   margin-bottom: 0;
-  border-bottom: 2px solid #373737;
+  border-bottom: 2px solid #606060;
 }
 
 .code-tabs .tab-button {
   background: #1a1a1a;
-  border: 1px solid #373737;
+  border: 1px solid #606060;
   border-bottom: none;
   color: #b0b0b0;
   cursor: pointer;
@@ -136,8 +136,13 @@ body {
   display: none;
   padding: 20px;
   background: #1a1a1a;
-  border: 1px solid #373737;
+  border: 1px solid #606060;
   border-top: none;
+}
+
+/* Brighten code block borders within tabs */
+.code-tabs .tab-content pre {
+  border-color: #606060;
 }
 
 .code-tabs .tab-content.active {
