@@ -11,7 +11,7 @@ LunyScript is the powerful and user-friendly alternative to visual scripting.
 
 ---
 
-## **Game Over For Tutorial Hell!** 🤗
+## **Game Over For _Tutorial Hell_ !** 🤗
 
 ```csharp
 public MyPlayer()
