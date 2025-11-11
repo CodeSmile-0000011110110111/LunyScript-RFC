@@ -7,13 +7,12 @@ LunyScript encourages exploration and experimentation in a safer environment wit
 ## Quick Summary
 
 <font color=lightgreen size=4>
-<b>LunyScript reduces cognitive load over twice as much as GDScript!</b>
+<b>LunyScript is 3-5 times less verbose than GDScript!</b>
 </font>
-<sup>When compared to Godot C# code: LunyScript 82% vs GDScript 38% code reduction on average.</sup>
 ![Chart_Lines_of_Code.png](../media/Chart_Lines_of_Code.png)
 <sup>[View Interactive Chart](https://docs.google.com/spreadsheets/d/e/2PACX-1vQYteK-tn0qLcvssVP5sLEcTg7adjtRbbE56Usj-BUmtx033RVY9lLt0aPpL_Ef4uEp8DNvRpBgWLTh/pubchart?oid=2073524744&format=interactive)</sup>
 
-Additionally, LunyScript merely defers initial learning of engine API concepts. Bite-sized code extensions let users learn engine concepts in a highly focused manner.
+LunyScript merely defers initial learning of engine API concepts. Bite-sized extensions means users learn engine concepts in a highly focused manner at their own pace.
 
 # Direct Code Comparison
 **Engines Compared:**
