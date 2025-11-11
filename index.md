@@ -43,7 +43,7 @@ Game engines all share the same fundamental features needed to create a _Megabon
 It does! It's not rocket science. Engines aren't that different. They all make games using the same basic set of high-level features. LunyScript aims to standardize them.
 <br/>**=>[ Watch the full video on YouTube (1:20) - PoC in 20 days](https://youtu.be/Vn38VLNDsuw)**
 
-**→ [How LunyScript unifies slightly different engine architectures](docs/EngineDifferences.md)**<br/>
+**→ [How LunyScript unifies different engine architectures](docs/EngineDifferences.md)**<br/>
 **→ [API design philosophy and principles](docs/Philosophy.md)**<br/>
 **→ [Code comparison: LunyScript vs Engine scrips](docs/CodeComparison.md)**<br/>
 **→ [FOSS-compliant AI-assisted development](AI-USAGE.md)**<br/>
