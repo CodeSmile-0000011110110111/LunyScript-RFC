@@ -1,22 +1,29 @@
 # Code Comparison: LunyScript vs Engines
 
-Comparing code for beginner's tasks demonstrates how LunyScript reduces cognitive load (overwhelm, frustration) and boilerplate code (boredom).
+Comparing code for beginner's tasks demonstrates how LunyScript reduces cognitive load and boilerplate code when learning game engine programming.
 
-With LunyScript, learners are far more likely to find early successes and stay motivated by removing boilerplate by encouraging exploration and experimentation in a safer environment. This significantly reduces the risk of entering _tutorial hell_.
+LunyScript encourages exploration and experimentation in a safer environment without feeling overwhelmed. This actively prevents self-learners from entering the unproductive comfort zone we call [_tutorial hell_](https://www.google.com/search?q=tutorial+hell).
 
+## Quick Summary
 
-## Summary Chart
-
-**Engines Compared:**
-- **LunyScript** (Cross-engine C#)
-- **GDScript** (Godot domain specific language)
-- **Godot C#** (Godot C#)
-- **Unity C#** (Unity C#)
-
+<font color=lightgreen size=4>
+<b>LunyScript reduces cognitive load over twice as much as GDScript!</b>
+</font>
+<sup>When compared to Godot C# code: LunyScript 82% vs GDScript 38% code reduction on average.</sup>
 ![Chart_Lines_of_Code.png](../media/Chart_Lines_of_Code.png)
 <sup>[View Interactive Chart](https://docs.google.com/spreadsheets/d/e/2PACX-1vQYteK-tn0qLcvssVP5sLEcTg7adjtRbbE56Usj-BUmtx033RVY9lLt0aPpL_Ef4uEp8DNvRpBgWLTh/pubchart?oid=2073524744&format=interactive)</sup>
 
-**Conclusion:** GDScript is widely considered as beginner-friendly. It reduces cognitive load by 38% on average compared to Godot C# code. LunyScript reduces the cognitive load over twice as much, by 82% on average! In addition, it also removes common paint points like NullReference exceptions. 
+Additionally, LunyScript merely defers initial learning of engine API concepts. Bite-sized code extensions let users learn engine concepts in a highly focused manner.
+
+# Direct Code Comparison
+**Engines Compared:**
+- **LunyScript** (Cross-engine C#, **🚧 Proof of Concept**)
+- **GDScript** (Godot domain specific language)
+- **Godot C#** (Godot C#)
+- **Unity C#** (Unity C#)
+- **Roblox Lua** (for reference)
+
+**🚧 Note:** LunyScript API represents Proof of Concept state and is subject to change.
 
 ---
 
@@ -32,6 +39,7 @@ With LunyScript, learners are far more likely to find early successes and stay m
 <button class="tab-button">GDScript</button>
 <button class="tab-button">Godot C#</button>
 <button class="tab-button">Unity C#</button>
+<button class="tab-button">Roblox Lua</button>
 </div>
 <div class="tab-content active" markdown="1">
 
@@ -139,6 +147,40 @@ private void OnCollisionEnter(Collision collision)
 ```
 
 </div>
+<div class="tab-content" markdown="1">
+
+**Lines of code:** 22
+
+**Concepts needed:** Instance hierarchy, CollectionService tags, FindFirstChild, Touched event, :Connect(), debounce pattern, SoundId/asset IDs
+
+```lua
+local CollectionService = game:GetService("CollectionService")
+local ball = script.Parent
+local paddleHitSound = ball:FindFirstChild("PaddleHitSound")
+
+if not paddleHitSound then
+  paddleHitSound = Instance.new("Sound")
+  paddleHitSound.Name = "PaddleHitSound"
+  paddleHitSound.SoundId = "rbxassetid://12345678"
+  paddleHitSound.Parent = ball
+end
+
+local debounce = false
+
+ball.Touched:Connect(function(hit)
+  if debounce then return end
+
+  local isPaddle = CollectionService:HasTag(hit, "Paddle")
+  if isPaddle and paddleHitSound then
+    debounce = true
+    paddleHitSound:Play()
+    task.wait(0.1)
+    debounce = false
+  end
+end)
+```
+
+</div>
 </div>
 
 
@@ -156,6 +198,7 @@ private void OnCollisionEnter(Collision collision)
 <button class="tab-button">GDScript</button>
 <button class="tab-button">Godot C#</button>
 <button class="tab-button">Unity C#</button>
+<button class="tab-button">Roblox Lua</button>
 </div>
 <div class="tab-content active" markdown="1">
 
@@ -283,6 +326,42 @@ private void FixedUpdate()
 ```
 
 </div>
+<div class="tab-content" markdown="1">
+
+**Lines of code:** 26
+
+**Concepts needed:** UserInputService, Enum.KeyCode, RunService.Heartbeat, BodyVelocity or AssemblyLinearVelocity, CFrame.LookVector, Part vs Model, script.Parent hierarchy
+
+```lua
+local UserInputService = game:GetService("UserInputService")
+local RunService = game:GetService("RunService")
+local player = script.Parent
+local moveSpeed = 10
+
+local function isKeyPressed(keyCode)
+  return UserInputService:IsKeyDown(keyCode)
+end
+
+RunService.Heartbeat:Connect(function(delta)
+  local movement = Vector3.new(0, 0, 0)
+
+  if isKeyPressed(Enum.KeyCode.W) then
+    movement = player.CFrame.LookVector * moveSpeed * delta
+  elseif isKeyPressed(Enum.KeyCode.S) then
+    movement = -player.CFrame.LookVector * moveSpeed * delta
+  end
+
+  if movement.Magnitude > 0 then
+    if player:IsA("BasePart") then
+      player.CFrame = player.CFrame + movement
+    elseif player:IsA("Model") and player.PrimaryPart then
+      player:SetPrimaryPartCFrame(player.PrimaryPart.CFrame + movement)
+    end
+  end
+end)
+```
+
+</div>
 </div>
 
 
@@ -300,6 +379,7 @@ private void FixedUpdate()
 <button class="tab-button">GDScript</button>
 <button class="tab-button">Godot C#</button>
 <button class="tab-button">Unity C#</button>
+<button class="tab-button">Roblox Lua</button>
 </div>
 <div class="tab-content active" markdown="1">
 
@@ -399,6 +479,38 @@ private void OnCollisionEnter(Collision collision)
 ```
 
 </div>
+<div class="tab-content" markdown="1">
+
+**Lines of code:** 18
+
+**Concepts needed:** CollectionService, Touched event, :Connect(), Instance.new(), SoundId/asset IDs, debounce pattern
+
+```lua
+local CollectionService = game:GetService("CollectionService")
+local object = script.Parent
+local bumpSound = object:FindFirstChild("BumpSound")
+
+if not bumpSound then
+  bumpSound = Instance.new("Sound")
+  bumpSound.Name = "BumpSound"
+  bumpSound.SoundId = "rbxassetid://12345678"
+  bumpSound.Parent = object
+end
+
+local debounce = false
+
+object.Touched:Connect(function(hit)
+  if debounce then return end
+  if CollectionService:HasTag(hit, "Wall") and bumpSound then
+    debounce = true
+    bumpSound:Play()
+    task.wait(0.1)
+    debounce = false
+  end
+end)
+```
+
+</div>
 </div>
 
 
@@ -416,6 +528,7 @@ private void OnCollisionEnter(Collision collision)
 <button class="tab-button">GDScript</button>
 <button class="tab-button">Godot C#</button>
 <button class="tab-button">Unity C#</button>
+<button class="tab-button">Roblox Lua</button>
 </div>
 <div class="tab-content active" markdown="1">
 
@@ -546,6 +659,33 @@ private void OnTryAgainClicked()
 ```
 
 </div>
+<div class="tab-content" markdown="1">
+
+**Lines of code:** 17
+
+**Concepts needed:** ScreenGui hierarchy, TextButton, FindFirstChild with recursive search, MouseButton1Click event, :Connect(), TeleportService vs local restart
+
+```lua
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui")
+
+local tryAgainButton = playerGui:FindFirstChild("TryAgainButton", true)
+
+if not tryAgainButton or not tryAgainButton:IsA("TextButton") then
+  warn("TryAgainButton not found in PlayerGui!")
+  return
+end
+
+tryAgainButton.MouseButton1Click:Connect(function()
+  -- Restart by respawning player
+  player:LoadCharacter()
+  -- Or reload the place:
+  -- game:GetService("TeleportService"):Teleport(game.PlaceId, player)
+end)
+```
+
+</div>
 </div>
 
 
@@ -563,6 +703,7 @@ private void OnTryAgainClicked()
 <button class="tab-button">GDScript</button>
 <button class="tab-button">Godot C#</button>
 <button class="tab-button">Unity C#</button>
+<button class="tab-button">Roblox Lua</button>
 </div>
 <div class="tab-content active" markdown="1">
 
@@ -723,6 +864,47 @@ private void PlayCoinSound()
 ```
 
 </div>
+<div class="tab-content" markdown="1">
+
+**Lines of code:** 27
+
+**Concepts needed:** Players.LocalPlayer, PlayerGui hierarchy, TextLabel, FindFirstChild recursive, CollectionService, Touched event, manual UI updates, string concatenation
+
+```lua
+local Players = game:GetService("Players")
+local CollectionService = game:GetService("CollectionService")
+local player = Players.LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui")
+local scoreLabel = playerGui:FindFirstChild("ScoreLabel", true)
+
+if not scoreLabel or not scoreLabel:IsA("TextLabel") then
+  warn("ScoreLabel not found!")
+  return
+end
+
+local score = 0
+
+local function updateScoreDisplay()
+  scoreLabel.Text = "Score: " .. tostring(score)
+end
+
+local function playCoinSound()
+  -- Audio code omitted for brevity
+end
+
+updateScoreDisplay()
+
+local object = script.Parent
+object.Touched:Connect(function(hit)
+  if CollectionService:HasTag(hit, "Coin") then
+    score = score + 1
+    updateScoreDisplay()
+    playCoinSound()
+  end
+end)
+```
+
+</div>
 </div>
 
 
@@ -740,6 +922,7 @@ private void PlayCoinSound()
 <button class="tab-button">GDScript</button>
 <button class="tab-button">Godot C#</button>
 <button class="tab-button">Unity C#</button>
+<button class="tab-button">Roblox Lua</button>
 </div>
 <div class="tab-content active" markdown="1">
 
@@ -937,6 +1120,53 @@ private void EndGame()
 ```
 
 </div>
+<div class="tab-content" markdown="1">
+
+**Lines of code:** 33
+
+**Concepts needed:** Players.LocalPlayer, PlayerGui hierarchy, TextLabel, task.wait() vs wait(), while loop, manual UI updates, math.ceil, coroutine vs sequential code
+
+```lua
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui")
+local timeLabel = playerGui:FindFirstChild("TimeLabel", true)
+
+if not timeLabel or not timeLabel:IsA("TextLabel") then
+  warn("TimeLabel not found!")
+  return
+end
+
+local startTime = 60
+local currentTime = startTime
+
+local function updateTimeDisplay()
+  if timeLabel then
+    timeLabel.Text = "Time: " .. tostring(math.ceil(currentTime))
+  end
+end
+
+local function endGame()
+  -- Game over logic
+end
+
+updateTimeDisplay()
+
+-- Start countdown timer
+task.spawn(function()
+  while currentTime > 0 do
+    task.wait(1)
+    currentTime = currentTime - 1
+    updateTimeDisplay()
+
+    if currentTime <= 0 then
+      endGame()
+    end
+  end
+end)
+```
+
+</div>
 </div>
 
 
@@ -980,8 +1210,7 @@ private void EndGame()
  - Event cleanup handled internally
 
 5. **Lines of Code Reduction**
- - **81% fewer lines** vs Unity C#
- - **82% fewer lines** vs Godot C#
+ - **81-82% fewer lines** vs C# (Unity/Godot)
  - **71% fewer lines** vs GDScript
 
 ### Traditional Approach Challenges:
@@ -998,7 +1227,7 @@ private void EndGame()
 
 3. **Non-Transferable Knowledge**
  - Unity patterns don't apply to Godot
- - C# patterns differ from GDScript
+ - C# patterns & syntax differ from GDScript
  - Relearning required per engine
 
 
@@ -1009,7 +1238,6 @@ private void EndGame()
 - **LunyScript examples** based on October 2025 Proof of Concept API
 - Traditional examples represent **common beginner patterns**, not necessarily optimal advanced patterns
 - All examples assume 3D physics-based games
-
 
 **For more information:**
 - [LunyScript Philosophy](Philosophy.md)
