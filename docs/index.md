@@ -8,6 +8,7 @@ Welcome to the LunyScript design documentation. This section covers the architec
 - [Vision](../VISION.md) - Long-term vision and desired outcomes
 - [Author](../AUTHOR.md) - About the author and personal experience
 - [Architecture](Architecture.md) - System architecture and layer structure
+- [Architecture Diagram](Architecture-Diagram.md) - Visual architecture overview
 - [Namespace Structure](NamespaceStructure.md) - API organization and usage patterns
 - [Paradigms](Paradigms.md) - Programming paradigms and design patterns
 - [Tech Talk](TechTalk.md) - Technical deep-dive and implementation details
