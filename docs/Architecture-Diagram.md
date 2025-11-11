@@ -7,7 +7,7 @@ This diagram illustrates the layered architecture of LunyScript, showing how por
 ```mermaid
 graph TB
     subgraph User["👤 Game Developer"]
-        UserCode["Game Logic Code<br/>(Portable C#, GDScript, or Lua)"]
+        UserCode["Game Logic Code<br/>(Portable C#)"]
     end
 
     subgraph LunyScript["🎮 LunyScript Layer<br/><i>Write Once, Run Anywhere</i>"]
@@ -19,6 +19,12 @@ graph TB
         LunySpace[" "]
         Interfaces["Core Interfaces<br/>• ICoroutineScheduler<br/>• IStateMachine<br/>• IBehaviorTree<br/>• IEventDispatcher"]
         Contracts["Behavioral Contracts<br/>• Execution Order<br/>• Semantic Rules<br/>• Zero Engine Dependencies"]
+    end
+
+    subgraph EAL["🔧 Engine Abstraction Layer<br/><i>Luny.EAL</i>"]
+        EALSpace[" "]
+        EALInterfaces["Engine Interfaces<br/>• IPhysics<br/>• IAudio<br/>• ISceneGraph<br/>• IInput"]
+        EALObservers["Event Observers<br/>• Collision<br/>• Input<br/>• Lifecycle"]
     end
 
     subgraph Adapters["🔌 Engine Adapters<br/><i>Platform-Specific Glue</i>"]
@@ -36,8 +42,11 @@ graph TB
     CoreLogic -->|implements| Interfaces
     Interfaces -.->|defines contracts| Contracts
 
-    CoreLogic -->|via| UnityAdapter
-    CoreLogic -->|via| GodotAdapter
+    CoreLogic -->|calls| EALInterfaces
+    EALInterfaces -.->|observes| EALObservers
+
+    EALInterfaces -->|via| UnityAdapter
+    EALInterfaces -->|via| GodotAdapter
 
     UnityAdapter -->|integrates with| Unity
     GodotAdapter -->|integrates with| Godot
@@ -45,6 +54,7 @@ graph TB
     classDef userLayer fill:#e1f5ff,stroke:#0077cc,stroke-width:2px,color:#2d3748
     classDef lunyScriptLayer fill:#d4edda,stroke:#28a745,stroke-width:2px,color:#2d3748
     classDef lunyLayer fill:#fff3cd,stroke:#ffc107,stroke-width:2px,color:#2d3748
+    classDef ealLayer fill:#ffe5cc,stroke:#ff8c00,stroke-width:2px,color:#2d3748
     classDef adapterLayer fill:#f8d7da,stroke:#dc3545,stroke-width:2px,color:#2d3748
     classDef engineLayer fill:#e2e3e5,stroke:#6c757d,stroke-width:2px,color:#2d3748
     classDef spacer fill:none,stroke:none,color:transparent
@@ -52,9 +62,10 @@ graph TB
     class UserCode userLayer
     class FluentAPI,CoreLogic lunyScriptLayer
     class Interfaces,Contracts lunyLayer
+    class EALInterfaces,EALObservers ealLayer
     class UnityAdapter,GodotAdapter adapterLayer
     class Unity,Godot engineLayer
-    class LunySpace spacer
+    class LunySpace,EALSpace spacer
 ```
 
 ## Layer Descriptions
@@ -79,6 +90,15 @@ When.Collision.With("Enemy").Begins(
 **What:** Pure interfaces and contracts with zero engine dependencies
 **Benefit:** Enables custom implementations and ensures clean architecture
 **Who uses it:** Advanced users extending LunyScript, not typical game developers
+
+### 🔧 Engine Abstraction Layer (EAL)
+**What:** Engine-agnostic interfaces for physics, audio, scene management, and input
+**Benefit:** LunyScript code calls these interfaces, adapters implement them for each engine
+**Examples:**
+- **IPhysics:** Collision detection, raycasts, forces
+- **IAudio:** Sound playback, 3D positioning
+- **ISceneGraph:** Object hierarchy, spawning, destruction
+- **IInput:** Keyboard, mouse, gamepad input
 
 ### 🔌 Engine Adapter Layer (Glue)
 **What:** Platform-specific bindings that connect LunyScript to each engine
@@ -116,6 +136,7 @@ Write in C#, GDScript, or Lua - same API across all languages
 |-------|-----------------|-----|
 | **Luny** | Low | Core abstractions rarely change once established |
 | **LunyScript** | Medium | Grows with new features, core logic stable |
+| **EAL** | Low-Medium | Engine interfaces evolve as LunyScript features expand |
 | **Adapters** | High | Evolves with engine API changes |
 
 ### Performance Overhead
