@@ -63,8 +63,4 @@ It hurts everyone if beginners get locked into vendor APIs and their conceptual 
 
 In fact, the conceptual differences are superficial: Hierarchical content, lifecycle events, a widely shared set of features. The main differences are only in high-end features and editor UI.
 
-### I also recalled: 
-
-We frequently programmed the same things over and over again. Too small to abstract and reuse. Too many not to cause friction.  
-
-The client asks for Unreal. Minimal interactivity. Artists knew it, the programmers didn't. We denied: too risky.
+In every team we frequently programmed the same things over and over again. They were too small to abstract and reuse. Too many not to cause friction. Every developer had their own way of doing things.
