@@ -11,7 +11,7 @@ LunyScript is the powerful and user-friendly alternative to visual scripting.
 
 ---
 
-## **Code That You Can Navigate**
+## **Game Over For Tutorial Hell!** 🤗
 
 ```csharp
 public MyPlayer()
@@ -21,33 +21,31 @@ public MyPlayer()
         .Ends(Spawn("sparkles"), Event.Send("kick").To("ball"));
 }
 ```
-<sup>[More Code Samples with Godot/Unity comparison](docs/CodeComparison.md)</sup>
-
-Something missing? Extend these bite-sized blocks by writing C# extension methods.
-
-**Game Over For Tutorial Hell!** 🤗
+<sup>[More Code Samples, compared with Godot/Unity scripts](docs/CodeComparison.md)</sup>
 
 ## **✨ Same Code - Any Engine ✨** 
 
 LunyScript is beginner-friendly, high-level gameplay programming that **works uniformly across game engines**.
 
+Something missing? Extend its bite-sized blocks by writing C# extension methods. Learn the engine as you go.
+
 ## **🤨 Any Engine?? Das Crazy! 🤯** 
 
-Game engines all share the same fundamental features needed to create _Megabonk_.
+Game engines all share the same fundamental features needed to create a _Megabonk_.
 
 [![LunyScript Demo](media/LunyScript_Demo.gif)](https://youtu.be/Vn38VLNDsuw "LunyScript: Same Code, Three Engines - Proof of Concept Demo")
-
-## 🧐This can't possibly work!!🤥
-
-It does! It's not rocket science, just applied software design patterns. Made in 20 days.
-**[=> Watch the full video on YouTube (1:20)](https://youtu.be/Vn38VLNDsuw)**
 
 > 🚧 **Status: Proof of Concept**<br/>
 > 📸 [View detailed PoC documentation, screenshots, and source code →](PoC_2025-10/)
 
-**→ [How LunyScript unifies different engine architectures](docs/EngineDifferences.md)**<br/>
+## 🧐This can't possibly work!!🤥
+
+It does! It's not rocket science. Engines aren't that different. They all make games using the same basic set of high-level features. LunyScript aims to standardize them.
+<br/>**=>[ Watch the full video on YouTube (1:20) - PoC in 20 days](https://youtu.be/Vn38VLNDsuw)**
+
+**→ [How LunyScript unifies slightly different engine architectures](docs/EngineDifferences.md)**<br/>
 **→ [API design philosophy and principles](docs/Philosophy.md)**<br/>
-**→ [Code comparison: LunyScript vs traditional approaches](docs/CodeComparison.md)**<br/>
+**→ [Code comparison: LunyScript vs Engine scrips](docs/CodeComparison.md)**<br/>
 **→ [FOSS-compliant AI-assisted development](AI-USAGE.md)**<br/>
 _Note: Physics behaviour will deviate between physics engines, requires scaling values._
 
@@ -66,8 +64,6 @@ _Note: Physics behaviour will deviate between physics engines, requires scaling 
 **🎮 Visual Scripters**<br/>Tired of dragging noodly nodes? Text is 'visual' too. ;)
 
 **🔧 Framework Developers**<br/>Code for mankind, not engines. [Learn more →](docs/TargetAudience.md#framework--tool-developers)
-
-**→ [See full audience breakdown](docs/TargetAudience.md)**
 
 ---
 
