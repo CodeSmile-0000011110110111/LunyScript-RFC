@@ -1,4 +1,4 @@
-# LunyScript 🎮 Makes Making Games Fun Again!
+# LunyScript 🎮 Makes Making Games Fun Again! 🤪
 <sup>Coming soon for **Unity** (Q2/2026) and **Godot** (Q4/2026) ...</sup>
 
 ## Works the same in Unity, Godot, Unreal, ...
