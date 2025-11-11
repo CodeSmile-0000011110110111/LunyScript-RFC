@@ -71,11 +71,7 @@ _Note: Physics behaviour will deviate between physics engines, requires scaling 
 
 - **Phase 1:**<br/>Unity (C#); API Design; Portable Layer; Demos and Docs (Q2 2026)
 - **Phase 2:**<br/>Godot (C#); Cross-Engine Tests; Improve onboarding (Q4 2026)
-- **Phase 3:**<br/>Demos & Docs; Promote; Stabilize API (Q2 2027)
-
-_Under Consideration_
-- Lua and/or GDScript Bindings<br/>
-- 2D Support: Initial focus is on 3D games
+- **Phase 3:**<br/>Lua bindings; Demos & Docs; Promote; Stabilize API (Q2 2027)
 
 **→ [Maintenance strategy](MAINTENANCE.md)**
 
