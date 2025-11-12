@@ -34,6 +34,7 @@ This is called cognitive bias. It's also my fault because I did not explain it a
 **→ [How LunyScript unifies different engine architectures](../docs/EngineDifferences.md)**<br/>
 **→ [API design philosophy and principles](../docs/Philosophy.md)**<br/>
 **→ [Code comparison: LunyScript vs Engine scrips](../docs/CodeComparison.md)**<br/>
+**→ [More Design details](../docs/index.md)**<br/>
 _Note: Physics behaviour will deviate between physics engines, requires scaling values._
 
 ---
