@@ -1,112 +1,157 @@
 # Problem Statement
 
-## The Problem
+## The Core Problem
 
-**Most beginners who start learning game development struggle with programming.**
+**Learning game programming requires mastering complex, engine-specific APIs** before one can begin to understand game development concepts. 
 
-This isn't because they lack talent or dedication — it's because the learning experience is not fostering new talent.
+The learning curve for programming is extremely steep, but without programming all efforts are in vain. This creates artificial barriers for talented, creative people.
+
+Engines create a strong lock-in effect due to their highly unique APIs - which essentially perform the same high-level tasks. They diverge only in concepts and features that hardly matter to the great majority of games and their developers!
+
+## The Road To A Solution
+
+With Godot on the rise, now is the time to start unifying gameplay programming on a high level, declarative, with patterns: for beginners and designers alike. 
+
+Unity and Godot first, then more C# engines. Eventually a C++ port, using Lua as the truly cross-engine programming interface.
 
 ---
 
 ## What We Know
 
-### Evidence (High Confidence)
+### 1. API Fragmentation: The Root Problem
 
-**1. Compounding Cognitive Load**
-- Game development requires learning 5-7 domains simultaneously: editor UI, programming, engine APIs, external tools (3D/2D software), asset pipelines, game concepts, debugging, profiling
-- Unlike web development (HTML → CSS → JavaScript sequentially), game dev skills are interdependent and must be learned in parallel
-- Time to first meaningful result: Web = minutes, Games = days to weeks
-
-**2. API Fragmentation Creates Lock-In**
 - Unity, Godot, Unreal solve identical problems with completely different APIs
-- Switching engines means relearning everything from scratch
-- Tutorial knowledge doesn't transfer between engines (e.g., `GetComponent<>()` vs `get_node()`)
+- Very different code`GetComponent()`vs`get_node()`but same concepts!
+- Switching engines means relearning implementation patterns = zero benefit
+- Engine switching costs are **high**, and exponentially so for beginners
 
-**3. Tutorial Hell is Pervasive**
-- Beginners can follow tutorials but freeze when building independently
-- Tutorials teach engine-specific steps, not transferable concepts
-- Engine version updates break tutorial code, making learned patterns obsolete
+### 2. The Lock-In Effect
 
-### Evidence (Strong Circumstantial)
+**Beginners:**
+- Must learn programming concepts **and** engine-specific APIs simultaneously => exponential cognitive load, _tutorial hell_ is widespread
+- Premature commitment to one engine before understanding the choice
+- Alternative mid-tier tools are heavily fragmented, and commercialized (sunk cost)
 
-**4. Mixed Results of Visual Scripting Tools**
-- Visual Scripting tools exist because programming is seen as a major barrier, but are not adopted (Godot: 0.5%, Unity: likely <5%) when they merely imitate imperative programming
-- Unreal Blueprint Graphs are successful because they provides high-level, fully functional nodes - but also because the only alternative is programming in C++
-- Beginner-friendly visual tools (PlayMaker, Game Creator) are highly popular commercial plugins
-- Visual tools have pervasive issues, they are verbose and hard to debug, refactor, document, and version control
+**Experienced Developers:**
+- Still significant time investment to switch engines for routine tasks
+- Switching engines is a career risk, not an opportunity!
+- Forced paradigm shifts cause frustration, loss of motivation, reverse switch
+- Switch job & engine together: highly unlikely (req. 2+ years with specific engine)
 
-**5. Community Support Structures Are Inadequate**
-- Game dev forums have high numbers of once-only beginner posts
-- High skill-level spaces create judgment and intimidation towards beginners
-- "Read the docs" et al responses assume knowledge beginners don't have
+**Ecosystem:**
+- Knowledge and tutorials don't transfer
+- Communities fragment by engine choice, even language preference
+- Most code frameworks are engine-specific, or providing value only after significant integration effort
 
----
+### 3. Visual Scripting Isn't The Catch-All Solution
 
-## The Core Problem
+**What Works:**
+- High-level visual tools (PlayMaker, Game Creator) are popular paid assets because they provide declarative, intent-revealing patterns at a high level
+- Success comes from hiding complexity and the promise of being simpler
 
-Learning game development requires juggling multiple complex, interdependent domains simultaneously, with no safe environment to build confidence gradually and through experimentation. 
+**What Doesn't Work:**
+- Visual tools that copy imperative programming 1:1 have abysmal adoption rates (Godot: 0.5%)
+- Unreal Blueprints succeeds because it provides high-level functional nodes — but partly because the only alternative is C++ (UnrealScript was removed in 2014)
 
-Engine-specific APIs fragment knowledge and create fear of choosing wrong, while tutorial-based learning creates dependency without fostering independent problem-solving.
+**The Fatal Flaws:**
+- Visual scripting is verbose and extremely space-inefficient compared to code
+- Arranging nodes is unproductive, but necessitated to avoid "node spaghetti"
+- Hard to debug, refactor, review, document, version, and establish guidelines 
+- Engine scripting languages (UnityScript/Boo, UnrealScript) were dropped; they copied the engine's API 1:1 and its imperative programming model
+  - UnrealScript historically had a substantial user base: Epic was forced to provide a decent visual alternative => Blueprints
+  - UnityScript/Boo were barely adopted (<5%): proving that the engine API was the barrier to entry, not the language => Visual Scripting came several years later through acquisition of existing asset (Bolt)
+
+**‼️The Missing Middle:‼️**
+
+- **There is no middle ground:** beginners/designers must jump from visual scripting and/or creation tools with small APIs directly to full engine programming
+- Simple declarative programming patterns are largely absent in game engines, only some visual tools persist
+
+### 4. Learning Support Is Inadequate
+
+**Observable Patterns:**
+- Game dev forums show high numbers of one-post beginner accounts
+- Beginners' code is often chaotic, showing lack of conceptual understanding
+- "Read the docs" responses assume foundational knowledge beginners lack
+
+**Fragmented Ecosystem:**
+- Abundance of learning material but inconsistent in quality, and target audience
+- Common beginner question: "Which tutorials/tutors should I follow?"
+- Every tutorial creator teaches their own style, compounding confusion
+- Tutorials strongly focus on the how (quick wins), rarely explain the why 
+- ‼️Tutorial Hell: beginners follow excessively but unable to work independently
+
+### 5. Constraints Enable Creativity
+
+**Evidence:**
+- Successful constrained tools (GameBoy, GameMaker, RPG Maker, Ren'Py) prove restrictions foster creativity, and can find commercial success
+- Developers' belief that "games need full flexibility" contradicts reality of what restrictive creative tools accomplish
+- Limiting, failure-safe systems are a blessing in disguise for learners — they reduce decision paralysis and encourage experimentation (Scratch)
 
 ---
 
 ## The Gap to a Better Outcome
 
 ### Current State
-- Beginners learn engine-specific APIs before understanding gameplay concepts
-- Programming knowledge is siloed by engine choice
-- Overwhelmed learners quit or remain trapped in tutorial hell
-- Fear of "wrong choice" prevents switching engines, moving forward
+- Beginners must learn engine-specific APIs before implementing actual game-play!
+- Knowledge doesn't transfer between engines—switching means starting over
+- Visual scripting is the only "simple" option (with major drawbacks)
+- No middle-ground between high-level visual programming and HLL programming
+- Fear of "wrong choice" causes early lock-in or prevents advancement
 
 ### Desired State
-- Beginners learn gameplay **concepts** first, engine specifics later
-- Programming knowledge transfers easily between engines
-- Confidence builds through working prototypes and experimentation
-- Try the same code in another engine, focus on learning the UI
+- Learn game concepts through simple, declarative API that reveals intent
+- Knowledge transfers well between engines—try Unity, Godot, or both
+- Text-based from day one: debuggable, refactorable, version-controllable, etc.
+- Gradual progression from high-level patterns toward engine-native programming
+- Engine exploration carries no penalty—build confidence through working code
 
 ---
 
 ## Why This Matters
 
 **1. Wasted Creative Potential**
-- Talented, creative people quit due to artificial barriers, not lack of ability
+- Talented people give up due to artificial barriers, not lack of ability
 - The industry loses diverse voices and perspectives
+- Mid-tier tools lack the platform reach of professional engines
 
 **2. Inefficient Learning Ecosystem**
-- Educators repeat the same concepts in different APIs
-- Learners consume content without building real skills
+- Educators repeat the same concepts in different engine-specific APIs
+- Learners consume tutorials without building independent problem-solving skills
 - Communities fragment by engine rather than uniting around shared knowledge
+- No 'safe space' sandbox toy to experiment with - like Scratch allows
 
 **3. Artificial Career Limitations**
 - Engine loyalty limits job opportunities and creative freedom
-- Developers become programmer or designer, requiring one another - instead of "programming designer"
+- The "gameplay coding designer" role has disappeared: the choice is either 'visual only' workflows (mostly Unreal) or learn native engine programming
 
 ---
 
 ## How LunyScript Addresses This
 
-**Core Insight:** Game engines share 90% of their fundamental concepts but expose them through 100% different APIs.
+**Core Insight:** Game engines share 90% of their fundamental concepts equally well but expose them through 100% different APIs.
 
-**LunyScript Solution:** A unified, beginner-friendly API that works identically across engines.
+**LunyScript Solution:** A unified, declarative API that works identically across engines—filling the missing middle ground between visual scripting and full programming.
 
 ### Direct Problem → Solution Mapping
 
 | Problem | How LunyScript Helps |
 |---------|---------------------|
-| Compounding cognitive load | Simpler API = one less domain to juggle; focus on game concepts, not API memorization |
+| API is the barrier | Declarative, intent-revealing syntax—focus on game concepts, not API memorization |
+| Exponential cognitive load for beginners | Simpler API = one less domain to juggle; reduces early lock-in fear |
 | API fragmentation | Same code works in Unity, Godot, future engines—knowledge transfers completely |
-| Tutorial hell dependency | Readable, intent-revealing syntax encourages experimentation and understanding |
-| Fear of wrong engine choice | Try any engine without penalty; switch freely as projects evolve |
+| No middle ground | Text-based declarative patterns bridge visual scripting → full programming |
+| Visual scripting drawbacks | Debuggable, refactorable, version-controllable from day one |
+| Tutorial hell dependency | Readable code encourages experimentation and understanding |
+| Mid-tier tool lock-in | Scratch/Roblox users can migrate without starting over |
 | Lack of safe learning space | Unified community around one API; no engine tribalism |
-| AI learning difficulties | Simple, consistent patterns make AI-generated code understandable |
 
 ### What LunyScript Is NOT
 
-- **Not a replacement** for engine-native programming
+- **Not a replacement** for engine-native programming—it's a scaffold toward mastery
 - **Not targeting** high-end AAA development or bleeding-edge features
-- **Not hiding** engine concepts—it scaffolds learners toward native APIs
+- **Not hiding** engine concepts—it teaches transferable patterns
 
-**Goal:** Provide a gentle, productive entry point that transfers completely between engines and builds confidence through working prototypes.
+**Goal:** Provide a gentle, productive entry point that transfers completely between engines, fills the missing middle ground, and builds confidence through working prototypes.
 
 ---
 
@@ -114,12 +159,12 @@ Engine-specific APIs fragment knowledge and create fear of choosing wrong, while
 
 While self-learners are the primary focus, LunyScript creates value for:
 
-- **Tutorial Creators**: One tutorial reaches Unity + Godot audiences
-- **Educators**: One curriculum deploys to multiple engines
-- **Prototypers**: Faster iteration without technical debt
-- **Framework Developers**: Cross-engine tools without compromising engine features
+- **Tutorial Creators**: One tutorial reaches Unity + Godot audiences; multiply reach, reduce workload
+- **Educators**: One curriculum deploys to multiple engines; teach concepts, not API specifics
+- **Prototypers**: Faster iteration without technical debt; engine flexibility during development
+- **Framework Developers**: Cross-engine tools without compromising on engine features
 
-These are *consequences* of solving the core beginner problem, not design drivers
+These are *consequences* of solving the core beginner problem, not design drivers.
 
 ---
 

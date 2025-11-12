@@ -97,6 +97,11 @@ body {
   font-size: 16px; /* Increased by 1px from default 15px */
 }
 
+/* Make inline code font size match body text */
+code {
+  font-size: 1em;
+}
+
 /* Increase heading sizes for h3 and below */
 h1 {
   font-size: 26px;
