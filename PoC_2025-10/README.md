@@ -27,7 +27,7 @@ I asked a [provocative question on reddit](https://www.reddit.com/r/gamedev/comm
 - It's a massive amount of work 😫
 - The point of engines is to be different 🤔
 
-This is called cognitive bias. It's also my fault because I did not explain it as well as I can now. And I talked to the wrong audience, obviously. It's like telling them: "You know, you could have had it way easier all this time." - devaluing their experience.
+This is called cognitive bias. It's also my fault because I did not explain it as well as I can now. And I talked to the wrong audience. It's like telling them: "You know, you could have had it way easier all this time." - devaluing their experience.
 
 ## So, How Does It Work?
 
