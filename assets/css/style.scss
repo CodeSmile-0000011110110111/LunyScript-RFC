@@ -98,20 +98,27 @@ body {
 }
 
 /* Increase heading sizes for h3 and below */
+h1 {
+  font-size: 26px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 22px;
+}
 h3 {
-  font-size: 20px; /* Increased by 2px */
+  font-size: 20px;
 }
 
 h4 {
-  font-size: 18px; /* Increased by 2px */
+  font-size: 18px;
 }
 
 h5 {
-  font-size: 16px; /* Increased by 2px */
+  font-size: 16px;
 }
 
 h6 {
-  font-size: 14px; /* Increased by 2px */
+  font-size: 14px;
 }
 
 /* Code comparison tabs */

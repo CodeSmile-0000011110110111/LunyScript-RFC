@@ -2,6 +2,18 @@
 
 > **Transparency statement** about artificial intelligence assistance in this project
 
+## Intro
+
+A uniform high-level API layer across engines doesn't exist partly due to the tedious, boring work writing engine adapters and abstractions. Nobody likes doing that.
+
+But now, we can outsource this to AI. It will accurately map one API to another. 
+
+In that sense, AI is truly transformative: We are no longer bound to the APIs we get fed by vendors. We can build our own on top, make it consistent, simple, uniform.
+
+Since LunyScript is an open source project, certain rules and guidelines for using AI needed to be established.
+
+So, allow me to let the AI do the detailed, boring legal/regulatory text for me. If reading this bores you, feed that text into your AI to provide you with a quick summary. 😉
+
 ## FOSS Compliance
 
 **This project's use of AI complies with Free and Open Source Software (FOSS) principles.** We ensure FOSS compatibility through:
@@ -20,7 +32,7 @@ This document records how AI tools are used in the design, documentation, and im
 ---
 ## ⚠️ Critical Policy: Legally Disputed AI Models ⚠️
 
-**AI models currently involved in legal disputes MUST NOT be used for contributions to this project!**
+**AI models currently involved in relevant legal disputes MUST NOT be used for contributions to this project!**
 
 ### 🚫 List of Prohibited AI Tools 🚫
 
@@ -211,5 +223,6 @@ If you have questions about AI usage in this project, please:
 
 ---
 
-**Last Updated**: 2025-11-06
+**Last Updated**: 2025-11-12
+
 **Status**: Living document - will be updated as AI tools and practices evolve
