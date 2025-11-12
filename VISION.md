@@ -1,3 +1,27 @@
+# The "Why?" Behind LunyScript - A Personal Intro
+
+High-level, text-based programming is efficient and designer-friendly. It eases beginners into complex programming tasks and introduces them to valuable patterns, as I've learned myself. Unfortunately, it's also a lost art.
+
+Well into the 2000s many game studios had the highly valuable role of the **designing-coder** and the **coding-designer**. Both were using the same tool, a shared language. It was simple and intuitive, but also very powerful. Because without code, a design is worthless. And without design, code is ineffective.
+
+![spellforce2-dragonstorm.jpg](media/history/spellforce2-dragonstorm.jpg)
+<sup>SpellForce 2 - Dragon Storm (2007)</sup>
+
+The race towards "higher efficiency" had the team I worked with got split up into separate entities with specialized roles: the ones who created the flow of gameplay, and the ones who made the environment look good.
+
+From then on, **at the very core of gameplay was a disconnect.**
+
+Two factions viewing each other a foreigners. The artists break the logic. The designers messed up the art. We changed creation from an amalgamation of personal choices towards building a bland product on an assembly line.
+
+![battleforge.jpg](media/history/battleforge.jpg)
+<sup>BattleForge (2009)</sup>
+
+This is the state of the game industry today. While creative artists, solo developers, beginners, visionaries - they all struggle to cope with the immense complexity of powerful tools we have at our disposal - just to create very basic gameplay.
+
+I **know** that the amalgamation of "design as code" works and provides huge benefits.
+
+That's all **I** need to know. Of course **you** want to know more:
+
 # They Became The Problem They Solved!
 
 ## 2000s

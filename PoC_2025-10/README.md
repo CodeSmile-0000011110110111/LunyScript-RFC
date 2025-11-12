@@ -12,6 +12,32 @@ A vertical slice from scratch in **under 20 days**: Started with Unity, then por
 
 ---
 
+## 🧐This can't possibly work!!🤥
+
+It does! 
+
+It's really not rocket science: Engines aren't that different. They all make games using the same basic set of high-level features. LunyScript aims to standardize only that high-level functionality. Because these features are so fundamental, they haven't changed at all in years.
+
+I asked a [provocative question on reddit](https://www.reddit.com/r/gamedev/comments/1nmtuqg/every_industrygrade_game_engine_has_the_same_api/) and [a follow-up](https://www.reddit.com/r/gamedev/comments/1nslk03/one_api_to_rule_them_all_them_godot_unity_unreal/) and the responses were uniformly:
+
+- Makes no sense
+- It's impossible
+- Nodody needs this
+- APIs are easy anyway
+- It's a massive amount of work
+- The point of engines is to be different (huh?)
+
+This is called cognitive bias. It's also my fault because I did not explain it as well as I can now. And I talked to the wrong audience, obviously. It's like telling them: "You know, you could have had it way easier all this time." - devaluing their experience.
+
+## So, How Does It Work?
+
+**→ [How LunyScript unifies different engine architectures](docs/EngineDifferences.md)**<br/>
+**→ [API design philosophy and principles](docs/Philosophy.md)**<br/>
+**→ [Code comparison: LunyScript vs Engine scrips](docs/CodeComparison.md)**<br/>
+_Note: Physics behaviour will deviate between physics engines, requires scaling values._
+
+---
+
 ## What's Implemented
 
 The PoC demonstrates LunyScript orchestrating essential gameplay systems across all three engines:

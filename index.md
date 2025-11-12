@@ -25,7 +25,7 @@ public MyPlayer()
 
 ## **✨ Same Code - Any Engine ✨** 
 
-LunyScript is beginner-friendly, high-level gameplay programming that **works uniformly across game engines**.
+LunyScript is beginner-friendly, high-level gameplay programming that **works uniformly across C# game engines**.
 
 Something missing? Extend its bite-sized blocks by writing C# extension methods. Learn the engine as you go.
 
@@ -38,17 +38,6 @@ Game engines all share the same fundamental features needed to create a _Megabon
 > 🚧 **Status: Proof of Concept**<br/>
 > 📸 [View detailed PoC documentation, screenshots, and source code →](PoC_2025-10/)
 
-## 🧐This can't possibly work!!🤥
-
-It does! It's not rocket science. Engines aren't that different. They all make games using the same basic set of high-level features. LunyScript aims to standardize them.
-<br/>**=>[ Watch the full video on YouTube (1:20) - PoC in 20 days](https://youtu.be/Vn38VLNDsuw)**
-
-**→ [How LunyScript unifies different engine architectures](docs/EngineDifferences.md)**<br/>
-**→ [API design philosophy and principles](docs/Philosophy.md)**<br/>
-**→ [Code comparison: LunyScript vs Engine scrips](docs/CodeComparison.md)**<br/>
-**→ [FOSS-compliant AI-assisted development](AI-USAGE.md)**<br/>
-_Note: Physics behaviour will deviate between physics engines, requires scaling values._
-
 ---
 
 # **🥴 LunyScript Cures Cognitive Overwhelm 💊**
@@ -57,7 +46,10 @@ LunyScript is 3-5 times less verbose than GDScript!
 [![Chart_Lines_of_Code.png](media/Chart_Lines_of_Code.png)](docs/CodeComparison)
 <sup>[View Interactive Chart](https://docs.google.com/spreadsheets/d/e/2PACX-1vQYteK-tn0qLcvssVP5sLEcTg7adjtRbbE56Usj-BUmtx033RVY9lLt0aPpL_Ef4uEp8DNvRpBgWLTh/pubchart?oid=2073524744&format=interactive)</sup>
 
----
+# **But .. Why?**
+
+I **know** that the amalgamation of "design as code" works and provides huge benefits to all creative thinkers. 
+I can't expect you to trust my judgement, but it requires a few more words: **→ [The Problem Statement](docs/ProblemStatement)**
 
 # **Who This Is For**
 
@@ -94,3 +86,8 @@ LunyScript is 3-5 times less verbose than GDScript!
 Help shape the future of cross-engine, uniform game programming!
 
 ---
+
+# **AI Usage Info**
+
+Since LunyScript is an open source project, certain rules regarding AI usage needed to be established. You can find them here:
+**→ [FOSS-compliant AI-assisted development](AI-USAGE.md)**
