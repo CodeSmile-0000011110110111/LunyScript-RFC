@@ -134,20 +134,20 @@ Unity and Godot first, then more C# engines. Eventually a C++ port, using Lua as
 
 ### Direct Problem → Solution Mapping
 
-| Problem | How LunyScript Helps |
-|---------|---------------------|
+| Problem | How LunyScript Helps                                                           |
+|---------|--------------------------------------------------------------------------------|
 | API is the barrier | Declarative, intent-revealing syntax—focus on game concepts, not API memorization |
-| Exponential cognitive load for beginners | Simpler API = one less domain to juggle; reduces early lock-in fear |
+| Exponential cognitive load for beginners | Simpler API = one less domain to juggle; reduces early lock-in fear            |
 | API fragmentation | Same code works in Unity, Godot, future engines—knowledge transfers completely |
-| No middle ground | Text-based declarative patterns bridge visual scripting → full programming |
-| Visual scripting drawbacks | Debuggable, refactorable, version-controllable from day one |
-| Tutorial hell dependency | Readable code encourages experimentation and understanding |
-| Mid-tier tool lock-in | Scratch/Roblox users can migrate without starting over |
-| Lack of safe learning space | Unified community around one API; no engine tribalism |
+| No middle ground | Text-based declarative patterns bridge visual scripting → full programming     |
+| Visual scripting drawbacks | Debuggable, refactorable, version-controllable text code from day one          |
+| Tutorial hell dependency | Readable code encourages experimentation and understanding, and teaching patterns |
+| Mid-tier tool lock-in | Scratch/Roblox users feel more welcome in pro-tier engines, find early successes |
+| Lack of safe learning space | Unified community around entry-level API                                       |
 
 ### What LunyScript Is NOT
 
-- **Not a replacement** for engine-native programming—it's a scaffold toward mastery
+- **Not a replacement** for engine-native programming—it's a scaffold toward mastery (but has similar uses than visual scripting)
 - **Not targeting** high-end AAA development or bleeding-edge features
 - **Not hiding** engine concepts—it teaches transferable patterns
 
@@ -161,10 +161,10 @@ While self-learners are the primary focus, LunyScript creates value for:
 
 - **Tutorial Creators**: One tutorial reaches Unity + Godot audiences; multiply reach, reduce workload
 - **Educators**: One curriculum deploys to multiple engines; teach concepts, not API specifics
-- **Prototypers**: Faster iteration without technical debt; engine flexibility during development
-- **Framework Developers**: Cross-engine tools without compromising on engine features
+- **Prototypers**: Faster iteration while creating reusable code
+- **Framework Developers**: Cross-engine tools without compromising on engine integration
 
-These are *consequences* of solving the core beginner problem, not design drivers.
+These are *consequences* of solving the core beginner problem and cross-engine functionality, but have the potential to become additional design drivers in the future.
 
 ---
 
