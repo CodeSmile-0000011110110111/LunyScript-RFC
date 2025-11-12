@@ -59,9 +59,9 @@ Level
 
 Think of the grouping elements as folders and files in an Explorer/Finder tree view:
 
-- **Godot** only has folders (Node 🧩). There are over 200 specialized folder types to make up for the lack of files.
-- **Unity** has folders (GameObject) with files in them (MonoBehaviour 🧩). There is exactly one type of folder, with hundreds of file types available.
-- **Unreal** has folders (Actor 🧩) with files in them (Component 🧩), which can have more nested files inside. There are dozens of folder types, hundreds of file types, and they cannot be freely mixed and matched.
+- **Godot** only has folders (Node 🧩). There are over 200 specialized folder types to make up for the lack of files. **It's one unit of separation.**
+- **Unity** has folders (GameObject) with files in them (MonoBehaviour 🧩). There is exactly one type of folder, with hundreds of file types available. **Matches Explorer.**
+- **Unreal** has folders (Actor 🧩) with files in them (Component 🧩), which can have more nested files inside. There are dozens of folder types, hundreds of file types, and they cannot be freely mixed and matched. **It's a tree with branches.**
 
 The 🧩symbol denotes the types we write logic for. The above analogy also maps perfectly to the perceived complexity of each engine. 
 
