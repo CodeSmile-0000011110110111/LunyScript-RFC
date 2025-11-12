@@ -11,12 +11,12 @@ The race towards "higher efficiency" had the team I worked with got split up int
 
 From then on, **at the very core of gameplay was a disconnect.**
 
-Two factions viewing each other a foreigners. The artists break the logic. The designers messed up the art. We changed creation from an amalgamation of personal choices towards building a bland product on an assembly line.
+Two factions viewing each other as foreigners. The artists break the logic. The designers messed up the art. We changed creation from an amalgamation of personal choices towards building a bland product on an assembly line.
 
 ![battleforge.jpg](media/history/battleforge.jpg)
 <sup>BattleForge (2009)</sup>
 
-This is the state of the game industry today. While creative artists, solo developers, beginners, visionaries - they all struggle to cope with the immense complexity of powerful tools we have at our disposal - just to create very basic gameplay.
+This is the state of the game industry today. While creative artists, solo developers, beginners, visionaries - they all struggle to cope with the immense complexity of powerful tools we have at our disposal just to create very basic gameplay.
 
 I **know** that the amalgamation of "design as code" works and provides huge benefits.
 
@@ -146,7 +146,7 @@ A sustainable scripting solution shall be:
 - Provides proven design patterns
 - Supplements existing code and tools
 - Promises <5% performance overhead
-- Is easy to extend or bypass
+- Is easy to extend and bypass
 
 ## The Outcome
 

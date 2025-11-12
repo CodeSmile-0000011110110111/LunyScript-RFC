@@ -87,7 +87,7 @@ graph TB
 ## Layer Descriptions
 
 ### 👤 Game Developer Layer
-- **What:** Your game logic written in C#, GDScript, or Lua
+- **What:** Your game logic written in C# (Lua)
 - **Benefit:** Write once, deploy to multiple engines without changes
 
 ### 🎮 LunyScript Layer (Portable)
@@ -256,18 +256,18 @@ No need to learn engine-specific patterns - focus on game logic
 Switch engines without rewriting gameplay code - avoid vendor lock-in
 
 ### ✅ Multi-Language Support
-Write in C#, GDScript, or Lua - same API across all languages
+Write in C# (Lua) - same API across all languages
 
 ## Technical Details
 
 ### Change Frequency by Layer
 
-| Layer | Change Frequency | Why |
-|-------|-----------------|-----|
-| **Luny** | Low | Core abstractions rarely change once established |
-| **LunyScript** | Medium | Grows with new features, core logic stable |
+| Layer | Change Frequency | Why                                                    |
+|-------|-----------------|--------------------------------------------------------|
+| **Luny** | Low | Core abstractions rarely change once established       |
+| **LunyScript** | Medium | Grows with new features, core logic stable             |
 | **EAL** | Low-Medium | Engine interfaces evolve as LunyScript features expand |
-| **Adapters** | High | Evolves with engine API changes |
+| **Adapters** | High | Evolves with engine API changes, but low effort        |
 
 ### Performance Overhead
 
@@ -283,7 +283,7 @@ _Under Consideration:_
 - **GDScript** (Godot) - Wait for demand, fluent syntax would be awkward (newline backslashes!) 
 - **C++** (Last) - Years away. Would provide native Unreal and O3DE, Cocos support.
 
-Note: With additional C++ re-implementation Lua code would be fully portable.
+With a C++ implementation Lua code would ensure full portability to C# engines.
 
 ## Example: The Same Code, Multiple Engines
 
@@ -305,6 +305,8 @@ protected override void OnReady()
 - **Godot:** Runs in Node script
 
 Same code, multiple engines, zero changes. 🎉
+
+The goal is to have this code in an engine-agnostic subclass, but this has not been fully evaluated in regards to editor integration and user's workflow.
 
 ## Learn More
 
