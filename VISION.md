@@ -56,7 +56,7 @@ A short history of domain-specific languages (DSL) in game engines:
 
 The ones that are dead didn't really affect the onramp. 
 
-**Their problem**: They were **engine-exclusive languages exposing the engine's entire API surface**. Support and maintenance was a **significant burden** on engine developers, thus the decision was made to drop them. 
+**Their problem**: They were **engine-exclusive languages exposing the engine's entire API surface**. They were a **significant maintenance burden** for engine developers, thus the decision was made to drop them. 
 
 DSLs mimicking the native language aren't easing beginners since the real challenges lie in the massive, ever expanding APIs - not syntactical convenience.
 
@@ -66,19 +66,17 @@ For Unity, **C# was considered accessible enough** and already widely used. Whil
 
 Godot's GDScript is much better positioned with three of four users relying on it. 
 
-It's the tight editor integration (tooltips, highlighting, autocompletion, debugging, profiling) that makes GDScript successful. 
+It's the tight editor integration (tooltips, highlighting, autocompletion, debugging, profiling) that makes GDScript successful. And binding C# code to GDScript is very easy.
 
 GDScript highlights the **desire for less boilerplate**. While **VisualScript's failure** proves visual tools are **worthless without high-level functionality**.
 
 ## GDScript Is Still More Of The Same
 
-GDScript is an **engine-exclusive language exposing the engine's entire API surface**. Both API and language continue to grow in complexity. 
+GDScript is an **engine-exclusive language exposing the engine's entire API surface**. Both API and language continue to grow in complexity. It's also a **complete outlier** in an ecosystem where C-like languages dominate. 
 
-While GDScript itself represents only ~5% of Godot's codebase, it can be reckoned to consume 15-25% of development resources through editor integration, documentation, testing, and language-aware API design => **significant burden**.
+GDScript's tight editor integration, and the boilerplate code required to bind C++ code, indicate it's a **significant maintenance burden**.
 
-It's also a **complete outlier** in an ecosystem where C-like languages dominate. Particularly exposing C++ (framework) code to GDScript adds **significant friction**.
-
-GDScript's simplicity creates a **comfortable trap** for learners, with few transferable skills. Like every other DSL GDScript creates **vendor lock-in**.
+For learners, GDScript's simplicity creates a **comfortable trap** with few transferable skills. Like every other DSL, GDScript creates **vendor lock-in**.
 
 ---
 
