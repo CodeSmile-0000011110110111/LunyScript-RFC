@@ -2,9 +2,6 @@
 
 ## Notes
 
-- ✅ COMPLETED: Reframed primary audience from "Educators" to "Self-Learners & Tutorial Creators (Learnfluencers)" in index.md and README.md (2025-11-07)
-
-- Consider adding group think (tribalism) as problem. It's considered "normal" to code against engine APIs - we don't see how we have to do the same things differently in each engine. Nobody considers this to be a problem. But it leads to reinventing the wheel everywhere. Software libraries like pathfinding are either abstract, agnostic, or are directly integrated in and locked to Unity, Godot, Unreal.
 
 
 ## URGENT

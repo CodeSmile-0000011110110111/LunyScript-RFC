@@ -23,7 +23,7 @@ Unity and Godot first, then more C# engines. Eventually a C++ port, using Lua as
 - Unity, Godot, Unreal solve identical problems with completely different APIs
 - Very different code`GetComponent()`vs`get_node()`but same concepts!
 - Switching engines means relearning implementation patterns = zero benefit
-- Engine switching costs are **high**, and exponentially so for beginners
+- Engine switching costs are **high**, and exponentially so for beginners+
 
 ### 2. The Lock-In Effect
 
@@ -41,7 +41,7 @@ Unity and Godot first, then more C# engines. Eventually a C++ port, using Lua as
 **Ecosystem:**
 - Knowledge and tutorials don't transfer
 - Communities fragment by engine choice, even language preference
-- Most code frameworks are engine-specific, or providing value only after significant integration effort
+- Game code frameworks are either engine-locked or require significant integration effort
 
 ### 3. Visual Scripting Isn't The Catch-All Solution
 

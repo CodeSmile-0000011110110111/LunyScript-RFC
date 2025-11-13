@@ -16,7 +16,6 @@ exclude:
   - .idea/
   - Guidelines.md
   - QUESTIONS.md
-  - TODO.md
   - .gitmodules
   - .gitignore
   - Gemfile
@@ -30,6 +29,14 @@ exclude:
 include:
   - README.md
   - CHANGELOG.md
+  - CONTRIBUTING.md
+  - AI-USAGE.md
+  - AUTHOR.md
+  - FAQ.md
+  - LIMITATIONS.md
+  - MAINTENANCE.md
+  - VISION.md
+  - TODO.md
 
 # Markdown processor
 markdown: kramdown
