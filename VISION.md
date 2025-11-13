@@ -34,28 +34,7 @@ That's all **I** need to know. Of course **you** want to know more:
 
 ---
 
-# They Became The Problem They Solved!
-
-## The API Fragmentation Twist 
-
-### 2000s
-**Problem:** "We can't port our game from Windows to Mac or Playstation - the APIs are completely different!"
-
-**Solution:** Game engines! Write once, deploy cross-platform.
-
-### 2020s
-
-**Problem:** "We can't port our project from Unity to Godot — the APIs are completely different!"
-
-**Solution:** ???
-
-### The Irony
-
-We solved platform lock-in and API fragmentation, only to create **engine API lock-in**.
-
-With each engine's API continuously growing in complexity over time, this works against learners. For them, switching engines feels like moving to a foreign country.
-
-## Engine Scripting History
+# Engine Scripting History
 
 Programming onramp? Add a scripting language! A short history of domain-specific languages (DSL) in game engines:
 
@@ -66,25 +45,31 @@ Programming onramp? Add a scripting language! A short history of domain-specific
 
 The ones that are dead didn't really affect the onramp. 
 
-**Their problem**: They were engine-exclusive languages to program the engine's complete API. Maintenance was a growing burden, ultimately the decision was made to drop them. 
+**Their problem**: They were **engine-exclusive languages exposing the engine's entire API surface**. Maintenance was a growing burden, ultimately the decision was made to drop them. 
 
 For Unity, **C# was considered accessible enough**. While Epic due to the high barrier of entry of C++ was **forced to invent Blueprints**.
 
 DSLs mimicking the native language aren't easing beginners since the real challenges lie in the massive, ever expanding APIs - not syntactical convenience.
 
-### But GDScript Is Different!
+## But GDScript Is Different!
 
 Godot's GDScript is much better positioned with three of four users relying on it. 
 
-Above all else, it's the tight editor integration that makes GDScript beginner-friendly. Even debugging and profiling is integrated. Simpler syntax and duck-typing are merely secondary factors.
+It's the tight editor integration that makes GDScript beginner-friendly. Even debugging and profiling. Simpler syntax and duck-typing are merely secondary factors. 
 
-### GDScript Is Still More Of The Same
+GDScript highlights the desire for programming with less boilerplate.
 
-GDScript is an engine-exclusive language exposing the engine's entire API surface. Both API and language continue to grow in complexity. It's also a complete outlier in the game development ecosystem where C-like languages dominate. 
+## GDScript Is Still More Of The Same
 
-GDScript skills don't transfer. Learning supporting skills like refactoring still requires the use of an IDE. Although Godot officially supports C#, it is at a competitive disadvantage: it lacks the same tight editor integration, and web platform support. 
+GDScript is an **engine-exclusive language exposing the engine's entire API surface**. Both API and language continue to grow in complexity. 
 
-Needless to say - like every other DSL - **GDScript is a vendor lock-in mechanism**.
+It's also a complete outlier in an ecosystem where C-like languages dominate. It adds significant friction when there is need to integrate a C++/C# framework.
+
+Although Godot officially supports C#, it is at a competitive disadvantage: it lacks the same tight editor integration, and web platform support.
+
+For learners, GDScript skills don't transfer. Learning supporting skills like refactoring requires the use of an IDE. The upramp to C#/C++ still remains significant.
+
+Needless to say - like every other DSL - **GDScript is a vendor lock-in mechanism**. And despite its current dominance, there are several factors working against it.
 
 ---
 
