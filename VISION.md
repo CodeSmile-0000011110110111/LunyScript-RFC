@@ -1,13 +1,17 @@
 # The "Why?" Behind LunyScript - A Personal Intro
 
-High-level, text-based programming is efficient and designer-friendly. It eases beginners into complex programming tasks and introduces them to valuable patterns, as I've learned myself. Unfortunately, it's also a lost art.
+**High-level, text-based programming is efficient and designer-friendly.** It eases beginners into complex programming tasks and introduces them to valuable patterns, as I've learned myself. 
 
-Well into the 2000s many game studios had the highly valuable role of the **designing-coder** and the **coding-designer**. Both were using the same tool, a shared language. It was simple and intuitive, but also very powerful. Because without code, a design is worthless. And without design, code is ineffective.
+Unfortunately, it's also a lost art.
+
+Well into the 2000s many game studios had the highly valuable role of the **designing-coder** and the **coding-designer**. Both were using the same tool, a scripting language or parsed data descriptions or both. It was simple and intuitive, but also very powerful. 
+
+Because without code, a design is worthless. And without design, code is ineffective.
 
 ![spellforce2-dragonstorm.jpg](media/history/spellforce2-dragonstorm.jpg)
 <sup>SpellForce 2 - Dragon Storm (2007)</sup>
 
-The race towards "higher efficiency" had the team I worked with got split up into separate entities with specialized roles: the ones who created the flow of gameplay, and the ones who made the environment look good.
+The race towards "higher efficiency" forced the team I worked with to split up into separate entities with specialized roles: the ones who created the flow of gameplay, and the ones who made the environment look consistently good.
 
 From then on, **at the very core of gameplay was a disconnect.**
 
@@ -16,7 +20,13 @@ Two factions viewing each other as foreigners. The artists break the logic. The 
 ![battleforge.jpg](media/history/battleforge.jpg)
 <sup>BattleForge (2009)</sup>
 
-This is the state of the game industry today. While creative artists, solo developers, beginners, visionaries - they all struggle to cope with the immense complexity of powerful tools we have at our disposal just to create very basic gameplay.
+This is the state of the game industry at large today. 
+
+Only small teams can afford to break out of assembly productions split by roles. In fact, it's their most important angle to find success. 
+
+But those creative artists, solo developers, beginners, visionaries all struggle to cope with the immense complexity of powerful tools we have at our disposal - just to create very basic gameplay. 
+
+They work with the powerhouse engines who naturally align their features to requirements of corporate productions, bolstering the division of developer roles.
 
 I **know** that the amalgamation of "design as code" works and provides huge benefits.
 
@@ -150,7 +160,7 @@ A sustainable scripting solution shall be:
 
 ## The Outcome
 
-Pro-tier engines across the board will be more approachable to beginners. They learn valuable concepts and patterns before diving into imperative programming.
+Pro-tier engines across the board will be more approachable and conducive to beginners. They learn valuable concepts and patterns before diving into imperative programming.
 
 Education adopts a single entry-level game programming curriculum.
 
