@@ -9,6 +9,9 @@
   border-bottom: 2px solid #0090ff;
   padding: 20px 0;
   margin-bottom: 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 #banner nav {
