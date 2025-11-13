@@ -90,6 +90,10 @@ I can't expect you to trust my judgement, but it requires a few more words **→
 
 Help shape the future of cross-engine, uniform game programming!
 
+<iframe src="https://ghbtns.com/github-btn.html?user=CodeSmile-0000011110110111&repo=LunyScript-RFC&type=star&count=true" frameborder="0" scrolling="1" width="72" height="22"></iframe>
+<font size=6>👈️👍️</font>
+Please **star** the [LunyScript-RFC GitHub repository](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC) to show your support!
+
 ---
 
 # **AI Usage Info**
