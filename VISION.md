@@ -1,7 +1,7 @@
 ## Table of Contents
 
 - [The "Why?" Behind LunyScript - A Personal Story](#the-why-behind-lunyscript---a-personal-story)
-- [Engine Scripting History](#engine-scripting-history)
+- [Engine Scripting: Failed](#engine-scripting-failed)
   - [GDScript Is Different](#gdscript-is-different)
   - [GDScript Is Still More Of The Same](#gdscript-is-still-more-of-the-same)
 - [We need to re-think game engine scripting!](#we-need-to-re-think-game-engine-scripting)
@@ -26,7 +26,7 @@ The race towards "higher efficiency" forced the team I worked with to split up i
 
 From then on, **at the very core of gameplay was a disconnect.**
 
-Two factions viewing each other as foreigners. The artists break the logic. The designers messed up the art. We changed creation from an amalgamation of personal creative choices towards building a bland product on an assembly line.
+Two factions viewing each other as foreigners. The artists break the logic. The designers messed up the art. We changed creation from an amalgamation of personal creative choices towards building a soulless product on an assembly line.
 
 ![battleforge.jpg](media/history/battleforge.jpg)
 <sup>BattleForge (2009)</sup>
@@ -37,50 +37,48 @@ Only small teams can afford to break out of assembly productions split by roles.
 
 But those creative artists, solopreneurs, visionaries, and beginners all struggle to cope with the immense complexity of powerful tools we have at our disposal - just to create very basic gameplay features. 
 
-They work with the powerhouse engines who naturally align their features to requirements of corporate productions, bolstering the separation of developer roles.
-
 I **know** that the amalgamation of "design as code" works and provides huge benefits. Even absolute non-programmers were able to implement designs within days.
 
 That's all **I** need to know. Of course **you** want to know more:
 
 ---
 
-# Engine Scripting History
+# Engine Scripting: Failed
 
-Programming onramp? Add a scripting language! A short history of domain-specific languages (DSL) in game engines:
+Programming onramp? Add a scripting language! 
 
-1. UnrealScript - Born 1998, RIP 2014 - Died age 16
-2. Boo (Unity)  - Born 2005, RIP 2014 - Died age 9
-3. UnityScript  - Born 2005, RIP 2017 - Died age 12
-4. GDScript     - Born 2014, ...
+A short history of domain-specific languages (DSL) in game engines:
+
+1. <del>UnrealScript</del>&nbsp;&nbsp;- RIP 1998-2014 (age 16)
+2. <del>Boo</del> (Unity)&nbsp;&nbsp;&nbsp;&nbsp;- RIP 2005-2014 (age 9)
+3. <del>UnityScript</del>&nbsp;&nbsp;&nbsp;&nbsp;- RIP 2005-2017 (age 12)
+4. GDScript&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 2014-20?? (age 11)
 
 The ones that are dead didn't really affect the onramp. 
 
-**Their problem**: They were **engine-exclusive languages exposing the engine's entire API surface**. Maintenance was a growing burden, ultimately the decision was made to drop them. 
-
-For Unity, **C# was considered accessible enough**. While Epic was **forced to invent Blueprints** since the only alternative was and is C++.
+**Their problem**: They were **engine-exclusive languages exposing the engine's entire API surface**. Support and maintenance was a **significant burden** on engine developers, thus the decision was made to drop them. 
 
 DSLs mimicking the native language aren't easing beginners since the real challenges lie in the massive, ever expanding APIs - not syntactical convenience.
+
+For Unity, **C# was considered accessible enough** and already widely used. While Epic was **forced to invent Blueprints** since the only alternative was highly technical C++.
 
 ## GDScript Is Different
 
 Godot's GDScript is much better positioned with three of four users relying on it. 
 
-It's the tight editor integration that makes GDScript beginner-friendly. Even debugging and profiling. Simpler syntax and duck-typing are merely secondary factors. 
+It's the tight editor integration (tooltips, highlighting, autocompletion, debugging, profiling) that makes GDScript successful. 
 
-GDScript also highlights the desire for programming with less boilerplate.
+GDScript highlights the **desire for less boilerplate**. While **VisualScript's failure** proves visual tools are **worthless without high-level functionality**.
 
 ## GDScript Is Still More Of The Same
 
 GDScript is an **engine-exclusive language exposing the engine's entire API surface**. Both API and language continue to grow in complexity. 
 
-It's also a complete outlier in an ecosystem where C-like languages dominate. It adds significant friction when there is need to integrate a C++/C# framework.
+While GDScript itself represents only ~5% of Godot's codebase, it can be reckoned to consume 15-25% of development resources through editor integration, documentation, testing, and language-aware API design => **significant burden**.
 
-Although Godot officially supports C#, it is at a competitive disadvantage: it lacks the same tight editor integration, and web platform support.
+It's also a **complete outlier** in an ecosystem where C-like languages dominate. Particularly exposing C++ (framework) code to GDScript adds **significant friction**.
 
-For learners, GDScript skills don't transfer. Learning supporting skills like refactoring requires the use of an IDE. The upramp to C#/C++ still remains significant.
-
-Needless to say - like every other DSL - **GDScript is a vendor lock-in mechanism**.
+GDScript's simplicity creates a **comfortable trap** for learners, with few transferable skills. Like every other DSL GDScript creates **vendor lock-in**.
 
 ---
 
@@ -91,7 +89,11 @@ It bothered me for a long time that we need to write so much boilerplate code fo
 For the longest time, I thought it's a great thing to have so many entry-level tutorials for self-learners.
 But then I realized how rampant **tutorial hell** is among self-learners!
 
-And how **some influencers are damaging coding skills**, favoring quick wins through teaching bad practices. Even spreading FUD when it serves their interests (clicks).
+And how **tutorial fragmentation damages coding literacy** - adding confusion and favoring quick wins over teaching best practices.
+
+Lastly, **character controllers**. Beginners are taught to re-implement player movement (wheels) and collision (wheels) even though it's a **well-known learning-cliff**: ubiquitous and essential, but surprisingly challenging beyond mere basics!
+
+![CustomCharacterController.png](media/CustomCharacterController.png)
 
 I began asking heretic questions ...
 
@@ -160,17 +162,18 @@ A sustainable scripting solution shall be:
 - Is free and open source
 
 **Beginner- & Designer-Friendly:**
-- Declarative, with informal language
+- Declarative, expressing intent
 - Fault-tolerant, using placeholders instead of crashing
-- Built-In Statemachine and Behaviour Trees
+- Built-In Statemachine and Behaviour Trees => powerful
 - On-screen instrumentation over debugger deep-dives
-- Bite-sized code extensions teach modular thinking
+- Bite-sized code extensions teach modular thinking & engine API
 
 **Production-Ready:**
 - Supports common gameplay design needs
 - Supplements existing code and tools
 - Promises <5% performance overhead
 - Is easy to extend or bypass
+- Opens the foor for cross-engine code libraries
 
 ## The Outcome
 
@@ -180,4 +183,4 @@ Learnfluencers provide valuable head-to-head engine comparisons and can afford t
 
 Education adopts a single entry-level game programming curriculum. Easier to encourage non-programmers to code.
 
-Visual Scripting users find themselves more productive in text-based declarative programming. Simple projects complete faster. Game Jams produce reusable code. Prototypes struggle less with technical issues.
+Visual Scripting users find themselves more productive in text-based declarative programming. Simple projects complete faster. Game Jams produce reusable code. Prototypes are less concerned with technical issues. Trying a different engine is easier.
