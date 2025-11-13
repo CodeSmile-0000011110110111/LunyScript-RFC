@@ -16,7 +16,7 @@ A vertical slice from scratch in **under 20 days**: Started with Unity, then por
 
 It does! 
 
-It's really not rocket science: Engines aren't that different. They all make games using the same basic set of high-level features. LunyScript aims to standardize only that high-level functionality. Because these features are so fundamental, they haven't changed at all in years.
+It's really not rocket science: Engines aren't that different. They all make games using the same basic set of high-level features. LunyScript aims to standardize only that high-level functionality. Because these features are so fundamental, they don't change at all.
 
 I asked a [provocative question on reddit](https://www.reddit.com/r/gamedev/comments/1nmtuqg/every_industrygrade_game_engine_has_the_same_api/) and [a follow-up](https://www.reddit.com/r/gamedev/comments/1nslk03/one_api_to_rule_them_all_them_godot_unity_unreal/) and the responses were uniformly:
 
