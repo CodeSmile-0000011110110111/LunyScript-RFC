@@ -1,4 +1,15 @@
-# The "Why?" Behind LunyScript - A Personal Intro
+## Table of Contents
+
+- [The "Why?" Behind LunyScript - A Personal Story](#the-why-behind-lunyscript---a-personal-story)
+- [Engine Scripting History](#engine-scripting-history)
+  - [GDScript Is Different](#gdscript-is-different)
+  - [GDScript Is Still More Of The Same](#gdscript-is-still-more-of-the-same)
+- [We need to re-think game engine scripting!](#we-need-to-re-think-game-engine-scripting)
+- [The Luny Vision](#the-luny-vision)
+  - [Vision Statements](#vision-statements)
+  - [The Outcome](#the-outcome)
+
+# The "Why?" Behind LunyScript - A Personal Story
 
 **High-level, text-based programming is efficient and designer-friendly.** It eases beginners into complex programming tasks and introduces them to valuable patterns, as I've learned myself. 
 
@@ -15,7 +26,7 @@ The race towards "higher efficiency" forced the team I worked with to split up i
 
 From then on, **at the very core of gameplay was a disconnect.**
 
-Two factions viewing each other as foreigners. The artists break the logic. The designers messed up the art. We changed creation from an amalgamation of personal choices towards building a bland product on an assembly line.
+Two factions viewing each other as foreigners. The artists break the logic. The designers messed up the art. We changed creation from an amalgamation of personal creative choices towards building a bland product on an assembly line.
 
 ![battleforge.jpg](media/history/battleforge.jpg)
 <sup>BattleForge (2009)</sup>
@@ -24,9 +35,9 @@ This is the state of the game industry at large today.
 
 Only small teams can afford to break out of assembly productions split by roles. In fact, it's their most important angle to find success. 
 
-But those creative artists, solo developers, beginners, visionaries all struggle to cope with the immense complexity of powerful tools we have at our disposal - just to create very basic gameplay. 
+But those creative artists, solopreneurs, visionaries, and beginners all struggle to cope with the immense complexity of powerful tools we have at our disposal - just to create very basic gameplay features. 
 
-They work with the powerhouse engines who naturally align their features to requirements of corporate productions, bolstering the division of developer roles.
+They work with the powerhouse engines who naturally align their features to requirements of corporate productions, bolstering the separation of developer roles.
 
 I **know** that the amalgamation of "design as code" works and provides huge benefits. Even absolute non-programmers were able to implement designs within days.
 
@@ -47,17 +58,17 @@ The ones that are dead didn't really affect the onramp.
 
 **Their problem**: They were **engine-exclusive languages exposing the engine's entire API surface**. Maintenance was a growing burden, ultimately the decision was made to drop them. 
 
-For Unity, **C# was considered accessible enough**. While Epic due to the high barrier of entry of C++ was **forced to invent Blueprints**.
+For Unity, **C# was considered accessible enough**. While Epic was **forced to invent Blueprints** since the only alternative was and is C++.
 
 DSLs mimicking the native language aren't easing beginners since the real challenges lie in the massive, ever expanding APIs - not syntactical convenience.
 
-## But GDScript Is Different!
+## GDScript Is Different
 
 Godot's GDScript is much better positioned with three of four users relying on it. 
 
 It's the tight editor integration that makes GDScript beginner-friendly. Even debugging and profiling. Simpler syntax and duck-typing are merely secondary factors. 
 
-GDScript highlights the desire for programming with less boilerplate.
+GDScript also highlights the desire for programming with less boilerplate.
 
 ## GDScript Is Still More Of The Same
 
@@ -69,7 +80,7 @@ Although Godot officially supports C#, it is at a competitive disadvantage: it l
 
 For learners, GDScript skills don't transfer. Learning supporting skills like refactoring requires the use of an IDE. The upramp to C#/C++ still remains significant.
 
-Needless to say - like every other DSL - **GDScript is a vendor lock-in mechanism**. And despite its current dominance, there are several factors working against it.
+Needless to say - like every other DSL - **GDScript is a vendor lock-in mechanism**.
 
 ---
 
@@ -80,7 +91,7 @@ It bothered me for a long time that we need to write so much boilerplate code fo
 For the longest time, I thought it's a great thing to have so many entry-level tutorials for self-learners.
 But then I realized how rampant **tutorial hell** is among self-learners!
 
-And how **some influencers are damaging coding skills**, favoring quick wins through teaching bad practices. Even spreading FUD when it serves their interests.
+And how **some influencers are damaging coding skills**, favoring quick wins through teaching bad practices. Even spreading FUD when it serves their interests (clicks).
 
 I began asking heretic questions ...
 
