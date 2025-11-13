@@ -28,58 +28,74 @@ But those creative artists, solo developers, beginners, visionaries all struggle
 
 They work with the powerhouse engines who naturally align their features to requirements of corporate productions, bolstering the division of developer roles.
 
-I **know** that the amalgamation of "design as code" works and provides huge benefits.
+I **know** that the amalgamation of "design as code" works and provides huge benefits. Even absolute non-programmers were able to implement designs within days.
 
 That's all **I** need to know. Of course **you** want to know more:
 
+---
+
 # They Became The Problem They Solved!
 
-## 2000s
+## The API Fragmentation Twist 
+
+### 2000s
 **Problem:** "We can't port our game from Windows to Mac or Playstation - the APIs are completely different!"
 
 **Solution:** Game engines! Write once, deploy cross-platform.
 
-## 2020s
+### 2020s
 
 **Problem:** "We can't port our project from Unity to Godot — the APIs are completely different!"
 
 **Solution:** ???
 
----
+### The Irony
 
-The irony: We solved platform lock-in and API fragmentation, only to create **engine API lock-in**.
+We solved platform lock-in and API fragmentation, only to create **engine API lock-in**.
 
 With each engine's API continuously growing in complexity over time, this works against learners. For them, switching engines feels like moving to a foreign country.
 
-## Programming onramp? Add a scripting language!
+## Engine Scripting History
 
-A short history of domain-specific languages (DSL) in game engines:
+Programming onramp? Add a scripting language! A short history of domain-specific languages (DSL) in game engines:
 
 1. UnrealScript - Born 1998, RIP 2014 - Died age 16
 2. Boo (Unity)  - Born 2005, RIP 2014 - Died age 9
 3. UnityScript  - Born 2005, RIP 2017 - Died age 12
 4. GDScript     - Born 2014, ...
 
-The ones that are dead didn't really affect the onramp. Their problem: They were engine-exclusive languages to program the engine's complete API. Usage numbers were low, maintenance a burden, so the decision was made to drop them.
+The ones that are dead didn't really affect the onramp. 
 
-Godot's GDScript is much better positioned with the majority of users relying on it. It still is an engine-exclusive language used to program the engine's complete API. Although Godot supports several language bindings, they can't outcompete GDScript's seamless editor integration.
+**Their problem**: They were engine-exclusive languages to program the engine's complete API. Maintenance was a growing burden, ultimately the decision was made to drop them. 
 
-DSLs aren't easing beginners since the real challenges lie in the massive, ever expanding APIs. By nature of being programming languages, they also accrue more complexity over time.
+For Unity, **C# was considered accessible enough**. While Epic due to the high barrier of entry of C++ was **forced to invent Blueprints**.
 
-Needless to say, every game engine DSL is a vendor lock-in mechanism.
+DSLs mimicking the native language aren't easing beginners since the real challenges lie in the massive, ever expanding APIs - not syntactical convenience.
 
-We need to re-think Game Engine scripting!
+### But GDScript Is Different!
 
+Godot's GDScript is much better positioned with three of four users relying on it. 
+
+Above all else, it's the tight editor integration that makes GDScript beginner-friendly. Even debugging and profiling is integrated. Simpler syntax and duck-typing are merely secondary factors.
+
+### GDScript Is Still More Of The Same
+
+GDScript is an engine-exclusive language exposing the engine's entire API surface. Both API and language continue to grow in complexity. It's also a complete outlier in the game development ecosystem where C-like languages dominate. 
+
+GDScript skills don't transfer. Learning supporting skills like refactoring still requires the use of an IDE. Although Godot officially supports C#, it is at a competitive disadvantage: it lacks the same tight editor integration, and web platform support. 
+
+Needless to say - like every other DSL - **GDScript is a vendor lock-in mechanism**.
 
 ---
 
-# But .. Why ??
+# We need to re-think game engine scripting!
 
-It bothered me for a long time that we need to write so much boilerplate code for trivial tasks. Simple tasks should be simple!
+It bothered me for a long time that we need to write so much boilerplate code for trivial tasks. **Simple tasks should be simple!**
 
-I thought it's a great thing to have so many entry-level tutorials for self-learners.
-But then I realized how rampant tutorial hell is among self-learners.
-And how influencers are damaging coding skills, favoring quick wins through teaching bad practices.
+For the longest time, I thought it's a great thing to have so many entry-level tutorials for self-learners.
+But then I realized how rampant **tutorial hell** is among self-learners!
+
+And how **some influencers are damaging coding skills**, favoring quick wins through teaching bad practices. Even spreading FUD when it serves their interests.
 
 I began asking heretic questions ...
 
@@ -127,45 +143,45 @@ Assets already transfer. 🚀
 
 ### And it were free, and open source?
 
-It is! -- Ready to cross-develop? -- [Join the Discussions 💬](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC/discussions/)
+It is!
 
 ---
 
 # The Luny Vision
 
 We can't change game engines' unique workflows and user interfaces.
-But we CAN lessen the impact of their disparate APIs and languages!
+But we **can** lessen the impact of their disparate APIs and languages!
 
 ## Vision Statements
 
 A sustainable scripting solution shall be:
 
 **Portable & Open:**
-- Works across multiple engines, not just one
+- Works in multiple engines, not just one
+- Works in any language, not just one
 - Is an API, not a language
-- Can be exposed in many languages
-- Is Free and Open Source
+- Code is portable between engines
+- Is free and open source
 
 **Beginner- & Designer-Friendly:**
-- Declarative, using expressive language
-- Bite-sized code teaches modular thinking
+- Declarative, with informal language
 - Fault-tolerant, using placeholders instead of crashing
+- Built-In Statemachine and Behaviour Trees
 - On-screen instrumentation over debugger deep-dives
+- Bite-sized code extensions teach modular thinking
 
 **Production-Ready:**
-- Provides proven design patterns
+- Supports common gameplay design needs
 - Supplements existing code and tools
 - Promises <5% performance overhead
-- Is easy to extend and bypass
+- Is easy to extend or bypass
 
 ## The Outcome
 
-Pro-tier engines across the board will be more approachable and conducive to beginners. They learn valuable concepts and patterns before diving into imperative programming.
+Pro-tier engines across the board will be more approachable and conducive to beginners. They learn valuable concepts and patterns before diving into imperative programming - rather than vice versa.
 
-Education adopts a single entry-level game programming curriculum.
+Learnfluencers provide valuable head-to-head engine comparisons and can afford time to demo less popular engines. This could help niche engines to gain popularity.
 
-Learnfluencers provide valuable head-to-head engine comparisons and can afford time to demo less popular engines.
-
-Prototypes can be tested in multiple engines to find the most suitable solution.
+Education adopts a single entry-level game programming curriculum. Easier to encourage non-programmers to code.
 
 Visual Scripting users find themselves more productive in text-based declarative programming. Simple projects complete faster. Game Jams produce reusable code. Prototypes struggle less with technical issues.
