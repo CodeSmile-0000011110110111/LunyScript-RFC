@@ -104,12 +104,10 @@ The backlash was encouraging. We are so entrenched in „our“ engines and at s
 
 Between Scratch and Godot/Unity, there's a lot of learners going back and forth, struggling to make sense of the complexity of pro-tier engines.
 
+We call this **🔥Tutorial Hell🥵**.
+
 ### Now I'm convinced: 
 
 We can, should, **MUST** standardize entry-level game engine programming! 
 
 It hurts everyone if beginners get locked into vendor APIs and their conceptual models - they needn't be different in the first place.
-
-In fact, the conceptual differences are superficial: Hierarchical content, lifecycle events, a widely shared set of features. The main differences are only in high-end features and editor UI.
-
-In every team we frequently programmed the same things over and over again. They were too small to abstract and reuse. Too many not to cause friction. Every developer had their own way of doing things.
