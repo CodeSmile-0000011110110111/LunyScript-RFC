@@ -138,7 +138,7 @@ Infrequent native events are observed and trapped for a single frame by handlers
 
 LunyScript handles 'structural changes' (eg destroy object) gracefully by activating associated events (ie `When.Self.Disables`, `When.Self.Destroys`) while deferring native execution to the 'end of frame' event.
 
-A simple source generator will be used to create the API's static language bindings (C# to GDScript).
+A simple source generator will be used to create the API's static language bindings (C# to Lua).
 
 ---
 
@@ -148,7 +148,7 @@ We're long past the days when we needed to count bytes and CPU cycles. Our games
 
 Code we write in C# crosses the language boundary to C++ — this is rather costly. It still worked wonderfully for Unity. Same with Blueprints: we know it's between **100x to 1,000x slower** than C++ yet we use it extensively.
 
-LunyScript, through its central processing concept and internal caching, may even prove to be faster when compared to ubiquitous uses of `GameObject.Find("")` or the commonplace trainwrecks:
+LunyScript, through its central processing concept and internal caching, may even prove to be faster when compared to ubiquitous uses of `GameObject.Find("")` or the commonplace copy-pasta trainwrecks:
 
 ```csharp
 if (gameObject.transform.GetComponent<Rigidbody>() != null)
