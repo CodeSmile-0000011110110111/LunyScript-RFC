@@ -162,16 +162,15 @@ A sustainable scripting solution shall be:
 **Beginner- & Designer-Friendly:**
 - Declarative, expressing intent
 - Fault-tolerant, using placeholders instead of crashing
-- Built-In Statemachine and Behaviour Trees => powerful
 - On-screen instrumentation over debugger deep-dives
 - Bite-sized code extensions teach modular thinking & engine API
+- Unlocks engines: portable code libraries
 
 **Production-Ready:**
-- Supports common gameplay design needs
+- Powerful: Built-In Statemachine and Behaviour Trees
 - Supplements existing code and tools
 - Promises <5% performance overhead
-- Is easy to extend or bypass
-- Opens the foor for cross-engine code libraries
+- Is easy to extend and bypass
 
 ## The Outcome
 

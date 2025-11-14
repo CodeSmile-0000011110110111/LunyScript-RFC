@@ -5,6 +5,10 @@ title: LunyScript - Cross-Engine Gameplay Scripting
 
 # **LunyScript 🎮** Makes Coding Games Fun!
 
+<!--
+<iframe width="648" height="365" src="https://www.youtube.com/embed/PfZ4VBui_Wo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+-->
+
 <sup>Coming soon for **Unity** (Q2/2026) and **Godot** (Q4/2026) ...</sup>
 
 LunyScript is the powerful and user-friendly alternative to visual scripting.
@@ -34,7 +38,7 @@ Something missing? Extend its bite-sized blocks by writing C# extension methods.
 
 Game engines all share the same fundamental features needed to create a [_Megabonk_](https://store.steampowered.com/app/3405340/Megabonk/).
 
-[![LunyScript Demo](media/LunyScript_Demo.gif)](https://youtu.be/Vn38VLNDsuw "LunyScript: Same Code, Three Engines - Proof of Concept Demo")
+[![LunyScript Demo](media/LunyScript_Demo.gif)](PoC_2025-10/)
 
 🚧 **Status: Proof of Concept** 🚧<br/>
 📸 → [**View detailed PoC documentation, screenshots, and source code**](PoC_2025-10/)
