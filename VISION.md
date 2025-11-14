@@ -15,7 +15,7 @@
 
 Unfortunately, it's also a lost art.
 
-Well into the 2000s many game studios had the highly valuable role of the **designing-coder** and the **coding-designer**. Both were using the same tool, a scripting language or parsed data descriptions or both. It was simple and intuitive, but also very powerful. 
+Well into the 2000s many game studios had the highly valuable role of the **designing-coder** and the **coding-designer**. Both were using the same tool, a scripting language, or parsed data descriptions, or both. It was simple and intuitive, but also very powerful. 
 
 Because without code, a design is worthless. And without design, code is ineffective.
 
