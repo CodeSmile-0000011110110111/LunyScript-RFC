@@ -59,17 +59,17 @@ Level
 
 Think of the grouping elements as folders and files in an Explorer/Finder tree view:
 
-- **Godot** only has folders (Node 🧩). There are over 200 specialized folder types to make up for the lack of files. **It's one unit of separation.**
-- **Unity** has folders (GameObject) with files in them (MonoBehaviour 🧩). There is exactly one type of folder, with hundreds of file types available. **Matches Explorer.**
-- **Unreal** has folders (Actor 🧩) with files in them (Component 🧩), which can have more nested files inside. There are dozens of folder types, hundreds of file types, and they cannot be freely mixed and matched. **It's a tree with branches.**
+- **Godot** only has folders (Node🧩). There are over 200 specialized folder types to make up for the lack of files. **It's one unit of separation.**
+- **Unity** has folders (GameObject) with files in them (MonoBehaviour🧩). There is one type of folder, with hundreds of file types available. **Matches Explorer.**
+- **Unreal** has folders (Actor🧩) with files in them (Component🧩), which can have more nested files inside. There are dozens of folder types, hundreds of file types, and they cannot be freely mixed and matched. **It's a tree with branches.**
 
 The 🧩symbol denotes the types we write logic for. The above analogy also maps perfectly to the perceived complexity of each engine. 
 
-- In Godot, we can attach a single GDScript to each folder.
-- In Unity, we can attach multiple MonoBehaviour scripts or built-in components to each folder.
+- In Godot, we can attach a single custom script to each folder.
+- In Unity, we can attach multiple custom scripts or built-in components to each folder.
 - In Unreal, we have to subclass the 'correct' Actor type to create a folder. We then add files to the folder in a separate tree view. The files also need to inherit the 'correct' file type for the intended use.
 
-Unreal Engine is significantly more challenging for new users due to the explosion of subclassing and arrangement choices. Each class has built-in use-cases and restrictions.
+Unreal Engine is significantly more challenging for new users due to the explosion of subclassing and arrangement choices. It is therefore not a preferred target for LunyScript, but the PoC proofs that it would even work for the 'worst case' scenario.
 
 ### LunyScript Unification
 

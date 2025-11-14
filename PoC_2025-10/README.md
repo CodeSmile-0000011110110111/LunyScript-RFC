@@ -4,7 +4,7 @@
 
 ## Overview
 
-A vertical slice from scratch in **under 20 days**: Started with Unity, then ported to Godot and Unreal in 3 days each.
+A vertical slice from scratch in **under 20 days**: Started with Unity, then ported to Godot (no XP) and Unreal (no XP) in 3 days each.
 
 <iframe width="648" height="365" src="https://www.youtube.com/embed/Vn38VLNDsuw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -27,7 +27,7 @@ I asked a [provocative question on reddit](https://www.reddit.com/r/gamedev/comm
 - It's a massive amount of work 😫
 - The point of engines is to be different 🤔
 
-This is called cognitive bias. But also my fault: I did not explain it as well as I can now. Also: wrong audience.
+This is called cognitive bias. But also my fault: I did not explain it as well as I can now. Also: wrong audience. But I thought they'd **see** the pattern.
 
 ## So, How Does It Work?
 

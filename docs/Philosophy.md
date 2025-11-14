@@ -98,6 +98,7 @@ But **NOT** for:
 - Audio details → Design in editor, leverage "Random Containers" etc
 - Particle emission properties → Design in editor, create prefab variants
 - Complex blend tree weights → Design in editor
+- Etc.
 
 ## Implementation Note
 
