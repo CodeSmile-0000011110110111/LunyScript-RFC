@@ -6,9 +6,9 @@
 
 A vertical slice from scratch in **under 20 days**: Started with Unity, then ported to Godot and Unreal in 3 days each.
 
-[![LunyScript Demo](../media/LunyScript_Demo.gif)](https://youtu.be/Vn38VLNDsuw "LunyScript: Same Code, Three Engines - Proof of Concept Demo")
+<iframe width="648" height="365" src="https://www.youtube.com/embed/Vn38VLNDsuw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-**[Watch the full video on YouTube (1:20)](https://youtu.be/Vn38VLNDsuw)**
+<sup>[Watch the video on YouTube (1:20)](https://youtu.be/Vn38VLNDsuw)</sup>
 
 ---
 
@@ -58,7 +58,9 @@ The PoC demonstrates LunyScript orchestrating essential gameplay systems across 
 
 ---
 
-## Screenshots
+## Media
+
+[![LunyScript Demo](../media/LunyScript_Demo.gif)](https://youtu.be/Vn38VLNDsuw "LunyScript: Same Code, Three Engines - Proof of Concept Demo")
 
 ### Godot
 ![Godot Editor](screenshots/PlayMode_Godot_Editor.png)
