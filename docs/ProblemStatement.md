@@ -4,13 +4,19 @@
 
 **Learning game programming requires mastering complex, engine-specific APIs** before one can begin to understand game development concepts. 
 
-The learning curve for programming is extremely steep, but without programming all efforts are in vain. This creates artificial barriers for talented, creative people.
+The learning curve for realtime cross-domain event-driven programming is extremely steep, but without programming all efforts are in vain. This creates artificial barriers for talented, creative people.
 
-Engines create a strong lock-in effect due to their highly unique APIs - which essentially perform the same high-level tasks. They diverge only in concepts and features that hardly matter to the great majority of games and their developers!
+Engines create a strong lock-in effect due to their highly unique APIs - which essentially perform the same high-level tasks. These **APIs are inconsistent legacy artifacts** written in stone, and for maximum flexibility. 
+
+But engines diverge only in concepts and features that **hardly matter** to the **great majority** of games and their developers! The choice is down to personal preference, promises, and the availability of engine specialists.
+
+Beginners have to get started running, or get locked in the **tutorial hell comfort zone**. Tutorial hell is **widespread** also because there is no alternative **coding comfort zone** (safe sandbox) to grow up in!
+
+Cross-Engine integrated frameworks have not been done before - not because they are particularly challenging. Simply because nobody sees any value in it. Cognitive bias, devalued experience. **Beginners have no lobby.**
 
 ## The Road To A Solution
 
-With Godot on the rise, now is the time to start unifying gameplay programming on a high level, declarative, with patterns: for beginners and designers alike. 
+With Godot on the rise, now is the time to start unifying gameplay programming on a high level. Declarative, with patterns: for beginners and designers alike. With code and skill transfer between engines.
 
 Unity and Godot first, then more C# engines. Eventually a C++ port, using Lua as the truly cross-engine programming language.
 

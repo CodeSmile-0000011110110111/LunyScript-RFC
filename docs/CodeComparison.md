@@ -24,6 +24,7 @@ LunyScript merely defers initial learning of engine API concepts. Bite-sized ext
 
 **🚧 Note:** LunyScript API represents Proof of Concept state and is subject to change.
 
+**🚧 Note:** Code samples are picked by AI. You would write it differently, and so would I. I spot-checked, using different styles or code paths. It's a good average.
 ---
 
 ## 1. Collision Detection & Response
