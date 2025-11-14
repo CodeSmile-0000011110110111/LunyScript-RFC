@@ -27,7 +27,7 @@ Around 2000 I worked as designer on eight GameBoy titles in three years. We used
 <img src="media/history/Die-Maus-Verrueckte-Olympiade.png" width="300">
 </div>
 
-Then I transferred the statemachines concept to a Lua-based declarative API: command units, script dialogue and cutscenes. Designers loved the power, onboarding was easy. We created three heavily scripted main titles with three add-ons (SpellForce, BattleForge).
+Then I transferred the statemachines concept to a Lua-based declarative API: command units, script dialogue and cutscenes. Designers loved the power, onboarding was easy. We created three heavily scripted titles with three add-ons (SpellForce, BattleForge).
 
 <div class="clickable-image" style="cursor: pointer; display: inline-block;">
 <div style="text-align: center; font-size: 12px; color: #666; margin-bottom: 5px;">
