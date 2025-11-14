@@ -124,6 +124,7 @@ The irony: Game engines became popular because they solved API/platform fragment
 - Successful constrained tools (RPG Maker, Ren'Py) **encourage creativity**
 - Developers' widely held belief that "game programming needs full flexibility" **contradicts reality** of what restrictive creative tools accomplish
 - Limiting, failure-safe systems are a **blessing in disguise for learners** — they reduce decision paralysis and encourage experimentation => Scratch et al
+- Heavily customizable **building block systems** have irresistible draw: Minecraft, Python
 
 ---
 
@@ -132,7 +133,7 @@ The irony: Game engines became popular because they solved API/platform fragment
 ### ⚠️ Current State ⚠️
 - Beginners must learn engine-specific APIs before implementing actual game-play!
 - Knowledge doesn't transfer between engines—switching means starting over
-- Visual scripting is the only "simple" option (with major drawbacks)
+- Visual scripting & GDScript are the only "simple" options (with major drawbacks)
 - No middle-ground between high-level visual programming and HLL programming
 - Fear of "wrong choice" causes early lock-in or prevents advancement
 
