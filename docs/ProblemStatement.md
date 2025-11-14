@@ -6,7 +6,7 @@
 
 The learning curve for realtime cross-domain event-driven programming is extremely steep, but without programming all efforts are in vain. This creates artificial barriers for talented, creative people.
 
-Engines create a strong lock-in effect due to their highly unique APIs - which essentially perform the same high-level tasks. These **APIs are inconsistent legacy artifacts** written in stone, and for maximum flexibility. 
+Professional-use engines create a strong lock-in effect due to their highly unique APIs - which essentially perform the same high-level tasks. These **APIs are inconsistent legacy artifacts** written in stone, and for maximum flexibility. 
 
 But engines diverge only in concepts and features that **hardly matter** to the **great majority** of games and their developers! The choice is down to personal preference, promises, and the availability of engine specialists.
 
@@ -115,11 +115,8 @@ The irony: Game engines became popular because they solved API/platform fragment
 **Fragmented Ecosystem:**
 - Abundance of learning material but **inconsistent in quality**, and target audience
 - Every tutorial creator **teaches their own style**, compounding confusion
-- Common beginner question: "Which tutorials/tutors/engine?"
 - Tutorials **strongly focus on the how** (quick wins), rarely explain the why 
 - ‼️**Tutorial Hell**: beginners follow excessively but unable to work independently
-
----what is a derogatory term for a visual scripting user
 
 ### 5. Constraints Enable Creativity
 
