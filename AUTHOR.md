@@ -68,7 +68,7 @@ What followed was an extreme mixture of serial low-budget projects and innovativ
 <img src="media/history/Nat-Geo-Encounter-NY.jpg" width="300">
 </div>
 
-Since 2022 I've done excessive R&D, prototyping, frameworking. Searching for 'the one' - the project/product combining self-efficacy with self-sufficiency. It led to interesting discoveries...
+Since 2022 I've done excessive R&D, prototyping, frameworking. Searching for 'the one' - the project combining self-efficacy with self-sufficiency. It led to interesting discoveries...
 
 <div class="clickable-image" style="cursor: pointer; display: inline-block;">
 <div style="text-align: center; font-size: 12px; color: #666; margin-bottom: 5px;">
