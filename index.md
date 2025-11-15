@@ -54,7 +54,7 @@ LunyScript is 3-5 times less verbose than GDScript! See **→ [Code Comparison](
 # **But .. Why?**
 
 I **know** that the amalgamation of **design as code** works and provides huge benefits to all creative thinkers and tinkerers. 
-I can't expect you to trust my judgement, but it requires a few more words **→ [The Problem Statement](docs/ProblemStatement)**
+I can't expect you to trust my judgement, but it requires a few more words. **→ [The Problem Statement](docs/ProblemStatement)**
 
 ---
 
