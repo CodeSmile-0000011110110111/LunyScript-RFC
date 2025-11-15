@@ -17,7 +17,7 @@ Perfect for Roblox creators wanting to "graduate" to pro engines, and to overcom
 
 ---
 
-### 📹 Tutorial Creators & "Learnfluencers" (HIGH IMPACT & MULTIPLIERS)
+### 📹 Learnfluencers: Online Tutors (HIGH IMPACT MULTIPLIERS)
 
 Stop making essentially the same tutorial three times. Teach ONE API that works everywhere and multiply your reach.
 
@@ -29,6 +29,23 @@ Stop making essentially the same tutorial three times. Teach ONE API that works 
 - **Have fun** - Experiment, go crazy, entertain viewers
 
 If you teach game development on YouTube, LunyScript multiplies your reach while cutting your workload.
+
+---
+
+### 🎨 Visual Scripters (Early Adopters)
+
+Tired of dragging nodes around? Want the benefits of text-based code without the intimidation factor?
+
+**With LunyScript:**
+- **Readable as intent** - Code reads like what you want to happen, not implementation details
+- **Copy-paste friendly** - Move code blocks around effortlessly, see more at a glance
+- **Gentle learning curve** - Start with simple one-liners, grow at your own pace
+- **Version control** - See exactly what changed in git diffs
+- **Easy refactoring** - Use the IDE, Luke!
+- **Real programming** - Gain transferable coding skills while staying productive
+
+A bridge into "real programming" for 'visual' users — many would prefer text if it weren't for the overload, or the lack of a middle-ground. 
+As proven by Godot Community Polls: Users who desired visual scripting found GDScript to be 'surprisingly easy'.
 
 ---
 
@@ -45,22 +62,6 @@ Teach engine concepts and game design patterns, not API memorization. One curric
 - **Transferable skills** - Students graduate with portable knowledge, not vendor lock-in
 
 Your students learn game development concepts that transfer across any engine they choose.
-
----
-
-### 🎨 Visual Scripters
-
-Tired of dragging nodes around? Want the benefits of text-based code without the intimidation factor?
-
-**With LunyScript:**
-- **Readable as intent** - Code reads like what you want to happen, not implementation details
-- **Copy-paste friendly** - Move code blocks around effortlessly, see more at a glance
-- **Gentle learning curve** - Start with simple one-liners, grow at your own pace
-- **Version control** - See exactly what changed in git diffs
-- **Easy refactoring** - Use the IDE, Luke!
-- **Real programming** - Gain transferable coding skills while staying productive
-
-A bridge into "real programming" for 'visual' users — you know you'd prefer text if it weren't for the syntax overload.
 
 ---
 
@@ -106,6 +107,8 @@ Share gameplay code across projects using different engines without rewriting lo
 - **Less Risk** - Build expertise with another engine on a real project
 
 Step up from being a "all eggs in one engine" agency, expand client reach without doubling your costs.
+I know many projects that merely required 'connecting the dots' programming. 
+The excessive boilerplate hurts productivity and quality.
 
 ([Share your needs](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC/discussions))
 
