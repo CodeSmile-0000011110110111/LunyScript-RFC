@@ -1,6 +1,6 @@
 # Problem Statement
 
-## The Core Problem: Learning To Code Games
+## The Core Problem
 
 **Learning game programming requires mastering complex, engine-specific APIs** before one can begin to understand game development concepts. 
 
@@ -18,7 +18,7 @@ Cross-Engine integrated APIs do not exist because experienced developers don't v
 
 **Beginners have no lobby.** They have to get started running, or else get locked in the **tutorial hell comfort zone**. There is no **safe 'learn game engines' sandbox** to grow up in! A gap filled by mid-tier tools, where commercial products (Roblox, GameMaker, Construct) dominate over FOSS alternatives (GDevelop, Armory3D).
 
-There's a wider implication: **Games are the single strongest motivator** that brings young people **into programming**. Every other programmer **in non-game fields** will cite 'games' as having sparked their interest.
+There's a wider implication: **Games are the single strongest motivator** that brings young people **into programming**. Every other programmer **in non-game fields** will cite 'games' as having sparked their interest. Game engines are **gateways to programming literacy**.
 
 ## The Road To A Solution
 
