@@ -247,7 +247,7 @@ public class VisualNovelScene : LunyScriptBehavior
 Same game logic runs on Unity and Godot (and future engines)
 
 ### ✅ Simplicity
-Declarative API reduces boilerplate by 70-83% compared to native engine code
+Declarative API reduces boilerplate by >=70% compared to native engine code
 
 ### ✅ Beginner-Friendly
 No need to learn engine-specific patterns - focus on game logic
@@ -280,10 +280,8 @@ Write in C# (Lua) - same API across all languages
 - **Lua** (Secondary) - Bindings via code generator, all engines, uses LuaCSharp
 
 _Under Consideration:_
-- **GDScript** (Godot) - Wait for demand, fluent syntax would be awkward (newline backslashes!) 
-- **C++** (Last) - Years away. Would provide native Unreal and O3DE, Cocos support.
-
-With a C++ implementation Lua code would ensure full portability to C# engines.
+- **GDScript** (Godot) - No immediately tangible benefit, assess demand. May be counter-productive: cross-engine support hinges on C# (and Lua), supporting vendor DSL would weaken portability.
+- **C++** (Last) - Years away. Could provide native Unreal and O3DE, Cocos, GDevelop support. Requires Lua to port code between C# and C++ engines.
 
 ## Example: The Same Code, Multiple Engines
 
@@ -306,7 +304,7 @@ protected override void OnReady()
 
 Same code, multiple engines, zero changes. 🎉
 
-The goal is to have this code in an engine-agnostic subclass, but this has not been fully evaluated in regards to editor integration and user's workflow.
+**Note:** The goal is to have LunyScript user code in an engine-agnostic subclass, but this has not been fully evaluated in regards to editor integration and user's workflow.
 
 ## Learn More
 

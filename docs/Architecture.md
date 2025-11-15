@@ -28,18 +28,19 @@
 - **Portable** - write once, runs on all engines
 
 ### 3. Engine Adapters (per engine)
-**Namespaces:** `LunyScript.Unity`, `LunyScript.Godot`, `LunyScript.Unreal`
+**Namespaces:** `LunyScript.Unity`, `LunyScript.Godot`, ..
 **Change frequency:** High - evolves with engine API changes
 
-- **Engine-specific bindings** - Unity/Godot/Unreal integration
+- **Engine-specific bindings** - Unity/Godot/.. integration
 - **Native event observers** - collision, input, lifecycle trapping
 - **Native API wrappers** - physics, audio, spawning, scene graph
 - **Lifecycle management** - heartbeat forwarding and frame synchronization
 - **Mostly mechanical glue** - straightforward bridging code
 
 #### Size Notes
-- Adapter complexity varies by engine (Unity simpler, Unreal more complex)
-- As API expands, adapter size grows proportionally
+- Adapter overall complexity and size similar between engines
+- Areas of adapater complexity vary more (eg assets, lifecycle, scene tree)
+- As API expands, adapter size grows proportionally but automates well
 
 ---
 
@@ -106,8 +107,8 @@ LunyScript.Configure(new CustomScheduler());
 - **Frame-phase ordering:**
   1. Native engine events → trapped
   2. User logic processing → state machines, coroutines, BTs tick
-  3. Deferred operations → destroys, disables, structural changes
-  4. Late update → physics, animation, rendering
+  3. Stable, deterministic update order strongly favored (may relax)
+  4. Deferred operations → structural changes: destroys, disables, ..
 - **Event priority system:** Allow user-defined ordering within phases
 - **Guarantee atomicity:** Events within same frame-phase see consistent world state
 
@@ -138,8 +139,10 @@ LunyScript.Configure(new CustomScheduler());
 
 ### 4. Memory Management Strategy
 **Requirements:**
-- **Pooling:** Reusable nodes/objects to avoid allocations during gameplay
 - **Cleanup guarantees:** No dangling references after object destruction
+
+**Diserable:**
+- **Pooling:** Reusable nodes/objects to avoid allocations during gameplay
 - **Cache locality:** Hot data structures packed for cache efficiency
 
 ### 5. Error Handling & Recovery
@@ -150,7 +153,7 @@ LunyScript.Configure(new CustomScheduler());
 - **Debug mode:** Detailed error messages with full context (stack, state)
 
 ### 6. Serialization & Hot Reload
-**Requirements:**
+**Desirable:**
 - **State persistence:** Save/load active state machines, coroutines, BTs
 - **Hot reload:** Swap script logic without losing runtime state
 - **Version tolerance:** Handle schema changes gracefully
@@ -158,6 +161,8 @@ LunyScript.Configure(new CustomScheduler());
 ### 7. Concurrency Model
 **Requirements:**
 - **Single-threaded by default:** Simplifies reasoning and debugging
+
+**Desirable:**
 - **Async-ready abstractions:** Support engine-specific async patterns (Unity Jobs, UE TaskGraph)
 - **Safe data sharing:** Clear ownership and mutation rules
 
@@ -165,6 +170,8 @@ LunyScript.Configure(new CustomScheduler());
 **Requirements:**
 - **Semantic versioning:** Breaking changes clearly signaled
 - **Deprecation path:** Old APIs supported for migration period
+
+**Desirable:**
 - **Multi-version support:** Allow mixing scripts from different API versions (if feasible)
 
 ---
