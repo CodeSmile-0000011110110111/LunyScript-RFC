@@ -2,31 +2,19 @@
 
 ## The Core Problem
 
-**Learning game programming requires mastering complex, engine-specific APIs** before one can begin to understand game development concepts. 
+**Learning game programming requires mastering complex, engine-specific APIs** before one can begin to understand game development concepts. This creates **artificial barriers** for talented, creative people.
 
-The learning curve for **realtime event-driven, cross-domain programming** is extremely steep, but without programming all efforts are in vain. This creates **artificial barriers** for talented, creative people.
+Game engines create a **strong lock-in effect** due to their **highly unique APIs** - yet they all perform the **same high-level tasks**. 
 
-Professional-use engines create a strong lock-in effect due to their highly unique APIs - which essentially perform the same high-level tasks. These **APIs are inconsistent legacy artifacts** written in stone, and for maximum flexibility. 
+Among self-learners, **tutorial hell** is widespread - a comfort zone shielding oneself from engine complexity through passive consumption.
 
-But engines **diverge** only in concepts and features that **hardly matter** to the **great majority** of games and their developers, especially beginners! The choice is down to personal preference, promises, and identity. 
-
-Game engines create **religious identity** due to the existential pain of switching (sunk cost bias) and their aspirational promise ("make AAA games").
-They become **status symbols**: FOSS vs AAA vs Best-Bet or underdog vs bleeding-edge vs pragmatism.
-This further **discourages cross-engine learning** and abstractions.
-
-Cross-Engine integrated APIs do not exist because experienced developers don't value them or view them as far fetched (complexity bias), while beginners don't have the power and insight to demand them. Engines **intentionally encourage not to abstract**.
-
-Beginners have to get started running, or else get locked in the **tutorial hell comfort zone**. There is no **safe 'learn game engines' sandbox** to grow up in! A gap filled by mid-tier tools, where **commercial lock-in products** (Roblox, Fortnite Creative, GameMaker, Construct, Minecraft Edu) **dominate over FOSS** alternatives (GDevelop, Armory3D, Castle Game Engine, Cocos Creator).
-
-There's a wider implication: **Games are the single strongest motivator** that brings young people **into programming**. Every other programmer **in non-game fields** will cite 'games' as having sparked their interest. 
-
-❗Game engines are **gateways to programming literacy**. But they are currently needlessly inaccessible because **beginners have no lobby**.
+**Games are the single strongest motivator** that brings young people **into programming**. Yet game engines lack a **safe 'learn by doing' sandbox** that invites experimentation.
 
 ## The Road To A Solution
 
-With Godot on the rise, now is the time to start unifying gameplay programming on a high level. Declarative, with patterns: for beginners and designers alike. With code and skill transfer between engines.
+LunyScript unifies C# gameplay programming across game engines. Its abstraction shields users from engine-specific concepts and provides a safe space for experimentation while teaching valuable game programming patterns. Skills and code become transferable. Engine API details are introduced gradually as users advance.
 
-Unity and Godot first, then more C# engines. Possibly a C++ port, then using Lua as the truly cross-engine programming language.
+First implemented in Unity, then ported to Godot. Future plans include Lua bindings for hot reload and modding capability.
 
 ---
 
