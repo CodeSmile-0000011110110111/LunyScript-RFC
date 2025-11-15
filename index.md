@@ -5,9 +5,7 @@ title: LunyScript - Cross-Engine Gameplay Scripting
 
 # **LunyScript 🎮** Makes Coding Games Fun!
 
-<!--
 <iframe width="648" height="365" src="https://www.youtube.com/embed/PfZ4VBui_Wo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
--->
 
 <sup>Coming soon for **Unity** (Q2/2026) and **Godot** (Q4/2026) ...</sup>
 
