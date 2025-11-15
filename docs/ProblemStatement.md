@@ -16,9 +16,11 @@ This further **discourages cross-engine learning** and cross-engine abstractions
 
 Cross-Engine integrated APIs do not exist because experienced developers don't value them or seem far fetched (complexity bias), while beginners don't have the power and insight to demand them. Engines **intentionally encourage not to abstract**, not because of technical necessity.
 
-**Beginners have no lobby.** They have to get started running, or else get locked in the **tutorial hell comfort zone**. There is no **safe 'learn game engines' sandbox** to grow up in! A gap filled by mid-tier tools, where commercial products (Roblox, GameMaker, Construct) dominate over FOSS alternatives (GDevelop, Armory3D).
+Beginners have to get started running, or else get locked in the **tutorial hell comfort zone**. There is no **safe 'learn game engines' sandbox** to grow up in! A gap filled by mid-tier tools, where commercial products (Roblox, GameMaker, Construct) dominate over FOSS alternatives (GDevelop, Armory3D).
 
-There's a wider implication: **Games are the single strongest motivator** that brings young people **into programming**. Every other programmer **in non-game fields** will cite 'games' as having sparked their interest. Game engines are **gateways to programming literacy**.
+There's a wider implication: **Games are the single strongest motivator** that brings young people **into programming**. Every other programmer **in non-game fields** will cite 'games' as having sparked their interest. 
+
+Game engines are **gateways to programming literacy**. But they are currently needlessly inaccessible because **beginners have no lobby**.
 
 ## The Road To A Solution
 
