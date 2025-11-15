@@ -65,9 +65,9 @@ Think of the grouping elements as folders and files in an Explorer/Finder tree v
 
 The 🧩symbol denotes the types we write logic for. The above analogy also maps perfectly to the perceived complexity of each engine. 
 
-- In Godot, we can attach a single custom script to each folder.
-- In Unity, we can attach multiple custom scripts or built-in components to each folder.
-- In Unreal, we have to subclass the 'correct' Actor type to create a folder. We then add files to the folder in a separate tree view. The files also need to inherit the 'correct' file type for the intended use.
+- In Godot, we can attach a single custom script to each folder. It is the most consistent system, but has intransparent dependencies.
+- In Unity, we can attach multiple custom scripts or built-in components to each folder. It is the most flexible system, but learning to use it efficiently takes time.
+- In Unreal, we have to subclass the 'correct' Actor type to create a folder. We then add files to the folder in a separate tree view. The files also need to inherit the 'correct' file type for the intended use. It is the least consistent, the least flexible system, but it makes up for it in visual presentation and readily available essential systems (eg character controllers).
 
 Unreal Engine is significantly more challenging for new users due to the explosion of subclassing and arrangement choices. It is therefore not a preferred target for LunyScript, but the PoC proofs that it would even work for the 'worst case' scenario.
 
