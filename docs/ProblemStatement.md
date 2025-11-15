@@ -20,7 +20,7 @@ Beginners have to get started running, or else get locked in the **tutorial hell
 
 There's a wider implication: **Games are the single strongest motivator** that brings young people **into programming**. Every other programmer **in non-game fields** will cite 'games' as having sparked their interest. 
 
-Game engines are **gateways to programming literacy**. But they are currently needlessly inaccessible because **beginners have no lobby**.
+<font size=4>Game engines are **gateways to programming literacy**. But they are currently needlessly inaccessible because **beginners have no lobby**.</font>
 
 ## The Road To A Solution
 
