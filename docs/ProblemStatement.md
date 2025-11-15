@@ -10,11 +10,11 @@ Professional-use engines create a strong lock-in effect due to their highly uniq
 
 But engines **diverge** only in concepts and features that **hardly matter** to the **great majority** of games and their developers, especially beginners! The choice is down to personal preference, promises, and identity. 
 
-Game engines are **identity forming status symbols**: FOSS vs AAA vs Best-Bet or underdog vs bleeding-edge vs pragmatism.
-They create **religious identity** due to the existential pain of switching (sunk cost bias) and their aspirational promise ("make AAA games"). 
+Game engines create **religious identity** due to the existential pain of switching (sunk cost bias) and their aspirational promise ("make AAA games").
+They become **status symbols**: FOSS vs AAA vs Best-Bet or underdog vs bleeding-edge vs pragmatism.
 This further **discourages cross-engine learning** and abstractions.
 
-Cross-Engine integrated APIs do not exist because experienced developers don't value them or seem far fetched (complexity bias), while beginners don't have the power and insight to demand them. Engines **intentionally encourage not to abstract**, not because of technical necessity.
+Cross-Engine integrated APIs do not exist because experienced developers don't value them or view them as far fetched (complexity bias), while beginners don't have the power and insight to demand them. Engines **intentionally encourage not to abstract**.
 
 Beginners have to get started running, or else get locked in the **tutorial hell comfort zone**. There is no **safe 'learn game engines' sandbox** to grow up in! A gap filled by mid-tier tools, where **commercial lock-in products** (Roblox, Fortnite Creative, GameMaker, Construct, Minecraft Edu) **dominate over FOSS** alternatives (GDevelop, Armory3D, Castle Game Engine, Cocos Creator).
 
@@ -26,7 +26,7 @@ There's a wider implication: **Games are the single strongest motivator** that b
 
 With Godot on the rise, now is the time to start unifying gameplay programming on a high level. Declarative, with patterns: for beginners and designers alike. With code and skill transfer between engines.
 
-Unity and Godot first, then more C# engines. Eventually a C++ port, using Lua as the truly cross-engine programming language.
+Unity and Godot first, then more C# engines. Possibly a C++ port, then using Lua as the truly cross-engine programming language.
 
 ---
 
