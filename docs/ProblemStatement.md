@@ -1,6 +1,6 @@
 # Problem Statement
 
-## The Core Problem
+## The Core Problem: Learning To Code Games
 
 **Learning game programming requires mastering complex, engine-specific APIs** before one can begin to understand game development concepts. 
 
@@ -8,16 +8,17 @@ The learning curve for **realtime event-driven, cross-domain programming** is ex
 
 Professional-use engines create a strong lock-in effect due to their highly unique APIs - which essentially perform the same high-level tasks. These **APIs are inconsistent legacy artifacts** written in stone, and for maximum flexibility. 
 
-But engines diverge only in concepts and features that **hardly matter** to the **great majority** of games and their developers! The choice is down to personal preference, promises, and the availability of engine specialists. 
+But engines **diverge** only in concepts and features that **hardly matter** to the **great majority** of games and their developers, especially beginners! The choice is down to personal preference, promises, and identity. 
 
-Beginners have to get started running, or get locked in the **tutorial hell comfort zone**. Tutorial hell is **widespread** also because there is no alternative **coding comfort zone** (safe sandbox) to grow up in!
+Game engines are **identity forming status symbols**: FOSS vs AAA vs Best-Bet or underdog vs bleeding-edge vs pragmatism.
+They create **religious identity** due to the existential pain of switching (sunk cost bias) and their aspirational promise ("make AAA games"). 
+This further **discourages cross-engine learning** and cross-engine abstractions.
 
-Game engines are also **identity forming status symbols**: FOSS vs AAA vs Best-Bet or underdog vs top-dog vs pragmatism.
-For beginners particularly, engine choice creates **religious identity** due to the existential pain of switching (sunk cost bias) and their aspirational promise ("make AAA games"). 
-This further **discourages cross-engine learning**.
+Cross-Engine integrated APIs do not exist because experienced developers don't value them or seem far fetched (complexity bias), while beginners don't have the power and insight to demand them. Engines **intentionally encourage not to abstract**, not because of technical necessity.
 
-Cross-Engine integrated scripting APIs do not exist because experienced developers don't value them or can't see them (complexity bias), while beginners don't have the power and insight to demand them. **Beginners have no lobby.** 
-Engines **intentionally encourage not to abstract**, not because of technical necessity.
+**Beginners have no lobby.** They have to get started running, or else get locked in the **tutorial hell comfort zone**. There is no **safe 'learn game engines' sandbox** to grow up in! A gap filled by mid-tier tools, where commercial products (Roblox, GameMaker, Construct) dominate over FOSS alternatives (GDevelop, Armory3D).
+
+There's a wider implication: **Games are the single strongest motivator** that brings young people **into programming**. Every other programmer **in non-game fields** will cite 'games' as having sparked their interest.
 
 ## The Road To A Solution
 
