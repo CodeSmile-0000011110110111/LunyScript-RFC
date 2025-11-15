@@ -22,7 +22,7 @@ With LunyScript's simple, fluent API, AI assistants give **reliable, working cod
 
 ## Isn't LunyScript just adding another standard? (xkcd #927)
 
-LunyScript is **training wheels**, not a competitor.
+LunyScript is a **novel training wheels** API, not another _re-inventing wheels_ framework.
 
 Engine API semantics are needlessly disparate: `BeginPlay`, `OnEnable`, `_enter_tree`. Every engine has the same lifecycle events. Their semantics differ, their purpose is uniform.
 
@@ -30,7 +30,7 @@ And their behavior? There's no contract. In which order children receive lifecyc
 
 Recall how we used to put up with browser-specific code paths only to render content the same across browsers? Game engines are the same right now. The fragmented API landscape is entirely to their benefit, not ours.
 
-LunyScript is **the uniform API** to help beginners get started and transition between engines — not replace them.
+LunyScript is **the uniform API** to help beginners get started and transition between engines. The Scratch for game engines.
 
 ---
 
