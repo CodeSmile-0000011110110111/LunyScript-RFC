@@ -12,7 +12,7 @@ But engines **diverge** only in concepts and features that **hardly matter** to 
 
 Game engines are **identity forming status symbols**: FOSS vs AAA vs Best-Bet or underdog vs bleeding-edge vs pragmatism.
 They create **religious identity** due to the existential pain of switching (sunk cost bias) and their aspirational promise ("make AAA games"). 
-This further **discourages cross-engine learning** and cross-engine abstractions.
+This further **discourages cross-engine learning** and abstractions.
 
 Cross-Engine integrated APIs do not exist because experienced developers don't value them or seem far fetched (complexity bias), while beginners don't have the power and insight to demand them. Engines **intentionally encourage not to abstract**, not because of technical necessity.
 
@@ -20,7 +20,7 @@ Beginners have to get started running, or else get locked in the **tutorial hell
 
 There's a wider implication: **Games are the single strongest motivator** that brings young people **into programming**. Every other programmer **in non-game fields** will cite 'games' as having sparked their interest. 
 
-<font size=4>Game engines are **gateways to programming literacy**. But they are currently needlessly inaccessible because **beginners have no lobby**.</font>
+❗Game engines are **gateways to programming literacy**. But they are currently needlessly inaccessible because **beginners have no lobby**.
 
 ## The Road To A Solution
 
