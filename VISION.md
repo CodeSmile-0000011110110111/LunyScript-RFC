@@ -19,7 +19,7 @@ A sustainable scripting solution shall be:
 - Fault-tolerant, using placeholders instead of crashing
 - On-screen instrumentation over debugger deep-dives
 - Bite-sized code extensions teach modular thinking & engine API
-- Unlocks engines: portable code libraries
+- Unlocks engines: portable code frameworks
 
 **Production-Ready:**
 - Powerful: Built-In Statemachine and Behaviour Trees
@@ -36,3 +36,17 @@ Learnfluencers provide valuable head-to-head engine comparisons and can afford t
 Education adopts a single entry-level game programming curriculum. Easier to encourage non-programmers to code.
 
 Visual Scripting users find themselves more productive in text-based declarative programming. Simple projects complete faster. Game Jams produce reusable code. Prototypes are less concerned with technical issues. Trying a different engine is easier.
+
+## Long Term
+
+Today's powerful game engines are tomorrow's powerful game creation tools.
+Portable code libraries enable developers to integrate common game features with ease.
+
+Games are moddable by default through LunyScript's Lua bindings.
+Gamers get exposed to how gameplay is programmed, thus find it easier to learn game engines. 
+
+LunyScript is a common feature in niche engines since it helps them gain popularity. 
+The job market is less fixated on specific engine programming experience. 
+The 'code designer' role is becoming more commonplace, connecting design with programming.
+
+Most importantly, more games distinguish themselves through creative gameplay.
