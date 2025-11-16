@@ -90,7 +90,7 @@ The PoC demonstrates LunyScript orchestrating essential gameplay systems across 
 
 This is the script for the "Police Car" which acts as both player controller and overall game state.
 
-⚠️ **Note:** API in this PoC represents an early first draft. Final API will differ in key aspects.
+⚠️ **Note:** API in this PoC represents an early first draft. Final API will differ in key aspects. It will not leak engine details into the script.
 
 ```csharp
 using Godot;
