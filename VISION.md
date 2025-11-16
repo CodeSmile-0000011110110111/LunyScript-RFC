@@ -47,6 +47,7 @@ Gamers get exposed to how gameplay is programmed, thus find it easier to learn g
 
 LunyScript is a common feature in niche engines since it helps them gain popularity. 
 The job market is less fixated on specific engine programming experience. 
+
 The 'code designer' role is becoming more commonplace, connecting design with programming.
 
-Most importantly, more games distinguish themselves through creative gameplay.
+Most importantly, more diverse talents produce more uniquely creative experiences.
