@@ -1,3 +1,52 @@
+
+# **<font color="#ee2255">What if ..</font>❓**
+## .. programming Unity and Godot in C# were easier than Roblox?
+
+C# code that reads like intent, extends one method at a time. Build building blocks.
+
+```csharp
+public TryAgainButton()
+{
+    When(ButtonClicked("TryAgain"), ReloadCurrentScene());
+}
+```
+
+## And it were powerful enough to create _Megabonk_?
+
+With Statemachines and Behaviour Trees, but without the CS jargon.
+
+```csharp
+Behavior.For("Enemy", 
+    If(HealthBelow(30), Flee()),
+    If(InRange(5).To("Player"), Attack()),
+    Else(Patrol()) 
+);
+```
+
+# **<font color="#ee2255">What if ..</font>❓**
+## .. all game engines shared that same programming interface?
+
+LunyScript uniformly maps high-level gameplay features all engines have in common.
+
+🕹️ Input
+<br/>💥 Physics
+<br/>🎨 Assets
+<br/>🎧 Audio
+<br/>🌳 Scenes
+<br/>And more ...
+
+## And code behaved the same across engines?
+
+Assets already transfer. 🚀
+<br/>Now code transfers too. ✂️
+<br/>Engine anxiety? Cured! 💊
+
+## And it were free, and open source?
+
+It is!
+
+---
+
 # The Luny Vision
 
 We can't change game engines' unique workflows and user interfaces.
