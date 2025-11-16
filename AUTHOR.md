@@ -92,22 +92,46 @@ Researching into the history and future of game engines, I came across many begi
 
 Then it struck me.
 
-## The Realization
+# The Realization
 
 We teach young game engine "drivers" Volkswagen here, Chrysler there. We caution: "Don't learn driving with a Porsche!"
 
-### This makes no sense! 
+**This makes no sense!** 
 
-[I proclaimed: all engines are created equal!](https://www.reddit.com/r/gamedev/comments/1nmtuqg/every_industrygrade_game_engine_has_the_same_api/) 
-
-The backlash was encouraging. We are so entrenched in „our“ engines and at such a low level, we are ignorant of beginners' challenges. 
-
-Between Scratch and Godot/Unity, there's a lot of learners going back and forth, struggling to make sense of the complexity of pro-tier engines.
+Between Scratch and Godot/Unity, there's a lot of learners going back and forth, struggling to make sense of the complexity of game engines.
 
 We call this **🔥Tutorial Hell🥵**.
 
-### Now I'm convinced: 
+# The "Why?" Behind LunyScript - A Personal Story
 
-We can, should, **MUST** standardize entry-level game engine programming! 
+**High-level, text-based programming is efficient and designer-friendly.** It eases beginners into complex programming tasks and introduces them to valuable patterns, as I've learned myself.
 
-It hurts everyone if beginners get locked into vendor APIs and their conceptual models - they needn't be different in the first place.
+Unfortunately, it's also a lost art.
+
+Well into the 2000s many game studios had the highly valuable role of the **designing-coder** and the **coding-designer**. Both were using the same tool, a scripting language, or parsed data descriptions, or both. It was simple and intuitive, but also very powerful.
+
+Because without code, a design is worthless. And without design, code is ineffective.
+
+![spellforce2-dragonstorm.jpg](media/history/spellforce2-dragonstorm.jpg)
+<sup>SpellForce 2 - Dragon Storm (2007)</sup>
+
+The race towards "higher efficiency" forced the team I worked with to split up into separate entities with specialized roles: the ones who created the flow of gameplay, and the ones who made the environment look consistently good.
+
+From then on, **at the very core of gameplay was a disconnect.**
+
+Two factions viewing each other as foreigners. The artists break the logic. The designers messed up the art. We changed creation from an amalgamation of personal creative choices towards building a soulless product on an assembly line.
+
+![battleforge.jpg](media/history/battleforge.jpg)
+<sup>BattleForge (2009)</sup>
+
+This is the state of the game **industry** at large today.
+
+Only small teams and individuals can afford to break out of the role and genre specializations dictated by big game production's labor-intensive work. In fact, creativity is their most important angle to find success.
+
+But those artists, solopreneurs, visionaries, and beginners all struggle to cope with the immense complexity of powerful tools we have at our disposal - just to create very basic gameplay features.
+
+I **know** that the amalgamation of "design as code" works and provides huge benefits. Even absolute non-programmers were able to implement designs within days.
+
+That's all **I** need to know. Of course **you** want to know more:
+
+-> [The Vision](VISION.md)
