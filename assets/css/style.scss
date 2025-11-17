@@ -129,6 +129,11 @@ h6 {
   font-size: 14px;
 }
 
+/* Offset anchor links for fixed header */
+h1, h2, h3, h4, h5, h6 {
+  scroll-margin-top: 200px;
+}
+
 /* Code comparison tabs */
 .code-tabs {
   margin: 20px 0;
