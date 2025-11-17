@@ -1,3 +1,13 @@
+# Game Development Sparks Coding Literacy
+
+Games and game development are the single **biggest motivator** to **learn programming**. Today's Gen-Z are by far **self-learners** consuming online tutorials and courses.
+
+The learning ecosystem is heavily fragmented, with **celebrity tutors competing for views**.
+They **focus on quick wins** and popular concepts, while patterns and best practices fall short.
+
+This gets many self-learners locked in **tutorial hell**. They are overwhelmed by the multi-domain complexities and **lack analytical thinking** and foundational concepts.
+
+Most importantly, game engines offer **no safe space to experiment in** and be productive with. Nothing that reduces the inherent complexities of game engine programming. There is **no _Scratch_ for adults**.
 
 # **<font color="#ee2255">What if ..</font>❓**
 ## .. programming Unity and Godot in C# were easier than Roblox?
