@@ -35,7 +35,6 @@ Something missing? Extend its bite-sized blocks by writing C# extension methods.
 ## **🤨 Any Engine?? Das Crazy! 🤯** 
 
 Game engines all share the same fundamental features needed to create a [_Megabonk_](https://store.steampowered.com/app/3405340/Megabonk/){:target="_blank"}.
-<a href="https://store.steampowered.com/app/3405340/Megabonk/" target="_blank">open new tab</a>
 
 [![LunyScript Demo](media/LunyScript_Demo.gif)](PoC_2025-10/)
 
@@ -63,7 +62,7 @@ I can't expect you to trust my judgement, but it requires a few more words. **�
 
 **🎓 Self-Learners & Hobbyists**<br/>Easier than Roblox scripting. Publish anywhere. [Learn more →](docs/TargetAudience.md#-self-learners--hobbyists-primary-audience)
 
-**📹 Learnfluencers**<br/>Pit engines head-to-head. Expand your audience. [Learn more →](docs/TargetAudience.md#-tutorial-creators--learnfluencers-online-tutors-high-impact-multipliers)
+**📹 Learnfluencers**<br/>Pit engines head-to-head. Expand your audience. [Learn more →](docs/TargetAudience.md#-learnfluencers-online-tutors-high-impact-multipliers)
 
 **🎨 Visual Scripters**<br/>Tired of dragging noodly nodes? Design as code! [Learn more →](docs/TargetAudience.md#-visual-scripters-early-adopters)
 
@@ -89,17 +88,17 @@ I can't expect you to trust my judgement, but it requires a few more words. **�
 
 **Share your thoughts, ask questions, propose ideas!**
 
-[💬 Join the Discussions](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC/discussions/) • [📖 Documentation](https://codesmile-0000011110110111.github.io/LunyScript-RFC/docs/) • [❓ FAQ](FAQ.md)
+[💬 Join the Discussions](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC/discussions/){:target="_blank"} • [📖 Design](https://codesmile-0000011110110111.github.io/LunyScript-RFC/docs/) • [❓ FAQ](FAQ.md)
 
 Help shape the future of cross-engine, uniform game programming!
 
 <iframe src="https://ghbtns.com/github-btn.html?user=CodeSmile-0000011110110111&repo=LunyScript-RFC&type=star&count=true" frameborder="0" scrolling="1" width="72" height="22"></iframe>
 <font size=6>👈️👍️</font>
-Please **star** the [LunyScript-RFC GitHub repository](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC) to show your support!
+Please **star** the [LunyScript-RFC GitHub repository](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC){:target="_blank"} to show your support!
 
 ---
 
-# **AI Usage Info**
+##### **AI Usage Info**
 
-Since LunyScript is an open source project, certain rules regarding AI usage needed to be established. You can find them here:
-**→ [FOSS-compliant AI-assisted development](AI-USAGE.md)**
+<sub>Since LunyScript is an open source project, certain rules regarding AI usage needed to be established. You can find them here:
+**→ [FOSS-compliant AI-assisted development](AI-USAGE.md)**</sub>
