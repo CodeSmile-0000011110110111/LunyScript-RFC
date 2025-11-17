@@ -2,7 +2,7 @@
 
 Comparing code for beginner's tasks demonstrates how LunyScript reduces cognitive load and boilerplate code when learning game engine programming.
 
-LunyScript encourages exploration and experimentation in a safer environment without feeling overwhelmed. This actively prevents self-learners from entering the unproductive comfort zone we call [_tutorial hell_](https://www.google.com/search?q=tutorial+hell).
+LunyScript encourages exploration and experimentation in a safer environment without feeling overwhelmed. This actively prevents self-learners from entering the unproductive comfort zone we call [_tutorial hell_](https://www.google.com/search?q=game+development+tutorial+hell+meaning){:target="_blank"}.
 
 ## Quick Summary
 
@@ -10,21 +10,19 @@ LunyScript encourages exploration and experimentation in a safer environment wit
 <b>LunyScript is 3-5 times less verbose than GDScript!</b>
 </font>
 ![Chart_Lines_of_Code.png](../media/Chart_Lines_of_Code.png)
-<sup>[View Interactive Chart](https://docs.google.com/spreadsheets/d/e/2PACX-1vQYteK-tn0qLcvssVP5sLEcTg7adjtRbbE56Usj-BUmtx033RVY9lLt0aPpL_Ef4uEp8DNvRpBgWLTh/pubchart?oid=2073524744&format=interactive)</sup>
+<sup>[View Interactive Chart](https://docs.google.com/spreadsheets/d/e/2PACX-1vQYteK-tn0qLcvssVP5sLEcTg7adjtRbbE56Usj-BUmtx033RVY9lLt0aPpL_Ef4uEp8DNvRpBgWLTh/pubchart?oid=2073524744&format=interactive){:target="_blank"}</sup>
 
 LunyScript merely defers initial learning of engine API concepts. Bite-sized extensions means users learn engine concepts in a highly focused manner at their own pace.
 
 # Direct Code Comparison
 **Engines Compared:**
-- **LunyScript** (Cross-engine C#, **🚧 Proof of Concept**)
+- **LunyScript** (Cross-engine C#, **Proof of Concept API**)
 - **GDScript** (Godot domain specific language)
 - **Godot C#** (Godot C#)
 - **Unity C#** (Unity C#)
 - **Roblox Lua** (for reference)
 
-**🚧 Note:** LunyScript API represents Proof of Concept state and is subject to change.
-
-**🚧 Note:** Code samples are picked by AI. You would write it differently, and so would I. I spot-checked, using different styles or code paths. It's a good average.
+**🚧 Note:** Code samples were created by AI. I spot-checked different styles and code paths, differences average out. C# line count includes bracket lines - without them, their line count doesn't differ much from GDScript.
 
 ---
 
@@ -1244,3 +1242,6 @@ end)
 - [LunyScript Philosophy](Philosophy.md)
 - [Proof of Concept Documentation](../PoC_2025-10/)
 - [Target Audience Breakdown](TargetAudience.md)
+
+---
+[← Back to Main Documentation](../index.md)
