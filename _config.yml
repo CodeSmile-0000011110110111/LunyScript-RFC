@@ -2,6 +2,12 @@
 theme: jekyll-theme-midnight
 title: LunyScript
 description: Cross-Engine Gameplay Scripting
+url: https://lunyscript.com
+logo: /media/LunyScript_Demo.gif
+social:
+  name: LunyScript
+  links:
+    - https://github.com/CodeSmile-0000011110110111/LunyScript-RFC
 
 # Navigation
 navigation:
@@ -48,6 +54,7 @@ kramdown:
 # Plugins
 plugins:
   - jekyll-relative-links
+  - jekyll-seo-tag
 
 # Convert README.md to index.html
 relative_links:
