@@ -60,10 +60,10 @@ The PoC demonstrates LunyScript orchestrating essential gameplay systems across 
 
 LunyScript will have a different architecture in key aspects:
 
-- Single script runner: Orchestrates LunyScripts on any engine type (PoC: one runner per engine type => subclass explosion)
-- Engine-agnostic scripts: Scripts subclass ´LunyScript´ type to avoid leaking engine artifacts
-- Asset convention: Only assets in 'Luny' folder(s) will be accessible by string
-- Unreal deferred: It's not a beginner-friendly engine, and C# isn't the native experience
+- **Single script runner**: Orchestrates LunyScripts on any engine type (PoC: one runner per engine type => subclass explosion)
+- **Engine-agnostic scripts**: Scripts subclass ´LunyScript´ type to avoid leaking engine artifacts
+- **Asset convention**: Only assets in 'Luny' folder(s) will be accessible by string
+- **Unreal deferred**: It's not a beginner-friendly engine, and C# isn't the native experience
 
 ---
 
@@ -87,11 +87,15 @@ LunyScript will have a different architecture in key aspects:
 
 ## Source Code Repositories
 
+Repos need to be cloned recursively: `git clone --recursive ...`
+
 | Engine | Repository |
 |--------|-----------|
-| **Godot** | [LunyScratch_Examples_Godot](https://github.com/CodeSmile-0000011110110111/LunyScratch_Examples_Godot) |
-| **Unity** | [LunyScratch_Examples_Unity](https://github.com/CodeSmile-0000011110110111/LunyScratch_Examples_Unity) |
-| **Unreal** | [LunyScratch_Examples_Unreal](https://github.com/CodeSmile-0000011110110111/LunyScratch_Examples_Unreal) |
+| **Godot** | [LunyScratch_Examples_Godot](https://github.com/CodeSmile-0000011110110111/LunyScratch_Examples_Godot){:target="_blank"} |
+| **Unity** | [LunyScratch_Examples_Unity](https://github.com/CodeSmile-0000011110110111/LunyScratch_Examples_Unity){:target="_blank"} |
+| **Unreal** | [LunyScratch_Examples_Unreal](https://github.com/CodeSmile-0000011110110111/LunyScratch_Examples_Unreal){:target="_blank"} |
+
+<sup>**Note**: I can't guarantee that these projects will open and run without errors for everyone. I will not maintain them.</sup>
 
 ---
 
