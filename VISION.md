@@ -78,11 +78,11 @@ A sustainable scripting solution shall be:
 
 ## The Outcome
 
-Pro-tier engines across the board will be more approachable and conducive to beginners. They learn valuable concepts and patterns before diving into imperative programming - rather than vice versa.
+Pro-tier engines across the board will be more approachable and conducive to beginners. They learn valuable concepts and patterns before diving into imperative programming. Coding literacy improves.
 
 Learnfluencers provide valuable head-to-head engine comparisons and can afford time to demo less popular engines. This could help niche engines to gain popularity.
 
-Education adopts a single entry-level game programming curriculum. Easier to encourage non-programmers to code.
+Education adopts a single entry-level game programming curriculum. Easier to encourage non-programmers to code. LunyScript is used in early education, between Scratch and imperative programming.
 
 Visual Scripting users find themselves more productive in text-based declarative programming. Simple projects complete faster. Game Jams produce reusable code. Prototypes are less concerned with technical issues. Trying a different engine is easier.
 
