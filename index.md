@@ -1,7 +1,6 @@
 ---
 layout: default
 title: LunyScript - Cross-Engine Gameplay Scripting
-image: /media/LunyScript_Demo.gif
 ---
 
 # **LunyScript 🎮** Makes Coding Games Fun!
