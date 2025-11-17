@@ -29,5 +29,4 @@ See [Architectural Decision Records](../decisions/) for detailed rationale behin
 
 ## 🔗 Quick Links
 - [← Back to Home](../)
-- [Repository Index](../REPOSITORY-INDEX.md)
-- [Join Discussions →](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC/discussions/)
+- [Join Discussions →](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC/discussions/){:target="_blank"}
