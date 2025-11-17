@@ -2,13 +2,10 @@
 
 ## Notes
 
-
-
 ## URGENT
 
-- Address how code can be portable if language changes? Ie C# => GDScript
-	- Philosophy: syntax transformation is easily automated, but prefer to stay in C#. 
-	- Under consideration: integration Lua as 'game logic description language'. Lua would work in any engine, and is more common in game dev than any other scripting language (including Python).
+- Video (30s): Nullref vs In-Scene notes
+- Video (30-60s): How does Luny work (very high level)
 
 
 ### Evidence Gathering - Support "APIs as Barrier" Claim
@@ -55,17 +52,10 @@ Godot is cool, but I now think beginners should start with something easier. For
 ## High-Level
 
 - bebilderte (hypothetische) codebeispiele einfügen für gesamteindruck, diskussion
-- is there teaching bias? ie teachers teach how they learned?
-- fragmentation of game dev tools and patterns (incl. visual scripting) => any rhyme or reason to that? benefits vs negatives? are there comparable large "tool" fragmentation in other software development, or other digital areas, or even in non-technical?
 - add document: learner benefits summary (put on website)
     - semantics, consistency, portability => standardization, patterns, no null, event driven, no outside references, sequential thinking => statemachines - bt
-- add/update vision document (with outcome), and put on website
-
 
 ## Documentation Review
-
-- Review docs/PrototypersAndGameJammers.md - preliminary content needs validation and refinement
-- **Review docs/EngineDifferences.md** - technical accuracy verification needed (especially Godot destruction handling, Unreal component hierarchy mapping, and API philosophy section)
 
 
 ## Design
@@ -94,7 +84,6 @@ Godot is cool, but I now think beginners should start with something easier. For
 ## Documentation - Technical Deep-Dive
 
 - Create technical architecture overview document (intro to architecture)
-- Create architectural overview diagram
 - Document debugging and tooling capabilities
 - Create integration guide: native escape hatches (conditions/actions), using native types, interaction with native code
 - Document native code interaction and limitations (e.g., native code creates/destroys objects - will LunyScript be aware?)
@@ -107,41 +96,13 @@ Godot is cool, but I now think beginners should start with something easier. For
 - Early Performance Testbed: same tasks, measuring performance of native vs LunyScript implementation (Update vs Repeat.Forever loop incrementing a variable / stack of boxes, each handling collision enter/exit which makes them "light up" during contact)
 
 ## Promotion
-- Short promo video (30s?) - generate storyboard
 - Post to social media, invite feedback
 
 ## Roadmap
 
 - Define the goals for each roadmap phase, define what "success" means
 
-## README / INDEX - Landing Pages
-
-### Nice to Have
-
-- Add concrete code comparisons to README (Unity vs Godot vs LunyScript)
-- Add statistics/examples showing engine-switching is a real problem
-- Create visual diagram showing scope boundaries
-
-## Language Bindings
-
-- Consider binding to Lua (low priority - Phase 2+)
-
 ## Research Tasks
-
-### Reddit Response Analysis (COMPLETED 2025-11-07)
-- ✅ Extracted and categorized all Reddit criticisms from 3 posts
-- ✅ Assessed validity of each argument
-- ✅ Identified what's already addressed in index.md vs what needs work
-- ✅ Created prioritized list (see: private/reddit-responses/analysis.md - if created)
-
-**Key findings:**
-- Most objections stem from wrong audience assumptions (professionals vs learners)
-- "Just another standard" concern needs addressing
-- Need stronger framing around tutorial creators/learnfluencers
-- Evidence for "APIs as barrier" claim is weak (anecdotal only)
-
-### GDScript Verbosity vs UI Complexity
-- GDScript is a lot less verbose than any other engine language / API. I have a hunch that the extra workload may be offset onto the UI. I recalled how much more clicking & dragging I had to do in Godot vs Unity. => Confirm by comparing code of 2+ simple tasks, and the editor click count to accomplish them.
 
 ### Tutorial Creator Market Research
 - **Survey YouTube game dev educators:**
