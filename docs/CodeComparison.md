@@ -81,7 +81,7 @@ func _on_body_entered(body: Node3D):
 </div>
 <div class="tab-content" markdown="1">
 
-**Lines of code:** 25+
+**Lines of code:** 25+ (15 w/o braces)
 
 **Concepts needed:** Node lifecycle, Export attribute, AudioStreamPlayer3D, GetNode, Groups/tags, Signal connections (not shown), manual setup
 
@@ -120,7 +120,7 @@ private void _OnBodyEntered(Node3D body)
 </div>
 <div class="tab-content" markdown="1">
 
-**Lines of code:** 16
+**Lines of code:** 16 (10 w/o braces)
 
 **Concepts needed:** MonoBehaviour lifecycle, SerializeField, AudioSource component, GetComponent, OnCollisionEnter callback, Collision object, tag comparison, null checking
 
@@ -246,7 +246,7 @@ func _physics_process(delta):
 </div>
 <div class="tab-content" markdown="1">
 
-**Lines of code:** 31
+**Lines of code:** 31 (19 w/o braces)
 
 **Concepts needed:** Export, RigidBody3D, _PhysicsProcess vs _Process, Input.IsKeyPressed, Key enum, Vector3, GlobalTransform.Basis, delta time, coordinate system differences
 
@@ -288,7 +288,7 @@ public override void _PhysicsProcess(double delta)
 </div>
 <div class="tab-content" markdown="1">
 
-**Lines of code:** 28
+**Lines of code:** 28 (18 w/o braces)
 
 **Concepts needed:** SerializeField, Rigidbody, GetComponent, FixedUpdate vs Update, Input.GetKey, KeyCode enum, Vector3, transform.forward, Time.fixedDeltaTime, physics integration
 
@@ -418,7 +418,7 @@ func _on_body_entered(body: Node3D):
 </div>
 <div class="tab-content" markdown="1">
 
-**Lines of code:** 18
+**Lines of code:** 18 (10 w/o braces)
 
 **Concepts needed:** AudioStream vs AudioStreamPlayer3D, Export, node creation, AddChild, setting Stream before Play, groups
 
@@ -448,7 +448,7 @@ private void _OnBodyEntered(Node3D body)
 </div>
 <div class="tab-content" markdown="1">
 
-**Lines of code:** 21
+**Lines of code:** 21 (12 w/o braces)
 
 **Concepts needed:** AudioClip vs AudioSource, SerializeField, GetComponent, AddComponent, PlayOneShot vs Play, null checking, component architecture
 
@@ -572,7 +572,7 @@ func _on_try_again_pressed():
 </div>
 <div class="tab-content" markdown="1">
 
-**Lines of code:** 28
+**Lines of code:** 28 (16 w/o braces)
 
 **Concepts needed:** Button node, GetNode vs FindChild, node paths, Pressed signal/event, += event subscription, -= cleanup, _ExitTree lifecycle, GetTree(), ReloadCurrentScene()
 
@@ -615,7 +615,7 @@ private void OnTryAgainPressed()
 </div>
 <div class="tab-content" markdown="1">
 
-**Lines of code:** 30
+**Lines of code:** 30 (18 w/o braces)
 
 **Concepts needed:** UnityEngine.UI namespace, Button component, SerializeField, GameObject.Find, GetComponent, AddListener/RemoveListener, OnDestroy cleanup, SceneManager, GetActiveScene, scene lifecycle
 
@@ -763,7 +763,7 @@ func play_coin_sound():
 </div>
 <div class="tab-content" markdown="1">
 
-**Lines of code:** 36
+**Lines of code:** 36 (22 w/o braces)
 
 **Concepts needed:** Label node, Export, FindChild, manual UI updates, string interpolation, separation of concerns, signal connections (not shown)
 
@@ -813,7 +813,7 @@ private void PlayCoinSound()
 </div>
 <div class="tab-content" markdown="1">
 
-**Lines of code:** 37
+**Lines of code:** 37 (23 w/o braces)
 
 **Concepts needed:** Text component, SerializeField, GameObject.Find, manual UI updates, ToString(), string concatenation, separation of concerns (UpdateScoreDisplay method)
 
@@ -988,7 +988,7 @@ func end_game():
 </div>
 <div class="tab-content" markdown="1">
 
-**Lines of code:** 53
+**Lines of code:** 53 (31 w/o braces)
 
 **Concepts needed:** SceneTreeTimer, CreateTimer, Timeout signal/event, += event subscription, recursive timer restart, _ExitTree cleanup, manual UI updates
 
@@ -1056,7 +1056,7 @@ private void EndGame()
 </div>
 <div class="tab-content" markdown="1">
 
-**Lines of code:** 49
+**Lines of code:** 49 (29 w/o braces)
 
 **Concepts needed:** Coroutines, IEnumerator, yield return, WaitForSeconds, StartCoroutine, StopCoroutine, OnDestroy cleanup, while loops, manual UI updates
 
