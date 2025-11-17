@@ -3,7 +3,7 @@ theme: jekyll-theme-midnight
 title: LunyScript
 description: Cross-Engine Gameplay Scripting
 url: https://lunyscript.com
-logo: media/LunyScript_Demo.gif
+logo: media/website-logo.png
 social:
   name: LunyScript
   links:
