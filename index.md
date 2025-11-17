@@ -34,7 +34,7 @@ Something missing? Extend its bite-sized blocks by writing C# extension methods.
 
 ## **🤨 Any Engine?? Das Crazy! 🤯** 
 
-Game engines all share the same fundamental features needed to create a [_Megabonk_](https://store.steampowered.com/app/3405340/Megabonk/){:target="_blank"}.
+Game engines all share the same fundamental features needed to create a [_Megabonk_](https://store.steampowered.com/app/3405340/Megabonk/){:target="_blank"}. Here's the proof: three engines, same code, made in 20 days.
 
 [![LunyScript Demo](media/LunyScript_Demo.gif)](PoC_2025-10/)
 
