@@ -8,7 +8,7 @@ A vertical slice from scratch in **under 20 days**: Started with Unity, then por
 
 <iframe width="648" height="365" src="https://www.youtube.com/embed/Vn38VLNDsuw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<sup>[Watch the video on YouTube (1:20)](https://youtu.be/Vn38VLNDsuw)</sup>
+<sup>[Watch the video on YouTube (1:20)](https://youtu.be/Vn38VLNDsuw){:target="_blank"}</sup>
 
 ---
 
@@ -18,7 +18,7 @@ It does!
 
 It's really not rocket science: Engines aren't that different. They all make games using the same basic set of high-level features. LunyScript aims to standardize only that high-level functionality. Because these features are so fundamental, they don't change at all.
 
-I asked a [provocative question on reddit](https://www.reddit.com/r/gamedev/comments/1nmtuqg/every_industrygrade_game_engine_has_the_same_api/) and [a follow-up](https://www.reddit.com/r/gamedev/comments/1nslk03/one_api_to_rule_them_all_them_godot_unity_unreal/) and the responses were uniformly:
+I asked a [provocative question on reddit](https://www.reddit.com/r/gamedev/comments/1nmtuqg/every_industrygrade_game_engine_has_the_same_api/){:target="_blank"} and [a follow-up](https://www.reddit.com/r/gamedev/comments/1nslk03/one_api_to_rule_them_all_them_godot_unity_unreal/){:target="_blank"} and the responses were uniformly:
 
 - It's impossible ⛔
 - Makes no sense 😐
@@ -27,7 +27,7 @@ I asked a [provocative question on reddit](https://www.reddit.com/r/gamedev/comm
 - It's a massive amount of work 😫
 - The point of engines is to be different 🤔
 
-This is called cognitive bias. But also my fault: I did not explain it as well as I can now. Also: wrong audience. But I thought they'd **see** the pattern.
+I call this cognitive bias, and my fault: I did not explain it as well as I can now. Also: wrong audience. 
 
 ## So, How Does It Work?
 
@@ -55,6 +55,15 @@ The PoC demonstrates LunyScript orchestrating essential gameplay systems across 
 | **Audio** | Sound effect playback |
 
 **Scope:** High-level gameplay scripting - orchestrating game logic, behaviors, and interactions. LunyScript is **not** a game engine API replacement.
+
+## Learnings
+
+LunyScript will have a different architecture in key aspects:
+
+- Single script runner: Orchestrates LunyScripts on any engine type (PoC: one runner per engine type => subclass explosion)
+- Engine-agnostic scripts: Scripts subclass ´LunyScript´ type to avoid leaking engine artifacts
+- Asset convention: Only assets in 'Luny' folder(s) will be accessible by string
+- Unreal deferred: It's not a beginner-friendly engine, and C# isn't the native experience
 
 ---
 
