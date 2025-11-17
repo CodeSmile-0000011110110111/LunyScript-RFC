@@ -12,7 +12,7 @@ LunyScript encourages exploration and experimentation in a safer environment wit
 ![Chart_Lines_of_Code.png](../media/Chart_Lines_of_Code.png)
 <sup>[View Interactive Chart](https://docs.google.com/spreadsheets/d/e/2PACX-1vQYteK-tn0qLcvssVP5sLEcTg7adjtRbbE56Usj-BUmtx033RVY9lLt0aPpL_Ef4uEp8DNvRpBgWLTh/pubchart?oid=2073524744&format=interactive){:target="_blank"}</sup>
 
-LunyScript merely defers initial learning of engine API concepts. Bite-sized extensions means users learn engine concepts in a highly focused manner at their own pace.
+**Note**: C# code LoC is slightly less than GDScript when not counting braces. 
 
 # Direct Code Comparison
 **Engines Compared:**
@@ -22,7 +22,7 @@ LunyScript merely defers initial learning of engine API concepts. Bite-sized ext
 - **Unity C#** (Unity C#)
 - **Roblox Lua** (for reference)
 
-**🚧 Note:** Code samples were created by AI. I spot-checked different styles and code paths, differences average out. C# line count includes bracket lines - without them, their line count doesn't differ much from GDScript.
+**🚧 Note:** Code samples were created by AI. I spot-checked different styles and code paths, differences average out.
 
 ---
 
@@ -1169,19 +1169,17 @@ end)
 </div>
 
 
-
-
 ## Summary Table
 
-| Concept | LunyScript LOC | Unity C# LOC | Godot C# LOC | GDScript LOC | Overwhelm Reduction |
+| Concept | LunyScript LOC | GDScript LOC | Godot C# LOC | Unity LOC | Overwhelm Reduction |
 |---------|----------------|--------------|--------------|--------------|---------------------|
-| Collision Detection | 3 | 16 | 25+ | 14 | 90% |
-| Input Handling | 6 | 28 | 31 | 18 | 85% |
-| Audio Playback | 3 | 21 | 18 | 12 | 80% |
-| UI Button Events | 3 | 30 | 28 | 16 | 75% |
-| Variables & HUD Binding | 9 | 37 | 36 | 26 | 70% |
-| Timers & Sequences | 10 | 49 | 53 | 32 | 65% |
-| **Total** | **34** | **181** | **191** | **118** | **77% average** |
+| Collision Detection | 3 | 14 | 25+ (15) | 16 (10) | 90% |
+| Input Handling | 6 | 18 | 31 (19) | 28 (18) | 85% |
+| Audio Playback | 3 | 12 | 18 (10) | 21 (12) | 80% |
+| UI Button Events | 3 | 16 | 28 (16) | 30 (18) | 75% |
+| Variables & HUD Binding | 9 | 26 | 36 (22) | 37 (23) | 70% |
+| Timers & Sequences | 10 | 32 | 53 (31) | 49 (29) | 65% |
+| **Total** | **34** | **118** | **191 (113)** | **181 (110)** | **77% average** |
 
 
 ## Key Observations
