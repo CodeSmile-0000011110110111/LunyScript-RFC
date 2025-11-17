@@ -34,7 +34,8 @@ Something missing? Extend its bite-sized blocks by writing C# extension methods.
 
 ## **🤨 Any Engine?? Das Crazy! 🤯** 
 
-Game engines all share the same fundamental features needed to create a [_Megabonk_](https://store.steampowered.com/app/3405340/Megabonk/){:target="_blank" rel="noopener"}.
+Game engines all share the same fundamental features needed to create a [_Megabonk_](https://store.steampowered.com/app/3405340/Megabonk/){:target="_blank"}.
+<a href="https://store.steampowered.com/app/3405340/Megabonk/" target="_blank">open new tab</a>
 
 [![LunyScript Demo](media/LunyScript_Demo.gif)](PoC_2025-10/)
 
@@ -62,13 +63,13 @@ I can't expect you to trust my judgement, but it requires a few more words. **�
 
 **🎓 Self-Learners & Hobbyists**<br/>Easier than Roblox scripting. Publish anywhere. [Learn more →](docs/TargetAudience.md#-self-learners--hobbyists-primary-audience)
 
-**📹 Learnfluencers**<br/>Pit engines head-to-head. Expand your audience. [Learn more →](docs/TargetAudience.md#-tutorial-creators--learnfluencers-high-impact)
+**📹 Learnfluencers**<br/>Pit engines head-to-head. Expand your audience. [Learn more →](docs/TargetAudience.md#-tutorial-creators--learnfluencers-online-tutors-high-impact-multipliers)
+
+**🎨 Visual Scripters**<br/>Tired of dragging noodly nodes? Design as code! [Learn more →](docs/TargetAudience.md#-visual-scripters-early-adopters)
 
 **🏫 Educators**<br/>One curriculum, many engines. Teach concepts, not semantics. [Learn more →](docs/TargetAudience.md#-formal-educators--institutions)
 
 **🎮 Prototypers**<br/>Jam fast and still write reusable code. [Learn more →](docs/TargetAudience.md#-prototypers--game-jammers)
-
-**🎨 Visual Scripters**<br/>Tired of dragging noodly nodes? Design as code! [Learn more →](docs/TargetAudience.md#-visual-scripters)
 
 **🔧 Framework Developers**<br/>Code for mankind, not "your" engine. [Learn more →](docs/TargetAudience.md#-framework--tool-developers)
 
