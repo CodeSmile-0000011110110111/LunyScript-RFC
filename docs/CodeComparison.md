@@ -1,3 +1,9 @@
+---
+layout: default
+title: LunyScript - Code Comparison with GDScript C# Godot Unity
+image: media/Chart_Lines_of_Code.png
+---
+
 # Code Comparison: LunyScript vs Engines
 
 Comparing code for beginner's tasks demonstrates how LunyScript reduces cognitive load and boilerplate code when learning game engine programming.
@@ -9,6 +15,7 @@ LunyScript encourages exploration and experimentation in a safer environment wit
 <font color=lightgreen size=4>
 <b>LunyScript is 3-5 times less verbose than GDScript!</b>
 </font>
+
 ![Chart_Lines_of_Code.png](../media/Chart_Lines_of_Code.png)
 <sup>[View Interactive Chart](https://docs.google.com/spreadsheets/d/e/2PACX-1vQYteK-tn0qLcvssVP5sLEcTg7adjtRbbE56Usj-BUmtx033RVY9lLt0aPpL_Ef4uEp8DNvRpBgWLTh/pubchart?oid=2073524744&format=interactive){:target="_blank"}</sup>
 
