@@ -26,7 +26,9 @@ public MyPlayer()
 
 ## **✨ Same Code - Any Engine ✨** 
 
-LunyScript is the beginner-friendly, high-level gameplay programming API. It works **uniformly across C# game engines** with built-in Statemachines and Behaviour Trees.
+LunyScript is the beginner-friendly, high-level gameplay programming API. It works **uniformly across C# game engines** with built-in Variable, Statemachines, and Behaviour Trees.
+
+Control everything needed to implement gameplay: Input, Camera, Physics, Animation, Audio, UI, Scenes and Objects.
 
 Something missing? Extend its bite-sized blocks by writing C# extension methods. Learn the engine as you go. Build your own functional, reusable, portable code library.
 
