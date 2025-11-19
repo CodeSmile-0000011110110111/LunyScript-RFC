@@ -11,6 +11,8 @@ LunyScript is your **catch-all entry ticket** to professional game engines!
 
 <sup>Coming soon for **Unity** (Q2/2026) and **Godot** (Q4/2026) ...</sup>
 
+### [🌐 Click for more info!](https://lunyscript.com)
+
 ## Proof: Same Code, Three Engines
 
 [![LunyScript Demo](media/LunyScript_Demo.gif)](https://youtu.be/Vn38VLNDsuw "LunyScript: Same Code, Three Engines - Proof of Concept Demo")<br/>
