@@ -34,7 +34,7 @@ LunyScript is the beginner-friendly, high-level game programming API that works 
 - **No errors**: Stay in the flow of creating 🎨🎧<br/><sup>Mi<ins>ts</ins>akes happen! See and inspect issues in-game.</sup>
 - **Powerful**: Enough to create a _Megabonk_ 👑💎<br/><sup>Learn proven concepts: Statemachines, Behaviour Trees, Coroutines.</sup>
 - **Experiment**: Trial and error is encouraged 🧪🥼<br/><sup>Pure creative joy! Avoid getting sucked into **Tutorial Hell**!</sup>
-- **Ready for more?**: LunyScript extends easily 🛝🚀<br/><sup>Transition to engine APIs, line by line, at your own pace.️️</sup>
+- **Ready for more?**: LunyScript extends easily 🛝🚀<br/><sup>Transition to engine APIs one small step at a time, at your own pace.️️</sup>
 - **Escape lock-in**: Same code, works everywhere 🔑🔓<br/><sup>Dislike the editor? Community unhelpful? Switch engines!️</sup>
 
 LunyScript let's you program everything game engines have in common: Input🕹️, Camera👁️, Physics⚽, Animation🏃, Audio🎸, UI️📱, Scenes🎭, Objects🪜, and more! 
