@@ -64,10 +64,12 @@ API standardization has escaped game engines for all the wrong reasons: competit
 
 # **It's just a toy ..**
 
-The core concepts behind LunyScript have been **proven in production** over several titles. Designers loved the consistency and extensibility. 
-Onboarding and documentation was easy. Need another button? One line of code.
+The core concepts behind LunyScript have been **proven in production** over several titles. Designers loved the **consistency and extensibility**. 
+**Onboarding and documentation** was easy. 
 
-I **know** that the amalgamation of **design as code** works and provides **huge benefits** to all **creative thinkers and tinkerers**. Designers, not just beginners.
+LunyScript teaches **modular design** and puts the **focus on creation**.
+
+I **know** that the amalgamation of **design as code** works and provides **huge benefits** to all **creative thinkers and tinkerers**. 
 
 **→ [The Problem Statement](docs/ProblemStatement)** that lead to LunyScript.
 <br/>**→ [About me and my experience](AUTHOR.md)** that formed LunyScript.
