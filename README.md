@@ -1,26 +1,26 @@
 # LunyScript 🎮 The Game Programming Gateway
-<sup>Coming soon for **Unity** (Q2/2026) and **Godot** (Q4/2026) ...</sup>
+## You want to make games? Great! 😃
 
-## Works the same in Unity, Godot, Unreal, ...
+But game engine code is complex, confusing, and completely different everywhere. 🫨
+
+LunyScript is your **catch-all entry ticket** to professional game engines!
 
     When.Collision.With("ball")
         .Begins(Audio.Play("ball_tagged_loop"))
         .Ends(Spawn("sparkles").At(Other).Run(Wait.Seconds(2.5), Despawn()))
 
-**Game Over For Tutorial Hell!** 🤗
+<sup>Coming soon for **Unity** (Q2/2026) and **Godot** (Q4/2026) ...</sup>
 
 ## Proof: Same Code, Three Engines
 
 [![LunyScript Demo](media/LunyScript_Demo.gif)](https://youtu.be/Vn38VLNDsuw "LunyScript: Same Code, Three Engines - Proof of Concept Demo")<br/>
 **[Watch the full video on Youtube (1:20)](https://youtu.be/Vn38VLNDsuw "LunyScript: Same Code, Three Engines - Proof of Concept Demo")**
 
-**✅ Same code, 3 engines, 20 days**
-
 ---
 
 ## 📖 Documentation & Resources
 
-### [🌐 Project Website](https://lunyscript.com)
+### [🌐 LunyScript Homepage](https://lunyscript.com)
 Complete overview with examples, use cases, benefits, and proof of concept
 
 ### [🎨 Design Documentation](https://lunyscript.com/docs/)

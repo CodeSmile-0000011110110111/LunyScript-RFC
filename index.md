@@ -9,7 +9,7 @@ title: LunyScript - The Game Programming Gateway
 
 But game engine code is complex, confusing, and completely different everywhere. 🫨
 
-LunyScript is your **catch-all entry ticket** to professional game engines:
+LunyScript is your **catch-all entry ticket** to professional game engines!
 
 ```csharp
 public MyPlayer()
