@@ -73,7 +73,7 @@ I **know** that the amalgamation of **design as code** works and provides **huge
 <br/>**→ [About me and my experience](AUTHOR.md)** that formed LunyScript.
 <br/>**→ [The vision](VISION.md)** for LunyScript.
 <br/>**→ [The philosophy](docs/Philosophy.md)** of LunyScript.
-<br/>**→ [Compare the code](docs/CodeComparison.md)** - LunyScript is clear and 3-5x less code.
+<br/>**→ [Compare](docs/CodeComparison.md)** LunyScript code with GDScript, C#, Roblox. 
 
 ---
 
