@@ -22,7 +22,7 @@ The engine differences are in perception only. Technically, they are minute.
 
 Engines have trees of Nodes, GameObjects, Actors. Nodes **are** components. GameObjects and Actors **contain** components. The lifecycle events differ slightly: trap, and fire at desired order with minimal overhead. 
 
-SQL, jQuery, et al unified such implementation artifacts. Why not engine APIs?
+SQL, jQuery, OpenXR, et al unified such implementation artifacts. Why not engine APIs?
 
 I asked a [provocative question on reddit](https://www.reddit.com/r/gamedev/comments/1nmtuqg/every_industrygrade_game_engine_has_the_same_api/){:target="_blank"} and [a follow-up](https://www.reddit.com/r/gamedev/comments/1nslk03/one_api_to_rule_them_all_them_godot_unity_unreal/){:target="_blank"} and the responses were uniformly:
 
