@@ -5,9 +5,11 @@ title: LunyScript - The Game Programming Gateway
 
 # **LunyScript 🎮** The Game Programming Gateway
 
-You want to make games? But game engine programming is complex, confusing, and completely different everywhere?
+## You want to make games? Great! 😃
 
-LunyScript is your **VIP entry ticket** to Godot and Unity: same code, different editor.
+But game engine code is complex, confusing, and completely different everywhere. 🫨
+
+Worry not! LunyScript is your **catch-all entry ticket** to Godot and Unity:
 
 ```csharp
 public MyPlayer()
@@ -22,7 +24,7 @@ I used LunyScript to create a game in three engines simultaneously:
 
 ![LunyScript Demo](media/LunyScript_Demo.gif)
 
-## **✨ Same Code - Any Engine ✨**
+## **✨ Same Code - Many Engines ✨**
 
 LunyScript is the beginner-friendly, high-level game programming API that works **uniformly across game engines**. It's free and open source (MIT License).
 
@@ -35,18 +37,26 @@ LunyScript is the beginner-friendly, high-level game programming API that works 
 - **Ready for more?**: LunyScript extends easily 🛝🚀<br/><sup>Transition to engine APIs, line by line, at your own pace.️️</sup>
 - **Escape lock-in**: Same code, works everywhere 🔑🔓<br/><sup>Dislike the editor? Community unhelpful? Switch engines!️</sup>
 
-LunyScript let's you program everything game engines have in common: Input, Camera, Physics, Animation, Audio, UI, Scenes, Objects, you name it! Use the engine's powerful editing tools, then use LunyScript to orchestrate what happes in-game.
+LunyScript let's you program everything game engines have in common: Input🕹️, Camera👁️, Physics⚽, Animation🏃, Audio🎸, UI️📱, Scenes🎭, Objects🪜, and more! 
+
+Powerful in-engine editing tools combined with LunyScript makes making games easy!
 
 Why learn pointless differences like`_init`,`Awake`,`BeginPlay`when you just want to make your dream game come true? 😄
+
+---
+
+<iframe src="https://ghbtns.com/github-btn.html?user=CodeSmile-0000011110110111&repo=LunyScript-RFC&type=star&count=true" frameborder="0" scrolling="1" width="100" height="22"></iframe>
+<font size=6>👈️👍️</font>
+Please **star** the [LunyScript-RFC GitHub repository](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC){:target="_blank"} to show your interest!
 
 ---
 
 ## **🤨 Any Engine?? Das Crazy! 🤯** 
 
 Game engines make games. They share the same essential features for a [_Megabonk_](https://store.steampowered.com/app/3405340/Megabonk/){:target="_blank"}. 
-Most games don't need more. Why bother programming them differently?
+Most games don't need much more. Why bother programming them differently?
 
-API standardization has escaped game engines for all the wrong reasons: competition, pride, control, evolution. _Games are different_ so engine APIs must be too.
+API standardization has escaped game engines for all the wrong reasons: competition, pride, control, evolution. _Games are different_ so engine APIs must be too. **Wrong!**
 
 Proof: three engines, same code, made in 20 days. **They said it's impossible!**🤔🫡
 [![LunyScript Demo](media/LunyScript_Demo.gif)](PoC_2025-10/)
@@ -64,10 +74,14 @@ LunyScript is 3-5 times less verbose than GDScript! See **→ [Code Comparison](
 
 ---
 
-# **But .. Why?**
+# **It's just a toy ..**
 
-I **know** that the amalgamation of **design as code** works and provides huge benefits to all creative thinkers and tinkerers. 
-I can't expect you to trust my judgement, but it requires a few more words. **→ [The Problem Statement](docs/ProblemStatement)**
+The core concepts behind LunyScript have been **proven in production** over several titles. Designers loved the consistency and extensibility. 
+Onboarding and documentation was easy. Need another button? One line of code.
+
+I **know** that the amalgamation of **design as code** works and provides **huge benefits** to all **creative thinkers and tinkerers**, not just beginners.
+
+**→ [The Problem Statement](docs/ProblemStatement)** that lead to LunyScript.
 
 ---
 
@@ -75,15 +89,11 @@ I can't expect you to trust my judgement, but it requires a few more words. **�
 
 **🎓 Self-Learners & Hobbyists**<br/>Easier than Roblox scripting. Publish anywhere. [Learn more →](docs/TargetAudience.md#-self-learners--hobbyists-primary-audience)
 
-**📹 Learnfluencers**<br/>Pit engines head-to-head. Expand your audience. [Learn more →](docs/TargetAudience.md#-learnfluencers-online-tutors-high-impact-multipliers)
+**📹 _Learnfluencers_**<br/>Pit engines head-to-head. Expand your audience. [Learn more →](docs/TargetAudience.md#-learnfluencers-online-tutors-high-impact-multipliers)
 
 **🎨 Visual Scripters**<br/>Tired of dragging noodly nodes? Design as code! [Learn more →](docs/TargetAudience.md#-visual-scripters-early-adopters)
 
-**🏫 Educators**<br/>One curriculum, many engines. Teach concepts, not semantics. [Learn more →](docs/TargetAudience.md#-formal-educators--institutions)
-
-**🎮 Prototypers**<br/>Jam fast and still write reusable code. [Learn more →](docs/TargetAudience.md#-prototypers--game-jammers)
-
-**🔧 Framework Developers**<br/>Code for mankind, not "your" engine. [Learn more →](docs/TargetAudience.md#-framework--tool-developers)
+With potential for: 🏫 [Educators](docs/TargetAudience.md#-formal-educators--institutions) 🎮[Prototypers](docs/TargetAudience.md#-prototypers--game-jammers) 🔧[Framework Developers](docs/TargetAudience.md#-framework--tool-developers)
 
 ---
 
@@ -91,7 +101,7 @@ I can't expect you to trust my judgement, but it requires a few more words. **�
 
 - **Phase 1:** **Unity** (C#)<br/>API Design; Portable Layer; Demos & Docs (Q2 2026)
 - **Phase 2:** **Godot** (C#)<br/>Cross-Engine Tests; Improve Onboarding (Q4 2026)
-- **Phase 3:** **Lua (Unity, Godot)**<br/>Bindings Generator; Stabilize API; More Engines PoC (Q2 2027)
+- **Phase 3:** **Lua & Modding**<br/>Bindings Generator; Stabilize API; More Engines PoC (Q2 2027)
 
 **→ [Maintenance strategy](MAINTENANCE.md)**
 
@@ -105,7 +115,9 @@ I can't expect you to trust my judgement, but it requires a few more words. **�
 
 Help shape the future of cross-engine, uniform game programming!
 
-<iframe src="https://ghbtns.com/github-btn.html?user=CodeSmile-0000011110110111&repo=LunyScript-RFC&type=star&count=true" frameborder="0" scrolling="1" width="72" height="22"></iframe>
+---
+
+<iframe src="https://ghbtns.com/github-btn.html?user=CodeSmile-0000011110110111&repo=LunyScript-RFC&type=star&count=true" frameborder="0" scrolling="1" width="100" height="22"></iframe>
 <font size=6>👈️👍️</font>
 Please **star** the [LunyScript-RFC GitHub repository](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC){:target="_blank"} to show your support!
 
