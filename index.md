@@ -69,7 +69,7 @@ The core concepts behind LunyScript have been **proven in production** over seve
 
 LunyScript teaches **modular design** and puts the **focus on creation**.
 
-I **know** that the amalgamation of **design as code** works and provides **huge benefits** to all **creative thinkers and tinkerers**. 
+I **know** that the amalgamation of **design as code** works and provides **huge benefits** to all **creative thinkers and tinkerers**. These documents provide more rationale: 
 
 **→ [The Problem Statement](docs/ProblemStatement)** that lead to LunyScript.
 <br/>**→ [About me and my experience](AUTHOR.md)** that formed LunyScript.
