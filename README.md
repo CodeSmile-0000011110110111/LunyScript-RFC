@@ -1,4 +1,4 @@
-# LunyScript 🎮 Makes Coding Games Fun! 🤪
+# LunyScript 🎮 The Game Programming Gateway
 <sup>Coming soon for **Unity** (Q2/2026) and **Godot** (Q4/2026) ...</sup>
 
 ## Works the same in Unity, Godot, Unreal, ...
@@ -20,10 +20,10 @@
 
 ## 📖 Documentation & Resources
 
-### [🌐 Project Website](https://codesmile-0000011110110111.github.io/LunyScript-RFC/)
+### [🌐 Project Website](https://lunyscript.com)
 Complete overview with examples, use cases, benefits, and proof of concept
 
-### [🎨 Design Documentation](https://codesmile-0000011110110111.github.io/LunyScript-RFC/docs/)
+### [🎨 Design Documentation](https://lunyscript.com/docs/)
 Architecture, technical decisions, API design, and implementation details
 
 ### [💬 Discussions](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC/discussions/)
@@ -38,12 +38,3 @@ Common questions about LunyScript's approach, performance, maintenance, and tech
 
 | [Godot PoC](https://github.com/CodeSmile-0000011110110111/LunyScratch_Examples_Godot) | [Unity PoC](https://github.com/CodeSmile-0000011110110111/LunyScratch_Examples_Unity) | [Unreal PoC](https://github.com/CodeSmile-0000011110110111/LunyScratch_Examples_Unreal) |
 |-------|-------|--------|
-
----
-
-## 📋 Repository Contents
-
-- [REPOSITORY-INDEX.md](REPOSITORY-INDEX.md) - Complete file and folder index
-- [Guidelines.md](Guidelines.md) - Contribution and documentation guidelines
-- [CHANGELOG.md](CHANGELOG.md) - Version history and completed work
-- [TODO.md](TODO.md) - Current tasks and roadmap

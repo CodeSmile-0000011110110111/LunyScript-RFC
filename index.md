@@ -1,17 +1,14 @@
 ---
 layout: default
-title: LunyScript - Cross-Engine Gameplay Scripting
+title: LunyScript - The Game Programming Gateway
 ---
 
-# **LunyScript 🎮** Makes Coding Games Fun!
+# **LunyScript 🎮** The Game Programming Gateway
 
-<iframe width="648" height="365" src="https://www.youtube.com/embed/PfZ4VBui_Wo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+You have a great game idea? But game engine programming is complex, confusing, and completely different everywhere?
 
-<sup>Coming soon for **Unity** (Q2/2026) and **Godot** (Q4/2026) ...</sup>
+LunyScript is your **entry ticket** to Godot and Unity:
 
-LunyScript is the powerful and user-friendly alternative to visual scripting.
-
-## **Game Over For _Tutorial Hell_ !** 🤗
 
 ```csharp
 public MyPlayer()
@@ -22,6 +19,17 @@ public MyPlayer()
 }
 ```
 
+- **Godot and Unity**: Easier than Roblox and GameMaker! <sup>Coming soon: **Unity** (Q2/2026), **Godot** (Q4/2026), ...</sup> 
+- **Skip dead-ends**: Learn the **career language C#** - the easy way!
+- **Escape lock-in**: Same code, works everywhere! Not satisfied? Switch engines! 
+- **Ready for more?**: LunyScript extends easily. Transition to engine APIs, line by line.  
+- **No errors**: Mistakes happen! See them in-game. Stay in the flow of creating.
+- **Powerful**: Learn proven concepts that drive entire games. Enough for a _Megabonk_!
+
+<iframe width="648" height="365" src="https://www.youtube.com/embed/PfZ4VBui_Wo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## **Game Over For _Tutorial Hell_ !** 🤗
+
 ---
 
 ## **✨ Same Code - Any Engine ✨** 
@@ -29,6 +37,19 @@ public MyPlayer()
 LunyScript is the beginner-friendly, high-level gameplay programming API. It works **uniformly across C# game engines** with built-in Statemachines and Behaviour Trees.
 
 Something missing? Extend its bite-sized blocks by writing C# extension methods. Learn the engine as you go. Build your own functional, reusable, portable code library.
+
+**Core Principles:**
+- **Write Once, Run Anywhere** - Uniform API across C# game engines
+- **Convention Over Configuration** - Smart defaults, minimal boilerplate
+- **Extensibility First** - Extend via C# extension methods
+- **Progressive Disclosure** - Learn the engine as you go
+- **Composability** - Build functional, reusable, portable code libraries
+- **Declarative Design** - Express intent, not implementation
+- **Built-in Patterns** - Statemachines and Behaviour Trees included
+
+**In Plain English:** LunyScript lets you write game code once and use it in different engines. It keeps things simple with sensible defaults, so you write less code. When you need something special, just add it yourself. You learn at your own pace while building a collection of code you can reuse forever.
+
+
 
 ---
 
