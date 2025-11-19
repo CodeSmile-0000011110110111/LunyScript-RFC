@@ -38,7 +38,7 @@ LunyScript is the beginner-friendly, high-level game programming API that works 
 
 LunyScript let's you program everything game engines have in common: Input🕹️ Camera👁️ Physics⚽ Animation🏃 Audio🎸 UI️📱 Scenes🎭 Objects🪜 and more! 
 
-Powerful in-engine editing tools combined with LunyScript makes making games easy!
+Powerful engine editing tools combined with LunyScript makes making games easy!
 
 ---
 
