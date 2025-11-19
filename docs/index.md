@@ -30,3 +30,9 @@ See [Architectural Decision Records](../decisions/) for detailed rationale behin
 ## 🔗 Quick Links
 - [← Back to Home](../)
 - [Join Discussions →](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC/discussions/){:target="_blank"}
+
+---
+
+##### **AI Usage Info**
+
+<sup>LunyScript is helped by AI. AI usage is regulated to adhere to FOSS principles: **→ [FOSS-compliant AI-Usage](../AI-USAGE.md)**</sup>

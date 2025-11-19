@@ -107,17 +107,10 @@ With potential for: 🏫 [Educators](docs/TargetAudience.md#-formal-educators--i
 
 [💬 Join the Discussions](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC/discussions/){:target="_blank"} • [📖 Design](https://codesmile-0000011110110111.github.io/LunyScript-RFC/docs/) • [❓ FAQ](FAQ.md)
 
-Help shape the future of cross-engine, uniform game programming!
+Help shape the future of LunyScript - **democratizing game engine programming**.
 
 ---
 
 <iframe src="https://ghbtns.com/github-btn.html?user=CodeSmile-0000011110110111&repo=LunyScript-RFC&type=star&count=true" frameborder="0" scrolling="1" width="100" height="22"></iframe>
 <font size=6>👈️👍️</font>
 Please **star** the [LunyScript-RFC GitHub repository](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC){:target="_blank"} to show your support!
-
----
-
-##### **AI Usage Info**
-
-<sub>Since LunyScript is an open source project, certain rules regarding AI usage needed to be established. You can find them here:
-**→ [FOSS-compliant AI-assisted development](AI-USAGE.md)**</sub>
