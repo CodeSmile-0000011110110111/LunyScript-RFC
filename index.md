@@ -19,9 +19,8 @@ public MyPlayer()
         .Ends(Spawn("sparkles"), Event.Send("kick").To("ball"));
 }
 ```
-
-I used LunyScript to create a game in three engines simultaneously:
-
+Why learn pointless differences like`_init`,`Awake`,`BeginPlay`when you just want to make your dream game come true? 😄 Learn the editor first, engine code later. 🥳 
+<br/><sub>I used LunyScript to create a game in three engines simultaneously:<sub>
 ![LunyScript Demo](media/LunyScript_Demo.gif)
 
 ## **✨ Same Code - Many Engines ✨**
@@ -37,11 +36,9 @@ LunyScript is the beginner-friendly, high-level game programming API that works 
 - **Ready for more?**: LunyScript extends easily 🛝🚀<br/><sup>Transition to engine APIs one small step at a time, at your own pace.️️</sup>
 - **Escape lock-in**: Same code, works everywhere 🔑🔓<br/><sup>Dislike the editor? Community unhelpful? Switch engines!️</sup>
 
-LunyScript let's you program everything game engines have in common: Input🕹️, Camera👁️, Physics⚽, Animation🏃, Audio🎸, UI️📱, Scenes🎭, Objects🪜, and more! 
+LunyScript let's you program everything game engines have in common: Input🕹️ Camera👁️ Physics⚽ Animation🏃 Audio🎸 UI️📱 Scenes🎭 Objects🪜 and more! 
 
 Powerful in-engine editing tools combined with LunyScript makes making games easy!
-
-Why learn pointless differences like`_init`,`Awake`,`BeginPlay`when you just want to make your dream game come true? 😄
 
 ---
 
