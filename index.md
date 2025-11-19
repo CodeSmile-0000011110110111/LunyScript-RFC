@@ -54,19 +54,11 @@ Most games don't need much more. Why bother programming them differently?
 
 API standardization has escaped game engines for all the wrong reasons: competition, pride, control, evolution. _Games are different_ so engine APIs must be too. **Wrong!**
 
-**Proof**: Three engines, same code.🫡 -- **They said it's impossible!**🤔
+**Proof**: Unreal, Unity, Godot: same game, same code.🫡 -- **They said it's impossible!**🤔
 
 [![LunyScript Demo](media/LunyScript_Demo.gif)](PoC_2025-10/)
 
 📸 → [**View detailed PoC documentation, screenshots, and source code**](PoC_2025-10/)
-
----
-
-# **🥴 LunyScript Cures Cognitive Overwhelm 💊**
-
-LunyScript is 3-5 times less verbose than GDScript! See **→ [Code Comparison](docs/CodeComparison.md)**
-
-[![Chart_Lines_of_Code.png](media/Chart_Lines_of_Code.png)](docs/CodeComparison)
 
 ---
 
@@ -81,6 +73,7 @@ I **know** that the amalgamation of **design as code** works and provides **huge
 <br/>**→ [About me and my experience](AUTHOR.md)** that formed LunyScript.
 <br/>**→ [The vision](VISION.md)** for LunyScript.
 <br/>**→ [The philosophy](docs/Philosophy.md)** of LunyScript.
+<br/>**→ [Compare the code](docs/CodeComparison.md)** - LunyScript is clear and 3-5x less code.
 
 ---
 
