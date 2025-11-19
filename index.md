@@ -27,14 +27,14 @@ Why learn pointless differences like`_init`,`Awake`,`BeginPlay`when you just wan
 
 LunyScript is the beginner-friendly, high-level game programming API that works **uniformly across game engines**. It's free and open source (MIT License).
 
-- **Godot and Unity**: Easier code as Roblox & GameMaker 😏🤗<br/><sup>**Unity:** Q2/2026, **Godot:** Q4/2026 [⏰ Join Patreon newsletter! 🔔](https://www.patreon.com/CodeSmile){:target="_blank"}</sup> 
+- **Godot and Unity**: Easier to program than Roblox & GameMaker 😏🤗<br/><sup>**Unity:** Q2/2026, **Godot:** Q4/2026 [⏰ Join Patreon for updates! 🔔](https://www.patreon.com/CodeSmile){:target="_blank"}</sup> 
 - **Skip dead-ends**: Learn the **career language C#** 🧑‍🎓🧑‍💻<br/><sup>Defer the scary syntax but work like a Pro.</sup>
 - **Concise**: 3-5 times less code 🤫🧘<br/><sup>Compared to GDScript. Code that's clear and consistent!</sup>
 - **No errors**: Stay in the flow of creating 🎨🎧<br/><sup>Mi<ins>ts</ins>akes happen! See and inspect issues in-game.</sup>
 - **Powerful**: Enough to create a _Megabonk_ 👑💎<br/><sup>Learn proven concepts: Statemachines, Behaviour Trees, Coroutines.</sup>
 - **Experiment**: Trial and error is encouraged 🧪🥼<br/><sup>Pure creative joy! Avoid getting sucked into **Tutorial Hell**!</sup>
-- **Ready for more?**: LunyScript extends easily 🛝🚀<br/><sup>Transition to engine APIs one small step at a time, at your own pace.️️</sup>
-- **Escape lock-in**: Same code, works everywhere 🔑🔓<br/><sup>Dislike the editor? Community unhelpful? Switch engines!️</sup>
+- **Ready for more**: LunyScript extends easily 🛝🚀<br/><sup>Transition to engine APIs one small step at a time, at your own pace.️️</sup>
+- **Escape lock-in**: Same code, works everywhere 🔑🔓<br/><sup>Dislike the editor? Community unhelpful? No jobs? Switch engines!️</sup>
 
 LunyScript let's you program everything game engines have in common: Input🕹️ Camera👁️ Physics⚽ Animation🏃 Audio🎸 UI️📱 Scenes🎭 Objects🪜 and more! 
 
