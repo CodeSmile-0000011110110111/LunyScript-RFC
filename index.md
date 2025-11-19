@@ -5,10 +5,9 @@ title: LunyScript - The Game Programming Gateway
 
 # **LunyScript 🎮** The Game Programming Gateway
 
-You have a great game idea? But game engine programming is complex, confusing, and completely different everywhere?
+You want to make games? But game engine programming is complex, confusing, and completely different everywhere?
 
-LunyScript is your **entry ticket** to Godot and Unity:
-
+LunyScript is your **VIP entry ticket** to Godot and Unity: same code, different editor.
 
 ```csharp
 public MyPlayer()
@@ -19,46 +18,37 @@ public MyPlayer()
 }
 ```
 
-- **Godot and Unity**: Easier than Roblox and GameMaker!<br/><sup>Coming soon: **Unity** (Q2/2026), **Godot** (Q4/2026), ...</sup> 
-- **Skip dead-ends**: Learn the **career language C#** - no scary syntax, promise!
-- **Escape lock-in**: Same code, works everywhere! Not satisfied? Switch engines! 
-- **Ready for more?**: LunyScript extends easily. Transition to engine APIs, line by line.  
-- **No errors**: Mistakes happen! See them in-game. Stay in the flow of creating.
-- **Powerful**: Learn proven concepts, make entire games. Enough for a _Megabonk_!
+I used LunyScript to create a game in three engines simultaneously:
 
-<iframe width="648" height="365" src="https://www.youtube.com/embed/PfZ4VBui_Wo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![LunyScript Demo](media/LunyScript_Demo.gif)
 
-## **Game Over For _Tutorial Hell_ !** 🤗
+## **✨ Same Code - Any Engine ✨**
 
----
+LunyScript is the beginner-friendly, high-level game programming API that works **uniformly across game engines**. It's free and open source (MIT License).
 
-## **✨ Same Code - Any Engine ✨** 
+- **Godot and Unity**: Easier code as Roblox & GameMaker 😏🤗<br/><sup>**Unity:** Q2/2026, **Godot:** Q4/2026 [⏰ Join Patreon newsletter! 🔔](https://www.patreon.com/CodeSmile){:target="_blank"}</sup> 
+- **Skip dead-ends**: Learn the **career language C#** 🧑‍🎓🧑‍💻<br/><sup>Defer the scary syntax but work like a Pro.</sup>
+- **Concise**: 3-5 times less code 🤫🧘<br/><sup>Compared to GDScript. Code that's clear and consistent!</sup>
+- **No errors**: Stay in the flow of creating 🎨🎧<br/><sup>Mi<ins>ts</ins>akes happen! See and inspect issues in-game.</sup>
+- **Powerful**: Enough to create a _Megabonk_ 👑💎<br/><sup>Learn proven concepts: Statemachines, Behaviour Trees, Coroutines.</sup>
+- **Experiment**: Trial and error is encouraged 🧪🥼<br/><sup>Pure creative joy! Avoid getting sucked into **Tutorial Hell**!</sup>
+- **Ready for more?**: LunyScript extends easily 🛝🚀<br/><sup>Transition to engine APIs, line by line, at your own pace.️️</sup>
+- **Escape lock-in**: Same code, works everywhere 🔑🔓<br/><sup>Dislike the editor? Community unhelpful? Switch engines!️</sup>
 
-LunyScript is the beginner-friendly, high-level gameplay programming API. It works **uniformly across C# game engines** with built-in Variable, Statemachines, and Behaviour Trees.
+LunyScript let's you program everything game engines have in common: Input, Camera, Physics, Animation, Audio, UI, Scenes, Objects, you name it! Use the engine's powerful editing tools, then use LunyScript to orchestrate what happes in-game.
 
-Control everything needed to implement gameplay: Input, Camera, Physics, Animation, Audio, UI, Scenes and Objects.
-
-Something missing? Extend its bite-sized blocks by writing C# extension methods. Learn the engine as you go. Build your own functional, reusable, portable code library.
-
-**Core Principles:**
-- **Write Once, Run Anywhere** - Uniform API across C# game engines
-- **Convention Over Configuration** - Smart defaults, minimal boilerplate
-- **Extensibility First** - Extend via C# extension methods
-- **Progressive Disclosure** - Learn the engine as you go
-- **Composability** - Build functional, reusable, portable code libraries
-- **Declarative Design** - Express intent, not implementation
-- **Built-in Patterns** - Statemachines and Behaviour Trees included
-
-**In Plain English:** LunyScript lets you write game code once and use it in different engines. It keeps things simple with sensible defaults, so you write less code. When you need something special, just add it yourself. You learn at your own pace while building a collection of code you can reuse forever.
-
-
+Why learn pointless differences like`_init`,`Awake`,`BeginPlay`when you just want to make your dream game come true? 😄
 
 ---
 
 ## **🤨 Any Engine?? Das Crazy! 🤯** 
 
-Game engines all share the same fundamental features needed to create a [_Megabonk_](https://store.steampowered.com/app/3405340/Megabonk/){:target="_blank"}. Here's the proof: three engines, same code, made in 20 days.
+Game engines make games. They share the same essential features for a [_Megabonk_](https://store.steampowered.com/app/3405340/Megabonk/){:target="_blank"}. 
+Most games don't need more. Why bother programming them differently?
 
+API standardization has escaped game engines for all the wrong reasons: competition, pride, control, evolution. _Games are different_ so engine APIs must be too.
+
+Proof: three engines, same code, made in 20 days. **They said it's impossible!**🤔🫡
 [![LunyScript Demo](media/LunyScript_Demo.gif)](PoC_2025-10/)
 
 🚧 **Status: Proof of Concept** 🚧<br/>
