@@ -79,6 +79,9 @@ Onboarding and documentation was easy. Need another button? One line of code.
 I **know** that the amalgamation of **design as code** works and provides **huge benefits** to all **creative thinkers and tinkerers**, not just beginners.
 
 **→ [The Problem Statement](docs/ProblemStatement)** that lead to LunyScript.
+<br/>**→ [About me and my experience](AUTHOR.md)** that lead to LunyScript.
+<br/>**→ [The vision](VISION.md)** for LunyScript.
+<br/>**→ [The philosophy](docs/Philosophy.md)** of LunyScript.
 
 ---
 
