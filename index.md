@@ -19,12 +19,12 @@ public MyPlayer()
 }
 ```
 
-- **Godot and Unity**: Easier than Roblox and GameMaker! <sup>Coming soon: **Unity** (Q2/2026), **Godot** (Q4/2026), ...</sup> 
-- **Skip dead-ends**: Learn the **career language C#** - the easy way!
+- **Godot and Unity**: Easier than Roblox and GameMaker!<br/><sup>Coming soon: **Unity** (Q2/2026), **Godot** (Q4/2026), ...</sup> 
+- **Skip dead-ends**: Learn the **career language C#** - no scary syntax, promise!
 - **Escape lock-in**: Same code, works everywhere! Not satisfied? Switch engines! 
 - **Ready for more?**: LunyScript extends easily. Transition to engine APIs, line by line.  
 - **No errors**: Mistakes happen! See them in-game. Stay in the flow of creating.
-- **Powerful**: Learn proven concepts that drive entire games. Enough for a _Megabonk_!
+- **Powerful**: Learn proven concepts, make entire games. Enough for a _Megabonk_!
 
 <iframe width="648" height="365" src="https://www.youtube.com/embed/PfZ4VBui_Wo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
