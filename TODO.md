@@ -6,6 +6,7 @@
 
 - Video (30s): Nullref vs In-Scene notes
 - Video (30-60s): How does Luny work (very high level)
+- add browser tab icon
 
 
 ### Evidence Gathering - Support "APIs as Barrier" Claim
