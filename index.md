@@ -86,9 +86,9 @@ I **know** that the amalgamation of **design as code** works and provides **huge
 
 # **Who This Is For**
 
-**🎓 Self-Learners & Hobbyists**<br/>Easier than Roblox scripting. Publish anywhere. [Learn more →](docs/TargetAudience.md#-self-learners--hobbyists-primary-audience)
+**🎓 Self-Learners & Hobbyists**<br/>Easier than Roblox scripting. Publish anywhere! [Learn more →](docs/TargetAudience.md#-self-learners--hobbyists-primary-audience)
 
-**📹 _Learnfluencers_**<br/>Pit engines head-to-head. Expand your audience. [Learn more →](docs/TargetAudience.md#-learnfluencers-online-tutors-high-impact-multipliers)
+**📹 _Learnfluencers_**<br/>Grow your audience. Compare engines. Adopt early! [Learn more →](docs/TargetAudience.md#-learnfluencers-online-tutors-high-impact-multipliers)
 
 **🎨 Visual Scripters**<br/>Tired of dragging noodly nodes? Design as code! [Learn more →](docs/TargetAudience.md#-visual-scripters-early-adopters)
 
