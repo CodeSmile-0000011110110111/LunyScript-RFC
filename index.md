@@ -54,10 +54,10 @@ Most games don't need much more. Why bother programming them differently?
 
 API standardization has escaped game engines for all the wrong reasons: competition, pride, control, evolution. _Games are different_ so engine APIs must be too. **Wrong!**
 
-Proof: three engines, same code, made in 20 days. **They said it's impossible!**🤔🫡
+**Proof**: Three engines, same code.🫡 -- **They said it's impossible!**🤔
+
 [![LunyScript Demo](media/LunyScript_Demo.gif)](PoC_2025-10/)
 
-🚧 **Status: Proof of Concept** 🚧<br/>
 📸 → [**View detailed PoC documentation, screenshots, and source code**](PoC_2025-10/)
 
 ---
