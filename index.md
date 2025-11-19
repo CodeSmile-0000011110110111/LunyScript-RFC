@@ -30,7 +30,7 @@ LunyScript is the beginner-friendly, high-level game programming API that works 
 - **Godot and Unity**: Easier to program than Roblox & GameMaker 😏🤗<br/><sup>**Unity:** Q2/2026, **Godot:** Q4/2026 [⏰ Join Patreon for updates! 🔔](https://www.patreon.com/CodeSmile){:target="_blank"}</sup> 
 - **Skip dead-ends**: Learn the **career language C#** 🧑‍🎓🧑‍💻<br/><sup>Defer the scary syntax but work like a Pro.</sup>
 - **Concise**: 3-5 times less code 🤫🧘<br/><sup>Compared to GDScript. Code that's clear and consistent!</sup>
-- **No errors**: Stay in the flow of creating 🎨🎧<br/><sup>Mi<ins>ts</ins>akes happen! See and inspect issues in-game.</sup>
+- **No runtime errors**: Stay in the flow of creating 🎨🎧<br/><sup>Mi<ins>ts</ins>akes happen! See and inspect issues in-game.</sup>
 - **Powerful**: Enough to create a _Megabonk_ 👑💎<br/><sup>Learn proven concepts: Statemachines, Behaviour Trees, Coroutines.</sup>
 - **Experiment**: Trial and error is encouraged 🧪🥼<br/><sup>Pure creative joy! Avoid getting sucked into **Tutorial Hell**!</sup>
 - **Ready for more**: LunyScript extends easily 🛝🚀<br/><sup>Transition to engine APIs one small step at a time, at your own pace.️️</sup>
@@ -38,13 +38,12 @@ LunyScript is the beginner-friendly, high-level game programming API that works 
 
 LunyScript let's you program everything game engines have in common: Input🕹️ Camera👁️ Physics⚽ Animation🏃 Audio🎸 UI️📱 Scenes🎭 Objects🪜 and more! 
 
-Powerful engine editing tools combined with LunyScript makes making games easy!
-
 ---
+### LunyScript ➕ Engine Editor 🟰 intuitive & rapid game-making! 🛠️
 
 <iframe src="https://ghbtns.com/github-btn.html?user=CodeSmile-0000011110110111&repo=LunyScript-RFC&type=star&count=true" frameborder="0" scrolling="1" width="100" height="22"></iframe>
 <font size=6>👈️👍️</font>
-Please **star** the [LunyScript-RFC GitHub repository](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC){:target="_blank"} to show your interest!
+Please **star** the [LunyScript-RFC GitHub](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC){:target="_blank"} repository [⏰ Join Patreon for updates! 🔔](https://www.patreon.com/CodeSmile){:target="_blank"}
 
 ---
 
@@ -76,10 +75,10 @@ LunyScript is 3-5 times less verbose than GDScript! See **→ [Code Comparison](
 The core concepts behind LunyScript have been **proven in production** over several titles. Designers loved the consistency and extensibility. 
 Onboarding and documentation was easy. Need another button? One line of code.
 
-I **know** that the amalgamation of **design as code** works and provides **huge benefits** to all **creative thinkers and tinkerers**, not just beginners.
+I **know** that the amalgamation of **design as code** works and provides **huge benefits** to all **creative thinkers and tinkerers**. Designers, not just beginners.
 
 **→ [The Problem Statement](docs/ProblemStatement)** that lead to LunyScript.
-<br/>**→ [About me and my experience](AUTHOR.md)** that lead to LunyScript.
+<br/>**→ [About me and my experience](AUTHOR.md)** that formed LunyScript.
 <br/>**→ [The vision](VISION.md)** for LunyScript.
 <br/>**→ [The philosophy](docs/Philosophy.md)** of LunyScript.
 
