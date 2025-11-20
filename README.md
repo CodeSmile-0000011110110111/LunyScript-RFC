@@ -1,4 +1,4 @@
-# LunyScript 🎮 The Game Programming Gateway
+# LunyScript 🎮 Your Game Programming Gateway
 ## You want to make games? Great! 😃
 
 But game engine code is complex, confusing, and completely different everywhere. 🫨
