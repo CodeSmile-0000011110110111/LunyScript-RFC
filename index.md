@@ -95,7 +95,7 @@ With potential for: 🏫 [Educators](docs/TargetAudience.md#-formal-educators--i
 
 - **Phase 1:** **Unity** (C#)<br/>API Design; Portable Layer; Demos & Docs (Q2 2026)
 - **Phase 2:** **Godot** (C#)<br/>Cross-Engine Tests; Improve Onboarding (Q4 2026)
-- **Phase 3:** **Lua & Modding**<br/>Bindings Generator; Stabilize API; More Engines PoC (Q2 2027)
+- **Phase 3:** **Lua & Modding**<br/>Bindings Generator; Stabilize API; More Engines PoC (2027)
 
 **→ [Maintenance strategy](MAINTENANCE.md)**
 
