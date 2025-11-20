@@ -9,7 +9,7 @@ title: LunyScript - The Game Programming Gateway
 
 But game engine code is complex, confusing, and completely different everywhere. 🫨
 
-LunyScript is your **fast-lane, front-row ticket** to game programming!
+LunyScript is your **🫵 fast-lane, front-row ticket 👑** to game programming!🕹️👾🧑‍💻
 
 ```csharp
 public MyPlayer()
@@ -52,7 +52,8 @@ Please **star** the [LunyScript-RFC GitHub](https://github.com/CodeSmile-0000011
 Game engines make games. They share the same essential features for a [_Megabonk_](https://store.steampowered.com/app/3405340/Megabonk/){:target="_blank"}. 
 Most games don't need much more. Why bother programming them differently?
 
-API standardization has escaped game engines for all the wrong reasons: competition, pride, control, evolution. _Games are different_ so engine APIs must be too. **Wrong!**
+API standardization has escaped game engines for all the wrong reasons: competition, pride, control, evolution. 
+_Games are different_ so engine code must be too. **Wrong!** 😲
 
 **Proof**: Unreal, Unity, Godot: same game, same code.🫡 -- **They said it's impossible!**🤔
 
@@ -62,20 +63,23 @@ API standardization has escaped game engines for all the wrong reasons: competit
 
 ---
 
-# **It's just a toy ..**
+# **More Accessible Code Prevents Tutorial Hell**
 
+LunyScript provides **easy entry** into game engine programming.
+It teaches **modular design** and **creation through experimentation**.
+Users **transition gradually** to native programming expertise, while LunyScript **remains useful** in their toolbox.
+ 
 The core concepts behind LunyScript have been **proven in production** over several titles. Designers loved the **consistency and extensibility**. 
 **Onboarding and documentation** was easy. 
 
-LunyScript teaches **modular design** and puts the **focus on creation**.
-
-I **know** that the amalgamation of **design as code** works and provides **huge benefits** to all **creative thinkers and tinkerers**. These documents provide more rationale: 
+**I know** that the amalgamation of **design as code** works and provides **huge benefits** to all **creative thinkers and tinkerers**. You'll find my rationale in these documents: 
 
 **→ [The Problem Statement](docs/ProblemStatement)** that lead to LunyScript.
 <br/>**→ [About me and my experience](AUTHOR.md)** that formed LunyScript.
-<br/>**→ [The vision](VISION.md)** for LunyScript.
-<br/>**→ [The philosophy](docs/Philosophy.md)** of LunyScript.
-<br/>**→ [Compare](docs/CodeComparison.md)** LunyScript code with GDScript, C#, Roblox. 
+<br/>**→ [The vision](VISION.md)** for LunyScript, now and beyond.
+<br/>**→ [The philosophy](docs/Philosophy.md)** of LunyScript explains why it's feasible.
+<br/>**→ [The maintenance strategy](MAINTENANCE.md)** details how LunyScript is manageable.
+<br/>**→ [Compare LunyScript code](docs/CodeComparison.md)** with GDScript, C#, Roblox to see its benefits.
 
 ---
 
@@ -96,8 +100,6 @@ With potential for: 🏫 [Educators](docs/TargetAudience.md#-formal-educators--i
 - **Phase 1:** **Unity** (C#)<br/>API Design; Portable Layer; Demos & Docs (Q2 2026)
 - **Phase 2:** **Godot** (C#)<br/>Cross-Engine Tests; Improve Onboarding (Q4 2026)
 - **Phase 3:** **Lua & Modding**<br/>Bindings Generator; Stabilize API; More Engines PoC (2027)
-
-**→ [Maintenance strategy](MAINTENANCE.md)**
 
 ---
 
