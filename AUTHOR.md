@@ -59,7 +59,7 @@ Then I began freelancing for mobile as it exploded. I had fun writing game engin
 <img src="media/history/SiemensInspiroConfigurator.png" width="300">
 </div>
 
-What followed was an extreme mixture of serial low-budget projects and innovative high-tech entertainment experiences. Mostly Unity, plenty of Lidars and Projectors.
+What followed was an extreme mixture of serial low-budget projects and innovative high-tech experiences for IBM, ZF, Voith, SEW Eurodrive, National Geographic. Almost exclusively with Unity.
 
 <div class="clickable-image" style="cursor: pointer; display: inline-block;">
 <div style="text-align: center; font-size: 12px; color: #666; margin-bottom: 5px;">
