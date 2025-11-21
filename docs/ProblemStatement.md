@@ -8,6 +8,9 @@ Game engines create a **strong lock-in effect** due to their **highly unique API
 
 Among self-learners, **tutorial hell** is widespread - a comfort zone shielding oneself from engine complexity through passive consumption.
 
+<iframe width="648" height="365" src="https://www.youtube.com/watch?v=PfZ4VBui_Wo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<sup>This video explains the game engine API problem in a nutshell.</sup>
+
 **Games are the single strongest motivator** that brings young people **into programming**. Yet game engines lack a **safe 'learn by doing' sandbox** that invites experimentation.
 
 ## The Road To A Solution
