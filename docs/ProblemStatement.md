@@ -1,5 +1,8 @@
 # Problem Statement
 
+<suB>The game engine API problem in a nutshell:</suB>
+<iframe width="648" height="365" src="https://www.youtube.com/embed/PfZ4VBui_Wo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## The Core Problem
 
 **Learning game programming requires mastering complex, engine-specific APIs** before one can begin to understand game development concepts. This creates **artificial barriers** for talented, creative people.
