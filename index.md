@@ -7,7 +7,7 @@ title: LunyScript - The Game Programming Gateway
 
 ## You want to make games? Great! 😃
 
-But game engine code is complex, confusing, and completely different everywhere. 🫨
+But game engine code is complex, confusing, and completely different everywhere. 😵‍💫
 
 LunyScript is your **🫵 fast-lane, front-row ticket 👑** to game programming!🕹️👾🧑‍💻
 
@@ -89,9 +89,11 @@ The core concepts behind LunyScript have been **proven in production** over seve
 
 **📹 _Learnfluencers_**<br/>Grow your audience. Compare engines. Adopt early! [Learn more →](docs/TargetAudience.md#-learnfluencers-online-tutors-high-impact-multipliers)
 
-**🎨 Visual Scripters**<br/>Tired of dragging noodly nodes? Design as code! [Learn more →](docs/TargetAudience.md#-visual-scripters-early-adopters)
-
-With potential for: 🏫 [Educators](docs/TargetAudience.md#-formal-educators--institutions) 🎮[Prototypers](docs/TargetAudience.md#-prototypers--game-jammers) 🔧[Framework Developers](docs/TargetAudience.md#-framework--tool-developers)
+With potential for:
+<br/>🏫[Educators](docs/TargetAudience.md#-formal-educators--institutions)
+<br/>🎨[Visual Scripters →](docs/TargetAudience.md#-visual-scripters-early-adopters)
+<br/>🎮[Prototypers](docs/TargetAudience.md#-prototypers--game-jammers)
+<br/>🔧[Framework Developers](docs/TargetAudience.md#-framework--tool-developers)
 
 ---
 
@@ -100,6 +102,8 @@ With potential for: 🏫 [Educators](docs/TargetAudience.md#-formal-educators--i
 - **Phase 1:** **Unity** (C#)<br/>API Design; Portable Layer; Demos & Docs (Q2 2026)
 - **Phase 2:** **Godot** (C#)<br/>Cross-Engine Tests; Improve Onboarding (Q4 2026)
 - **Phase 3:** **Lua & Modding**<br/>Bindings Generator; Stabilize API; More Engines PoC (2027)
+
+Phase 1: Fully funded. Applying for grants for Phase 2 and beyond.
 
 ---
 
