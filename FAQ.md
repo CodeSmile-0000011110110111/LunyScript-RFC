@@ -1,12 +1,14 @@
 # Frequently Asked Questions (FAQ)
 
-## Why not just learn one engine API properly?
+## Why not just learn the engine API properly?
 
-Game programming is hard. It consistently ranks among the most challenging domains due to realtime programming, many cross-cutting concerns, and the sheer number of systems that interact. 
+Game development is hard. Especially so for beginners. 
 
-**LunyScript reduces that complexity** with high-level, declarative patterns. State machines and behavior trees instead of cargo cult coroutines. Fault-tolerant execution instead of null-references.
+Game programming consistently ranks among the most challenging domains due to **realtime** requirements, many **multi-domain, cross-cutting concerns**, and the sheer number of systems that interact. 
 
-And then you also learned to program in two or more engines. That makes it all the more exciting!
+**LunyScript reduces that complexity** with high-level, declarative patterns because follow-along copy-paste tutorials aren't enabling real growth. In fact, we have a name for this pervasive problem: **tutorial hell**. 
+
+What learners lack is a safe environment to experiment in to get their first projects started **and** finished. With a declarative functional API that feels closer to Scratch, but is text-based. With fault-tolerant execution and capable enough to build publishable projects.
 
 ---
 
