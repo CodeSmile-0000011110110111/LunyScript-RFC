@@ -7,7 +7,7 @@ title: LunyScript - The Game Programming Gateway
 
 ## You want to make games? Great! 😃
 
-But game engine code is complex, confusing, and completely different everywhere. 😵‍💫
+But Godot/Unity code is complex, confusing, and completely different everywhere. 😵‍💫
 
 LunyScript is your **🫵 fast-lane, front-row ticket 👑** to C# game programming!🕹️🧑‍💻
 
