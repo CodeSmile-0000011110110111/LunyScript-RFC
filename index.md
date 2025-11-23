@@ -41,8 +41,8 @@ LunyScript let's you program everything game engines have in common: Input🕹�
 ---
 ### LunyScript ➕ Engine Editor 🟰 intuitive & rapid game-making! 🛠️
 
-<iframe src="https://ghbtns.com/github-btn.html?user=CodeSmile-0000011110110111&repo=LunyScript-RFC&type=star&count=true" frameborder="0" scrolling="1" width="100" height="22"></iframe>
-<font size=6>👈️👍️</font>
+<font size=6>👉<iframe src="https://ghbtns.com/github-btn.html?user=CodeSmile-0000011110110111&repo=LunyScript-RFC&type=star&count=true" frameborder="0" scrolling="1" width="100" height="22"></iframe>
+👈️&nbsp;👍️</font>
 Please **star** the [LunyScript-RFC GitHub](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC){:target="_blank"} repository [⏰ Join Patreon for updates! 🔔](https://www.patreon.com/CodeSmile){:target="_blank"}
 
 ---
@@ -121,6 +121,6 @@ _Games are different_ so engine code must be too. **Wrong!** 😲
 
 ---
 
-<iframe src="https://ghbtns.com/github-btn.html?user=CodeSmile-0000011110110111&repo=LunyScript-RFC&type=star&count=true" frameborder="0" scrolling="1" width="100" height="22"></iframe>
-<font size=6>👈️👍️</font>
+<font size=6>👉<iframe src="https://ghbtns.com/github-btn.html?user=CodeSmile-0000011110110111&repo=LunyScript-RFC&type=star&count=true" frameborder="0" scrolling="1" width="100" height="22"></iframe>
+👈️&nbsp;👍️</font>
 Please **star** the [LunyScript-RFC GitHub repository](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC){:target="_blank"} to show your support!
