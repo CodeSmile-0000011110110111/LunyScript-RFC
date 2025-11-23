@@ -124,7 +124,7 @@ _Games are different_ so engine code must be too. **Wrong!** 😲
 
 [![LunyScript Demo](media/LunyScript_Demo.gif)](PoC_2025-10/)
 
-📸 → [**View detailed PoC documentation, screenshots, and source code**](PoC_2025-10/)
+📸 → [**View 'Proof of Concept' (vertical slice) Details, Screenshots, Source Code**](PoC_2025-10/)
 
 
 ## Got More Questions?
