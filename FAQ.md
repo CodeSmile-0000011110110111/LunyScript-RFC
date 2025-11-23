@@ -10,6 +10,22 @@ And then you also learned to program in two or more engines. That makes it all t
 
 ---
 
+## We only use one engine - why portable code?
+
+True, we use one engine for one project at a time. But nobody sticks to just one engine forever.
+
+Especially beginners struggle to 'make the right choice' as they need to make a pick before they truly understand why.
+The time investment quickly locks them into that one engine. Portable code allows them to trial multiple engines, 
+and more easily transition between them as they already do anyway - just with much higher friction.
+
+For more experienced users, switching engines is still a time-consuming task. It's actually quite common for a Unity developer to try Godot in a game jam. To that end, being able to quickly pick up programming helps a lot to be productive and get a good feel for the editor.
+
+Lastly, agencies around the world often use multiple engines based on client requirements. For them, creating a shared framework poses many challenges and copy/paste cherry-picking is most common - the reusable tasks are too small to warrant abstracting them into a framework. LunyScript's block-based programming concept provides exactly the framework they need.
+
+Finally, even within one engine being able to do simple things with simple code can be a huge productivity boost.
+
+---
+
 ## Coding isn't that hard anymore - everyone just uses AI anyway?
 
 True, AI coding assistants are powerful learning tools. But they work best with simple, consistent APIs.

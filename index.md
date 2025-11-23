@@ -98,13 +98,17 @@ Phase 1: Fully funded. Applying for grants for Phase 2 and beyond.
 
 **Share your thoughts, ask questions, propose ideas!**
 
-[💬 Join the Discussions](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC/discussions/){:target="_blank"} • [📖 Design](https://codesmile-0000011110110111.github.io/LunyScript-RFC/docs/) • [❓ FAQ](FAQ.md)
+→ [💬 Join the Discussions](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC/discussions/){:target="_blank"}
 
-Help shape the future of LunyScript - **democratizing game engine programming**.
+→ [⏰ Join Patreon for Updates! 🔔](https://www.patreon.com/CodeSmile){:target="_blank"}
+
+Help shape the future of LunyScript: **democratizing game engine programming** because _democratizing game development_ has a blind spot: **young talents**!
+
+---
 
 <font size=6>👉<iframe src="https://ghbtns.com/github-btn.html?user=CodeSmile-0000011110110111&repo=LunyScript-RFC&type=star&count=true" frameborder="0" scrolling="1" width="100" height="22"></iframe>
 👈️&nbsp;👍️</font>
-Please **star** the [LunyScript-RFC GitHub repository](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC){:target="_blank"} to show your support!
+Please **star** the [LunyScript-RFC GitHub repository](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC){:target="_blank"} to help convince sponsors!
 
 ---
 
@@ -123,7 +127,7 @@ _Games are different_ so engine code must be too. **Wrong!** 😲
 📸 → [**View detailed PoC documentation, screenshots, and source code**](PoC_2025-10/)
 
 
-## More questions?
+## Got Questions?
 <br/>**→ [Read the FAQ (frequently asked questions)](FAQ.md)**
 
 ---
