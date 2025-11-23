@@ -4,10 +4,13 @@
 
 ## URGENT
 
+- !! make many small how-to videos
+  - as teasers for LunyScript and always invite users to "star" the repo!
+  - topics: button does something, collision does something, input does something, timer, spawner, char motion
 - Video (30s): Nullref vs In-Scene notes
 - Video (30-60s): How does Luny work (very high level)
-- add browser tab icon
-
+- add browser tab fav-icon 
+-  PIMP THE GIF!!! show engine logos, show editor then focus onto game view, code: label "Same" 3x successively  
 
 ### Evidence Gathering - Support "APIs as Barrier" Claim
 

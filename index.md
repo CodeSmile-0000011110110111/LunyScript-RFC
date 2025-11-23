@@ -65,6 +65,9 @@ _Games are different_ so engine code must be too. **Wrong!** 😲
 
 # **More Accessible Code Prevents Tutorial Hell**
 
+<suB>Game engine's 'full flexibility' programming problem in a nutshell:</suB>
+<iframe width="648" height="365" src="https://www.youtube.com/embed/PfZ4VBui_Wo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 LunyScript provides **easy entry** into game engine programming.
 It teaches **modular design** and **creation through experimentation**.
 Users **transition gradually** to native programming expertise, while LunyScript **remains useful** in their toolbox.
