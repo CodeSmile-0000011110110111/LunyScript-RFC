@@ -9,7 +9,7 @@ title: LunyScript - The Game Programming Gateway
 
 But game engine code is complex, confusing, and completely different everywhere. 😵‍💫
 
-LunyScript is your **🫵 fast-lane, front-row ticket 👑** to game programming!🕹️👾🧑‍💻
+LunyScript is your **🫵 fast-lane, front-row ticket 👑** to C# game programming!🕹️🧑‍💻
 
 ```csharp
 public MyPlayer()
