@@ -49,7 +49,7 @@ Please **star** the [LunyScript-RFC GitHub](https://github.com/CodeSmile-0000011
 
 # **More Accessible Code Prevents Tutorial Hell**
 
-<suB>Game engine's 'full flexibility' programming problem in a nutshell:</suB>
+<sub>Game engine's 'full flexibility' programming problem in a nutshell:</sub>
 <iframe width="648" height="365" src="https://www.youtube.com/embed/PfZ4VBui_Wo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 LunyScript provides **easy entry** into game engine programming.
