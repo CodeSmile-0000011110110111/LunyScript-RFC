@@ -47,22 +47,6 @@ Please **star** the [LunyScript-RFC GitHub](https://github.com/CodeSmile-0000011
 
 ---
 
-## **🤨 Any Engine?? Das Crazy! 🤯** 
-
-Game engines make games. They share the same essential features for a [_Megabonk_](https://store.steampowered.com/app/3405340/Megabonk/){:target="_blank"}. 
-Most games don't need much more. Why bother programming them differently?
-
-API standardization has escaped game engines for all the wrong reasons: competition, pride, control, evolution. 
-_Games are different_ so engine code must be too. **Wrong!** 😲
-
-**Proof**: Unreal, Unity, Godot: same game, same code.🫡 -- **They said it's impossible!**🤔
-
-[![LunyScript Demo](media/LunyScript_Demo.gif)](PoC_2025-10/)
-
-📸 → [**View detailed PoC documentation, screenshots, and source code**](PoC_2025-10/)
-
----
-
 # **More Accessible Code Prevents Tutorial Hell**
 
 <suB>Game engine's 'full flexibility' programming problem in a nutshell:</suB>
@@ -117,6 +101,23 @@ Phase 1: Fully funded. Applying for grants for Phase 2 and beyond.
 [💬 Join the Discussions](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC/discussions/){:target="_blank"} • [📖 Design](https://codesmile-0000011110110111.github.io/LunyScript-RFC/docs/) • [❓ FAQ](FAQ.md)
 
 Help shape the future of LunyScript - **democratizing game engine programming**.
+
+
+---
+
+## **🤨 Any Engine?? Das Crazy! 🤯**
+
+Game engines make games. They share the same essential features for a [_Megabonk_](https://store.steampowered.com/app/3405340/Megabonk/){:target="_blank"}.
+Most games don't need much more. Why bother programming them differently?
+
+API standardization has escaped game engines for all the wrong reasons: competition, pride, control, evolution.
+_Games are different_ so engine code must be too. **Wrong!** 😲
+
+**Proof**: Unreal, Unity, Godot: same game, same code.🫡 -- **They said it's impossible!**🤔
+
+[![LunyScript Demo](media/LunyScript_Demo.gif)](PoC_2025-10/)
+
+📸 → [**View detailed PoC documentation, screenshots, and source code**](PoC_2025-10/)
 
 ---
 
