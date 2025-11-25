@@ -25,18 +25,18 @@ Why learn pointless differences like`_init`,`Awake`,`BeginPlay`when you just wan
 
 ## **✨ Same Code - Many Engines ✨**
 
-LunyScript is the beginner-friendly, high-level game programming API that works **uniformly across game engines**. It's free and open source (MIT License).
+LunyScript let's you program everything game engines have in common: Input🕹️ Camera👁️ Physics⚽ Animation🏃 Audio🎸 UI️📱 Scenes🎭 Objects🪜 and more!
 
 - **Godot and Unity**: Easier to program than Roblox & GameMaker 😏🤗<br/><sup>**Unity:** Q2/2026, **Godot:** Q4/2026 [⏰ Join Patreon for updates! 🔔](https://www.patreon.com/CodeSmile){:target="_blank"}</sup> 
-- **Skip dead-ends**: Learn the **career language C#** 🧑‍🎓🧑‍💻<br/><sup>Defer the scary syntax but work like a Pro with Rider, VS, VSCode.</sup>
 - **No runtime errors**: Stay in the flow of creating 🎨🎧<br/><sup>Mi<ins>ts</ins>akes happen! See and inspect issues where they occur: in-game.</sup>
-- **Powerful**: Enough to create a _Megabonk_ 👑💎<br/><sup>Learn proven concepts: Statemachines, Behaviour Trees, Coroutines.</sup>
-- **Concise**: 3-5 times less code than GDScript 🤫🧘<br/><sup>Code is clear and consistent! No CS jargon. No visual scripting spaghetti.</sup>
-- **Ready for more**: LunyScript extends easily 🛝🚀<br/><sup>Transition to engine APIs one small step at a time, at your own pace.️️</sup>
 - **Experiment**: Trial and error is encouraged 🧪🥼<br/><sup>Pure creative joy! Avoid getting drawn into **Tutorial Hell**!</sup>
+- **Concise**: 3-5 times less code than GDScript 🤫🧘<br/><sup>Code is clear and consistent! No CS jargon. No visual scripting spaghetti.</sup>
+- **Powerful**: Enough to create a _Megabonk_ 👑💎<br/><sup>Learn proven concepts: Statemachines, Behaviour Trees, Coroutines.</sup>
+- **Ready for more**: LunyScript extends easily 🛝🚀<br/><sup>Transition to engine APIs one small step at a time, at your own pace.️️</sup>
+- **Skip dead-ends**: Learn the **career language C#** 🧑‍🎓🧑‍💻<br/><sup>Defer the scary syntax but work like a Pro with Rider, VS, VSCode.</sup>
 - **Escape lock-in**: Same code, works everywhere 🔑🔓<br/><sup>Dislike the editor? Community unhelpful? No jobs? Switch engines, keep the code!️</sup>
 
-LunyScript let's you program everything game engines have in common: Input🕹️ Camera👁️ Physics⚽ Animation🏃 Audio🎸 UI️📱 Scenes🎭 Objects🪜 and more! 
+LunyScript is the beginner-friendly, high-level game programming DSL that works **uniformly across game engines**. It's free and open source (MIT License).
 
 ---
 ### LunyScript ➕ Engine Editor 🟰 intuitive & rapid game-making! 🛠️
