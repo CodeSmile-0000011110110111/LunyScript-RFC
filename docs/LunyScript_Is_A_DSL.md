@@ -16,7 +16,7 @@
 
 ## Overall Classification
 
-**LunyScript: 73% DSL / 27% API**
+**LunyScript: 73% DSL / 27% API** - very accurate measurement! :)
 
 **Reasoning:** LunyScript is primarily a **DSL** because it:
 - Has declarative, syntax-reduced grammar distinct from standard C#
