@@ -15,6 +15,7 @@ Welcome to the LunyScript design documentation. This section covers the architec
 - [Namespace Structure](NamespaceStructure.md) - API organization and usage patterns
 - [Code Comparison](CodeComparison.md) - Side-by-side comparison: LunyScript vs traditional approaches
 - [FAQ](../FAQ.md) - Frequently asked questions
+- [LunyScript: DSL or API?](LunyScript_Is_A_DSL.md) - It's a DSL with API-like qualities
 
 ### Design Risk Assessment
 - [Cross-Cutting Concerns](CrossCuttingConcerns.md) - Architectural concerns requiring upfront design
