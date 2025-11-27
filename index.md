@@ -47,7 +47,7 @@ Please **star** the [LunyScript-RFC GitHub](https://github.com/CodeSmile-0000011
 
 ---
 
-# **More Accessible Code Prevents Tutorial Hell**
+## **More Accessible Code Prevents Tutorial Hell**
 
 <sub>Game engine's 'full flexibility' programming problem in a nutshell:</sub>
 <iframe width="648" height="365" src="https://www.youtube.com/embed/PfZ4VBui_Wo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -70,7 +70,7 @@ The core concepts behind LunyScript have been **proven in production** over seve
 
 ---
 
-# **Who This Is For**
+## **Who This Is For**
 
 **🎓 Self-Learners & Hobbyists**<br/>Easier than Roblox scripting. Publish anywhere! [Learn more →](docs/TargetAudience.md#-self-learners--hobbyists-primary-audience)
 
@@ -84,7 +84,7 @@ With potential for:
 
 ---
 
-# **Roadmap**
+## **Roadmap**
 
 - **Phase 1:** **Unity** (C#)<br/>API Design; Portable Layer; Demos & Docs (Q2 2026)
 - **Phase 2:** **Godot** (C#)<br/>Cross-Engine Tests; Improve Onboarding (Q4 2026)
@@ -94,7 +94,7 @@ Phase 1: Fully funded. Applying for grants for Phase 2 and beyond.
 
 ---
 
-# **Join the Discussion!**
+## **Join the Discussion!**
 
 **Share your thoughts, ask questions, propose ideas!**
 
