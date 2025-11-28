@@ -3,7 +3,7 @@ layout: default
 title: LunyScript - The Game Programming Gateway
 ---
 
-# **LunyScript 🎮** Your Game Programming Gateway
+# **LunyScript🎮** Your Game Programming Gateway
 
 ## You want to make games? Great! 😃
 

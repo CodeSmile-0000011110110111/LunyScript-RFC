@@ -8,37 +8,16 @@
   - as teasers for LunyScript and always invite users to "star" the repo!
   - topics: button does something, collision does something, input does something, timer, spawner, char motion
 - Video (30s): Nullref vs In-Scene notes
-- Video (30-60s): How does Luny work (very high level)
+- Video (2-3 min): "What is LunyScript", benefits, goals, how does it work (very high level)
+  - "I write code (first three letters printed on screen as i say them, then cut) .. for Godot (add logo left) .. and Unity (add logo right) .. together (what to show here? squeeze them together, with hearts?). -- I write LunyScript! (show code example) It's easier than GDScript and works in both engines the same. Yes. Portable code. (cut) -- (show various examples, code and effect.) "
+  - Mext one shows how to spawn something and how changing code changes what happens on screen. Maybe they all should do that.
+
 - add browser tab fav-icon 
 -  PIMP THE GIF!!! show engine logos, show editor then focus onto game view, code: label "Same" 3x successively  
 
-### Evidence Gathering - Support "APIs as Barrier" Claim
+### Community Findings
 
-We currently lack hard evidence for claims about API complexity being a major barrier. Need to gather:
-
-1. **Quantitative Data:**
-   - Survey Reddit r/gamedev, r/godot, r/Unity3D for beginner pain points (search posts with "hard", "difficult", "struggling", "learning")
-   - Analyze PlayMaker/GameCreator review sentiment: what problems do buyers say these solve?
-   - Count tutorial videos: "Unity for beginners" vs "Godot for beginners" vs "switching from Unity to Godot" - how many focus on API differences?
-   - Engine switching pain: search "migrating from Unity to Godot" posts and extract common complaints
-
-2. **Qualitative Evidence:**
-   - Find 5-10 direct quotes from learners about API confusion/switching pain
-   - Screenshot Reddit responses showing confusion about engine differences (we already have these!)
-   - Find testimonials from educators about multi-engine teaching challenges
-
-3. **Honest Reframing (if evidence is thin):**
-   - Instead of "#1 barrier", say: "Programming game logic is hard enough. Learning three ways to do it makes it harder."
-   - Focus on duplication/inefficiency rather than absolute difficulty
-   - Lead with observable fact: "Visual tools like PlayMaker exist specifically to simplify game logic"
-
-**Priority:** HIGH - Needed before outreach to tutorial creators
-**Deadline:** Before Phase 3 promotion begins
-**Owner:** TBD
-
-### findings
-
-- challenge: type differences - string, int, array?
+- beginner challenged by type differences - string, int, array?
 - beginners have issues working with collections (array or dictionary, how to use)
 	- could leverage the Table concept for variables
 
@@ -47,17 +26,17 @@ We currently lack hard evidence for claims about API complexity being a major ba
 > Constructs a new String from the given int. 
 (note: was from 5 years ago)
 
-
 facebook https://www.facebook.com/groups/IndieGameDevs/posts/10158096682296573/
 Mutee Ur Rahman
 Godot is cool, but I now think beginners should start with something easier. For years I struggled to learn engines like Unity, Godot, Gamemaker, but due to my learning disability I couldn't get far. That changed when I started with Gdevelop. It is advertised as a codeless engine, it is open source and feature rich. If you want to finish the learning process faster, this is the way to go. I now don't have to worry about syntax and baggage that comes with coding and can get to game logic immediately. Gdevelop is still like programming but with a lot less boilerplate and a lot less fuss.
-
 
 ## High-Level
 
 - bebilderte (hypothetische) codebeispiele einfügen für gesamteindruck, diskussion
 - add document: learner benefits summary (put on website)
     - semantics, consistency, portability => standardization, patterns, no null, event driven, no outside references, sequential thinking => statemachines - bt
+
+- !!! start a "CRM" categorizing and prioritizing engines, social channels, etc. and keeping track of context
 
 ## Documentation Review
 
