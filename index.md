@@ -3,9 +3,9 @@ layout: default
 title: LunyScript - The Game Programming Gateway
 ---
 
-# **LunyScript🎮** Your Game Programming Gateway
+# **LunyScript:** Your Game Programming Gateway
 
-## You want to make games? Great! 😃
+## 🎮 You want to make games? Great! 😃
 
 But Godot/Unity code is complex, confusing, and completely different everywhere. 😵‍💫
 
