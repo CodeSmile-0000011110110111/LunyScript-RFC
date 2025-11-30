@@ -1,5 +1,12 @@
 # About the Author
 
+## Table of Contents
+
+- [My CV, informally](#my-cv-informally)
+- [The Realization](#the-realization)
+- [The "Why?" Behind LunyScript - A Personal Story](#the-why-behind-lunyscript---a-personal-story)
+
+## My CV, informally
 Hi! I'm Steffen from Germany.
 
 <div class="clickable-image" style="cursor: pointer; display: inline-block;">
@@ -92,7 +99,7 @@ Researching into the history and future of game engines, I came across many begi
 
 Then it struck me.
 
-# The Realization
+## The Realization
 
 We teach young game engine "drivers" Volkswagen here, Chrysler there. We caution: "Don't learn driving with a Porsche!"
 
@@ -102,7 +109,7 @@ Between Scratch and Godot/Unity, there's a lot of learners going back and forth,
 
 We call this **🔥Tutorial Hell🥵**.
 
-# The "Why?" Behind LunyScript - A Personal Story
+## The "Why?" Behind LunyScript - A Personal Story
 
 **High-level, text-based programming is efficient and designer-friendly.** It eases beginners into complex programming tasks and introduces them to valuable patterns, as I've learned myself.
 
