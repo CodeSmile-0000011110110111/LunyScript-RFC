@@ -27,7 +27,7 @@ Why learn pointless differences like`_init`,`Awake`,`BeginPlay`when you just wan
 
 LunyScript let's you program everything game engines have in common: Input🕹️ Camera👁️ Physics⚽ Animation🏃 Audio🎸 UI️📱 Scenes🎭 Objects🪜 and more!
 
-- **Godot and Unity**: Easier to program than Roblox & GameMaker 😏🤗<br/><sup>**Unity:** Q2/2026, **Godot:** Q4/2026 [⏰ Join Patreon for updates! 🔔](https://www.patreon.com/CodeSmile){:target="_blank"}</sup> 
+- **Godot and Unity**: Easier to program than Roblox & GameMaker 😏🤗<br/><sup>For **Godot** and **Unity** (ETA 2026/27) [⏰ Join Patreon for updates! 🔔](https://www.patreon.com/CodeSmile){:target="_blank"}</sup> 
 - **No runtime errors**: Stay in the flow of creating 🎨🎧<br/><sup>Mi<ins>ts</ins>akes happen! See and inspect issues where they occur: in-game.</sup>
 - **Experiment**: Trial and error is encouraged 🧪🥼<br/><sup>Pure creative joy! Avoid getting drawn into **Tutorial Hell**!</sup>
 - **Concise**: 3-5 times less code than GDScript 🤫🧘<br/><sup>Code is clear and consistent! No CS jargon. No visual scripting spaghetti.</sup>
@@ -86,11 +86,9 @@ With potential for:
 
 ## **Roadmap**
 
-- **Phase 1:** **Unity** (C#)<br/>API Design; Portable Layer; Demos & Docs (Q2 2026)
-- **Phase 2:** **Godot** (C#)<br/>Cross-Engine Tests; Improve Onboarding (Q4 2026)
-- **Phase 3:** **Lua & Modding**<br/>Bindings Generator; Stabilize API; More Engines PoC (2027)
-
-Phase 1: Fully funded. Applying for grants for Phase 2 and beyond.
+- **Phase 1:** First Engine; Portable C# Layer 
+- **Phase 2:** Second Engine; Cross-Engine Validation
+- **Phase 3:** Lua & Modding || More Engines
 
 ---
 
