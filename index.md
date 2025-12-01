@@ -7,9 +7,9 @@ title: LunyScript - The Game Programming Gateway
 
 ## 🎮 You want to make games? Great! 😃
 
-But Godot/Unity code is complex, confusing, and completely different everywhere. 😵‍💫
+But Godot/Unity code is confusing, complex, and completely different everywhere? 😵‍💫
 
-LunyScript is your **🫵 fast-lane, front-row ticket 👑** to C# game programming!🕹️🧑‍💻
+LunyScript is your **🫵 fast-lane, front-row ticket 👑** to **C#** game programming!🕹️🧑‍💻
 
 ```csharp
 public MyPlayer()
@@ -25,13 +25,13 @@ Why learn pointless differences like`_init`,`Awake`,`BeginPlay`when you just wan
 
 ## **✨ Same Code - Many Engines ✨**
 
-LunyScript let's you program everything game engines have in common: Input🕹️ Camera👁️ Physics⚽ Animation🏃 Audio🎸 UI️📱 Scenes🎭 Objects🪜 and more!
+LunyScript let's you program everything game engines have in common: <br/>🕹️Input 👁️Camera ⚽Physics 🏃Animation 🎸Audio 📱UI️ 🎭Scenes 🪜Objects ➕➕
 
 - **Godot and Unity**: Easier to program than Roblox & GameMaker 😏🤗<br/><sup>For **Godot** and **Unity** (ETA 2026/27) [⏰ Join Patreon for updates! 🔔](https://www.patreon.com/CodeSmile){:target="_blank"}</sup> 
 - **No runtime errors**: Stay in the flow of creating 🎨🎧<br/><sup>Mi<ins>ts</ins>akes happen! See and inspect issues where they occur: in-game.</sup>
 - **Experiment**: Trial and error is encouraged 🧪🥼<br/><sup>Pure creative joy! Avoid getting drawn into **Tutorial Hell**!</sup>
 - **Concise**: 3-5 times less code than GDScript 🤫🧘<br/><sup>Code is clear and consistent! No CS jargon. No visual scripting spaghetti.</sup>
-- **Powerful**: Enough to create a _Megabonk_ 👑💎<br/><sup>Learn proven concepts: Statemachines, Behaviour Trees, Coroutines.</sup>
+- **Powerful**: Enough to create a _Megabonk_ 👑💎<br/><sup>Learn valuable concepts: StateMachines, BehaviorTrees, Sequences.</sup>
 - **Ready for more**: LunyScript extends easily 🛝🚀<br/><sup>Transition to engine APIs one small step at a time, at your own pace.️️</sup>
 - **Skip dead-ends**: Learn the **career language C#** 🧑‍🎓🧑‍💻<br/><sup>Defer the scary syntax but work like a Pro with Rider, VS, VSCode.</sup>
 - **Escape lock-in**: Same code, works everywhere 🔑🔓<br/><sup>Dislike the editor? Community unhelpful? No jobs? Switch engines, keep the code!️</sup>
@@ -43,7 +43,9 @@ LunyScript is the beginner-friendly, high-level game programming DSL that works 
 
 <font size=6>👉<iframe src="https://ghbtns.com/github-btn.html?user=CodeSmile-0000011110110111&repo=LunyScript-RFC&type=star&count=true" frameborder="0" scrolling="1" width="100" height="22"></iframe>
 👈️&nbsp;👍️</font>
-Please **star** the [LunyScript-RFC GitHub](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC){:target="_blank"} repository [⏰ Join Patreon for updates! 🔔](https://www.patreon.com/CodeSmile){:target="_blank"}
+Please **⭐star⭐** the [LunyScript-RFC repository](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC){:target="_blank"} and [Join Patreon for updates! 🔔](https://www.patreon.com/CodeSmile){:target="_blank"}
+
+<sup>**UPDATE Nov 30th:** FOSS grant application under review! 🥳</sup>
 
 ---
 
@@ -88,7 +90,7 @@ With potential for:
 
 - **Phase 1:** First Engine; Portable C# Layer 
 - **Phase 2:** Second Engine; Cross-Engine Validation
-- **Phase 3:** Lua & Modding || More Engines
+- **Phase 3:** Lua & Modding; More Engines
 
 ---
 
