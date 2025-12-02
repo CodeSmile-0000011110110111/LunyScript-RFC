@@ -51,6 +51,30 @@
   background: #c90014;
 }
 
+/* Social icons container */
+.social-icons {
+  text-align: center;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.social-icons a {
+  display: inline-block;
+  line-height: 0;
+}
+
+.social-icons img {
+  display: block;
+  transition: opacity 0.2s;
+}
+
+.social-icons img:hover {
+  opacity: 0.7;
+}
+
 /* Fix table rendering */
 table {
   border-collapse: collapse;
