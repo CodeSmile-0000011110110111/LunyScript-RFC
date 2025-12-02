@@ -16,6 +16,8 @@ navigation:
     url: /docs/
   - title: Discussions
     url: https://github.com/CodeSmile-0000011110110111/LunyScript-RFC/discussions/
+  - title: Discord
+    url: https://discord.gg/EkwNb4rB7W
 
 # Exclude files from processing
 exclude:

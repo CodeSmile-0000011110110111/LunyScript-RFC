@@ -17,18 +17,9 @@
 
 ### Community Findings
 
-- beginner challenged by type differences - string, int, array?
-- beginners have issues working with collections (array or dictionary, how to use)
-	- could leverage the Table concept for variables
-
-- manuals often too technical (Godot)
-> Strings are reference-counted and use a copy-on-write approach, so passing them around is cheap in resources. 
-> Constructs a new String from the given int. 
-(note: was from 5 years ago)
-
 facebook https://www.facebook.com/groups/IndieGameDevs/posts/10158096682296573/
 Mutee Ur Rahman
-Godot is cool, but I now think beginners should start with something easier. For years I struggled to learn engines like Unity, Godot, Gamemaker, but due to my learning disability I couldn't get far. That changed when I started with Gdevelop. It is advertised as a codeless engine, it is open source and feature rich. If you want to finish the learning process faster, this is the way to go. I now don't have to worry about syntax and baggage that comes with coding and can get to game logic immediately. Gdevelop is still like programming but with a lot less boilerplate and a lot less fuss.
+Godot is cool, but I now think beginners should start with something easier. [..] Gdevelop is still like programming but with a lot less boilerplate and a lot less fuss.
 
 ## High-Level
 
