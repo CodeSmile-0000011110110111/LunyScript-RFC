@@ -7,6 +7,8 @@
 - [The "Why?" Behind LunyScript - A Personal Story](#the-why-behind-lunyscript---a-personal-story)
 - [The 'Luny' Vision](VISION.md)
 
+---
+
 ## My CV, informally
 Hi! I'm Steffen from Germany.
 
@@ -100,6 +102,8 @@ Researching into the history and future of game engines, I came across many begi
 
 Then it struck me.
 
+---
+
 ## The Realization
 
 We teach young game engine "drivers" Volkswagen here, Chrysler there. We caution: "Don't learn driving with a Porsche!"
@@ -109,6 +113,8 @@ We teach young game engine "drivers" Volkswagen here, Chrysler there. We caution
 Between Scratch and Godot/Unity, there's a lot of learners going back and forth, struggling to make sense of the complexity of game engines.
 
 We call this **🔥Tutorial Hell🥵**.
+
+---
 
 ## The "Why?" Behind LunyScript - A Personal Story
 
@@ -140,6 +146,6 @@ But those artists, solopreneurs, visionaries, and beginners all struggle to cope
 
 I **know** that the amalgamation of "design as code" works and provides huge benefits. Even absolute non-programmers were able to implement designs within days.
 
-That's all **I** need to know. Of course **you** want to know more:
+That's all **I** need to know. Of course **you** want to know more ..
 
 [→ The Vision](VISION.md)
