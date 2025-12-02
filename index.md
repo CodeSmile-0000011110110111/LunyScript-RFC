@@ -79,10 +79,7 @@ The core concepts behind LunyScript have been **proven in production** over seve
 **📹 _Learnfluencers_**<br/>Grow your audience. Compare engines. Adopt early! [Learn more →](docs/TargetAudience.md#-learnfluencers-online-tutors-high-impact-multipliers)
 
 With potential for:
-<br/>🏫[Educators](docs/TargetAudience.md#-formal-educators--institutions)
-<br/>🎨[Visual Scripters →](docs/TargetAudience.md#-visual-scripters-early-adopters)
-<br/>🎮[Prototypers](docs/TargetAudience.md#-prototypers--game-jammers)
-<br/>🔧[Framework Developers](docs/TargetAudience.md#-framework--tool-developers)
+<br/>🏫[Educators](docs/TargetAudience.md#-formal-educators--institutions) - 🎨[Visual Scripters](docs/TargetAudience.md#-visual-scripters-early-adopters) - 🎮[Prototypers](docs/TargetAudience.md#-prototypers--game-jammers) - 🔧[Framework Developers](docs/TargetAudience.md#-framework--tool-developers)
 
 ---
 
