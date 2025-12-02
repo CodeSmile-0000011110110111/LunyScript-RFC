@@ -96,7 +96,7 @@ With potential for:
 **Share your thoughts, ask questions, propose ideas!**
 
 → [💬 Join the Discussions](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC/discussions/){:target="_blank"}
-
+→ [💬 Join Discord](https://discord.gg/EkwNb4rB7W){:target="_blank"}
 → [⏰ Join Patreon for Updates! 🔔](https://www.patreon.com/CodeSmile){:target="_blank"}
 
 Help shape the future of LunyScript: **democratizing game engine programming** because _democratizing game development_ has a blind spot: **young talents**!
