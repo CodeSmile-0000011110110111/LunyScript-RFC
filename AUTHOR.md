@@ -5,6 +5,7 @@
 - [My CV, informally](#my-cv-informally)
 - [The Realization](#the-realization)
 - [The "Why?" Behind LunyScript - A Personal Story](#the-why-behind-lunyscript---a-personal-story)
+- [The 'Luny' Vision](VISION.md)
 
 ## My CV, informally
 Hi! I'm Steffen from Germany.
@@ -141,4 +142,4 @@ I **know** that the amalgamation of "design as code" works and provides huge ben
 
 That's all **I** need to know. Of course **you** want to know more:
 
--> [The Vision](VISION.md)
+[→ The Vision](VISION.md)
