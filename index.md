@@ -41,8 +41,8 @@ LunyScript is the beginner-friendly, high-level game programming DSL that works 
 ---
 ### LunyScript ➕ Engine Editor 🟰 intuitive & rapid game-making! 🛠️
 
-<font size=6>👉<iframe src="https://ghbtns.com/github-btn.html?user=CodeSmile-0000011110110111&repo=LunyScript-RFC&type=star&count=true" frameborder="0" scrolling="1" width="100" height="22"></iframe>
-👈️&nbsp;👍️</font>
+<font size=6>👉&nbsp;&nbsp;&nbsp;<iframe src="https://ghbtns.com/github-btn.html?user=CodeSmile-0000011110110111&repo=LunyScript-RFC&type=star&count=true" frameborder="0" scrolling="1" width="90" height="20"></iframe>
+👈️👍️</font>
 Please **⭐star⭐** the [LunyScript-RFC repository](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC){:target="_blank"} and [Join Patreon for updates! 🔔](https://www.patreon.com/CodeSmile){:target="_blank"}
 
 <sup>**UPDATE Nov 30th:** FOSS grant application under review! 🥳</sup>
