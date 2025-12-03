@@ -1,6 +1,12 @@
-# Architecture Requirements
+# LunyScript Architecture
 
 ## Core Layers
+
+LunyScript follows a three-layered architecture model:
+
+1. Luny abstraction layer (interfaces, proxies)
+2. LunyScript block execution engine (Coroutine, StateMachine, BehaviorTree)
+3. Engine Adapters & Bridges
 
 ### 1. Luny
 **Namespace:** `Luny`
@@ -27,7 +33,7 @@
 - **Consumes Luny abstractions**
 - **Portable** - write once, runs on all engines
 
-### 3. Engine Adapters (per engine)
+### 3. Engine Adapters & Bridges (engine-native glue)
 **Namespaces:** `LunyScript.Unity`, `LunyScript.Godot`, ..
 **Change frequency:** High - evolves with engine API changes
 
@@ -35,12 +41,13 @@
 - **Native event observers** - collision, input, lifecycle trapping
 - **Native API wrappers** - physics, audio, spawning, scene graph
 - **Lifecycle management** - heartbeat forwarding and frame synchronization
-- **Mostly mechanical glue** - straightforward bridging code
+- **Mostly mechanical glue** - straightforward bridging code (asset & scene addressing)
 
 #### Size Notes
 - Adapter overall complexity and size similar between engines
 - Areas of adapater complexity vary more (eg assets, lifecycle, scene tree)
 - As API expands, adapter size grows proportionally but automates well
+- Shared engine functionality is largely semantic differences, or an extra call here and there
 
 ---
 
