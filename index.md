@@ -39,15 +39,6 @@ LunyScript let's you program everything game engines have in common: <br/>🕹�
 LunyScript is the beginner-friendly, high-level game programming DSL that works **uniformly across game engines**. It's free and open source (MIT License).
 
 ---
-### LunyScript ➕ Engine Editor 🟰 intuitive & rapid game-making! 🛠️
-
-<font size=6>👉&nbsp;&nbsp;&nbsp;<iframe src="https://ghbtns.com/github-btn.html?user=CodeSmile-0000011110110111&repo=LunyScript-RFC&type=star&count=true" frameborder="0" scrolling="1" width="90" height="20"></iframe>
-👈️👍️</font>
-Please **⭐star⭐** the [LunyScript-RFC repository](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC){:target="_blank"} and [Join Patreon for updates! 🔔](https://www.patreon.com/CodeSmile){:target="_blank"}
-
-<sup>**UPDATE Nov 30th:** FOSS grant application under review! 🥳</sup>
-
----
 
 ## **More Accessible Code Prevents Tutorial Hell**
 
@@ -69,6 +60,15 @@ The core concepts behind LunyScript have been **proven in production** over seve
 <br/>**→ [The philosophy](docs/Philosophy.md)** of LunyScript explains why it's feasible.
 <br/>**→ [The maintenance strategy](MAINTENANCE.md)** details how LunyScript is manageable.
 <br/>**→ [Compare LunyScript code](docs/CodeComparison.md)** with GDScript, C#, Roblox to see its benefits.
+
+---
+### LunyScript ➕ Engine Editor 🟰 intuitive & rapid game-making! 🛠️
+
+<font size=6>👉&nbsp;&nbsp;&nbsp;<iframe src="https://ghbtns.com/github-btn.html?user=CodeSmile-0000011110110111&repo=LunyScript-RFC&type=star&count=true" frameborder="0" scrolling="1" width="90" height="20"></iframe>
+👈️👍️</font>
+Please **⭐star⭐** the [LunyScript-RFC repository](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC){:target="_blank"} and [Join Patreon for updates! 🔔](https://www.patreon.com/CodeSmile){:target="_blank"}
+
+<sup>**UPDATE Nov 30th:** FOSS grant application under review! 🥳</sup>
 
 ---
 
