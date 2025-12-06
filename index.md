@@ -82,6 +82,12 @@ With potential for:
 <br/>🏫[Educators](docs/TargetAudience.md#-formal-educators--institutions) - 🎨[Visual Scripters](docs/TargetAudience.md#-visual-scripters-early-adopters) - 🎮[Prototypers](docs/TargetAudience.md#-prototypers--game-jammers) - 🔧[Framework Developers](docs/TargetAudience.md#-framework--tool-developers)
 
 ---
+## Status
+
+Seeking FOSS funding via:
+
+- **grants** (PrototypeFund: under review, decision Feb/Mar 2026; others in preparation)
+- **community** ([Patreon](https://www.patreon.com/CodeSmile){:target="_blank"}, [GitHub Sponsors](https://github.com/sponsors/CodeSmile-0000011110110111){:target="_blank"})
 
 ## **Roadmap**
 
