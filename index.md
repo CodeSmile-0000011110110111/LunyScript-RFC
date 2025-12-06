@@ -82,7 +82,7 @@ With potential for:
 <br/>🏫[Educators](docs/TargetAudience.md#-formal-educators--institutions) - 🎨[Visual Scripters](docs/TargetAudience.md#-visual-scripters-early-adopters) - 🎮[Prototypers](docs/TargetAudience.md#-prototypers--game-jammers) - 🔧[Framework Developers](docs/TargetAudience.md#-framework--tool-developers)
 
 ---
-## Status
+## **Status**
 
 Seeking FOSS funding via:
 
