@@ -86,7 +86,7 @@ With potential for:
 
 Seeking FOSS funding via:
 
-- **grants** ([PrototypeFund](https://www.prototypefund.de/){:target="_blank"}: under review, decision Feb/Mar 2026; others in preparation)
+- **grants** ([PrototypeFund](https://www.prototypefund.de/){:target="_blank"}: decision ETA Feb/Mar 2026; more in preparation)
 - **community** ([Patreon](https://www.patreon.com/CodeSmile){:target="_blank"}, [GitHub Sponsors](https://github.com/sponsors/CodeSmile-0000011110110111){:target="_blank"})
 
 ## **Roadmap**
