@@ -93,7 +93,8 @@ Seeking FOSS funding via:
 
 - **Phase 1:** First Engine; Portable C# Layer 
 - **Phase 2:** Second Engine; Cross-Engine Validation
-- **Phase 3:** Lua & Modding; More Engines
+- **Phase 3:** Add Lua + Modding => Gamers mod with LunyScript => Modders become devs, already know the code!
+- **Phase 4:** Empower more engines with unified gameplay scripting ...
 
 ---
 
