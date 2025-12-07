@@ -39,6 +39,7 @@ LunyScript is your entry ticket to Godot and Unity.">
     <script src="{{ '/assets/js/tabs.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/diagram-modal.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/image-modal.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/star-progress.js' | relative_url }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
@@ -77,11 +78,19 @@ LunyScript is your entry ticket to Godot and Unity.">
         </nav>
         <div class="social-icons">
             <h3>👉</h3>
-            <iframe src="https://ghbtns.com/github-btn.html?user=CodeSmile-0000011110110111&repo=LunyScript-RFC&type=star&count=true"
+            <iframe id="github-star-btn" src="https://ghbtns.com/github-btn.html?user=CodeSmile-0000011110110111&repo=LunyScript-RFC&type=star&count=true"
                     frameborder="0" scrolling="1" width="84" height="26">
             </iframe>
-            <h3>👍️️️</h3><h5> Goal: 50⭐ by Xmas</h5>
-            &nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="star-progress">
+                <div class="star-scale">
+                    <span class="scale-marker start" data-label="Dec01">0</span>
+                    <span class="scale-marker" data-label="Xmas">50</span>
+                    <span class="scale-marker" data-label="Jan15">100</span>
+                    <span class="scale-marker" data-label="Feb05">150</span>
+                    <span class="scale-marker end" data-label="Feb25">200</span>
+                    <div class="star-indicator" id="star-indicator">⭐</div>
+                </div>
+            </div>
             <a href="https://www.youtube.com/@codesmile" target="_blank">
                 <img src="https://lunyscript.com/media/yt_icon_white_digital.png" height="32" alt="YouTube"/>
             </a>
