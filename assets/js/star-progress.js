@@ -8,7 +8,7 @@
         const maxStars = 200;
 
         // Calculate position as percentage (0-100%)
-        const percentage = Math.min((starCount / maxStars) * 100, 100);
+        const percentage = (starCount / maxStars) * 100;
 
         // Update star position
         const starIndicator = document.getElementById('star-indicator');
