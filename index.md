@@ -82,12 +82,19 @@ With potential for:
 <br/>🏫[Educators](docs/TargetAudience.md#-formal-educators--institutions) - 🎨[Visual Scripters](docs/TargetAudience.md#-visual-scripters-early-adopters) - 🎮[Prototypers](docs/TargetAudience.md#-prototypers--game-jammers) - 🔧[Framework Developers](docs/TargetAudience.md#-framework--tool-developers)
 
 ---
+## **Status**
+
+Seeking FOSS funding via:
+
+- **grants** ([PrototypeFund](https://www.prototypefund.de/){:target="_blank"}: decision ETA Feb/Mar 2026; more in preparation)
+- **community** ([Patreon](https://www.patreon.com/CodeSmile){:target="_blank"}, [GitHub Sponsors](https://github.com/sponsors/CodeSmile-0000011110110111){:target="_blank"})
 
 ## **Roadmap**
 
 - **Phase 1:** First Engine; Portable C# Layer 
 - **Phase 2:** Second Engine; Cross-Engine Validation
-- **Phase 3:** Lua & Modding; More Engines
+- **Phase 3:** Add Lua + Modding => Gamers mod with LunyScript => Modders become devs, already know the code!
+- **Phase 4:** Empower more engines with unified gameplay scripting ...
 
 ---
 
