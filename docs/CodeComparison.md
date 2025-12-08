@@ -373,156 +373,8 @@ end)
 
 
 
-## 3. Audio Playback
 
-**Task:** Play a sound effect when an event occurs.
-
-**Overwhelm Reduction:** 80%
-
-<div class="code-tabs" data-group="audio">
-<div class="tab-buttons">
-<button class="tab-button active">LunyScript</button>
-<button class="tab-button">GDScript</button>
-<button class="tab-button">Godot C#</button>
-<button class="tab-button">Unity C#</button>
-<button class="tab-button">Roblox Lua</button>
-</div>
-<div class="tab-content active" markdown="1">
-
-**Lines of code:** 3
-
-**Concepts needed:** 0 new concepts
-
-```csharp
-protected override void OnReady()
-{
-  When.Collision.With("Wall").Begins(Audio.Play("bump"));
-}
-```
-
-</div>
-<div class="tab-content" markdown="1">
-
-**Lines of code:** 12
-
-**Concepts needed:** @export, @onready, AudioStream vs Player, new() instantiation, add_child, signal connections, groups
-
-```gdscript
-@export var bump_sound: AudioStream
-@onready var audio_player: AudioStreamPlayer3D = AudioStreamPlayer3D.new()
-
-func _ready():
-  add_child(audio_player)
-  body_entered.connect(_on_body_entered)
-
-func _on_body_entered(body: Node3D):
-  if body.is_in_group("Wall"):
-      if bump_sound:
-          audio_player.stream = bump_sound
-          audio_player.play()
-```
-
-</div>
-<div class="tab-content" markdown="1">
-
-**Lines of code:** 18 (10 w/o braces)
-
-**Concepts needed:** AudioStream vs AudioStreamPlayer3D, Export, node creation, AddChild, setting Stream before Play, groups
-
-```csharp
-[Export] private AudioStream _bumpSound;
-private AudioStreamPlayer3D _audioPlayer;
-
-public override void _Ready()
-{
-  _audioPlayer = new AudioStreamPlayer3D();
-  AddChild(_audioPlayer);
-}
-
-private void _OnBodyEntered(Node3D body)
-{
-  if (body.IsInGroup("Wall"))
-  {
-      if (_bumpSound != null && _audioPlayer != null)
-      {
-          _audioPlayer.Stream = _bumpSound;
-          _audioPlayer.Play();
-      }
-  }
-}
-```
-
-</div>
-<div class="tab-content" markdown="1">
-
-**Lines of code:** 21 (12 w/o braces)
-
-**Concepts needed:** AudioClip vs AudioSource, SerializeField, GetComponent, AddComponent, PlayOneShot vs Play, null checking, component architecture
-
-```csharp
-[SerializeField] private AudioClip bumpSound;
-private AudioSource audioSource;
-
-private void Start()
-{
-  audioSource = GetComponent<AudioSource>();
-  if (audioSource == null)
-  {
-      audioSource = gameObject.AddComponent<AudioSource>();
-  }
-}
-
-private void OnCollisionEnter(Collision collision)
-{
-  if (collision.gameObject.CompareTag("Wall"))
-  {
-      if (bumpSound != null && audioSource != null)
-      {
-          audioSource.PlayOneShot(bumpSound);
-      }
-  }
-}
-```
-
-</div>
-<div class="tab-content" markdown="1">
-
-**Lines of code:** 18
-
-**Concepts needed:** CollectionService, Touched event, :Connect(), Instance.new(), SoundId/asset IDs, debounce pattern
-
-```lua
-local CollectionService = game:GetService("CollectionService")
-local object = script.Parent
-local bumpSound = object:FindFirstChild("BumpSound")
-
-if not bumpSound then
-  bumpSound = Instance.new("Sound")
-  bumpSound.Name = "BumpSound"
-  bumpSound.SoundId = "rbxassetid://12345678"
-  bumpSound.Parent = object
-end
-
-local debounce = false
-
-object.Touched:Connect(function(hit)
-  if debounce then return end
-  if CollectionService:HasTag(hit, "Wall") and bumpSound then
-    debounce = true
-    bumpSound:Play()
-    task.wait(0.1)
-    debounce = false
-  end
-end)
-```
-
-</div>
-</div>
-
-
-
-
-## 4. UI Button Events
+## 3. UI Button Events
 
 **Task:** Restart the game when clicking the "Try Again" button.
 
@@ -697,7 +549,7 @@ end)
 
 
 
-## 5. Variables & HUD Binding
+## 4. Variables & HUD Binding
 
 **Task:** Display a score variable on the UI that automatically updates.
 
@@ -916,7 +768,7 @@ end)
 
 
 
-## 6. Timers & Sequences
+## 5. Timers & Sequences
 
 **Task:** Countdown timer that ends the game when it reaches zero.
 
@@ -1178,15 +1030,14 @@ end)
 
 ## Summary Table
 
-| Concept | LunyScript LOC | GDScript LOC | Godot C# LOC | Unity LOC | Overwhelm Reduction |
-|---------|----------------|--------------|--------------|--------------|---------------------|
-| Collision Detection | 3 | 14 | 25+ (15) | 16 (10) | 90% |
-| Input Handling | 6 | 18 | 31 (19) | 28 (18) | 85% |
-| Audio Playback | 3 | 12 | 18 (10) | 21 (12) | 80% |
-| UI Button Events | 3 | 16 | 28 (16) | 30 (18) | 75% |
-| Variables & HUD Binding | 9 | 26 | 36 (22) | 37 (23) | 70% |
-| Timers & Sequences | 10 | 32 | 53 (31) | 49 (29) | 65% |
-| **Total** | **34** | **118** | **191 (113)** | **181 (110)** | **77% average** |
+| Concept | LunyScript LOC | GDScript LOC | Godot C# LOC  | Unity LOC    | Overwhelm Reduction |
+|---------|----------------|--------------|---------------|--------------|---------------------|
+| Collision Detection | 3              | 14           | 25+ (15)      | 16 (10)      | 90% |
+| Input Handling | 6              | 18           | 31 (19)       | 28 (18)      | 85% |
+| UI Button Events | 3              | 16           | 28 (16)       | 30 (18)      | 75% |
+| Variables & HUD Binding | 9              | 26           | 36 (22)       | 37 (23)      | 70% |
+| Timers & Sequences | 10             | 32           | 53 (31)       | 49 (29)      | 65% |
+| **Total** | **31**         | **106**      | **173 (103)** | **160 (98)** | **77% average** |
 
 
 ## Key Observations
