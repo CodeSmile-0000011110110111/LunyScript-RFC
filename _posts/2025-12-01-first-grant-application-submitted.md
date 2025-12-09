@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "First Grant Application Submitted"
-date: 2025-12-09
+date: 2025-12-01
 categories: [milestones, funding]
 tags: [grants, development]
 ---
