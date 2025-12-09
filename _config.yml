@@ -1,14 +1,27 @@
 # Jekyll configuration for GitHub Pages
 theme: jekyll-theme-midnight
 title: LunyScript
-description: Cross-Engine Gameplay Scripting
+description: "You have a great game idea? But game engine programming is complex, confusing, and completely different everywhere? LunyScript is your entry ticket to Godot and Unity."
+tagline: "The Game Programming Gateway"
 url: https://lunyscript.com
+baseurl: ""
 logo: media/website-logo-alt2.png
 image: media/website-logo-alt2.png
+
+# SEO and Social
+lang: en_US
+author:
+  name: CodeSmile
+  twitter: CodeSmileDev
+twitter:
+  username: CodeSmileDev
+  card: summary_large_image
 social:
   name: LunyScript
   links:
     - https://github.com/CodeSmile-0000011110110111/LunyScript-RFC
+    - https://www.youtube.com/@codesmile
+    - https://discord.gg/EkwNb4rB7W
 
 # Navigation
 navigation:
@@ -58,6 +71,7 @@ kramdown:
 plugins:
   - jekyll-relative-links
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Convert README.md to index.html
 relative_links:
