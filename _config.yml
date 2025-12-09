@@ -72,8 +72,27 @@ plugins:
   - jekyll-relative-links
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-archives
 
 # Convert README.md to index.html
 relative_links:
   enabled: true
   collections: false
+
+# Blog configuration
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+# Jekyll Archives
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    category: '/blog/category/:name/'
+    tag: '/blog/tag/:name/'
