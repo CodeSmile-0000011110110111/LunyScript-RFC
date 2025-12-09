@@ -14,3 +14,6 @@ Here's a quick gif showcasing the lights in action:
 ![KenneyCarsWithBlinkingLights.gif](../../../../../media/KenneyCarsWithBlinkingLights.gif)
 
 The pixelated retro style also serves these simplistic models well.
+
+Then .. one thing led to another and I got this:
+![FullScene.gif](../../../../../media/Movie_017.gif)
