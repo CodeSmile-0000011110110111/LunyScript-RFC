@@ -1,9 +1,9 @@
 ﻿---
 layout: post
-title: "Kenney Asset Integration"
+title: "Flashing lights scene with a touch of Xmas"
 date: 2025-12-09
-categories: [milestones, funding]
-tags: [grants, development]
+categories: [prototyping]
+tags: [development]
 ---
 
 I started adding all the Kenney.nl assets to my Proof of Concept project in order to prepare some of the assets for later.
