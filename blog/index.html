@@ -24,6 +24,13 @@ permalink: /blog/
       <div class="post-excerpt">
         {{ post.excerpt }}
       </div>
+      {% if post.featured_image %}
+      <div class="post-featured-image">
+        <a href="{{ post.url | relative_url }}">
+          <img src="{{ post.featured_image | relative_url }}" alt="{{ post.title }}">
+        </a>
+      </div>
+      {% endif %}
       <a href="{{ post.url | relative_url }}">Read more &rarr;</a>
     </article>
     <hr>
