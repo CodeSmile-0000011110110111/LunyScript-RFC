@@ -1,490 +1,368 @@
 # Script Runner Singleton Pattern
 
-We've designed a clean, lazy-initialization singleton pattern for the LunyScript runner that only creates itself when first accessed, avoiding overhead when unused. The architecture uses a dispatcher pattern: `EngineRunner` is the singleton that receives engine lifecycle callbacks and dispatches them to registered domain runners (`LunyScriptRunner`, `AIRunner`, etc.) via the `IEngineRunner` interface.
+We've designed a clean, lazy-initialization singleton pattern for the LunyScript runner that only creates itself when first accessed, avoiding overhead when unused. The architecture uses a dispatcher pattern: `EngineLifecycleDispatcher` is the singleton that receives engine lifecycle callbacks and dispatches them to registered domain runners (`LunyScriptRunner`, `AIRunner`, etc.) via the `IEngineLifecycle` interface.
 
 ## TODOs
 
-### TODO: Dynamic Runner Instantiation with Runtime Control
-**Current:** `EngineRunner` constructor hardcodes runner instantiation
-```csharp
-private EngineRunner()
-{
-    var scriptRunner = new LunyScriptRunner(this);
-    // Hardcoded - not flexible
-}
-```
+### TODO: Considerations
 
-**Requirements:**
-1. Automatic discovery via reflection (no manual registration)
-2. Runtime enable/disable per runner (critical for debugging)
-3. One-time initialization on startup (execution order is immutable after initialization)
-
-**Design Decision: No Guaranteed Execution Order**
-
-Runners execute in discovery order (non-deterministic, based on reflection assembly scan).
-
-**Rationale:**
-- **Registration-time ordering is impossible:** Runners register in their constructors, but other runner types aren't instantiated yet (cannot specify "run before AIRunner" when AIRunner doesn't exist)
-- **Immutable after init:** Order cannot change after startup, eliminating runtime ordering APIs
-- **YAGNI principle:** Don't add complexity until proven necessary
-- **Encourages good design:** Runners should be independent subsystems; dependencies indicate design smell (use events/messaging instead)
-- **Can evolve later:** If ordering becomes necessary, can add two-phase initialization or external configuration
-
-**Implementation approach:**
-
-**Attribute definition:**
-```csharp
-[AttributeUsage(AttributeTargets.Class)]
-public class LunyRunnerAttribute : Attribute
-{
-    // Marker attribute only - no properties
-}
-```
-
-**EngineRunner implementation:**
-```csharp
-private readonly Dictionary<Type, IEngineRunner> _runnerInstances = new();
-private readonly List<IEngineRunner> _runners = new(); // Execution list (discovery order)
-private readonly HashSet<Type> _enabledRunners = new();
-
-private EngineRunner()
-{
-    DiscoverAndInstantiateRunners();
-    // After this point, runner list is immutable
-}
-
-private void DiscoverAndInstantiateRunners()
-{
-    var runnerTypes = AppDomain.CurrentDomain.GetAssemblies()
-        .SelectMany(a => a.GetTypes())
-        .Where(t => t.GetCustomAttribute<LunyRunnerAttribute>() != null
-                    && typeof(IEngineRunner).IsAssignableFrom(t)
-                    && !t.IsAbstract);
-
-    foreach (var type in runnerTypes)
-    {
-        var instance = (IEngineRunner)Activator.CreateInstance(type, this);
-        _runnerInstances[type] = instance;
-        _runners.Add(instance);
-        _enabledRunners.Add(type); // All runners enabled by default
-    }
-
-    // Note: Execution order is now locked (discovery order)
-}
-
-// Runtime control API - Enable/Disable only
-public void EnableRunner<T>() where T : IEngineRunner => _enabledRunners.Add(typeof(T));
-public void DisableRunner<T>() where T : IEngineRunner => _enabledRunners.Remove(typeof(T));
-public bool IsRunnerEnabled<T>() where T : IEngineRunner => _enabledRunners.Contains(typeof(T));
-
-public void OnUpdate(float deltaTime)
-{
-    // Execute in discovery order, skip disabled runners
-    foreach (var runner in _runners)
-    {
-        if (_enabledRunners.Contains(runner.GetType()))
-        {
-            runner.OnUpdate(deltaTime);
-        }
-    }
-}
-```
-
-**Usage:**
-```csharp
-[LunyRunner]
-public sealed class LunyScriptRunner : IEngineRunner
-{
-    public LunyScriptRunner(EngineRunner engineRunner)
-    {
-        // No ordering specification - executes in discovery order
-        Initialize();
-    }
-}
-
-[LunyRunner]
-public sealed class AIRunner : IEngineRunner { ... }
-
-// Runtime control - Enable/Disable only
-EngineRunner.Instance.DisableRunner<LunyScriptRunner>(); // For debugging
-EngineRunner.Instance.EnableRunner<LunyScriptRunner>();  // Re-enable
-```
-
-✅ **Benefits:**
-- Automatic discovery via reflection
-- Runtime enable/disable for debugging
-- Simple implementation (no ordering complexity)
-- Encourages order-independent runner design
-- Immutable execution order (no mid-runtime surprises)
-- Type-safe runtime API
-- All runners enabled by default
-
-⚠️ **Limitations:**
-- Execution order is non-deterministic (discovery order)
-- Cannot specify dependencies between runners
-- **Future:** Can add explicit ordering mechanism if use case emerges
-
-### TODO: Engine-Native Singleton Instantiation (Always-On)
-**Decision:** Always initialize - LunyScript is core infrastructure that instantiates all user LunyScripts
-
-**Rationale:**
-- LunyScript is not optional - it's the foundation that discovers and instantiates user scripts
-- Always-on initialization ensures deterministic, predictable behavior
-- Early initialization (before first scene) prevents mid-frame instantiation issues
-- The "lazy" pattern would provide no benefit since LunyScript usage implies the engine must be running
-
-**Implementation:**
-
-**Unity:**
-```csharp
-namespace LunyScript.Unity
-{
-    using UnityEngine;
-    using LunyScript.Core;
-
-    internal sealed class EngineRunnerUnity : MonoBehaviour
-    {
-        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
-        private static void AutoInitialize()
-        {
-            // Force creation before first scene loads
-            _ = Instance;
-        }
-
-        // ... rest of singleton implementation
-    }
-}
-```
-
-**Godot:**
-```csharp
-namespace LunyScript.Godot
-{
-    using Godot;
-    using LunyScript.Core;
-
-    internal sealed partial class EngineRunnerGodot : Node
-    {
-        // Option 1: ModuleInitializer (C# 9+)
-        [System.Runtime.CompilerServices.ModuleInitializer]
-        internal static void AutoInitialize()
-        {
-            // Deferred to first frame since Godot isn't ready yet
-            Callable.From(() => _ = Instance).CallDeferred();
-        }
-
-        // Option 2: Custom EditorPlugin (more reliable)
-        // Create EditorPlugin that adds EngineRunnerGodot to AutoLoad list
-
-        // ... rest of singleton implementation
-    }
-}
-```
-
-✅ **Benefits:**
-- Deterministic initialization timing (before scene load)
-- No user interaction required
-- Predictable behavior for LunyScript instantiation
-- Prevents mid-frame initialization surprises
-- Lazy pattern as fallback still works if auto-init fails
+- consider if IEngineLifecycle implementations would benefit from subclassing an abstract base class
+  - **Pros:** Shared initialization logic, template method pattern for lifecycle, easier to add common utilities
+  - **Cons:** Less flexible (can't inherit from other base classes), interface is already simple enough, YAGNI principle applies
+- consider if execution order should be made deterministic (explicit priority values, etc.)
+- consider maintaining same execution order for lifecycle observers when enabled/disabled (currently changes order)
+- consider allowing registering same observer type multiple times
+- add unit tests ensuring adapter instantiation and lifecycle observer registration
 
 ## Key Design Decisions
 
+### Instantiation Timeline
+
+```
+Runtime starts (Unity/Godot engine initialization)
+  ↓
+Auto-initialization triggers (before first scene load)
+  ↓
+Unity-/GodotLifecycleAdapter instantiates via engine autoload mechanism
+  ↓
+LifecycleAdapter instantiates new GameObject with UnityLifecycleAdapter component
+LifecycleAdapter instantiates new GodotLifecycleAdapter Node and adds it to SceneTree (deferred)
+  ↓
+LifecycleAdapter Awake/_Ready() instantiates EngineLifecycleDispatcher via Instance property (keeps dispatcher reference)  
+  ↓
+EngineLifecycleDispatcher constructor instantiates and registers domain runners (LunyScriptRunner, etc.)
+  ↓
+LifecycleDispatcher calls OnStartup() on each runner
+  ↓
+System ready - heartbeat event dispatch begins (OnUpdate/OnFixedStep)
+```
+
 **Architecture:**
-- ✅ `IEngineRunner` interface defines the contract for all domain runners that need lifecycle updates
-- ✅ `EngineRunner` class is the singleton dispatcher - creates and manages all domain runners
-- ✅ Domain runners (`LunyScriptRunner`, future `AIRunner`, etc.) implement `IEngineRunner` and register with `EngineRunner`
-- ✅ Engine-native wrappers are **ultra-thin** sealed, internal classes - only create `EngineRunner` and forward lifecycle
-- ✅ All domain runner instantiation logic lives in `EngineRunner` (engine-agnostic side), NOT in engine-native wrappers
-- ✅ Engine-native wrappers hold `IEngineRunner` interface reference (not concrete type)
-- ✅ Callback methods use "On" prefix convention: constructor for initialization, `OnUpdate`, `OnFixedStep`
+- ✅ `IEngineLifecycleDispatcher` interface defines the contract for the dispatcher (receives callbacks from engine adapters)
+- ✅ `IEngineLifecycle` interface defines the contract for all lifecycle observers (receives callbacks from dispatcher)
+- ✅ Clear separation: dispatcher doesn't implement `OnStartup` (only observers do)
+- ✅ `EngineLifecycleDispatcher` class is the singleton dispatcher - discovers and manages all lifecycle observers
+- ✅ Lifecycle observers (`LunyScriptRunner`, future `AIRunner`, etc.) implement `IEngineLifecycle`
+- ✅ Automatic discovery via reflection - no attributes required, interface-based only
+- ✅ Runtime enable/disable per observer (critical for debugging)
+- ✅ Execution order is currently non-deterministic (reflection assembly scan order)
+- ✅ **Note:** Enabling/disabling observers changes execution order (may be improved later)
+- ✅ Engine-native adapters are **ultra-thin** sealed, internal classes - only create `EngineLifecycleDispatcher` and forward lifecycle
+- ✅ All observer instantiation logic lives in `EngineLifecycleDispatcher` (engine-agnostic side), NOT in engine-native adapters
+- ✅ Engine-native adapters hold `IEngineLifecycleDispatcher` interface reference (not concrete type)
+- ✅ Callback methods use "On" prefix convention: `OnStartup`, `OnUpdate`, `OnFixedStep`, `OnShutdown`
 - ✅ Clean separation: no `#if` preprocessor directives, engine-specific code isolated in adapter layer
-- ✅ C# legal: uses composition and registration pattern, not illegal multiple inheritance
 
 **Cross-Engine:**
-- ✅ Lazy initialization via `Instance` property getter (not eager `RuntimeInitializeOnLoad`)
-- ✅ Only initializes when first LunyScript actually needs the runner
-- ✅ Null-check for singleton pattern (no `_initialized` bool needed - same performance as bool check)
-- ✅ "Instance" property name preferred over "Singleton" (more conventional)
 - ✅ `Awake`/`_Ready` serve as duplicate detection guards only
-- ✅ Removed unnecessary `_instance != this` check (impossible condition)
-- ✅ Removed `_instance = this` assignment from lifecycle methods (only set via `Instance`)
-- ✅ Duplicate detection throws exception with detailed debug info (GameObject/Node names and instance IDs)
+- ✅ **IMPORTANT:** Never use `_instance != this` checks in Awake/_Ready - this condition is impossible since `_instance` is set in AutoInitialize before Awake/_Ready runs. This is cargo-cult programming.
 
-**Unity-Specific:**
-- Inherits from `MonoBehaviour`
-- `Awake()` for duplicate detection
-- `DontDestroyOnLoad()` for persistence
-- `GetInstanceID()` for debugging info
+**Engine-Native Singleton Instantiation (Always-On)**
 
-**Godot-Specific:**
-- Inherits from `Node` with `partial` class modifier
-- `_Ready()` for duplicate detection
-- `CallDeferred("add_child", ...)` to safely add to SceneTree
-- `GetInstanceId()` for debugging info (note lowercase 'd')
+**Decision:** Always initialize Engine LifecycleAdapters and EngineLifecycleDispatcher
 
-## Interface Definition
+**Rationale:**
+- Luny is not optional - it's the foundation that discovers and instantiates IEngineLifecycle implementations
+- Always-on initialization ensures deterministic, predictable behavior
+- Early initialization (before first scene) prevents mid-frame instantiation issues
+- A "lazy init" pattern would provide no benefit since LunyScript usage implies the engine must be running
+
+## Interface Definitions
 
 ```csharp
-namespace LunyScript.Core
+namespace Luny
 {
-    public interface IEngineRunner
+    public interface IEngineLifecycleDispatcher
     {
-        // Lifecycle callbacks dispatched from EngineRunner
-        void OnUpdate(float deltaTime);
-        void OnFixedStep(float fixedDeltaTime);
+        // Dispatcher interface - receives callbacks from engine adapters
+        void OnUpdate(double deltaTime);
+        void OnFixedStep(double fixedDeltaTime);
+        void OnShutdown();
+    }
+
+    public interface IEngineLifecycle
+    {
+        // Lifecycle observer interface - receives callbacks from dispatcher
+        void OnStartup();
+        void OnUpdate(double deltaTime);
+        void OnFixedStep(double fixedDeltaTime);
+        void OnShutdown();
+        // add remaining lifecycle callbacks here
     }
 }
 ```
 
-## EngineRunner (Singleton Dispatcher)
+## EngineLifecycleDispatcher (Singleton Dispatcher)
 
 ```csharp
-namespace LunyScript.Core
+namespace Luny
 {
-    public sealed class EngineRunner : IEngineRunner
+    public sealed class EngineLifecycleDispatcher : IEngineLifecycleDispatcher
     {
-        private static EngineRunner _instance;
+        private static EngineLifecycleDispatcher _instance;
 
-        private readonly List<IEngineRunner> _registeredRunners = new List<IEngineRunner>();
+        private readonly LifecycleObserverRegistry _registry;
 
-        public static EngineRunner Instance
+        public static EngineLifecycleDispatcher Instance
         {
             get
             {
                 if (_instance == null)
                 {
-                    _instance = new EngineRunner();
+                    _instance = new EngineLifecycleDispatcher();
                 }
                 return _instance;
             }
         }
 
-        private EngineRunner()
+        private EngineLifecycleDispatcher()
         {
-            // EngineRunner decides which domain runners to instantiate
-            // This logic is engine-agnostic and controlled here, not in Unity/Godot wrappers
-            var scriptRunner = new LunyScriptRunner(this);
-            // Future: var aiRunner = new AIRunner(this);
-            // Future: var physicsRunner = new PhysicsRunner(this);
+            _registry = new LifecycleObserverRegistry();
         }
 
-        public void Register(IEngineRunner runner)
+        public void EnableObserver<T>() where T : IEngineLifecycle => _registry.EnableObserver<T>();
+
+        public void DisableObserver<T>() where T : IEngineLifecycle => _registry.DisableObserver<T>();
+
+        public bool IsObserverEnabled<T>() where T : IEngineLifecycle => _registry.IsObserverEnabled<T>();
+
+        public void OnUpdate(double deltaTime)
         {
-            if (!_registeredRunners.Contains(runner))
+            foreach (var observer in _registry.GetEnabledObservers())
             {
-                _registeredRunners.Add(runner);
+                observer.OnUpdate(deltaTime);
             }
         }
 
-        public void OnUpdate(float deltaTime)
+        public void OnFixedStep(double fixedDeltaTime)
         {
-            // Dispatch to all registered runners
-            foreach (var runner in _registeredRunners)
+            foreach (var observer in _registry.GetEnabledObservers())
             {
-                runner.OnUpdate(deltaTime);
+                observer.OnFixedStep(fixedDeltaTime);
             }
         }
 
-        public void OnFixedStep(float fixedDeltaTime)
+        public void OnShutdown()
         {
-            // Dispatch to all registered runners
-            foreach (var runner in _registeredRunners)
+            foreach (var observer in _registry.GetEnabledObservers())
             {
-                runner.OnFixedStep(fixedDeltaTime);
+                observer.OnShutdown();
             }
+        }
+
+        public static void ThrowDuplicateAdapterException(string adapterTypeName, string existingObjectName, long existingInstanceId, string duplicateObjectName, long duplicateInstanceId)
+        {
+            throw new System.InvalidOperationException(
+                $"Duplicate {adapterTypeName} singleton detected! " +
+                $"Existing: Name='{existingObjectName}' InstanceID={existingInstanceId}, " +
+                $"Duplicate: Name='{duplicateObjectName}' InstanceID={duplicateInstanceId}");
+        }
+
+        private sealed class LifecycleObserverRegistry
+        {
+            private readonly Dictionary<Type, IEngineLifecycle> _registeredObservers = new();
+            private readonly List<IEngineLifecycle> _enabledObservers = new();
+
+            public LifecycleObserverRegistry()
+            {
+                DiscoverAndInstantiateObservers();
+            }
+
+            private void DiscoverAndInstantiateObservers()
+            {
+                var observerTypes = AppDomain.CurrentDomain.GetAssemblies()
+                    .SelectMany(a => a.GetTypes())
+                    .Where(t => typeof(IEngineLifecycle).IsAssignableFrom(t)
+                                && !t.IsAbstract
+                                && t != typeof(EngineLifecycleDispatcher));
+
+                foreach (var type in observerTypes)
+                {
+                    var instance = (IEngineLifecycle)Activator.CreateInstance(type);
+                    _registeredObservers[type] = instance;
+                    _enabledObservers.Add(instance); // All observers enabled by default
+                    instance.OnStartup(); // Initialize immediately after instantiation
+                }
+            }
+
+            public void EnableObserver<T>() where T : IEngineLifecycle
+            {
+                if (_registeredObservers.TryGetValue(typeof(T), out var observer) && !_enabledObservers.Contains(observer))
+                {
+                    _enabledObservers.Add(observer);
+                }
+            }
+
+            public void DisableObserver<T>() where T : IEngineLifecycle
+            {
+                if (_registeredObservers.TryGetValue(typeof(T), out var observer))
+                {
+                    _enabledObservers.Remove(observer);
+                }
+            }
+
+            public bool IsObserverEnabled<T>() where T : IEngineLifecycle
+            {
+                return _registeredObservers.TryGetValue(typeof(T), out var observer) && _enabledObservers.Contains(observer);
+            }
+
+            public IEnumerable<IEngineLifecycle> GetEnabledObservers() => _enabledObservers;
         }
     }
 }
 ```
 
-## LunyScriptRunner (Domain Runner)
+## LunyScriptRunner (Lifecycle Observer)
 
 ```csharp
-namespace LunyScript.Core
+namespace LunyScript
 {
-    public sealed class LunyScriptRunner : IEngineRunner
+    public sealed class LunyScriptRunner : IEngineLifecycle
     {
         // Engine-agnostic script execution logic
         // State machines, behavior trees, script lifecycle, etc.
 
-        public LunyScriptRunner(EngineRunner engineRunner)
-        {
-            // Register with dispatcher
-            engineRunner.Register(this);
-
-            // Initialize runner systems (moved from OnCreate to constructor)
-            Initialize();
-        }
-
-        private void Initialize()
+        public void OnStartup()
         {
             // Initialize runner systems
         }
 
-        public void OnUpdate(float deltaTime)
+        public void OnUpdate(double deltaTime)
         {
             // Process per-frame logic
         }
 
-        public void OnFixedStep(float fixedDeltaTime)
+        public void OnFixedStep(double fixedDeltaTime)
         {
             // Process fixed timestep logic
+        }
+
+        public void OnShutdown()
+        {
+            // Cleanup runner systems
         }
     }
 }
 ```
 
-## Unity Implementation (Ultra-Thin Wrapper)
+## Unity Implementation (Ultra-Thin Adapter)
 
 ```csharp
-namespace LunyScript.Unity
+namespace Luny.Unity
 {
     using UnityEngine;
-    using LunyScript.Core;
 
-    internal sealed class EngineRunnerUnity : MonoBehaviour
+    internal sealed class UnityLifecycleAdapter : MonoBehaviour
     {
-        private static EngineRunnerUnity _instance;
-        private static bool _initialized;
+        private static UnityLifecycleAdapter _instance;
 
-        private IEngineRunner _engineRunner;
+        private IEngineLifecycleDispatcher _dispatcher;
 
-        public static EngineRunnerUnity Instance
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
+        private static void AutoInitialize()
         {
-            get
-            {
-                if (!_initialized)
-                {
-                    var go = new GameObject("LunyScriptEngine");
-                    _instance = go.AddComponent<EngineRunnerUnity>();
-                    DontDestroyOnLoad(go);
-                    _initialized = true;
-                }
-                return _instance;
-            }
+            // Force creation before first scene loads
+            var go = new GameObject(nameof(UnityLifecycleAdapter));
+            _instance = go.AddComponent<UnityLifecycleAdapter>();
+            DontDestroyOnLoad(go);
         }
 
         private void Awake()
         {
             if (_instance != null)
             {
-                throw new System.InvalidOperationException(
-                    $"Duplicate EngineRunnerUnity singleton detected! " +
-                    $"Existing: GameObject='{_instance.gameObject.name}' InstanceID={_instance.GetInstanceID()}, " +
-                    $"Duplicate: GameObject='{gameObject.name}' InstanceID={GetInstanceID()}");
+                EngineLifecycleDispatcher.ThrowDuplicateAdapterException(
+                    nameof(UnityLifecycleAdapter),
+                    _instance.gameObject.name,
+                    _instance.GetInstanceID(),
+                    gameObject.name,
+                    GetInstanceID());
             }
 
-            // Only responsibility: create EngineRunner singleton
-            _engineRunner = EngineRunner.Instance;
+            // Only responsibility: create EngineLifecycleDispatcher singleton
+            _dispatcher = EngineLifecycleDispatcher.Instance;
         }
 
-        // Only responsibility: forward Unity lifecycle to EngineRunner
-        private void Update() => _engineRunner.OnUpdate(Time.deltaTime);
+        // Only responsibility: forward Unity lifecycle to EngineLifecycleDispatcher
+        private void Update() => _dispatcher.OnUpdate(Time.deltaTime);
 
-        private void FixedUpdate() => _engineRunner.OnFixedStep(Time.fixedDeltaTime);
+        private void FixedUpdate() => _dispatcher.OnFixedStep(Time.fixedDeltaTime);
+
+        private void OnApplicationQuit()
+        {
+            _dispatcher?.OnShutdown();
+            _dispatcher = null;
+            _instance = null;
+        }
     }
 }
 ```
 
-## Godot Implementation (Ultra-Thin Wrapper)
+## Godot Implementation (Ultra-Thin Adapter)
 
 ```csharp
-namespace LunyScript.Godot
+namespace Luny.Godot
 {
     using Godot;
-    using LunyScript.Core;
 
-    internal sealed partial class EngineRunnerGodot : Node
+    internal sealed partial class GodotLifecycleAdapter : Node
     {
-        private static EngineRunnerGodot _instance;
+        private static GodotLifecycleAdapter _instance;
 
-        private IEngineRunner _engineRunner;
+        private IEngineLifecycleDispatcher _dispatcher;
 
-        public static EngineRunnerGodot Instance
+        // Option 1: ModuleInitializer (C# 9+)
+        [System.Runtime.CompilerServices.ModuleInitializer]
+        internal static void AutoInitialize()
         {
-            get
+            // Deferred to first frame since Godot isn't ready yet
+            Callable.From(() =>
             {
                 if (_instance == null)
                 {
-                    _instance = new EngineRunnerGodot();
-
+                    _instance = new GodotLifecycleAdapter
+                    {
+                        Name = nameof(GodotLifecycleAdapter)
+                    };
                     var root = Engine.GetMainLoop() as SceneTree;
-                    root?.Root.CallDeferred("add_child", _instance);
+                    root?.Root.CallDeferred(nameof(add_child), _instance);
                 }
-                return _instance;
-            }
+            }).CallDeferred();
         }
+
+        // Option 2: Custom EditorPlugin (more reliable)
+        // Create EditorPlugin that adds GodotLifecycleAdapter to AutoLoad list
 
         public override void _Ready()
         {
             if (_instance != null)
             {
-                throw new System.InvalidOperationException(
-                    $"Duplicate EngineRunnerGodot singleton detected! " +
-                    $"Existing: Name='{_instance.Name}' InstanceID={_instance.GetInstanceId()}, " +
-                    $"Duplicate: Name='{Name}' InstanceID={GetInstanceId()}");
+                EngineLifecycleDispatcher.ThrowDuplicateAdapterException(
+                    nameof(GodotLifecycleAdapter),
+                    _instance.Name,
+                    _instance.GetInstanceId(),
+                    Name,
+                    GetInstanceId());
             }
 
-            // Only responsibility: create EngineRunner singleton
-            _engineRunner = EngineRunner.Instance;
+            // Only responsibility: create EngineLifecycleDispatcher singleton
+            _dispatcher = EngineLifecycleDispatcher.Instance;
         }
 
-        // Only responsibility: forward Godot lifecycle to EngineRunner
-        public override void _Process(double delta) => _engineRunner.OnUpdate((float)delta);
+        // Only responsibility: forward Godot lifecycle to EngineLifecycleDispatcher
+        public override void _Process(double delta) => _dispatcher.OnUpdate(delta);
 
-        public override void _PhysicsProcess(double delta) => _engineRunner.OnFixedStep((float)delta);
+        public override void _PhysicsProcess(double delta) => _dispatcher.OnFixedStep(delta);
+
+        public override void _Notification(int what)
+        {
+            if (what == NotificationWMCloseRequest)
+            {
+                _dispatcher?.OnShutdown();
+                _dispatcher = null;
+                _instance = null;
+            }
+        }
     }
 }
 ```
-
-## Architecture Flow Summary
-
-### 1. First Access Trigger
-User code accesses `EngineRunnerUnity.Instance` (or `EngineRunnerGodot.Instance`)
-
-### 2. Engine-Native Wrapper Creation
-- Creates GameObject/Node
-- Adds MonoBehaviour/Node component
-- Sets DontDestroyOnLoad / adds to SceneTree root
-
-### 3. Awake/_Ready Hook
-- Duplicate detection guard
-- **Creates `EngineRunner.Instance`** (the core singleton)
-
-### 4. EngineRunner Constructor (Engine-Agnostic)
-```csharp
-private EngineRunner()
-{
-    // ALL domain runner instantiation happens here
-    var scriptRunner = new LunyScriptRunner(this);
-    // Future runners...
-}
-```
-
-### 5. Domain Runner Registration
-```csharp
-public LunyScriptRunner(EngineRunner engineRunner)
-{
-    engineRunner.Register(this);  // Self-registers
-    Initialize();                  // Initializes in constructor
-}
-```
-
-### 6. Lifecycle Dispatch
-```
-Unity.Update()
-  → EngineRunner.OnUpdate(deltaTime)
-    → LunyScriptRunner.OnUpdate(deltaTime)
-    → AIRunner.OnUpdate(deltaTime)
-    → etc.
-```
-
-## Key Benefits
-
-✅ **Ultra-thin engine wrappers**: Only 3 responsibilities (create, duplicate check, forward lifecycle)
-✅ **No duplication**: Domain runner instantiation logic exists in ONE place (`EngineRunner` constructor)
-✅ **Easy to extend**: Add new runners by adding one line in `EngineRunner` constructor
-✅ **Testable**: Can mock `IEngineRunner` interface
-✅ **Type safety**: Engine wrappers use `IEngineRunner` interface, not concrete types
-✅ **Clear separation**: Engine-native vs engine-agnostic concerns are completely separated
