@@ -459,7 +459,8 @@ Read RFC~/docs/2025-12/ScriptRunnerSingletonPattern.md and add EnableObserver, D
 
 ### Step 7
 => continue here ...
-=> NOTE: deviation from current code - ask if in doubt. Changes: new "Throw" class containing all static throw helper methods.
+=> NOTE: deviation from current code due to my refactorings - ask if in doubt. Keep formatting changes. 
+=> Changes made to code: added Throw, Log, GodotHelper classes containing helper methods. Keep those. Extend if needed.
 ```
 Read RFC~/docs/2025-12/ScriptRunnerSingletonPattern.md and create LunyScriptRunner implementing IEngineLifecycle exactly as specified
 ```
