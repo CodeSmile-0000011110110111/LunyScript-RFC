@@ -4,7 +4,7 @@ title: "Milestone: 50 Stars!"
 date: 2025-12-15
 categories: [milestones]
 tags: [community]
-#featured_image: ../media/Movie_034.gif
+featured_image: ../media/I%20react%20to%2050%20stars%21%20Short.gif
 ---
 
 Woot! The project reached its "50 GitHub Stars" Milestone 10 days early! :)
