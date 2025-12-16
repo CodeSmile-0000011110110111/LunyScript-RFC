@@ -14,3 +14,5 @@ Originally targeting Xmas (2025-12-25) it was reached today. Thanks to all suppo
 Today I also started testing the auto-load and lifecycle adapter implementation in Godot. The lifecycle hook now auto-loads when the player launches. All it takes is the usual "enable plugin" step in the UI.
  
  I wanted to bypass this annoying UI step but the solutions just weren't 100% reliable. So it remains KISS, and an optimization for the future.
+
+[My Live Reaction on Stream](https://youtu.be/wx7469U2pTM) 
