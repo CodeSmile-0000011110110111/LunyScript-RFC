@@ -15,4 +15,5 @@ Today I also started testing the auto-load and lifecycle adapter implementation 
  
  I wanted to bypass this annoying UI step but the solutions just weren't 100% reliable. So it remains KISS, and an optimization for the future.
 
-[My Live Reaction on Stream](https://youtu.be/wx7469U2pTM) 
+<sub>My Live Reaction on Stream</sub>
+<iframe width="648" height="365" src="https://www.youtube.com/embed/wx7469U2pTM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
