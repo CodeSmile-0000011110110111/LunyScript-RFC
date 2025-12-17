@@ -405,7 +405,7 @@ namespace Luny.Godot
 3. **Use CHANGE comments**: For code that will change in future steps, add temporary comments like `// CHANGE Step 3: Replace with LifecycleObserverRegistry instantiation`. Remove these comments when the change is implemented
 4. **Use Log statements**: Entering playmode should log which methods run to see the execution order (see Instantiation Timeline). Provide list of expected log statements in order in chat, for validation with actual playmode logs.  
 5. **Ensure compilation**: Code must compile at each step, even if incomplete. Allow user to enter playmode to determine any issues.
-6. **Final verification step**: After Step 9, verify all CHANGE comments have been removed, and that the code does not deviate from the one in this document, unless unavoidable (ie would not compile otherwise)
+6. **Final verification step**: After Step 9, verify all CHANGE comments have been removed, unless unavoidable (ie would not compile otherwise) or where user made manual refactorings (see notes in step 7)
 7. **Educational破壊 (Educational Destruction)**: After each step (when there is educational value), demonstrate one or two ways to break the code we just wrote, OR show a commonly taught (especially cargo cult) pattern, and explain why we chose our design and what problems it avoids. This reveals edge cases, design limitations, and the "why" behind architectural decisions. WARN if implementing destructive code risks crashing Unity/Godot editor, or worse! 
 
 #### Addendum
