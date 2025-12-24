@@ -1,7 +1,7 @@
 ﻿---
 layout: post
 title: "Luny Xmas: An Example Script"
-date: 2025-12-15
+date: 2025-12-24
 categories: [prototyping]
 tags: [development, xmas]
 featured_image: ../media/2025-12-24_ExampleLunyScript.png
