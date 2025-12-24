@@ -3,7 +3,7 @@ layout: post
 title: "Santa crashed!"
 date: 2025-12-12
 categories: [prototyping]
-tags: [development]
+tags: [development, xmas]
 featured_image: ../media/Movie_034.gif
 ---
 

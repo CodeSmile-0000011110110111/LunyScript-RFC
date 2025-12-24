@@ -3,7 +3,7 @@ layout: post
 title: "Added more flashing lights"
 date: 2025-12-10
 categories: [prototyping]
-tags: [development]
+tags: [development, xmas]
 featured_image: ../media/Movie_024.gif
 ---
 

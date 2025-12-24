@@ -3,7 +3,7 @@ layout: post
 title: "Flashing lights scene with a touch of Xmas"
 date: 2025-12-09
 categories: [prototyping]
-tags: [development]
+tags: [development, xmas]
 featured_image: ../media/Movie_017.gif
 ---
 
