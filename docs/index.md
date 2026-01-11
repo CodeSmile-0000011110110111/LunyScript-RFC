@@ -4,7 +4,12 @@ Welcome to the LunyScript design documentation. This section covers the architec
 
 ## 📐 Architecture & Design
 
+<iframe width="648" height="365" src="https://www.youtube.com/embed/0Wlz7obQwOY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### Core Documentation
+
+⚠️ ** Preliminary Documentation, partially out of date already. Watch the video above! ** ⚠️
+
 - [Problem Statement](ProblemStatement.md) - Why LunyScript exists and what problems it solves
 - [Vision](../VISION.md) - Long-term vision and desired outcomes
 - [Author](../AUTHOR.md) - About the author and personal experience
