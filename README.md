@@ -5,11 +5,14 @@ But game engine code is complex, confusing, and completely different everywhere.
 
 LunyScript is your **catch-all entry ticket** to professional game engines!
 
-    When.Collision.With("ball")
+    When.CollisionWith("ball")
         .Begins(Audio.Play("ball_tagged_loop"))
-        .Ends(Spawn("sparkles").At(Other).Run(Wait.Seconds(2.5), Despawn()))
+        .Ends(Prefab.Spawn("sparkles")
+            .At(Target)
+            .Run(Wait.Seconds(2))
+            .Despawn());
 
-<sup>Coming soon for **Unity** (Q2/2026) and **Godot** (Q4/2026) ...</sup>
+<sup>Coming soon for **Godot** and **Unity** ...</sup>
 
 ### [🌐 Click for more info!](https://lunyscript.com)
 
@@ -17,7 +20,7 @@ LunyScript is your **catch-all entry ticket** to professional game engines!
 
 [![LunyScript Demo](media/LunyScript_Demo.gif)](https://youtu.be/Vn38VLNDsuw "LunyScript: Same Code, Three Engines - Proof of Concept Demo")<br/>
 **[Watch the full video on Youtube (1:20)](https://youtu.be/Vn38VLNDsuw "LunyScript: Same Code, Three Engines - Proof of Concept Demo")**
-
+**[Learn How LunyScript Works (Youtube)](https://www.youtube.com/watch?v=0Wlz7obQwOY)
 ---
 
 ## 📖 Documentation & Resources

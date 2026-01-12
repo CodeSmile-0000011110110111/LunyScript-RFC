@@ -2,8 +2,8 @@
 layout: post
 title: "First Grant Application Submitted"
 date: 2025-12-01
-categories: [milestones, funding]
-tags: [grants, development]
+categories: [milestones]
+tags: [grants, development, funding]
 featured_image: ../media/LunyScript_Demo.gif
 ---
 
