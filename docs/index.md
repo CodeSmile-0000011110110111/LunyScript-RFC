@@ -44,4 +44,4 @@ Luny engine is an engine-agnostic Developer SDK that opens engine ecosystems - w
 
 ##### **AI Usage Info**
 
-<sup>LunyScript development is assisted by AI. AI usage is regulated to adhere to FOSS principles: **→ [FOSS-compliant AI-Usage](../AI-USAGE.md)**</sup>
+<sup>AI-assisted development. AI usage is adheres to FOSS principles: **→ [FOSS-compliant AI-Usage](../AI-USAGE.md)**</sup>

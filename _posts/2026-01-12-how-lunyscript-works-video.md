@@ -21,7 +21,7 @@ This prompted me to record an Architecture Overview video over the weekend:
 <iframe width="648" height="365" src="https://www.youtube.com/embed/0Wlz7obQwOY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Here's the complete architecture diagram:
-![LunyScript-Architecture-Complete.png](../media/LunyScript-Architecture-Complete.png)
+![LunyScript-Architecture-Complete.png](/media/LunyScript-Architecture-Complete.png)
 
 **⭐[Every GitHub star welcome!](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC/)⭐** -- Unfortunately reaching the #100 milestone (currently: 79) within four days (Jan 15th) seems unlikely. There was little activity over the holidays but since last week it's been 2-4 stars per day once more. Keep those ⭐s coming and spread the word! 😊
 
