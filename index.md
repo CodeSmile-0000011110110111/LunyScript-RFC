@@ -130,6 +130,12 @@ _Games are different_ so engine code must be too. **Wrong!** 😲
 
 📸 → [**View 'Proof of Concept' (vertical slice) Details, Screenshots, Source Code**](PoC_2025-10/)
 
+## Architecture & Code Examples
+
+More details for the technically curious. 🤓
+<iframe width="648" height="365" src="https://www.youtube.com/embed/0Wlz7obQwOY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+📖 → For more info read the [Design pages](docs/).
 
 ## Got More Questions?
 <br/>**→ [Read the FAQ (frequently asked questions)](FAQ.md)**
