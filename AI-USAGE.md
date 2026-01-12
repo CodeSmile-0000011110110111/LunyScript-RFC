@@ -41,6 +41,10 @@ This document records how AI tools are used in the design, documentation, and im
 
 **AI models currently involved in relevant legal disputes MUST NOT be used for contributions to this project!**
 
+References:
+
+- [Lawsuits in the US related to AI & Copyright](https://www.bakerlaw.com/services/artificial-intelligence-ai/case-tracker-artificial-intelligence-copyrights-and-class-actions/) (not exhaustive) 
+
 ### 🚫 List of Prohibited AI Tools 🚫
 
 🚫 **GitHub Copilot** - **FORBIDDEN** for contributions to this project 🚫
