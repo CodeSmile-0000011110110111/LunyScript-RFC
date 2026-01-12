@@ -4,11 +4,18 @@
 
 ## Intro
 
-A uniform high-level API layer across engines doesn't exist partly due to the tedious, boring work writing engine adapters and abstractions. Nobody likes doing that.
+A uniform high-level API layer across engines doesn't exist partly due to the tedious, boring work writing engine adapters and abstractions. Nobody likes doing that. But we can (and should!) outsource this to AI. It will accurately map one API to another. 
 
-But now, we can outsource this to AI. It will accurately map one API to another. 
+Since AI usage is often met with skepticism, I'm absolutely with Dmitry and his dividing line (3:44):
+<iframe width="648" height="365" src="https://www.youtube.com/embed/AlQRkOgpi_A?start=224" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-In that sense, AI is truly transformative: We are no longer bound to the APIs we get fed by vendors. We can build our own on top, make it consistent, simple, uniform.
+And of course [his summary of what AI does (really) well](https://youtu.be/2Z-ng6g_mbU?si=vnhEXYo2WdEjd5fN&t=91):
+
+1. Boilerplate Code
+2. Explaining Code
+3. Troubleshooting
+4. Writing Tests
+5. Writing Documentation
 
 Since LunyScript is an open source project, certain rules and guidelines for using AI needed to be established.
 
