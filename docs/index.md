@@ -8,6 +8,7 @@ Welcome to the LunyScript design documentation. This section covers the architec
 - [Vision](../VISION.md) - Long-term vision and desired outcomes
 - [Author](../AUTHOR.md) - About the author and personal experience
 - [Philosophy](Philosophy.md) - API design philosophy and principles
+- [FAQ](../FAQ.md) - Frequently asked questions
 
 ## 📐 Architecture
 
@@ -29,7 +30,6 @@ LunyEngine is an engine-agnostic Developer SDK that opens engine ecosystems. We 
 - [Cross-Engine Concerns](CrossEngineConcerns.md) - Feature requirements and portability risks
 
 ## 🔗 Quick Links
-- [FAQ](../FAQ.md) - Frequently asked questions
 - [← Back to Home](../)
 
 ---
