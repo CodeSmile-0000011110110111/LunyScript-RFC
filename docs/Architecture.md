@@ -1,53 +1,56 @@
 # LunyScript Architecture
 
+## Design Principles
+
+1. **Convention over configuration:** Sane defaults, minimal boilerplate
+2. **Explicit is better than implicit:** Clear contracts over magic behavior
+3. **Performance by default:** Fast path should be the easy path
+4. **Progressive disclosure:** Simple things simple, complex things possible
+5. **Engine parity:** Feature set must work identically across all supported engines
+6. **Fault Tolerant:** No exceptions, visual error display, hold on to debug information (Name, ID)
+
 ## Core Layers
 
 LunyScript follows a three-layered architecture model:
 
-1. Luny abstraction layer (interfaces, proxies)
-2. LunyScript block execution engine (Coroutine, StateMachine, BehaviorTree)
-3. Engine Adapters & Bridges
+1. LunyEngine abstraction layer (interfaces, proxies, observers)
+2. LunyScript block execution engine (Sequences, StateMachine, BehaviorTree)
+3. Engine Adapters & Bridges (API Services)
 
 ### 1. Luny
 **Namespace:** `Luny`
-**Change frequency:** Low - rarely changes once established
 
-- **Pure abstractions** - the cross-engine implementers' framework
-- **Core interfaces** - ICoroutineScheduler, IStateMachine, IBehaviorTree, IEventDispatcher
-- **Behavioral contracts** - execution order guarantees and semantic rules
-- **Zero engine dependencies** - foundation for any implementation
-
-#### Design Notes
-  - Design contracts first - must think through abstraction boundaries before coding
-  - Dependency injection - need initialization/configuration system to wire implementations
-  - Boundary decisions - where to draw abstraction lines (too granular = verbose, too coarse = inflexible)
+- **Pure abstractions** - the cross-engine developer SDK
+- **Core interfaces** - ILunyObject, ILunyEngineObserver, ILunyEngineService
+- **Runtime services** - object/asset/scene registry, frame scheduling, game events
+- **Behavioral contracts** - execution order and lifecycle event guarantees and semantic rules
+- **Zero engine dependencies** - internalized logic defers only engine-native API calls to engine services
 
 ### 2. LunyScript
 **Namespace:** `LunyScript`
-**Change frequency:** Medium - grows with API expansion, core logic stable
 
 - **Script execution logic** - processes user-written behaviors
-- **Built-in implementations** - default coroutines, FSMs, behavior trees
-- **Graph processing** - static graph traversal and evaluation
-- **Runtime services** - object registry, event dispatcher, frame scheduling
+- **Built-in implementations** - sequences, statemachines, behavior trees
 - **Consumes Luny abstractions**
-- **Portable** - write once, runs on all engines
+- **Portable** - LunyScript implementations do not work with engine types by default
+- **Escape Hatch** - Engine-native references can be used directly, sacrificing portability for likely marginal performance gains
 
 ### 3. Engine Adapters & Bridges (engine-native glue)
 **Namespaces:** `LunyScript.Unity`, `LunyScript.Godot`, ..
-**Change frequency:** High - evolves with engine API changes
 
 - **Engine-specific bindings** - Unity/Godot/.. integration
-- **Native event observers** - collision, input, lifecycle trapping
-- **Native API wrappers** - physics, audio, spawning, scene graph
-- **Lifecycle management** - heartbeat forwarding and frame synchronization
-- **Mostly mechanical glue** - straightforward bridging code (asset & scene addressing)
+- **Native event observers** - collision, input, scene load, ..
+- **Native API wrappers** - input, physics, audio, camera, scene
+- **Lifecycle management** - startup & shutdown, update heartbeat
+- **Mostly mechanical glue** - straightforward bridging/mapping code
+- **Asset & Scene** - uniform addressing
 
 #### Size Notes
-- Adapter overall complexity and size similar between engines
-- Areas of adapater complexity vary more (eg assets, lifecycle, scene tree)
+- Adapter overall complexity and size similar between engines (complexity goes down with maturity of engine)
+- Adapater complexity highest for assets and scene - but likely only a few hundred lines of 'query' code
 - As API expands, adapter size grows proportionally but automates well
-- Shared engine functionality is largely semantic differences, or an extra call here and there
+- Shared engine functionality is largely semantic differences
+- Focus on established, stable, shared features: Not chasing the latest features 
 
 ---
 
@@ -58,15 +61,26 @@ using Luny;                    // Implementers extending core (abstractions only
 using LunyScript;              // Everyone - the main user-facing API
 using LunyScript.Unity;        // Unity projects - bootstrap and setup only
 
-// User code - just uses LunyScript
+// User code - derived from LunyScript, must implement abstract Build() method.
+// LunyScripts are front-loaded and converted into runtime-optimized block patterns.
+// GC or "Find" implications are of little concern since scripts convert when 'loading' the game/scene.
 When.Collision.With("ball")
-    .Begins(Audio.Play("sound"));
+    .Begins(Audio.Play("kick"));
 
-// Implementer code - uses Luny abstractions
-class CustomScheduler : Luny.ICoroutineScheduler {
-    // Custom implementation
+// Implementer code - uses Luny abstractions, registers automatically
+class MyObserver : Luny.ILunyEngineObserver {
+    // Implement engine lifecycle methods as needed:
+    void OnEngineStartup() {}
+    void OnEnginePreUpdate() {}
+    void OnEngineFixedStep(Double fixedDeltaTime) {}
+    void OnEngineUpdate(Double deltaTime) {}
+    void OnEngineLateUpdate(Double deltaTime) {}
+    void OnEnginePostUpdate() {}
+    void OnEngineShutdown() {}
+    void OnSceneLoaded(ILunyScene loadedScene) {}
+    void OnSceneUnloaded(ILunyScene unloadedScene) {}
+    // ...
 }
-LunyScript.Configure(new CustomScheduler());
 ```
 
 ---
@@ -80,50 +94,44 @@ LunyScript.Configure(new CustomScheduler());
 - Enables custom implementations per engine or use case
 - Creates "pure" portable core for community to build upon
 - Improves testability and maintainability
+- Re-implementing common types (eg Vector3, Color, Mathf) is straightforward with AI or utilizes .NET implementations
 
 ### Execution Model
 - Central script runner processing static graphs
 - Engine heartbeat-driven execution
-- Single-frame event trapping for native events
-- Deferred execution for structural changes (destroy, disable) to end-of-frame
+- Single-frame event trapping by condition blocks processing native events: `If(IsTouching("ball"), Audio.Play("kick"))`
+- Deferred execution for structural changes to scene (native destroy => end of frame)
 
 ---
 
 ## Critical Architectural Concerns
 
-### 1. Object/Node/Actor Registration System
+### 1. ✅ Object/Node/Actor Registration System (Implemented)
 **Requirements:**
-- **When to register:** On creation, before any lifecycle events fire
-- **Registration contract:**
-  - Objects register with central runner on construction
-  - Deregistration deferred to end-of-frame to allow cleanup events
-  - Handle mid-frame spawns/despawns gracefully
+- **When to register:** On create or when 'registering' existing native object to LunyEngine
 - **Identity management:** Stable IDs that survive engine-native object moves/reparenting
-- **Lookup performance:** Fast queries by tag, type, parent, spatial proximity
+- **Debugging:** Object IDs/Name persist even if native object gets destroyed (controlled by DEBUG symbols)
+- **Lookup performance:** Fast hashed queries by tag, name, and perhaps type, parent, proximity, ...
 
 **Considerations:**
-- How to handle objects created outside LunyScript (native spawns)?
-- Registration hooks for engine-specific object pools
-- Thread-safety if engines support multithreaded spawning
+- Interoperability with engine-native scripting and built-in behaviour
+- Auto-Pooling of Prefab instances (configurable, avoids create/destroy overhead)
+- Single-threaded builders, potentially multi-threaded runner execution
+- Sandboxed execution: limits user script access of scene hierarchy (objects), assets, and APIs
 
-### 2. Event Ordering Contract
+### 2. ✅ Event Ordering Contract (Implemented)
 **Requirements:**
-- **Deterministic lifecycle order:**
-  - Parent-first or child-first (document and enforce)
-  - Consistent across all engines
+- **Deterministic object lifecycle order:** Consistent across all engines
 - **Frame-phase ordering:**
-  1. Native engine events → trapped
-  2. User logic processing → state machines, coroutines, BTs tick
-  3. Stable, deterministic update order strongly favored (may relax)
-  4. Deferred operations → structural changes: destroys, disables, ..
-- **Event priority system:** Allow user-defined ordering within phases
-- **Guarantee atomicity:** Events within same frame-phase see consistent world state
+  1. Native engine events → trapped/queued for current frame, where necessary
+  3. Stable, deterministic update order
+  4. Deferred operations → structural changes: 'ready', destroy, ..
+- **Event priority system:** Allow user-defined ordering of engine observers
 
 **Considerations:**
-- What happens when user code triggers events during event processing?
-- How to handle recursive event triggers (e.g., collision starts spawning object that collides)?
+- What happens when user code triggers events during event processing? May defer to next frame.
 
-### 3. Execution Tracing & Profiling Hooks
+### 3. ✅ Execution Tracing & Profiling Hooks (Implemented)
 **Requirements:**
 - **Minimal intrusion:** Zero overhead when disabled
 - **Flexible instrumentation:**
@@ -131,10 +139,11 @@ LunyScript.Configure(new CustomScheduler());
   - State transitions (FSM state changes, BT node execution)
   - Event dispatch (what triggered, what handled)
   - Object lifecycle (spawn, enable, disable, destroy)
+  - Observer lifecycle (startup, update, shutdown)
 - **Pluggable backends:** Users provide trace collectors (logging, profiler integration, replay systems)
 
 **Design approaches:**
-- **Compile-time toggles:** `#ifdef LUNYSCRIPT_TRACE` for zero overhead
+- **Compile-time toggles:** `#ifdef LUNY_TRACE` for zero overhead
 - **Delegate-based:** Optional callbacks injected into runner
 - **Event bus:** Internal trace event stream that trace systems subscribe to
 
@@ -144,13 +153,9 @@ LunyScript.Configure(new CustomScheduler());
 - Memory allocations (object spawns)
 - Event propagation chains
 
-### 4. Memory Management Strategy
+### 4. ✅ Memory Management Strategy (Verified)
 **Requirements:**
 - **Cleanup guarantees:** No dangling references after object destruction
-
-**Diserable:**
-- **Pooling:** Reusable nodes/objects to avoid allocations during gameplay
-- **Cache locality:** Hot data structures packed for cache efficiency
 
 ### 5. Error Handling & Recovery
 **Requirements:**
@@ -170,6 +175,7 @@ LunyScript.Configure(new CustomScheduler());
 - **Single-threaded by default:** Simplifies reasoning and debugging
 
 **Desirable:**
+- **Internal Multi-Threading:** Supported optionally, orchestrates execution of Entity Component System or Jobs
 - **Async-ready abstractions:** Support engine-specific async patterns (Unity Jobs, UE TaskGraph)
 - **Safe data sharing:** Clear ownership and mutation rules
 
@@ -180,19 +186,3 @@ LunyScript.Configure(new CustomScheduler());
 
 **Desirable:**
 - **Multi-version support:** Allow mixing scripts from different API versions (if feasible)
-
----
-
-## Open Questions
-
-See **QUESTIONS.md** for detailed list of unresolved design questions.
-
----
-
-## Design Principles
-
-1. **Convention over configuration:** Sane defaults, minimal boilerplate
-2. **Explicit is better than implicit:** Clear contracts over magic behavior
-3. **Performance by default:** Fast path should be the easy path
-4. **Progressive disclosure:** Simple things simple, complex things possible
-5. **Engine parity:** Feature set must work identically across all supported engines

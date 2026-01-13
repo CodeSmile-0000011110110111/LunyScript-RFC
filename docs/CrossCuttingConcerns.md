@@ -4,15 +4,13 @@
 
 **Document Type:** Architecture Risk Assessment & Design Priority Matrix
 
-**Last Updated:** 2025-11-06
+**Last Updated:** 2026-01-13
 
 ---
 
 ## Ranked Concerns
 
 Cross-cutting concerns ranked by **Correctness Impact**, **Complexity**, **Cross-Layer Penetration**, **Performance Impact**, and **Developer Experience**.
-
-See **Guidelines.md** for criteria definitions and scoring legend.
 
 ---
 

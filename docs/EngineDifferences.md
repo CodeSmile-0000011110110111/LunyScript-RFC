@@ -12,13 +12,14 @@ LunyScript provides a uniform API across game engines by abstracting their archi
 
 **Godot: Node Hierarchy (Contextual Components)**
 ```
+// a Node 'is a' component
 Scene
 └── RigidBody3D "Player"
-    ├── CollisionShape3D (component-like child)
-    ├── MeshInstance3D (component-like child)
+    ├── CollisionShape3D
+    ├── MeshInstance3D
     ├── Node: PlayerController.gd (script)
     └── Node3D "Weapon" (object-like child)
-        └── MeshInstance3D (component-like child)
+        └── MeshInstance3D
 ```
 
 **Unity: GameObject + Components**
@@ -73,17 +74,27 @@ Unreal Engine is significantly more challenging for new users due to the explosi
 
 ### LunyScript Unification
 
-LunyScript treats all entities uniformly as **Objects** with **Behaviors**:
+LunyScript treats all entities uniformly as **Objects** with **Components**:
 
 ```csharp
 // Works identically across all engines
-When.Self.Spawns(
-    Get.Child("Weapon").Transform.Position = Vector3.Up * 2
+When.Object.Spawns(
+    Child("Weapon").Transform.Position = Vector3.Up * 2
 );
 
 // Godot: Finds child node "Weapon"
 // Unity: Finds child GameObject "Weapon"
 // Unreal: Finds child component or actor "Weapon"
+```
+The same works with types.
+```csharp
+// Works identically across all engines
+When.CollisionWith("ball")
+    .Begins(Log("touching ball"));
+
+// Godot: Finds Rigidbody3D node for "ball" on current or child nodes
+// Unity: Finds Rigidbody component on GameObject or children
+// Unreal: Finds Rigidbody component on Actor or children
 ```
 
 **Unified Hierarchy Model:**
@@ -192,12 +203,15 @@ BeginDestroy    // Cleanup phase
 
 ### LunyScript Unified Lifecycle
 
+LunyScript generates its own object lifecycle events for best consistency. 
+This sidelines any behavioural differences across engines.
+
 ```
-OnAwake         // First setup (maps: Awake/_ready/PostInitializeComponents)
+OnCreate        // First setup (maps: Awake/_ready/PostInitializeComponents)
     ↓
 OnEnable        // Object becomes active (maps: OnEnable/_enter_tree/BeginPlay)
     ↓
-OnStep          // Physics timestep (maps: FixedUpdate/_physics_process/Tick)
+OnFixedStep     // Physics timestep (maps: FixedUpdate/_physics_process/Tick)
 OnUpdate        // Per-frame (maps: Update/_process/Tick)
 OnLateUpdate    // After updates (maps: LateUpdate/custom/Tick)
     ↓
@@ -212,63 +226,34 @@ OnDestroy       // Cleanup (maps: OnDestroy/custom/BeginDestroy)
 
 ```csharp
 // Unified lifecycle events (wrapped in When, not directly exposed)
-When.Self.Awakes(/* first setup */);
-When.Self.Enables(/* when activated */);
-When.Self.Steps(/* physics timestep */);
-When.Self.Updates(/* per frame */);
-When.Self.LateUpdates(/* after updates */);
-When.Self.Disables(/* when deactivated */);
-When.Self.Destroys(/* final cleanup */);
+When.Created(/* first setup */);
+When.Enabled(/* when activated */);
+Every.FixedStep(/* physics timestep */);
+Every.Frame(/* per frame */);
+Every.FrameEnds(/* after updates */);
+When.Disabled(/* when deactivated */);
+When.Destroyed(/* final cleanup */);
 ```
 
 > **Note:** Lifecycle events are wrapped in `When` and not directly exposed to LunyScript users. Developers using Luny abstractions may utilize them directly for advanced scenarios.
 
-**Adapter Behavior:**
+**Special Note: Destruction**
 
-| LunyScript Event | Godot              | Unity | Unreal |
-|------------------|--------------------|-------|--------|
-| Awakes | _ready()           | Awake | PostInitializeComponents |
-| Enables | _enter_tree()      | OnEnable | BeginPlay |
-| Steps | _physics_process() | FixedUpdate | Tick |
-| Updates | _process()         | Update | Tick |
-| LateUpdates | **(added)**        | LateUpdate | Tick |
-| Disables | _exit_tree()       | OnDisable | EndPlay |
-| Destroys | **(added)**        | OnDestroy | BeginDestroy |
-
-**Special Note: Godot Destruction**
-
-Godot lacks explicit destruction callbacks. LunyScript raises its own `OnDestroy` event when:
-- Nodes are freed via `queue_free()` or `free()`
-- LunyScript detects node removal from scene tree before final cleanup
-- Custom adapter hooks track node lifecycle
-
-```csharp
-// In Godot adapter - LunyScript raises destruction event
-public override void _ExitTree() {
-    if (_isBeingDestroyed) {
-        SendDestroyEvent(this);
-    }
-}
-```
+Godot lacks explicit destruction callbacks. LunyScript raises its own `OnDestroy` event when handled internally, or during scene unload.
+If native scripting destroys the native engine object, the LunyScript object will stop working but won't throw exceptions.
 
 **Special Note: Godot LateUpdate**
 
-Godot does not have a native late update phase. LunyScript may add its own `OnLateUpdate` event for Godot to maintain cross-engine consistency.
+Godot does not have a native late update phase. LunyScript adds its own `OnLateUpdate` event for Godot to maintain cross-engine consistency.
 
 ---
 
 ## Summary
 
-LunyScript unifies three seemingly very diverse and unique conceptual models. But as the proof of concept has shown, the differences are superficial on a technical level. They can be unified in a straightforward manner by mere mapping and re-ordering.
+LunyScript unifies three seemingly very diverse and unique conceptual models. But as the proof of concept has shown, the differences are superficial on a technical level. They can be unified in a straightforward manner. 
 
-1. **Scene Graph:** Treats GameObjects/Nodes/Actors uniformly as Entities
-2. **Lifecycle:** Maps diverse event systems to consistent Initialize→Enable→Update→Disable→Destroy flow
-3. **API Complexity:** Favors editor-driven design over runtime parameter tweaking
+1. **Scene Graph:** Treats GameObjects/Nodes/Actors uniformly as 'Objects'. Treats Godot Nodes as Components.
+2. **Lifecycle:** Uses its own object lifecycle event systems for consistent Create→Enable→Update→Disable→Destroy flow.
+3. **API Complexity:** Favors editor-driven design over runtime parameter tweaking.
 
 This enables truly portable gameplay code without sacrificing engine-specific capabilities. The overhead is minimal but varies between engines depending on how well they match the uniform behaviour.
-
-Under consideration: Configurability of Lifecycle event ordering. In many cases the precise order of events simply does not matter, not even across engines.
-
----
-
-> **TO BE REVIEWED:** Technical accuracy verification needed, especially for Godot destruction handling and Unreal component hierarchy mapping.
