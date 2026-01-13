@@ -23,21 +23,19 @@ Game programming consistently ranks among the most challenging domains due to **
 
 **LunyScript reduces that complexity** with high-level, declarative patterns because follow-along copy-paste tutorials aren't enabling real growth. In fact, we have a name for this pervasive problem: **tutorial hell**. 
 
-What learners lack is a safe environment to experiment in to get their first projects started **and** finished. With a declarative functional API that feels closer to Scratch, but is text-based. With fault-tolerant execution and capable enough to build publishable projects.
-
+Furthermore, gameplay programming at large is inherently engine-agnostic, yet we continue to implement it using engine-native code. Reinventing gameplay wheels across engines is commonplace. Game developers are prone to NIH (Not Invented Here) - a culture that has served as an accessory to game engines' strong lock-in.
 ---
 
 ## We only use one engine - why portable code?
 
-We use one engine for one project at a time. But nobody sticks to just one engine forever.
+We use one engine for one project at a time. But hardly anybody sticks to just one engine forever.
 
 Especially beginners struggle to 'make the right choice' as they need to make a pick before they truly understand why.
-The time investment quickly locks them into that one engine. Portable code allows them to trial multiple engines, 
-and more easily transition between them as they already do anyway - just with much higher friction.
+The time investment quickly locks them into that one engine. Portable code allows them to trial multiple engines more easily, with less 'sunk cost'.
 
-For more experienced users, switching engines is still a time-consuming task. It's quite common for a Unity developer to try Godot in a game jam. To that end, being able to quickly pick up programming helps a lot to be productive and get a good feel for the editor.
+For more experienced users, switching engines is still a time-consuming task, and requires fighting muscle memory. Being able to quickly be productive elsewhere helps both the developer and lesser known engines.
 
-Lastly, agencies around the world often use multiple engines serving diverse clients. For them, creating a shared framework poses many challenges, thus copy/paste cherry-picking is most common: the reusable tasks are too small to warrant abstracting them into a framework. LunyScript's block-based programming concept provides exactly the cross-engine framework they need for 3d realtime applications typically low in interactivity, but high in fidelity.
+Lastly, agencies around the world often use multiple engines serving diverse clients. For them, creating a shared framework poses many challenges. Copy/paste cherry-picking between projects is rather commonplace. LunyScript's block-based programming concept provides exactly the cross-engine framework they need for 3d realtime applications typically low in interactivity, but high in fidelity.
 
 Finally, even within one engine being able to do simple things with simple code can be a huge productivity boost.
 
@@ -45,33 +43,29 @@ Finally, even within one engine being able to do simple things with simple code 
 
 ## Coding isn't that hard anymore - everyone just uses AI anyway?
 
-AI coding assistants can be powerful learning tools. But just like us, they work better with clear and consistent APIs.
+AI coding assistants can be powerful learning tools, but only with understanding what gets generated. 
+Just like us humans, AIs work better with clear and consistent APIs.
 
 When a learner asks AI for help with Unity's `GetComponent<AudioSource>().PlayOneShot()` vs Godot's `$AudioStreamPlayer.play()` vs Unreal's audio system, the AI might suggest outdated methods, wrong engine conventions, or code that doesn't match what the learner sees in their editor.
 
 With LunyScript's simple, fluent API, AI assistants give **reliable, working code that learners can actually understand and reason about.**
 
-`Audio.Play("sound")` reads like natural language, works in all engines, and helps beginners learn patterns instead of fighting syntax. AI becomes a learning amplifier instead of a source of confusion.
-
 ---
 
 ## Isn't LunyScript just adding another standard? ([xkcd #927](https://xkcd.com/927/))
 
-LunyScript is not another _re-inventing wheels_ framework that already exists in another engine. It sits atop of engines. Tt's **the only framework** that **could become a standard**. 
+LunyScript is not another _re-inventing wheels_ framework that already exists in another engine. It sits atop of engines. Tt's **the only framework** that has any chance of **becoming a standard**. 
 
-Engine API semantics are needlessly disparate: `BeginPlay`, `OnEnable`, `_enter_tree`. Every engine has the same lifecycle events. Their semantics differ, their purpose is uniform.
+Engine API semantics are needlessly disparate: `BeginPlay`, `OnEnable`, `_enter_tree`. Every engine has the same lifecycle and gameplay events/APIs. Their semantics differ, their purpose is uniform.
 
-And their behavior? There's no contract. In which order children receive lifecycle events varies.
-
-Recall how we used to put up with browser-specific code paths only to render content the same across browsers? Game engines are the same right now. The fragmented API landscape is entirely to their benefit, not ours.
-
-LunyScript starts as **the uniform API** to help beginners get started and transition between engines. The Scratch for game engines. Beyond that? Time will tell.
+LunyScript starts as **the uniform API** to help beginners get started and transition between engines. The Scratch for game engines. But it's also a Developer SDK which can give us more power than we ever imagined we could have.
 
 ---
 
 ## Why not a general purpose framework, like Rx.NET?
 
-General purpose frameworks are too abstract for beginners. They are loaded with CS jargon and concepts. LunyScript provides **high-level, fluent gameplay APIs** that read like game design intent.
+General purpose frameworks are too abstract for beginners. Many frameworks are often loaded with CS jargon and concepts, too. 
+LunyScript provides **high-level, fluent gameplay APIs** that read like game design intent.
 
 Let's compare with general-purpose (but Unity-only) UniRx:
 
@@ -91,7 +85,7 @@ this.OnCollisionExitAsObservable()
 The same code in LunyScript:
 
 ```csharp
-When.Collision.With("ball")
+When.CollisionWith("ball")
     .Begins(Audio.Play("ball_tagged_loop"))
     .Ends(Spawn("sparkles").At(Other).Run(Wait.Seconds(2.5), Despawn()));
 ```
@@ -104,22 +98,6 @@ CS jargon is loading semantics with assumptions, raising questions:
 
 If you read it out loud it just makes no sense!
 That's where beginners and designers walk away!
-
----
-
-## Why not write your own game engine (perhaps with SDL)?
-
-LunyScript is for ease of entry and productivity in pro-tier game engines, and perhaps contributes to popularizing emerging engines. Creating a custom "Luny" game engine would defeat those purposes.
-
-Currently, roughly **95% of Steam games published are made with Unity, Unreal, Godot, and proprietary engines.** This is where the learning pains are felt most.
-
-Building a custom engine means rebuilding:
-- Asset pipelines and importers
-- Visual editors and workflows
-- Cross-platform renderers
-- Years of tooling and community support
-
-LunyScript leverages all that existing infrastructure. Screw on those training wheels and start rolling with ease!
 
 ---
 
@@ -141,15 +119,13 @@ LunyScript provides the same **high-level expressiveness and simplicity** with a
 
 ## It's going to be a maintenance nightmare!
 
-The shared engine features and behaviors have settled. They are so fundamental to every project that engines resist changing them.
+The shared engine features and behaviors have settled. They are so fundamental to every project that engines resist changing them. 
 
 LunyScript will not chase fancy features. Anyone can add whatever they want however.
 
-The engine adapters and observers are in separate, engine-specific repositories. I needn't manage and maintain every engine integration myself.
+The engine adapters and observers are in separate, engine-specific repositories. I needn't manage and maintain every engine integration myself for all eternity.
 
-**70% of LunyScript is fully portable**, providing the behavioral guarantees. The engine-native code is just 30% — mostly automatable glue.
-
-**→ [Read the full maintenance strategy](MAINTENANCE.md)**
+**Upwards of 70% of LunyEngine is fully portable**. The engine-native code is mostly automatable glue, simple API mappings and a couple utility methods.
 
 ---
 
@@ -157,9 +133,11 @@ The engine adapters and observers are in separate, engine-specific repositories.
 
 They needn't. **Close enough is good enough.** The behavior contract is most important!
 
-Even if you have to tweak every physics value once more, the logic itself is already running in the new engine, unchanged!
+Even if you have to tweak every physics value once more, the logic itself is already running in the new engine, unchanged! 
 
 That's a lot more productive than having to start with _no code_, or worse: having to _verify and fix_ automatically converted code in a foreign environment.
+
+And it's really just physics that will cause gameplay to differ. Perhaps in the future LunyEngine may even provide its own physics simulation.
 
 ---
 
@@ -167,13 +145,13 @@ That's a lot more productive than having to start with _no code_, or worse: havi
 
 Neither.
 
-It's processing static graphs (FSMs, BTs) on engine heartbeat events via a central script runner.
+LunyScript is processing static graphs (FSMs, BTs) on engine heartbeat events via a central script runner.
 
 Infrequent native events are observed and trapped for a single frame by handlers like `Collision.Begins`.
 
 LunyScript handles 'structural changes' (eg destroy object) gracefully by activating associated events (ie `When.Self.Disables`, `When.Self.Destroys`) while deferring native execution to the 'end of frame' event.
 
-In the future, a simple source generator will be used to create the API's static language bindings (C# to Lua).
+In the future, a source generator may be used to create the API's static language bindings (C# to Lua).
 
 ---
 
@@ -196,7 +174,21 @@ if (gameObject.transform.GetComponent<Rigidbody>() != null)
 
 As seen on a worryingly regular basis.
 
-**For LunyScript's target audience** (simple games, learning projects, prototypes), performance is not a limiting factor.
+**For LunyScript's target audience** (simple games, learning projects, prototypes, details), performance is not a limiting factor.
+
+---
+
+## Why not write your own game engine (perhaps with SDL)?
+
+LunyScript is for ease of entry and productivity in pro-tier game engines, and perhaps contributes to popularizing emerging engines. Creating a custom "Luny" game engine would defeat those purposes.
+
+Currently, roughly **95% of Steam games published are made with Unity, Unreal, Godot, and a few AAA proprietary engines.** Among the first three is where the learning pains are felt most.
+
+Building a custom engine means rebuilding:
+- Asset pipelines and importers
+- Visual editors and workflows
+- Cross-platform renderers
+- Years of tooling and community support
 
 ---
 
