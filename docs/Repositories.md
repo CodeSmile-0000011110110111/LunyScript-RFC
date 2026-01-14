@@ -23,17 +23,17 @@ Luny frameworks should be imported into projects via the engine-native concept o
 - [**Luny**](https://github.com/CodeSmile-0000011110110111/Luny)
 - [**LunyLua**](https://github.com/CodeSmile-0000011110110111/LunyLua)
 - [**LunyScript**](https://github.com/CodeSmile-0000011110110111/LunyScript)
-  - **LunyLuaScript** - not yet available
+- **LunyLuaScript** - not yet available
 
 ### Engine-Native Code
 - [**Luny.Godot**](https://github.com/CodeSmile-0000011110110111/Luny.Godot)
-- [**Luny.Unity**](https://github.com/CodeSmile-0000011110110111/Luny.Unity)
 - [**LunyScript.Godot**](https://github.com/CodeSmile-0000011110110111/LunyScript.Godot)
+- [**Luny.Unity**](https://github.com/CodeSmile-0000011110110111/Luny.Unity)
 - [**LunyScript.Unity**](https://github.com/CodeSmile-0000011110110111/LunyScript.Unity)
 
 ### Engine-Native 'Plugins'
-- [**LunyScript-UnityPackage**](https://github.com/CodeSmile-0000011110110111/LunyScript-UnityPackage)
 - [**LunyScript-GodotAddon**](https://github.com/CodeSmile-0000011110110111/LunyScript-GodotAddon)
+- [**LunyScript-UnityPackage**](https://github.com/CodeSmile-0000011110110111/LunyScript-UnityPackage)
 
 ### LunyScript Example Projects
 
@@ -58,15 +58,18 @@ This outlines the high-level steps. Where in doubt analyze and follow LunyScript
 This assumes that your framework is named 'MyFramework' - adjust as needed. If Luny becomes popular this process will be eased eg via setup scripts - I understand it's more than 'the usual' and seems complicated at first.
 
 - Create `MyFramework-Examples-<Engine>` engine-native project repositories, one per engine. Replace `<Engine>` with the name of the engine.
-- Create a plugin repository, one per engine. This contains the engine-native plugin files (eg `plugin.cfg` or `package.json`).
-  - Unity: name the repo `MyFramework.Unity` and import it as submodule into `Packages/com.<yourdomain>.myframework`
-  - Godot: name the repo `MyFramework.Godot` and import it as submodule into `addons/myframework`
-  - (continue with any other engine you wish to support...)
+- Create a plugin repository, one per engine. Contains engine-native plugin files.
+  - **Unity**:
+    - name the repo `MyFramework.Unity`
+    - import it as submodule into `Packages/com.<yourdomain>.myframework`
+  - **Godot**:
+    - name the repo `MyFramework.Godot`
+    - import it as submodule into `addons/myframework`
 - Include, as submodules of each plugin repository, the following repositories as subfolders using the exact same names:
-  - **`Luny`** - The LunyEngine core
-  - **`Luny.<Engine>`** - The engine-native LunyEngine implementations
-  - **`MyFramework`** - Your framework's engine-agnostic layer
-  - **`MyFramework.<Engine>`** - Your framework's engine-native implementations (if any)
+  - **`Luny`**
+  - **`Luny.<Engine>`**
+  - **`MyFramework`**
+  - **`MyFramework.<Engine>`**
 
 ### Godot Example Addon
 
@@ -102,15 +105,17 @@ Ensure `MyFramework` Assembly Definition has **No Engine References** checked an
 
 Create `Runtime` or `Editor` folders as needed only within the `MyFramework.Unity/` subfolder - don't nest everything under Runtime or Editor folders!
 
-## Directory Structure
+### Test Organization
 
-This showcases the structure of a Unity upm package. Other engines similarly will need a 'plugin' repository as the basis, then include the necessary Luny repositories as submodules. 
+Tests are co-located within their respective modules:
+- `Luny/Tests/` - Core framework tests
+- `Luny.Unity/Tests/` - Unity integration tests (includes test scenes)
+- `LunyScript/Tests/` - Script system tests
+- `LunyScript.Unity/Tests/` - Unity-specific script tests
 
-The engine-native 'plugin' shouly typically contain only the bare minimum files, such as `package.json` for Unity or `plugin.cfg` for Godot, whereas the actual code should be in submodule repositories next to Luny etc.
+## Example Directory Structure
 
-### `de.codesmile.lunyscript` - Unity UPM Package
-
-The main framework package containing all core and Unity-specific functionality. The Godot 'addon' directory structure is practically identical.
+This showcases the structure of a Unity upm package to get an idea of what it looks like. The Godot 'addon' directory structure is practically identical.
 
 ```
 de.codesmile.lunyscript/ (submodule in project, located in: Packages/de.codesmile.lunyscript)
@@ -159,14 +164,6 @@ de.codesmile.lunyscript/ (submodule in project, located in: Packages/de.codesmil
 └── LunyLua/ (submodule)       # Lua runtime integration
     └── Lua-CSharp/            # Lua C# bindings
 ```
-
-### Test Organization
-
-Tests are co-located within their respective modules:
-- `Luny/Tests/` - Core framework tests
-- `Luny.Unity/Tests/` - Unity integration tests (includes test scenes)
-- `LunyScript/Tests/` - Script system tests
-- `LunyScript.Unity/Tests/` - Unity-specific script tests
 
 ## How to work with Git Submodules
 
