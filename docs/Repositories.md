@@ -17,6 +17,8 @@ Luny frameworks should be imported into projects via the engine-native concept o
 - Godot: contents placed in the `addons/` folder, then enable plugin
 - Others: Unreal, Stride, Flax, Unigine, Evergine, CryEngine all have support for 'plugins'
 
+---
+
 ## Repositories
 
 ### Engine-Agnostic Code
@@ -50,6 +52,8 @@ These repositories contain documentation, design, notes.
 
 - [**LunyScript-RFC**](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC/) - LunyScript Website & Documentation
 - [**LunyScript-Plan**](https://github.com/CodeSmile-0000011110110111/LunyScript-Plan) - Notes, Tasks, Issues as [LogSeq](https://logseq.com/) Journal
+
+---
 
 ## How to create a development repository
 
@@ -113,6 +117,8 @@ Tests are co-located within their respective modules:
 - `LunyScript/Tests/` - Script system tests
 - `LunyScript.Unity/Tests/` - Unity-specific script tests
 
+---
+
 ## Example Directory Structure
 
 This showcases the structure of a Unity upm package to get an idea of what it looks like. The Godot 'addon' directory structure is practically identical.
@@ -164,6 +170,8 @@ de.codesmile.lunyscript/ (submodule in project, located in: Packages/de.codesmil
 └── LunyLua/ (submodule)       # Lua runtime integration
     └── Lua-CSharp/            # Lua C# bindings
 ```
+
+---
 
 ## How to work with Git Submodules
 
