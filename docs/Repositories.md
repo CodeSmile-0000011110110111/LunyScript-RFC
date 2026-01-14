@@ -11,28 +11,29 @@ Note: The current setup will not allow multiple LunyEngine-based frameworks to c
 
 ## Engine 'Plugin' Integration
 
-Luny should be imported into projects via the engine-native concept of a 'plugin'.
+Luny frameworks should be imported into projects via the engine-native concept of a 'plugin' (package).
 
-- Unity: LunyScript is a upm package to be installed via Package Manager from git URL
-- Godot: LunyScript is an addon to be installed in the `addons/` folder, then enable the LunyScript plugin 
-
-If an engine does not (sufficiently) support integrating plugins, a minimal template project may be shared instead.
+- Unity: upm package installed via Package Manager from git URL
+- Godot: contents placed in the `addons/` folder, then enable plugin
+- Others: Unreal, Stride, Flax, Unigine, Evergine, CryEngine all have support for 'plugins'
 
 ## Repositories
 
 ### Engine-Agnostic Code
 - [**Luny**](https://github.com/CodeSmile-0000011110110111/Luny)
   - [**LunyLua**](https://github.com/CodeSmile-0000011110110111/LunyLua)
-  - [**LunyScript**](https://github.com/CodeSmile-0000011110110111/LunyScript)
-    - **LunyLuaScript** - not yet available
+
+
+- [**LunyScript**](https://github.com/CodeSmile-0000011110110111/LunyScript)
+  - **LunyLuaScript** - not yet available
 
 ### Engine-Native Code
 - [**Luny.Godot**](https://github.com/CodeSmile-0000011110110111/Luny.Godot)
-  - [**LunyScript.Godot**](https://github.com/CodeSmile-0000011110110111/LunyScript.Godot)
-
-
 - [**Luny.Unity**](https://github.com/CodeSmile-0000011110110111/Luny.Unity)
-  - [**LunyScript.Unity**](https://github.com/CodeSmile-0000011110110111/LunyScript.Unity)
+
+
+- [**LunyScript.Godot**](https://github.com/CodeSmile-0000011110110111/LunyScript.Godot)
+- [**LunyScript.Unity**](https://github.com/CodeSmile-0000011110110111/LunyScript.Unity)
 
 ### Engine-Native 'Plugins'
 - [**LunyScript-UnityPackage**](https://github.com/CodeSmile-0000011110110111/LunyScript-UnityPackage)
@@ -40,7 +41,7 @@ If an engine does not (sufficiently) support integrating plugins, a minimal temp
 - [**LunyScript-GodotAddon**](https://github.com/CodeSmile-0000011110110111/LunyScript-GodotAddon)
   - Imported in project as: `addons/lunyscript`
 
-### Engine-Native Example Projects
+### LunyScript Example Projects
 
 Fully operable engine projects for LunyScript development:
  
@@ -68,27 +69,44 @@ This assumes that your framework is named 'MyFramework' - adjust as needed. If L
   - Godot: name the repo `MyFramework.Godot` and import it as submodule into `addons/myframework`
   - (continue with any other engine you wish to support...)
 - Include, as submodules of each plugin repository, the following repositories as subfolders using the exact same names:
-  - **Luny** - The LunyEngine core
-  - **Luny.<Engine>** - The engine-native LunyEngine implementations
-  - **MyFramework** - Your framework's engine-agnostic layer
-  - **MyFramework.<Engine>** - Your framework's engine-native implementations (if any)
+  - **`Luny`** - The LunyEngine core
+  - **`Luny.<Engine>`** - The engine-native LunyEngine implementations
+  - **`MyFramework`** - Your framework's engine-agnostic layer
+  - **`MyFramework.<Engine>`** - Your framework's engine-native implementations (if any)
 
-Your MyFramework Unity plugin structure should look like this:
+### Godot Example Addon
 
+Your `MyFramework` Godot addon structure should look like this:
 ```
-de.<yourdomain>.myframework/
-├── package.json               # Unity UPM package manifest
-├── Luny/                      # submodule
-├── Luny.Unity/                # submodule
-├── MyFramework/               # submodule
-└── MyFramework.Unity/         # submodule
+addons/
+└── myframework/
+    ├── plugin.cfg                 # Godot plugin config
+    ├── Luny/                      # submodule
+    ├── Luny.Godot/                # submodule
+    ├── MyFramework/               # submodule
+    └── MyFramework.Godot/         # submodule
 ```
 
-This package is included as submodule in the `MyFramework-Examples-<Engine>` project and located in: `Packages/de.<yourdomain>.myframework`.
+This package is included as submodule in the `MyFramework-Examples-Godot` project and located in `addons/myframework`.
+
+### Unity Example Package
+
+Your `MyFramework` Unity package structure should look like this:
+```
+Packages/
+└── de.<yourdomain>.myframework/
+    ├── package.json               # Unity UPM package manifest
+    ├── Luny/                      # submodule
+    ├── Luny.Unity/                # submodule
+    ├── MyFramework/               # submodule
+    └── MyFramework.Unity/         # submodule
+```
+
+This package is included as submodule in the `MyFramework-Examples-Unity` project and located in `Packages/de.<yourdomain>.myframework`.
 
 Ensure `MyFramework` Assembly Definition has **No Engine References** checked and depends on `Luny`. While `MyFramework.Unity` depends on both `Luny` and `Luny.Unity`.
 
-Create `Runtime` or `Editor` folders as needed in the `MyFramework.Unity/` subfolder.
+Create `Runtime` or `Editor` folders as needed only within the `MyFramework.Unity/` subfolder - don't nest everything under Runtime or Editor folders!
 
 ## Directory Structure
 
