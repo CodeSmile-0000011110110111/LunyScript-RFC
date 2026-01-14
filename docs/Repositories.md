@@ -65,15 +65,23 @@ This assumes that your framework is named 'MyFramework' - adjust as needed. If L
 - Create a plugin repository, one per engine. Contains engine-native plugin files.
   - **Unity**:
     - name the repo `MyFramework.Unity`
-    - import it as submodule into `Packages/com.<yourdomain>.myframework`
+    - import as submodule in `Packages/com.<yourdomain>.myframework`
   - **Godot**:
     - name the repo `MyFramework.Godot`
-    - import it as submodule into `addons/myframework`
+    - import as submodule in `addons/myframework`
 - Include, as submodules of each plugin repository, the following repositories as subfolders using the exact same names:
   - **`Luny`**
   - **`Luny.<Engine>`**
   - **`MyFramework`**
   - **`MyFramework.<Engine>`**
+
+### Test Organization
+
+Tests are co-located within their respective modules:
+- `Luny/Tests/` - Core framework tests
+- `Luny.Unity/Tests/` - Unity integration tests (includes test scenes)
+- `LunyScript/Tests/` - Script system tests
+- `LunyScript.Unity/Tests/` - Unity-specific script tests
 
 ### Godot Example Addon
 
@@ -108,14 +116,6 @@ This package is included as submodule in the `MyFramework-Examples-Unity` projec
 Ensure `MyFramework` Assembly Definition has **No Engine References** checked and depends on `Luny`. While `MyFramework.Unity` depends on both `Luny` and `Luny.Unity`.
 
 Create `Runtime` or `Editor` folders as needed only within the `MyFramework.Unity/` subfolder - don't nest everything under Runtime or Editor folders!
-
-### Test Organization
-
-Tests are co-located within their respective modules:
-- `Luny/Tests/` - Core framework tests
-- `Luny.Unity/Tests/` - Unity integration tests (includes test scenes)
-- `LunyScript/Tests/` - Script system tests
-- `LunyScript.Unity/Tests/` - Unity-specific script tests
 
 ---
 
