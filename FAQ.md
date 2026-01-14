@@ -13,7 +13,7 @@
 - [Results won't replicate precisely!](#results-wont-replicate-precisely)
 - [Like, how? Reflection? Source Generation?](#like-how-reflection-source-generation)
 - [Any abstraction adds overhead! Games need performance!](#any-abstraction-adds-overhead-games-need-performance)
-- [More Questions?](#more-questions)
+- [Questions not answered?](#more-questions)
 
 ## Why not just learn the engine API properly?
 
@@ -192,6 +192,7 @@ Building a custom engine means rebuilding:
 
 ---
 
-## More Questions?
+## Questions not answered?
 
-**[Join the Discussions](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC/discussions/)** to ask questions, share feedback, or propose ideas!
+**[Join Discord](https://discord.gg/EkwNb4rB7W)** to ask questions, share feedback, or propose ideas!
+**[Join Patreon](https://www.patreon.com/CodeSmile) for news and updates.
