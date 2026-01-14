@@ -183,7 +183,7 @@ This avoids all of the frustrations developers without submodule experience usua
 
 Save this script in the project's repository root under `.git/hooks` as `pre-commit` text file. Only add this to the root repository, not in any of the submodules.
 
-This pre-commit hook prevents commits if a submodule is "dirty" and should be committed first. If that is the case, a message pops up instructing you to first commit the submodule (you do not lose any changes).
+This pre-commit hook prevents commits if a submodule is "dirty" and should be committed first. If that is the case, a message pops up instructing you to first commit the submodule (you do not lose any changes). Works with both command line and git GUI tools (eg SourceTree).
 
 ```
 #!/bin/sh
