@@ -127,10 +127,10 @@ de.codesmile.lunyscript/ (submodule in project, located in: Packages/de.codesmil
 ├── Luny/ (submodule)          # Core engine framework (engine-agnostic)
 │   ├── Core/                  # Logging, number utilities, trace logging
 │   ├── Engine/                # Engine abstraction layer
-│   │   ├── Bridge/            # Engine adapter interface
-│   │   ├── Identity/          # Object identification system
+│   │   ├── Bridge/            # Engine adapter interfaces
+│   │   ├── Identity/          # Object identification structs
 │   │   ├── Services/          # Service registry pattern
-│   │   └── Diagnostics/       # Profiling and metrics
+│   │   └── Diagnostics/       # Profiling and logging
 │   ├── Exceptions/            # Framework-specific exceptions
 │   ├── Extensions/            # Utility extensions for System types
 │   └── Tests/                 # Core framework tests
@@ -140,11 +140,11 @@ de.codesmile.lunyscript/ (submodule in project, located in: Packages/de.codesmil
 │   │   ├── Bridge/            # Unity adapter implementation
 │   │   └── Services/          # Unity service implementations
 │   ├── Editor/                # Unity Editor utilities
-│   │   └── Linking/           # IL2CPP linker configuration
+│   │   └── Linking/           # Linker stripping hints
 │   └── Tests/                 # Unity integration tests
 │
-├── LunyScript/ (submodule)    # Visual scripting DSL (engine-agnostic)
-│   ├── Blocks/                # Visual script blocks
+├── LunyScript/ (submodule)    # Scripting DSL (engine-agnostic)
+│   ├── Blocks/                # Scripting blocks
 │   │   ├── Debug/             # Debugging blocks
 │   │   ├── Editor/            # Editor-related blocks
 │   │   ├── Engine/            # Engine lifecycle blocks
@@ -152,8 +152,8 @@ de.codesmile.lunyscript/ (submodule in project, located in: Packages/de.codesmil
 │   │   ├── Run/               # Execution control blocks
 │   │   └── Scene/             # Scene management blocks
 │   ├── Core/                  # Script definitions, variables, IDs
-│   ├── Diagnostics/           # Profiling and tracing for scripts
-│   ├── Events/                # Event scheduling and handling
+│   ├── Diagnostics/           # Profiling and logging
+│   ├── Events/                # Event scheduling and response
 │   ├── Execution/             # Script runner, activator, context
 │   ├── Runnables/             # Executable script interfaces
 │   └── Tests/                 # Script system tests
