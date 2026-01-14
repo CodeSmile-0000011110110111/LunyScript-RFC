@@ -15,8 +15,9 @@ Welcome to the LunyScript design documentation. This section covers the architec
 
 ### A Diagram Says More Than a Thousand UMLs
 
-LunyEngine is an engine-agnostic Developer SDK that opens engine ecosystems. We need to stop re-inventing gameplay wheels in every engine separately! The native service adapters are (ultra-)thin API mappings.
+LunyEngine is an engine-agnostic Developer SDK that opens engine ecosystems. We need to stop re-inventing gameplay wheels in every engine separately!
 ![LunyScript-Architecture-Complete.png](../media/LunyScript-Architecture-Complete.png)
+<sup>The native service adapters are (ultra-)thin API mappings.</sup>
 
 ## Technical Documentation
 
