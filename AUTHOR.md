@@ -13,7 +13,8 @@
 Hi! I'm Steffen from Germany.
 
 [![Reacting to 50 GitHub stars](../media/I%20react%20to%2050%20stars%21%20Short.gif)](https://www.youtube.com/watch?v=wx7469U2pTM){:target="_blank"}
-<sub>Me, reacting to LunyScript's 50th GitHub star live on stream ... :)</sub>
+<sub>Me, reacting to LunyScript's 50th GitHub star live on stream ... :) &nbsp;&nbsp; -- <a href="https://www.star-history.com/#CodeSmile-0000011110110111/LunyScript-RFC&type=date&legend=bottom-right" target="_blank">View the Star Chart</a></sub>
+
 
 I've been modding and making games since the 1990s. I particularly enjoyed modding with scripting languages (Hexen, Quake). My first paycheck: beta-testing for 3D Realms. Work-Life perfectly balanced: "I'm not playing, mum. I'm working!" :)
 
