@@ -80,8 +80,8 @@ This assumes that your framework is named 'MyFramework' - adjust as needed. If L
 Tests are co-located within their respective modules:
 - `Luny/Tests/` - Core framework tests
 - `Luny.Unity/Tests/` - Unity integration tests (includes test scenes)
-- `LunyScript/Tests/` - Script system tests
-- `LunyScript.Unity/Tests/` - Unity-specific script tests
+- `MyFramework/Tests/` - Script system tests
+- `MyFramework.Unity/Tests/` - Unity-specific script tests
 
 ### Godot Example Addon
 
