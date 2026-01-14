@@ -65,10 +65,10 @@ This assumes that your framework is named 'MyFramework' - adjust as needed. If L
 - Create a plugin repository, one per engine. Contains engine-native plugin files.
   - **Unity**:
     - name the repo `MyFramework.Unity`
-    - import as submodule in `Packages/com.<yourdomain>.myframework`
+    - add as submodule in `Packages/com.<yourdomain>.myframework`
   - **Godot**:
     - name the repo `MyFramework.Godot`
-    - import as submodule in `addons/myframework`
+    - add as submodule in `addons/myframework`
 - Include, as submodules of each plugin repository, the following repositories as subfolders using the exact same names:
   - **`Luny`**
   - **`Luny.<Engine>`**
