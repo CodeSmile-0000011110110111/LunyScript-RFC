@@ -21,25 +21,19 @@ Luny frameworks should be imported into projects via the engine-native concept o
 
 ### Engine-Agnostic Code
 - [**Luny**](https://github.com/CodeSmile-0000011110110111/Luny)
-  - [**LunyLua**](https://github.com/CodeSmile-0000011110110111/LunyLua)
-
-
+- [**LunyLua**](https://github.com/CodeSmile-0000011110110111/LunyLua)
 - [**LunyScript**](https://github.com/CodeSmile-0000011110110111/LunyScript)
   - **LunyLuaScript** - not yet available
 
 ### Engine-Native Code
 - [**Luny.Godot**](https://github.com/CodeSmile-0000011110110111/Luny.Godot)
 - [**Luny.Unity**](https://github.com/CodeSmile-0000011110110111/Luny.Unity)
-
-
 - [**LunyScript.Godot**](https://github.com/CodeSmile-0000011110110111/LunyScript.Godot)
 - [**LunyScript.Unity**](https://github.com/CodeSmile-0000011110110111/LunyScript.Unity)
 
 ### Engine-Native 'Plugins'
 - [**LunyScript-UnityPackage**](https://github.com/CodeSmile-0000011110110111/LunyScript-UnityPackage)
-  - Imported in project as: `Packages/de.codesmile.lunyscript`
 - [**LunyScript-GodotAddon**](https://github.com/CodeSmile-0000011110110111/LunyScript-GodotAddon)
-  - Imported in project as: `addons/lunyscript`
 
 ### LunyScript Example Projects
 
@@ -48,7 +42,7 @@ Fully operable engine projects for LunyScript development:
 - [**LunyScratch_Examples_Godot**](https://github.com/CodeSmile-0000011110110111/LunyScratch_Examples_Godot)
 - [**LunyScratch_Examples_Unity**](https://github.com/CodeSmile-0000011110110111/LunyScratch_Examples_Unity)
 
-**Note:** I continued working in the 'LunyScratch' Proof of Concept projects. I will most likely rename the example repositories in the future, replacing 'Scratch' with 'Script'.
+**Note:** I will most likely rename the example repositories in the future, replacing 'Scratch' with 'Script'.
 
 ### Development
 
