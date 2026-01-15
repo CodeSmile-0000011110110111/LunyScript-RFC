@@ -5,7 +5,9 @@
 The Luny repositories follows a modular architecture with clear separation between:
 - **Engine-agnostic core** (Luny, LunyScript)
 - **Engine-specific integrations** (suffixed with `.Unity`, `.Godot`, etc.)
-- **Engine-native 'plugin'** (Unity: upm package / Godot: addon)
+- **Engine-native 'plugins'** (Unity: upm package / Godot: addon)
+- **Engine-native Example Projects**
+- **Engine-agnostic Unit Test Repositories** (Luny-Test, LunyScript-Test)
 
 Note: The current setup will not allow multiple LunyEngine-based frameworks to coexist in a single project. This will be improved in the future.
 
@@ -45,6 +47,14 @@ Fully operable engine projects for LunyScript development:
 - [**LunyScratch_Examples_Unity**](https://github.com/CodeSmile-0000011110110111/LunyScratch_Examples_Unity)
 
 **Note:** I will most likely rename the example repositories in the future, replacing 'Scratch' with 'Script'.
+
+### Unit Testing
+- [**Luny-Test**](https://github.com/CodeSmile-0000011110110111/Luny-Test)
+- [**LunyLua-Test**](https://github.com/CodeSmile-0000011110110111/LunyLua-Test)
+- [**LunyScript-Test**](https://github.com/CodeSmile-0000011110110111/LunyScript-Test)
+
+Engine-agnostic unit test solution:
+- [**LunyScript_UnitTests](https://github.com/CodeSmile-0000011110110111/LunyScript_UnitTests)
 
 ### Development
 
