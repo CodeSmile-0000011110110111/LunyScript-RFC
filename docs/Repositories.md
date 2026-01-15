@@ -31,15 +31,15 @@ Luny frameworks should be imported into projects via the engine-native concept o
 
 ### Engine-Native Code
 - [**Luny.Godot**](https://github.com/CodeSmile-0000011110110111/Luny.Godot)
-- [**LunyScript.Godot**](https://github.com/CodeSmile-0000011110110111/LunyScript.Godot)
 - [**Luny.Unity**](https://github.com/CodeSmile-0000011110110111/Luny.Unity)
+- [**LunyScript.Godot**](https://github.com/CodeSmile-0000011110110111/LunyScript.Godot)
 - [**LunyScript.Unity**](https://github.com/CodeSmile-0000011110110111/LunyScript.Unity)
 
 ### Engine-Native 'Plugins'
 - [**LunyScript-GodotAddon**](https://github.com/CodeSmile-0000011110110111/LunyScript-GodotAddon)
 - [**LunyScript-UnityPackage**](https://github.com/CodeSmile-0000011110110111/LunyScript-UnityPackage)
 
-### LunyScript Example Projects
+### Engine-Native Example Projects
 
 Fully operable engine projects for LunyScript development:
  
@@ -48,20 +48,18 @@ Fully operable engine projects for LunyScript development:
 
 **Note:** I will most likely rename the example repositories in the future, replacing 'Scratch' with 'Script'.
 
-### Unit Testing
-- [**Luny-Test**](https://github.com/CodeSmile-0000011110110111/Luny-Test)
-- [**LunyLua-Test**](https://github.com/CodeSmile-0000011110110111/LunyLua-Test)
-- [**LunyScript-Test**](https://github.com/CodeSmile-0000011110110111/LunyScript-Test)
-
-Engine-agnostic unit test solution:
-- [**LunyScript_UnitTests](https://github.com/CodeSmile-0000011110110111/LunyScript_UnitTests)
-
 ### Development
 
 These repositories contain documentation, design, notes.
 
 - [**LunyScript-RFC**](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC/) - LunyScript Website & Documentation
 - [**LunyScript-Plan**](https://github.com/CodeSmile-0000011110110111/LunyScript-Plan) - Notes, Tasks, Issues as [LogSeq](https://logseq.com/) Journal
+
+Unit testing:
+- [**Luny-Test**](https://github.com/CodeSmile-0000011110110111/Luny-Test)
+- [**LunyLua-Test**](https://github.com/CodeSmile-0000011110110111/LunyLua-Test)
+- [**LunyScript-Test**](https://github.com/CodeSmile-0000011110110111/LunyScript-Test)
+- [**LunyScript_UnitTests**](https://github.com/CodeSmile-0000011110110111/LunyScript_UnitTests) - Engine-agnostic unit test solution
 
 ---
 
