@@ -16,7 +16,7 @@ public MyPlayer()
 {
     When.CollisionWith("ball")
         .Begins(Audio.Play("energy_buildup"))
-        .Ends(Spawn("sparkles"), Send("kick").To("ball"));
+        .Ends(Prefab.Spawn("sparkles"), Send("kick").To("ball"));
 }
 ```
 Why learn pointless differences like`_init`,`Awake`,`BeginPlay`when you just want to make your dream game come true? 😄 Learn the editor first, engine code later. 🥳 
