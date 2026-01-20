@@ -37,10 +37,10 @@ An 'observer' is any script that builds on top of the Luny framework - like Luny
 
 ## Side-Note: Stars and Lines
 
-I have this GitHub star progress counter at the top. Yes, the January 15th milestone fell short of the #100 goal despite reaching #50 ten days early.
+I have this GitHub star progress counter at the top. Yes, the January 15th milestone fell 25 short of the #100 goal despite reaching #50 ten days early. Xmas holidays are partially to blame, as well as me just picking arbitrary milestone dates without "running the numbers".
 
-These dates are arbitrary, I didn't give them much thought. What matters is that every new star makes me happy. Every day there's 2+ new stars I feel like I'm really doing something valuable! So keep those stars coming!
+What really matters is that every new star makes me happy. Every day there's 2+ new stars I feel like I'm really doing something valuable! So keep those stars coming! 😄
 
-Of all the projects I put up on GitHub over the past five years LunyScript really stands out!
+Of all the projects I put up on GitHub over the past five years (not showing all the 'private' repos) LunyScript clearly stands out!
 [![star-history-2026120.png](/media/star-history-2026120.png)](https://www.star-history.com/#CodeSmile-0000011110110111/UnityResolutionDialog&CodeSmile-0000011110110111/GMesh&CodeSmile-0000011110110111/de.codesmile.luny&CodeSmile-0000011110110111/de.codesmile.assetdatabase&CodeSmile-0000011110110111/WriteBetterNetcode&CodeSmile-0000011110110111/Luny-Tanks-for-Unity-6&CodeSmile-0000011110110111/LunyScript-RFC&CodeSmile-0000011110110111/ProTiler&CodeSmile-0000011110110111/UnityNetcodeBiteSizeExamples&CodeSmile-0000011110110111/de.codesmile.netcode&type=date&legend=top-left){:target="_blank"}
 <sup>Click on the image to view the latest version of the chart.</sup>
