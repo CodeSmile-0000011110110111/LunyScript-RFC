@@ -8,6 +8,7 @@ featured_image: ../media/I%20react%20to%2050%20stars%21%20Short.gif
 ---
 
 Woot! The project reached its "50 GitHub Stars" Milestone 10 days early! :)
+
 ![My #50 stars reaction](/media/I%20react%20to%2050%20stars%21%20Short.gif)
 
 Originally targeting Xmas (2025-12-25) it was reached today. Thanks to all supporters! Keep the stars coming!
