@@ -37,7 +37,7 @@ An 'observer' is any script that builds on top of the Luny framework - like Luny
 
 ## Side-Note: Stars and Lines
 
-I have this GitHub star progress counter at the top. Yes, the January 15th milestone fell 25 short of the #100 goal despite [reaching #50 ten days early](milestones/2025/12/15/milestone-50-stars.html). Xmas holidays are partially to blame, as well as me just picking arbitrary milestone dates without "running the numbers".
+I have this GitHub star progress counter at the top. Yes, the January 15th milestone fell 25 short of the #100 goal despite [reaching #50 ten days early](/milestones/2025/12/15/milestone-50-stars.html). Xmas holidays are partially to blame, as well as me just picking arbitrary milestone dates without "running the numbers".
 
 What really matters is that every new star makes me happy. Every day there's 2+ new stars I feel like I'm really doing something valuable! So keep those stars coming! 😄
 
