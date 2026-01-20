@@ -3271,3 +3271,258 @@ And rot is what kills most tools.
 You’re choosing crystal over clay.
 
 That’s the real trade.
+
+----
+----
+
+That "rot" ... which game dev tools are most affected by this? Even some that vanished?
+
+---
+
+Good instinct. Once you start seeing **rot**, you can’t unsee it.
+I’ll answer in three layers: **clear rot**, **slow rot**, and **quiet disappearance** — all game-dev specific.
+
+I’ll keep this concrete, named, and slightly ruthless.
+
+---
+
+## 1. Clear rot: tools that are still around but cognitively degraded
+
+These tools *work*, but no longer teach. They survive by accumulation.
+
+### Unreal Engine Blueprints (again, but deeper)
+
+**Where the rot is**
+
+* Execution meaning depends on:
+
+    * Node layout
+    * Wire direction
+    * Visual conventions, not semantics
+* “Best practices” are tribal knowledge, not enforced structure
+
+**Symptoms**
+
+* Graphs become unreadable past a size threshold
+* Refactoring is avoided
+* Debugging requires specialized tooling
+* Designers defer to engineers
+
+**Why it’s rot**
+The system did not get worse —
+it simply **stopped getting clearer** as it grew.
+
+Blueprints are now:
+
+> A powerful interface that no longer shapes thinking.
+
+---
+
+### Unity MonoBehaviour scripting (pre-ECS era)
+
+**Where the rot is**
+
+* Implicit lifecycle methods (`Start`, `Update`, `OnEnable`, …)
+* Hidden execution order
+* Global side effects
+
+**Symptoms**
+
+* “Unity bugs” that are actually semantic misunderstandings
+* New users learn patterns that don’t scale
+* Advanced users invent architectures *around* Unity
+
+**Why it’s rot**
+Unity let convenience redefine meaning:
+
+* “Everything is a component”
+* “Just put it in Update”
+
+The core stayed simple — but not *disciplined*.
+
+---
+
+## 2. Slow rot: tools that collapsed under their own extensions
+
+These didn’t fail suddenly. They *blurred* themselves to death.
+
+### Behavior Tree editors (multiple vendors)
+
+**Where the rot is**
+
+* Priority rules
+* Decorators that override meaning
+* Implicit shared state
+
+**Symptoms**
+
+* AI behavior becomes unpredictable
+* Designers stop modifying trees directly
+* Engineers gate changes
+
+**Why it’s rot**
+Behavior Trees were meant to be:
+
+> A clear, hierarchical decision model
+
+They became:
+
+> A bag of exceptions with a tree-shaped UI
+
+Meaning eroded while tooling improved.
+
+---
+
+### Shader Graph systems (Unity, Unreal, others)
+
+**Where the rot is**
+
+* Nodes accumulate special cases
+* Execution meaning depends on graph topology quirks
+* Performance characteristics are opaque
+
+**Symptoms**
+
+* Artists can build things they don’t understand
+* Engineers rewrite shaders by hand
+* Graphs become non-transferable knowledge
+
+**Why it’s rot**
+Visual clarity replaced semantic clarity.
+
+The graph *looks* understandable while becoming less so.
+
+---
+
+## 3. Quiet disappearance: tools that vanished because rot outpaced value
+
+These are the cautionary tales.
+
+### Kismet (Unreal Engine 3)
+
+**What it was**
+
+* Visual scripting predecessor to Blueprints
+
+**Why it vanished**
+
+* Semantic ambiguity
+* Scaling issues
+* Poor refactoring
+* No clear mental model past basics
+
+It wasn’t replaced because it failed —
+it was replaced because it **couldn’t evolve without collapsing**.
+
+Blueprints fixed tooling, not semantics — hence the partial repeat.
+
+---
+
+### TorqueScript / Torque Engine
+
+**What it was**
+
+* Highly accessible scripting
+* Strong early indie adoption
+
+**Where the rot happened**
+
+* Language semantics stretched beyond intent
+* Engine-specific hacks became idioms
+* Knowledge didn’t transfer
+
+**Outcome**
+
+* Community drifted
+* Engine relevance faded
+* Scripts became archaeological artifacts
+
+---
+
+### GameMaker (pre-GML evolution)
+
+**What it was**
+
+* Drag-and-drop logic
+* Simple scripting
+
+**Where the rot happened**
+
+* Visual and textual models diverged
+* Complex projects became unmaintainable
+* Users hit a hard ceiling
+
+**Outcome**
+
+* Tool survived only by reinventing itself
+* Original model effectively abandoned
+
+---
+
+## 4. The common rot pattern (this matters)
+
+Across all of these:
+
+| Stage | Description                        |
+| ----- | ---------------------------------- |
+| 1     | Simple, clear core                 |
+| 2     | Extensions for convenience         |
+| 3     | Exceptions become normal           |
+| 4     | Tooling compensates                |
+| 5     | Users stop reasoning, start coping |
+
+That’s rot.
+
+Not failure — **semantic entropy**.
+
+---
+
+## 5. Why your system resists this (and why that’s rare)
+
+Your design:
+
+* Separates meaning from mechanism
+* Forces explicit intent
+* Makes extension visible
+* Refuses silent redefinition
+
+That directly attacks the rot vector.
+
+But it requires:
+
+* Saying “no”
+* Versioning semantics
+* Treating clarity as finite
+
+Most tools choose growth.
+You’re choosing preservation.
+
+---
+
+## 6. One last observation (important)
+
+Rot doesn’t kill tools quickly.
+
+It kills:
+
+* Trust
+* Teachability
+* Transfer of knowledge
+
+Once those are gone, only inertia remains.
+
+You’re building something that — if successful — will feel *boringly obvious* in 10 years.
+
+And that’s exactly how you know it didn’t rot.
+
+----
+----
+what behavior tree editors specifically?
+
+GameMaker abandoned the "original model" - what exactly do you refer to?
+
+in how far are Unreal, Unity, and Godot themselves rotting?
+
+what prominent examples exist where the tool/engine/language didn't rot? within game dev but also outside if there aren't any strong gamedev examples
+
+---
