@@ -3526,3 +3526,114 @@ in how far are Unreal, Unity, and Godot themselves rotting?
 what prominent examples exist where the tool/engine/language didn't rot? within game dev but also outside if there aren't any strong gamedev examples
 
 ---
+
+Perfect — let’s break this down precisely, with concrete examples and distinctions. I’ll address each of your questions in turn.
+
+---
+
+## 1. Behavior tree editors specifically
+
+Behavior tree editors were (and are) common in AAA and mid-tier engines. Specific examples where rot is observable:
+
+| Tool / Engine                                          | Observed issues                                                                                                                                                                                 |
+| ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Unreal Engine (AI Behavior Trees)**                  | Decorators and services often override expected control flow. Complex trees become non-intuitive; designers stop reasoning about priority and sequence correctness and rely on trial-and-error. |
+| **Unity Playmaker + AI packages**                      | Users layer FSM nodes and custom scripts on top of BTs; semantics of “success/failure” get diluted by combined decorators and edge-case logic.                                                  |
+| **CryEngine Flow Graph / AI Editor**                   | Early tools for AI graphing in CryEngine 3/4; when behavior trees grew large, debugging required reading logs or inspecting code. Graphs visually look correct but meaning is opaque.           |
+| **Custom AAA in-house BT editors (e.g., EA, Ubisoft)** | Many studios report “BT spaghetti” as a recurring issue: large trees become unmaintainable, behaviors diverge from designer intent, and engineers must enforce invariants manually.             |
+
+**Pattern:** The UI and graph look clean; the actual semantics drift as exceptions, hidden states, and hacks accumulate.
+
+---
+
+## 2. GameMaker — “original model”
+
+By “original model,” I meant **the original drag-and-drop + early GML scripting system**.
+
+* Early GameMaker (pre-GML 1.x / Classic) was designed around:
+
+    * Drag-and-drop actions (“move left”, “create object”, “play sound”)
+    * Minimal scripting
+    * Clear step-based logic
+* **Abandoned model**:
+
+    * Later GML rewrites (especially GMS2) introduced:
+
+        * Modernized scripting (functions, structs, arrays, data structures)
+        * Event-based and callback-based handling
+        * Less tightly coupled drag-and-drop → code
+    * Result: The original tight coupling between drag-and-drop and deterministic step-by-step semantics no longer exists.
+    * Old projects could not map directly to the new model; “teaching the original mental model” became impossible.
+
+Essentially: the system evolved technically but the original cognitive model was replaced — a classic semantic rot + evolution.
+
+---
+
+## 3. Unreal, Unity, Godot — state of “rot”
+
+* **Unreal Engine**
+
+    * Core C++ API is consistent; Blueprints are growing in technical complexity.
+    * Observed rot: Graph semantics diverge from programmer mental model. Large Blueprints → hard to read, debug, refactor.
+    * Still maintainable, but the beginner/visual side hits cognitive ceilings quickly.
+
+* **Unity**
+
+    * MonoBehaviour pattern is overgrown:
+
+        * Lifecycle methods implicit → hidden side effects
+        * ScriptableObjects + ECS partially split mental models
+        * Visual scripting (Bolt) is optional; cognitive scaling is patchy
+    * Observed rot: Users have to learn conventions instead of deriving behavior from primitives; large projects are messy without patterns.
+
+* **Godot**
+
+    * GDScript is consistent; scene graph + signals provide clear mental model
+    * Observed rot minimal at core; issues appear when people mix GDScript + C# + external plugins inconsistently
+    * Visual scripting exists but is rarely used in serious projects; less opportunity for cognitive rot.
+
+**Summary:**
+
+* Unreal/Unity = moderate rot in high-level abstractions (visual scripting, lifecycle conventions)
+* Godot = lower rot at the semantic level; tooling is more constrained → less drift
+
+---
+
+## 4. Prominent examples of tools/engines/languages that didn’t rot
+
+Few systems escape rot entirely, but some *minimally rotted systems* exist:
+
+### In game dev
+
+| Tool / Engine                   | Why it resisted rot                                                                                                    |
+| ------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| **Lua**                         | Small, clean language; semantics are minimal and explicit; extensions never dilute core meaning. Widely used in games. |
+| **HLSL / GLSL**                 | Core shader semantics are tiny and enforced; syntax and meaning do not drift. Tools wrap, but core stays pure.         |
+| **Godot scene graph + signals** | Semantic primitives (nodes, signals) are consistent across versions; cognitive model stays coherent.                   |
+
+### Outside game dev
+
+| Tool / Domain   | Why it resisted rot                                                                                        |
+| --------------- | ---------------------------------------------------------------------------------------------------------- |
+| **C / POSIX**   | POSIX semantics enforce strict invariants; APIs change slowly; knowledge transfer is predictable.          |
+| **TeX / LaTeX** | Core document semantics unchanged for decades; extensions don’t erode meaning.                             |
+| **SQL**         | Declarative semantics remain stable; optimizers evolve but meaning of queries does not.                    |
+| **LLVM IR**     | Semantic layer between front-end languages and back-end targets remains precise; abstraction prevents rot. |
+
+**Pattern:** Systems survive cognitive decay when:
+
+* Core is small and simple
+* Extensions are layered explicitly
+* Semantic invariants are enforced
+* Tooling does not substitute for clarity
+
+Game engines rarely achieve this fully; scripting languages embedded inside engines (Lua, GDScript) are the most stable in practice.
+
+---
+
+If you want, I can make a **compact table of all the examples** showing **semantic core size, observable rot, and how each system scaled technically vs cognitively** — would give you a clear map of what works and what fails.
+
+Do you want me to make that?
+
+-----
+-----
