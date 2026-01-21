@@ -1,0 +1,20 @@
+{
+  "enabledMcpjsonServers": [
+    "fetch",
+    "sequential-thinking",
+    "context-portal"
+  ],
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'INSERT COIN' && echo '' && echo 'MCP Servers configured:' && cat .claude/settings.local.json"
+          }
+        ]
+      }
+    ]
+  }
+}

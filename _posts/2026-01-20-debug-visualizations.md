@@ -15,7 +15,7 @@ These overlays are Unity-only proof of concepts since I don't have a runtime UI 
 
 This will eventually work across engines once the necessary UI adapters have been implemented as Luny engine services. 
 
-I'm also exploring accelerating the engine-native bindings via reflection and configuration. This could significantly bootstrap future engine and feature-level API integrations. More on this once I have the details fleshed out ...
+I'm also exploring accelerating the engine-native bindings via code-gen and configuration. This could significantly bootstrap future engine and feature-level API integrations. More on this once I have the details fleshed out ...
 
 ## On-Screen Variables
 

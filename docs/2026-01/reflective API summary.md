@@ -41,18 +41,19 @@ Lua API Descriptor (lunyscript_api.lua)
 CLI Code Generator (LunyApiCodeGen tool - run manually when descriptors change)
   ↓ generates
 ┌─────────────────────────────────────┐
-│ 1. Service Interface (IXxxEngineService)     │
-│ 2. Unity Implementation (UnityXxxEngineService)  │
-│ 3. Godot Implementation (GodotXxxEngineService)  │
-│ 4. Block Classes (engine-agnostic)              │
-│ 5. Lua Bindings (for modding - future)          │
+│ 1. (??) Service Interface (IXxxEngineService)     │
+│ 2. Unity Implementation (partial, UnityXxxEngineService)  │
+│ 3. Godot Implementation (partial, GodotXxxEngineService)  │
+│ 4. LunyScript IBlock Classes (complete, engine-agnostic)              │
+│ 5. LunyScript API (partial, engine-agnostic)              │
+│ 6. Lua LunyScript API Bindings (future)          │
 └─────────────────────────────────────┘
   ↓
 Generated code committed to repo (reviewable, diffable)
   ↓
 User writes: OnUpdate(Vehicle.SetSpeed(50));
   ↓ compiles to
-Block.Execute(context) → context.GetService<IVehicleEngineService>().SetSpeed(obj, 50)
+Block.Execute(context) → LunyEngine.Instance.GetService<IVehicleEngineService>().SetSpeed(context.Object, 50)
   ↓ calls
 Unity: rigidbody.velocity = new Vector3(0,0,value)
 Godot: rigidBody.LinearVelocity = new Vector3(0,0,value)
@@ -74,6 +75,7 @@ Godot: rigidBody.LinearVelocity = new Vector3(0,0,value)
 - **Not** MSBuild integrated (manual invocation only)
 - Uses Lua-CSharp to load descriptors via `dofile()`
 - Uses ScriptBuilder (ported framework-agnostic) for code emission
+- NOTE: we need to generate Luny API (services) as well as LunyScript API (blocks) => should split API def and projects
 
 **Descriptor Files** - Part of generator project (NOT user projects)
 - `Descriptors/lunyscript_api.lua` - Main semantic definitions
@@ -95,6 +97,9 @@ Godot: rigidBody.LinearVelocity = new Vector3(0,0,value)
 ### What the Generator Produces
 
 **1. Service Interface** (one per domain, shared across engines)
+
+NOTE: Maybe not generate service interfaces? But if we do we would also need to generate the abstract base class, as partial.
+
 ```csharp
 // IVehicleEngineService.cs (generated once, copied to Unity/Godot bridge projects)
 namespace Luny.Engine.Services
@@ -586,7 +591,7 @@ User-facing API uses engine-agnostic types following Lua conventions:
 -- In unity_bindings.lua
 ["UnityEngine"] = {
   Honk = {
-    target = "AudioSource.PlayOneShot",
+    target = "UnityEngine.AudioSource.PlayOneShot",
     signature = {"AudioClip", "float"},  -- Optional: for overload resolution
     params = {
       {name="clip", type="object", transform="LookupAudioClip"},
@@ -595,7 +600,7 @@ User-facing API uses engine-agnostic types following Lua conventions:
   },
 
   SetSpeed = {
-    target = "Rigidbody.velocity",
+    target = "UnityEngine.Rigidbody.velocity",
     params = {
       {name="speed", type="number", min=0, max=100, required=true}
     },
