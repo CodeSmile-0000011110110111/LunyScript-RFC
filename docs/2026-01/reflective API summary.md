@@ -41,7 +41,7 @@ Lua API Descriptor (lunyscript_api.lua)
 CLI Code Generator (LunyApiCodeGen tool - run manually when descriptors change)
   ↓ generates
 ┌─────────────────────────────────────┐
-│ 1. (??) Service Interface (IXxxEngineService)     │
+│ 1. (not generated??) Service Interface (IXxxEngineService)     │
 │ 2. Unity Implementation (partial, UnityXxxEngineService)  │
 │ 3. Godot Implementation (partial, GodotXxxEngineService)  │
 │ 4. LunyScript IBlock Classes (complete, engine-agnostic)              │

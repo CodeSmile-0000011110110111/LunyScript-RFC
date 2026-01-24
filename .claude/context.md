@@ -12,11 +12,10 @@
     - 'LunyLua-Test/' contains unit tests for Lua framework integration
     - 'LunyScript/' contains engine-agnostic scripting types, utilizing Luny library
     - 'LunyScript-Test/' contains unit tests for LunyScript
-    - not in this project, the engine-native implementations:
-    - 'Luny.Unity/' contains Unity-specific implementations/bindings
-    - 'Luny.Godot/' contains Godot-specific implementations/bindings
-    - 'LunyScript.Unity/' contains Unity-specific bindings for LunyScript
-    - 'LunyScript.Godot/' contains Godot-specific bindings for LunyScript
+    - 'Luny.Unity/' contains Unity-specific implementations/bindings (for reference, will not compile)
+    - 'Luny.Godot/' contains Godot-specific implementations/bindings (for reference, will not compile)
+    - 'LunyScript.Unity/' contains Unity-specific bindings for LunyScript (for reference, will not compile)
+    - 'LunyScript.Godot/' contains Godot-specific bindings for LunyScript (for reference, will not compile)
 - Code restricted to C# 9 for compatibility with Unity 6
 - LunyEngine receives startup-updates-shutdown lifecycle callbacks from native engine
 - ILunyEngineService implementations provide API and event handling, object and asset management
@@ -32,9 +31,12 @@
 - **Step-by-Step Mode**: Always operate in a strict planning-first mode.
 - **Explicit Confirmation**: Do not modify any files or start implementation until the user has explicitly confirmed the plan.
 - **No "Running Ahead"**: Wait for confirmation after each major phase (Planning -> Implementation -> Verification).
+- Do not modify existing LunyLogger messages without user permission
 
 ## Code Style
 - don't write if or else statements on a single line
 - don't add braces around single-line statements (if, else, for, ..) except for do/while and using
 - properties and methods whenever possible should be written on a single line using "expression" syntax - use a ternary if needed but avoid multiple (nested) ternaries
 - interfaces for only one type should be added to the same file as the type implementing it. Place the interface above the type.
+- don't hardcode type names as strings, use 'nameof(TheType)' or 'instance.GetType().Name' whenever possible to ensure consistency after rename-refactorings
+- empty interface or base class methods should 'throw new NotImplementedException("name of type and method")'
