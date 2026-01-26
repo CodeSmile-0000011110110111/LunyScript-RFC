@@ -7,9 +7,17 @@ The Luny repositories follows a modular architecture with clear separation betwe
 - **Engine-specific integrations** (suffixed with `.Unity`, `.Godot`, etc.)
 - **Engine-native 'plugins'** (Unity: upm package / Godot: addon)
 - **Engine-native Example Projects**
-- **Engine-agnostic Unit Test Repositories** (Luny-Test, LunyScript-Test)
 
-Note: The current setup will not allow multiple LunyEngine-based frameworks to coexist in a single project. This will be improved in the future.
+For development: 
+- **Engine Mocks and Shims** (Luny.Godot-Mock, Luny.Unity-Mock)
+- **Engine Contract Tests** (Luny-ContractTest)
+- **Engine-agnostic Tests** (Luny-Test, LunyScript-Test)
+- **Engine-native Tests** using engine mocks (Luny.Godot-Test, Luny.Unity-Test, LunyScript.Godot-Test, LunyScript.Unity-Test)
+
+![LunyTestingSolution.png](../media/LunyTestingSolution.png)
+<sup>The Luny Development Solution has engine API mocks/shims to compile, refactor, generate, and test engine-native code without the native engines.</sup>
+ 
+Note: The current setup will not allow multiple LunyEngine-based frameworks to coexist in the same engine project. This will be improved in the future.
 
 ## Engine 'Plugin' Integration
 
