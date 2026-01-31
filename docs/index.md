@@ -26,6 +26,7 @@ LunyEngine is an engine-agnostic Developer SDK that opens engine ecosystems. We 
 - [Architecture](Architecture.md) - System architecture and layer structure
 - [Code Comparison](CodeComparison.md) - Side-by-side comparison: LunyScript vs traditional approaches
 - [Repository Structure](Repositories.md) - How LunyEngine/LunyScript are divided into repositories. 
+- [Extending LunyScript API](ExtendingLunyScriptApi.md) - How LunyScript API supports shareable extensions.
 
 ### Design Risk Assessment
 - [Cross-Cutting Concerns](CrossCuttingConcerns.md) - Architectural concerns requiring upfront design
