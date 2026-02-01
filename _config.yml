@@ -1,4 +1,5 @@
 # Jekyll configuration for GitHub Pages
+future: false
 theme: jekyll-theme-midnight
 title: LunyScript
 description: "You have a great game idea? But game engine programming is complex, confusing, and completely different everywhere? LunyScript is your entry ticket to Godot and Unity."
