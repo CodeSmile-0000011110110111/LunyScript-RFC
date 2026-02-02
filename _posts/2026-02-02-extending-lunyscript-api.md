@@ -1,10 +1,10 @@
 ﻿---
 layout: post
 title: "LunyScript API: User Extensions"
-date: 3026-02-02
+date: 2026-02-02
 categories: [design]
 tags: [development, architecture]
-#featured_image: ../media/LunyTestingSolution.png
+featured_image: ../media/ExtendingLunyScriptApi.png
 ---
 
 # LunyScript API: User Extensions
