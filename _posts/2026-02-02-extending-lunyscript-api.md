@@ -9,7 +9,7 @@ tags: [development, architecture]
 
 # LunyScript API: User Extensions
 
-I have published a design article about [how to extend the LunyScript API](/docs/ExtendingLunyScriptApi.md). I'll provide a brief summary here.
+I have published a design article about [how to extend the LunyScript API](/docs/ExtendingLunyScriptApi). I'll provide a brief summary here.
 
 ## A Basic LunyScript
 
