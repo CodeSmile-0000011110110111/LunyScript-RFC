@@ -109,7 +109,7 @@ The API implementation remains the same but is tagged with the `[LunyScriptApi]`
 
 You can then use the extension API by implementing the `IMyExtension` interface in a `partial` LunyScript-derived class. API usage is identical to the first two examples thanks to Roslyn generators:
 
-    public partial class Player // 'partial' required for Roslyn generator 
+    public partial class Player // 'partial' required for Roslyn 
         : LunyScript.LunyScript, IInventory // <== extension interface
     {
         public override void Build()
