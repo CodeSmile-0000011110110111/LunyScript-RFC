@@ -77,6 +77,11 @@ I added essential flow constructs to LunyScript block execution:
     .ElseIf(conditions).Then(actions)
     .Else(actions)
 
+    For(10).Do(actions)     // runs Do() 10 times: from 1 to 10
+    For(-10).Do(actions)    // runs Do() 10 times: from 10 to 1
+    For(10, 2).Do(actions)  // runs do 5 times with n = 1, 3, 5, 7, 9
+    For(-10, 2).Do(actions) // runs do 5 times with n = 10, 8, 6, 4, 2
+
     While(conditions).Do(actions)
 
 While loops won't 'freeze' the editor or game because they have a configurable "max iterations" - which throws an exception if the max is hit (default: one million iterations).
