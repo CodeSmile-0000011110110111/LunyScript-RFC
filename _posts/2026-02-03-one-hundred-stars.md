@@ -45,7 +45,7 @@ The sizeless `Number` struct is internally a `double`. `Variable` can hold eithe
 
 This is modeled after Lua's behaviour, and to complete this there's also a `Table` collection type holding variables. 
 
-I included the [Lua-CSharp](https://github.com/nuskey8/Lua-CSharp) project (Lua implemented entirely in C#, faster than MoonSharp) and prepared a Code Generator project to create the Lua bindings. Luny's `Number`/`Variable` types aren't using Lua - the intention is to make them convert from Lua's types (`LuaValue`, `LuaTable`). 
+I included the [Lua-CSharp](https://github.com/nuskey8/Lua-CSharp){:target="_blank"} project (Lua implemented entirely in C#, faster than MoonSharp) and prepared a Code Generator project to create the Lua bindings. Luny's `Number`/`Variable` types aren't using Lua - the intention is to make them convert from Lua's types (`LuaValue`, `LuaTable`). 
 
 This also warrants another post.
 
@@ -96,7 +96,7 @@ I kept losing track looking at all the _snake_case and SHOUTING_CONSTANTS in my 
 
 So I started an experiment, had AI wrap this up for me and provide me with GDScript wrappers that follow C# guidelines.
 
-The result is [GDSharp (GD#)](https://github.com/CodeSmile-0000011110110111/GDSharp), here's a contrived example:
+The result is [GDSharp (GD#)](https://github.com/CodeSmile-0000011110110111/GDSharp){:target="_blank"}, here's a contrived example:
 
     @tool
     extends EditorPlugin
