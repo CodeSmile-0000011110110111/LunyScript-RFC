@@ -77,10 +77,10 @@ I added essential flow constructs to LunyScript block execution:
     .ElseIf(conditions).Then(actions)
     .Else(actions)
 
-    For(10).Do(actions)     // runs Do() 10 times: from 1 to 10
-    For(-10).Do(actions)    // runs Do() 10 times: from 10 to 1
-    For(10, 2).Do(actions)  // runs do 5 times with n = 1, 3, 5, 7, 9
-    For(-10, 2).Do(actions) // runs do 5 times with n = 10, 8, 6, 4, 2
+    For(n).Do(actions)     // runs Do() n times: from 1 to n (increment n by 1)
+    For(-n).Do(actions)    // runs Do() n times: from n to 1 (decrement n by 1)
+    For(n, 2).Do(actions)  // runs Do() with n = 1, 3, 5, 7, 9, (increment n by 2)
+    For(-n, 2).Do(actions) // runs Do() with n = .., 10, 8, 6, 4, 2 (decrement n by 2)
 
     While(conditions).Do(actions)
 
