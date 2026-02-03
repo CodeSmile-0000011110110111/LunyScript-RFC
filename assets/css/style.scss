@@ -221,6 +221,9 @@ body {
 /* Make inline code font size match body text */
 code {
   font-size: 14px;
+  padding: 1px 3px;
+  margin: 0 1px;
+  border-radius: 3px;
 }
 
 sup {

@@ -31,9 +31,9 @@ I mostly focus on workflow and development infrastructure right now. I want to s
 
 I now work in a single solution containing both engine-agnostic and engine-native (Godot, Unity) code. It compiles and runs tests!
 
-I'm mocking all the engine APIs LunyEngine uses, with contract tests verifying engine behaviour (eg order of events). The native layers are ultra-thin anyway, so AI is quick to generate mocks for them even when flying blind: AI just knows engine core behaviours and APIs. 
-
 ![LunyUnitTestSolution.png](/media/posts/2026-02/LunyUnitTestSolution.png)
+
+I'm mocking all the engine APIs LunyEngine uses, with contract tests verifying engine behaviour (eg order of events). The native layers are ultra-thin anyway, so AI is quick to generate mocks for them even when flying blind: AI just knows engine core behaviours and APIs. 
 
 This warrants a separate post -> coming soon.
 
