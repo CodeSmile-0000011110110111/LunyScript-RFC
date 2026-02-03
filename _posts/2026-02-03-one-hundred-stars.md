@@ -13,9 +13,11 @@ Happy to see this today:
 
 ![one-hundred-stars.png](/media/posts/2026-02/one-hundred-stars.png)
 
-Admittedly, reaching 50 Stars was ten days before its Xmas milestone, I have since adjusted the milestone dates. 
+Just as happy as when [LunyScript reached 50 stars](/milestones/2025/12/15/milestone-50-stars.html):
 
-I had to push this milestone from Jan 15th up to Feb 02 due to post-Xmas slump. And because I stopped pushing the project onto social media - I'm afraid of hyping it up before I even got any funding secured.
+![I react to 50 stars! Short.gif](/media/I%20react%20to%2050%20stars%21%20Short.gif)
+
+Admittedly, I have since adjusted the 100+ stars milestone dates. I pushed this milestone from Jan 15th up to Feb 02 due to the post-Xmas slump. And because I didn't further promote the project on social media - I'm afraid of hyping it up before I even got any funding secured.
 
 Nevertheless, it's going straight up compared to my other public repositories:
 
