@@ -49,25 +49,25 @@ I included the [Lua-CSharp](https://github.com/nuskey8/Lua-CSharp){:target="_bla
 
 This also warrants another post.
 
-### LunyScript: Variable, Flow and Logic
+### LunyScript: Variable, Flow and Logic Blocks
 
 Variables can now be scripted:
 
-    Variable.Set("name", GlobalVars["other"])
-    Variable.Inc("name")
-    Variable.Dec("name")
-    Variable.Add("name", GlobalVars["other"])
-    Variable.Sub("name", GlobalVars["other"])
-    Variable.Mul("name", GlobalVars["other"])
-    Variable.Div("name", GlobalVars["other"])
+    Var.Set("name", Vars["other"])
+    Var.Inc("name")
+    Var.Dec("name")
+    Var.Add("name", Vars["other"])
+    Var.Sub("name", Vars["other"])
+    Var.Mul("name", Vars["other"])
+    Var.Div("name", Vars["other"])
     
-    Variable.Is("name").EqualTo(GlobalVars["other"])
-    Variable.Is("name").GreaterThan(GlobalVars["other"])
+    Var.Is("name").EqualTo(Vars["other"])
+    Var.Is("name").GreaterThan(Vars["other"])
 
 You can work with variables in blocks quite naturally:
 
-    var regen = GlobalVars["regen-rate"];
-    var hitpoints = LocalVars["hp"];
+    var regen = Vars["regen-rate"];
+    var hitpoints = Vars["hp"];
 
     When.Self.Updates(hp.Add(regen)); // regenerate hitpoints
 
