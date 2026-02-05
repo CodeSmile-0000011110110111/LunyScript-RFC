@@ -9,6 +9,12 @@ Welcome to the LunyScript design documentation. This section covers the architec
 - [Author](../AUTHOR.md) - About the author and personal experience
 - [FAQ](../FAQ.md) - Frequently asked questions
 
+### API Design
+
+- [Script Runner Singleton Pattern](2025-12/ScriptRunnerSingletonPattern.md) - Lazy-init singleton and lifecycle dispatcher architecture
+- [Coroutine & Timer Design](2026-02/LunyScript_CoroutineAndTimer_Design.md) - Timer, Coroutine, and throttling API design
+- [On vs When API Refactor](2026-02/LunyScript_On_vs_When_API_Refactor.md) - Semantic distinction between lifecycle and external events
+
 ## 📐 Architecture
 
 <iframe width="648" height="365" src="https://www.youtube.com/embed/0Wlz7obQwOY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

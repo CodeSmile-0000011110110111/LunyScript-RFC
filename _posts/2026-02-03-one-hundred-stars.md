@@ -49,27 +49,7 @@ I included the [Lua-CSharp](https://github.com/nuskey8/Lua-CSharp){:target="_bla
 
 This also warrants another post.
 
-### LunyScript: Variable, Flow and Logic Blocks
-
-Variables can now be scripted:
-
-    Var.Set("name", Vars["other"])
-    Var.Inc("name")
-    Var.Dec("name")
-    Var.Add("name", Vars["other"])
-    Var.Sub("name", Vars["other"])
-    Var.Mul("name", Vars["other"])
-    Var.Div("name", Vars["other"])
-    
-    Var.Is("name").EqualTo(Vars["other"])
-    Var.Is("name").GreaterThan(Vars["other"])
-
-You can work with variables in blocks quite naturally:
-
-    var regen = Vars["regen-rate"];
-    var hitpoints = Vars["hp"];
-
-    When.Self.Updates(hp.Add(regen)); // regenerate hitpoints
+### LunyScript: Flow, Logic, and Variables
 
 I added essential flow constructs to LunyScript block execution:
 
@@ -94,6 +74,39 @@ And there are also logical operators now:
 
     // example:
     OR(c1, AND(c2, NOT(c3)))
+
+Variables can now be scripted:
+
+    var otherVar = Vars("other");
+    Var("name").Set(otherVar)
+    Var("name").Add(otherVar)
+    Var("name").Sub(otherVar)
+    Var("name").Mul(otherVar)
+    Var("name").Div(otherVar)
+    Var("name").Inc()
+    Var("name").Dec()
+
+    // works with native value types too
+    Var("name").Set("some text")
+    Var("name").Add(1.2345)
+    
+    // condition examples:
+    Var("name").IsEqualTo(otherVar)
+    Var("name").IsAtLeast(15)
+
+    // conditions support operators too:
+    If(Vars("hp") < 10).Then(..)
+    If((otherVar - 1) >= 0).Then(..) 
+
+You can work with variables in blocks quite naturally:
+
+    var hp = Vars("hp");
+    var hpMax = Vars("hp-max");
+    var regenRate = Vars("regen-rate");
+
+    // regenerate hitpoints
+    When.Self.Updates( If(hp < hpMax).Then(hp.Add(regenRate)) );
+
 
 ### GDSharp - GDScript for C# developers
 
