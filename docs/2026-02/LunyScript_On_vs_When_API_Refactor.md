@@ -41,7 +41,9 @@ On.Destroyed(blocks);   // once when object is destroyed
 | `When.Self.LateUpdates()` | `On.EndOfFrame()` | Much clearer than Unity's "LateUpdate" jargon |
 | `When.Self.Steps()` | `On.Heartbeat()` | Evocative of steady, rhythmic, predictable timing |
 
+
 ```csharp
+// On.* scheme but Every.* would work nicely for these too
 On.Frame(blocks);        // every render frame (variable rate)
 On.EndOfFrame(blocks);   // after frame processing complete
 On.Heartbeat(blocks);    // fixed interval (physics/logic rate)

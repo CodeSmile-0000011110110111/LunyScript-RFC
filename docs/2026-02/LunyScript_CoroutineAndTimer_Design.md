@@ -141,6 +141,7 @@ Every(Odd).Steps(blocks);         // steps 1, 3, 5, 7...
 Every(3).Frames(blocks);          // every 3rd frame
 Every(Even).Frames(blocks);       // frames 2, 4, 6...
 
+// alternative Steps wording, under consideration..
 Every(3).Heartbeats(blocks);      // every 3rd heartbeat
 ```
 
