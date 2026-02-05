@@ -131,7 +131,7 @@ t.Stop();
 
 ## Step-Based Throttling
 
-For executing logic every N steps (not frames, which vary):
+For executing logic every N fixed steps (aka heartbeat):
 
 ```csharp
 Every(3).Steps(blocks);           // every 3rd step
@@ -146,8 +146,8 @@ Every(3).Heartbeats(blocks);      // every 3rd heartbeat
 
 **Implementation**: `Even` and `Odd` are constants on `LunyScript` base class:
 ```csharp
-protected const Int32 Even = -2;
 protected const Int32 Odd = -1;
+protected const Int32 Even = -2;
 ```
 
 ## Return Types
@@ -180,7 +180,7 @@ The self-contained API (`.Do()`, `.OnTick()`, `.OnElapsed()`) covers all use cas
 The `TimeScale()` API could potentially support tweening:
 ```csharp
 // Future expansion
-countdown.TimeScale(Tween.EaseIn(0, 1, 2));  // accelerates over 2 seconds
+countdown.TimeScale(Tween.EaseIn(0, 1, 2)); // accelerate over 2s
 ```
 
 ### Integration with On/When API

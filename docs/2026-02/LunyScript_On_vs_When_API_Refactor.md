@@ -49,13 +49,13 @@ On.Heartbeat(blocks);    // fixed interval (physics/logic rate)
 
 ### Why `On.Heartbeat()`?
 
-| Name | Issue |
-|------|-------|
-| `On.Step()` | Step of what? Too vague |
-| `On.FixedStep()` | "Fixed" begs explanation |
-| `On.LogicStep()` | Implies only logic runs here (physics too!) |
-| `On.Tick()` | Often associated with frame-based updates |
-| **`On.Heartbeat()`** | ✅ Clear, evocative, universal metaphor for steady rhythm |
+| Name | Issue                                                         |
+|------|---------------------------------------------------------------|
+| `On.Step()` | Step of what? Too vague                                       |
+| `On.FixedStep()` | "Fixed" begs explanation                                      |
+| `On.LogicStep()` | Implies only 'logic' runs here (physics too! but not input!!) |
+| `On.Tick()` | Often associated with frame-based updates, generic            |
+| **`On.Heartbeat()`** | ✅ Clear, evocative, universal metaphor for steady rhythm      |
 
 ## `When.*` API (External Events)
 
@@ -77,21 +77,23 @@ When.Input.MouseClicked(blocks);
 ```
 
 ### Collision Events (Future)
+API naming tbd ...
+
 ```csharp
-When.Collision.Entered(blocks);
-When.Collision.Exited(blocks);
-When.Collision.Stayed(blocks);
+When.ContactWith("x").Begins(blocks);
+When.ContactWith("x").Stays(blocks);
+When.ContactWith("x").Ends(blocks);
 ```
 
 ### UI Events (Future)
 ```csharp
-When.Button.Clicked("StartButton", blocks);
-When.Slider.Changed("Volume", blocks);
+When.Button("Start").Clicked(blocks);
+When.Slider("Volume").Changes(blocks);
 ```
 
 ## Global Scope
 
-For events that should run even when the object is disabled, use explicit `Global` scope:
+**PRELIMINARY**: For events that should run even when the object is disabled, use explicit `Global` scope:
 
 ```csharp
 // Runs even when object disabled
