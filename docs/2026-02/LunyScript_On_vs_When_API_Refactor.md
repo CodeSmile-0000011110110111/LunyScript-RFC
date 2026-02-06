@@ -51,13 +51,17 @@ On.Heartbeat(blocks);   // fixed interval (physics/logic rate)
 
 ### Why `On.Heartbeat()`?
 
-| Name | Issue                                                         |
-|------|---------------------------------------------------------------|
-| `Step` | Step of what? Too vague                                       |
-| `FixedStep` | "Fixed" begs explanation                                      |
-| `LogicStep` | Implies only 'logic' runs here (physics too, but not input!!) |
-| `Tick` | Often associated with frame-based updates, generic            |
-| **`Heartbeat`** | ✅ Clear, evocative, universal metaphor for steady rhythm      |
+Heartbeat is the least technical, most widely understood term that indicates a rhythmic processing. This is in contrast to frame updates which are not expected to be steady.
+
+| Name             | Issue                                                         |
+|------------------|---------------------------------------------------------------|
+| `Step`           | Step of what? Too vague                                       |
+| `FixedStep`      | "Fixed" begs explanation                                      |
+| `LogicStep`      | Implies only 'logic' runs here (physics too, but not input!!) |
+| `PhysicsStep`    | It has far wider uses than just physics simulation            |
+| `SimulationStep` | Lengthy and implies something is "simulated" here            |
+| `Tick`           | Often associated with frame-based updates, generic            |
+| **`Heartbeat`**  | ✅ Clear, evocative, universal metaphor for steady rhythm      |
 
 ## `When.*` API (External Events)
 
@@ -106,7 +110,7 @@ LunyScript does not allow running events on a "global" scope from an object's sc
 The solution is simple and straightforward: User creates a separate object and script (perhaps named "Global") with controlled lifetime.
 
 Alternatively, a singleton script can be created by overriding the `Singleton` property and returning true:
-```
+```csharp
 public class ManagersManagerManagingManagers : LunyScript
 {
     // Return true to mark script as Singleton: 
@@ -125,18 +129,18 @@ A singleton object is treated as follows in engines:
 
 ## Migration from Current API
 
-| Current (to deprecate) | New                        |
-|------------------------|----------------------------|
-| `When.Self.Created()` | `On.Created()`             |
-| `When.Self.Enabled()` | `On.Enabled()`             |
-| `When.Self.Ready()` | `On.Ready()`               |
-| `When.Self.Disabled()` | `On.Disabled()`            |
+| Current (to deprecate)  | New                        |
+|-------------------------|----------------------------|
+| `When.Self.Created()`   | `On.Created()`             |
+| `When.Self.Enabled()`   | `On.Enabled()`             |
+| `When.Self.Ready()`     | `On.Ready()`               |
+| `When.Self.Disabled()`  | `On.Disabled()`            |
 | `When.Self.Destroyed()` | `On.Destroyed()`           |
-| `When.Self.Updates()` | `On.FrameUpdate()`               |
+| `When.Self.Updates()`   | `On.FrameUpdate()`               |
 | `When.Self.LateUpdates()` | `On.FrameEnd()`      |
-| `When.Self.Steps()` | `On.Heartbeat()`           |
-| `When.Scene.Loads()` | `When.Scene("").Loads()`   |
-| `When.Scene.Unloads()` | `When.Scene("").Unloads()` |
+| `When.Self.Steps()`     | `On.Heartbeat()`           |
+| `When.Scene.Loads()`    | `When.Scene("").Loads()`   |
+| `When.Scene.Unloads()`  | `When.Scene("").Unloads()` |
 
 ## Integration with Timers & Coroutines
 
@@ -176,14 +180,13 @@ public readonly struct OnApi
 
 ## Summary
 
-| Category | API | Examples                                              |
-|----------|-----|-------------------------------------------------------|
-| **Object lifecycle** | `On.*` | `On.Created()`, `On.Enabled()`, `On.Destroyed()`      |
-| **Update loops** | `On.*` | `On.FrameUpdate()`, `On.FrameEnd()`, `On.Heartbeat()` |
-| **Scene events** | `When.Scene.*` | `When.Scene.Loads()`, `When.Scene.Unloads()`          |
-| **Input events** | `When.Input.*` | `When.Input.KeyPressed()` (future)                    |
-| **Collision events** | `When.Collision.*` | `When.Collision.Entered()` (future)                   |
-| **Global scope** | `On.Global.*` | `On.Global.FrameUpdate()`                                   |
+| Category | API                  | Examples                                              |
+|----------|----------------------|-------------------------------------------------------|
+| **Object lifecycle** | `On.*`               | `On.Created()`, `On.Enabled()`, `On.Destroyed()`      |
+| **Update loops** | `On.*`               | `On.FrameUpdate()`, `On.FrameEnd()`, `On.Heartbeat()` |
+| **Scene events** | `When.Scene().*`     | `When.Scene().Loads()`, `When.Scene().Unloads()`      |
+| **Input events** | `When.Input().*`     | `When.Input().KeyPressed()` (future)                  |
+| **Collision events** | `When.ContactWith().*` | `When.ContactWith().Entered()` (future)                 |
 
 This design provides:
 - **Intuitive mental model**: "On" for self, "When" for world

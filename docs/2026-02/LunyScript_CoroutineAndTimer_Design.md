@@ -6,18 +6,18 @@
 
 ## Overview
 
-This document defines the API design for time-based execution in LunyScript: **Timers** (fire-once/repeating triggers) and **Coroutines** (duration-based execution with tick/elapsed events). These replace Unity's coroutine `yield return new WaitForSeconds()` pattern with a more beginner-friendly, declarative API.
+This document defines the API design for time-based execution in LunyScript: **Timers** (fire-once/repeating triggers) and **Coroutines** (duration-based execution with elapsed events). These replace Unity's coroutine `yield return new WaitForSeconds()` pattern with a more beginner-friendly, declarative API.
 
 ## Core Concepts
 
 ### Timer vs Coroutine
 
-| Concept | Purpose | Has Duration | Ticks While Running | Elapsed Event |
-|---------|---------|--------------|---------------------|---------------|
-| **Timer** | Fire-and-forget time trigger | ✅ | ❌ | ✅ |
-| **Coroutine** | Duration with running state | ✅ | ✅ | ✅ |
+| Concept | Purpose | Has Duration | 'While Running' Blocks | Elapsed Event |
+|---------|---------|--------------|-----------------------|---------------|
+| **Timer** | Fire-and-forget time trigger | ✅ | ❌                     | ✅ |
+| **Coroutine** | Duration with running state | ✅ | ✅                     | ✅ |
 
-A Timer is effectively syntactic sugar for a Coroutine without tick handlers.
+A Timer is effectively syntactic sugar for a Coroutine without update handlers.
 
 ### Naming Implies Behavior
 
@@ -54,7 +54,7 @@ Coroutine("Timer.In(2).Seconds().Do(blocks)")
     .Elapsed(blocks);     // runs once after duration
 
 // Timer.Every(..) is an alias for this coroutine pattern:
-Coroutine("Timer.Every(100).Hearbeats().Do(blocks)")
+Coroutine("Timer.Every(100).Heartbeats().Do(blocks)")
     .Duration(100).Heartbeats()
     .Heartbeat(blocks);   // runs for duration every heartbeat
 ```
@@ -72,7 +72,7 @@ Coroutine("conditional")
 Coroutine duration and conditions can be combined. Conditions only affect the "every" aspect of the Coroutine, while the OnElapsed() event executes unconditionally. 
 
 ```csharp
-// Coroutine with tick and elapsed handlers, indented for emphasis
+// Coroutine with update/elapsed handlers, indented for emphasis
 Coroutine("countdown")
     .Duration(3).Seconds()      // run for 3s total
     .Elapsed(blocks)            // runs unconditionally after 3s
@@ -84,7 +84,7 @@ Coroutine("countdown")
 Coroutines can also execute unconditionally, which is similar to `On.Update(..)` but coroutines can be paused or stopped at any time (see next paragraph).
 
 ```csharp
-// Coroutine with tick and elapsed handlers, unconditional
+// Coroutine with update/elapsed handlers, unconditional
 Coroutine("unconditional")
     .OnUpdate(blocks)       // runs on frame update
     .OnHeartbeat(blocks);   // runs on fixed step
@@ -238,7 +238,7 @@ Timer("x").In(3).Seconds().Do(blocks);
 Timer("x").Seconds().In(3).Do(blocks);
 ```
 
-### `.Do()` / `.OnTick()` / `.OnElapsed()` Are Terminal
+### `.Do()` / `.OnUpdate()` / `.OnHeartbeat()` / `.OnElapsed()` Are Terminal
 These methods finalize the builder and register the timer/coroutine. They return the reference for optional storage.
 
 ```csharp
@@ -286,13 +286,13 @@ interface IScriptTimerBlock : IScriptActionBlock
 interface IScriptCoroutineBlock : IScriptTimerBlock
 {
     // Inherits all timer control
-    // Coroutine has tick capability
+    // Coroutine can run blocks per frame/heartbeat
 }
 ```
 
 ## No `When.Timer()` / `When.Coroutine()` API
 
-The self-contained Timer/Coroutine APIs (`.Do()`, `.OnTick()`, `.OnElapsed()`) supercede the previously mentioned `When.Timer("x").Elapsed()` patterns.
+The self-contained Timer/Coroutine APIs (`.Do()`, `.OnUpdate()`, `.OnElapsed()`) supercede the previously mentioned `When.Timer("x").Elapsed()` patterns.
 
 ## Future Considerations
 
