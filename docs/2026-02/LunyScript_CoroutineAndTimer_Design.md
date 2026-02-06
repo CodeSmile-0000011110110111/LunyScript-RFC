@@ -39,45 +39,154 @@ Timer("slow").In(2).Minutes().Do(blocks);
 // Repeating timer
 Timer("clock").Every(1).Seconds().Do(Debug.Log("tick"));
 Timer("pulse").Every(100).Milliseconds().Do(blocks);
+Timer("think").Every(5).Heartbeats().Do(Debug.Log("hmmm?"));
 ```
 
 ### Coroutine API
 
-```csharp
-// Coroutine with tick and elapsed handlers
-Coroutine("countdown").Duration(3).Seconds()
-    .OnTick(Debug.Log("counting..."))    // runs each step while active
-    .OnElapsed(Debug.Log("GO!"));        // runs when duration completes
+Timers are in fact coroutines:
 
-// Coroutine without OnTick (equivalent to Timer)
-Coroutine("delayed").Duration(2).Seconds()
-    .OnElapsed(Debug.Log("done"));
+```csharp
+// Coroutine with just OnElapsed is equivalent to a Timer
+// Timer.In(..) is an alias for this coroutine pattern:
+Coroutine("Timer.In(2).Seconds().Do(blocks)")
+    .Duration(2).Seconds()
+    .Elapsed(blocks);     // runs once after duration
+
+// Timer.Every(..) is an alias for this coroutine pattern:
+Coroutine("Timer.Every(100).Hearbeats().Do(blocks)")
+    .Duration(100).Heartbeats()
+    .Heartbeat(blocks);   // runs for duration every heartbeat
 ```
 
-### Reference-Based Control
+Coroutines can run blocks conditionally, either on frame updates or fixed steps, or both:
+
+```csharp
+// Coroutines run while condition is true
+Coroutine("conditional")
+    .While(conditions)                       
+    .Update(Debug.Log("processing..."))   // only while true
+    .Heartbeat(Debug.Log("stepping...")); // only while true
+```
+
+Coroutine duration and conditions can be combined. Conditions only affect the "every" aspect of the Coroutine, while the OnElapsed() event executes unconditionally. 
+
+```csharp
+// Coroutine with tick and elapsed handlers, indentation for emphasis
+Coroutine("countdown")
+    .Duration(3).Seconds()      // run for 3s total
+    .Elapsed(blocks)            // runs unconditionally after 3s
+    .While(conditions)          // conditions
+        .Update(blocks)         // only while conditions true
+        .Heartbeat(blocks);     // only while conditions true
+```
+
+Coroutines can also execute unconditionally, which is similar to `On.Update(..)` but coroutines can be paused or stopped at any time (see next paragraph).
+
+```csharp
+// Coroutine with tick and elapsed handlers, unconditional
+Coroutine("unconditional")
+    .Update(blocks)       // runs on frame update
+    .Heartbeat(blocks);   // runs on fixed step
+
+    // elsewhere, in some other block
+    If(conditions).Then(Coroutine("unconditional").Stop())
+```
+
+### Time-Sliced Execution
+
+Coroutine execution can also be time-sliced with staggered execution (phase shifted) to perform load balancing:
+
+```csharp
+// Time-sliced coroutines adjust frequency of condition evaluation
+// Processes the same conditions/blocks but in alternating frames
+Coroutine("group 1")
+    .While(sameConditions)
+    .Every(2)               // every 2nd (heartbeat or update)
+    .Frames(sameBlocks);    // runs in frames 0, 2, 4, 6, ..
+
+Coroutine("group 2")
+    .While(sameConditions)
+    .Every(2)               // every 2nd (heartbeat or update)
+    .DelayBy(1)             // start with +1 delay (offset) 
+    .Frames(sameBlocks);    // runs in frames +1, 3, 5, 7, ..
+```
+
+Situation when to use this: Group consumes **12 ms** frame time total (conditions: 2 ms; blocks: 10 ms) => too much!
+
+After change:
+- Conditions still evaluate every frame => 2 ms
+- 50% of blocks every frame => 5 ms
+- Result: From 12 ms down to **7 ms**
+
+If spread over 4 frames:
+- Conditions: 2 ms
+- 25% of blocks every frame => 2.5 ms
+- Result: From 12 ms down to **4.5 ms** 
+
+Drawback: Response time goes up. Quite commonly not an issue. For example: 100 units starting to move instantly in the same frame vs only 25% starting to move instantly, while the remaining three quarters each start to move delayed by 1, 2 and 3 frames.
+
+Delayed reaction time may even be desirable for gameplay as it "simulates" a group's response time variability. For instance a large group of characters would no longer exhibit perfectly synchronized animations. In individual combat, an enemy would exhibit minimal variation of their attack/defense response times. This makes such situations feel more "human-like", less "robotic".
+
+### Reference-Based Coroutine Control
 
 ```csharp
 // Store reference for later control
-var countdown = Coroutine("countdown").Duration(5).Seconds()
-    .OnTick(Debug.Log("..."))
-    .OnElapsed(Debug.Log("done"));
+var countdown = Coroutine("countdown")
+    .Duration(007).Seconds()
+    .Heartbeat(Debug.Log("tic-tic"))
+    .Elapsed(Debug.Log("BOOM!"));
 
 // Lifecycle control
 On.Enabled(countdown.Start());
 On.Disabled(countdown.Stop());
 
 // Runtime control methods
-countdown.Start();      // begin/restart the coroutine
-countdown.Stop();       // stop and reset
-countdown.Pause();      // freeze at current elapsed time
+countdown.Start();      // (re-)start the coroutine
+countdown.Stop();       // stop and reset state
+countdown.Pause();      // freeze at current time
 countdown.Resume();     // continue from paused state
-countdown.Restart();    // equivalent to Stop() + Start()
 
-// Speed control (also enables pause via TimeScale(0))
-countdown.TimeScale(0.5f);  // half speed
+// Control Events
+var countdown = Coroutine("countdown")
+    .Duration(5).Seconds()
+    .Started(startBlocks)       // runs right away
+    .Paused(pauseBlocks)        // runs when paused (if running)
+    .Resumed(resumeBlocks)      // runs when resumed (if paused)
+    .Stopped(stopBlocks)        // runs when stopped (not on elapsed)
+    .OnElapsed(elapsedBlocks);  // runs when elapsed (not on stop)
+
+// Speed control affects when the OnElapsed event runs
+// Note: Pause() is same as TimeScale(0)
+countdown.TimeScale(0.5f);  // runs twice as long
 countdown.TimeScale(0f);    // effectively paused
-countdown.TimeScale(2f);    // double speed
+countdown.TimeScale(2f);    // ends in half the time
+
+// Sorry, no going back in time: it would end the universe ...
+countdown.TimeScale(-1f);   // Clamped to 0
 ```
+
+#### Start/Stop/Pause/Resume Coroutine Behaviour
+
+When a coroutine is **stopped**:
+- Start => starts coroutine
+- Stop => no effect
+- Pause => no effect
+- Resume => no effect
+
+When a coroutine is **running**:
+- Start => restart: stops and starts coroutine
+- Stop => stops coroutine
+- Pause => freezes coroutine updates, preserves state
+- Resume => no effect
+
+When a coroutine is **paused**:
+- Start => restart: stops and starts coroutine (not paused)
+- Stop => stops coroutine (resets paused state)
+- Pause => no effect
+- Resume => continues coroutine updates with last state 
+
+The 'no effect' usages will be logged as warning when a corresponding debug flag is active. They may indicate flawed logic and order of operations issues.
 
 ## Design Rules
 
@@ -134,15 +243,13 @@ t.Stop();
 For executing logic every N fixed steps (aka heartbeat):
 
 ```csharp
-Every(3).Steps(blocks);           // every 3rd step
-Every(Even).Steps(blocks);        // steps 2, 4, 6, 8...
-Every(Odd).Steps(blocks);         // steps 1, 3, 5, 7...
-
 Every(3).Frames(blocks);          // every 3rd frame
 Every(Even).Frames(blocks);       // frames 2, 4, 6...
 
-// alternative Steps wording, under consideration..
-Every(3).Heartbeats(blocks);      // every 3rd heartbeat
+// fixed timesteps
+Every(3).Heartbeats(blocks);      // every 3rd step
+Every(Even).Heartbeats(blocks);   // steps 2, 4, 6, 8...
+Every(Odd).Heartbeats(blocks);    // steps 1, 3, 5, 7...
 ```
 
 **Implementation**: `Even` and `Odd` are constants on `LunyScript` base class:
@@ -193,11 +300,11 @@ On.Disabled(timer.Stop());
 
 ## Summary
 
-| Feature | API |
-|---------|-----|
-| One-shot timer | `Timer("x").In(n).Seconds().Do(blocks)` |
-| Repeating timer | `Timer("x").Every(n).Seconds().Do(blocks)` |
-| Coroutine with ticks | `Coroutine("x").Duration(n).Seconds().OnTick().OnElapsed()` |
+| Feature | API                                                          |
+|---------|--------------------------------------------------------------|
+| One-shot timer | `Timer("x").In(n).Seconds().Do(blocks)`                      |
+| Repeating timer | `Timer("x").Every(n).Seconds().Do(blocks)`                   |
+| Coroutine with ticks | `Coroutine("x").Duration(n).Seconds().OnTick().OnElapsed()`  |
 | Control | `.Start()`, `.Stop()`, `.Pause()`, `.Resume()`, `.Restart()` |
-| Speed | `.TimeScale(factor)` |
-| Throttling | `Every(n).Steps()`, `Every(Even).Frames()` |
+| Speed | `.TimeScale(factor)`                                         |
+| Throttling | `Every(n).Heartbeats()`, `Every(Even).Frames()`         |
