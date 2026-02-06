@@ -15,8 +15,8 @@ LunyScript is your **🫵 fast-lane, front-row ticket 👑** to **C#** game prog
 public MyPlayer()
 {
     When.ContactWith("ball")
-        .Begins(Audio.Play("energy_buildup"))
-        .Ends(Prefab.Spawn("sparkles"), Send("kick").To("ball"));
+        .Begins(Audio("energy_buildup").Play())
+        .Ends(Prefab("sparkles").Spawn(), Send("kick").To("ball"));
 }
 ```
 Why learn pointless differences like`_init`,`Awake`,`BeginPlay`when you just want to make your dream game come true? 😄 Learn the editor first, engine code later. 🥳 
