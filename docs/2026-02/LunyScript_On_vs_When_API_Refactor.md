@@ -75,7 +75,7 @@ When.Scene("Level1").Unloads(blocks);   // specific scene unloaded
 ```csharp
 When.Input("jump").Pressed(blocks);
 When.Input("fire").Released(blocks);
-When.Input(AnyKey).Pressed(blocks);     // Uh, where's the 'Any' key?
+When.Input(AnyKey).Pressed(blocks);     // where's the 'Any' key?
 When.Input(AnyMouse).Pressed(blocks);
 When.Input(LeftMouse).Pressed(blocks);  // alias: LMB
 ```
@@ -95,7 +95,7 @@ When.Button("Start").Clicked(blocks);
 When.Slider("Volume").Changes(blocks);
 ```
 
-## Global Scope
+## Execution in Global Scope
 
 LunyScript does not allow running events on a "global" scope from an object's script. This avoids many problems:
 
@@ -103,7 +103,25 @@ LunyScript does not allow running events on a "global" scope from an object's sc
 - Script instantiates multiple times => global behaviour runs multiple times
 - Any object could affect global behaviour => potential source of confusion / bugs
 
-The solution is simple and straightforward: User creates a separate object and script (perhaps named "Global") with guaranteed lifetime.
+The solution is simple and straightforward: User creates a separate object and script (perhaps named "Global") with controlled lifetime.
+
+Alternatively, a singleton script can be created by overriding the `Singleton` property and returning true:
+```
+public class ManagersManagerManagingManagers : LunyScript
+{
+    // Return true to mark script as Singleton: 
+    public override bool Singleton => true;
+}
+```
+
+A singleton script:
+- Instantiates on launch unconditionally
+- Creates corresponding object/node automatically
+- Object/Script instance become non-destroyable (attempt throws)
+
+A singleton object is treated as follows in engines:
+- **Godot**: added to tree root: `GetTree().Root.AddChild(scriptNode);`
+- **Unity**: added to DDOL: `gameObject.DontDestroyOnLoad();`
 
 ## Migration from Current API
 
