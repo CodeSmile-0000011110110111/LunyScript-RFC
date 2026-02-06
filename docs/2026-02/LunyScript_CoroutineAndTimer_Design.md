@@ -124,13 +124,17 @@ If spread over 4 frames:
 - 25% of blocks every frame => 2.5 ms
 - Result: From 12 ms down to **4.5 ms** 
 
-Drawback: Response time goes up. Quite commonly not an issue though. 
+#### **Drawback**: Response time goes up 
 
-Example: 100 units start to move instantly in the same frame vs only 25% move instantly, while the remaining three quarters each move delayed by 1, 2 and 3 frames.
+Quite commonly not an issue though. 
 
-Delayed response time may even be desirable as it "simulates" human-like response time variance. 
+**Example**: 100 units start to move instantly in the same frame vs only 25% move instantly, while the remaining three quarters each move delayed by 1, 2 and 3 frames.
 
-Example: A large group of characters no longer exhibit perfectly synchronized animations. In individual combat, an enemy would exhibit minimal variation of attack/defense response times.
+#### This may be desirable
+
+Delayed response time easily "simulates" human-like variance in group behaviour and individual situations. 
+
+**Example**: A large group of characters no longer exhibit perfectly synchronized animations. In individual combat, an enemy could exhibit minimal timing variation of attack/defense stances.
 
 ### Reference-Based Coroutine Control
 
@@ -152,45 +156,48 @@ countdown.Stop();       // stop and reset state
 countdown.Pause();      // freeze at current time
 countdown.Resume();     // continue from paused state
 
-// Control Events
+// Control Events (also available on Timer)
 var countdown = Coroutine("..").Duration(5).Seconds()
     .Started(startBlocks)    // runs when (re-)started
     .Paused(pauseBlocks)     // runs when paused (if running)
     .Resumed(resumeBlocks)   // runs when resumed (if paused)
     .Stopped(stopBlocks)     // runs when stopped (not: elapsed)
     .Elapsed(elapsedBlocks); // runs when elapsed (not: stopped)
+```
 
-// Speed control affects when the OnElapsed event runs
-// Note: Pause() is same as TimeScale(0)
-countdown.TimeScale(0.5f);   // runs twice as long
-countdown.TimeScale(0f);     // paused, can also Resume()
-countdown.TimeScale(2f);     // ends in half the time
+Speed control affects when the OnElapsed event runs:
+
+```csharp
+var x = Coroutine("x").Duration(3).Seconds();
+x.TimeScale(0.5f);   // runs twice as long
+x.TimeScale(2f);     // ends in half the time
+
+// Pause() is same as TimeScale(0)
+x.TimeScale(0f);     // paused, can also Resume()
 
 // Sorry, no going back in time: it would end the universe ...
-countdown.TimeScale(-1f);   // Clamped to 0
+x.TimeScale(-1f);   // Clamped to 0
 ```
+
+The TimeScale is exposed through the script execution context and can be used to affect block execution.
 
 #### Start/Stop/Pause/Resume Coroutine Behaviour
 
 When a coroutine is **stopped**:
 - Start => starts coroutine
-- Stop => no effect
-- Pause => no effect
-- Resume => no effect
+- Stop, Pause, Resume => _no effect_
 
 When a coroutine is **running**:
-- Start => restart: stops and starts coroutine
+- Start => re-starts coroutine (stop is implicit)
 - Stop => stops coroutine
-- Pause => freezes coroutine updates, preserves state
-- Resume => no effect
+- Pause => freezes coroutine, preserves current time
+- Resume => _no effect_
 
 When a coroutine is **paused**:
-- Start => restart: stops and starts coroutine (not paused)
-- Stop => stops coroutine (resets paused state)
-- Pause => no effect
-- Resume => continues coroutine updates with last state 
-
-The 'no effect' usages will be logged as warning when a corresponding debug flag is active. They may indicate flawed logic and order of operations issues.
+- Start => re-starts coroutine (stop is implicit)
+- Stop => stops coroutine
+- Pause => _no effect_
+- Resume => unfreezes coroutine, runs for remaining time
 
 ## Design Rules
 
@@ -216,7 +223,8 @@ Calling `.Start()` on an already-running timer/coroutine **restarts** it from th
 
 ```csharp
 // If user needs parallel timers, use unique names:
-Timer($"spawn_{spawnId}").In(2).Seconds().Do(blocks);
+for (int i = 0; i < 10; i++)
+    Timer($"spawn_{i}").In(2+i).Seconds().Do(spawn[i]);
 ```
 
 ### Method Order Is Enforced
@@ -239,21 +247,22 @@ Timer("fire").In(3).Seconds().Do(blocks);
 
 // Store reference for control
 var t = Timer("control").In(3).Seconds().Do(blocks);
-t.Stop();
+// later, in some other block:
+t.Stop()
 ```
 
-## Step-Based Throttling
+## Time-Slicing with `Every`
 
-For executing logic every N fixed steps (aka heartbeat):
+Simplified coroutine aliases for executing logic every N frames or heartbeats:
 
 ```csharp
 Every(3).Frames(blocks);          // every 3rd frame
-Every(Even).Frames(blocks);       // frames 2, 4, 6...
+Every(Even).Frames(blocks);       // frames 12, 14, 16...
 
 // fixed timesteps
 Every(3).Heartbeats(blocks);      // every 3rd step
-Every(Even).Heartbeats(blocks);   // steps 2, 4, 6, 8...
-Every(Odd).Heartbeats(blocks);    // steps 1, 3, 5, 7...
+Every(Even).Heartbeats(blocks);   // steps 12, 14, 16, 18...
+Every(Odd).Heartbeats(blocks);    // steps 11, 13, 15, 17...
 ```
 
 **Implementation**: `Even` and `Odd` are constants on `LunyScript` base class:
@@ -267,11 +276,10 @@ protected const Int32 Even = -2;
 ```csharp
 interface IScriptTimerBlock : IScriptActionBlock
 {
-    void Start();
-    void Stop();
-    void Restart();
-    void Pause();
-    void Resume();
+    void Started();
+    void Stopped();
+    void Paused();
+    void Resumed();
     void TimeScale(Single scale);
 }
 
@@ -284,31 +292,38 @@ interface IScriptCoroutineBlock : IScriptTimerBlock
 
 ## No `When.Timer()` / `When.Coroutine()` API
 
-The self-contained API (`.Do()`, `.OnTick()`, `.OnElapsed()`) covers all use cases. The separate `When.Timer("x").Elapsed()` pattern is **deferred** - can be added later if real need emerges.
+The self-contained Timer/Coroutine APIs (`.Do()`, `.OnTick()`, `.OnElapsed()`) supercede the previously mentioned `When.Timer("x").Elapsed()` patterns.
 
 ## Future Considerations
 
 ### TimeScale for Tweening
-The `TimeScale()` API could potentially support tweening:
+The `TimeScale()` API could support built-in tweening:
+
 ```csharp
-// Future expansion
-countdown.TimeScale(Tween.EaseIn(0, 1, 2)); // accelerate over 2s
+// Future expansion for Timer & Coroutines
+// Timer runs for 2 seconds
+// Time scale accelerates for initial 25% of duration (0.5 seconds)
+Timer.In(2).Seconds().TimeScale(Tween.EaseIn(.25));
+// Time scale decelerates during last 10% of duration (0.2 seconds)
+Timer.In(2).Seconds().TimeScale(Tween.EaseOut(.1));
 ```
 
+Tweening guarantees the tween value isn't unintentionally pausing the timer/coroutine (timescale == 0) by clamping the tweened value away from 0 (small epsilon, configurable).
+
 ### Integration with On/When API
-Timers and coroutines integrate with the refactored event API (see [On vs When API Refactor](./LunyScript_On_vs_When_API_Refactor.md)):
+Timers and coroutines integrate with the refactored event API ([On vs When API Refactor](./LunyScript_On_vs_When_API_Refactor.md)):
 ```csharp
-On.Enabled(timer.Start());
-On.Disabled(timer.Stop());
+On.Enabled(timer.Start()); // restart timer instead of resume (default)
 ```
 
 ## Summary
 
-| Feature | API                                                          |
-|---------|--------------------------------------------------------------|
-| One-shot timer | `Timer("x").In(n).Seconds().Do(blocks)`                      |
-| Repeating timer | `Timer("x").Every(n).Seconds().Do(blocks)`                   |
-| Coroutine with ticks | `Coroutine("x").Duration(n).Seconds().OnTick().OnElapsed()`  |
-| Control | `.Start()`, `.Stop()`, `.Pause()`, `.Resume()`, `.Restart()` |
-| Speed | `.TimeScale(factor)`                                         |
-| Throttling | `Every(n).Heartbeats()`, `Every(Even).Frames()`         |
+| Feature         | API                                                            |
+|-----------------|----------------------------------------------------------------|
+| One-shot timer  | `Timer("x").In(n).Seconds().Do(blocks)`                        |
+| Repeating timer | `Timer("x").Every(n).Seconds().Do(blocks)`                     |
+| Frame Coroutine | `Coroutine("x").Duration(n).Seconds().Update().OnElapsed()`    |
+| Step Coroutine  | `Coroutine("x").Duration(n).Seconds().Heartbeat().OnElapsed()` |
+| Control         | `.Start()`, `.Stop()`, `.Pause()`, `.Resume()`                 |
+| Speed           | `.TimeScale(factor)`                                           |
+| Time-Slicing    | `Every(n).Heartbeats()`, `Every(Even).Frames()`                |
