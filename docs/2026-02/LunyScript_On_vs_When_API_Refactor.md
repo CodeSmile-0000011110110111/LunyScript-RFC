@@ -37,27 +37,27 @@ On.Destroyed(blocks);   // once when object is destroyed
 
 | Previous                  | NOW               | Rationale |
 |---------------------------|-------------------|-----------|
-| `When.Self.Updates()`     | ✅`On.Frame()`      | Clearer, matches "every frame" mental model |
-| `When.Self.LateUpdates()` | ✅`On.EndOfFrame()` | Much clearer than Unity's "LateUpdate" jargon |
+| `When.Self.Updates()`     | ✅`On.FrameUpdate()`      | Clearer, matches "every frame" mental model |
+| `When.Self.LateUpdates()` | ✅`On.FrameEnd()` | Much clearer than Unity's "LateUpdate" jargon |
 | `When.Self.Steps()`       | ✅`On.Heartbeat()`  | Evocative of steady, rhythmic, predictable timing |
 
 
 ```csharp
 // On.* scheme but Every.* would work nicely for these too
-On.Frame(blocks);        // every render frame (variable rate)
-On.EndOfFrame(blocks);   // after frame processing complete
-On.Heartbeat(blocks);    // fixed interval (physics/logic rate)
+On.FrameUpdate(blocks); // every render frame (variable rate)
+On.FrameEnd(blocks);    // after frame processing complete
+On.Heartbeat(blocks);   // fixed interval (physics/logic rate)
 ```
 
 ### Why `On.Heartbeat()`?
 
 | Name | Issue                                                         |
 |------|---------------------------------------------------------------|
-| `On.Step()` | Step of what? Too vague                                       |
-| `On.FixedStep()` | "Fixed" begs explanation                                      |
-| `On.LogicStep()` | Implies only 'logic' runs here (physics too, but not input!!) |
-| `On.Tick()` | Often associated with frame-based updates, generic            |
-| **`On.Heartbeat()`** | ✅ Clear, evocative, universal metaphor for steady rhythm      |
+| `Step` | Step of what? Too vague                                       |
+| `FixedStep` | "Fixed" begs explanation                                      |
+| `LogicStep` | Implies only 'logic' runs here (physics too, but not input!!) |
+| `Tick` | Often associated with frame-based updates, generic            |
+| **`Heartbeat`** | ✅ Clear, evocative, universal metaphor for steady rhythm      |
 
 ## `When.*` API (External Events)
 
@@ -114,8 +114,8 @@ The solution is simple and straightforward: User creates a separate object and s
 | `When.Self.Ready()` | `On.Ready()`               |
 | `When.Self.Disabled()` | `On.Disabled()`            |
 | `When.Self.Destroyed()` | `On.Destroyed()`           |
-| `When.Self.Updates()` | `On.Frame()`               |
-| `When.Self.LateUpdates()` | `On.EndOfFrame()`          |
+| `When.Self.Updates()` | `On.FrameUpdate()`               |
+| `When.Self.LateUpdates()` | `On.FrameEnd()`      |
 | `When.Self.Steps()` | `On.Heartbeat()`           |
 | `When.Scene.Loads()` | `When.Scene("").Loads()`   |
 | `When.Scene.Unloads()` | `When.Scene("").Unloads()` |
@@ -150,25 +150,25 @@ public readonly struct OnApi
     public IScriptSequenceBlock Destroyed(params IScriptActionBlock[] blocks) => ...
     
     // Update
-    public IScriptSequenceBlock Frame(params IScriptActionBlock[] blocks) => ...
-    public IScriptSequenceBlock EndOfFrame(params IScriptActionBlock[] blocks) => ...
+    public IScriptSequenceBlock FrameUpdate(params IScriptActionBlock[] blocks) => ...
+    public IScriptSequenceBlock FrameEnd(params IScriptActionBlock[] blocks) => ...
     public IScriptSequenceBlock Heartbeat(params IScriptActionBlock[] blocks) => ...
 }
 ```
 
 ## Summary
 
-| Category | API | Examples |
-|----------|-----|----------|
-| **Object lifecycle** | `On.*` | `On.Created()`, `On.Enabled()`, `On.Destroyed()` |
-| **Update loops** | `On.*` | `On.Frame()`, `On.EndOfFrame()`, `On.Heartbeat()` |
-| **Scene events** | `When.Scene.*` | `When.Scene.Loads()`, `When.Scene.Unloads()` |
-| **Input events** | `When.Input.*` | `When.Input.KeyPressed()` (future) |
-| **Collision events** | `When.Collision.*` | `When.Collision.Entered()` (future) |
-| **Global scope** | `On.Global.*` | `On.Global.Frame()` |
+| Category | API | Examples                                              |
+|----------|-----|-------------------------------------------------------|
+| **Object lifecycle** | `On.*` | `On.Created()`, `On.Enabled()`, `On.Destroyed()`      |
+| **Update loops** | `On.*` | `On.FrameUpdate()`, `On.FrameEnd()`, `On.Heartbeat()` |
+| **Scene events** | `When.Scene.*` | `When.Scene.Loads()`, `When.Scene.Unloads()`          |
+| **Input events** | `When.Input.*` | `When.Input.KeyPressed()` (future)                    |
+| **Collision events** | `When.Collision.*` | `When.Collision.Entered()` (future)                   |
+| **Global scope** | `On.Global.*` | `On.Global.FrameUpdate()`                                   |
 
 This design provides:
 - **Intuitive mental model**: "On" for self, "When" for world
-- **Beginner-friendly naming**: `Heartbeat`, `Frame`, `EndOfFrame`
+- **Beginner-friendly naming**: `Heartbeat`, `FrameUpdate`, `FrameEnd`
 - **Engine-agnostic terminology**: Avoids Unity/Godot jargon
 - **Clear scoping**: Local vs Global explicitly separated
