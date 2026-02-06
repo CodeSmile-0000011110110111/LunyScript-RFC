@@ -136,35 +136,35 @@ Example: A large group of characters no longer exhibit perfectly synchronized an
 
 ```csharp
 // Store reference for later control
-var countdown = Coroutine("countdown")
+var countdown = Coroutine("bomb")
     .Duration(007).Seconds()
     .Heartbeat(Debug.Log("tic-tic"))
     .Elapsed(Debug.Log("BOOM!"));
 
-// Lifecycle control
+// Lifecycle control: Coroutines pause while object is disabled, 
+// and resume when object is re-enabled.
+// This overrides resume by restarting the coroutine:
 On.Enabled(countdown.Start());
-On.Disabled(countdown.Stop());
 
 // Runtime control methods
-countdown.Start();      // (re-)start the coroutine
+countdown.Start();      // start or restart the coroutine
 countdown.Stop();       // stop and reset state
 countdown.Pause();      // freeze at current time
 countdown.Resume();     // continue from paused state
 
 // Control Events
-var countdown = Coroutine("countdown")
-    .Duration(5).Seconds()
-    .Started(startBlocks)       // runs right away
-    .Paused(pauseBlocks)        // runs when paused (if running)
-    .Resumed(resumeBlocks)      // runs when resumed (if paused)
-    .Stopped(stopBlocks)        // runs when stopped (not on elapsed)
-    .OnElapsed(elapsedBlocks);  // runs when elapsed (not on stop)
+var countdown = Coroutine("..").Duration(5).Seconds()
+    .Started(startBlocks)    // runs when (re-)started
+    .Paused(pauseBlocks)     // runs when paused (if running)
+    .Resumed(resumeBlocks)   // runs when resumed (if paused)
+    .Stopped(stopBlocks)     // runs when stopped (not: elapsed)
+    .Elapsed(elapsedBlocks); // runs when elapsed (not: stopped)
 
 // Speed control affects when the OnElapsed event runs
 // Note: Pause() is same as TimeScale(0)
-countdown.TimeScale(0.5f);  // runs twice as long
-countdown.TimeScale(0f);    // effectively paused
-countdown.TimeScale(2f);    // ends in half the time
+countdown.TimeScale(0.5f);   // runs twice as long
+countdown.TimeScale(0f);     // paused, can also Resume()
+countdown.TimeScale(2f);     // ends in half the time
 
 // Sorry, no going back in time: it would end the universe ...
 countdown.TimeScale(-1f);   // Clamped to 0
