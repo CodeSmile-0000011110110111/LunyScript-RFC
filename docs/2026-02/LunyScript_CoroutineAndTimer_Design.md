@@ -59,7 +59,7 @@ Coroutine("Timer.Every(100).Hearbeats().Do(blocks)")
     .Heartbeat(blocks);   // runs for duration every heartbeat
 ```
 
-Coroutines can run blocks conditionally, either on frame updates or fixed steps, or both:
+Coroutines can run blocks conditionally on frame updates or fixed steps, or both:
 
 ```csharp
 // Coroutines run while condition is true
@@ -72,7 +72,7 @@ Coroutine("conditional")
 Coroutine duration and conditions can be combined. Conditions only affect the "every" aspect of the Coroutine, while the OnElapsed() event executes unconditionally. 
 
 ```csharp
-// Coroutine with tick and elapsed handlers, indentation for emphasis
+// Coroutine with tick and elapsed handlers, indented for emphasis
 Coroutine("countdown")
     .Duration(3).Seconds()      // run for 3s total
     .Elapsed(blocks)            // runs unconditionally after 3s
@@ -124,9 +124,13 @@ If spread over 4 frames:
 - 25% of blocks every frame => 2.5 ms
 - Result: From 12 ms down to **4.5 ms** 
 
-Drawback: Response time goes up. Quite commonly not an issue. For example: 100 units starting to move instantly in the same frame vs only 25% starting to move instantly, while the remaining three quarters each start to move delayed by 1, 2 and 3 frames.
+Drawback: Response time goes up. Quite commonly not an issue though. 
 
-Delayed reaction time may even be desirable for gameplay as it "simulates" a group's response time variability. For instance a large group of characters would no longer exhibit perfectly synchronized animations. In individual combat, an enemy would exhibit minimal variation of their attack/defense response times. This makes such situations feel more "human-like", less "robotic".
+Example: 100 units start to move instantly in the same frame vs only 25% move instantly, while the remaining three quarters each move delayed by 1, 2 and 3 frames.
+
+Delayed response time may even be desirable as it "simulates" human-like response time variance. 
+
+Example: A large group of characters no longer exhibit perfectly synchronized animations. In individual combat, an enemy would exhibit minimal variation of attack/defense response times.
 
 ### Reference-Based Coroutine Control
 
