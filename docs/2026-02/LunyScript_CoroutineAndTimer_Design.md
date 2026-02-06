@@ -310,20 +310,14 @@ Timer.In(2).Seconds().TimeScale(Tween.EaseOut(.1));
 
 Tweening guarantees the tween value isn't unintentionally pausing the timer/coroutine (timescale == 0) by clamping the tweened value away from 0 (small epsilon, configurable).
 
-### Integration with On/When API
-Timers and coroutines integrate with the refactored event API ([On vs When API Refactor](./LunyScript_On_vs_When_API_Refactor.md)):
-```csharp
-On.Enabled(timer.Start()); // restart timer instead of resume (default)
-```
-
 ## Summary
 
-| Feature         | API                                                            |
-|-----------------|----------------------------------------------------------------|
-| One-shot timer  | `Timer("x").In(n).Seconds().Do(blocks)`                        |
-| Repeating timer | `Timer("x").Every(n).Seconds().Do(blocks)`                     |
-| Frame Coroutine | `Coroutine("x").Duration(n).Seconds().Update().OnElapsed()`    |
-| Step Coroutine  | `Coroutine("x").Duration(n).Seconds().Heartbeat().OnElapsed()` |
-| Control         | `.Start()`, `.Stop()`, `.Pause()`, `.Resume()`                 |
-| Speed           | `.TimeScale(factor)`                                           |
-| Time-Slicing    | `Every(n).Heartbeats()`, `Every(Even).Frames()`                |
+| Feature         | API                                                  |
+|-----------------|------------------------------------------------------|
+| One-shot timer  | `Timer("x").In(n).Seconds().Do(..)`                  |
+| Repeating timer | `Timer("x").Every(n).Seconds().Do(..)`               |
+| Frame Coroutine | `Coroutine("x").Duration(n).Seconds().Update(..)`    |
+| Step Coroutine  | `Coroutine("x").Duration(n).Seconds().Heartbeat(..)` |
+| Control         | `.Start()`, `.Stop()`, `.Pause()`, `.Resume()`       |
+| Speed           | `.TimeScale(factor)`                                 |
+| Time-Slicing    | `Every(n).Heartbeats()`, `Every(Even).Frames()`      |
