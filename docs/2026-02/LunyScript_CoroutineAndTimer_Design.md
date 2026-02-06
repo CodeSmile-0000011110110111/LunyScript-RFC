@@ -65,8 +65,8 @@ Coroutines can run blocks conditionally on frame updates or fixed steps, or both
 // Coroutines run while condition is true
 Coroutine("conditional")
     .While(conditions)                       
-    .Update(Debug.Log("processing..."))   // only while true
-    .Heartbeat(Debug.Log("stepping...")); // only while true
+    .OnUpdate(Debug.Log("processing..."))   // only while true
+    .OnHeartbeat(Debug.Log("stepping...")); // only while true
 ```
 
 Coroutine duration and conditions can be combined. Conditions only affect the "every" aspect of the Coroutine, while the OnElapsed() event executes unconditionally. 
@@ -77,8 +77,8 @@ Coroutine("countdown")
     .Duration(3).Seconds()      // run for 3s total
     .Elapsed(blocks)            // runs unconditionally after 3s
     .While(conditions)          // conditions
-        .Update(blocks)         // only while conditions true
-        .Heartbeat(blocks);     // only while conditions true
+        .OnUpdate(blocks)       // only while conditions true
+        .OnHeartbeat(blocks);   // only while conditions true
 ```
 
 Coroutines can also execute unconditionally, which is similar to `On.Update(..)` but coroutines can be paused or stopped at any time (see next paragraph).
@@ -86,8 +86,8 @@ Coroutines can also execute unconditionally, which is similar to `On.Update(..)`
 ```csharp
 // Coroutine with tick and elapsed handlers, unconditional
 Coroutine("unconditional")
-    .Update(blocks)       // runs on frame update
-    .Heartbeat(blocks);   // runs on fixed step
+    .OnUpdate(blocks)       // runs on frame update
+    .OnHeartbeat(blocks);   // runs on fixed step
 
     // elsewhere, in some other block
     If(conditions).Then(Coroutine("unconditional").Stop())
@@ -142,7 +142,7 @@ Delayed response time easily "simulates" human-like variance in group behaviour 
 // Store reference for later control
 var countdown = Coroutine("bomb")
     .Duration(007).Seconds()
-    .Heartbeat(Debug.Log("tic-tic"))
+    .OnHeartbeat(Debug.Log("tic-tic"))
     .Elapsed(Debug.Log("BOOM!"));
 
 // Lifecycle control: Coroutines pause while object is disabled, 
@@ -316,8 +316,8 @@ Tweening guarantees the tween value isn't unintentionally pausing the timer/coro
 |-----------------|------------------------------------------------------|
 | One-shot timer  | `Timer("x").In(n).Seconds().Do(..)`                  |
 | Repeating timer | `Timer("x").Every(n).Seconds().Do(..)`               |
-| Frame Coroutine | `Coroutine("x").Duration(n).Seconds().Update(..)`    |
-| Step Coroutine  | `Coroutine("x").Duration(n).Seconds().Heartbeat(..)` |
+| Frame Coroutine | `Coroutine("x").Duration(n).Seconds().OnUpdate(..)`    |
+| Step Coroutine  | `Coroutine("x").Duration(n).Seconds().OnHeartbeat(..)` |
 | Control         | `.Start()`, `.Stop()`, `.Pause()`, `.Resume()`       |
 | Speed           | `.TimeScale(factor)`                                 |
 | Time-Slicing    | `Every(n).Heartbeats()`, `Every(Even).Frames()`      |

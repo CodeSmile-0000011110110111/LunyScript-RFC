@@ -12,11 +12,11 @@ This document defines the semantic distinction between `On.*` and `When.*` event
 
 | Prefix | Meaning | Scope |
 |--------|---------|-------|
-| **`On.*`** | Events about **this object's own lifecycle/state** | Local to context object |
-| **`When.*`** | Events from **external sources** this object listens to | External/broadcast events |
+| **`On.*`** | Events about **object's own state** | Local to context object |
+| **`When.*`** | Events from **external sources** | External/broadcast events |
 
 ### Mental Model
-- **`On.*`** = "When **I** do something" (object's own events)
+- **`On.*`** = "When **something about me** changes" (object's own events)
 - **`When.*`** = "When **something happens** in the world" (external events)
 
 ## `On.*` API (Object Lifecycle Events)
@@ -35,11 +35,11 @@ On.Destroyed(blocks);   // once when object is destroyed
 
 ### Update Events (Proposed Naming)
 
-| Current | Proposed | Rationale |
-|---------|----------|-----------|
-| `When.Self.Updates()` | `On.Frame()` | Clearer, matches "every frame" mental model |
-| `When.Self.LateUpdates()` | `On.EndOfFrame()` | Much clearer than Unity's "LateUpdate" jargon |
-| `When.Self.Steps()` | `On.Heartbeat()` | Evocative of steady, rhythmic, predictable timing |
+| Previous                  | NOW               | Rationale |
+|---------------------------|-------------------|-----------|
+| `When.Self.Updates()`     | ✅`On.Frame()`      | Clearer, matches "every frame" mental model |
+| `When.Self.LateUpdates()` | ✅`On.EndOfFrame()` | Much clearer than Unity's "LateUpdate" jargon |
+| `When.Self.Steps()`       | ✅`On.Heartbeat()`  | Evocative of steady, rhythmic, predictable timing |
 
 
 ```csharp
@@ -55,7 +55,7 @@ On.Heartbeat(blocks);    // fixed interval (physics/logic rate)
 |------|---------------------------------------------------------------|
 | `On.Step()` | Step of what? Too vague                                       |
 | `On.FixedStep()` | "Fixed" begs explanation                                      |
-| `On.LogicStep()` | Implies only 'logic' runs here (physics too! but not input!!) |
+| `On.LogicStep()` | Implies only 'logic' runs here (physics too, but not input!!) |
 | `On.Tick()` | Often associated with frame-based updates, generic            |
 | **`On.Heartbeat()`** | ✅ Clear, evocative, universal metaphor for steady rhythm      |
 
@@ -65,26 +65,28 @@ Events from external sources that the object listens to. The object doesn't caus
 
 ### Scene Events
 ```csharp
-When.Scene.Loads(blocks);              // any scene loaded
-When.Scene.Loads("Level1", blocks);    // specific scene loaded
-When.Scene.Unloads(blocks);            // any scene unloaded
-When.Scene.Unloads("Level1", blocks);  // specific scene unloaded
+When.Scene().Loads(blocks);             // any scene loaded
+When.Scene("Level1").Loads(blocks);     // specific scene loaded
+When.Scene().Unloads(blocks);           // any scene unloaded
+When.Scene("Level1").Unloads(blocks);   // specific scene unloaded
 ```
 
 ### Input Events (Future)
 ```csharp
-When.Input.KeyPressed("space", blocks);
-When.Input.KeyReleased("space", blocks);
-When.Input.MouseClicked(blocks);
+When.Input("jump").Pressed(blocks);
+When.Input("fire").Released(blocks);
+When.Input(AnyKey).Pressed(blocks);     // Uh, where's the 'Any' key?
+When.Input(AnyMouse).Pressed(blocks);
+When.Input(LeftMouse).Pressed(blocks);  // alias: LMB
 ```
 
 ### Collision Events (Future)
-API naming tbd ...
 
 ```csharp
-When.ContactWith("x").Begins(blocks);
-When.ContactWith("x").Stays(blocks);
-When.ContactWith("x").Ends(blocks);
+When.ContactWith("x")
+    .Begins(blocks)
+    .Stays(blocks)
+    .Ends(blocks);
 ```
 
 ### UI Events (Future)
@@ -95,33 +97,28 @@ When.Slider("Volume").Changes(blocks);
 
 ## Global Scope
 
-**PRELIMINARY**: For events that should run even when the object is disabled, use explicit `Global` scope:
+LunyScript does not allow running events on a "global" scope from an object's script. This avoids many problems:
 
-```csharp
-// Runs even when object disabled
-On.Global.Frame(blocks);
-On.Global.Heartbeat(blocks);
+- Should global events run for a disabled object?
+- Script instantiates multiple times => global behaviour runs multiple times
+- Any object could affect global behaviour => potential source of confusion / bugs
 
-// Or via When for external events
-When.Global.Scene.Loads(blocks);
-```
-
-**Note**: Global scope is explicit. Default `On.*` events only fire while the object is enabled.
+The solution is simple and straightforward: User creates a separate object and script (perhaps named "Global") with guaranteed lifetime.
 
 ## Migration from Current API
 
-| Current (to deprecate) | New |
-|------------------------|-----|
-| `When.Self.Created()` | `On.Created()` |
-| `When.Self.Enabled()` | `On.Enabled()` |
-| `When.Self.Ready()` | `On.Ready()` |
-| `When.Self.Disabled()` | `On.Disabled()` |
-| `When.Self.Destroyed()` | `On.Destroyed()` |
-| `When.Self.Updates()` | `On.Frame()` |
-| `When.Self.LateUpdates()` | `On.EndOfFrame()` |
-| `When.Self.Steps()` | `On.Heartbeat()` |
-| `When.Scene.Loads()` | `When.Scene.Loads()` (unchanged) |
-| `When.Scene.Unloads()` | `When.Scene.Unloads()` (unchanged) |
+| Current (to deprecate) | New                        |
+|------------------------|----------------------------|
+| `When.Self.Created()` | `On.Created()`             |
+| `When.Self.Enabled()` | `On.Enabled()`             |
+| `When.Self.Ready()` | `On.Ready()`               |
+| `When.Self.Disabled()` | `On.Disabled()`            |
+| `When.Self.Destroyed()` | `On.Destroyed()`           |
+| `When.Self.Updates()` | `On.Frame()`               |
+| `When.Self.LateUpdates()` | `On.EndOfFrame()`          |
+| `When.Self.Steps()` | `On.Heartbeat()`           |
+| `When.Scene.Loads()` | `When.Scene("").Loads()`   |
+| `When.Scene.Unloads()` | `When.Scene("").Unloads()` |
 
 ## Integration with Timers & Coroutines
 
@@ -129,11 +126,10 @@ Timers and coroutines (see [Coroutine & Timer Design](./LunyScript_CoroutineAndT
 
 ```csharp
 var countdown = Coroutine("countdown").Duration(5).Seconds()
-    .OnTick(Debug.Log("..."))
-    .OnElapsed(Debug.Log("done"));
+    .OnUpdate(Debug.Log("..."))
+    .Elapsed(Debug.Log("done"));
 
-On.Enabled(countdown.Start());
-On.Disabled(countdown.Stop());
+On.Enabled(countdown.Start()); // restarts, instead of resume
 ```
 
 ## Implementation Notes
@@ -153,43 +149,12 @@ public readonly struct OnApi
     public IScriptSequenceBlock Disabled(params IScriptActionBlock[] blocks) => ...
     public IScriptSequenceBlock Destroyed(params IScriptActionBlock[] blocks) => ...
     
-    // Update (proposed names)
+    // Update
     public IScriptSequenceBlock Frame(params IScriptActionBlock[] blocks) => ...
     public IScriptSequenceBlock EndOfFrame(params IScriptActionBlock[] blocks) => ...
     public IScriptSequenceBlock Heartbeat(params IScriptActionBlock[] blocks) => ...
-    
-    // Global scope accessor
-    public OnGlobalApi Global => new(_script);
 }
 ```
-
-### `LunyScript` Base Class Addition
-
-```csharp
-public abstract class LunyScript : ILunyScript, ILunyScriptInternal
-{
-    // New
-    public OnApi On => new(this);
-    
-    // Keep for external events
-    public WhenApi When => new(this);
-    
-    // ...existing members...
-}
-```
-
-## Event Mapping
-
-| API Method | LunyObjectEvent Enum |
-|------------|---------------------|
-| `On.Created()` | `LunyObjectEvent.OnCreate` |
-| `On.Enabled()` | `LunyObjectEvent.OnEnable` |
-| `On.Ready()` | `LunyObjectEvent.OnReady` |
-| `On.Disabled()` | `LunyObjectEvent.OnDisable` |
-| `On.Destroyed()` | `LunyObjectEvent.OnDestroy` |
-| `On.Frame()` | `LunyObjectEvent.OnUpdate` |
-| `On.EndOfFrame()` | `LunyObjectEvent.OnLateUpdate` |
-| `On.Heartbeat()` | `LunyObjectEvent.OnFixedStep` |
 
 ## Summary
 
