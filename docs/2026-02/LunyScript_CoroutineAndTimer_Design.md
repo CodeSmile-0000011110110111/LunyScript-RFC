@@ -40,6 +40,7 @@ Timer("slow").In(2).Minutes().Do(blocks);
 Timer("clock").Every(1).Seconds().Do(Debug.Log("tick"));
 Timer("pulse").Every(100).Milliseconds().Do(blocks);
 Timer("think").Every(5).Heartbeats().Do(Debug.Log("hmmm?"));
+Timer("periodic").Every(30).Frames().Do(blocks);
 ```
 
 ### Coroutine API
@@ -50,12 +51,12 @@ Timers are in fact coroutines:
 // Coroutine with just OnElapsed is equivalent to a Timer
 // Timer.In(..) is an alias for this coroutine pattern:
 Coroutine("Timer.In(2).Seconds().Do(blocks)")
-    .Duration(2).Seconds()
+    .For(2).Seconds()
     .Elapsed(blocks);     // runs once after duration
 
 // Timer.Every(..) is an alias for this coroutine pattern:
 Coroutine("Timer.Every(100).Heartbeats().Do(blocks)")
-    .Duration(100).Heartbeats()
+    .For(100).Heartbeats()
     .Heartbeat(blocks);   // runs for duration every heartbeat
 ```
 
@@ -74,7 +75,7 @@ Coroutine duration and conditions can be combined. Conditions only affect the "e
 ```csharp
 // Coroutine with update/elapsed handlers, indented for emphasis
 Coroutine("countdown")
-    .Duration(3).Seconds()      // run for 3s total
+    .For(3).Seconds()           // run for 3s total
     .Elapsed(blocks)            // runs unconditionally after 3s
     .While(conditions)          // conditions
         .OnUpdate(blocks)       // only while conditions true
@@ -100,16 +101,14 @@ Coroutine execution can also be time-sliced with staggered execution (phase shif
 ```csharp
 // Time-sliced coroutines adjust frequency of condition evaluation
 // Processes the same conditions/blocks but in alternating frames
-Coroutine("group 1")
-    .While(sameConditions)
-    .Every(2)               // every 2nd (heartbeat or update)
-    .Frames(sameBlocks);    // runs in frames 0, 2, 4, 6, ..
+Every(2)
+    .Frames()
+    .Do(sameBlocks);    // runs in frames 0, 2, 4, 6, ..
 
-Coroutine("group 2")
-    .While(sameConditions)
-    .Every(2)               // every 2nd (heartbeat or update)
-    .DelayBy(1)             // start with +1 delay (offset) 
-    .Frames(sameBlocks);    // runs in frames +1, 3, 5, 7, ..
+Every(2)
+    .Frames()
+    .DelayBy(1)         // start with +1 delay (offset) 
+    .Do(sameBlocks);    // runs in frames +1, 3, 5, 7, ..
 ```
 
 Situation when to use this: Group consumes **12 ms** frame time total (conditions: 2 ms; blocks: 10 ms) => too much!
@@ -141,7 +140,7 @@ Delayed response time easily "simulates" human-like variance in group behaviour 
 ```csharp
 // Store reference for later control
 var countdown = Coroutine("bomb")
-    .Duration(007).Seconds()
+    .For(007).Seconds()
     .OnHeartbeat(Debug.Log("tic-tic"))
     .Elapsed(Debug.Log("BOOM!"));
 
@@ -157,7 +156,7 @@ countdown.Pause();      // freeze at current time
 countdown.Resume();     // continue from paused state
 
 // Control Events (also available on Timer)
-var countdown = Coroutine("..").Duration(5).Seconds()
+var countdown = Coroutine("..").For(5).Seconds()
     .Started(startBlocks)    // runs when (re-)started
     .Paused(pauseBlocks)     // runs when paused (if running)
     .Resumed(resumeBlocks)   // runs when resumed (if paused)
@@ -168,12 +167,12 @@ var countdown = Coroutine("..").Duration(5).Seconds()
 Speed control affects when the OnElapsed event runs:
 
 ```csharp
-var x = Coroutine("x").Duration(3).Seconds();
-x.TimeScale(0.5f);   // runs twice as long
-x.TimeScale(2f);     // ends in half the time
+var x = Coroutine("x").For(3).Seconds();
+x.TimeScale(0.5f);  // runs twice as long
+x.TimeScale(2f);    // ends in half the time
 
 // Pause() is same as TimeScale(0)
-x.TimeScale(0f);     // paused, can also Resume()
+x.TimeScale(0f);    // paused, can also Resume()
 
 // Sorry, no going back in time: it would end the universe ...
 x.TimeScale(-1f);   // Clamped to 0
@@ -215,7 +214,7 @@ Timer().In(3).Seconds().Do(blocks);
 ### Duplicate Names Are Errors
 ```csharp
 Timer("x").In(3).Seconds().Do(blocks);
-Timer("x").In(5).Seconds().Do(blocks);  // ❌ throws at Build() time
+Timer("x").In(5).Seconds().Do(blocks); // ❌ throws at Build() time
 ```
 
 ### Same Name = Same Instance (No Parallel Execution)
@@ -256,13 +255,13 @@ t.Stop()
 Simplified coroutine aliases for executing logic every N frames or heartbeats:
 
 ```csharp
-Every(3).Frames(blocks);          // every 3rd frame
-Every(Even).Frames(blocks);       // frames 12, 14, 16...
+Every(3).Frames().Do(blocks);          // every 3rd frame
+Every(Even).Frames().Do(blocks);       // frames 12, 14, 16...
 
 // fixed timesteps
-Every(3).Heartbeats(blocks);      // every 3rd step
-Every(Even).Heartbeats(blocks);   // steps 12, 14, 16, 18...
-Every(Odd).Heartbeats(blocks);    // steps 11, 13, 15, 17...
+Every(3).Heartbeats().Do(blocks);      // every 3rd step
+Every(Even).Heartbeats().Do(blocks);   // steps 12, 14, 16, 18...
+Every(Odd).Heartbeats().Do(blocks);    // steps 11, 13, 15, 17...
 ```
 
 **Implementation**: `Even` and `Odd` are constants on `LunyScript` base class:
@@ -316,8 +315,8 @@ Tweening guarantees the tween value isn't unintentionally pausing the timer/coro
 |-----------------|------------------------------------------------------|
 | One-shot timer  | `Timer("x").In(n).Seconds().Do(..)`                  |
 | Repeating timer | `Timer("x").Every(n).Seconds().Do(..)`               |
-| Frame Coroutine | `Coroutine("x").Duration(n).Seconds().OnUpdate(..)`    |
-| Step Coroutine  | `Coroutine("x").Duration(n).Seconds().OnHeartbeat(..)` |
+| Frame Coroutine | `Coroutine("x").For(n).Seconds().OnUpdate(..)`    |
+| Step Coroutine  | `Coroutine("x").For(n).Seconds().OnHeartbeat(..)` |
 | Control         | `.Start()`, `.Stop()`, `.Pause()`, `.Resume()`       |
 | Speed           | `.TimeScale(factor)`                                 |
-| Time-Slicing    | `Every(n).Heartbeats()`, `Every(Even).Frames()`      |
+| Time-Slicing    | `Every(n).Frames().Do(..)`                           |
