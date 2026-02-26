@@ -84,7 +84,20 @@ Goal: Enemies appear and move towards player, enemies die on contact with player
     - `Health.Set(100)`
     - `On.Collision.WithTag("Enemy").Do(Health.TakeDamage(10), Object.Destroy(Collision.GetObject()))`
 - Test: enemies spawn, chase, damage player on touch, then die
-- Decision:
+- Status: 
+  - faked death (time based)
+  - spent extra time on googly eyes
+- Deferred:
+  - collision handling: no collision event handling yet
+  - spawn position
+
+**Day 3 (prep): Collision API**
+- [X] add googly eyes to enemies (spent too much time on this but it's fun)
+- [X] implementing collision/trigger event callbacks (Unity only)
+
+**Day 4: Bug Report **
+- [X] Identified and reported a "Console double-click opens wrong line" issue caused by calling a method with a UnityEngine.Object parameter
+- [X] Removed the necessity of trailing .Do() calls to finalize builders
 
 **Day 3: Weapon & Projectile System**
 Goal: Shoot enemies (dead) with projectiles
@@ -106,7 +119,7 @@ Goal: Shoot enemies (dead) with projectiles
   - Should weapon fire only when enemies present and in range, or always? (prefer always for simplicity)
   - Should we have melee weapons (returns back to player) right now?
 
-**Day 4: Health System & UI**
+**Day 5: Health System & UI**
 Goal: Player health visible, death triggers game over
 - Create Canvas with UI Toolkit
 - Add HealthBar (ProgressBar) at top-left
