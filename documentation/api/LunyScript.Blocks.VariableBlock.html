@@ -1,0 +1,2054 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class VariableBlock | LunyScript Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class VariableBlock | LunyScript Documentation ">
+      
+      <meta name="description" content="Abstract base for variable blocks that evaluate to a runtime Variable. Extends ScriptConditionBlock because variables are implicitly usable as conditions (via AsBoolean conversion).">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="LunyScript">
+            LunyScript
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="LunyScript.Blocks.VariableBlock">
+
+
+
+  <h1 id="LunyScript_Blocks_VariableBlock" data-uid="LunyScript.Blocks.VariableBlock" class="text-break">
+Class VariableBlock  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="LunyScript.html">LunyScript</a>.<a class="xref" href="LunyScript.Blocks.html">Blocks</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>LunyScript.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Abstract base for variable blocks that evaluate to a runtime Variable.
+Extends ScriptConditionBlock because variables are implicitly usable as conditions
+(via AsBoolean conversion).</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class VariableBlock : ScriptConditionBlock, IScriptBlock</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="LunyScript.Blocks.ScriptBlock.html">ScriptBlock</a></div>
+      <div><a class="xref" href="LunyScript.Blocks.ScriptConditionBlock.html">ScriptConditionBlock</a></div>
+      <div><span class="xref">VariableBlock</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="LunyScript.Blocks.IScriptBlock.html">IScriptBlock</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="LunyScript.Blocks.ComputedVariableBlock.html">ComputedVariableBlock</a></div>
+      <div><a class="xref" href="LunyScript.Blocks.ConstantVariableBlock.html">ConstantVariableBlock</a></div>
+      <div><a class="xref" href="LunyScript.Blocks.TableVariableBlock.html">TableVariableBlock</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="LunyScript_Blocks_VariableBlock__ctor_" data-uid="LunyScript.Blocks.VariableBlock.#ctor*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock__ctor" data-uid="LunyScript.Blocks.VariableBlock.#ctor">
+  VariableBlock()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected VariableBlock()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="LunyScript_Blocks_VariableBlock_Add_" data-uid="LunyScript.Blocks.VariableBlock.Add*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_Add_Luny_Variable_" data-uid="LunyScript.Blocks.VariableBlock.Add(Luny.Variable)">
+  Add(Variable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScriptActionBlock Add(Variable value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="Luny.Variable.html">Variable</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_Add_" data-uid="LunyScript.Blocks.VariableBlock.Add*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_Add_LunyScript_Blocks_VariableBlock_" data-uid="LunyScript.Blocks.VariableBlock.Add(LunyScript.Blocks.VariableBlock)">
+  Add(VariableBlock)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScriptActionBlock Add(VariableBlock value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_Dec_" data-uid="LunyScript.Blocks.VariableBlock.Dec*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_Dec" data-uid="LunyScript.Blocks.VariableBlock.Dec">
+  Dec()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScriptActionBlock Dec()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_Div_" data-uid="LunyScript.Blocks.VariableBlock.Div*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_Div_Luny_Variable_" data-uid="LunyScript.Blocks.VariableBlock.Div(Luny.Variable)">
+  Div(Variable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScriptActionBlock Div(Variable value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="Luny.Variable.html">Variable</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_Div_" data-uid="LunyScript.Blocks.VariableBlock.Div*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_Div_LunyScript_Blocks_VariableBlock_" data-uid="LunyScript.Blocks.VariableBlock.Div(LunyScript.Blocks.VariableBlock)">
+  Div(VariableBlock)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScriptActionBlock Div(VariableBlock value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_Equals_" data-uid="LunyScript.Blocks.VariableBlock.Equals*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_Equals_System_Object_" data-uid="LunyScript.Blocks.VariableBlock.Equals(System.Object)">
+  Equals(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_Evaluate_" data-uid="LunyScript.Blocks.VariableBlock.Evaluate*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_Evaluate_LunyScript_IScriptRuntimeContext_" data-uid="LunyScript.Blocks.VariableBlock.Evaluate(LunyScript.IScriptRuntimeContext)">
+  Evaluate(IScriptRuntimeContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool Evaluate(IScriptRuntimeContext runtimeContext)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>runtimeContext</code> <a class="xref" href="LunyScript.IScriptRuntimeContext.html">IScriptRuntimeContext</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_GetHashCode_" data-uid="LunyScript.Blocks.VariableBlock.GetHashCode*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_GetHashCode" data-uid="LunyScript.Blocks.VariableBlock.GetHashCode">
+  GetHashCode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_Inc_" data-uid="LunyScript.Blocks.VariableBlock.Inc*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_Inc" data-uid="LunyScript.Blocks.VariableBlock.Inc">
+  Inc()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScriptActionBlock Inc()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_Mul_" data-uid="LunyScript.Blocks.VariableBlock.Mul*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_Mul_Luny_Variable_" data-uid="LunyScript.Blocks.VariableBlock.Mul(Luny.Variable)">
+  Mul(Variable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScriptActionBlock Mul(Variable value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="Luny.Variable.html">Variable</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_Mul_" data-uid="LunyScript.Blocks.VariableBlock.Mul*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_Mul_LunyScript_Blocks_VariableBlock_" data-uid="LunyScript.Blocks.VariableBlock.Mul(LunyScript.Blocks.VariableBlock)">
+  Mul(VariableBlock)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScriptActionBlock Mul(VariableBlock value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_Set_" data-uid="LunyScript.Blocks.VariableBlock.Set*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_Set_Luny_Variable_" data-uid="LunyScript.Blocks.VariableBlock.Set(Luny.Variable)">
+  Set(Variable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScriptActionBlock Set(Variable value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="Luny.Variable.html">Variable</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_Set_" data-uid="LunyScript.Blocks.VariableBlock.Set*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_Set_LunyScript_Blocks_VariableBlock_" data-uid="LunyScript.Blocks.VariableBlock.Set(LunyScript.Blocks.VariableBlock)">
+  Set(VariableBlock)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScriptActionBlock Set(VariableBlock value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_Sub_" data-uid="LunyScript.Blocks.VariableBlock.Sub*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_Sub_Luny_Variable_" data-uid="LunyScript.Blocks.VariableBlock.Sub(Luny.Variable)">
+  Sub(Variable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScriptActionBlock Sub(Variable value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="Luny.Variable.html">Variable</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_Sub_" data-uid="LunyScript.Blocks.VariableBlock.Sub*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_Sub_LunyScript_Blocks_VariableBlock_" data-uid="LunyScript.Blocks.VariableBlock.Sub(LunyScript.Blocks.VariableBlock)">
+  Sub(VariableBlock)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScriptActionBlock Sub(VariableBlock value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_Toggle_" data-uid="LunyScript.Blocks.VariableBlock.Toggle*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_Toggle" data-uid="LunyScript.Blocks.VariableBlock.Toggle">
+  Toggle()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScriptActionBlock Toggle()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="LunyScript_Blocks_VariableBlock_op_Addition_" data-uid="LunyScript.Blocks.VariableBlock.op_Addition*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_op_Addition_Luny_Variable_LunyScript_Blocks_VariableBlock_" data-uid="LunyScript.Blocks.VariableBlock.op_Addition(Luny.Variable,LunyScript.Blocks.VariableBlock)">
+  operator +(Variable, VariableBlock)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VariableBlock operator +(Variable left, VariableBlock right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Luny.Variable.html">Variable</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_op_Addition_" data-uid="LunyScript.Blocks.VariableBlock.op_Addition*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_op_Addition_LunyScript_Blocks_VariableBlock_Luny_Variable_" data-uid="LunyScript.Blocks.VariableBlock.op_Addition(LunyScript.Blocks.VariableBlock,Luny.Variable)">
+  operator +(VariableBlock, Variable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VariableBlock operator +(VariableBlock left, Variable right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="Luny.Variable.html">Variable</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_op_Addition_" data-uid="LunyScript.Blocks.VariableBlock.op_Addition*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_op_Addition_LunyScript_Blocks_VariableBlock_LunyScript_Blocks_VariableBlock_" data-uid="LunyScript.Blocks.VariableBlock.op_Addition(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)">
+  operator +(VariableBlock, VariableBlock)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VariableBlock operator +(VariableBlock left, VariableBlock right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_op_Decrement_" data-uid="LunyScript.Blocks.VariableBlock.op_Decrement*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_op_Decrement_LunyScript_Blocks_VariableBlock_" data-uid="LunyScript.Blocks.VariableBlock.op_Decrement(LunyScript.Blocks.VariableBlock)">
+  operator --(VariableBlock)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VariableBlock operator --(VariableBlock a)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_op_Division_" data-uid="LunyScript.Blocks.VariableBlock.op_Division*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_op_Division_Luny_Variable_LunyScript_Blocks_VariableBlock_" data-uid="LunyScript.Blocks.VariableBlock.op_Division(Luny.Variable,LunyScript.Blocks.VariableBlock)">
+  operator /(Variable, VariableBlock)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VariableBlock operator /(Variable left, VariableBlock right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Luny.Variable.html">Variable</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_op_Division_" data-uid="LunyScript.Blocks.VariableBlock.op_Division*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_op_Division_LunyScript_Blocks_VariableBlock_Luny_Variable_" data-uid="LunyScript.Blocks.VariableBlock.op_Division(LunyScript.Blocks.VariableBlock,Luny.Variable)">
+  operator /(VariableBlock, Variable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VariableBlock operator /(VariableBlock left, Variable right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="Luny.Variable.html">Variable</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_op_Division_" data-uid="LunyScript.Blocks.VariableBlock.op_Division*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_op_Division_LunyScript_Blocks_VariableBlock_LunyScript_Blocks_VariableBlock_" data-uid="LunyScript.Blocks.VariableBlock.op_Division(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)">
+  operator /(VariableBlock, VariableBlock)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VariableBlock operator /(VariableBlock left, VariableBlock right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_op_Equality_" data-uid="LunyScript.Blocks.VariableBlock.op_Equality*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_op_Equality_LunyScript_Blocks_VariableBlock_Luny_Variable_" data-uid="LunyScript.Blocks.VariableBlock.op_Equality(LunyScript.Blocks.VariableBlock,Luny.Variable)">
+  operator ==(VariableBlock, Variable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VariableBlock operator ==(VariableBlock left, Variable right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="Luny.Variable.html">Variable</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_op_Equality_" data-uid="LunyScript.Blocks.VariableBlock.op_Equality*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_op_Equality_LunyScript_Blocks_VariableBlock_LunyScript_Blocks_VariableBlock_" data-uid="LunyScript.Blocks.VariableBlock.op_Equality(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)">
+  operator ==(VariableBlock, VariableBlock)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VariableBlock operator ==(VariableBlock left, VariableBlock right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_op_GreaterThan_" data-uid="LunyScript.Blocks.VariableBlock.op_GreaterThan*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_op_GreaterThan_LunyScript_Blocks_VariableBlock_Luny_Variable_" data-uid="LunyScript.Blocks.VariableBlock.op_GreaterThan(LunyScript.Blocks.VariableBlock,Luny.Variable)">
+  operator &gt;(VariableBlock, Variable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VariableBlock operator &gt;(VariableBlock left, Variable right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="Luny.Variable.html">Variable</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_op_GreaterThan_" data-uid="LunyScript.Blocks.VariableBlock.op_GreaterThan*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_op_GreaterThan_LunyScript_Blocks_VariableBlock_LunyScript_Blocks_VariableBlock_" data-uid="LunyScript.Blocks.VariableBlock.op_GreaterThan(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)">
+  operator &gt;(VariableBlock, VariableBlock)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VariableBlock operator &gt;(VariableBlock left, VariableBlock right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_op_GreaterThanOrEqual_" data-uid="LunyScript.Blocks.VariableBlock.op_GreaterThanOrEqual*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_op_GreaterThanOrEqual_LunyScript_Blocks_VariableBlock_Luny_Variable_" data-uid="LunyScript.Blocks.VariableBlock.op_GreaterThanOrEqual(LunyScript.Blocks.VariableBlock,Luny.Variable)">
+  operator &gt;=(VariableBlock, Variable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VariableBlock operator &gt;=(VariableBlock left, Variable right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="Luny.Variable.html">Variable</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_op_GreaterThanOrEqual_" data-uid="LunyScript.Blocks.VariableBlock.op_GreaterThanOrEqual*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_op_GreaterThanOrEqual_LunyScript_Blocks_VariableBlock_LunyScript_Blocks_VariableBlock_" data-uid="LunyScript.Blocks.VariableBlock.op_GreaterThanOrEqual(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)">
+  operator &gt;=(VariableBlock, VariableBlock)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VariableBlock operator &gt;=(VariableBlock left, VariableBlock right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_op_Implicit_" data-uid="LunyScript.Blocks.VariableBlock.op_Implicit*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_op_Implicit_Luny_Variable__LunyScript_Blocks_VariableBlock" data-uid="LunyScript.Blocks.VariableBlock.op_Implicit(Luny.Variable)~LunyScript.Blocks.VariableBlock">
+  implicit operator VariableBlock(Variable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator VariableBlock(Variable value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="Luny.Variable.html">Variable</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_op_Implicit_" data-uid="LunyScript.Blocks.VariableBlock.op_Implicit*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_op_Implicit_System_Boolean__LunyScript_Blocks_VariableBlock" data-uid="LunyScript.Blocks.VariableBlock.op_Implicit(System.Boolean)~LunyScript.Blocks.VariableBlock">
+  implicit operator VariableBlock(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator VariableBlock(bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_op_Implicit_" data-uid="LunyScript.Blocks.VariableBlock.op_Implicit*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_op_Implicit_System_Double__LunyScript_Blocks_VariableBlock" data-uid="LunyScript.Blocks.VariableBlock.op_Implicit(System.Double)~LunyScript.Blocks.VariableBlock">
+  implicit operator VariableBlock(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator VariableBlock(double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_op_Implicit_" data-uid="LunyScript.Blocks.VariableBlock.op_Implicit*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_op_Implicit_System_Int32__LunyScript_Blocks_VariableBlock" data-uid="LunyScript.Blocks.VariableBlock.op_Implicit(System.Int32)~LunyScript.Blocks.VariableBlock">
+  implicit operator VariableBlock(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator VariableBlock(int value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_op_Implicit_" data-uid="LunyScript.Blocks.VariableBlock.op_Implicit*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_op_Implicit_System_Int64__LunyScript_Blocks_VariableBlock" data-uid="LunyScript.Blocks.VariableBlock.op_Implicit(System.Int64)~LunyScript.Blocks.VariableBlock">
+  implicit operator VariableBlock(long)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator VariableBlock(long value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_op_Implicit_" data-uid="LunyScript.Blocks.VariableBlock.op_Implicit*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_op_Implicit_System_Single__LunyScript_Blocks_VariableBlock" data-uid="LunyScript.Blocks.VariableBlock.op_Implicit(System.Single)~LunyScript.Blocks.VariableBlock">
+  implicit operator VariableBlock(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator VariableBlock(float value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_op_Implicit_" data-uid="LunyScript.Blocks.VariableBlock.op_Implicit*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_op_Implicit_System_String__LunyScript_Blocks_VariableBlock" data-uid="LunyScript.Blocks.VariableBlock.op_Implicit(System.String)~LunyScript.Blocks.VariableBlock">
+  implicit operator VariableBlock(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator VariableBlock(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_op_Increment_" data-uid="LunyScript.Blocks.VariableBlock.op_Increment*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_op_Increment_LunyScript_Blocks_VariableBlock_" data-uid="LunyScript.Blocks.VariableBlock.op_Increment(LunyScript.Blocks.VariableBlock)">
+  operator ++(VariableBlock)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VariableBlock operator ++(VariableBlock a)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_op_Inequality_" data-uid="LunyScript.Blocks.VariableBlock.op_Inequality*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_op_Inequality_LunyScript_Blocks_VariableBlock_Luny_Variable_" data-uid="LunyScript.Blocks.VariableBlock.op_Inequality(LunyScript.Blocks.VariableBlock,Luny.Variable)">
+  operator !=(VariableBlock, Variable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VariableBlock operator !=(VariableBlock left, Variable right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="Luny.Variable.html">Variable</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_op_Inequality_" data-uid="LunyScript.Blocks.VariableBlock.op_Inequality*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_op_Inequality_LunyScript_Blocks_VariableBlock_LunyScript_Blocks_VariableBlock_" data-uid="LunyScript.Blocks.VariableBlock.op_Inequality(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)">
+  operator !=(VariableBlock, VariableBlock)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VariableBlock operator !=(VariableBlock left, VariableBlock right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_op_LessThan_" data-uid="LunyScript.Blocks.VariableBlock.op_LessThan*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_op_LessThan_LunyScript_Blocks_VariableBlock_Luny_Variable_" data-uid="LunyScript.Blocks.VariableBlock.op_LessThan(LunyScript.Blocks.VariableBlock,Luny.Variable)">
+  operator &lt;(VariableBlock, Variable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VariableBlock operator &lt;(VariableBlock left, Variable right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="Luny.Variable.html">Variable</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_op_LessThan_" data-uid="LunyScript.Blocks.VariableBlock.op_LessThan*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_op_LessThan_LunyScript_Blocks_VariableBlock_LunyScript_Blocks_VariableBlock_" data-uid="LunyScript.Blocks.VariableBlock.op_LessThan(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)">
+  operator &lt;(VariableBlock, VariableBlock)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VariableBlock operator &lt;(VariableBlock left, VariableBlock right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_op_LessThanOrEqual_" data-uid="LunyScript.Blocks.VariableBlock.op_LessThanOrEqual*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_op_LessThanOrEqual_LunyScript_Blocks_VariableBlock_Luny_Variable_" data-uid="LunyScript.Blocks.VariableBlock.op_LessThanOrEqual(LunyScript.Blocks.VariableBlock,Luny.Variable)">
+  operator &lt;=(VariableBlock, Variable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VariableBlock operator &lt;=(VariableBlock left, Variable right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="Luny.Variable.html">Variable</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_op_LessThanOrEqual_" data-uid="LunyScript.Blocks.VariableBlock.op_LessThanOrEqual*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_op_LessThanOrEqual_LunyScript_Blocks_VariableBlock_LunyScript_Blocks_VariableBlock_" data-uid="LunyScript.Blocks.VariableBlock.op_LessThanOrEqual(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)">
+  operator &lt;=(VariableBlock, VariableBlock)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VariableBlock operator &lt;=(VariableBlock left, VariableBlock right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_op_LogicalNot_" data-uid="LunyScript.Blocks.VariableBlock.op_LogicalNot*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_op_LogicalNot_LunyScript_Blocks_VariableBlock_" data-uid="LunyScript.Blocks.VariableBlock.op_LogicalNot(LunyScript.Blocks.VariableBlock)">
+  operator !(VariableBlock)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VariableBlock operator !(VariableBlock operand)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>operand</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_op_Multiply_" data-uid="LunyScript.Blocks.VariableBlock.op_Multiply*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_op_Multiply_Luny_Variable_LunyScript_Blocks_VariableBlock_" data-uid="LunyScript.Blocks.VariableBlock.op_Multiply(Luny.Variable,LunyScript.Blocks.VariableBlock)">
+  operator *(Variable, VariableBlock)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VariableBlock operator *(Variable left, VariableBlock right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Luny.Variable.html">Variable</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_op_Multiply_" data-uid="LunyScript.Blocks.VariableBlock.op_Multiply*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_op_Multiply_LunyScript_Blocks_VariableBlock_Luny_Variable_" data-uid="LunyScript.Blocks.VariableBlock.op_Multiply(LunyScript.Blocks.VariableBlock,Luny.Variable)">
+  operator *(VariableBlock, Variable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VariableBlock operator *(VariableBlock left, Variable right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="Luny.Variable.html">Variable</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_op_Multiply_" data-uid="LunyScript.Blocks.VariableBlock.op_Multiply*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_op_Multiply_LunyScript_Blocks_VariableBlock_LunyScript_Blocks_VariableBlock_" data-uid="LunyScript.Blocks.VariableBlock.op_Multiply(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)">
+  operator *(VariableBlock, VariableBlock)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VariableBlock operator *(VariableBlock left, VariableBlock right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_op_Subtraction_" data-uid="LunyScript.Blocks.VariableBlock.op_Subtraction*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_op_Subtraction_Luny_Variable_LunyScript_Blocks_VariableBlock_" data-uid="LunyScript.Blocks.VariableBlock.op_Subtraction(Luny.Variable,LunyScript.Blocks.VariableBlock)">
+  operator -(Variable, VariableBlock)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VariableBlock operator -(Variable left, VariableBlock right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Luny.Variable.html">Variable</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_op_Subtraction_" data-uid="LunyScript.Blocks.VariableBlock.op_Subtraction*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_op_Subtraction_LunyScript_Blocks_VariableBlock_Luny_Variable_" data-uid="LunyScript.Blocks.VariableBlock.op_Subtraction(LunyScript.Blocks.VariableBlock,Luny.Variable)">
+  operator -(VariableBlock, Variable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VariableBlock operator -(VariableBlock left, Variable right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="Luny.Variable.html">Variable</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Blocks_VariableBlock_op_Subtraction_" data-uid="LunyScript.Blocks.VariableBlock.op_Subtraction*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableBlock_op_Subtraction_LunyScript_Blocks_VariableBlock_LunyScript_Blocks_VariableBlock_" data-uid="LunyScript.Blocks.VariableBlock.op_Subtraction(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)">
+  operator -(VariableBlock, VariableBlock)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VariableBlock operator -(VariableBlock left, VariableBlock right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2025-2026 Steffen Itterheim (CodeSmile)
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class LunyInputServiceBase | LunyScript Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class LunyInputServiceBase | LunyScript Documentation ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="LunyScript">
+            LunyScript
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Luny.Engine.Services.LunyInputServiceBase">
+
+
+
+  <h1 id="Luny_Engine_Services_LunyInputServiceBase" data-uid="Luny.Engine.Services.LunyInputServiceBase" class="text-break">
+Class LunyInputServiceBase  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Luny.html">Luny</a>.<a class="xref" href="Luny.Engine.html">Engine</a>.<a class="xref" href="Luny.Engine.Services.html">Services</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Luny.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class LunyInputServiceBase : LunyEngineServiceBase, ILunyInputService, ILunyEngineService</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Luny.Engine.Services.LunyEngineServiceBase.html">LunyEngineServiceBase</a></div>
+      <div><span class="xref">LunyInputServiceBase</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Luny.Engine.Services.ILunyInputService.html">ILunyInputService</a></div>
+      <div><a class="xref" href="Luny.Engine.Services.ILunyEngineService.html">ILunyEngineService</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Luny.Unity.Engine.Services.UnityInputService.html">UnityInputService</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceInitialize">LunyEngineServiceBase.OnServiceInitialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceStartup">LunyEngineServiceBase.OnServiceStartup()</a>
+    </div>
+    <div>
+      <a class="xref" href="Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceShutdown">LunyEngineServiceBase.OnServiceShutdown()</a>
+    </div>
+    <div>
+      <a class="xref" href="Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServicePreUpdate">LunyEngineServiceBase.OnServicePreUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceHeartbeat">LunyEngineServiceBase.OnServiceHeartbeat()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Luny_Engine_Services_LunyInputServiceBase__ctor_" data-uid="Luny.Engine.Services.LunyInputServiceBase.#ctor*"></a>
+
+  <h3 id="Luny_Engine_Services_LunyInputServiceBase__ctor" data-uid="Luny.Engine.Services.LunyInputServiceBase.#ctor">
+  LunyInputServiceBase()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected LunyInputServiceBase()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Luny_Engine_Services_LunyInputServiceBase_LastInputEvent_" data-uid="Luny.Engine.Services.LunyInputServiceBase.LastInputEvent*"></a>
+
+  <h3 id="Luny_Engine_Services_LunyInputServiceBase_LastInputEvent" data-uid="Luny.Engine.Services.LunyInputServiceBase.LastInputEvent">
+  LastInputEvent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected LunyInputActionEvent LastInputEvent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Luny.Engine.Bridge.LunyInputActionEvent.html">LunyInputActionEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Luny_Engine_Services_LunyInputServiceBase_AssignUserToLastDevice_" data-uid="Luny.Engine.Services.LunyInputServiceBase.AssignUserToLastDevice*"></a>
+
+  <h3 id="Luny_Engine_Services_LunyInputServiceBase_AssignUserToLastDevice_System_String_System_Int32_Luny_Engine_Bridge_ILunyObject_" data-uid="Luny.Engine.Services.LunyInputServiceBase.AssignUserToLastDevice(System.String,System.Int32,Luny.Engine.Bridge.ILunyObject)">
+  AssignUserToLastDevice(string, int, ILunyObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void AssignUserToLastDevice(string userName, int deviceId, ILunyObject lunyObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>userName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>deviceId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>lunyObject</code> <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html">ILunyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Luny_Engine_Services_LunyInputServiceBase_EnableInputAction_" data-uid="Luny.Engine.Services.LunyInputServiceBase.EnableInputAction*"></a>
+
+  <h3 id="Luny_Engine_Services_LunyInputServiceBase_EnableInputAction_System_String_System_Boolean_" data-uid="Luny.Engine.Services.LunyInputServiceBase.EnableInputAction(System.String,System.Boolean)">
+  EnableInputAction(string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void EnableInputAction(string actionName, bool enabled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>actionName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>enabled</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Luny_Engine_Services_LunyInputServiceBase_GetAxis_" data-uid="Luny.Engine.Services.LunyInputServiceBase.GetAxis*"></a>
+
+  <h3 id="Luny_Engine_Services_LunyInputServiceBase_GetAxis_System_String_" data-uid="Luny.Engine.Services.LunyInputServiceBase.GetAxis(System.String)">
+  GetAxis(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the analog trigger value (0.0–1.0) for the named button action.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetAxis(string actionName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>actionName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Luny_Engine_Services_LunyInputServiceBase_GetButtonJustPressed_" data-uid="Luny.Engine.Services.LunyInputServiceBase.GetButtonJustPressed*"></a>
+
+  <h3 id="Luny_Engine_Services_LunyInputServiceBase_GetButtonJustPressed_System_String_" data-uid="Luny.Engine.Services.LunyInputServiceBase.GetButtonJustPressed(System.String)">
+  GetButtonJustPressed(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>True only on the frame the button transitioned to pressed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetButtonJustPressed(string actionName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>actionName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Luny_Engine_Services_LunyInputServiceBase_GetButtonPressed_" data-uid="Luny.Engine.Services.LunyInputServiceBase.GetButtonPressed*"></a>
+
+  <h3 id="Luny_Engine_Services_LunyInputServiceBase_GetButtonPressed_System_String_" data-uid="Luny.Engine.Services.LunyInputServiceBase.GetButtonPressed(System.String)">
+  GetButtonPressed(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>True while button is held.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetButtonPressed(string actionName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>actionName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Luny_Engine_Services_LunyInputServiceBase_GetButtonStrength_" data-uid="Luny.Engine.Services.LunyInputServiceBase.GetButtonStrength*"></a>
+
+  <h3 id="Luny_Engine_Services_LunyInputServiceBase_GetButtonStrength_System_String_" data-uid="Luny.Engine.Services.LunyInputServiceBase.GetButtonStrength(System.String)">
+  GetButtonStrength(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a button's pressed strength. Used by triggers configured to act like buttons.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetButtonStrength(string actionName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>actionName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Luny_Engine_Services_LunyInputServiceBase_GetDirection_" data-uid="Luny.Engine.Services.LunyInputServiceBase.GetDirection*"></a>
+
+  <h3 id="Luny_Engine_Services_LunyInputServiceBase_GetDirection_System_String_" data-uid="Luny.Engine.Services.LunyInputServiceBase.GetDirection(System.String)">
+  GetDirection(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets last known axis vector for the named action.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LunyVector2 GetDirection(string actionName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>actionName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Luny.Engine.Bridge.LunyVector2.html">LunyVector2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Luny_Engine_Services_LunyInputServiceBase_GetOrCreateInputActionEvent_" data-uid="Luny.Engine.Services.LunyInputServiceBase.GetOrCreateInputActionEvent*"></a>
+
+  <h3 id="Luny_Engine_Services_LunyInputServiceBase_GetOrCreateInputActionEvent_System_String_" data-uid="Luny.Engine.Services.LunyInputServiceBase.GetOrCreateInputActionEvent(System.String)">
+  GetOrCreateInputActionEvent(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected LunyInputActionEvent GetOrCreateInputActionEvent(string actionName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>actionName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Luny.Engine.Bridge.LunyInputActionEvent.html">LunyInputActionEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Luny_Engine_Services_LunyInputServiceBase_GetRotation_" data-uid="Luny.Engine.Services.LunyInputServiceBase.GetRotation*"></a>
+
+  <h3 id="Luny_Engine_Services_LunyInputServiceBase_GetRotation_System_String_" data-uid="Luny.Engine.Services.LunyInputServiceBase.GetRotation(System.String)">
+  GetRotation(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets last known axis vector as rotation (quaternion). Assumes positive Y is up vector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LunyQuaternion GetRotation(string actionName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>actionName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Luny_Engine_Services_LunyInputServiceBase_GetRotation_" data-uid="Luny.Engine.Services.LunyInputServiceBase.GetRotation*"></a>
+
+  <h3 id="Luny_Engine_Services_LunyInputServiceBase_GetRotation_System_String_Luny_Engine_Bridge_LunyVector3_" data-uid="Luny.Engine.Services.LunyInputServiceBase.GetRotation(System.String,Luny.Engine.Bridge.LunyVector3)">
+  GetRotation(string, LunyVector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets last known axis vector as rotation (quaternion) with custom up vector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LunyQuaternion GetRotation(string actionName, LunyVector3 worldUp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>actionName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>worldUp</code> <a class="xref" href="Luny.Engine.Bridge.LunyVector3.html">LunyVector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Luny_Engine_Services_LunyInputServiceBase_HandleInputActionEvent_" data-uid="Luny.Engine.Services.LunyInputServiceBase.HandleInputActionEvent*"></a>
+
+  <h3 id="Luny_Engine_Services_LunyInputServiceBase_HandleInputActionEvent_Luny_Engine_Bridge_LunyInputActionEvent_" data-uid="Luny.Engine.Services.LunyInputServiceBase.HandleInputActionEvent(Luny.Engine.Bridge.LunyInputActionEvent)">
+  HandleInputActionEvent(LunyInputActionEvent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void HandleInputActionEvent(LunyInputActionEvent inputEvent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inputEvent</code> <a class="xref" href="Luny.Engine.Bridge.LunyInputActionEvent.html">LunyInputActionEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Luny_Engine_Services_LunyInputServiceBase_IsUserPairedWithDevice_" data-uid="Luny.Engine.Services.LunyInputServiceBase.IsUserPairedWithDevice*"></a>
+
+  <h3 id="Luny_Engine_Services_LunyInputServiceBase_IsUserPairedWithDevice_System_String_System_Int32_" data-uid="Luny.Engine.Services.LunyInputServiceBase.IsUserPairedWithDevice(System.String,System.Int32)">
+  IsUserPairedWithDevice(string, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool IsUserPairedWithDevice(string userName, int deviceId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>userName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>deviceId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Luny_Engine_Services_LunyInputServiceBase_OnServiceFrameUpdate_" data-uid="Luny.Engine.Services.LunyInputServiceBase.OnServiceFrameUpdate*"></a>
+
+  <h3 id="Luny_Engine_Services_LunyInputServiceBase_OnServiceFrameUpdate" data-uid="Luny.Engine.Services.LunyInputServiceBase.OnServiceFrameUpdate">
+  OnServiceFrameUpdate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnServiceFrameUpdate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Luny_Engine_Services_LunyInputServiceBase_OnServicePostUpdate_" data-uid="Luny.Engine.Services.LunyInputServiceBase.OnServicePostUpdate*"></a>
+
+  <h3 id="Luny_Engine_Services_LunyInputServiceBase_OnServicePostUpdate" data-uid="Luny.Engine.Services.LunyInputServiceBase.OnServicePostUpdate">
+  OnServicePostUpdate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clears per-frame transition flags. Called at the start of each frame via OnServicePreUpdate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnServicePostUpdate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Luny_Engine_Services_LunyInputServiceBase_SetAxisInput_" data-uid="Luny.Engine.Services.LunyInputServiceBase.SetAxisInput*"></a>
+
+  <h3 id="Luny_Engine_Services_LunyInputServiceBase_SetAxisInput_System_String_System_Single_" data-uid="Luny.Engine.Services.LunyInputServiceBase.SetAxisInput(System.String,System.Single)">
+  SetAxisInput(string, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetAxisInput(string actionName, float value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>actionName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Luny_Engine_Services_LunyInputServiceBase_SetButtonInput_" data-uid="Luny.Engine.Services.LunyInputServiceBase.SetButtonInput*"></a>
+
+  <h3 id="Luny_Engine_Services_LunyInputServiceBase_SetButtonInput_System_String_System_Boolean_System_Single_" data-uid="Luny.Engine.Services.LunyInputServiceBase.SetButtonInput(System.String,System.Boolean,System.Single)">
+  SetButtonInput(string, bool, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetButtonInput(string actionName, bool pressed, float strength = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>actionName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>pressed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>strength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Luny_Engine_Services_LunyInputServiceBase_SetControlSchemes_" data-uid="Luny.Engine.Services.LunyInputServiceBase.SetControlSchemes*"></a>
+
+  <h3 id="Luny_Engine_Services_LunyInputServiceBase_SetControlSchemes_System_String___" data-uid="Luny.Engine.Services.LunyInputServiceBase.SetControlSchemes(System.String[])">
+  SetControlSchemes(params string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Activate a given control scheme eg <code>Gamepad</code> or <code>Keyboard&amp;Mouse</code> to prevent other device input from coming through.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void SetControlSchemes(params string[] schemeNames)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>schemeNames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Luny_Engine_Services_LunyInputServiceBase_SetDirectionalInput_" data-uid="Luny.Engine.Services.LunyInputServiceBase.SetDirectionalInput*"></a>
+
+  <h3 id="Luny_Engine_Services_LunyInputServiceBase_SetDirectionalInput_System_String_Luny_Engine_Bridge_LunyVector2_" data-uid="Luny.Engine.Services.LunyInputServiceBase.SetDirectionalInput(System.String,Luny.Engine.Bridge.LunyVector2)">
+  SetDirectionalInput(string, LunyVector2)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetDirectionalInput(string actionName, LunyVector2 value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>actionName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="Luny.Engine.Bridge.LunyVector2.html">LunyVector2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Luny_Engine_Services_LunyInputServiceBase_UnassignUser_" data-uid="Luny.Engine.Services.LunyInputServiceBase.UnassignUser*"></a>
+
+  <h3 id="Luny_Engine_Services_LunyInputServiceBase_UnassignUser_System_String_" data-uid="Luny.Engine.Services.LunyInputServiceBase.UnassignUser(System.String)">
+  UnassignUser(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void UnassignUser(string userName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>userName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="Luny_Engine_Services_LunyInputServiceBase_OnInputAction" data-uid="Luny.Engine.Services.LunyInputServiceBase.OnInputAction">
+  OnInputAction
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Fired when any enabled action changes value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;LunyInputActionEvent&gt; OnInputAction</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Luny.Engine.Bridge.LunyInputActionEvent.html">LunyInputActionEvent</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2025-2026 Steffen Itterheim (CodeSmile)
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
