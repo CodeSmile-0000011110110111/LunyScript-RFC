@@ -7001,6 +7001,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "manual/first-script.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/first-script.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "manual/getting-started.md",
       "output": {
         ".html": {

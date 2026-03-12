@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>LunyScript Manual | LunyScript Documentation </title>
+      <title>Your first Luny Script | LunyScript Documentation </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="LunyScript Manual | LunyScript Documentation ">
+      <meta name="title" content="Your first Luny Script | LunyScript Documentation ">
       
       
       <link rel="icon" href="../images/luny-logo-56x56.png">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/CodeSmile-0000011110110111/Luny-Docs/blob/main/manual/index.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/CodeSmile-0000011110110111/Luny-Docs/blob/main/manual/first-script.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,34 +85,98 @@
         </div>
 
         <article data-uid="">
-<h1 id="lunyscript-manual">LunyScript Manual</h1>
+<h1 id="your-first-luny-script">Your first Luny Script</h1>
 
-<p>LunyScript is a declarative, block-based scripting language to make game engine code more accessible, reliable, hot-reloadable, runtime-inspectable, and gamer-moddable.</p>
-<p>LunyEngine is the engine-agnostic developer SDK and portable foundation for LunyScript. The intention is to have LunyScript run in other engines, thereby providing a common interface and scripting language to all.</p>
-<p>The ultimate goal: 100% portable, standardized game logic. Code shall no longer be the only &quot;asset type&quot; we cannot transfer between engines.</p>
-<h2 id="roadmap">Roadmap</h2>
-<p>Development focus is on Unity initially.</p>
+<p>You have a blank scene in Unity. You want to create a character controller.</p>
+<h2 id="status-quo">Status Quo</h2>
 <ul>
-<li>Q1+Q2 2026: Feature development, enough to build a Megabonk-like game</li>
-<li>Summer 2026: Alpha/Beta-Testing</li>
-<li>Autumn 2026: Release v1.0</li>
+<li><strong>Hierarchy</strong>: <code>Right-click: 3D Object -&gt; Capsule</code>. Name it &quot;Player&quot;.</li>
+<li><strong>Project</strong>: <code>Right-click: Create -&gt; MonoBehaviour Script</code>. Name it &quot;Player&quot;.</li>
+<li><strong>Hierarchy</strong>: Select &quot;Player&quot;. <code>Inspector: Add Component -&gt; Player</code>.</li>
+<li>You check the Internet for a &quot;simple&quot; Unity 'Player' script and found this:</li>
 </ul>
-<h2 id="getting-started">Getting Started</h2>
+<pre><code class="lang-csharp">using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class Player : MonoBehaviour 
+{
+    private InputAction moveAction;
+    private InputAction jumpAction;
+    private InputAction crouchAction;
+
+    void Awake() 
+    {
+        moveAction = InputSystem.actions.FindAction(&quot;Move&quot;);
+        jumpAction = InputSystem.actions.FindAction(&quot;Jump&quot;);
+        crouchAction = InputSystem.actions.FindAction(&quot;Crouch&quot;);
+    }
+
+    void Update() 
+    {
+        Vector2 rawMoveInput = moveAction.ReadValue&lt;Vector2&gt;();
+        float jumpInputValue = jumpAction.ReadValue&lt;float&gt;();
+        float crouchInputValue = crouchAction.ReadValue&lt;float&gt;();
+
+        float moveX = rawMoveInput.x;
+        float moveZ = rawMoveInput.y;
+
+        Vector3 movementDirection = new Vector3(0, 0, 0);
+        movementDirection.x = moveX;
+        movementDirection.z = moveZ;
+
+        if (jumpInputValue &gt; 0.1f) 
+        {
+            movementDirection.y = 1.0f;
+        }
+        else 
+        {
+            if (crouchInputValue &gt; 0.1f) 
+            {
+                movementDirection.y = -1.0f;
+            }
+            else 
+            {
+                movementDirection.y = 0.0f;
+            }
+        }
+
+        float movementSpeed = 4.0f;
+        float timeStep = Time.deltaTime;
+        Vector3 finalMovement = movementDirection * timeStep * movementSpeed;
+
+        transform.Translate(finalMovement);
+    }
+}
+</code></pre>
+<p><strong>It's 'only' 51 lines! 🤯</strong></p>
+<h2 id="with-lunyscript">With LunyScript</h2>
 <ul>
-<li><a href="first-script.html">Your first Luny Script</a></li>
+<li><strong>Hierarchy</strong>: <code>Right-click: 3D Object -&gt; Capsule</code>. Name it &quot;Player&quot;.</li>
+<li><strong>Project</strong>: <code>Right-click: Create -&gt; Luny Script</code>. Name it &quot;Player&quot;.</li>
+<li><em>Component: optional. Luny scripts run on the object matching the script's name.</em></li>
+<li><strong>Edit</strong> the <code>Player.cs</code> script and add this to its <code>Build()</code> method:</li>
 </ul>
-<p>For now: Explore the <a href="/api/">Scripting API</a> to discover all available LunyScript APIs.</p>
-<h2 id="links">Links</h2>
-<ul>
-<li><a href="https://lunyscript.com">Homepage</a></li>
-<li><a href="https://github.com/CodeSmile-0000011110110111/LunyScript-UnityPackage">LunyScript Unity npm package repository</a> (pre-alpha)</li>
-<li><a href="https://github.com/CodeSmile-0000011110110111/LunyScript_Examples_Unity">LunyScript Unity Examples Project repository</a> (pre-alpha)</li>
-</ul>
+<pre><code class="lang-csharp">using LunyScript;
+
+public partial class Player : Script
+{
+    public override void Build(ScriptContext context)
+    {
+        On.FrameUpdate(
+            Transform.MoveBy(Input.Direction(&quot;Move&quot;), 4),
+            Transform.MoveUp(Input.Button(&quot;Jump&quot;).Strength, 4),
+            Transform.MoveDown(Input.Button(&quot;Crouch&quot;).Strength, 4)
+        );
+    }
+}
+</code></pre>
+<p><strong>That's 12 lines! 😎</strong></p>
+<p>Enter playmode and try it.</p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/CodeSmile-0000011110110111/Luny-Docs/blob/main/manual/index.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/CodeSmile-0000011110110111/Luny-Docs/blob/main/manual/first-script.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>
