@@ -36,3 +36,8 @@
 [data-bs-theme="light"] .affix ul li a:not(.link-body-emphasis):focus {
     color: rgba(0, 0, 0, 0.75);
 }
+
+/* Custom type highlighting - Unity and LunyScript types */
+.hljs-type {
+    color: #4EC9B0;
+}
