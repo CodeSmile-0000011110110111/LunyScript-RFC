@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface ILunyObject | LunyScript Documentation ">
       
-      <meta name="description" content="Engine-agnostic interface for engine objects/nodes. Provides unified access to common object properties and operations. Safeguards all access to avoid exceptions when the engine-native object may have been destroyed.">
+      <meta name="description" content="See implementation:">
       <link rel="icon" href="../images/luny-logo-56x56.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -99,9 +99,7 @@ Interface ILunyObject
   <dl><dt>Assembly</dt><dd>Luny.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Engine-agnostic interface for engine objects/nodes.
-Provides unified access to common object properties and operations.
-Safeguards all access to avoid exceptions when the engine-native object may have been destroyed.</p>
+  <div class="markdown summary"><p>See implementation: <a class="xref" href="Luny.Engine.Bridge.LunyObject.html">LunyObject</a></p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -125,38 +123,6 @@ Safeguards all access to avoid exceptions when the engine-native object may have
 </h2>
 
 
-  <a id="Luny_Engine_Bridge_ILunyObject_IsDestroyed_" data-uid="Luny.Engine.Bridge.ILunyObject.IsDestroyed*"></a>
-
-  <h3 id="Luny_Engine_Bridge_ILunyObject_IsDestroyed" data-uid="Luny.Engine.Bridge.ILunyObject.IsDestroyed">
-  IsDestroyed
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Set when Destroy() was called. Some actions may still be valid at this point though.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool IsDestroyed { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">bool</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="Luny_Engine_Bridge_ILunyObject_IsEnabled_" data-uid="Luny.Engine.Bridge.ILunyObject.IsEnabled*"></a>
 
   <h3 id="Luny_Engine_Bridge_ILunyObject_IsEnabled" data-uid="Luny.Engine.Bridge.ILunyObject.IsEnabled">
@@ -164,9 +130,7 @@ Safeguards all access to avoid exceptions when the engine-native object may have
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Whether the engine object is processing and visible.
-Matches the &quot;Active&quot; state of Unity. Most events (update, input, collision, ..) will not run when the object is disabled.
-OnDestroy is the exception: It will run for a disabled object when it gets destroyed.</p>
+  <div class="markdown level1 summary"><p>Whether the engine object is processing and visible. Matches the &quot;Active&quot; state of Unity.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -188,9 +152,9 @@ OnDestroy is the exception: It will run for a disabled object when it gets destr
 
 
   <h4 class="section" id="Luny_Engine_Bridge_ILunyObject_IsEnabled_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>CAUTION: IsEnabled also toggles visibility. If the object's IsVisible is set to false,
-and then is disabled and enabled again, it will also be visible. If you wish the object to remain invisible,
-you will have to set IsVisible=false after re-enabling the object. This is a decent compromise supported by all engines.</p>
+  <div class="markdown level1 remarks"><p>The object may be enabled, but still be disabled in the hierarchy due to a parent not being enabled.
+IsEnabled also toggles visibility. If the object's IsVisible was set to false, and then the object gets enabled,
+the object's IsVisible state will also change to true.</p>
 </div>
 
 
@@ -228,6 +192,38 @@ you will have to set IsVisible=false after re-enabling the object. This is a dec
 
 
 
+  <a id="Luny_Engine_Bridge_ILunyObject_IsNativeObjectValid_" data-uid="Luny.Engine.Bridge.ILunyObject.IsNativeObjectValid*"></a>
+
+  <h3 id="Luny_Engine_Bridge_ILunyObject_IsNativeObjectValid" data-uid="Luny.Engine.Bridge.ILunyObject.IsNativeObjectValid">
+  IsNativeObjectValid
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Is true when Destroy() was called on the NativeObject and it was set to null.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsNativeObjectValid { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Luny_Engine_Bridge_ILunyObject_IsValid_" data-uid="Luny.Engine.Bridge.ILunyObject.IsValid*"></a>
 
   <h3 id="Luny_Engine_Bridge_ILunyObject_IsValid" data-uid="Luny.Engine.Bridge.ILunyObject.IsValid">
@@ -235,8 +231,7 @@ you will have to set IsVisible=false after re-enabling the object. This is a dec
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Whether the underlying engine object is valid/exists. Most commonly this means &quot;not null&quot; but in some engines like Godot,
-it also means the object is still in the scene hierarchy.</p>
+  <div class="markdown level1 summary"><p>Whether the object and its native representation are valid (not null, not destroyed).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -268,10 +263,7 @@ it also means the object is still in the scene hierarchy.</p>
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Whether the object is visible (gets rendered).
-CAUTION: This property does not imply that the object can be &quot;seen&quot;! IsVisible might be true while the object isn't visible
-on the screen, for example because it's outside the camera's viewport, obstructed by other objects closer to the camera,
-scaled infinitely small, completely transparent, or missing a resource (shader, texture, mesh) required to display it.</p>
+  <div class="markdown level1 summary"><p>Whether the object is visible (will render).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -292,6 +284,10 @@ scaled infinitely small, completely transparent, or missing a resource (shader, 
 
 
 
+  <h4 class="section" id="Luny_Engine_Bridge_ILunyObject_IsVisible_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This property does NOT imply that the object is currently visible on screen. It is technically visible, but may still
+be outside the camera's frame, obstructed by other objects, fully transparent, scaled infinitely small, etc.</p>
+</div>
 
 
 
@@ -303,7 +299,7 @@ scaled infinitely small, completely transparent, or missing a resource (shader, 
   
   </h3>
 
-  <div class="markdown level1 summary"><p>LunyScript-specific unique, immutable identifier. This ID is distinct from engine's native object ID!</p>
+  <div class="markdown level1 summary"><p>Unique, immutable identifier for LunyObject. This ID is distinct from engine's native object ID!</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -356,6 +352,9 @@ scaled infinitely small, completely transparent, or missing a resource (shader, 
 
 
 
+  <h4 class="section" id="Luny_Engine_Bridge_ILunyObject_Name_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>To aid debugging, this property remains valid even after the object has been destroyed.</p>
+</div>
 
 
 
@@ -400,8 +399,7 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Engine-specific unique, immutable identifier, subject to engine's behaviour (ie may change between runs, or not).
-The ID is valid even after the engine-native object has been destroyed to aid debugging.</p>
+  <div class="markdown level1 summary"><p>Engine-native object's unique, immutable identifier. Subject to engine's behaviour (ie may change between runs).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -422,6 +420,9 @@ The ID is valid even after the engine-native object has been destroyed to aid de
 
 
 
+  <h4 class="section" id="Luny_Engine_Bridge_ILunyObject_NativeObjectId_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>To aid debugging, this ID remains valid after the engine-native object has been destroyed.</p>
+</div>
 
 
 
@@ -433,7 +434,7 @@ The ID is valid even after the engine-native object has been destroyed to aid de
   
   </h3>
 
-  <div class="markdown level1 summary"><p>The transform of this object.</p>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Luny.Engine.Bridge.LunyTransform.html">LunyTransform</a> of this object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -543,7 +544,8 @@ The ID is valid even after the engine-native object has been destroyed to aid de
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new instance of the current object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -574,7 +576,8 @@ The ID is valid even after the engine-native object has been destroyed to aid de
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new instance of the current object and parents it.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -610,9 +613,7 @@ The ID is valid even after the engine-native object has been destroyed to aid de
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Marks this object for destruction.
-Triggers OnDisable (if object is enabled) and OnDestroy events.
-The engine-native object is destroyed at the end of the current frame.</p>
+  <div class="markdown level1 summary"><p>Marks this object for destruction. If object is enabled, will run its OnDisabled event. Then it run its OnDestroyed event.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -628,37 +629,8 @@ The engine-native object is destroyed at the end of the current frame.</p>
 
 
 
-
-
-
-
-  <a id="Luny_Engine_Bridge_ILunyObject_Initialize_" data-uid="Luny.Engine.Bridge.ILunyObject.Initialize*"></a>
-
-  <h3 id="Luny_Engine_Bridge_ILunyObject_Initialize" data-uid="Luny.Engine.Bridge.ILunyObject.Initialize">
-  Initialize()
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Called when the framework decides to work with the object (&quot;object awakes&quot;).
-This sends the OnCreate event and - if Enabled - the OnEnable event.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Initialize()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-  <h4 class="section" id="Luny_Engine_Bridge_ILunyObject_Initialize_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>Must only be called once prior to using the LunyObject instance.
-LunyScript will automatically call this.</p>
+  <h4 class="section" id="Luny_Engine_Bridge_ILunyObject_Destroy_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The engine-native object destruction is deferred until the end of the current frame to prevent exceptions.</p>
 </div>
 
 
@@ -674,7 +646,8 @@ LunyScript will automatically call this.</p>
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Runs when the object's collider has &quot;entered&quot; (overlaps) another static or non-kinematic collider.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -734,7 +707,8 @@ LunyScript will automatically call this.</p>
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Runs when the object's collider stops overlapping/touching another static or non-kinematic collider.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -794,7 +768,8 @@ LunyScript will automatically call this.</p>
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Runs every heartbeat while the collision is ongoing.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -849,18 +824,17 @@ LunyScript will automatically call this.</p>
 
 
 
-  <h3 id="Luny_Engine_Bridge_ILunyObject_OnCreate" data-uid="Luny.Engine.Bridge.ILunyObject.OnCreate">
-  OnCreate
+  <h3 id="Luny_Engine_Bridge_ILunyObject_OnCreated" data-uid="Luny.Engine.Bridge.ILunyObject.OnCreated">
+  OnCreated
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Sent once when the object is &quot;created&quot;. Guaranteed to be the object's first lifecycle event.
-Runs even if the object starts disabled.</p>
+  <div class="markdown level1 summary"><p>Runs when the object was created or ownership was transferred to LunyEngine. Runs even if the object starts disabled.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">event Action OnCreate</code></pre>
+    <pre><code class="lang-csharp hljs">event Action OnCreated</code></pre>
   </div>
 
 
@@ -876,27 +850,26 @@ Runs even if the object starts disabled.</p>
 
 
 
-  <h4 class="section" id="Luny_Engine_Bridge_ILunyObject_OnCreate_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>Runs only when an object gets 'registered' with Luny, not when the engine-native object is created. Engine-native
-creation events (Unity: Awake / Godot: _init or ctor) will run before OnCreate.</p>
+  <h4 class="section" id="Luny_Engine_Bridge_ILunyObject_OnCreated_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Engine-native creation events (Unity: Awake, OnEnable / Godot: ctor, _init) will run before <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Bridge_ILunyObject_OnCreated">OnCreated</a>.
+<a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Bridge_ILunyObject_OnEnabled">OnEnabled</a> will run right after <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Bridge_ILunyObject_OnCreated">OnCreated</a> if the object starts enabled.</p>
 </div>
 
 
 
 
 
-  <h3 id="Luny_Engine_Bridge_ILunyObject_OnDestroy" data-uid="Luny.Engine.Bridge.ILunyObject.OnDestroy">
-  OnDestroy
+  <h3 id="Luny_Engine_Bridge_ILunyObject_OnDestroyed" data-uid="Luny.Engine.Bridge.ILunyObject.OnDestroyed">
+  OnDestroyed
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Sent once when the object is &quot;destroyed&quot;. Guaranteed to be the object's last lifecycle event.
-Runs even for disabled objects.</p>
+  <div class="markdown level1 summary"><p>Runs when the object was destroyed. Runs even if the object is disabled.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">event Action OnDestroy</code></pre>
+    <pre><code class="lang-csharp hljs">event Action OnDestroyed</code></pre>
   </div>
 
 
@@ -912,27 +885,25 @@ Runs even for disabled objects.</p>
 
 
 
-  <h4 class="section" id="Luny_Engine_Bridge_ILunyObject_OnDestroy_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>Runs when the object is marked for deletion in Luny. The engine's native object is set inactive, but not yet destroyed.</p>
+  <h4 class="section" id="Luny_Engine_Bridge_ILunyObject_OnDestroyed_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The object's <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Bridge_ILunyObject_NativeObject">NativeObject</a> reference is still accessible, it has not been destroyed yet.</p>
 </div>
 
 
 
 
 
-  <h3 id="Luny_Engine_Bridge_ILunyObject_OnDisable" data-uid="Luny.Engine.Bridge.ILunyObject.OnDisable">
-  OnDisable
+  <h3 id="Luny_Engine_Bridge_ILunyObject_OnDisabled" data-uid="Luny.Engine.Bridge.ILunyObject.OnDisabled">
+  OnDisabled
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Sent every time the object's enabled state changes to &quot;disabled&quot;: hidden, not updating, not receiving events, not interacting with other objects.
-If the object is enabled and gets destroyed, OnDisable will run before OnDestroy.
-The engine-native object is already set disabled when this event runs.</p>
+  <div class="markdown level1 summary"><p>Runs when the object's enabled state changes to &quot;disabled&quot;: hidden, not updating, not receiving events, not interacting with other objects.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">event Action OnDisable</code></pre>
+    <pre><code class="lang-csharp hljs">event Action OnDisabled</code></pre>
   </div>
 
 
@@ -953,19 +924,18 @@ The engine-native object is already set disabled when this event runs.</p>
 
 
 
-  <h3 id="Luny_Engine_Bridge_ILunyObject_OnEnable" data-uid="Luny.Engine.Bridge.ILunyObject.OnEnable">
-  OnEnable
+  <h3 id="Luny_Engine_Bridge_ILunyObject_OnEnabled" data-uid="Luny.Engine.Bridge.ILunyObject.OnEnabled">
+  OnEnabled
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Sent every time the object's enabled state changes to &quot;enabled&quot;: visible, updating, receiving events, interacting with other objects.
-Also runs right after OnCreate if the object starts enabled.
-The engine-native object is already set enabled when this event runs.</p>
+  <div class="markdown level1 summary"><p>Runs when the object's enabled state changes to &quot;enabled&quot;: visible, updating, receiving events, interacting with other objects.
+Also runs right after OnCreated if the object starts enabled.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">event Action OnEnable</code></pre>
+    <pre><code class="lang-csharp hljs">event Action OnEnabled</code></pre>
   </div>
 
 
@@ -981,9 +951,6 @@ The engine-native object is already set enabled when this event runs.</p>
 
 
 
-  <h4 class="section" id="Luny_Engine_Bridge_ILunyObject_OnEnable_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>OnDestroy event will run even when a disabled object gets destroyed.</p>
-</div>
 
 
 
@@ -994,9 +961,8 @@ The engine-native object is already set enabled when this event runs.</p>
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Sent once just before the object runs its first OnUpdate (or OnFixedUpdate, see below).
-If the object starts disabled, OnReady is deferred until the object gets enabled.
-If the object gets or is enabled, OnEnable is guaranteed to run before OnReady. Both run in the same frame.</p>
+  <div class="markdown level1 summary"><p>Runs once before the object's first frame processing, before OnFrameUpdate and OnHeartbeat.
+If the object starts disabled, OnReady runs after the object first gets enabled.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1018,10 +984,10 @@ If the object gets or is enabled, OnEnable is guaranteed to run before OnReady. 
 
 
   <h4 class="section" id="Luny_Engine_Bridge_ILunyObject_OnReady_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>Depending on whether OnFixedStep happens to run in the frame the object becomes &quot;ready&quot;, the event order is either:
-OnReady =&gt; OnUpdate (first) =&gt; OnLateUpdate (first)
+  <div class="markdown level1 remarks"><p>It is not guaranteed that the object will simulate physics in its first active frame. The event order is either:
+OnReady =&gt; OnFrameUpdate (object's first)
 or:
-OnReady =&gt; OnFixedStep (first) =&gt; OnUpdate (first) =&gt; OnLateUpdate (first)</p>
+OnReady =&gt; OnHeartbeat (object's first) =&gt; OnFrameUpdate (object's first)</p>
 </div>
 
 
@@ -1033,7 +999,8 @@ OnReady =&gt; OnFixedStep (first) =&gt; OnUpdate (first) =&gt; OnLateUpdate (fir
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Runs when first overlapping a trigger collider.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1093,7 +1060,8 @@ OnReady =&gt; OnFixedStep (first) =&gt; OnUpdate (first) =&gt; OnLateUpdate (fir
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Runs when leaving a trigger collider.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1153,7 +1121,8 @@ OnReady =&gt; OnFixedStep (first) =&gt; OnUpdate (first) =&gt; OnLateUpdate (fir
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Runs while overlapping a trigger collider.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1173,6 +1142,10 @@ OnReady =&gt; OnFixedStep (first) =&gt; OnUpdate (first) =&gt; OnLateUpdate (fir
 
 
 
+  <h4 class="section" id="Luny_Engine_Bridge_ILunyObject_OnTriggerUpdate_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>In Unity, to receive this event you have to explicitly enable it:
+<strong>Project Settings</strong>: Physics/Settings -&gt; GameObject -&gt; Generate On Trigger Stay Events</p>
+</div>
 
 
 

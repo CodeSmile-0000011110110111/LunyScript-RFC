@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface ILunyEngineObserver | LunyScript Documentation ">
       
-      <meta name="description" content="Lifecycle observer interface - receives callbacks from LunyEngine.">
+      <meta name="description" content="Lifecycle observer interface. To be implemented by observers of LunyEngine which wish to receive the engine-agnostic lifecycle callbacks.">
       <link rel="icon" href="../images/luny-logo-56x56.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -99,7 +99,7 @@ Interface ILunyEngineObserver
   <dl><dt>Assembly</dt><dd>Luny.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Lifecycle observer interface - receives callbacks from LunyEngine.</p>
+  <div class="markdown summary"><p>Lifecycle observer interface. To be implemented by observers of LunyEngine which wish to receive the engine-agnostic lifecycle callbacks.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -165,7 +165,7 @@ Interface ILunyEngineObserver
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Runs once per frame, before both frame update / heartbeat methods.</p>
+  <div class="markdown level1 summary"><p>Runs once per frame, before any frame update / heartbeat method.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -192,7 +192,7 @@ Interface ILunyEngineObserver
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Runs once per frame, after all FrameUpdate and FrameLateUpdate ran.</p>
+  <div class="markdown level1 summary"><p>Runs once per frame, after all frame update methods ran (eg &quot;end of frame&quot;).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -246,7 +246,7 @@ Interface ILunyEngineObserver
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Runs once per frame. If the current frame runs a Heartbeat, the Heartbeat would have run right before.</p>
+  <div class="markdown level1 summary"><p>Runs once per frame. It runs right after the Heartbeat (if any).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -290,11 +290,11 @@ Interface ILunyEngineObserver
 
 
   <h4 class="section" id="Luny_ILunyEngineObserver_OnEngineHeartbeat_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>Engine internal physics simulation occurs right after a Heartbeat and before FrameUpdate.</p>
+  <div class="markdown level1 remarks"><p>Engine internal physics simulation occurs right after Heartbeat, before FrameUpdate.</p>
 <p>Caution: Heartbeat frequency depends on engine time-stepping settings, and is not guaranteed to be in sync with FrameRate.
 The behaviour depends on each frame's delta time (frame rate) and the engine's fixed step (or physics) time setting.
 - Heartbeat may be called less often than FrameUpdate
-- Heartbeat may be called several times in a single frame (all before FrameUpdate)</p>
+- Heartbeat may be called several times in a single frame (multiple times before FrameUpdate)</p>
 </div>
 
 
@@ -307,7 +307,7 @@ The behaviour depends on each frame's delta time (frame rate) and the engine's f
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Runs once per lifetime, when the application quits. Runs after all of the current frame's Heartbeat/Update methods ran.</p>
+  <div class="markdown level1 summary"><p>Runs when the application exits (once-only). Runs after frame processing has completed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -334,7 +334,7 @@ The behaviour depends on each frame's delta time (frame rate) and the engine's f
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Runs once per lifetime, when the application launches. Processing of the first frame has not begun.</p>
+  <div class="markdown level1 summary"><p>Runs when the application launches (once-only). Processing of the first frame has not begun.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -361,8 +361,8 @@ The behaviour depends on each frame's delta time (frame rate) and the engine's f
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Called when a LunyObject registered with LunyEngine.
-Runs when object is created, before object's OnCreate callback. Its NativeObject is already assigned.</p>
+  <div class="markdown level1 summary"><p>Called when a LunyObject registered with LunyEngine either via instantiation or handing ownership of an existing
+engine object to LunyEngine. Runs before the object's OnCreated callback.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -383,9 +383,6 @@ Runs when object is created, before object's OnCreate callback. Its NativeObject
 
 
 
-  <h4 class="section" id="Luny_ILunyEngineObserver_OnObjectRegistered_Luny_Engine_Bridge_ILunyObject__remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>In future it may also be called for transferring native object ownership to LunyEngine.</p>
-</div>
 
 
 
@@ -397,8 +394,9 @@ Runs when object is created, before object's OnCreate callback. Its NativeObject
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Called when a LunyObject has unregistered from LunyEngine. Runs when object is destroyed, after object's OnDestroy callback.
-The LunyObject instance is already invalidated but its NativeObject is still valid.</p>
+  <div class="markdown level1 summary"><p>Called when a LunyObject has unregistered from LunyEngine either by destroying it or when transferring ownership back
+to the native engine. Runs after object's OnDestroy callback. The object's <code>IsValid</code> is false but its NativeObject reference
+can still be accessed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -419,9 +417,6 @@ The LunyObject instance is already invalidated but its NativeObject is still val
 
 
 
-  <h4 class="section" id="Luny_ILunyEngineObserver_OnObjectUnregistered_Luny_Engine_Bridge_ILunyObject__remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>In future it may also be called for releasing ownership of native objects from LunyEngine.</p>
-</div>
 
 
 
@@ -433,7 +428,7 @@ The LunyObject instance is already invalidated but its NativeObject is still val
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Runs when a scene was loaded, before frame processing begins. This includes the first scene which the engine loads automatically.</p>
+  <div class="markdown level1 summary"><p>Runs when a scene was loaded, before frame processing begins. Also fires in the first scene the engine launches with.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -465,7 +460,7 @@ The LunyObject instance is already invalidated but its NativeObject is still val
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Runs when a scene was unloaded. All objects have been invalidated, if not destroyed.</p>
+  <div class="markdown level1 summary"><p>Runs when a scene was unloaded. After all previous scene's objects have been invalidated (destroyed).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class LunyEngine | LunyScript Documentation ">
       
-      <meta name="description" content="Singleton engine that discovers and manages services and lifecycle observers.">
+      <meta name="description" content="LunyEngine singleton discovers and manages engine services and observers.">
       <link rel="icon" href="../images/luny-logo-56x56.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -99,12 +99,12 @@ Class LunyEngine
   <dl><dt>Assembly</dt><dd>Luny.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Singleton engine that discovers and manages services and lifecycle observers.</p>
+  <div class="markdown summary"><p>LunyEngine singleton discovers and manages engine services and observers.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class LunyEngine : ILunyEngine, ILunyEngineLifecycle</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class LunyEngine : ILunyEngine</code></pre>
   </div>
 
 
@@ -122,7 +122,6 @@ Class LunyEngine
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="Luny.ILunyEngine.html">ILunyEngine</a></div>
-      <div><a class="xref" href="Luny.ILunyEngineLifecycle.html">ILunyEngineLifecycle</a></div>
     </dd>
   </dl>
 
@@ -144,7 +143,9 @@ Class LunyEngine
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Application-level services, similar to <a class="xref" href="https://docs.unity3d.com/ScriptReference/Application.html">UnityEngine.Application</a> and
+<a class="xref" href="https://docs.unity3d.com/ScriptReference/EditorApplication.html">UnityEditor.EditorApplication</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -175,7 +176,8 @@ Class LunyEngine
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Asset loading/unloading and caching. Enables asset lookup by path/name. Returns placeholder assets instead of throwing exceptions.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -206,7 +208,8 @@ Class LunyEngine
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Debug services, eg logging.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -237,7 +240,8 @@ Class LunyEngine
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Editor services. Safe to call in runtime code (no-op, returning defaults).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -268,7 +272,8 @@ Class LunyEngine
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Input services, forwards Action Map events and provides access to most recent input state.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -331,7 +336,8 @@ Class LunyEngine
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Object services, mainly creating new prefab/primitive instances.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -395,7 +401,8 @@ Profiling methods are no-ops in release builds unless LUNY_PROFILE is defined.</
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Scene services, including in-scene object queries by name/path/type and scene load/unload.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -426,7 +433,8 @@ Profiling methods are no-ops in release builds unless LUNY_PROFILE is defined.</
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Time services, eg delta time, elapsed seconds, frame count.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -585,7 +593,8 @@ Profiling methods are no-ops in release builds unless LUNY_PROFILE is defined.</
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a service by type. Throws if the service is not registered. Note: essential services are exposed as properties.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -621,7 +630,8 @@ Profiling methods are no-ops in release builds unless LUNY_PROFILE is defined.</
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Queries if a service type is registered.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -693,7 +703,7 @@ Profiling methods are no-ops in release builds unless LUNY_PROFILE is defined.</
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Will try to find an object by name in the scene. Queries already-cached objects first.</p>
+  <div class="markdown level1 summary"><p>Will try to find an object by name in the scene. Queries already-cached objects first. Wraps found objects in a <code>LunyObject</code> instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -734,7 +744,8 @@ Profiling methods are no-ops in release builds unless LUNY_PROFILE is defined.</
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a service by type, may return false/null.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">

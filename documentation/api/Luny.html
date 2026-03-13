@@ -110,7 +110,7 @@ such as initializing a proxy object with a null reference.</p>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Luny.LunyEngine.html">LunyEngine</a></dt>
-      <dd><p>Singleton engine that discovers and manages services and lifecycle observers.</p>
+      <dd><p>LunyEngine singleton discovers and manages engine services and observers.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -218,21 +218,12 @@ Interfaces
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Luny.ILunyEngine.html">ILunyEngine</a></dt>
-      <dd><p>LunyEngine interface - receives callbacks from engine adapters and provides service access.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Luny.ILunyEngineLifecycle.html">ILunyEngineLifecycle</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Luny.ILunyEngineNativeAdapter.html">ILunyEngineNativeAdapter</a></dt>
-      <dd><p>Interface for the native engine adapter.</p>
+      <dd><p>See implementation: <a class="xref" href="Luny.LunyEngine.html">LunyEngine</a></p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Luny.ILunyEngineObserver.html">ILunyEngineObserver</a></dt>
-      <dd><p>Lifecycle observer interface - receives callbacks from LunyEngine.</p>
+      <dd><p>Lifecycle observer interface. To be implemented by observers of LunyEngine which wish to receive the engine-agnostic lifecycle callbacks.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -266,6 +257,11 @@ Enums
     <dl class="jumplist">
       <dt><a class="xref" href="Luny.LogLevel.html">LogLevel</a></dt>
       <dd><p>Log message severity levels.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Luny.LunyEngineLifecycleEvents.html">LunyEngineLifecycleEvents</a></dt>
+      <dd><p>LunyScript lifecycle events.</p>
 </dd>
     </dl>
     <dl class="jumplist">

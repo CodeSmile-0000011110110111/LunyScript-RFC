@@ -139,7 +139,8 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Luny.Engine.Bridge.LunyObject.html">LunyObject</a></dt>
-      <dd><p>Proxy for engine-native objects/nodes/actors/...</p>
+      <dd><p>Engine-agnostic wrapper for engine objects.
+Safeguards against NullReferenceExceptions when the engine-native object may have been destroyed.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -226,9 +227,7 @@ Interfaces
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Luny.Engine.Bridge.ILunyObject.html">ILunyObject</a></dt>
-      <dd><p>Engine-agnostic interface for engine objects/nodes.
-Provides unified access to common object properties and operations.
-Safeguards all access to avoid exceptions when the engine-native object may have been destroyed.</p>
+      <dd><p>See implementation: <a class="xref" href="Luny.Engine.Bridge.LunyObject.html">LunyObject</a></p>
 </dd>
     </dl>
     <dl class="jumplist">

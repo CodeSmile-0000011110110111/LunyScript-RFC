@@ -808,30 +808,6 @@ references:
   commentId: Overload:Luny.Engine.Bridge.ILunyObject.Destroy
   fullName: Luny.Engine.Bridge.ILunyObject.Destroy
   nameWithType: ILunyObject.Destroy
-- uid: Luny.Engine.Bridge.ILunyObject.Initialize
-  name: Initialize()
-  href: api/Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Bridge_ILunyObject_Initialize
-  commentId: M:Luny.Engine.Bridge.ILunyObject.Initialize
-  fullName: Luny.Engine.Bridge.ILunyObject.Initialize()
-  nameWithType: ILunyObject.Initialize()
-- uid: Luny.Engine.Bridge.ILunyObject.Initialize*
-  name: Initialize
-  href: api/Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Bridge_ILunyObject_Initialize_
-  commentId: Overload:Luny.Engine.Bridge.ILunyObject.Initialize
-  fullName: Luny.Engine.Bridge.ILunyObject.Initialize
-  nameWithType: ILunyObject.Initialize
-- uid: Luny.Engine.Bridge.ILunyObject.IsDestroyed
-  name: IsDestroyed
-  href: api/Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Bridge_ILunyObject_IsDestroyed
-  commentId: P:Luny.Engine.Bridge.ILunyObject.IsDestroyed
-  fullName: Luny.Engine.Bridge.ILunyObject.IsDestroyed
-  nameWithType: ILunyObject.IsDestroyed
-- uid: Luny.Engine.Bridge.ILunyObject.IsDestroyed*
-  name: IsDestroyed
-  href: api/Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Bridge_ILunyObject_IsDestroyed_
-  commentId: Overload:Luny.Engine.Bridge.ILunyObject.IsDestroyed
-  fullName: Luny.Engine.Bridge.ILunyObject.IsDestroyed
-  nameWithType: ILunyObject.IsDestroyed
 - uid: Luny.Engine.Bridge.ILunyObject.IsEnabled
   name: IsEnabled
   href: api/Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Bridge_ILunyObject_IsEnabled
@@ -856,6 +832,18 @@ references:
   commentId: Overload:Luny.Engine.Bridge.ILunyObject.IsEnabledInHierarchy
   fullName: Luny.Engine.Bridge.ILunyObject.IsEnabledInHierarchy
   nameWithType: ILunyObject.IsEnabledInHierarchy
+- uid: Luny.Engine.Bridge.ILunyObject.IsNativeObjectValid
+  name: IsNativeObjectValid
+  href: api/Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Bridge_ILunyObject_IsNativeObjectValid
+  commentId: P:Luny.Engine.Bridge.ILunyObject.IsNativeObjectValid
+  fullName: Luny.Engine.Bridge.ILunyObject.IsNativeObjectValid
+  nameWithType: ILunyObject.IsNativeObjectValid
+- uid: Luny.Engine.Bridge.ILunyObject.IsNativeObjectValid*
+  name: IsNativeObjectValid
+  href: api/Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Bridge_ILunyObject_IsNativeObjectValid_
+  commentId: Overload:Luny.Engine.Bridge.ILunyObject.IsNativeObjectValid
+  fullName: Luny.Engine.Bridge.ILunyObject.IsNativeObjectValid
+  nameWithType: ILunyObject.IsNativeObjectValid
 - uid: Luny.Engine.Bridge.ILunyObject.IsValid
   name: IsValid
   href: api/Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Bridge_ILunyObject_IsValid
@@ -964,30 +952,30 @@ references:
   commentId: E:Luny.Engine.Bridge.ILunyObject.OnCollisionUpdate2D
   fullName: Luny.Engine.Bridge.ILunyObject.OnCollisionUpdate2D
   nameWithType: ILunyObject.OnCollisionUpdate2D
-- uid: Luny.Engine.Bridge.ILunyObject.OnCreate
-  name: OnCreate
-  href: api/Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Bridge_ILunyObject_OnCreate
-  commentId: E:Luny.Engine.Bridge.ILunyObject.OnCreate
-  fullName: Luny.Engine.Bridge.ILunyObject.OnCreate
-  nameWithType: ILunyObject.OnCreate
-- uid: Luny.Engine.Bridge.ILunyObject.OnDestroy
-  name: OnDestroy
-  href: api/Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Bridge_ILunyObject_OnDestroy
-  commentId: E:Luny.Engine.Bridge.ILunyObject.OnDestroy
-  fullName: Luny.Engine.Bridge.ILunyObject.OnDestroy
-  nameWithType: ILunyObject.OnDestroy
-- uid: Luny.Engine.Bridge.ILunyObject.OnDisable
-  name: OnDisable
-  href: api/Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Bridge_ILunyObject_OnDisable
-  commentId: E:Luny.Engine.Bridge.ILunyObject.OnDisable
-  fullName: Luny.Engine.Bridge.ILunyObject.OnDisable
-  nameWithType: ILunyObject.OnDisable
-- uid: Luny.Engine.Bridge.ILunyObject.OnEnable
-  name: OnEnable
-  href: api/Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Bridge_ILunyObject_OnEnable
-  commentId: E:Luny.Engine.Bridge.ILunyObject.OnEnable
-  fullName: Luny.Engine.Bridge.ILunyObject.OnEnable
-  nameWithType: ILunyObject.OnEnable
+- uid: Luny.Engine.Bridge.ILunyObject.OnCreated
+  name: OnCreated
+  href: api/Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Bridge_ILunyObject_OnCreated
+  commentId: E:Luny.Engine.Bridge.ILunyObject.OnCreated
+  fullName: Luny.Engine.Bridge.ILunyObject.OnCreated
+  nameWithType: ILunyObject.OnCreated
+- uid: Luny.Engine.Bridge.ILunyObject.OnDestroyed
+  name: OnDestroyed
+  href: api/Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Bridge_ILunyObject_OnDestroyed
+  commentId: E:Luny.Engine.Bridge.ILunyObject.OnDestroyed
+  fullName: Luny.Engine.Bridge.ILunyObject.OnDestroyed
+  nameWithType: ILunyObject.OnDestroyed
+- uid: Luny.Engine.Bridge.ILunyObject.OnDisabled
+  name: OnDisabled
+  href: api/Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Bridge_ILunyObject_OnDisabled
+  commentId: E:Luny.Engine.Bridge.ILunyObject.OnDisabled
+  fullName: Luny.Engine.Bridge.ILunyObject.OnDisabled
+  nameWithType: ILunyObject.OnDisabled
+- uid: Luny.Engine.Bridge.ILunyObject.OnEnabled
+  name: OnEnabled
+  href: api/Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Bridge_ILunyObject_OnEnabled
+  commentId: E:Luny.Engine.Bridge.ILunyObject.OnEnabled
+  fullName: Luny.Engine.Bridge.ILunyObject.OnEnabled
+  nameWithType: ILunyObject.OnEnabled
 - uid: Luny.Engine.Bridge.ILunyObject.OnReady
   name: OnReady
   href: api/Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Bridge_ILunyObject_OnReady
@@ -2678,18 +2666,6 @@ references:
   commentId: Overload:Luny.Engine.Bridge.LunyObject.InvokeOnTriggerUpdate2D
   fullName: Luny.Engine.Bridge.LunyObject.InvokeOnTriggerUpdate2D
   nameWithType: LunyObject.InvokeOnTriggerUpdate2D
-- uid: Luny.Engine.Bridge.LunyObject.IsDestroyed
-  name: IsDestroyed
-  href: api/Luny.Engine.Bridge.LunyObject.html#Luny_Engine_Bridge_LunyObject_IsDestroyed
-  commentId: P:Luny.Engine.Bridge.LunyObject.IsDestroyed
-  fullName: Luny.Engine.Bridge.LunyObject.IsDestroyed
-  nameWithType: LunyObject.IsDestroyed
-- uid: Luny.Engine.Bridge.LunyObject.IsDestroyed*
-  name: IsDestroyed
-  href: api/Luny.Engine.Bridge.LunyObject.html#Luny_Engine_Bridge_LunyObject_IsDestroyed_
-  commentId: Overload:Luny.Engine.Bridge.LunyObject.IsDestroyed
-  fullName: Luny.Engine.Bridge.LunyObject.IsDestroyed
-  nameWithType: LunyObject.IsDestroyed
 - uid: Luny.Engine.Bridge.LunyObject.IsEnabled
   name: IsEnabled
   href: api/Luny.Engine.Bridge.LunyObject.html#Luny_Engine_Bridge_LunyObject_IsEnabled
@@ -2714,12 +2690,24 @@ references:
   commentId: Overload:Luny.Engine.Bridge.LunyObject.IsEnabledInHierarchy
   fullName: Luny.Engine.Bridge.LunyObject.IsEnabledInHierarchy
   nameWithType: LunyObject.IsEnabledInHierarchy
+- uid: Luny.Engine.Bridge.LunyObject.IsNativeObjectReferenceValid
+  name: IsNativeObjectReferenceValid()
+  href: api/Luny.Engine.Bridge.LunyObject.html#Luny_Engine_Bridge_LunyObject_IsNativeObjectReferenceValid
+  commentId: M:Luny.Engine.Bridge.LunyObject.IsNativeObjectReferenceValid
+  fullName: Luny.Engine.Bridge.LunyObject.IsNativeObjectReferenceValid()
+  nameWithType: LunyObject.IsNativeObjectReferenceValid()
+- uid: Luny.Engine.Bridge.LunyObject.IsNativeObjectReferenceValid*
+  name: IsNativeObjectReferenceValid
+  href: api/Luny.Engine.Bridge.LunyObject.html#Luny_Engine_Bridge_LunyObject_IsNativeObjectReferenceValid_
+  commentId: Overload:Luny.Engine.Bridge.LunyObject.IsNativeObjectReferenceValid
+  fullName: Luny.Engine.Bridge.LunyObject.IsNativeObjectReferenceValid
+  nameWithType: LunyObject.IsNativeObjectReferenceValid
 - uid: Luny.Engine.Bridge.LunyObject.IsNativeObjectValid
-  name: IsNativeObjectValid()
+  name: IsNativeObjectValid
   href: api/Luny.Engine.Bridge.LunyObject.html#Luny_Engine_Bridge_LunyObject_IsNativeObjectValid
-  commentId: M:Luny.Engine.Bridge.LunyObject.IsNativeObjectValid
-  fullName: Luny.Engine.Bridge.LunyObject.IsNativeObjectValid()
-  nameWithType: LunyObject.IsNativeObjectValid()
+  commentId: P:Luny.Engine.Bridge.LunyObject.IsNativeObjectValid
+  fullName: Luny.Engine.Bridge.LunyObject.IsNativeObjectValid
+  nameWithType: LunyObject.IsNativeObjectValid
 - uid: Luny.Engine.Bridge.LunyObject.IsNativeObjectValid*
   name: IsNativeObjectValid
   href: api/Luny.Engine.Bridge.LunyObject.html#Luny_Engine_Bridge_LunyObject_IsNativeObjectValid_
@@ -2834,30 +2822,30 @@ references:
   commentId: E:Luny.Engine.Bridge.LunyObject.OnCollisionUpdate2D
   fullName: Luny.Engine.Bridge.LunyObject.OnCollisionUpdate2D
   nameWithType: LunyObject.OnCollisionUpdate2D
-- uid: Luny.Engine.Bridge.LunyObject.OnCreate
-  name: OnCreate
-  href: api/Luny.Engine.Bridge.LunyObject.html#Luny_Engine_Bridge_LunyObject_OnCreate
-  commentId: E:Luny.Engine.Bridge.LunyObject.OnCreate
-  fullName: Luny.Engine.Bridge.LunyObject.OnCreate
-  nameWithType: LunyObject.OnCreate
-- uid: Luny.Engine.Bridge.LunyObject.OnDestroy
-  name: OnDestroy
-  href: api/Luny.Engine.Bridge.LunyObject.html#Luny_Engine_Bridge_LunyObject_OnDestroy
-  commentId: E:Luny.Engine.Bridge.LunyObject.OnDestroy
-  fullName: Luny.Engine.Bridge.LunyObject.OnDestroy
-  nameWithType: LunyObject.OnDestroy
-- uid: Luny.Engine.Bridge.LunyObject.OnDisable
-  name: OnDisable
-  href: api/Luny.Engine.Bridge.LunyObject.html#Luny_Engine_Bridge_LunyObject_OnDisable
-  commentId: E:Luny.Engine.Bridge.LunyObject.OnDisable
-  fullName: Luny.Engine.Bridge.LunyObject.OnDisable
-  nameWithType: LunyObject.OnDisable
-- uid: Luny.Engine.Bridge.LunyObject.OnEnable
-  name: OnEnable
-  href: api/Luny.Engine.Bridge.LunyObject.html#Luny_Engine_Bridge_LunyObject_OnEnable
-  commentId: E:Luny.Engine.Bridge.LunyObject.OnEnable
-  fullName: Luny.Engine.Bridge.LunyObject.OnEnable
-  nameWithType: LunyObject.OnEnable
+- uid: Luny.Engine.Bridge.LunyObject.OnCreated
+  name: OnCreated
+  href: api/Luny.Engine.Bridge.LunyObject.html#Luny_Engine_Bridge_LunyObject_OnCreated
+  commentId: E:Luny.Engine.Bridge.LunyObject.OnCreated
+  fullName: Luny.Engine.Bridge.LunyObject.OnCreated
+  nameWithType: LunyObject.OnCreated
+- uid: Luny.Engine.Bridge.LunyObject.OnDestroyed
+  name: OnDestroyed
+  href: api/Luny.Engine.Bridge.LunyObject.html#Luny_Engine_Bridge_LunyObject_OnDestroyed
+  commentId: E:Luny.Engine.Bridge.LunyObject.OnDestroyed
+  fullName: Luny.Engine.Bridge.LunyObject.OnDestroyed
+  nameWithType: LunyObject.OnDestroyed
+- uid: Luny.Engine.Bridge.LunyObject.OnDisabled
+  name: OnDisabled
+  href: api/Luny.Engine.Bridge.LunyObject.html#Luny_Engine_Bridge_LunyObject_OnDisabled
+  commentId: E:Luny.Engine.Bridge.LunyObject.OnDisabled
+  fullName: Luny.Engine.Bridge.LunyObject.OnDisabled
+  nameWithType: LunyObject.OnDisabled
+- uid: Luny.Engine.Bridge.LunyObject.OnEnabled
+  name: OnEnabled
+  href: api/Luny.Engine.Bridge.LunyObject.html#Luny_Engine_Bridge_LunyObject_OnEnabled
+  commentId: E:Luny.Engine.Bridge.LunyObject.OnEnabled
+  fullName: Luny.Engine.Bridge.LunyObject.OnEnabled
+  nameWithType: LunyObject.OnEnabled
 - uid: Luny.Engine.Bridge.LunyObject.OnReady
   name: OnReady
   href: api/Luny.Engine.Bridge.LunyObject.html#Luny_Engine_Bridge_LunyObject_OnReady
@@ -9778,6 +9766,78 @@ references:
   fullName.vb: Luny.LunyEngine.TryGetService(Of TService)(TService)
   nameWithType: LunyEngine.TryGetService<TService>(out TService)
   nameWithType.vb: LunyEngine.TryGetService(Of TService)(TService)
+- uid: Luny.LunyEngineLifecycleEvents
+  name: LunyEngineLifecycleEvents
+  href: api/Luny.LunyEngineLifecycleEvents.html
+  commentId: T:Luny.LunyEngineLifecycleEvents
+  fullName: Luny.LunyEngineLifecycleEvents
+  nameWithType: LunyEngineLifecycleEvents
+- uid: Luny.LunyEngineLifecycleEvents.OnEngineHeartbeat
+  name: OnEngineHeartbeat
+  href: api/Luny.LunyEngineLifecycleEvents.html#Luny_LunyEngineLifecycleEvents_OnEngineHeartbeat
+  commentId: F:Luny.LunyEngineLifecycleEvents.OnEngineHeartbeat
+  fullName: Luny.LunyEngineLifecycleEvents.OnEngineHeartbeat
+  nameWithType: LunyEngineLifecycleEvents.OnEngineHeartbeat
+- uid: Luny.LunyEngineLifecycleEvents.OnEngineLateUpdate
+  name: OnEngineLateUpdate
+  href: api/Luny.LunyEngineLifecycleEvents.html#Luny_LunyEngineLifecycleEvents_OnEngineLateUpdate
+  commentId: F:Luny.LunyEngineLifecycleEvents.OnEngineLateUpdate
+  fullName: Luny.LunyEngineLifecycleEvents.OnEngineLateUpdate
+  nameWithType: LunyEngineLifecycleEvents.OnEngineLateUpdate
+- uid: Luny.LunyEngineLifecycleEvents.OnEnginePostUpdate
+  name: OnEnginePostUpdate
+  href: api/Luny.LunyEngineLifecycleEvents.html#Luny_LunyEngineLifecycleEvents_OnEnginePostUpdate
+  commentId: F:Luny.LunyEngineLifecycleEvents.OnEnginePostUpdate
+  fullName: Luny.LunyEngineLifecycleEvents.OnEnginePostUpdate
+  nameWithType: LunyEngineLifecycleEvents.OnEnginePostUpdate
+- uid: Luny.LunyEngineLifecycleEvents.OnEnginePreUpdate
+  name: OnEnginePreUpdate
+  href: api/Luny.LunyEngineLifecycleEvents.html#Luny_LunyEngineLifecycleEvents_OnEnginePreUpdate
+  commentId: F:Luny.LunyEngineLifecycleEvents.OnEnginePreUpdate
+  fullName: Luny.LunyEngineLifecycleEvents.OnEnginePreUpdate
+  nameWithType: LunyEngineLifecycleEvents.OnEnginePreUpdate
+- uid: Luny.LunyEngineLifecycleEvents.OnEngineSceneLoaded
+  name: OnEngineSceneLoaded
+  href: api/Luny.LunyEngineLifecycleEvents.html#Luny_LunyEngineLifecycleEvents_OnEngineSceneLoaded
+  commentId: F:Luny.LunyEngineLifecycleEvents.OnEngineSceneLoaded
+  fullName: Luny.LunyEngineLifecycleEvents.OnEngineSceneLoaded
+  nameWithType: LunyEngineLifecycleEvents.OnEngineSceneLoaded
+- uid: Luny.LunyEngineLifecycleEvents.OnEngineSceneUnloaded
+  name: OnEngineSceneUnloaded
+  href: api/Luny.LunyEngineLifecycleEvents.html#Luny_LunyEngineLifecycleEvents_OnEngineSceneUnloaded
+  commentId: F:Luny.LunyEngineLifecycleEvents.OnEngineSceneUnloaded
+  fullName: Luny.LunyEngineLifecycleEvents.OnEngineSceneUnloaded
+  nameWithType: LunyEngineLifecycleEvents.OnEngineSceneUnloaded
+- uid: Luny.LunyEngineLifecycleEvents.OnEngineShutdown
+  name: OnEngineShutdown
+  href: api/Luny.LunyEngineLifecycleEvents.html#Luny_LunyEngineLifecycleEvents_OnEngineShutdown
+  commentId: F:Luny.LunyEngineLifecycleEvents.OnEngineShutdown
+  fullName: Luny.LunyEngineLifecycleEvents.OnEngineShutdown
+  nameWithType: LunyEngineLifecycleEvents.OnEngineShutdown
+- uid: Luny.LunyEngineLifecycleEvents.OnEngineStartup
+  name: OnEngineStartup
+  href: api/Luny.LunyEngineLifecycleEvents.html#Luny_LunyEngineLifecycleEvents_OnEngineStartup
+  commentId: F:Luny.LunyEngineLifecycleEvents.OnEngineStartup
+  fullName: Luny.LunyEngineLifecycleEvents.OnEngineStartup
+  nameWithType: LunyEngineLifecycleEvents.OnEngineStartup
+- uid: Luny.LunyEngineLifecycleEvents.OnEngineUpdate
+  name: OnEngineUpdate
+  href: api/Luny.LunyEngineLifecycleEvents.html#Luny_LunyEngineLifecycleEvents_OnEngineUpdate
+  commentId: F:Luny.LunyEngineLifecycleEvents.OnEngineUpdate
+  fullName: Luny.LunyEngineLifecycleEvents.OnEngineUpdate
+  nameWithType: LunyEngineLifecycleEvents.OnEngineUpdate
+- uid: Luny.LunyEngineLifecycleEvents.OnObjectCreated
+  name: OnObjectCreated
+  href: api/Luny.LunyEngineLifecycleEvents.html#Luny_LunyEngineLifecycleEvents_OnObjectCreated
+  commentId: F:Luny.LunyEngineLifecycleEvents.OnObjectCreated
+  fullName: Luny.LunyEngineLifecycleEvents.OnObjectCreated
+  nameWithType: LunyEngineLifecycleEvents.OnObjectCreated
+- uid: Luny.LunyEngineLifecycleEvents.OnObjectDestroyed
+  name: OnObjectDestroyed
+  href: api/Luny.LunyEngineLifecycleEvents.html#Luny_LunyEngineLifecycleEvents_OnObjectDestroyed
+  commentId: F:Luny.LunyEngineLifecycleEvents.OnObjectDestroyed
+  fullName: Luny.LunyEngineLifecycleEvents.OnObjectDestroyed
+  nameWithType: LunyEngineLifecycleEvents.OnObjectDestroyed
 - uid: Luny.LunyException
   name: LunyException
   href: api/Luny.LunyException.html

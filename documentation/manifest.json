@@ -88,7 +88,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Luny.Engine.Bridge.ILunyObject",
-      "Summary": "<p sourcefile=\"api/Luny.Engine.Bridge.ILunyObject.yml\" sourcestartlinenumber=\"1\">Engine-agnostic interface for engine objects/nodes.\nProvides unified access to common object properties and operations.\nSafeguards all access to avoid exceptions when the engine-native object may have been destroyed.</p>\n"
+      "Summary": "<p sourcefile=\"api/Luny.Engine.Bridge.ILunyObject.yml\" sourcestartlinenumber=\"1\">See implementation: <xref href=\"Luny.Engine.Bridge.LunyObject\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -382,7 +382,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Luny.Engine.Bridge.LunyObject",
-      "Summary": "<p sourcefile=\"api/Luny.Engine.Bridge.LunyObject.yml\" sourcestartlinenumber=\"1\">Proxy for engine-native objects/nodes/actors/...</p>\n"
+      "Summary": "<p sourcefile=\"api/Luny.Engine.Bridge.LunyObject.yml\" sourcestartlinenumber=\"1\">Engine-agnostic wrapper for engine objects.\nSafeguards against NullReferenceExceptions when the engine-native object may have been destroyed.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1110,7 +1110,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Luny.ILunyEngine",
-      "Summary": "<p sourcefile=\"api/Luny.ILunyEngine.yml\" sourcestartlinenumber=\"1\">LunyEngine interface - receives callbacks from engine adapters and provides service access.</p>\n"
+      "Summary": "<p sourcefile=\"api/Luny.ILunyEngine.yml\" sourcestartlinenumber=\"1\">See implementation: <xref href=\"Luny.LunyEngine\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1152,7 +1152,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Luny.ILunyEngineObserver",
-      "Summary": "<p sourcefile=\"api/Luny.ILunyEngineObserver.yml\" sourcestartlinenumber=\"1\">Lifecycle observer interface - receives callbacks from LunyEngine.</p>\n"
+      "Summary": "<p sourcefile=\"api/Luny.ILunyEngineObserver.yml\" sourcestartlinenumber=\"1\">Lifecycle observer interface. To be implemented by observers of LunyEngine which wish to receive the engine-agnostic lifecycle callbacks.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1292,7 +1292,21 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Luny.LunyEngine",
-      "Summary": "<p sourcefile=\"api/Luny.LunyEngine.yml\" sourcestartlinenumber=\"1\">Singleton engine that discovers and manages services and lifecycle observers.</p>\n"
+      "Summary": "<p sourcefile=\"api/Luny.LunyEngine.yml\" sourcestartlinenumber=\"1\">LunyEngine singleton discovers and manages engine services and observers.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Luny.LunyEngineLifecycleEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Luny.LunyEngineLifecycleEvents.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Luny.LunyEngineLifecycleEvents",
+      "Summary": "<p sourcefile=\"api/Luny.LunyEngineLifecycleEvents.yml\" sourcestartlinenumber=\"1\">LunyScript lifecycle events.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -4498,7 +4512,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "LunyScript.Script",
-      "Summary": "<p sourcefile=\"api/LunyScript.Script.yml\" sourcestartlinenumber=\"1\">Abstract base class for all LunyScripts.\nProvides the API interface for beginner-friendly visual scripting in C#.\nUsers inherit from this class and implement Build() to construct their script logic.</p>\n"
+      "Summary": "<p sourcefile=\"api/LunyScript.Script.yml\" sourcestartlinenumber=\"1\">Abstract base class for all LunyScripts.\nProvides the API interface for beginner-friendly block-based scripting in C#.\nInherit from this class and implement its Build() method to construct script logic.</p>\n"
     },
     {
       "type": "ManagedReference",

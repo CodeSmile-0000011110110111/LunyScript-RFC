@@ -2,11 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-      <title>Namespace LunyScript | LunyScript Documentation </title>
+      <title>Enum LunyEngineLifecycleEvents | LunyScript Documentation </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Namespace LunyScript | LunyScript Documentation ">
+      <meta name="title" content="Enum LunyEngineLifecycleEvents | LunyScript Documentation ">
       
-      
+      <meta name="description" content="LunyScript lifecycle events.">
       <link rel="icon" href="../images/luny-logo-56x56.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -86,88 +86,83 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="LunyScript">
+        <article data-uid="Luny.LunyEngineLifecycleEvents">
 
-  <h1 id="LunyScript" data-uid="LunyScript" class="text-break">Namespace LunyScript</h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
 
-    <h3 id="classes">
-Classes
-</h3>
-    <dl class="jumplist">
-      <dt><a class="xref" href="LunyScript.LunyScriptException.html">LunyScriptException</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="LunyScript.LunyScriptMaxIterationException.html">LunyScriptMaxIterationException</a></dt>
-      <dd><p>Exception thrown when a script loop exceeds the maximum allowed iterations.</p>
+
+
+  <h1 id="Luny_LunyEngineLifecycleEvents" data-uid="Luny.LunyEngineLifecycleEvents" class="text-break">
+Enum LunyEngineLifecycleEvents  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Luny.html">Luny</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Luny.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>LunyScript lifecycle events.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Flags]
+public enum LunyEngineLifecycleEvents</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h2 id="fields">Fields
+</h2>
+  <dl class="parameters">
+    <dt id="Luny_LunyEngineLifecycleEvents_OnEngineHeartbeat"><code>OnEngineHeartbeat = 16</code></dt>
+  
+  <dd><p>Runs in sync with engine's &quot;fixed update&quot; or &quot;physics processing&quot; event.</p>
 </dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="LunyScript.LunyScriptVariableException.html">LunyScriptVariableException</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="LunyScript.Script.html">Script</a></dt>
-      <dd><p>Abstract base class for all LunyScripts.
-Provides the API interface for beginner-friendly block-based scripting in C#.
-Inherit from this class and implement its Build() method to construct script logic.</p>
+    <dt id="Luny_LunyEngineLifecycleEvents_OnEngineLateUpdate"><code>OnEngineLateUpdate = 64</code></dt>
+  
+  <dd><p>Runs in sync with engine's &quot;late update&quot; event.
+Where unsupported (Godot) the native engine adapter calls this at the end of the engine's update event.</p>
 </dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="LunyScript.ScriptContext.html">ScriptContext</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="LunyScript.ScriptEngine.html">ScriptEngine</a></dt>
-      <dd><p>Public interface for LunyScript</p>
+    <dt id="Luny_LunyEngineLifecycleEvents_OnEnginePostUpdate"><code>OnEnginePostUpdate = 8</code></dt>
+  
+  <dd><p>Runs at the end of a frame, after late update.</p>
 </dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="LunyScript.ScriptSettings.html">ScriptSettings</a></dt>
-      <dd></dd>
-    </dl>
-    <h3 id="structs">
-Structs
-</h3>
-    <dl class="jumplist">
-      <dt><a class="xref" href="LunyScript.ScriptBlockId.html">ScriptBlockId</a></dt>
-      <dd><p>Unique identifier for a Sequence/FSM/BT instance.
-Sequential integers for deterministic ordering and debugging.</p>
+    <dt id="Luny_LunyEngineLifecycleEvents_OnEnginePreUpdate"><code>OnEnginePreUpdate = 4</code></dt>
+  
+  <dd><p>Runs at the beginning of a frame, before update and fixed step.</p>
 </dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="LunyScript.ScriptId.html">ScriptId</a></dt>
-      <dd><p>Unique identifier for a LunyScript definition (type).
-Sequential integers for deterministic ordering and debugging.</p>
+    <dt id="Luny_LunyEngineLifecycleEvents_OnEngineSceneLoaded"><code>OnEngineSceneLoaded = 512</code></dt>
+  
+  <dd></dd>
+    <dt id="Luny_LunyEngineLifecycleEvents_OnEngineSceneUnloaded"><code>OnEngineSceneUnloaded = 256</code></dt>
+  
+  <dd></dd>
+    <dt id="Luny_LunyEngineLifecycleEvents_OnEngineShutdown"><code>OnEngineShutdown = 2</code></dt>
+  
+  <dd><p>Runs once when application (runtime player) exits.</p>
 </dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="LunyScript.ScriptOptions.html">ScriptOptions</a></dt>
-      <dd></dd>
-    </dl>
-    <h3 id="interfaces">
-Interfaces
-</h3>
-    <dl class="jumplist">
-      <dt><a class="xref" href="LunyScript.IScriptDefinition.html">IScriptDefinition</a></dt>
-      <dd><p>Metadata for a discovered LunyScript type.
-Represents the script ID and associated Type, not an instance.</p>
+    <dt id="Luny_LunyEngineLifecycleEvents_OnEngineStartup"><code>OnEngineStartup = 1</code></dt>
+  
+  <dd><p>Runs once when application (runtime player) launches. Does not re-run when loading scenes.</p>
 </dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="LunyScript.IScriptEngine.html">IScriptEngine</a></dt>
-      <dd><p>Public interface for LunyScript</p>
+    <dt id="Luny_LunyEngineLifecycleEvents_OnEngineUpdate"><code>OnEngineUpdate = 32</code></dt>
+  
+  <dd><p>Runs in sync with engine's &quot;update/process&quot; event.</p>
 </dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="LunyScript.IScriptRuntimeContext.html">IScriptRuntimeContext</a></dt>
-      <dd><p>Runtime context for a LunyScript instance operating on a specific object.
-Contains the script metadata, object reference, variables, and registered sequences.</p>
-</dd>
-    </dl>
+    <dt id="Luny_LunyEngineLifecycleEvents_OnObjectCreated"><code>OnObjectCreated = 1024</code></dt>
+  
+  <dd></dd>
+    <dt id="Luny_LunyEngineLifecycleEvents_OnObjectDestroyed"><code>OnObjectDestroyed = 2048</code></dt>
+  
+  <dd></dd>
+  </dl>
+
 
 
 </article>
