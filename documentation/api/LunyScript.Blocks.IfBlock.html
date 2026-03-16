@@ -104,7 +104,7 @@ Class IfBlock
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class IfBlock : ScriptActionBlock, IScriptBlock</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class IfBlock : ActionBlock, IScriptBlock</code></pre>
   </div>
 
 
@@ -115,7 +115,7 @@ Class IfBlock
     <dd>
       <div><span class="xref">object</span></div>
       <div><a class="xref" href="LunyScript.Blocks.ScriptBlock.html">ScriptBlock</a></div>
-      <div><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a></div>
+      <div><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a></div>
       <div><span class="xref">IfBlock</span></div>
     </dd>
   </dl>
@@ -132,7 +132,7 @@ Class IfBlock
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html#LunyScript_Blocks_ScriptActionBlock_IsNullOrEmpty_LunyScript_Blocks_ScriptActionBlock___">ScriptActionBlock.IsNullOrEmpty(ScriptActionBlock[])</a>
+      <a class="xref" href="LunyScript.Blocks.ActionBlock.html#LunyScript_Blocks_ActionBlock_IsNullOrEmpty_LunyScript_Blocks_ActionBlock___">ActionBlock.IsNullOrEmpty(ActionBlock[])</a>
     </div>
   </dd></dl>
 
@@ -147,8 +147,8 @@ Class IfBlock
 
   <a id="LunyScript_Blocks_IfBlock_Else_" data-uid="LunyScript.Blocks.IfBlock.Else*"></a>
 
-  <h3 id="LunyScript_Blocks_IfBlock_Else_LunyScript_Blocks_ScriptActionBlock___" data-uid="LunyScript.Blocks.IfBlock.Else(LunyScript.Blocks.ScriptActionBlock[])">
-  Else(params ScriptActionBlock[])
+  <h3 id="LunyScript_Blocks_IfBlock_Else_LunyScript_Blocks_ActionBlock___" data-uid="LunyScript.Blocks.IfBlock.Else(LunyScript.Blocks.ActionBlock[])">
+  Else(params ActionBlock[])
   
   </h3>
 
@@ -156,18 +156,18 @@ Class IfBlock
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptActionBlock Else(params ScriptActionBlock[] actions)</code></pre>
+    <pre><code class="lang-csharp hljs">public ActionBlock Else(params ActionBlock[] actions)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>actions</code> <a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a>[]</dt>
+    <dt><code>actions</code> <a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a>[]</dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a></dt>
+    <dt><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a></dt>
     <dd></dd>
   </dl>
 
@@ -183,8 +183,8 @@ Class IfBlock
 
   <a id="LunyScript_Blocks_IfBlock_ElseIf_" data-uid="LunyScript.Blocks.IfBlock.ElseIf*"></a>
 
-  <h3 id="LunyScript_Blocks_IfBlock_ElseIf_LunyScript_Blocks_ScriptConditionBlock___" data-uid="LunyScript.Blocks.IfBlock.ElseIf(LunyScript.Blocks.ScriptConditionBlock[])">
-  ElseIf(params ScriptConditionBlock[])
+  <h3 id="LunyScript_Blocks_IfBlock_ElseIf_LunyScript_Blocks_ConditionBlock___" data-uid="LunyScript.Blocks.IfBlock.ElseIf(LunyScript.Blocks.ConditionBlock[])">
+  ElseIf(params ConditionBlock[])
   
   </h3>
 
@@ -192,12 +192,12 @@ Class IfBlock
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IfBlock ElseIf(params ScriptConditionBlock[] conditions)</code></pre>
+    <pre><code class="lang-csharp hljs">public IfBlock ElseIf(params ConditionBlock[] conditions)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>conditions</code> <a class="xref" href="LunyScript.Blocks.ScriptConditionBlock.html">ScriptConditionBlock</a>[]</dt>
+    <dt><code>conditions</code> <a class="xref" href="LunyScript.Blocks.ConditionBlock.html">ConditionBlock</a>[]</dt>
     <dd></dd>
   </dl>
 
@@ -250,8 +250,8 @@ Class IfBlock
 
   <a id="LunyScript_Blocks_IfBlock_Then_" data-uid="LunyScript.Blocks.IfBlock.Then*"></a>
 
-  <h3 id="LunyScript_Blocks_IfBlock_Then_LunyScript_Blocks_ScriptActionBlock___" data-uid="LunyScript.Blocks.IfBlock.Then(LunyScript.Blocks.ScriptActionBlock[])">
-  Then(params ScriptActionBlock[])
+  <h3 id="LunyScript_Blocks_IfBlock_Then_LunyScript_Blocks_ActionBlock___" data-uid="LunyScript.Blocks.IfBlock.Then(LunyScript.Blocks.ActionBlock[])">
+  Then(params ActionBlock[])
   
   </h3>
 
@@ -259,12 +259,12 @@ Class IfBlock
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IfBlock Then(params ScriptActionBlock[] actions)</code></pre>
+    <pre><code class="lang-csharp hljs">public IfBlock Then(params ActionBlock[] actions)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>actions</code> <a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a>[]</dt>
+    <dt><code>actions</code> <a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a>[]</dt>
     <dd></dd>
   </dl>
 

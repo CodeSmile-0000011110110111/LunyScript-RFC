@@ -104,13 +104,29 @@ Struct Number
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly struct Number</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly struct Number : IConvertible, IFormattable, IComparable, IComparable&lt;Number&gt;, IEquatable&lt;Number&gt;, IComparable&lt;double&gt;, IEquatable&lt;double&gt;, IComparable&lt;long&gt;, IEquatable&lt;long&gt;, IComparable&lt;ulong&gt;, IEquatable&lt;ulong&gt;</code></pre>
   </div>
 
 
 
 
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iconvertible">IConvertible</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformattable">IFormattable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable">IComparable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable-1">IComparable</a>&lt;<a class="xref" href="Luny.Number.html">Number</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Luny.Number.html">Number</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable-1">IComparable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable-1">IComparable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable-1">IComparable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a>&gt;</div>
+    </dd>
+  </dl>
 
 
 
@@ -242,7 +258,7 @@ Struct Number
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">int</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
   </dl>
 
@@ -278,7 +294,7 @@ Struct Number
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">int</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
   </dl>
 
@@ -308,13 +324,13 @@ Struct Number
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>other</code> <span class="xref">long</span></dt>
+    <dt><code>other</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">int</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
   </dl>
 
@@ -350,7 +366,7 @@ Struct Number
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">int</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
   </dl>
 
@@ -380,13 +396,13 @@ Struct Number
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>other</code> <span class="xref">ulong</span></dt>
+    <dt><code>other</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">int</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
   </dl>
 
@@ -488,7 +504,7 @@ Struct Number
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>other</code> <span class="xref">long</span></dt>
+    <dt><code>other</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
     <dd></dd>
   </dl>
 
@@ -560,7 +576,7 @@ Struct Number
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>other</code> <span class="xref">ulong</span></dt>
+    <dt><code>other</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
     <dd></dd>
   </dl>
 
@@ -597,7 +613,7 @@ Struct Number
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">int</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
   </dl>
 
@@ -628,7 +644,7 @@ Struct Number
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">TypeCode</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.typecode">TypeCode</a></dt>
     <dd></dd>
   </dl>
 
@@ -658,7 +674,7 @@ Struct Number
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>provider</code> <span class="xref">IFormatProvider</span></dt>
+    <dt><code>provider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></dt>
     <dd></dd>
   </dl>
 
@@ -694,13 +710,13 @@ Struct Number
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>provider</code> <span class="xref">IFormatProvider</span></dt>
+    <dt><code>provider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">byte</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
     <dd></dd>
   </dl>
 
@@ -730,13 +746,13 @@ Struct Number
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>provider</code> <span class="xref">IFormatProvider</span></dt>
+    <dt><code>provider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">char</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
     <dd></dd>
   </dl>
 
@@ -766,13 +782,13 @@ Struct Number
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>provider</code> <span class="xref">IFormatProvider</span></dt>
+    <dt><code>provider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">DateTime</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
     <dd></dd>
   </dl>
 
@@ -802,13 +818,13 @@ Struct Number
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>provider</code> <span class="xref">IFormatProvider</span></dt>
+    <dt><code>provider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">decimal</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
     <dd></dd>
   </dl>
 
@@ -838,7 +854,7 @@ Struct Number
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>provider</code> <span class="xref">IFormatProvider</span></dt>
+    <dt><code>provider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></dt>
     <dd></dd>
   </dl>
 
@@ -874,13 +890,13 @@ Struct Number
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>provider</code> <span class="xref">IFormatProvider</span></dt>
+    <dt><code>provider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">short</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
     <dd></dd>
   </dl>
 
@@ -910,13 +926,13 @@ Struct Number
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>provider</code> <span class="xref">IFormatProvider</span></dt>
+    <dt><code>provider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">int</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
   </dl>
 
@@ -946,13 +962,13 @@ Struct Number
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>provider</code> <span class="xref">IFormatProvider</span></dt>
+    <dt><code>provider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">long</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
     <dd></dd>
   </dl>
 
@@ -982,13 +998,13 @@ Struct Number
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>provider</code> <span class="xref">IFormatProvider</span></dt>
+    <dt><code>provider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">sbyte</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a></dt>
     <dd></dd>
   </dl>
 
@@ -1018,7 +1034,7 @@ Struct Number
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>provider</code> <span class="xref">IFormatProvider</span></dt>
+    <dt><code>provider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></dt>
     <dd></dd>
   </dl>
 
@@ -1086,7 +1102,7 @@ public override string ToString()</code></pre>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>provider</code> <span class="xref">IFormatProvider</span></dt>
+    <dt><code>provider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></dt>
     <dd></dd>
   </dl>
 
@@ -1124,7 +1140,7 @@ public override string ToString()</code></pre>
   <dl class="parameters">
     <dt><code>format</code> <span class="xref">string</span></dt>
     <dd></dd>
-    <dt><code>formatProvider</code> <span class="xref">IFormatProvider</span></dt>
+    <dt><code>formatProvider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></dt>
     <dd></dd>
   </dl>
 
@@ -1160,13 +1176,13 @@ public override string ToString()</code></pre>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>provider</code> <span class="xref">IFormatProvider</span></dt>
+    <dt><code>provider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">TimeSpan</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
     <dd></dd>
   </dl>
 
@@ -1198,7 +1214,7 @@ public override string ToString()</code></pre>
   <dl class="parameters">
     <dt><code>conversionType</code> <span class="xref">Type</span></dt>
     <dd></dd>
-    <dt><code>provider</code> <span class="xref">IFormatProvider</span></dt>
+    <dt><code>provider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></dt>
     <dd></dd>
   </dl>
 
@@ -1234,13 +1250,13 @@ public override string ToString()</code></pre>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>provider</code> <span class="xref">IFormatProvider</span></dt>
+    <dt><code>provider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">ushort</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
     <dd></dd>
   </dl>
 
@@ -1270,7 +1286,7 @@ public override string ToString()</code></pre>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>provider</code> <span class="xref">IFormatProvider</span></dt>
+    <dt><code>provider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></dt>
     <dd></dd>
   </dl>
 
@@ -1306,13 +1322,13 @@ public override string ToString()</code></pre>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>provider</code> <span class="xref">IFormatProvider</span></dt>
+    <dt><code>provider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">ulong</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
     <dd></dd>
   </dl>
 
@@ -1882,7 +1898,7 @@ public override string ToString()</code></pre>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">byte</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
     <dd></dd>
   </dl>
 
@@ -1918,7 +1934,7 @@ public override string ToString()</code></pre>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">DateTime</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
     <dd></dd>
   </dl>
 
@@ -1954,7 +1970,7 @@ public override string ToString()</code></pre>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">decimal</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
     <dd></dd>
   </dl>
 
@@ -2026,7 +2042,7 @@ public override string ToString()</code></pre>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">short</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
     <dd></dd>
   </dl>
 
@@ -2062,7 +2078,7 @@ public override string ToString()</code></pre>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">int</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
   </dl>
 
@@ -2098,7 +2114,7 @@ public override string ToString()</code></pre>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">long</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
     <dd></dd>
   </dl>
 
@@ -2134,7 +2150,7 @@ public override string ToString()</code></pre>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">sbyte</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a></dt>
     <dd></dd>
   </dl>
 
@@ -2242,7 +2258,7 @@ public override string ToString()</code></pre>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">TimeSpan</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
     <dd></dd>
   </dl>
 
@@ -2278,7 +2294,7 @@ public override string ToString()</code></pre>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">ushort</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
     <dd></dd>
   </dl>
 
@@ -2350,7 +2366,7 @@ public override string ToString()</code></pre>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">ulong</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
     <dd></dd>
   </dl>
 
@@ -2416,7 +2432,7 @@ public override string ToString()</code></pre>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>value</code> <span class="xref">byte</span></dt>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
     <dd></dd>
   </dl>
 
@@ -2452,7 +2468,7 @@ public override string ToString()</code></pre>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>value</code> <span class="xref">DateTime</span></dt>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
     <dd></dd>
   </dl>
 
@@ -2488,7 +2504,7 @@ public override string ToString()</code></pre>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>value</code> <span class="xref">decimal</span></dt>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
     <dd></dd>
   </dl>
 
@@ -2560,7 +2576,7 @@ public override string ToString()</code></pre>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>value</code> <span class="xref">short</span></dt>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
     <dd></dd>
   </dl>
 
@@ -2596,7 +2612,7 @@ public override string ToString()</code></pre>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>value</code> <span class="xref">int</span></dt>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
   </dl>
 
@@ -2632,7 +2648,7 @@ public override string ToString()</code></pre>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>value</code> <span class="xref">long</span></dt>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
     <dd></dd>
   </dl>
 
@@ -2668,7 +2684,7 @@ public override string ToString()</code></pre>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>value</code> <span class="xref">sbyte</span></dt>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a></dt>
     <dd></dd>
   </dl>
 
@@ -2776,7 +2792,7 @@ public override string ToString()</code></pre>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>value</code> <span class="xref">TimeSpan</span></dt>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
     <dd></dd>
   </dl>
 
@@ -2812,7 +2828,7 @@ public override string ToString()</code></pre>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>value</code> <span class="xref">ushort</span></dt>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
     <dd></dd>
   </dl>
 
@@ -2884,7 +2900,7 @@ public override string ToString()</code></pre>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>value</code> <span class="xref">ulong</span></dt>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
     <dd></dd>
   </dl>
 

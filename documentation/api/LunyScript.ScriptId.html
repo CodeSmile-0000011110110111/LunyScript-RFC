@@ -105,13 +105,20 @@ Sequential integers for deterministic ordering and debugging.</p>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly struct ScriptId</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly struct ScriptId : IEquatable&lt;ScriptId&gt;, IComparable&lt;ScriptId&gt;</code></pre>
   </div>
 
 
 
 
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="LunyScript.ScriptId.html">ScriptId</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable-1">IComparable</a>&lt;<a class="xref" href="LunyScript.ScriptId.html">ScriptId</a>&gt;</div>
+    </dd>
+  </dl>
 
 
 
@@ -142,7 +149,7 @@ Sequential integers for deterministic ordering and debugging.</p>
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><span class="xref">int</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
   </dl>
 
@@ -180,7 +187,7 @@ Sequential integers for deterministic ordering and debugging.</p>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">int</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
   </dl>
 
@@ -315,7 +322,7 @@ Sequential integers for deterministic ordering and debugging.</p>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">int</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
   </dl>
 

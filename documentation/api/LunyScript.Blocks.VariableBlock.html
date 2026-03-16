@@ -106,7 +106,7 @@ Extends ScriptConditionBlock because variables are implicitly usable as conditio
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class VariableBlock : ScriptConditionBlock, IScriptBlock</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class VariableBlock : ConditionBlock, IScriptBlock</code></pre>
   </div>
 
 
@@ -117,7 +117,7 @@ Extends ScriptConditionBlock because variables are implicitly usable as conditio
     <dd>
       <div><span class="xref">object</span></div>
       <div><a class="xref" href="LunyScript.Blocks.ScriptBlock.html">ScriptBlock</a></div>
-      <div><a class="xref" href="LunyScript.Blocks.ScriptConditionBlock.html">ScriptConditionBlock</a></div>
+      <div><a class="xref" href="LunyScript.Blocks.ConditionBlock.html">ConditionBlock</a></div>
       <div><span class="xref">VariableBlock</span></div>
     </dd>
   </dl>
@@ -189,7 +189,7 @@ Extends ScriptConditionBlock because variables are implicitly usable as conditio
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptActionBlock Add(Variable value)</code></pre>
+    <pre><code class="lang-csharp hljs">public ActionBlock Add(Variable value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -200,7 +200,7 @@ Extends ScriptConditionBlock because variables are implicitly usable as conditio
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a></dt>
+    <dt><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a></dt>
     <dd></dd>
   </dl>
 
@@ -225,7 +225,7 @@ Extends ScriptConditionBlock because variables are implicitly usable as conditio
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptActionBlock Add(VariableBlock value)</code></pre>
+    <pre><code class="lang-csharp hljs">public ActionBlock Add(VariableBlock value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -236,7 +236,7 @@ Extends ScriptConditionBlock because variables are implicitly usable as conditio
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a></dt>
+    <dt><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a></dt>
     <dd></dd>
   </dl>
 
@@ -261,13 +261,13 @@ Extends ScriptConditionBlock because variables are implicitly usable as conditio
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptActionBlock Dec()</code></pre>
+    <pre><code class="lang-csharp hljs">public ActionBlock Dec()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a></dt>
+    <dt><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a></dt>
     <dd></dd>
   </dl>
 
@@ -292,7 +292,7 @@ Extends ScriptConditionBlock because variables are implicitly usable as conditio
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptActionBlock Div(Variable value)</code></pre>
+    <pre><code class="lang-csharp hljs">public ActionBlock Div(Variable value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -303,7 +303,7 @@ Extends ScriptConditionBlock because variables are implicitly usable as conditio
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a></dt>
+    <dt><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a></dt>
     <dd></dd>
   </dl>
 
@@ -328,7 +328,7 @@ Extends ScriptConditionBlock because variables are implicitly usable as conditio
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptActionBlock Div(VariableBlock value)</code></pre>
+    <pre><code class="lang-csharp hljs">public ActionBlock Div(VariableBlock value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -339,7 +339,7 @@ Extends ScriptConditionBlock because variables are implicitly usable as conditio
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a></dt>
+    <dt><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a></dt>
     <dd></dd>
   </dl>
 
@@ -442,7 +442,7 @@ Extends ScriptConditionBlock because variables are implicitly usable as conditio
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">int</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
   </dl>
 
@@ -467,13 +467,13 @@ Extends ScriptConditionBlock because variables are implicitly usable as conditio
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptActionBlock Inc()</code></pre>
+    <pre><code class="lang-csharp hljs">public ActionBlock Inc()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a></dt>
+    <dt><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a></dt>
     <dd></dd>
   </dl>
 
@@ -498,7 +498,7 @@ Extends ScriptConditionBlock because variables are implicitly usable as conditio
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptActionBlock Mul(Variable value)</code></pre>
+    <pre><code class="lang-csharp hljs">public ActionBlock Mul(Variable value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -509,7 +509,7 @@ Extends ScriptConditionBlock because variables are implicitly usable as conditio
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a></dt>
+    <dt><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a></dt>
     <dd></dd>
   </dl>
 
@@ -534,7 +534,7 @@ Extends ScriptConditionBlock because variables are implicitly usable as conditio
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptActionBlock Mul(VariableBlock value)</code></pre>
+    <pre><code class="lang-csharp hljs">public ActionBlock Mul(VariableBlock value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -545,7 +545,7 @@ Extends ScriptConditionBlock because variables are implicitly usable as conditio
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a></dt>
+    <dt><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a></dt>
     <dd></dd>
   </dl>
 
@@ -570,7 +570,7 @@ Extends ScriptConditionBlock because variables are implicitly usable as conditio
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptActionBlock Set(Variable value)</code></pre>
+    <pre><code class="lang-csharp hljs">public ActionBlock Set(Variable value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -581,7 +581,7 @@ Extends ScriptConditionBlock because variables are implicitly usable as conditio
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a></dt>
+    <dt><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a></dt>
     <dd></dd>
   </dl>
 
@@ -606,7 +606,7 @@ Extends ScriptConditionBlock because variables are implicitly usable as conditio
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptActionBlock Set(VariableBlock value)</code></pre>
+    <pre><code class="lang-csharp hljs">public ActionBlock Set(VariableBlock value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -617,7 +617,7 @@ Extends ScriptConditionBlock because variables are implicitly usable as conditio
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a></dt>
+    <dt><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a></dt>
     <dd></dd>
   </dl>
 
@@ -642,7 +642,7 @@ Extends ScriptConditionBlock because variables are implicitly usable as conditio
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptActionBlock Sub(Variable value)</code></pre>
+    <pre><code class="lang-csharp hljs">public ActionBlock Sub(Variable value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -653,7 +653,7 @@ Extends ScriptConditionBlock because variables are implicitly usable as conditio
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a></dt>
+    <dt><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a></dt>
     <dd></dd>
   </dl>
 
@@ -678,7 +678,7 @@ Extends ScriptConditionBlock because variables are implicitly usable as conditio
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptActionBlock Sub(VariableBlock value)</code></pre>
+    <pre><code class="lang-csharp hljs">public ActionBlock Sub(VariableBlock value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -689,7 +689,7 @@ Extends ScriptConditionBlock because variables are implicitly usable as conditio
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a></dt>
+    <dt><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a></dt>
     <dd></dd>
   </dl>
 
@@ -714,13 +714,13 @@ Extends ScriptConditionBlock because variables are implicitly usable as conditio
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptActionBlock Toggle()</code></pre>
+    <pre><code class="lang-csharp hljs">public ActionBlock Toggle()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a></dt>
+    <dt><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a></dt>
     <dd></dd>
   </dl>
 
@@ -1354,7 +1354,7 @@ Extends ScriptConditionBlock because variables are implicitly usable as conditio
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>value</code> <span class="xref">int</span></dt>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
   </dl>
 
@@ -1390,7 +1390,7 @@ Extends ScriptConditionBlock because variables are implicitly usable as conditio
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>value</code> <span class="xref">long</span></dt>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
     <dd></dd>
   </dl>
 

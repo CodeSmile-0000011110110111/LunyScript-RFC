@@ -3130,6 +3130,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/LunyScript.Blocks.ActionBlock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunyScript.Blocks.ActionBlock.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LunyScript.Blocks.ActionBlock",
+      "Summary": "<p sourcefile=\"api/LunyScript.Blocks.ActionBlock.yml\" sourcestartlinenumber=\"1\">Abstract base for action blocks that perform an action that may alter game state.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/LunyScript.Blocks.ComputedVariableBlock.yml",
       "output": {
         ".html": {
@@ -3141,6 +3155,20 @@
       "IsMRef": true,
       "Title": "LunyScript.Blocks.ComputedVariableBlock",
       "Summary": "<p sourcefile=\"api/LunyScript.Blocks.ComputedVariableBlock.yml\" sourcestartlinenumber=\"1\">Abstract base for variable blocks that compute their value on-the-fly from runtime context\nrather than reading from a Table entry. TargetHandle is permanently null, so Set/Add/etc.\nwill throw LunyScriptVariableException (&quot;Cannot modify read-only variable&quot;).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunyScript.Blocks.ConditionBlock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunyScript.Blocks.ConditionBlock.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LunyScript.Blocks.ConditionBlock",
+      "Summary": "<p sourcefile=\"api/LunyScript.Blocks.ConditionBlock.yml\" sourcestartlinenumber=\"1\">Abstract base for condition blocks that evaluate to a boolean result.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -3266,7 +3294,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "LunyScript.Blocks.ScriptActionBlock",
-      "Summary": "<p sourcefile=\"api/LunyScript.Blocks.ScriptActionBlock.yml\" sourcestartlinenumber=\"1\">Abstract base for action blocks that perform an action that may alter game state.</p>\n"
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -3294,7 +3322,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "LunyScript.Blocks.ScriptConditionBlock",
-      "Summary": "<p sourcefile=\"api/LunyScript.Blocks.ScriptConditionBlock.yml\" sourcestartlinenumber=\"1\">Abstract base for condition blocks that evaluate to a boolean result.</p>\n"
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -7015,10 +7043,250 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "manual/api-application.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/api-application.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/api-assets.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/api-assets.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/api-component.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/api-component.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/api-debug.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/api-debug.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/api-events-global.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/api-events-global.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/api-events-lifecycle.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/api-events-lifecycle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/api-events.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/api-events.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/api-input-multiplayer.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/api-input-multiplayer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/api-input.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/api-input.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/api-object-prefab.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/api-object-prefab.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/api-object-primitive.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/api-object-primitive.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/api-object.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/api-object.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "manual/api-overview.md",
       "output": {
         ".html": {
           "relative_path": "manual/api-overview.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/api-physics.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/api-physics.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/api-scene.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/api-scene.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/api-time.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/api-time.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/api-transform-move.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/api-transform-move.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/api-transform-shift.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/api-transform-shift.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/api-transform.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/api-transform.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/api-variables-arithmetics.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/api-variables-arithmetics.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/api-variables-comparisons.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/api-variables-comparisons.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/api-variables-lunytypes.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/api-variables-lunytypes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/api-variables-number.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/api-variables-number.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/api-variables-table.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/api-variables-table.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/api-variables.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/api-variables.html"
         }
       },
       "version": ""

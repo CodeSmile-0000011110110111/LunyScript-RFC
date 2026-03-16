@@ -89,10 +89,9 @@
         <article data-uid="">
 <h1 id="your-first-luny-script-in-godot">Your first Luny Script in Godot</h1>
 
-<p><strong>Goal</strong>: You want to create a controllable capsule as your first &quot;Player&quot; in a blank scene.</p>
-<p>If you're already familiar with the technicalities of the Godot editor you can <a href="#the-gdscript">skip to the GDScript</a>.</p>
+<p><strong>Goal</strong>: You want to create a controllable capsule as your first &quot;Player&quot; in a blank scene, using GDScript. Since Godot is so much easier to work with!</p>
 <h2 id="status-quo-godot">Status Quo: Godot</h2>
-<p>This time you're going to use Godot since it's so much easier to work with!</p>
+<p>If you're already familiar with the Godot editor workflows, <a href="#the-gdscript">skip to the GDScript</a>.</p>
 <h3 id="create-the-3d-scene">Create the 3D Scene</h3>
 <p>To create a usable 3D scene in Godot, you will have to perform these steps:</p>
 <ul>
@@ -125,18 +124,24 @@
 <li><strong>Inspector</strong>, with <code>WorldEnvironment</code> selected:
 <ul>
 <li><code>Environment -&gt; New Environment</code>.</li>
-<li>Click <code>Environment</code>.</li>
+<li>Click <code>Environment</code>.
+<ul>
 <li><code>Background -&gt; Mode -&gt; Sky</code>.</li>
-<li><code>Sky -&gt; New Sky</code>.</li>
+<li><code>Sky -&gt; New Sky</code>.
+<ul>
 <li>Click <code>Sky</code>.</li>
 <li><code>Sky Material -&gt; New ProceduralSkyMaterial</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 <p>This accomplishes three things Godot doesn't provide out of the box (as of v4.6):</p>
 <ul>
 <li>The 3D scene renders via the <code>Camera3D</code></li>
-<li>The objects will be lit and will cast shadows due to the <code>DirectionalLight3D</code></li>
+<li>The objects will be lit and will cast shadows via the <code>DirectionalLight3D</code></li>
 <li>The world isn't just a flat, solid color but feels three-dimensional thanks to the <code>WorldEnvironment</code>'s sky.</li>
 </ul>
 <h3 id="create-the-player-object">Create the Player Object</h3>
@@ -188,16 +193,6 @@
 <ul>
 <li>Type &quot;MoveLeft&quot;.</li>
 <li>Click <code>Add</code>.</li>
-<li>Type &quot;MoveRight&quot;.</li>
-<li>Click <code>Add</code>.</li>
-<li>Type &quot;MoveUp&quot;.</li>
-<li>Click <code>Add</code>.</li>
-<li>Type &quot;MoveDown&quot;.</li>
-<li>Click <code>Add</code>.</li>
-<li>Type &quot;Jump&quot;.</li>
-<li>Click <code>Add</code>.</li>
-<li>Type &quot;Crouch&quot;.</li>
-<li>Click <code>Add</code>.</li>
 <li>Click the <code>+</code> icon next to &quot;MoveLeft&quot; action -&gt; <strong>Event Configuration for..</strong>:
 <ul>
 <li>Press the desired key or mouse button (or select it from the list).</li>
@@ -216,7 +211,7 @@
 <li>Click <code>OK</code>.</li>
 </ul>
 </li>
-<li><strong>Repeat the three button assignment steps five additional times:</strong>
+<li><strong>Repeat the above steps five additional times:</strong>
 <ul>
 <li>.. for the &quot;MoveRight&quot;, &quot;MoveUp&quot;, &quot;MoveDown&quot;, &quot;Jump&quot;, and &quot;Crouch&quot; input actions.</li>
 </ul>
@@ -264,17 +259,16 @@ func _process(delta: float):
 
     translate(finalMovement)
 </code></pre>
-<p>Yes, that's not one, not two, but three whole lines you're saving compared to the Unity MonoBehaviour implementation!</p>
-<p>GDScript provides a minor syntactical ease but the imperative code complexity remains the same.</p>
+<p>Yes, that's not one, not two, but three whole lines you're saving compared to the <a href="first-script-unity.html">Unity MonoBehaviour implementation</a>!</p>
+<p>GDScript provides minor syntactical improvements but the overall code complexity remains exactly (!) the same.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <blockquote>
 <p>🤔 Hey, wait! This GDScript is 35 lines but Unity's code snippet was 52 lines!</p>
 </blockquote>
-<p>Correct, but in all fairness we should stop counting C# code's lines with only <code>{</code> or <code>}</code> when comparing it to GDScript.
+<p>Correct, but in all fairness we should stop counting C# lines with only <code>{</code> or <code>}</code> when comparing it to GDScript.
 IDEs will thankfully place those curly braces for us anyway.
-That makes Unity's solution 38 <em>actual lines of code</em>, just three more than the GDScript version.
-The number of empty lines also remains the same.</p>
+That makes Unity's solution 38 <em>actual lines of code</em>.</p>
 </div>
 <h2 id="with-lunyscript">With LunyScript</h2>
 <p>Here's the LunyScript C# implementation once again for reference - identical to its Unity version since Luny scripts represent portable code:</p>
@@ -296,25 +290,14 @@ public partial class Player : Script
 <div class="NOTE">
 <h5>Note</h5>
 <p>LunyScript - once ported to Godot - will remain firmly based in C#.
-GDScript is not a portable language nor does it handle fluent APIs well.</p>
+GDScript is not a portable language and does not handle fluent APIs well.</p>
 </div>
 <h3 id="why-so-many-extra-steps">Why So Many Extra Steps?</h3>
 <p>Compared to Unity, there's an egregious amount of extra steps to be done in the Godot editor before you even get to scripting.</p>
-<p>This is by design. Godot deliberately provides <em>clean slates</em> for everything: no <em>meaningful templates</em> and not even <em>sensible defaults</em>.</p>
-<p>Since I've not seen or heard anyone talk about this, allow me to indulge in a personal opinion piece - which you are free to skip. 😏</p>
-<hr>
-<p>Godot's user experience revolves around hierarchical user interfaces and modal dialogs.
-This provides an unusually consistent UI, which is easy to pick up by beginners and non-technical users.
-I've done the same kind of procedural, hierarchical UI for an internal tool some 20 years ago.</p>
-<p>Those early user interface successes can also be quite rewarding.
-That this sort of user interface is inefficient at scale doesn't (yet) matter.
-And when you're aiming for greater things or a career, you'll move on eventually anyway.</p>
-<p>This is exemplified by nine out of ten Godot users identifying as &quot;hobbyists&quot; (87%: <a href="https://docs.google.com/forms/d/e/1FAIpQLScKWGJoLEeNW1qrsDfZRfk7gHultapacH5ZhQmo9XRZADW1IQ/viewanalytics">Community Poll 2025</a>) - a very consistent metric over the years.</p>
-<p>It explains why the game industry doesn't take Godot <em>really</em> serious, both as an alternative and as a competitor.
-Godot is a welcome springboard for new talents while it helps to shield engines from low-yield (and sometimes high-maintenance) users.
-Godot won over the hobbyists, but also locked itself into that audience, due to its early and now irrevocable design decisions.</p>
-<p>Personally I'd love Godot if it weren't for its anachronistic UX rolling back two decades of user interface design and software architecture progress.</p>
-<p>Btw there are very capable alternatives: <a href="https://www.stride3d.net/">Stride</a> (FOSS), <a href="https://flaxengine.com/">Flax</a> (source available), and a 'coming soon' (FOSS) made by former Unity developers ...</p>
+<p>This is by design. Godot deliberately provides <em>clean slates</em> for everything: no <em>meaningful templates</em> and not even <em>sensible defaults</em>.
+Its user experience also centers on deeply hierarchical user interfaces and abundant modal dialogs.</p>
+<p>While this provides a comparatively consistent UI that's easy to pick up by beginners and non-technical users,
+it comes at the cost of notably heavier UI interactions.</p>
 
 </article>
 

@@ -16133,15 +16133,15 @@ references:
   commentId: Overload:LunyScript.Api.CounterBuilderFinalExtensions.WhenElapsed
   fullName: LunyScript.Api.CounterBuilderFinalExtensions.WhenElapsed
   nameWithType: CounterBuilderFinalExtensions.WhenElapsed
-- uid: LunyScript.Api.CounterBuilderFinalExtensions.WhenElapsed``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
-  name: WhenElapsed<T>(CoroutineCounterBuilder<T>, params ScriptActionBlock[])
-  href: api/LunyScript.Api.CounterBuilderFinalExtensions.html#LunyScript_Api_CounterBuilderFinalExtensions_WhenElapsed__1_LunyScript_Api_CoroutineCounterBuilder___0__LunyScript_Blocks_ScriptActionBlock___
-  commentId: M:LunyScript.Api.CounterBuilderFinalExtensions.WhenElapsed``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
-  name.vb: WhenElapsed(Of T)(CoroutineCounterBuilder(Of T), ParamArray ScriptActionBlock())
-  fullName: LunyScript.Api.CounterBuilderFinalExtensions.WhenElapsed<T>(LunyScript.Api.CoroutineCounterBuilder<T>, params LunyScript.Blocks.ScriptActionBlock[])
-  fullName.vb: LunyScript.Api.CounterBuilderFinalExtensions.WhenElapsed(Of T)(LunyScript.Api.CoroutineCounterBuilder(Of T), ParamArray LunyScript.Blocks.ScriptActionBlock())
-  nameWithType: CounterBuilderFinalExtensions.WhenElapsed<T>(CoroutineCounterBuilder<T>, params ScriptActionBlock[])
-  nameWithType.vb: CounterBuilderFinalExtensions.WhenElapsed(Of T)(CoroutineCounterBuilder(Of T), ParamArray ScriptActionBlock())
+- uid: LunyScript.Api.CounterBuilderFinalExtensions.WhenElapsed``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  name: WhenElapsed<T>(CoroutineCounterBuilder<T>, params ActionBlock[])
+  href: api/LunyScript.Api.CounterBuilderFinalExtensions.html#LunyScript_Api_CounterBuilderFinalExtensions_WhenElapsed__1_LunyScript_Api_CoroutineCounterBuilder___0__LunyScript_Blocks_ActionBlock___
+  commentId: M:LunyScript.Api.CounterBuilderFinalExtensions.WhenElapsed``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  name.vb: WhenElapsed(Of T)(CoroutineCounterBuilder(Of T), ParamArray ActionBlock())
+  fullName: LunyScript.Api.CounterBuilderFinalExtensions.WhenElapsed<T>(LunyScript.Api.CoroutineCounterBuilder<T>, params LunyScript.Blocks.ActionBlock[])
+  fullName.vb: LunyScript.Api.CounterBuilderFinalExtensions.WhenElapsed(Of T)(LunyScript.Api.CoroutineCounterBuilder(Of T), ParamArray LunyScript.Blocks.ActionBlock())
+  nameWithType: CounterBuilderFinalExtensions.WhenElapsed<T>(CoroutineCounterBuilder<T>, params ActionBlock[])
+  nameWithType.vb: CounterBuilderFinalExtensions.WhenElapsed(Of T)(CoroutineCounterBuilder(Of T), ParamArray ActionBlock())
 - uid: LunyScript.Api.CounterBuilderWhenExtensions
   name: CounterBuilderWhenExtensions
   href: api/LunyScript.Api.CounterBuilderWhenExtensions.html
@@ -16154,75 +16154,75 @@ references:
   commentId: Overload:LunyScript.Api.CounterBuilderWhenExtensions.WhenPaused
   fullName: LunyScript.Api.CounterBuilderWhenExtensions.WhenPaused
   nameWithType: CounterBuilderWhenExtensions.WhenPaused
-- uid: LunyScript.Api.CounterBuilderWhenExtensions.WhenPaused``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
-  name: WhenPaused<T>(CoroutineCounterBuilder<T>, params ScriptActionBlock[])
-  href: api/LunyScript.Api.CounterBuilderWhenExtensions.html#LunyScript_Api_CounterBuilderWhenExtensions_WhenPaused__1_LunyScript_Api_CoroutineCounterBuilder___0__LunyScript_Blocks_ScriptActionBlock___
-  commentId: M:LunyScript.Api.CounterBuilderWhenExtensions.WhenPaused``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
-  name.vb: WhenPaused(Of T)(CoroutineCounterBuilder(Of T), ParamArray ScriptActionBlock())
-  fullName: LunyScript.Api.CounterBuilderWhenExtensions.WhenPaused<T>(LunyScript.Api.CoroutineCounterBuilder<T>, params LunyScript.Blocks.ScriptActionBlock[])
-  fullName.vb: LunyScript.Api.CounterBuilderWhenExtensions.WhenPaused(Of T)(LunyScript.Api.CoroutineCounterBuilder(Of T), ParamArray LunyScript.Blocks.ScriptActionBlock())
-  nameWithType: CounterBuilderWhenExtensions.WhenPaused<T>(CoroutineCounterBuilder<T>, params ScriptActionBlock[])
-  nameWithType.vb: CounterBuilderWhenExtensions.WhenPaused(Of T)(CoroutineCounterBuilder(Of T), ParamArray ScriptActionBlock())
+- uid: LunyScript.Api.CounterBuilderWhenExtensions.WhenPaused``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  name: WhenPaused<T>(CoroutineCounterBuilder<T>, params ActionBlock[])
+  href: api/LunyScript.Api.CounterBuilderWhenExtensions.html#LunyScript_Api_CounterBuilderWhenExtensions_WhenPaused__1_LunyScript_Api_CoroutineCounterBuilder___0__LunyScript_Blocks_ActionBlock___
+  commentId: M:LunyScript.Api.CounterBuilderWhenExtensions.WhenPaused``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  name.vb: WhenPaused(Of T)(CoroutineCounterBuilder(Of T), ParamArray ActionBlock())
+  fullName: LunyScript.Api.CounterBuilderWhenExtensions.WhenPaused<T>(LunyScript.Api.CoroutineCounterBuilder<T>, params LunyScript.Blocks.ActionBlock[])
+  fullName.vb: LunyScript.Api.CounterBuilderWhenExtensions.WhenPaused(Of T)(LunyScript.Api.CoroutineCounterBuilder(Of T), ParamArray LunyScript.Blocks.ActionBlock())
+  nameWithType: CounterBuilderWhenExtensions.WhenPaused<T>(CoroutineCounterBuilder<T>, params ActionBlock[])
+  nameWithType.vb: CounterBuilderWhenExtensions.WhenPaused(Of T)(CoroutineCounterBuilder(Of T), ParamArray ActionBlock())
 - uid: LunyScript.Api.CounterBuilderWhenExtensions.WhenProcessed*
   name: WhenProcessed
   href: api/LunyScript.Api.CounterBuilderWhenExtensions.html#LunyScript_Api_CounterBuilderWhenExtensions_WhenProcessed_
   commentId: Overload:LunyScript.Api.CounterBuilderWhenExtensions.WhenProcessed
   fullName: LunyScript.Api.CounterBuilderWhenExtensions.WhenProcessed
   nameWithType: CounterBuilderWhenExtensions.WhenProcessed
-- uid: LunyScript.Api.CounterBuilderWhenExtensions.WhenProcessed``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
-  name: WhenProcessed<T>(CoroutineCounterBuilder<T>, params ScriptActionBlock[])
-  href: api/LunyScript.Api.CounterBuilderWhenExtensions.html#LunyScript_Api_CounterBuilderWhenExtensions_WhenProcessed__1_LunyScript_Api_CoroutineCounterBuilder___0__LunyScript_Blocks_ScriptActionBlock___
-  commentId: M:LunyScript.Api.CounterBuilderWhenExtensions.WhenProcessed``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
-  name.vb: WhenProcessed(Of T)(CoroutineCounterBuilder(Of T), ParamArray ScriptActionBlock())
-  fullName: LunyScript.Api.CounterBuilderWhenExtensions.WhenProcessed<T>(LunyScript.Api.CoroutineCounterBuilder<T>, params LunyScript.Blocks.ScriptActionBlock[])
-  fullName.vb: LunyScript.Api.CounterBuilderWhenExtensions.WhenProcessed(Of T)(LunyScript.Api.CoroutineCounterBuilder(Of T), ParamArray LunyScript.Blocks.ScriptActionBlock())
-  nameWithType: CounterBuilderWhenExtensions.WhenProcessed<T>(CoroutineCounterBuilder<T>, params ScriptActionBlock[])
-  nameWithType.vb: CounterBuilderWhenExtensions.WhenProcessed(Of T)(CoroutineCounterBuilder(Of T), ParamArray ScriptActionBlock())
+- uid: LunyScript.Api.CounterBuilderWhenExtensions.WhenProcessed``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  name: WhenProcessed<T>(CoroutineCounterBuilder<T>, params ActionBlock[])
+  href: api/LunyScript.Api.CounterBuilderWhenExtensions.html#LunyScript_Api_CounterBuilderWhenExtensions_WhenProcessed__1_LunyScript_Api_CoroutineCounterBuilder___0__LunyScript_Blocks_ActionBlock___
+  commentId: M:LunyScript.Api.CounterBuilderWhenExtensions.WhenProcessed``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  name.vb: WhenProcessed(Of T)(CoroutineCounterBuilder(Of T), ParamArray ActionBlock())
+  fullName: LunyScript.Api.CounterBuilderWhenExtensions.WhenProcessed<T>(LunyScript.Api.CoroutineCounterBuilder<T>, params LunyScript.Blocks.ActionBlock[])
+  fullName.vb: LunyScript.Api.CounterBuilderWhenExtensions.WhenProcessed(Of T)(LunyScript.Api.CoroutineCounterBuilder(Of T), ParamArray LunyScript.Blocks.ActionBlock())
+  nameWithType: CounterBuilderWhenExtensions.WhenProcessed<T>(CoroutineCounterBuilder<T>, params ActionBlock[])
+  nameWithType.vb: CounterBuilderWhenExtensions.WhenProcessed(Of T)(CoroutineCounterBuilder(Of T), ParamArray ActionBlock())
 - uid: LunyScript.Api.CounterBuilderWhenExtensions.WhenResumed*
   name: WhenResumed
   href: api/LunyScript.Api.CounterBuilderWhenExtensions.html#LunyScript_Api_CounterBuilderWhenExtensions_WhenResumed_
   commentId: Overload:LunyScript.Api.CounterBuilderWhenExtensions.WhenResumed
   fullName: LunyScript.Api.CounterBuilderWhenExtensions.WhenResumed
   nameWithType: CounterBuilderWhenExtensions.WhenResumed
-- uid: LunyScript.Api.CounterBuilderWhenExtensions.WhenResumed``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
-  name: WhenResumed<T>(CoroutineCounterBuilder<T>, params ScriptActionBlock[])
-  href: api/LunyScript.Api.CounterBuilderWhenExtensions.html#LunyScript_Api_CounterBuilderWhenExtensions_WhenResumed__1_LunyScript_Api_CoroutineCounterBuilder___0__LunyScript_Blocks_ScriptActionBlock___
-  commentId: M:LunyScript.Api.CounterBuilderWhenExtensions.WhenResumed``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
-  name.vb: WhenResumed(Of T)(CoroutineCounterBuilder(Of T), ParamArray ScriptActionBlock())
-  fullName: LunyScript.Api.CounterBuilderWhenExtensions.WhenResumed<T>(LunyScript.Api.CoroutineCounterBuilder<T>, params LunyScript.Blocks.ScriptActionBlock[])
-  fullName.vb: LunyScript.Api.CounterBuilderWhenExtensions.WhenResumed(Of T)(LunyScript.Api.CoroutineCounterBuilder(Of T), ParamArray LunyScript.Blocks.ScriptActionBlock())
-  nameWithType: CounterBuilderWhenExtensions.WhenResumed<T>(CoroutineCounterBuilder<T>, params ScriptActionBlock[])
-  nameWithType.vb: CounterBuilderWhenExtensions.WhenResumed(Of T)(CoroutineCounterBuilder(Of T), ParamArray ScriptActionBlock())
+- uid: LunyScript.Api.CounterBuilderWhenExtensions.WhenResumed``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  name: WhenResumed<T>(CoroutineCounterBuilder<T>, params ActionBlock[])
+  href: api/LunyScript.Api.CounterBuilderWhenExtensions.html#LunyScript_Api_CounterBuilderWhenExtensions_WhenResumed__1_LunyScript_Api_CoroutineCounterBuilder___0__LunyScript_Blocks_ActionBlock___
+  commentId: M:LunyScript.Api.CounterBuilderWhenExtensions.WhenResumed``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  name.vb: WhenResumed(Of T)(CoroutineCounterBuilder(Of T), ParamArray ActionBlock())
+  fullName: LunyScript.Api.CounterBuilderWhenExtensions.WhenResumed<T>(LunyScript.Api.CoroutineCounterBuilder<T>, params LunyScript.Blocks.ActionBlock[])
+  fullName.vb: LunyScript.Api.CounterBuilderWhenExtensions.WhenResumed(Of T)(LunyScript.Api.CoroutineCounterBuilder(Of T), ParamArray LunyScript.Blocks.ActionBlock())
+  nameWithType: CounterBuilderWhenExtensions.WhenResumed<T>(CoroutineCounterBuilder<T>, params ActionBlock[])
+  nameWithType.vb: CounterBuilderWhenExtensions.WhenResumed(Of T)(CoroutineCounterBuilder(Of T), ParamArray ActionBlock())
 - uid: LunyScript.Api.CounterBuilderWhenExtensions.WhenStarted*
   name: WhenStarted
   href: api/LunyScript.Api.CounterBuilderWhenExtensions.html#LunyScript_Api_CounterBuilderWhenExtensions_WhenStarted_
   commentId: Overload:LunyScript.Api.CounterBuilderWhenExtensions.WhenStarted
   fullName: LunyScript.Api.CounterBuilderWhenExtensions.WhenStarted
   nameWithType: CounterBuilderWhenExtensions.WhenStarted
-- uid: LunyScript.Api.CounterBuilderWhenExtensions.WhenStarted``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
-  name: WhenStarted<T>(CoroutineCounterBuilder<T>, params ScriptActionBlock[])
-  href: api/LunyScript.Api.CounterBuilderWhenExtensions.html#LunyScript_Api_CounterBuilderWhenExtensions_WhenStarted__1_LunyScript_Api_CoroutineCounterBuilder___0__LunyScript_Blocks_ScriptActionBlock___
-  commentId: M:LunyScript.Api.CounterBuilderWhenExtensions.WhenStarted``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
-  name.vb: WhenStarted(Of T)(CoroutineCounterBuilder(Of T), ParamArray ScriptActionBlock())
-  fullName: LunyScript.Api.CounterBuilderWhenExtensions.WhenStarted<T>(LunyScript.Api.CoroutineCounterBuilder<T>, params LunyScript.Blocks.ScriptActionBlock[])
-  fullName.vb: LunyScript.Api.CounterBuilderWhenExtensions.WhenStarted(Of T)(LunyScript.Api.CoroutineCounterBuilder(Of T), ParamArray LunyScript.Blocks.ScriptActionBlock())
-  nameWithType: CounterBuilderWhenExtensions.WhenStarted<T>(CoroutineCounterBuilder<T>, params ScriptActionBlock[])
-  nameWithType.vb: CounterBuilderWhenExtensions.WhenStarted(Of T)(CoroutineCounterBuilder(Of T), ParamArray ScriptActionBlock())
+- uid: LunyScript.Api.CounterBuilderWhenExtensions.WhenStarted``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  name: WhenStarted<T>(CoroutineCounterBuilder<T>, params ActionBlock[])
+  href: api/LunyScript.Api.CounterBuilderWhenExtensions.html#LunyScript_Api_CounterBuilderWhenExtensions_WhenStarted__1_LunyScript_Api_CoroutineCounterBuilder___0__LunyScript_Blocks_ActionBlock___
+  commentId: M:LunyScript.Api.CounterBuilderWhenExtensions.WhenStarted``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  name.vb: WhenStarted(Of T)(CoroutineCounterBuilder(Of T), ParamArray ActionBlock())
+  fullName: LunyScript.Api.CounterBuilderWhenExtensions.WhenStarted<T>(LunyScript.Api.CoroutineCounterBuilder<T>, params LunyScript.Blocks.ActionBlock[])
+  fullName.vb: LunyScript.Api.CounterBuilderWhenExtensions.WhenStarted(Of T)(LunyScript.Api.CoroutineCounterBuilder(Of T), ParamArray LunyScript.Blocks.ActionBlock())
+  nameWithType: CounterBuilderWhenExtensions.WhenStarted<T>(CoroutineCounterBuilder<T>, params ActionBlock[])
+  nameWithType.vb: CounterBuilderWhenExtensions.WhenStarted(Of T)(CoroutineCounterBuilder(Of T), ParamArray ActionBlock())
 - uid: LunyScript.Api.CounterBuilderWhenExtensions.WhenStopped*
   name: WhenStopped
   href: api/LunyScript.Api.CounterBuilderWhenExtensions.html#LunyScript_Api_CounterBuilderWhenExtensions_WhenStopped_
   commentId: Overload:LunyScript.Api.CounterBuilderWhenExtensions.WhenStopped
   fullName: LunyScript.Api.CounterBuilderWhenExtensions.WhenStopped
   nameWithType: CounterBuilderWhenExtensions.WhenStopped
-- uid: LunyScript.Api.CounterBuilderWhenExtensions.WhenStopped``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
-  name: WhenStopped<T>(CoroutineCounterBuilder<T>, params ScriptActionBlock[])
-  href: api/LunyScript.Api.CounterBuilderWhenExtensions.html#LunyScript_Api_CounterBuilderWhenExtensions_WhenStopped__1_LunyScript_Api_CoroutineCounterBuilder___0__LunyScript_Blocks_ScriptActionBlock___
-  commentId: M:LunyScript.Api.CounterBuilderWhenExtensions.WhenStopped``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
-  name.vb: WhenStopped(Of T)(CoroutineCounterBuilder(Of T), ParamArray ScriptActionBlock())
-  fullName: LunyScript.Api.CounterBuilderWhenExtensions.WhenStopped<T>(LunyScript.Api.CoroutineCounterBuilder<T>, params LunyScript.Blocks.ScriptActionBlock[])
-  fullName.vb: LunyScript.Api.CounterBuilderWhenExtensions.WhenStopped(Of T)(LunyScript.Api.CoroutineCounterBuilder(Of T), ParamArray LunyScript.Blocks.ScriptActionBlock())
-  nameWithType: CounterBuilderWhenExtensions.WhenStopped<T>(CoroutineCounterBuilder<T>, params ScriptActionBlock[])
-  nameWithType.vb: CounterBuilderWhenExtensions.WhenStopped(Of T)(CoroutineCounterBuilder(Of T), ParamArray ScriptActionBlock())
+- uid: LunyScript.Api.CounterBuilderWhenExtensions.WhenStopped``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  name: WhenStopped<T>(CoroutineCounterBuilder<T>, params ActionBlock[])
+  href: api/LunyScript.Api.CounterBuilderWhenExtensions.html#LunyScript_Api_CounterBuilderWhenExtensions_WhenStopped__1_LunyScript_Api_CoroutineCounterBuilder___0__LunyScript_Blocks_ActionBlock___
+  commentId: M:LunyScript.Api.CounterBuilderWhenExtensions.WhenStopped``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  name.vb: WhenStopped(Of T)(CoroutineCounterBuilder(Of T), ParamArray ActionBlock())
+  fullName: LunyScript.Api.CounterBuilderWhenExtensions.WhenStopped<T>(LunyScript.Api.CoroutineCounterBuilder<T>, params LunyScript.Blocks.ActionBlock[])
+  fullName.vb: LunyScript.Api.CounterBuilderWhenExtensions.WhenStopped(Of T)(LunyScript.Api.CoroutineCounterBuilder(Of T), ParamArray LunyScript.Blocks.ActionBlock())
+  nameWithType: CounterBuilderWhenExtensions.WhenStopped<T>(CoroutineCounterBuilder<T>, params ActionBlock[])
+  nameWithType.vb: CounterBuilderWhenExtensions.WhenStopped(Of T)(CoroutineCounterBuilder(Of T), ParamArray ActionBlock())
 - uid: LunyScript.Api.DebugApi
   name: DebugApi
   href: api/LunyScript.Api.DebugApi.html
@@ -16343,15 +16343,15 @@ references:
   commentId: T:LunyScript.Api.ForBlockBuilder
   fullName: LunyScript.Api.ForBlockBuilder
   nameWithType: ForBlockBuilder
-- uid: LunyScript.Api.ForBlockBuilder.Do(LunyScript.Blocks.ScriptActionBlock[])
-  name: Do(params ScriptActionBlock[])
-  href: api/LunyScript.Api.ForBlockBuilder.html#LunyScript_Api_ForBlockBuilder_Do_LunyScript_Blocks_ScriptActionBlock___
-  commentId: M:LunyScript.Api.ForBlockBuilder.Do(LunyScript.Blocks.ScriptActionBlock[])
-  name.vb: Do(ParamArray ScriptActionBlock())
-  fullName: LunyScript.Api.ForBlockBuilder.Do(params LunyScript.Blocks.ScriptActionBlock[])
-  fullName.vb: LunyScript.Api.ForBlockBuilder.Do(ParamArray LunyScript.Blocks.ScriptActionBlock())
-  nameWithType: ForBlockBuilder.Do(params ScriptActionBlock[])
-  nameWithType.vb: ForBlockBuilder.Do(ParamArray ScriptActionBlock())
+- uid: LunyScript.Api.ForBlockBuilder.Do(LunyScript.Blocks.ActionBlock[])
+  name: Do(params ActionBlock[])
+  href: api/LunyScript.Api.ForBlockBuilder.html#LunyScript_Api_ForBlockBuilder_Do_LunyScript_Blocks_ActionBlock___
+  commentId: M:LunyScript.Api.ForBlockBuilder.Do(LunyScript.Blocks.ActionBlock[])
+  name.vb: Do(ParamArray ActionBlock())
+  fullName: LunyScript.Api.ForBlockBuilder.Do(params LunyScript.Blocks.ActionBlock[])
+  fullName.vb: LunyScript.Api.ForBlockBuilder.Do(ParamArray LunyScript.Blocks.ActionBlock())
+  nameWithType: ForBlockBuilder.Do(params ActionBlock[])
+  nameWithType.vb: ForBlockBuilder.Do(ParamArray ActionBlock())
 - uid: LunyScript.Api.ForBlockBuilder.Do*
   name: Do
   href: api/LunyScript.Api.ForBlockBuilder.html#LunyScript_Api_ForBlockBuilder_Do_
@@ -17017,14 +17017,14 @@ references:
   fullName.vb: LunyScript.Api.ObjectCreateBuilder(Of T).Parent
   nameWithType: ObjectCreateBuilder<T>.Parent
   nameWithType.vb: ObjectCreateBuilder(Of T).Parent
-- uid: LunyScript.Api.ObjectCreateBuilder`1.op_Implicit(LunyScript.Api.ObjectCreateBuilder{`0})~LunyScript.Blocks.ScriptActionBlock
-  name: implicit operator ScriptActionBlock(ObjectCreateBuilder<T>)
-  href: api/LunyScript.Api.ObjectCreateBuilder-1.html#LunyScript_Api_ObjectCreateBuilder_1_op_Implicit_LunyScript_Api_ObjectCreateBuilder__0___LunyScript_Blocks_ScriptActionBlock
-  commentId: M:LunyScript.Api.ObjectCreateBuilder`1.op_Implicit(LunyScript.Api.ObjectCreateBuilder{`0})~LunyScript.Blocks.ScriptActionBlock
+- uid: LunyScript.Api.ObjectCreateBuilder`1.op_Implicit(LunyScript.Api.ObjectCreateBuilder{`0})~LunyScript.Blocks.ActionBlock
+  name: implicit operator ActionBlock(ObjectCreateBuilder<T>)
+  href: api/LunyScript.Api.ObjectCreateBuilder-1.html#LunyScript_Api_ObjectCreateBuilder_1_op_Implicit_LunyScript_Api_ObjectCreateBuilder__0___LunyScript_Blocks_ActionBlock
+  commentId: M:LunyScript.Api.ObjectCreateBuilder`1.op_Implicit(LunyScript.Api.ObjectCreateBuilder{`0})~LunyScript.Blocks.ActionBlock
   name.vb: CType(ObjectCreateBuilder(Of T))
-  fullName: LunyScript.Api.ObjectCreateBuilder<T>.implicit operator LunyScript.Blocks.ScriptActionBlock(LunyScript.Api.ObjectCreateBuilder<T>)
+  fullName: LunyScript.Api.ObjectCreateBuilder<T>.implicit operator LunyScript.Blocks.ActionBlock(LunyScript.Api.ObjectCreateBuilder<T>)
   fullName.vb: LunyScript.Api.ObjectCreateBuilder(Of T).CType(LunyScript.Api.ObjectCreateBuilder(Of T))
-  nameWithType: ObjectCreateBuilder<T>.implicit operator ScriptActionBlock(ObjectCreateBuilder<T>)
+  nameWithType: ObjectCreateBuilder<T>.implicit operator ActionBlock(ObjectCreateBuilder<T>)
   nameWithType.vb: ObjectCreateBuilder(Of T).CType(ObjectCreateBuilder(Of T))
 - uid: LunyScript.Api.ObjectCreateBuilder`1.op_Implicit*
   name: implicit operator
@@ -17063,15 +17063,15 @@ references:
   commentId: T:LunyScript.Api.OnObjectEventBuilder
   fullName: LunyScript.Api.OnObjectEventBuilder
   nameWithType: OnObjectEventBuilder
-- uid: LunyScript.Api.OnObjectEventBuilder.AfterFrameUpdate(LunyScript.Blocks.ScriptActionBlock[])
-  name: AfterFrameUpdate(params ScriptActionBlock[])
-  href: api/LunyScript.Api.OnObjectEventBuilder.html#LunyScript_Api_OnObjectEventBuilder_AfterFrameUpdate_LunyScript_Blocks_ScriptActionBlock___
-  commentId: M:LunyScript.Api.OnObjectEventBuilder.AfterFrameUpdate(LunyScript.Blocks.ScriptActionBlock[])
-  name.vb: AfterFrameUpdate(ParamArray ScriptActionBlock())
-  fullName: LunyScript.Api.OnObjectEventBuilder.AfterFrameUpdate(params LunyScript.Blocks.ScriptActionBlock[])
-  fullName.vb: LunyScript.Api.OnObjectEventBuilder.AfterFrameUpdate(ParamArray LunyScript.Blocks.ScriptActionBlock())
-  nameWithType: OnObjectEventBuilder.AfterFrameUpdate(params ScriptActionBlock[])
-  nameWithType.vb: OnObjectEventBuilder.AfterFrameUpdate(ParamArray ScriptActionBlock())
+- uid: LunyScript.Api.OnObjectEventBuilder.AfterFrameUpdate(LunyScript.Blocks.ActionBlock[])
+  name: AfterFrameUpdate(params ActionBlock[])
+  href: api/LunyScript.Api.OnObjectEventBuilder.html#LunyScript_Api_OnObjectEventBuilder_AfterFrameUpdate_LunyScript_Blocks_ActionBlock___
+  commentId: M:LunyScript.Api.OnObjectEventBuilder.AfterFrameUpdate(LunyScript.Blocks.ActionBlock[])
+  name.vb: AfterFrameUpdate(ParamArray ActionBlock())
+  fullName: LunyScript.Api.OnObjectEventBuilder.AfterFrameUpdate(params LunyScript.Blocks.ActionBlock[])
+  fullName.vb: LunyScript.Api.OnObjectEventBuilder.AfterFrameUpdate(ParamArray LunyScript.Blocks.ActionBlock())
+  nameWithType: OnObjectEventBuilder.AfterFrameUpdate(params ActionBlock[])
+  nameWithType.vb: OnObjectEventBuilder.AfterFrameUpdate(ParamArray ActionBlock())
 - uid: LunyScript.Api.OnObjectEventBuilder.AfterFrameUpdate*
   name: AfterFrameUpdate
   href: api/LunyScript.Api.OnObjectEventBuilder.html#LunyScript_Api_OnObjectEventBuilder_AfterFrameUpdate_
@@ -17090,105 +17090,105 @@ references:
   commentId: Overload:LunyScript.Api.OnObjectEventBuilder.Collision
   fullName: LunyScript.Api.OnObjectEventBuilder.Collision
   nameWithType: OnObjectEventBuilder.Collision
-- uid: LunyScript.Api.OnObjectEventBuilder.Created(LunyScript.Blocks.ScriptActionBlock[])
-  name: Created(params ScriptActionBlock[])
-  href: api/LunyScript.Api.OnObjectEventBuilder.html#LunyScript_Api_OnObjectEventBuilder_Created_LunyScript_Blocks_ScriptActionBlock___
-  commentId: M:LunyScript.Api.OnObjectEventBuilder.Created(LunyScript.Blocks.ScriptActionBlock[])
-  name.vb: Created(ParamArray ScriptActionBlock())
-  fullName: LunyScript.Api.OnObjectEventBuilder.Created(params LunyScript.Blocks.ScriptActionBlock[])
-  fullName.vb: LunyScript.Api.OnObjectEventBuilder.Created(ParamArray LunyScript.Blocks.ScriptActionBlock())
-  nameWithType: OnObjectEventBuilder.Created(params ScriptActionBlock[])
-  nameWithType.vb: OnObjectEventBuilder.Created(ParamArray ScriptActionBlock())
+- uid: LunyScript.Api.OnObjectEventBuilder.Created(LunyScript.Blocks.ActionBlock[])
+  name: Created(params ActionBlock[])
+  href: api/LunyScript.Api.OnObjectEventBuilder.html#LunyScript_Api_OnObjectEventBuilder_Created_LunyScript_Blocks_ActionBlock___
+  commentId: M:LunyScript.Api.OnObjectEventBuilder.Created(LunyScript.Blocks.ActionBlock[])
+  name.vb: Created(ParamArray ActionBlock())
+  fullName: LunyScript.Api.OnObjectEventBuilder.Created(params LunyScript.Blocks.ActionBlock[])
+  fullName.vb: LunyScript.Api.OnObjectEventBuilder.Created(ParamArray LunyScript.Blocks.ActionBlock())
+  nameWithType: OnObjectEventBuilder.Created(params ActionBlock[])
+  nameWithType.vb: OnObjectEventBuilder.Created(ParamArray ActionBlock())
 - uid: LunyScript.Api.OnObjectEventBuilder.Created*
   name: Created
   href: api/LunyScript.Api.OnObjectEventBuilder.html#LunyScript_Api_OnObjectEventBuilder_Created_
   commentId: Overload:LunyScript.Api.OnObjectEventBuilder.Created
   fullName: LunyScript.Api.OnObjectEventBuilder.Created
   nameWithType: OnObjectEventBuilder.Created
-- uid: LunyScript.Api.OnObjectEventBuilder.Destroyed(LunyScript.Blocks.ScriptActionBlock[])
-  name: Destroyed(params ScriptActionBlock[])
-  href: api/LunyScript.Api.OnObjectEventBuilder.html#LunyScript_Api_OnObjectEventBuilder_Destroyed_LunyScript_Blocks_ScriptActionBlock___
-  commentId: M:LunyScript.Api.OnObjectEventBuilder.Destroyed(LunyScript.Blocks.ScriptActionBlock[])
-  name.vb: Destroyed(ParamArray ScriptActionBlock())
-  fullName: LunyScript.Api.OnObjectEventBuilder.Destroyed(params LunyScript.Blocks.ScriptActionBlock[])
-  fullName.vb: LunyScript.Api.OnObjectEventBuilder.Destroyed(ParamArray LunyScript.Blocks.ScriptActionBlock())
-  nameWithType: OnObjectEventBuilder.Destroyed(params ScriptActionBlock[])
-  nameWithType.vb: OnObjectEventBuilder.Destroyed(ParamArray ScriptActionBlock())
+- uid: LunyScript.Api.OnObjectEventBuilder.Destroyed(LunyScript.Blocks.ActionBlock[])
+  name: Destroyed(params ActionBlock[])
+  href: api/LunyScript.Api.OnObjectEventBuilder.html#LunyScript_Api_OnObjectEventBuilder_Destroyed_LunyScript_Blocks_ActionBlock___
+  commentId: M:LunyScript.Api.OnObjectEventBuilder.Destroyed(LunyScript.Blocks.ActionBlock[])
+  name.vb: Destroyed(ParamArray ActionBlock())
+  fullName: LunyScript.Api.OnObjectEventBuilder.Destroyed(params LunyScript.Blocks.ActionBlock[])
+  fullName.vb: LunyScript.Api.OnObjectEventBuilder.Destroyed(ParamArray LunyScript.Blocks.ActionBlock())
+  nameWithType: OnObjectEventBuilder.Destroyed(params ActionBlock[])
+  nameWithType.vb: OnObjectEventBuilder.Destroyed(ParamArray ActionBlock())
 - uid: LunyScript.Api.OnObjectEventBuilder.Destroyed*
   name: Destroyed
   href: api/LunyScript.Api.OnObjectEventBuilder.html#LunyScript_Api_OnObjectEventBuilder_Destroyed_
   commentId: Overload:LunyScript.Api.OnObjectEventBuilder.Destroyed
   fullName: LunyScript.Api.OnObjectEventBuilder.Destroyed
   nameWithType: OnObjectEventBuilder.Destroyed
-- uid: LunyScript.Api.OnObjectEventBuilder.Disabled(LunyScript.Blocks.ScriptActionBlock[])
-  name: Disabled(params ScriptActionBlock[])
-  href: api/LunyScript.Api.OnObjectEventBuilder.html#LunyScript_Api_OnObjectEventBuilder_Disabled_LunyScript_Blocks_ScriptActionBlock___
-  commentId: M:LunyScript.Api.OnObjectEventBuilder.Disabled(LunyScript.Blocks.ScriptActionBlock[])
-  name.vb: Disabled(ParamArray ScriptActionBlock())
-  fullName: LunyScript.Api.OnObjectEventBuilder.Disabled(params LunyScript.Blocks.ScriptActionBlock[])
-  fullName.vb: LunyScript.Api.OnObjectEventBuilder.Disabled(ParamArray LunyScript.Blocks.ScriptActionBlock())
-  nameWithType: OnObjectEventBuilder.Disabled(params ScriptActionBlock[])
-  nameWithType.vb: OnObjectEventBuilder.Disabled(ParamArray ScriptActionBlock())
+- uid: LunyScript.Api.OnObjectEventBuilder.Disabled(LunyScript.Blocks.ActionBlock[])
+  name: Disabled(params ActionBlock[])
+  href: api/LunyScript.Api.OnObjectEventBuilder.html#LunyScript_Api_OnObjectEventBuilder_Disabled_LunyScript_Blocks_ActionBlock___
+  commentId: M:LunyScript.Api.OnObjectEventBuilder.Disabled(LunyScript.Blocks.ActionBlock[])
+  name.vb: Disabled(ParamArray ActionBlock())
+  fullName: LunyScript.Api.OnObjectEventBuilder.Disabled(params LunyScript.Blocks.ActionBlock[])
+  fullName.vb: LunyScript.Api.OnObjectEventBuilder.Disabled(ParamArray LunyScript.Blocks.ActionBlock())
+  nameWithType: OnObjectEventBuilder.Disabled(params ActionBlock[])
+  nameWithType.vb: OnObjectEventBuilder.Disabled(ParamArray ActionBlock())
 - uid: LunyScript.Api.OnObjectEventBuilder.Disabled*
   name: Disabled
   href: api/LunyScript.Api.OnObjectEventBuilder.html#LunyScript_Api_OnObjectEventBuilder_Disabled_
   commentId: Overload:LunyScript.Api.OnObjectEventBuilder.Disabled
   fullName: LunyScript.Api.OnObjectEventBuilder.Disabled
   nameWithType: OnObjectEventBuilder.Disabled
-- uid: LunyScript.Api.OnObjectEventBuilder.Enabled(LunyScript.Blocks.ScriptActionBlock[])
-  name: Enabled(params ScriptActionBlock[])
-  href: api/LunyScript.Api.OnObjectEventBuilder.html#LunyScript_Api_OnObjectEventBuilder_Enabled_LunyScript_Blocks_ScriptActionBlock___
-  commentId: M:LunyScript.Api.OnObjectEventBuilder.Enabled(LunyScript.Blocks.ScriptActionBlock[])
-  name.vb: Enabled(ParamArray ScriptActionBlock())
-  fullName: LunyScript.Api.OnObjectEventBuilder.Enabled(params LunyScript.Blocks.ScriptActionBlock[])
-  fullName.vb: LunyScript.Api.OnObjectEventBuilder.Enabled(ParamArray LunyScript.Blocks.ScriptActionBlock())
-  nameWithType: OnObjectEventBuilder.Enabled(params ScriptActionBlock[])
-  nameWithType.vb: OnObjectEventBuilder.Enabled(ParamArray ScriptActionBlock())
+- uid: LunyScript.Api.OnObjectEventBuilder.Enabled(LunyScript.Blocks.ActionBlock[])
+  name: Enabled(params ActionBlock[])
+  href: api/LunyScript.Api.OnObjectEventBuilder.html#LunyScript_Api_OnObjectEventBuilder_Enabled_LunyScript_Blocks_ActionBlock___
+  commentId: M:LunyScript.Api.OnObjectEventBuilder.Enabled(LunyScript.Blocks.ActionBlock[])
+  name.vb: Enabled(ParamArray ActionBlock())
+  fullName: LunyScript.Api.OnObjectEventBuilder.Enabled(params LunyScript.Blocks.ActionBlock[])
+  fullName.vb: LunyScript.Api.OnObjectEventBuilder.Enabled(ParamArray LunyScript.Blocks.ActionBlock())
+  nameWithType: OnObjectEventBuilder.Enabled(params ActionBlock[])
+  nameWithType.vb: OnObjectEventBuilder.Enabled(ParamArray ActionBlock())
 - uid: LunyScript.Api.OnObjectEventBuilder.Enabled*
   name: Enabled
   href: api/LunyScript.Api.OnObjectEventBuilder.html#LunyScript_Api_OnObjectEventBuilder_Enabled_
   commentId: Overload:LunyScript.Api.OnObjectEventBuilder.Enabled
   fullName: LunyScript.Api.OnObjectEventBuilder.Enabled
   nameWithType: OnObjectEventBuilder.Enabled
-- uid: LunyScript.Api.OnObjectEventBuilder.FrameUpdate(LunyScript.Blocks.ScriptActionBlock[])
-  name: FrameUpdate(params ScriptActionBlock[])
-  href: api/LunyScript.Api.OnObjectEventBuilder.html#LunyScript_Api_OnObjectEventBuilder_FrameUpdate_LunyScript_Blocks_ScriptActionBlock___
-  commentId: M:LunyScript.Api.OnObjectEventBuilder.FrameUpdate(LunyScript.Blocks.ScriptActionBlock[])
-  name.vb: FrameUpdate(ParamArray ScriptActionBlock())
-  fullName: LunyScript.Api.OnObjectEventBuilder.FrameUpdate(params LunyScript.Blocks.ScriptActionBlock[])
-  fullName.vb: LunyScript.Api.OnObjectEventBuilder.FrameUpdate(ParamArray LunyScript.Blocks.ScriptActionBlock())
-  nameWithType: OnObjectEventBuilder.FrameUpdate(params ScriptActionBlock[])
-  nameWithType.vb: OnObjectEventBuilder.FrameUpdate(ParamArray ScriptActionBlock())
+- uid: LunyScript.Api.OnObjectEventBuilder.FrameUpdate(LunyScript.Blocks.ActionBlock[])
+  name: FrameUpdate(params ActionBlock[])
+  href: api/LunyScript.Api.OnObjectEventBuilder.html#LunyScript_Api_OnObjectEventBuilder_FrameUpdate_LunyScript_Blocks_ActionBlock___
+  commentId: M:LunyScript.Api.OnObjectEventBuilder.FrameUpdate(LunyScript.Blocks.ActionBlock[])
+  name.vb: FrameUpdate(ParamArray ActionBlock())
+  fullName: LunyScript.Api.OnObjectEventBuilder.FrameUpdate(params LunyScript.Blocks.ActionBlock[])
+  fullName.vb: LunyScript.Api.OnObjectEventBuilder.FrameUpdate(ParamArray LunyScript.Blocks.ActionBlock())
+  nameWithType: OnObjectEventBuilder.FrameUpdate(params ActionBlock[])
+  nameWithType.vb: OnObjectEventBuilder.FrameUpdate(ParamArray ActionBlock())
 - uid: LunyScript.Api.OnObjectEventBuilder.FrameUpdate*
   name: FrameUpdate
   href: api/LunyScript.Api.OnObjectEventBuilder.html#LunyScript_Api_OnObjectEventBuilder_FrameUpdate_
   commentId: Overload:LunyScript.Api.OnObjectEventBuilder.FrameUpdate
   fullName: LunyScript.Api.OnObjectEventBuilder.FrameUpdate
   nameWithType: OnObjectEventBuilder.FrameUpdate
-- uid: LunyScript.Api.OnObjectEventBuilder.Heartbeat(LunyScript.Blocks.ScriptActionBlock[])
-  name: Heartbeat(params ScriptActionBlock[])
-  href: api/LunyScript.Api.OnObjectEventBuilder.html#LunyScript_Api_OnObjectEventBuilder_Heartbeat_LunyScript_Blocks_ScriptActionBlock___
-  commentId: M:LunyScript.Api.OnObjectEventBuilder.Heartbeat(LunyScript.Blocks.ScriptActionBlock[])
-  name.vb: Heartbeat(ParamArray ScriptActionBlock())
-  fullName: LunyScript.Api.OnObjectEventBuilder.Heartbeat(params LunyScript.Blocks.ScriptActionBlock[])
-  fullName.vb: LunyScript.Api.OnObjectEventBuilder.Heartbeat(ParamArray LunyScript.Blocks.ScriptActionBlock())
-  nameWithType: OnObjectEventBuilder.Heartbeat(params ScriptActionBlock[])
-  nameWithType.vb: OnObjectEventBuilder.Heartbeat(ParamArray ScriptActionBlock())
+- uid: LunyScript.Api.OnObjectEventBuilder.Heartbeat(LunyScript.Blocks.ActionBlock[])
+  name: Heartbeat(params ActionBlock[])
+  href: api/LunyScript.Api.OnObjectEventBuilder.html#LunyScript_Api_OnObjectEventBuilder_Heartbeat_LunyScript_Blocks_ActionBlock___
+  commentId: M:LunyScript.Api.OnObjectEventBuilder.Heartbeat(LunyScript.Blocks.ActionBlock[])
+  name.vb: Heartbeat(ParamArray ActionBlock())
+  fullName: LunyScript.Api.OnObjectEventBuilder.Heartbeat(params LunyScript.Blocks.ActionBlock[])
+  fullName.vb: LunyScript.Api.OnObjectEventBuilder.Heartbeat(ParamArray LunyScript.Blocks.ActionBlock())
+  nameWithType: OnObjectEventBuilder.Heartbeat(params ActionBlock[])
+  nameWithType.vb: OnObjectEventBuilder.Heartbeat(ParamArray ActionBlock())
 - uid: LunyScript.Api.OnObjectEventBuilder.Heartbeat*
   name: Heartbeat
   href: api/LunyScript.Api.OnObjectEventBuilder.html#LunyScript_Api_OnObjectEventBuilder_Heartbeat_
   commentId: Overload:LunyScript.Api.OnObjectEventBuilder.Heartbeat
   fullName: LunyScript.Api.OnObjectEventBuilder.Heartbeat
   nameWithType: OnObjectEventBuilder.Heartbeat
-- uid: LunyScript.Api.OnObjectEventBuilder.Ready(LunyScript.Blocks.ScriptActionBlock[])
-  name: Ready(params ScriptActionBlock[])
-  href: api/LunyScript.Api.OnObjectEventBuilder.html#LunyScript_Api_OnObjectEventBuilder_Ready_LunyScript_Blocks_ScriptActionBlock___
-  commentId: M:LunyScript.Api.OnObjectEventBuilder.Ready(LunyScript.Blocks.ScriptActionBlock[])
-  name.vb: Ready(ParamArray ScriptActionBlock())
-  fullName: LunyScript.Api.OnObjectEventBuilder.Ready(params LunyScript.Blocks.ScriptActionBlock[])
-  fullName.vb: LunyScript.Api.OnObjectEventBuilder.Ready(ParamArray LunyScript.Blocks.ScriptActionBlock())
-  nameWithType: OnObjectEventBuilder.Ready(params ScriptActionBlock[])
-  nameWithType.vb: OnObjectEventBuilder.Ready(ParamArray ScriptActionBlock())
+- uid: LunyScript.Api.OnObjectEventBuilder.Ready(LunyScript.Blocks.ActionBlock[])
+  name: Ready(params ActionBlock[])
+  href: api/LunyScript.Api.OnObjectEventBuilder.html#LunyScript_Api_OnObjectEventBuilder_Ready_LunyScript_Blocks_ActionBlock___
+  commentId: M:LunyScript.Api.OnObjectEventBuilder.Ready(LunyScript.Blocks.ActionBlock[])
+  name.vb: Ready(ParamArray ActionBlock())
+  fullName: LunyScript.Api.OnObjectEventBuilder.Ready(params LunyScript.Blocks.ActionBlock[])
+  fullName.vb: LunyScript.Api.OnObjectEventBuilder.Ready(ParamArray LunyScript.Blocks.ActionBlock())
+  nameWithType: OnObjectEventBuilder.Ready(params ActionBlock[])
+  nameWithType.vb: OnObjectEventBuilder.Ready(ParamArray ActionBlock())
 - uid: LunyScript.Api.OnObjectEventBuilder.Ready*
   name: Ready
   href: api/LunyScript.Api.OnObjectEventBuilder.html#LunyScript_Api_OnObjectEventBuilder_Ready_
@@ -17216,15 +17216,15 @@ references:
   fullName.vb: LunyScript.Api.PhysicsEventBuilder(Of T)
   nameWithType: PhysicsEventBuilder<T>
   nameWithType.vb: PhysicsEventBuilder(Of T)
-- uid: LunyScript.Api.PhysicsEventBuilder`1.Begins(LunyScript.Blocks.ScriptActionBlock[])
-  name: Begins(params ScriptActionBlock[])
-  href: api/LunyScript.Api.PhysicsEventBuilder-1.html#LunyScript_Api_PhysicsEventBuilder_1_Begins_LunyScript_Blocks_ScriptActionBlock___
-  commentId: M:LunyScript.Api.PhysicsEventBuilder`1.Begins(LunyScript.Blocks.ScriptActionBlock[])
-  name.vb: Begins(ParamArray ScriptActionBlock())
-  fullName: LunyScript.Api.PhysicsEventBuilder<T>.Begins(params LunyScript.Blocks.ScriptActionBlock[])
-  fullName.vb: LunyScript.Api.PhysicsEventBuilder(Of T).Begins(ParamArray LunyScript.Blocks.ScriptActionBlock())
-  nameWithType: PhysicsEventBuilder<T>.Begins(params ScriptActionBlock[])
-  nameWithType.vb: PhysicsEventBuilder(Of T).Begins(ParamArray ScriptActionBlock())
+- uid: LunyScript.Api.PhysicsEventBuilder`1.Begins(LunyScript.Blocks.ActionBlock[])
+  name: Begins(params ActionBlock[])
+  href: api/LunyScript.Api.PhysicsEventBuilder-1.html#LunyScript_Api_PhysicsEventBuilder_1_Begins_LunyScript_Blocks_ActionBlock___
+  commentId: M:LunyScript.Api.PhysicsEventBuilder`1.Begins(LunyScript.Blocks.ActionBlock[])
+  name.vb: Begins(ParamArray ActionBlock())
+  fullName: LunyScript.Api.PhysicsEventBuilder<T>.Begins(params LunyScript.Blocks.ActionBlock[])
+  fullName.vb: LunyScript.Api.PhysicsEventBuilder(Of T).Begins(ParamArray LunyScript.Blocks.ActionBlock())
+  nameWithType: PhysicsEventBuilder<T>.Begins(params ActionBlock[])
+  nameWithType.vb: PhysicsEventBuilder(Of T).Begins(ParamArray ActionBlock())
 - uid: LunyScript.Api.PhysicsEventBuilder`1.Begins*
   name: Begins
   href: api/LunyScript.Api.PhysicsEventBuilder-1.html#LunyScript_Api_PhysicsEventBuilder_1_Begins_
@@ -17233,15 +17233,15 @@ references:
   fullName.vb: LunyScript.Api.PhysicsEventBuilder(Of T).Begins
   nameWithType: PhysicsEventBuilder<T>.Begins
   nameWithType.vb: PhysicsEventBuilder(Of T).Begins
-- uid: LunyScript.Api.PhysicsEventBuilder`1.Continues(LunyScript.Blocks.ScriptActionBlock[])
-  name: Continues(params ScriptActionBlock[])
-  href: api/LunyScript.Api.PhysicsEventBuilder-1.html#LunyScript_Api_PhysicsEventBuilder_1_Continues_LunyScript_Blocks_ScriptActionBlock___
-  commentId: M:LunyScript.Api.PhysicsEventBuilder`1.Continues(LunyScript.Blocks.ScriptActionBlock[])
-  name.vb: Continues(ParamArray ScriptActionBlock())
-  fullName: LunyScript.Api.PhysicsEventBuilder<T>.Continues(params LunyScript.Blocks.ScriptActionBlock[])
-  fullName.vb: LunyScript.Api.PhysicsEventBuilder(Of T).Continues(ParamArray LunyScript.Blocks.ScriptActionBlock())
-  nameWithType: PhysicsEventBuilder<T>.Continues(params ScriptActionBlock[])
-  nameWithType.vb: PhysicsEventBuilder(Of T).Continues(ParamArray ScriptActionBlock())
+- uid: LunyScript.Api.PhysicsEventBuilder`1.Continues(LunyScript.Blocks.ActionBlock[])
+  name: Continues(params ActionBlock[])
+  href: api/LunyScript.Api.PhysicsEventBuilder-1.html#LunyScript_Api_PhysicsEventBuilder_1_Continues_LunyScript_Blocks_ActionBlock___
+  commentId: M:LunyScript.Api.PhysicsEventBuilder`1.Continues(LunyScript.Blocks.ActionBlock[])
+  name.vb: Continues(ParamArray ActionBlock())
+  fullName: LunyScript.Api.PhysicsEventBuilder<T>.Continues(params LunyScript.Blocks.ActionBlock[])
+  fullName.vb: LunyScript.Api.PhysicsEventBuilder(Of T).Continues(ParamArray LunyScript.Blocks.ActionBlock())
+  nameWithType: PhysicsEventBuilder<T>.Continues(params ActionBlock[])
+  nameWithType.vb: PhysicsEventBuilder(Of T).Continues(ParamArray ActionBlock())
 - uid: LunyScript.Api.PhysicsEventBuilder`1.Continues*
   name: Continues
   href: api/LunyScript.Api.PhysicsEventBuilder-1.html#LunyScript_Api_PhysicsEventBuilder_1_Continues_
@@ -17267,15 +17267,15 @@ references:
   fullName.vb: LunyScript.Api.PhysicsEventBuilder(Of T).Cooldown
   nameWithType: PhysicsEventBuilder<T>.Cooldown
   nameWithType.vb: PhysicsEventBuilder(Of T).Cooldown
-- uid: LunyScript.Api.PhysicsEventBuilder`1.Ends(LunyScript.Blocks.ScriptActionBlock[])
-  name: Ends(params ScriptActionBlock[])
-  href: api/LunyScript.Api.PhysicsEventBuilder-1.html#LunyScript_Api_PhysicsEventBuilder_1_Ends_LunyScript_Blocks_ScriptActionBlock___
-  commentId: M:LunyScript.Api.PhysicsEventBuilder`1.Ends(LunyScript.Blocks.ScriptActionBlock[])
-  name.vb: Ends(ParamArray ScriptActionBlock())
-  fullName: LunyScript.Api.PhysicsEventBuilder<T>.Ends(params LunyScript.Blocks.ScriptActionBlock[])
-  fullName.vb: LunyScript.Api.PhysicsEventBuilder(Of T).Ends(ParamArray LunyScript.Blocks.ScriptActionBlock())
-  nameWithType: PhysicsEventBuilder<T>.Ends(params ScriptActionBlock[])
-  nameWithType.vb: PhysicsEventBuilder(Of T).Ends(ParamArray ScriptActionBlock())
+- uid: LunyScript.Api.PhysicsEventBuilder`1.Ends(LunyScript.Blocks.ActionBlock[])
+  name: Ends(params ActionBlock[])
+  href: api/LunyScript.Api.PhysicsEventBuilder-1.html#LunyScript_Api_PhysicsEventBuilder_1_Ends_LunyScript_Blocks_ActionBlock___
+  commentId: M:LunyScript.Api.PhysicsEventBuilder`1.Ends(LunyScript.Blocks.ActionBlock[])
+  name.vb: Ends(ParamArray ActionBlock())
+  fullName: LunyScript.Api.PhysicsEventBuilder<T>.Ends(params LunyScript.Blocks.ActionBlock[])
+  fullName.vb: LunyScript.Api.PhysicsEventBuilder(Of T).Ends(ParamArray LunyScript.Blocks.ActionBlock())
+  nameWithType: PhysicsEventBuilder<T>.Ends(params ActionBlock[])
+  nameWithType.vb: PhysicsEventBuilder(Of T).Ends(ParamArray ActionBlock())
 - uid: LunyScript.Api.PhysicsEventBuilder`1.Ends*
   name: Ends
   href: api/LunyScript.Api.PhysicsEventBuilder-1.html#LunyScript_Api_PhysicsEventBuilder_1_Ends_
@@ -17475,15 +17475,15 @@ references:
   commentId: Overload:LunyScript.Api.TimerBuilderFinalExtensions.WhenElapsed
   fullName: LunyScript.Api.TimerBuilderFinalExtensions.WhenElapsed
   nameWithType: TimerBuilderFinalExtensions.WhenElapsed
-- uid: LunyScript.Api.TimerBuilderFinalExtensions.WhenElapsed``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
-  name: WhenElapsed<T>(CoroutineTimerBuilder<T>, params ScriptActionBlock[])
-  href: api/LunyScript.Api.TimerBuilderFinalExtensions.html#LunyScript_Api_TimerBuilderFinalExtensions_WhenElapsed__1_LunyScript_Api_CoroutineTimerBuilder___0__LunyScript_Blocks_ScriptActionBlock___
-  commentId: M:LunyScript.Api.TimerBuilderFinalExtensions.WhenElapsed``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
-  name.vb: WhenElapsed(Of T)(CoroutineTimerBuilder(Of T), ParamArray ScriptActionBlock())
-  fullName: LunyScript.Api.TimerBuilderFinalExtensions.WhenElapsed<T>(LunyScript.Api.CoroutineTimerBuilder<T>, params LunyScript.Blocks.ScriptActionBlock[])
-  fullName.vb: LunyScript.Api.TimerBuilderFinalExtensions.WhenElapsed(Of T)(LunyScript.Api.CoroutineTimerBuilder(Of T), ParamArray LunyScript.Blocks.ScriptActionBlock())
-  nameWithType: TimerBuilderFinalExtensions.WhenElapsed<T>(CoroutineTimerBuilder<T>, params ScriptActionBlock[])
-  nameWithType.vb: TimerBuilderFinalExtensions.WhenElapsed(Of T)(CoroutineTimerBuilder(Of T), ParamArray ScriptActionBlock())
+- uid: LunyScript.Api.TimerBuilderFinalExtensions.WhenElapsed``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  name: WhenElapsed<T>(CoroutineTimerBuilder<T>, params ActionBlock[])
+  href: api/LunyScript.Api.TimerBuilderFinalExtensions.html#LunyScript_Api_TimerBuilderFinalExtensions_WhenElapsed__1_LunyScript_Api_CoroutineTimerBuilder___0__LunyScript_Blocks_ActionBlock___
+  commentId: M:LunyScript.Api.TimerBuilderFinalExtensions.WhenElapsed``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  name.vb: WhenElapsed(Of T)(CoroutineTimerBuilder(Of T), ParamArray ActionBlock())
+  fullName: LunyScript.Api.TimerBuilderFinalExtensions.WhenElapsed<T>(LunyScript.Api.CoroutineTimerBuilder<T>, params LunyScript.Blocks.ActionBlock[])
+  fullName.vb: LunyScript.Api.TimerBuilderFinalExtensions.WhenElapsed(Of T)(LunyScript.Api.CoroutineTimerBuilder(Of T), ParamArray LunyScript.Blocks.ActionBlock())
+  nameWithType: TimerBuilderFinalExtensions.WhenElapsed<T>(CoroutineTimerBuilder<T>, params ActionBlock[])
+  nameWithType.vb: TimerBuilderFinalExtensions.WhenElapsed(Of T)(CoroutineTimerBuilder(Of T), ParamArray ActionBlock())
 - uid: LunyScript.Api.TimerBuilderUnitExtensions
   name: TimerBuilderUnitExtensions
   href: api/LunyScript.Api.TimerBuilderUnitExtensions.html
@@ -17547,75 +17547,75 @@ references:
   commentId: Overload:LunyScript.Api.TimerBuilderWhenExtensions.WhenPaused
   fullName: LunyScript.Api.TimerBuilderWhenExtensions.WhenPaused
   nameWithType: TimerBuilderWhenExtensions.WhenPaused
-- uid: LunyScript.Api.TimerBuilderWhenExtensions.WhenPaused``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
-  name: WhenPaused<T>(CoroutineTimerBuilder<T>, params ScriptActionBlock[])
-  href: api/LunyScript.Api.TimerBuilderWhenExtensions.html#LunyScript_Api_TimerBuilderWhenExtensions_WhenPaused__1_LunyScript_Api_CoroutineTimerBuilder___0__LunyScript_Blocks_ScriptActionBlock___
-  commentId: M:LunyScript.Api.TimerBuilderWhenExtensions.WhenPaused``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
-  name.vb: WhenPaused(Of T)(CoroutineTimerBuilder(Of T), ParamArray ScriptActionBlock())
-  fullName: LunyScript.Api.TimerBuilderWhenExtensions.WhenPaused<T>(LunyScript.Api.CoroutineTimerBuilder<T>, params LunyScript.Blocks.ScriptActionBlock[])
-  fullName.vb: LunyScript.Api.TimerBuilderWhenExtensions.WhenPaused(Of T)(LunyScript.Api.CoroutineTimerBuilder(Of T), ParamArray LunyScript.Blocks.ScriptActionBlock())
-  nameWithType: TimerBuilderWhenExtensions.WhenPaused<T>(CoroutineTimerBuilder<T>, params ScriptActionBlock[])
-  nameWithType.vb: TimerBuilderWhenExtensions.WhenPaused(Of T)(CoroutineTimerBuilder(Of T), ParamArray ScriptActionBlock())
+- uid: LunyScript.Api.TimerBuilderWhenExtensions.WhenPaused``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  name: WhenPaused<T>(CoroutineTimerBuilder<T>, params ActionBlock[])
+  href: api/LunyScript.Api.TimerBuilderWhenExtensions.html#LunyScript_Api_TimerBuilderWhenExtensions_WhenPaused__1_LunyScript_Api_CoroutineTimerBuilder___0__LunyScript_Blocks_ActionBlock___
+  commentId: M:LunyScript.Api.TimerBuilderWhenExtensions.WhenPaused``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  name.vb: WhenPaused(Of T)(CoroutineTimerBuilder(Of T), ParamArray ActionBlock())
+  fullName: LunyScript.Api.TimerBuilderWhenExtensions.WhenPaused<T>(LunyScript.Api.CoroutineTimerBuilder<T>, params LunyScript.Blocks.ActionBlock[])
+  fullName.vb: LunyScript.Api.TimerBuilderWhenExtensions.WhenPaused(Of T)(LunyScript.Api.CoroutineTimerBuilder(Of T), ParamArray LunyScript.Blocks.ActionBlock())
+  nameWithType: TimerBuilderWhenExtensions.WhenPaused<T>(CoroutineTimerBuilder<T>, params ActionBlock[])
+  nameWithType.vb: TimerBuilderWhenExtensions.WhenPaused(Of T)(CoroutineTimerBuilder(Of T), ParamArray ActionBlock())
 - uid: LunyScript.Api.TimerBuilderWhenExtensions.WhenProcessed*
   name: WhenProcessed
   href: api/LunyScript.Api.TimerBuilderWhenExtensions.html#LunyScript_Api_TimerBuilderWhenExtensions_WhenProcessed_
   commentId: Overload:LunyScript.Api.TimerBuilderWhenExtensions.WhenProcessed
   fullName: LunyScript.Api.TimerBuilderWhenExtensions.WhenProcessed
   nameWithType: TimerBuilderWhenExtensions.WhenProcessed
-- uid: LunyScript.Api.TimerBuilderWhenExtensions.WhenProcessed``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
-  name: WhenProcessed<T>(CoroutineTimerBuilder<T>, params ScriptActionBlock[])
-  href: api/LunyScript.Api.TimerBuilderWhenExtensions.html#LunyScript_Api_TimerBuilderWhenExtensions_WhenProcessed__1_LunyScript_Api_CoroutineTimerBuilder___0__LunyScript_Blocks_ScriptActionBlock___
-  commentId: M:LunyScript.Api.TimerBuilderWhenExtensions.WhenProcessed``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
-  name.vb: WhenProcessed(Of T)(CoroutineTimerBuilder(Of T), ParamArray ScriptActionBlock())
-  fullName: LunyScript.Api.TimerBuilderWhenExtensions.WhenProcessed<T>(LunyScript.Api.CoroutineTimerBuilder<T>, params LunyScript.Blocks.ScriptActionBlock[])
-  fullName.vb: LunyScript.Api.TimerBuilderWhenExtensions.WhenProcessed(Of T)(LunyScript.Api.CoroutineTimerBuilder(Of T), ParamArray LunyScript.Blocks.ScriptActionBlock())
-  nameWithType: TimerBuilderWhenExtensions.WhenProcessed<T>(CoroutineTimerBuilder<T>, params ScriptActionBlock[])
-  nameWithType.vb: TimerBuilderWhenExtensions.WhenProcessed(Of T)(CoroutineTimerBuilder(Of T), ParamArray ScriptActionBlock())
+- uid: LunyScript.Api.TimerBuilderWhenExtensions.WhenProcessed``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  name: WhenProcessed<T>(CoroutineTimerBuilder<T>, params ActionBlock[])
+  href: api/LunyScript.Api.TimerBuilderWhenExtensions.html#LunyScript_Api_TimerBuilderWhenExtensions_WhenProcessed__1_LunyScript_Api_CoroutineTimerBuilder___0__LunyScript_Blocks_ActionBlock___
+  commentId: M:LunyScript.Api.TimerBuilderWhenExtensions.WhenProcessed``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  name.vb: WhenProcessed(Of T)(CoroutineTimerBuilder(Of T), ParamArray ActionBlock())
+  fullName: LunyScript.Api.TimerBuilderWhenExtensions.WhenProcessed<T>(LunyScript.Api.CoroutineTimerBuilder<T>, params LunyScript.Blocks.ActionBlock[])
+  fullName.vb: LunyScript.Api.TimerBuilderWhenExtensions.WhenProcessed(Of T)(LunyScript.Api.CoroutineTimerBuilder(Of T), ParamArray LunyScript.Blocks.ActionBlock())
+  nameWithType: TimerBuilderWhenExtensions.WhenProcessed<T>(CoroutineTimerBuilder<T>, params ActionBlock[])
+  nameWithType.vb: TimerBuilderWhenExtensions.WhenProcessed(Of T)(CoroutineTimerBuilder(Of T), ParamArray ActionBlock())
 - uid: LunyScript.Api.TimerBuilderWhenExtensions.WhenResumed*
   name: WhenResumed
   href: api/LunyScript.Api.TimerBuilderWhenExtensions.html#LunyScript_Api_TimerBuilderWhenExtensions_WhenResumed_
   commentId: Overload:LunyScript.Api.TimerBuilderWhenExtensions.WhenResumed
   fullName: LunyScript.Api.TimerBuilderWhenExtensions.WhenResumed
   nameWithType: TimerBuilderWhenExtensions.WhenResumed
-- uid: LunyScript.Api.TimerBuilderWhenExtensions.WhenResumed``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
-  name: WhenResumed<T>(CoroutineTimerBuilder<T>, params ScriptActionBlock[])
-  href: api/LunyScript.Api.TimerBuilderWhenExtensions.html#LunyScript_Api_TimerBuilderWhenExtensions_WhenResumed__1_LunyScript_Api_CoroutineTimerBuilder___0__LunyScript_Blocks_ScriptActionBlock___
-  commentId: M:LunyScript.Api.TimerBuilderWhenExtensions.WhenResumed``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
-  name.vb: WhenResumed(Of T)(CoroutineTimerBuilder(Of T), ParamArray ScriptActionBlock())
-  fullName: LunyScript.Api.TimerBuilderWhenExtensions.WhenResumed<T>(LunyScript.Api.CoroutineTimerBuilder<T>, params LunyScript.Blocks.ScriptActionBlock[])
-  fullName.vb: LunyScript.Api.TimerBuilderWhenExtensions.WhenResumed(Of T)(LunyScript.Api.CoroutineTimerBuilder(Of T), ParamArray LunyScript.Blocks.ScriptActionBlock())
-  nameWithType: TimerBuilderWhenExtensions.WhenResumed<T>(CoroutineTimerBuilder<T>, params ScriptActionBlock[])
-  nameWithType.vb: TimerBuilderWhenExtensions.WhenResumed(Of T)(CoroutineTimerBuilder(Of T), ParamArray ScriptActionBlock())
+- uid: LunyScript.Api.TimerBuilderWhenExtensions.WhenResumed``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  name: WhenResumed<T>(CoroutineTimerBuilder<T>, params ActionBlock[])
+  href: api/LunyScript.Api.TimerBuilderWhenExtensions.html#LunyScript_Api_TimerBuilderWhenExtensions_WhenResumed__1_LunyScript_Api_CoroutineTimerBuilder___0__LunyScript_Blocks_ActionBlock___
+  commentId: M:LunyScript.Api.TimerBuilderWhenExtensions.WhenResumed``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  name.vb: WhenResumed(Of T)(CoroutineTimerBuilder(Of T), ParamArray ActionBlock())
+  fullName: LunyScript.Api.TimerBuilderWhenExtensions.WhenResumed<T>(LunyScript.Api.CoroutineTimerBuilder<T>, params LunyScript.Blocks.ActionBlock[])
+  fullName.vb: LunyScript.Api.TimerBuilderWhenExtensions.WhenResumed(Of T)(LunyScript.Api.CoroutineTimerBuilder(Of T), ParamArray LunyScript.Blocks.ActionBlock())
+  nameWithType: TimerBuilderWhenExtensions.WhenResumed<T>(CoroutineTimerBuilder<T>, params ActionBlock[])
+  nameWithType.vb: TimerBuilderWhenExtensions.WhenResumed(Of T)(CoroutineTimerBuilder(Of T), ParamArray ActionBlock())
 - uid: LunyScript.Api.TimerBuilderWhenExtensions.WhenStarted*
   name: WhenStarted
   href: api/LunyScript.Api.TimerBuilderWhenExtensions.html#LunyScript_Api_TimerBuilderWhenExtensions_WhenStarted_
   commentId: Overload:LunyScript.Api.TimerBuilderWhenExtensions.WhenStarted
   fullName: LunyScript.Api.TimerBuilderWhenExtensions.WhenStarted
   nameWithType: TimerBuilderWhenExtensions.WhenStarted
-- uid: LunyScript.Api.TimerBuilderWhenExtensions.WhenStarted``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
-  name: WhenStarted<T>(CoroutineTimerBuilder<T>, params ScriptActionBlock[])
-  href: api/LunyScript.Api.TimerBuilderWhenExtensions.html#LunyScript_Api_TimerBuilderWhenExtensions_WhenStarted__1_LunyScript_Api_CoroutineTimerBuilder___0__LunyScript_Blocks_ScriptActionBlock___
-  commentId: M:LunyScript.Api.TimerBuilderWhenExtensions.WhenStarted``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
-  name.vb: WhenStarted(Of T)(CoroutineTimerBuilder(Of T), ParamArray ScriptActionBlock())
-  fullName: LunyScript.Api.TimerBuilderWhenExtensions.WhenStarted<T>(LunyScript.Api.CoroutineTimerBuilder<T>, params LunyScript.Blocks.ScriptActionBlock[])
-  fullName.vb: LunyScript.Api.TimerBuilderWhenExtensions.WhenStarted(Of T)(LunyScript.Api.CoroutineTimerBuilder(Of T), ParamArray LunyScript.Blocks.ScriptActionBlock())
-  nameWithType: TimerBuilderWhenExtensions.WhenStarted<T>(CoroutineTimerBuilder<T>, params ScriptActionBlock[])
-  nameWithType.vb: TimerBuilderWhenExtensions.WhenStarted(Of T)(CoroutineTimerBuilder(Of T), ParamArray ScriptActionBlock())
+- uid: LunyScript.Api.TimerBuilderWhenExtensions.WhenStarted``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  name: WhenStarted<T>(CoroutineTimerBuilder<T>, params ActionBlock[])
+  href: api/LunyScript.Api.TimerBuilderWhenExtensions.html#LunyScript_Api_TimerBuilderWhenExtensions_WhenStarted__1_LunyScript_Api_CoroutineTimerBuilder___0__LunyScript_Blocks_ActionBlock___
+  commentId: M:LunyScript.Api.TimerBuilderWhenExtensions.WhenStarted``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  name.vb: WhenStarted(Of T)(CoroutineTimerBuilder(Of T), ParamArray ActionBlock())
+  fullName: LunyScript.Api.TimerBuilderWhenExtensions.WhenStarted<T>(LunyScript.Api.CoroutineTimerBuilder<T>, params LunyScript.Blocks.ActionBlock[])
+  fullName.vb: LunyScript.Api.TimerBuilderWhenExtensions.WhenStarted(Of T)(LunyScript.Api.CoroutineTimerBuilder(Of T), ParamArray LunyScript.Blocks.ActionBlock())
+  nameWithType: TimerBuilderWhenExtensions.WhenStarted<T>(CoroutineTimerBuilder<T>, params ActionBlock[])
+  nameWithType.vb: TimerBuilderWhenExtensions.WhenStarted(Of T)(CoroutineTimerBuilder(Of T), ParamArray ActionBlock())
 - uid: LunyScript.Api.TimerBuilderWhenExtensions.WhenStopped*
   name: WhenStopped
   href: api/LunyScript.Api.TimerBuilderWhenExtensions.html#LunyScript_Api_TimerBuilderWhenExtensions_WhenStopped_
   commentId: Overload:LunyScript.Api.TimerBuilderWhenExtensions.WhenStopped
   fullName: LunyScript.Api.TimerBuilderWhenExtensions.WhenStopped
   nameWithType: TimerBuilderWhenExtensions.WhenStopped
-- uid: LunyScript.Api.TimerBuilderWhenExtensions.WhenStopped``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
-  name: WhenStopped<T>(CoroutineTimerBuilder<T>, params ScriptActionBlock[])
-  href: api/LunyScript.Api.TimerBuilderWhenExtensions.html#LunyScript_Api_TimerBuilderWhenExtensions_WhenStopped__1_LunyScript_Api_CoroutineTimerBuilder___0__LunyScript_Blocks_ScriptActionBlock___
-  commentId: M:LunyScript.Api.TimerBuilderWhenExtensions.WhenStopped``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
-  name.vb: WhenStopped(Of T)(CoroutineTimerBuilder(Of T), ParamArray ScriptActionBlock())
-  fullName: LunyScript.Api.TimerBuilderWhenExtensions.WhenStopped<T>(LunyScript.Api.CoroutineTimerBuilder<T>, params LunyScript.Blocks.ScriptActionBlock[])
-  fullName.vb: LunyScript.Api.TimerBuilderWhenExtensions.WhenStopped(Of T)(LunyScript.Api.CoroutineTimerBuilder(Of T), ParamArray LunyScript.Blocks.ScriptActionBlock())
-  nameWithType: TimerBuilderWhenExtensions.WhenStopped<T>(CoroutineTimerBuilder<T>, params ScriptActionBlock[])
-  nameWithType.vb: TimerBuilderWhenExtensions.WhenStopped(Of T)(CoroutineTimerBuilder(Of T), ParamArray ScriptActionBlock())
+- uid: LunyScript.Api.TimerBuilderWhenExtensions.WhenStopped``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  name: WhenStopped<T>(CoroutineTimerBuilder<T>, params ActionBlock[])
+  href: api/LunyScript.Api.TimerBuilderWhenExtensions.html#LunyScript_Api_TimerBuilderWhenExtensions_WhenStopped__1_LunyScript_Api_CoroutineTimerBuilder___0__LunyScript_Blocks_ActionBlock___
+  commentId: M:LunyScript.Api.TimerBuilderWhenExtensions.WhenStopped``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  name.vb: WhenStopped(Of T)(CoroutineTimerBuilder(Of T), ParamArray ActionBlock())
+  fullName: LunyScript.Api.TimerBuilderWhenExtensions.WhenStopped<T>(LunyScript.Api.CoroutineTimerBuilder<T>, params LunyScript.Blocks.ActionBlock[])
+  fullName.vb: LunyScript.Api.TimerBuilderWhenExtensions.WhenStopped(Of T)(LunyScript.Api.CoroutineTimerBuilder(Of T), ParamArray LunyScript.Blocks.ActionBlock())
+  nameWithType: TimerBuilderWhenExtensions.WhenStopped<T>(CoroutineTimerBuilder<T>, params ActionBlock[])
+  nameWithType.vb: TimerBuilderWhenExtensions.WhenStopped(Of T)(CoroutineTimerBuilder(Of T), ParamArray ActionBlock())
 - uid: LunyScript.Api.TransformBuilder
   name: TransformBuilder
   href: api/LunyScript.Api.TransformBuilder.html
@@ -18030,14 +18030,14 @@ references:
   fullName.vb: LunyScript.Api.TransformLookAtBuilder(Of T)
   nameWithType: TransformLookAtBuilder<T>
   nameWithType.vb: TransformLookAtBuilder(Of T)
-- uid: LunyScript.Api.TransformLookAtBuilder`1.op_Implicit(LunyScript.Api.TransformLookAtBuilder{`0})~LunyScript.Blocks.ScriptActionBlock
-  name: implicit operator ScriptActionBlock(TransformLookAtBuilder<T>)
-  href: api/LunyScript.Api.TransformLookAtBuilder-1.html#LunyScript_Api_TransformLookAtBuilder_1_op_Implicit_LunyScript_Api_TransformLookAtBuilder__0___LunyScript_Blocks_ScriptActionBlock
-  commentId: M:LunyScript.Api.TransformLookAtBuilder`1.op_Implicit(LunyScript.Api.TransformLookAtBuilder{`0})~LunyScript.Blocks.ScriptActionBlock
+- uid: LunyScript.Api.TransformLookAtBuilder`1.op_Implicit(LunyScript.Api.TransformLookAtBuilder{`0})~LunyScript.Blocks.ActionBlock
+  name: implicit operator ActionBlock(TransformLookAtBuilder<T>)
+  href: api/LunyScript.Api.TransformLookAtBuilder-1.html#LunyScript_Api_TransformLookAtBuilder_1_op_Implicit_LunyScript_Api_TransformLookAtBuilder__0___LunyScript_Blocks_ActionBlock
+  commentId: M:LunyScript.Api.TransformLookAtBuilder`1.op_Implicit(LunyScript.Api.TransformLookAtBuilder{`0})~LunyScript.Blocks.ActionBlock
   name.vb: CType(TransformLookAtBuilder(Of T))
-  fullName: LunyScript.Api.TransformLookAtBuilder<T>.implicit operator LunyScript.Blocks.ScriptActionBlock(LunyScript.Api.TransformLookAtBuilder<T>)
+  fullName: LunyScript.Api.TransformLookAtBuilder<T>.implicit operator LunyScript.Blocks.ActionBlock(LunyScript.Api.TransformLookAtBuilder<T>)
   fullName.vb: LunyScript.Api.TransformLookAtBuilder(Of T).CType(LunyScript.Api.TransformLookAtBuilder(Of T))
-  nameWithType: TransformLookAtBuilder<T>.implicit operator ScriptActionBlock(TransformLookAtBuilder<T>)
+  nameWithType: TransformLookAtBuilder<T>.implicit operator ActionBlock(TransformLookAtBuilder<T>)
   nameWithType.vb: TransformLookAtBuilder(Of T).CType(TransformLookAtBuilder(Of T))
 - uid: LunyScript.Api.TransformLookAtBuilder`1.op_Implicit*
   name: implicit operator
@@ -18184,14 +18184,14 @@ references:
   fullName.vb: LunyScript.Api.TransformPositionBuilder(Of T)
   nameWithType: TransformPositionBuilder<T>
   nameWithType.vb: TransformPositionBuilder(Of T)
-- uid: LunyScript.Api.TransformPositionBuilder`1.op_Implicit(LunyScript.Api.TransformPositionBuilder{`0})~LunyScript.Blocks.ScriptActionBlock
-  name: implicit operator ScriptActionBlock(TransformPositionBuilder<T>)
-  href: api/LunyScript.Api.TransformPositionBuilder-1.html#LunyScript_Api_TransformPositionBuilder_1_op_Implicit_LunyScript_Api_TransformPositionBuilder__0___LunyScript_Blocks_ScriptActionBlock
-  commentId: M:LunyScript.Api.TransformPositionBuilder`1.op_Implicit(LunyScript.Api.TransformPositionBuilder{`0})~LunyScript.Blocks.ScriptActionBlock
+- uid: LunyScript.Api.TransformPositionBuilder`1.op_Implicit(LunyScript.Api.TransformPositionBuilder{`0})~LunyScript.Blocks.ActionBlock
+  name: implicit operator ActionBlock(TransformPositionBuilder<T>)
+  href: api/LunyScript.Api.TransformPositionBuilder-1.html#LunyScript_Api_TransformPositionBuilder_1_op_Implicit_LunyScript_Api_TransformPositionBuilder__0___LunyScript_Blocks_ActionBlock
+  commentId: M:LunyScript.Api.TransformPositionBuilder`1.op_Implicit(LunyScript.Api.TransformPositionBuilder{`0})~LunyScript.Blocks.ActionBlock
   name.vb: CType(TransformPositionBuilder(Of T))
-  fullName: LunyScript.Api.TransformPositionBuilder<T>.implicit operator LunyScript.Blocks.ScriptActionBlock(LunyScript.Api.TransformPositionBuilder<T>)
+  fullName: LunyScript.Api.TransformPositionBuilder<T>.implicit operator LunyScript.Blocks.ActionBlock(LunyScript.Api.TransformPositionBuilder<T>)
   fullName.vb: LunyScript.Api.TransformPositionBuilder(Of T).CType(LunyScript.Api.TransformPositionBuilder(Of T))
-  nameWithType: TransformPositionBuilder<T>.implicit operator ScriptActionBlock(TransformPositionBuilder<T>)
+  nameWithType: TransformPositionBuilder<T>.implicit operator ActionBlock(TransformPositionBuilder<T>)
   nameWithType.vb: TransformPositionBuilder(Of T).CType(TransformPositionBuilder(Of T))
 - uid: LunyScript.Api.TransformPositionBuilder`1.op_Implicit*
   name: implicit operator
@@ -18338,14 +18338,14 @@ references:
   fullName.vb: LunyScript.Api.TransformRotationBuilder(Of T)
   nameWithType: TransformRotationBuilder<T>
   nameWithType.vb: TransformRotationBuilder(Of T)
-- uid: LunyScript.Api.TransformRotationBuilder`1.op_Implicit(LunyScript.Api.TransformRotationBuilder{`0})~LunyScript.Blocks.ScriptActionBlock
-  name: implicit operator ScriptActionBlock(TransformRotationBuilder<T>)
-  href: api/LunyScript.Api.TransformRotationBuilder-1.html#LunyScript_Api_TransformRotationBuilder_1_op_Implicit_LunyScript_Api_TransformRotationBuilder__0___LunyScript_Blocks_ScriptActionBlock
-  commentId: M:LunyScript.Api.TransformRotationBuilder`1.op_Implicit(LunyScript.Api.TransformRotationBuilder{`0})~LunyScript.Blocks.ScriptActionBlock
+- uid: LunyScript.Api.TransformRotationBuilder`1.op_Implicit(LunyScript.Api.TransformRotationBuilder{`0})~LunyScript.Blocks.ActionBlock
+  name: implicit operator ActionBlock(TransformRotationBuilder<T>)
+  href: api/LunyScript.Api.TransformRotationBuilder-1.html#LunyScript_Api_TransformRotationBuilder_1_op_Implicit_LunyScript_Api_TransformRotationBuilder__0___LunyScript_Blocks_ActionBlock
+  commentId: M:LunyScript.Api.TransformRotationBuilder`1.op_Implicit(LunyScript.Api.TransformRotationBuilder{`0})~LunyScript.Blocks.ActionBlock
   name.vb: CType(TransformRotationBuilder(Of T))
-  fullName: LunyScript.Api.TransformRotationBuilder<T>.implicit operator LunyScript.Blocks.ScriptActionBlock(LunyScript.Api.TransformRotationBuilder<T>)
+  fullName: LunyScript.Api.TransformRotationBuilder<T>.implicit operator LunyScript.Blocks.ActionBlock(LunyScript.Api.TransformRotationBuilder<T>)
   fullName.vb: LunyScript.Api.TransformRotationBuilder(Of T).CType(LunyScript.Api.TransformRotationBuilder(Of T))
-  nameWithType: TransformRotationBuilder<T>.implicit operator ScriptActionBlock(TransformRotationBuilder<T>)
+  nameWithType: TransformRotationBuilder<T>.implicit operator ActionBlock(TransformRotationBuilder<T>)
   nameWithType.vb: TransformRotationBuilder(Of T).CType(TransformRotationBuilder(Of T))
 - uid: LunyScript.Api.TransformRotationBuilder`1.op_Implicit*
   name: implicit operator
@@ -18492,14 +18492,14 @@ references:
   fullName.vb: LunyScript.Api.TransformScaleBuilder(Of T)
   nameWithType: TransformScaleBuilder<T>
   nameWithType.vb: TransformScaleBuilder(Of T)
-- uid: LunyScript.Api.TransformScaleBuilder`1.op_Implicit(LunyScript.Api.TransformScaleBuilder{`0})~LunyScript.Blocks.ScriptActionBlock
-  name: implicit operator ScriptActionBlock(TransformScaleBuilder<T>)
-  href: api/LunyScript.Api.TransformScaleBuilder-1.html#LunyScript_Api_TransformScaleBuilder_1_op_Implicit_LunyScript_Api_TransformScaleBuilder__0___LunyScript_Blocks_ScriptActionBlock
-  commentId: M:LunyScript.Api.TransformScaleBuilder`1.op_Implicit(LunyScript.Api.TransformScaleBuilder{`0})~LunyScript.Blocks.ScriptActionBlock
+- uid: LunyScript.Api.TransformScaleBuilder`1.op_Implicit(LunyScript.Api.TransformScaleBuilder{`0})~LunyScript.Blocks.ActionBlock
+  name: implicit operator ActionBlock(TransformScaleBuilder<T>)
+  href: api/LunyScript.Api.TransformScaleBuilder-1.html#LunyScript_Api_TransformScaleBuilder_1_op_Implicit_LunyScript_Api_TransformScaleBuilder__0___LunyScript_Blocks_ActionBlock
+  commentId: M:LunyScript.Api.TransformScaleBuilder`1.op_Implicit(LunyScript.Api.TransformScaleBuilder{`0})~LunyScript.Blocks.ActionBlock
   name.vb: CType(TransformScaleBuilder(Of T))
-  fullName: LunyScript.Api.TransformScaleBuilder<T>.implicit operator LunyScript.Blocks.ScriptActionBlock(LunyScript.Api.TransformScaleBuilder<T>)
+  fullName: LunyScript.Api.TransformScaleBuilder<T>.implicit operator LunyScript.Blocks.ActionBlock(LunyScript.Api.TransformScaleBuilder<T>)
   fullName.vb: LunyScript.Api.TransformScaleBuilder(Of T).CType(LunyScript.Api.TransformScaleBuilder(Of T))
-  nameWithType: TransformScaleBuilder<T>.implicit operator ScriptActionBlock(TransformScaleBuilder<T>)
+  nameWithType: TransformScaleBuilder<T>.implicit operator ActionBlock(TransformScaleBuilder<T>)
   nameWithType.vb: TransformScaleBuilder(Of T).CType(TransformScaleBuilder(Of T))
 - uid: LunyScript.Api.TransformScaleBuilder`1.op_Implicit*
   name: implicit operator
@@ -18553,60 +18553,60 @@ references:
   commentId: T:LunyScript.Api.WhenInputActionBuilderExtensions
   fullName: LunyScript.Api.WhenInputActionBuilderExtensions
   nameWithType: WhenInputActionBuilderExtensions
-- uid: LunyScript.Api.WhenInputActionBuilderExtensions.Begins(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ScriptActionBlock[])
-  name: Begins(WhenInputActionBuilder, params ScriptActionBlock[])
-  href: api/LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Begins_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ScriptActionBlock___
-  commentId: M:LunyScript.Api.WhenInputActionBuilderExtensions.Begins(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ScriptActionBlock[])
-  name.vb: Begins(WhenInputActionBuilder, ParamArray ScriptActionBlock())
-  fullName: LunyScript.Api.WhenInputActionBuilderExtensions.Begins(LunyScript.Api.WhenInputActionBuilder, params LunyScript.Blocks.ScriptActionBlock[])
-  fullName.vb: LunyScript.Api.WhenInputActionBuilderExtensions.Begins(LunyScript.Api.WhenInputActionBuilder, ParamArray LunyScript.Blocks.ScriptActionBlock())
-  nameWithType: WhenInputActionBuilderExtensions.Begins(WhenInputActionBuilder, params ScriptActionBlock[])
-  nameWithType.vb: WhenInputActionBuilderExtensions.Begins(WhenInputActionBuilder, ParamArray ScriptActionBlock())
+- uid: LunyScript.Api.WhenInputActionBuilderExtensions.Begins(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
+  name: Begins(WhenInputActionBuilder, params ActionBlock[])
+  href: api/LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Begins_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ActionBlock___
+  commentId: M:LunyScript.Api.WhenInputActionBuilderExtensions.Begins(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
+  name.vb: Begins(WhenInputActionBuilder, ParamArray ActionBlock())
+  fullName: LunyScript.Api.WhenInputActionBuilderExtensions.Begins(LunyScript.Api.WhenInputActionBuilder, params LunyScript.Blocks.ActionBlock[])
+  fullName.vb: LunyScript.Api.WhenInputActionBuilderExtensions.Begins(LunyScript.Api.WhenInputActionBuilder, ParamArray LunyScript.Blocks.ActionBlock())
+  nameWithType: WhenInputActionBuilderExtensions.Begins(WhenInputActionBuilder, params ActionBlock[])
+  nameWithType.vb: WhenInputActionBuilderExtensions.Begins(WhenInputActionBuilder, ParamArray ActionBlock())
 - uid: LunyScript.Api.WhenInputActionBuilderExtensions.Begins*
   name: Begins
   href: api/LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Begins_
   commentId: Overload:LunyScript.Api.WhenInputActionBuilderExtensions.Begins
   fullName: LunyScript.Api.WhenInputActionBuilderExtensions.Begins
   nameWithType: WhenInputActionBuilderExtensions.Begins
-- uid: LunyScript.Api.WhenInputActionBuilderExtensions.Changes(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ScriptActionBlock[])
-  name: Changes(WhenInputActionBuilder, params ScriptActionBlock[])
-  href: api/LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Changes_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ScriptActionBlock___
-  commentId: M:LunyScript.Api.WhenInputActionBuilderExtensions.Changes(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ScriptActionBlock[])
-  name.vb: Changes(WhenInputActionBuilder, ParamArray ScriptActionBlock())
-  fullName: LunyScript.Api.WhenInputActionBuilderExtensions.Changes(LunyScript.Api.WhenInputActionBuilder, params LunyScript.Blocks.ScriptActionBlock[])
-  fullName.vb: LunyScript.Api.WhenInputActionBuilderExtensions.Changes(LunyScript.Api.WhenInputActionBuilder, ParamArray LunyScript.Blocks.ScriptActionBlock())
-  nameWithType: WhenInputActionBuilderExtensions.Changes(WhenInputActionBuilder, params ScriptActionBlock[])
-  nameWithType.vb: WhenInputActionBuilderExtensions.Changes(WhenInputActionBuilder, ParamArray ScriptActionBlock())
+- uid: LunyScript.Api.WhenInputActionBuilderExtensions.Changes(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
+  name: Changes(WhenInputActionBuilder, params ActionBlock[])
+  href: api/LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Changes_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ActionBlock___
+  commentId: M:LunyScript.Api.WhenInputActionBuilderExtensions.Changes(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
+  name.vb: Changes(WhenInputActionBuilder, ParamArray ActionBlock())
+  fullName: LunyScript.Api.WhenInputActionBuilderExtensions.Changes(LunyScript.Api.WhenInputActionBuilder, params LunyScript.Blocks.ActionBlock[])
+  fullName.vb: LunyScript.Api.WhenInputActionBuilderExtensions.Changes(LunyScript.Api.WhenInputActionBuilder, ParamArray LunyScript.Blocks.ActionBlock())
+  nameWithType: WhenInputActionBuilderExtensions.Changes(WhenInputActionBuilder, params ActionBlock[])
+  nameWithType.vb: WhenInputActionBuilderExtensions.Changes(WhenInputActionBuilder, ParamArray ActionBlock())
 - uid: LunyScript.Api.WhenInputActionBuilderExtensions.Changes*
   name: Changes
   href: api/LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Changes_
   commentId: Overload:LunyScript.Api.WhenInputActionBuilderExtensions.Changes
   fullName: LunyScript.Api.WhenInputActionBuilderExtensions.Changes
   nameWithType: WhenInputActionBuilderExtensions.Changes
-- uid: LunyScript.Api.WhenInputActionBuilderExtensions.Continues(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ScriptActionBlock[])
-  name: Continues(WhenInputActionBuilder, params ScriptActionBlock[])
-  href: api/LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Continues_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ScriptActionBlock___
-  commentId: M:LunyScript.Api.WhenInputActionBuilderExtensions.Continues(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ScriptActionBlock[])
-  name.vb: Continues(WhenInputActionBuilder, ParamArray ScriptActionBlock())
-  fullName: LunyScript.Api.WhenInputActionBuilderExtensions.Continues(LunyScript.Api.WhenInputActionBuilder, params LunyScript.Blocks.ScriptActionBlock[])
-  fullName.vb: LunyScript.Api.WhenInputActionBuilderExtensions.Continues(LunyScript.Api.WhenInputActionBuilder, ParamArray LunyScript.Blocks.ScriptActionBlock())
-  nameWithType: WhenInputActionBuilderExtensions.Continues(WhenInputActionBuilder, params ScriptActionBlock[])
-  nameWithType.vb: WhenInputActionBuilderExtensions.Continues(WhenInputActionBuilder, ParamArray ScriptActionBlock())
+- uid: LunyScript.Api.WhenInputActionBuilderExtensions.Continues(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
+  name: Continues(WhenInputActionBuilder, params ActionBlock[])
+  href: api/LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Continues_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ActionBlock___
+  commentId: M:LunyScript.Api.WhenInputActionBuilderExtensions.Continues(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
+  name.vb: Continues(WhenInputActionBuilder, ParamArray ActionBlock())
+  fullName: LunyScript.Api.WhenInputActionBuilderExtensions.Continues(LunyScript.Api.WhenInputActionBuilder, params LunyScript.Blocks.ActionBlock[])
+  fullName.vb: LunyScript.Api.WhenInputActionBuilderExtensions.Continues(LunyScript.Api.WhenInputActionBuilder, ParamArray LunyScript.Blocks.ActionBlock())
+  nameWithType: WhenInputActionBuilderExtensions.Continues(WhenInputActionBuilder, params ActionBlock[])
+  nameWithType.vb: WhenInputActionBuilderExtensions.Continues(WhenInputActionBuilder, ParamArray ActionBlock())
 - uid: LunyScript.Api.WhenInputActionBuilderExtensions.Continues*
   name: Continues
   href: api/LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Continues_
   commentId: Overload:LunyScript.Api.WhenInputActionBuilderExtensions.Continues
   fullName: LunyScript.Api.WhenInputActionBuilderExtensions.Continues
   nameWithType: WhenInputActionBuilderExtensions.Continues
-- uid: LunyScript.Api.WhenInputActionBuilderExtensions.Ends(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ScriptActionBlock[])
-  name: Ends(WhenInputActionBuilder, params ScriptActionBlock[])
-  href: api/LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Ends_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ScriptActionBlock___
-  commentId: M:LunyScript.Api.WhenInputActionBuilderExtensions.Ends(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ScriptActionBlock[])
-  name.vb: Ends(WhenInputActionBuilder, ParamArray ScriptActionBlock())
-  fullName: LunyScript.Api.WhenInputActionBuilderExtensions.Ends(LunyScript.Api.WhenInputActionBuilder, params LunyScript.Blocks.ScriptActionBlock[])
-  fullName.vb: LunyScript.Api.WhenInputActionBuilderExtensions.Ends(LunyScript.Api.WhenInputActionBuilder, ParamArray LunyScript.Blocks.ScriptActionBlock())
-  nameWithType: WhenInputActionBuilderExtensions.Ends(WhenInputActionBuilder, params ScriptActionBlock[])
-  nameWithType.vb: WhenInputActionBuilderExtensions.Ends(WhenInputActionBuilder, ParamArray ScriptActionBlock())
+- uid: LunyScript.Api.WhenInputActionBuilderExtensions.Ends(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
+  name: Ends(WhenInputActionBuilder, params ActionBlock[])
+  href: api/LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Ends_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ActionBlock___
+  commentId: M:LunyScript.Api.WhenInputActionBuilderExtensions.Ends(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
+  name.vb: Ends(WhenInputActionBuilder, ParamArray ActionBlock())
+  fullName: LunyScript.Api.WhenInputActionBuilderExtensions.Ends(LunyScript.Api.WhenInputActionBuilder, params LunyScript.Blocks.ActionBlock[])
+  fullName.vb: LunyScript.Api.WhenInputActionBuilderExtensions.Ends(LunyScript.Api.WhenInputActionBuilder, ParamArray LunyScript.Blocks.ActionBlock())
+  nameWithType: WhenInputActionBuilderExtensions.Ends(WhenInputActionBuilder, params ActionBlock[])
+  nameWithType.vb: WhenInputActionBuilderExtensions.Ends(WhenInputActionBuilder, ParamArray ActionBlock())
 - uid: LunyScript.Api.WhenInputActionBuilderExtensions.Ends*
   name: Ends
   href: api/LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Ends_
@@ -18655,48 +18655,48 @@ references:
   commentId: T:LunyScript.Api.WhenSceneEventBuilder
   fullName: LunyScript.Api.WhenSceneEventBuilder
   nameWithType: WhenSceneEventBuilder
-- uid: LunyScript.Api.WhenSceneEventBuilder.Loads(LunyScript.Blocks.ScriptActionBlock[])
-  name: Loads(params ScriptActionBlock[])
-  href: api/LunyScript.Api.WhenSceneEventBuilder.html#LunyScript_Api_WhenSceneEventBuilder_Loads_LunyScript_Blocks_ScriptActionBlock___
-  commentId: M:LunyScript.Api.WhenSceneEventBuilder.Loads(LunyScript.Blocks.ScriptActionBlock[])
-  name.vb: Loads(ParamArray ScriptActionBlock())
-  fullName: LunyScript.Api.WhenSceneEventBuilder.Loads(params LunyScript.Blocks.ScriptActionBlock[])
-  fullName.vb: LunyScript.Api.WhenSceneEventBuilder.Loads(ParamArray LunyScript.Blocks.ScriptActionBlock())
-  nameWithType: WhenSceneEventBuilder.Loads(params ScriptActionBlock[])
-  nameWithType.vb: WhenSceneEventBuilder.Loads(ParamArray ScriptActionBlock())
-- uid: LunyScript.Api.WhenSceneEventBuilder.Loads(System.String,LunyScript.Blocks.ScriptActionBlock[])
-  name: Loads(string, params ScriptActionBlock[])
-  href: api/LunyScript.Api.WhenSceneEventBuilder.html#LunyScript_Api_WhenSceneEventBuilder_Loads_System_String_LunyScript_Blocks_ScriptActionBlock___
-  commentId: M:LunyScript.Api.WhenSceneEventBuilder.Loads(System.String,LunyScript.Blocks.ScriptActionBlock[])
-  name.vb: Loads(String, ParamArray ScriptActionBlock())
-  fullName: LunyScript.Api.WhenSceneEventBuilder.Loads(string, params LunyScript.Blocks.ScriptActionBlock[])
-  fullName.vb: LunyScript.Api.WhenSceneEventBuilder.Loads(String, ParamArray LunyScript.Blocks.ScriptActionBlock())
-  nameWithType: WhenSceneEventBuilder.Loads(string, params ScriptActionBlock[])
-  nameWithType.vb: WhenSceneEventBuilder.Loads(String, ParamArray ScriptActionBlock())
+- uid: LunyScript.Api.WhenSceneEventBuilder.Loads(LunyScript.Blocks.ActionBlock[])
+  name: Loads(params ActionBlock[])
+  href: api/LunyScript.Api.WhenSceneEventBuilder.html#LunyScript_Api_WhenSceneEventBuilder_Loads_LunyScript_Blocks_ActionBlock___
+  commentId: M:LunyScript.Api.WhenSceneEventBuilder.Loads(LunyScript.Blocks.ActionBlock[])
+  name.vb: Loads(ParamArray ActionBlock())
+  fullName: LunyScript.Api.WhenSceneEventBuilder.Loads(params LunyScript.Blocks.ActionBlock[])
+  fullName.vb: LunyScript.Api.WhenSceneEventBuilder.Loads(ParamArray LunyScript.Blocks.ActionBlock())
+  nameWithType: WhenSceneEventBuilder.Loads(params ActionBlock[])
+  nameWithType.vb: WhenSceneEventBuilder.Loads(ParamArray ActionBlock())
+- uid: LunyScript.Api.WhenSceneEventBuilder.Loads(System.String,LunyScript.Blocks.ActionBlock[])
+  name: Loads(string, params ActionBlock[])
+  href: api/LunyScript.Api.WhenSceneEventBuilder.html#LunyScript_Api_WhenSceneEventBuilder_Loads_System_String_LunyScript_Blocks_ActionBlock___
+  commentId: M:LunyScript.Api.WhenSceneEventBuilder.Loads(System.String,LunyScript.Blocks.ActionBlock[])
+  name.vb: Loads(String, ParamArray ActionBlock())
+  fullName: LunyScript.Api.WhenSceneEventBuilder.Loads(string, params LunyScript.Blocks.ActionBlock[])
+  fullName.vb: LunyScript.Api.WhenSceneEventBuilder.Loads(String, ParamArray LunyScript.Blocks.ActionBlock())
+  nameWithType: WhenSceneEventBuilder.Loads(string, params ActionBlock[])
+  nameWithType.vb: WhenSceneEventBuilder.Loads(String, ParamArray ActionBlock())
 - uid: LunyScript.Api.WhenSceneEventBuilder.Loads*
   name: Loads
   href: api/LunyScript.Api.WhenSceneEventBuilder.html#LunyScript_Api_WhenSceneEventBuilder_Loads_
   commentId: Overload:LunyScript.Api.WhenSceneEventBuilder.Loads
   fullName: LunyScript.Api.WhenSceneEventBuilder.Loads
   nameWithType: WhenSceneEventBuilder.Loads
-- uid: LunyScript.Api.WhenSceneEventBuilder.Unloads(LunyScript.Blocks.ScriptActionBlock[])
-  name: Unloads(params ScriptActionBlock[])
-  href: api/LunyScript.Api.WhenSceneEventBuilder.html#LunyScript_Api_WhenSceneEventBuilder_Unloads_LunyScript_Blocks_ScriptActionBlock___
-  commentId: M:LunyScript.Api.WhenSceneEventBuilder.Unloads(LunyScript.Blocks.ScriptActionBlock[])
-  name.vb: Unloads(ParamArray ScriptActionBlock())
-  fullName: LunyScript.Api.WhenSceneEventBuilder.Unloads(params LunyScript.Blocks.ScriptActionBlock[])
-  fullName.vb: LunyScript.Api.WhenSceneEventBuilder.Unloads(ParamArray LunyScript.Blocks.ScriptActionBlock())
-  nameWithType: WhenSceneEventBuilder.Unloads(params ScriptActionBlock[])
-  nameWithType.vb: WhenSceneEventBuilder.Unloads(ParamArray ScriptActionBlock())
-- uid: LunyScript.Api.WhenSceneEventBuilder.Unloads(System.String,LunyScript.Blocks.ScriptActionBlock[])
-  name: Unloads(string, params ScriptActionBlock[])
-  href: api/LunyScript.Api.WhenSceneEventBuilder.html#LunyScript_Api_WhenSceneEventBuilder_Unloads_System_String_LunyScript_Blocks_ScriptActionBlock___
-  commentId: M:LunyScript.Api.WhenSceneEventBuilder.Unloads(System.String,LunyScript.Blocks.ScriptActionBlock[])
-  name.vb: Unloads(String, ParamArray ScriptActionBlock())
-  fullName: LunyScript.Api.WhenSceneEventBuilder.Unloads(string, params LunyScript.Blocks.ScriptActionBlock[])
-  fullName.vb: LunyScript.Api.WhenSceneEventBuilder.Unloads(String, ParamArray LunyScript.Blocks.ScriptActionBlock())
-  nameWithType: WhenSceneEventBuilder.Unloads(string, params ScriptActionBlock[])
-  nameWithType.vb: WhenSceneEventBuilder.Unloads(String, ParamArray ScriptActionBlock())
+- uid: LunyScript.Api.WhenSceneEventBuilder.Unloads(LunyScript.Blocks.ActionBlock[])
+  name: Unloads(params ActionBlock[])
+  href: api/LunyScript.Api.WhenSceneEventBuilder.html#LunyScript_Api_WhenSceneEventBuilder_Unloads_LunyScript_Blocks_ActionBlock___
+  commentId: M:LunyScript.Api.WhenSceneEventBuilder.Unloads(LunyScript.Blocks.ActionBlock[])
+  name.vb: Unloads(ParamArray ActionBlock())
+  fullName: LunyScript.Api.WhenSceneEventBuilder.Unloads(params LunyScript.Blocks.ActionBlock[])
+  fullName.vb: LunyScript.Api.WhenSceneEventBuilder.Unloads(ParamArray LunyScript.Blocks.ActionBlock())
+  nameWithType: WhenSceneEventBuilder.Unloads(params ActionBlock[])
+  nameWithType.vb: WhenSceneEventBuilder.Unloads(ParamArray ActionBlock())
+- uid: LunyScript.Api.WhenSceneEventBuilder.Unloads(System.String,LunyScript.Blocks.ActionBlock[])
+  name: Unloads(string, params ActionBlock[])
+  href: api/LunyScript.Api.WhenSceneEventBuilder.html#LunyScript_Api_WhenSceneEventBuilder_Unloads_System_String_LunyScript_Blocks_ActionBlock___
+  commentId: M:LunyScript.Api.WhenSceneEventBuilder.Unloads(System.String,LunyScript.Blocks.ActionBlock[])
+  name.vb: Unloads(String, ParamArray ActionBlock())
+  fullName: LunyScript.Api.WhenSceneEventBuilder.Unloads(string, params LunyScript.Blocks.ActionBlock[])
+  fullName.vb: LunyScript.Api.WhenSceneEventBuilder.Unloads(String, ParamArray LunyScript.Blocks.ActionBlock())
+  nameWithType: WhenSceneEventBuilder.Unloads(string, params ActionBlock[])
+  nameWithType.vb: WhenSceneEventBuilder.Unloads(String, ParamArray ActionBlock())
 - uid: LunyScript.Api.WhenSceneEventBuilder.Unloads*
   name: Unloads
   href: api/LunyScript.Api.WhenSceneEventBuilder.html#LunyScript_Api_WhenSceneEventBuilder_Unloads_
@@ -18709,15 +18709,15 @@ references:
   commentId: T:LunyScript.Api.WhileBlockBuilder
   fullName: LunyScript.Api.WhileBlockBuilder
   nameWithType: WhileBlockBuilder
-- uid: LunyScript.Api.WhileBlockBuilder.Do(LunyScript.Blocks.ScriptActionBlock[])
-  name: Do(params ScriptActionBlock[])
-  href: api/LunyScript.Api.WhileBlockBuilder.html#LunyScript_Api_WhileBlockBuilder_Do_LunyScript_Blocks_ScriptActionBlock___
-  commentId: M:LunyScript.Api.WhileBlockBuilder.Do(LunyScript.Blocks.ScriptActionBlock[])
-  name.vb: Do(ParamArray ScriptActionBlock())
-  fullName: LunyScript.Api.WhileBlockBuilder.Do(params LunyScript.Blocks.ScriptActionBlock[])
-  fullName.vb: LunyScript.Api.WhileBlockBuilder.Do(ParamArray LunyScript.Blocks.ScriptActionBlock())
-  nameWithType: WhileBlockBuilder.Do(params ScriptActionBlock[])
-  nameWithType.vb: WhileBlockBuilder.Do(ParamArray ScriptActionBlock())
+- uid: LunyScript.Api.WhileBlockBuilder.Do(LunyScript.Blocks.ActionBlock[])
+  name: Do(params ActionBlock[])
+  href: api/LunyScript.Api.WhileBlockBuilder.html#LunyScript_Api_WhileBlockBuilder_Do_LunyScript_Blocks_ActionBlock___
+  commentId: M:LunyScript.Api.WhileBlockBuilder.Do(LunyScript.Blocks.ActionBlock[])
+  name.vb: Do(ParamArray ActionBlock())
+  fullName: LunyScript.Api.WhileBlockBuilder.Do(params LunyScript.Blocks.ActionBlock[])
+  fullName.vb: LunyScript.Api.WhileBlockBuilder.Do(ParamArray LunyScript.Blocks.ActionBlock())
+  nameWithType: WhileBlockBuilder.Do(params ActionBlock[])
+  nameWithType.vb: WhileBlockBuilder.Do(ParamArray ActionBlock())
 - uid: LunyScript.Api.WhileBlockBuilder.Do*
   name: Do
   href: api/LunyScript.Api.WhileBlockBuilder.html#LunyScript_Api_WhileBlockBuilder_Do_
@@ -18730,6 +18730,57 @@ references:
   commentId: N:LunyScript.Blocks
   fullName: LunyScript.Blocks
   nameWithType: LunyScript.Blocks
+- uid: LunyScript.Blocks.ActionBlock
+  name: ActionBlock
+  href: api/LunyScript.Blocks.ActionBlock.html
+  commentId: T:LunyScript.Blocks.ActionBlock
+  fullName: LunyScript.Blocks.ActionBlock
+  nameWithType: ActionBlock
+- uid: LunyScript.Blocks.ActionBlock.#ctor
+  name: ActionBlock()
+  href: api/LunyScript.Blocks.ActionBlock.html#LunyScript_Blocks_ActionBlock__ctor
+  commentId: M:LunyScript.Blocks.ActionBlock.#ctor
+  name.vb: New()
+  fullName: LunyScript.Blocks.ActionBlock.ActionBlock()
+  fullName.vb: LunyScript.Blocks.ActionBlock.New()
+  nameWithType: ActionBlock.ActionBlock()
+  nameWithType.vb: ActionBlock.New()
+- uid: LunyScript.Blocks.ActionBlock.#ctor*
+  name: ActionBlock
+  href: api/LunyScript.Blocks.ActionBlock.html#LunyScript_Blocks_ActionBlock__ctor_
+  commentId: Overload:LunyScript.Blocks.ActionBlock.#ctor
+  name.vb: New
+  fullName: LunyScript.Blocks.ActionBlock.ActionBlock
+  fullName.vb: LunyScript.Blocks.ActionBlock.New
+  nameWithType: ActionBlock.ActionBlock
+  nameWithType.vb: ActionBlock.New
+- uid: LunyScript.Blocks.ActionBlock.Execute(LunyScript.IScriptRuntimeContext)
+  name: Execute(IScriptRuntimeContext)
+  href: api/LunyScript.Blocks.ActionBlock.html#LunyScript_Blocks_ActionBlock_Execute_LunyScript_IScriptRuntimeContext_
+  commentId: M:LunyScript.Blocks.ActionBlock.Execute(LunyScript.IScriptRuntimeContext)
+  fullName: LunyScript.Blocks.ActionBlock.Execute(LunyScript.IScriptRuntimeContext)
+  nameWithType: ActionBlock.Execute(IScriptRuntimeContext)
+- uid: LunyScript.Blocks.ActionBlock.Execute*
+  name: Execute
+  href: api/LunyScript.Blocks.ActionBlock.html#LunyScript_Blocks_ActionBlock_Execute_
+  commentId: Overload:LunyScript.Blocks.ActionBlock.Execute
+  fullName: LunyScript.Blocks.ActionBlock.Execute
+  nameWithType: ActionBlock.Execute
+- uid: LunyScript.Blocks.ActionBlock.IsNullOrEmpty(LunyScript.Blocks.ActionBlock[])
+  name: IsNullOrEmpty(ActionBlock[])
+  href: api/LunyScript.Blocks.ActionBlock.html#LunyScript_Blocks_ActionBlock_IsNullOrEmpty_LunyScript_Blocks_ActionBlock___
+  commentId: M:LunyScript.Blocks.ActionBlock.IsNullOrEmpty(LunyScript.Blocks.ActionBlock[])
+  name.vb: IsNullOrEmpty(ActionBlock())
+  fullName: LunyScript.Blocks.ActionBlock.IsNullOrEmpty(LunyScript.Blocks.ActionBlock[])
+  fullName.vb: LunyScript.Blocks.ActionBlock.IsNullOrEmpty(LunyScript.Blocks.ActionBlock())
+  nameWithType: ActionBlock.IsNullOrEmpty(ActionBlock[])
+  nameWithType.vb: ActionBlock.IsNullOrEmpty(ActionBlock())
+- uid: LunyScript.Blocks.ActionBlock.IsNullOrEmpty*
+  name: IsNullOrEmpty
+  href: api/LunyScript.Blocks.ActionBlock.html#LunyScript_Blocks_ActionBlock_IsNullOrEmpty_
+  commentId: Overload:LunyScript.Blocks.ActionBlock.IsNullOrEmpty
+  fullName: LunyScript.Blocks.ActionBlock.IsNullOrEmpty
+  nameWithType: ActionBlock.IsNullOrEmpty
 - uid: LunyScript.Blocks.ComputedVariableBlock
   name: ComputedVariableBlock
   href: api/LunyScript.Blocks.ComputedVariableBlock.html
@@ -18754,6 +18805,134 @@ references:
   fullName.vb: LunyScript.Blocks.ComputedVariableBlock.New
   nameWithType: ComputedVariableBlock.ComputedVariableBlock
   nameWithType.vb: ComputedVariableBlock.New
+- uid: LunyScript.Blocks.ConditionBlock
+  name: ConditionBlock
+  href: api/LunyScript.Blocks.ConditionBlock.html
+  commentId: T:LunyScript.Blocks.ConditionBlock
+  fullName: LunyScript.Blocks.ConditionBlock
+  nameWithType: ConditionBlock
+- uid: LunyScript.Blocks.ConditionBlock.#ctor
+  name: ConditionBlock()
+  href: api/LunyScript.Blocks.ConditionBlock.html#LunyScript_Blocks_ConditionBlock__ctor
+  commentId: M:LunyScript.Blocks.ConditionBlock.#ctor
+  name.vb: New()
+  fullName: LunyScript.Blocks.ConditionBlock.ConditionBlock()
+  fullName.vb: LunyScript.Blocks.ConditionBlock.New()
+  nameWithType: ConditionBlock.ConditionBlock()
+  nameWithType.vb: ConditionBlock.New()
+- uid: LunyScript.Blocks.ConditionBlock.#ctor*
+  name: ConditionBlock
+  href: api/LunyScript.Blocks.ConditionBlock.html#LunyScript_Blocks_ConditionBlock__ctor_
+  commentId: Overload:LunyScript.Blocks.ConditionBlock.#ctor
+  name.vb: New
+  fullName: LunyScript.Blocks.ConditionBlock.ConditionBlock
+  fullName.vb: LunyScript.Blocks.ConditionBlock.New
+  nameWithType: ConditionBlock.ConditionBlock
+  nameWithType.vb: ConditionBlock.New
+- uid: LunyScript.Blocks.ConditionBlock.Evaluate(LunyScript.IScriptRuntimeContext)
+  name: Evaluate(IScriptRuntimeContext)
+  href: api/LunyScript.Blocks.ConditionBlock.html#LunyScript_Blocks_ConditionBlock_Evaluate_LunyScript_IScriptRuntimeContext_
+  commentId: M:LunyScript.Blocks.ConditionBlock.Evaluate(LunyScript.IScriptRuntimeContext)
+  fullName: LunyScript.Blocks.ConditionBlock.Evaluate(LunyScript.IScriptRuntimeContext)
+  nameWithType: ConditionBlock.Evaluate(IScriptRuntimeContext)
+- uid: LunyScript.Blocks.ConditionBlock.Evaluate*
+  name: Evaluate
+  href: api/LunyScript.Blocks.ConditionBlock.html#LunyScript_Blocks_ConditionBlock_Evaluate_
+  commentId: Overload:LunyScript.Blocks.ConditionBlock.Evaluate
+  fullName: LunyScript.Blocks.ConditionBlock.Evaluate
+  nameWithType: ConditionBlock.Evaluate
+- uid: LunyScript.Blocks.ConditionBlock.op_BitwiseAnd(LunyScript.Blocks.ConditionBlock,LunyScript.Blocks.ConditionBlock)
+  name: operator &(ConditionBlock, ConditionBlock)
+  href: api/LunyScript.Blocks.ConditionBlock.html#LunyScript_Blocks_ConditionBlock_op_BitwiseAnd_LunyScript_Blocks_ConditionBlock_LunyScript_Blocks_ConditionBlock_
+  commentId: M:LunyScript.Blocks.ConditionBlock.op_BitwiseAnd(LunyScript.Blocks.ConditionBlock,LunyScript.Blocks.ConditionBlock)
+  name.vb: And(ConditionBlock, ConditionBlock)
+  fullName: LunyScript.Blocks.ConditionBlock.operator &(LunyScript.Blocks.ConditionBlock, LunyScript.Blocks.ConditionBlock)
+  fullName.vb: LunyScript.Blocks.ConditionBlock.And(LunyScript.Blocks.ConditionBlock, LunyScript.Blocks.ConditionBlock)
+  nameWithType: ConditionBlock.operator &(ConditionBlock, ConditionBlock)
+  nameWithType.vb: ConditionBlock.And(ConditionBlock, ConditionBlock)
+- uid: LunyScript.Blocks.ConditionBlock.op_BitwiseAnd*
+  name: operator &
+  href: api/LunyScript.Blocks.ConditionBlock.html#LunyScript_Blocks_ConditionBlock_op_BitwiseAnd_
+  commentId: Overload:LunyScript.Blocks.ConditionBlock.op_BitwiseAnd
+  name.vb: And
+  fullName: LunyScript.Blocks.ConditionBlock.operator &
+  fullName.vb: LunyScript.Blocks.ConditionBlock.And
+  nameWithType: ConditionBlock.operator &
+  nameWithType.vb: ConditionBlock.And
+- uid: LunyScript.Blocks.ConditionBlock.op_BitwiseOr(LunyScript.Blocks.ConditionBlock,LunyScript.Blocks.ConditionBlock)
+  name: operator |(ConditionBlock, ConditionBlock)
+  href: api/LunyScript.Blocks.ConditionBlock.html#LunyScript_Blocks_ConditionBlock_op_BitwiseOr_LunyScript_Blocks_ConditionBlock_LunyScript_Blocks_ConditionBlock_
+  commentId: M:LunyScript.Blocks.ConditionBlock.op_BitwiseOr(LunyScript.Blocks.ConditionBlock,LunyScript.Blocks.ConditionBlock)
+  name.vb: Or(ConditionBlock, ConditionBlock)
+  fullName: LunyScript.Blocks.ConditionBlock.operator |(LunyScript.Blocks.ConditionBlock, LunyScript.Blocks.ConditionBlock)
+  fullName.vb: LunyScript.Blocks.ConditionBlock.Or(LunyScript.Blocks.ConditionBlock, LunyScript.Blocks.ConditionBlock)
+  nameWithType: ConditionBlock.operator |(ConditionBlock, ConditionBlock)
+  nameWithType.vb: ConditionBlock.Or(ConditionBlock, ConditionBlock)
+- uid: LunyScript.Blocks.ConditionBlock.op_BitwiseOr*
+  name: operator |
+  href: api/LunyScript.Blocks.ConditionBlock.html#LunyScript_Blocks_ConditionBlock_op_BitwiseOr_
+  commentId: Overload:LunyScript.Blocks.ConditionBlock.op_BitwiseOr
+  name.vb: Or
+  fullName: LunyScript.Blocks.ConditionBlock.operator |
+  fullName.vb: LunyScript.Blocks.ConditionBlock.Or
+  nameWithType: ConditionBlock.operator |
+  nameWithType.vb: ConditionBlock.Or
+- uid: LunyScript.Blocks.ConditionBlock.op_False(LunyScript.Blocks.ConditionBlock)
+  name: operator false(ConditionBlock)
+  href: api/LunyScript.Blocks.ConditionBlock.html#LunyScript_Blocks_ConditionBlock_op_False_LunyScript_Blocks_ConditionBlock_
+  commentId: M:LunyScript.Blocks.ConditionBlock.op_False(LunyScript.Blocks.ConditionBlock)
+  name.vb: IsFalse(ConditionBlock)
+  fullName: LunyScript.Blocks.ConditionBlock.operator false(LunyScript.Blocks.ConditionBlock)
+  fullName.vb: LunyScript.Blocks.ConditionBlock.IsFalse(LunyScript.Blocks.ConditionBlock)
+  nameWithType: ConditionBlock.operator false(ConditionBlock)
+  nameWithType.vb: ConditionBlock.IsFalse(ConditionBlock)
+- uid: LunyScript.Blocks.ConditionBlock.op_False*
+  name: operator false
+  href: api/LunyScript.Blocks.ConditionBlock.html#LunyScript_Blocks_ConditionBlock_op_False_
+  commentId: Overload:LunyScript.Blocks.ConditionBlock.op_False
+  isSpec: "True"
+  name.vb: IsFalse
+  fullName: LunyScript.Blocks.ConditionBlock.operator false
+  fullName.vb: LunyScript.Blocks.ConditionBlock.IsFalse
+  nameWithType: ConditionBlock.operator false
+  nameWithType.vb: ConditionBlock.IsFalse
+- uid: LunyScript.Blocks.ConditionBlock.op_LogicalNot(LunyScript.Blocks.ConditionBlock)
+  name: operator !(ConditionBlock)
+  href: api/LunyScript.Blocks.ConditionBlock.html#LunyScript_Blocks_ConditionBlock_op_LogicalNot_LunyScript_Blocks_ConditionBlock_
+  commentId: M:LunyScript.Blocks.ConditionBlock.op_LogicalNot(LunyScript.Blocks.ConditionBlock)
+  name.vb: Not(ConditionBlock)
+  fullName: LunyScript.Blocks.ConditionBlock.operator !(LunyScript.Blocks.ConditionBlock)
+  fullName.vb: LunyScript.Blocks.ConditionBlock.Not(LunyScript.Blocks.ConditionBlock)
+  nameWithType: ConditionBlock.operator !(ConditionBlock)
+  nameWithType.vb: ConditionBlock.Not(ConditionBlock)
+- uid: LunyScript.Blocks.ConditionBlock.op_LogicalNot*
+  name: operator !
+  href: api/LunyScript.Blocks.ConditionBlock.html#LunyScript_Blocks_ConditionBlock_op_LogicalNot_
+  commentId: Overload:LunyScript.Blocks.ConditionBlock.op_LogicalNot
+  name.vb: Not
+  fullName: LunyScript.Blocks.ConditionBlock.operator !
+  fullName.vb: LunyScript.Blocks.ConditionBlock.Not
+  nameWithType: ConditionBlock.operator !
+  nameWithType.vb: ConditionBlock.Not
+- uid: LunyScript.Blocks.ConditionBlock.op_True(LunyScript.Blocks.ConditionBlock)
+  name: operator true(ConditionBlock)
+  href: api/LunyScript.Blocks.ConditionBlock.html#LunyScript_Blocks_ConditionBlock_op_True_LunyScript_Blocks_ConditionBlock_
+  commentId: M:LunyScript.Blocks.ConditionBlock.op_True(LunyScript.Blocks.ConditionBlock)
+  name.vb: IsTrue(ConditionBlock)
+  fullName: LunyScript.Blocks.ConditionBlock.operator true(LunyScript.Blocks.ConditionBlock)
+  fullName.vb: LunyScript.Blocks.ConditionBlock.IsTrue(LunyScript.Blocks.ConditionBlock)
+  nameWithType: ConditionBlock.operator true(ConditionBlock)
+  nameWithType.vb: ConditionBlock.IsTrue(ConditionBlock)
+- uid: LunyScript.Blocks.ConditionBlock.op_True*
+  name: operator true
+  href: api/LunyScript.Blocks.ConditionBlock.html#LunyScript_Blocks_ConditionBlock_op_True_
+  commentId: Overload:LunyScript.Blocks.ConditionBlock.op_True
+  isSpec: "True"
+  name.vb: IsTrue
+  fullName: LunyScript.Blocks.ConditionBlock.operator true
+  fullName.vb: LunyScript.Blocks.ConditionBlock.IsTrue
+  nameWithType: ConditionBlock.operator true
+  nameWithType.vb: ConditionBlock.IsTrue
 - uid: LunyScript.Blocks.ConstantVariableBlock
   name: ConstantVariableBlock
   href: api/LunyScript.Blocks.ConstantVariableBlock.html
@@ -18790,30 +18969,30 @@ references:
   commentId: T:LunyScript.Blocks.ControlFlow
   fullName: LunyScript.Blocks.ControlFlow
   nameWithType: ControlFlow
-- uid: LunyScript.Blocks.ControlFlow.EvaluateAll(LunyScript.IScriptRuntimeContext,LunyScript.Blocks.ScriptConditionBlock[])
-  name: EvaluateAll(IScriptRuntimeContext, ScriptConditionBlock[])
-  href: api/LunyScript.Blocks.ControlFlow.html#LunyScript_Blocks_ControlFlow_EvaluateAll_LunyScript_IScriptRuntimeContext_LunyScript_Blocks_ScriptConditionBlock___
-  commentId: M:LunyScript.Blocks.ControlFlow.EvaluateAll(LunyScript.IScriptRuntimeContext,LunyScript.Blocks.ScriptConditionBlock[])
-  name.vb: EvaluateAll(IScriptRuntimeContext, ScriptConditionBlock())
-  fullName: LunyScript.Blocks.ControlFlow.EvaluateAll(LunyScript.IScriptRuntimeContext, LunyScript.Blocks.ScriptConditionBlock[])
-  fullName.vb: LunyScript.Blocks.ControlFlow.EvaluateAll(LunyScript.IScriptRuntimeContext, LunyScript.Blocks.ScriptConditionBlock())
-  nameWithType: ControlFlow.EvaluateAll(IScriptRuntimeContext, ScriptConditionBlock[])
-  nameWithType.vb: ControlFlow.EvaluateAll(IScriptRuntimeContext, ScriptConditionBlock())
+- uid: LunyScript.Blocks.ControlFlow.EvaluateAll(LunyScript.IScriptRuntimeContext,LunyScript.Blocks.ConditionBlock[])
+  name: EvaluateAll(IScriptRuntimeContext, ConditionBlock[])
+  href: api/LunyScript.Blocks.ControlFlow.html#LunyScript_Blocks_ControlFlow_EvaluateAll_LunyScript_IScriptRuntimeContext_LunyScript_Blocks_ConditionBlock___
+  commentId: M:LunyScript.Blocks.ControlFlow.EvaluateAll(LunyScript.IScriptRuntimeContext,LunyScript.Blocks.ConditionBlock[])
+  name.vb: EvaluateAll(IScriptRuntimeContext, ConditionBlock())
+  fullName: LunyScript.Blocks.ControlFlow.EvaluateAll(LunyScript.IScriptRuntimeContext, LunyScript.Blocks.ConditionBlock[])
+  fullName.vb: LunyScript.Blocks.ControlFlow.EvaluateAll(LunyScript.IScriptRuntimeContext, LunyScript.Blocks.ConditionBlock())
+  nameWithType: ControlFlow.EvaluateAll(IScriptRuntimeContext, ConditionBlock[])
+  nameWithType.vb: ControlFlow.EvaluateAll(IScriptRuntimeContext, ConditionBlock())
 - uid: LunyScript.Blocks.ControlFlow.EvaluateAll*
   name: EvaluateAll
   href: api/LunyScript.Blocks.ControlFlow.html#LunyScript_Blocks_ControlFlow_EvaluateAll_
   commentId: Overload:LunyScript.Blocks.ControlFlow.EvaluateAll
   fullName: LunyScript.Blocks.ControlFlow.EvaluateAll
   nameWithType: ControlFlow.EvaluateAll
-- uid: LunyScript.Blocks.ControlFlow.ExecuteAll(LunyScript.IScriptRuntimeContext,LunyScript.Blocks.ScriptActionBlock[])
-  name: ExecuteAll(IScriptRuntimeContext, ScriptActionBlock[])
-  href: api/LunyScript.Blocks.ControlFlow.html#LunyScript_Blocks_ControlFlow_ExecuteAll_LunyScript_IScriptRuntimeContext_LunyScript_Blocks_ScriptActionBlock___
-  commentId: M:LunyScript.Blocks.ControlFlow.ExecuteAll(LunyScript.IScriptRuntimeContext,LunyScript.Blocks.ScriptActionBlock[])
-  name.vb: ExecuteAll(IScriptRuntimeContext, ScriptActionBlock())
-  fullName: LunyScript.Blocks.ControlFlow.ExecuteAll(LunyScript.IScriptRuntimeContext, LunyScript.Blocks.ScriptActionBlock[])
-  fullName.vb: LunyScript.Blocks.ControlFlow.ExecuteAll(LunyScript.IScriptRuntimeContext, LunyScript.Blocks.ScriptActionBlock())
-  nameWithType: ControlFlow.ExecuteAll(IScriptRuntimeContext, ScriptActionBlock[])
-  nameWithType.vb: ControlFlow.ExecuteAll(IScriptRuntimeContext, ScriptActionBlock())
+- uid: LunyScript.Blocks.ControlFlow.ExecuteAll(LunyScript.IScriptRuntimeContext,LunyScript.Blocks.ActionBlock[])
+  name: ExecuteAll(IScriptRuntimeContext, ActionBlock[])
+  href: api/LunyScript.Blocks.ControlFlow.html#LunyScript_Blocks_ControlFlow_ExecuteAll_LunyScript_IScriptRuntimeContext_LunyScript_Blocks_ActionBlock___
+  commentId: M:LunyScript.Blocks.ControlFlow.ExecuteAll(LunyScript.IScriptRuntimeContext,LunyScript.Blocks.ActionBlock[])
+  name.vb: ExecuteAll(IScriptRuntimeContext, ActionBlock())
+  fullName: LunyScript.Blocks.ControlFlow.ExecuteAll(LunyScript.IScriptRuntimeContext, LunyScript.Blocks.ActionBlock[])
+  fullName.vb: LunyScript.Blocks.ControlFlow.ExecuteAll(LunyScript.IScriptRuntimeContext, LunyScript.Blocks.ActionBlock())
+  nameWithType: ControlFlow.ExecuteAll(IScriptRuntimeContext, ActionBlock[])
+  nameWithType.vb: ControlFlow.ExecuteAll(IScriptRuntimeContext, ActionBlock())
 - uid: LunyScript.Blocks.ControlFlow.ExecuteAll*
   name: ExecuteAll
   href: api/LunyScript.Blocks.ControlFlow.html#LunyScript_Blocks_ControlFlow_ExecuteAll_
@@ -18955,30 +19134,30 @@ references:
   commentId: T:LunyScript.Blocks.IfBlock
   fullName: LunyScript.Blocks.IfBlock
   nameWithType: IfBlock
-- uid: LunyScript.Blocks.IfBlock.Else(LunyScript.Blocks.ScriptActionBlock[])
-  name: Else(params ScriptActionBlock[])
-  href: api/LunyScript.Blocks.IfBlock.html#LunyScript_Blocks_IfBlock_Else_LunyScript_Blocks_ScriptActionBlock___
-  commentId: M:LunyScript.Blocks.IfBlock.Else(LunyScript.Blocks.ScriptActionBlock[])
-  name.vb: Else(ParamArray ScriptActionBlock())
-  fullName: LunyScript.Blocks.IfBlock.Else(params LunyScript.Blocks.ScriptActionBlock[])
-  fullName.vb: LunyScript.Blocks.IfBlock.Else(ParamArray LunyScript.Blocks.ScriptActionBlock())
-  nameWithType: IfBlock.Else(params ScriptActionBlock[])
-  nameWithType.vb: IfBlock.Else(ParamArray ScriptActionBlock())
+- uid: LunyScript.Blocks.IfBlock.Else(LunyScript.Blocks.ActionBlock[])
+  name: Else(params ActionBlock[])
+  href: api/LunyScript.Blocks.IfBlock.html#LunyScript_Blocks_IfBlock_Else_LunyScript_Blocks_ActionBlock___
+  commentId: M:LunyScript.Blocks.IfBlock.Else(LunyScript.Blocks.ActionBlock[])
+  name.vb: Else(ParamArray ActionBlock())
+  fullName: LunyScript.Blocks.IfBlock.Else(params LunyScript.Blocks.ActionBlock[])
+  fullName.vb: LunyScript.Blocks.IfBlock.Else(ParamArray LunyScript.Blocks.ActionBlock())
+  nameWithType: IfBlock.Else(params ActionBlock[])
+  nameWithType.vb: IfBlock.Else(ParamArray ActionBlock())
 - uid: LunyScript.Blocks.IfBlock.Else*
   name: Else
   href: api/LunyScript.Blocks.IfBlock.html#LunyScript_Blocks_IfBlock_Else_
   commentId: Overload:LunyScript.Blocks.IfBlock.Else
   fullName: LunyScript.Blocks.IfBlock.Else
   nameWithType: IfBlock.Else
-- uid: LunyScript.Blocks.IfBlock.ElseIf(LunyScript.Blocks.ScriptConditionBlock[])
-  name: ElseIf(params ScriptConditionBlock[])
-  href: api/LunyScript.Blocks.IfBlock.html#LunyScript_Blocks_IfBlock_ElseIf_LunyScript_Blocks_ScriptConditionBlock___
-  commentId: M:LunyScript.Blocks.IfBlock.ElseIf(LunyScript.Blocks.ScriptConditionBlock[])
-  name.vb: ElseIf(ParamArray ScriptConditionBlock())
-  fullName: LunyScript.Blocks.IfBlock.ElseIf(params LunyScript.Blocks.ScriptConditionBlock[])
-  fullName.vb: LunyScript.Blocks.IfBlock.ElseIf(ParamArray LunyScript.Blocks.ScriptConditionBlock())
-  nameWithType: IfBlock.ElseIf(params ScriptConditionBlock[])
-  nameWithType.vb: IfBlock.ElseIf(ParamArray ScriptConditionBlock())
+- uid: LunyScript.Blocks.IfBlock.ElseIf(LunyScript.Blocks.ConditionBlock[])
+  name: ElseIf(params ConditionBlock[])
+  href: api/LunyScript.Blocks.IfBlock.html#LunyScript_Blocks_IfBlock_ElseIf_LunyScript_Blocks_ConditionBlock___
+  commentId: M:LunyScript.Blocks.IfBlock.ElseIf(LunyScript.Blocks.ConditionBlock[])
+  name.vb: ElseIf(ParamArray ConditionBlock())
+  fullName: LunyScript.Blocks.IfBlock.ElseIf(params LunyScript.Blocks.ConditionBlock[])
+  fullName.vb: LunyScript.Blocks.IfBlock.ElseIf(ParamArray LunyScript.Blocks.ConditionBlock())
+  nameWithType: IfBlock.ElseIf(params ConditionBlock[])
+  nameWithType.vb: IfBlock.ElseIf(ParamArray ConditionBlock())
 - uid: LunyScript.Blocks.IfBlock.ElseIf*
   name: ElseIf
   href: api/LunyScript.Blocks.IfBlock.html#LunyScript_Blocks_IfBlock_ElseIf_
@@ -18997,15 +19176,15 @@ references:
   commentId: Overload:LunyScript.Blocks.IfBlock.Execute
   fullName: LunyScript.Blocks.IfBlock.Execute
   nameWithType: IfBlock.Execute
-- uid: LunyScript.Blocks.IfBlock.Then(LunyScript.Blocks.ScriptActionBlock[])
-  name: Then(params ScriptActionBlock[])
-  href: api/LunyScript.Blocks.IfBlock.html#LunyScript_Blocks_IfBlock_Then_LunyScript_Blocks_ScriptActionBlock___
-  commentId: M:LunyScript.Blocks.IfBlock.Then(LunyScript.Blocks.ScriptActionBlock[])
-  name.vb: Then(ParamArray ScriptActionBlock())
-  fullName: LunyScript.Blocks.IfBlock.Then(params LunyScript.Blocks.ScriptActionBlock[])
-  fullName.vb: LunyScript.Blocks.IfBlock.Then(ParamArray LunyScript.Blocks.ScriptActionBlock())
-  nameWithType: IfBlock.Then(params ScriptActionBlock[])
-  nameWithType.vb: IfBlock.Then(ParamArray ScriptActionBlock())
+- uid: LunyScript.Blocks.IfBlock.Then(LunyScript.Blocks.ActionBlock[])
+  name: Then(params ActionBlock[])
+  href: api/LunyScript.Blocks.IfBlock.html#LunyScript_Blocks_IfBlock_Then_LunyScript_Blocks_ActionBlock___
+  commentId: M:LunyScript.Blocks.IfBlock.Then(LunyScript.Blocks.ActionBlock[])
+  name.vb: Then(ParamArray ActionBlock())
+  fullName: LunyScript.Blocks.IfBlock.Then(params LunyScript.Blocks.ActionBlock[])
+  fullName.vb: LunyScript.Blocks.IfBlock.Then(ParamArray LunyScript.Blocks.ActionBlock())
+  nameWithType: IfBlock.Then(params ActionBlock[])
+  nameWithType.vb: IfBlock.Then(ParamArray ActionBlock())
 - uid: LunyScript.Blocks.IfBlock.Then*
   name: Then
   href: api/LunyScript.Blocks.IfBlock.html#LunyScript_Blocks_IfBlock_Then_
@@ -19221,15 +19400,15 @@ references:
   commentId: T:LunyScript.Blocks.SequenceBlock
   fullName: LunyScript.Blocks.SequenceBlock
   nameWithType: SequenceBlock
-- uid: LunyScript.Blocks.SequenceBlock.#ctor(System.Collections.Generic.IReadOnlyList{LunyScript.Blocks.ScriptActionBlock})
-  name: SequenceBlock(IReadOnlyList<ScriptActionBlock>)
-  href: api/LunyScript.Blocks.SequenceBlock.html#LunyScript_Blocks_SequenceBlock__ctor_System_Collections_Generic_IReadOnlyList_LunyScript_Blocks_ScriptActionBlock__
-  commentId: M:LunyScript.Blocks.SequenceBlock.#ctor(System.Collections.Generic.IReadOnlyList{LunyScript.Blocks.ScriptActionBlock})
-  name.vb: New(IReadOnlyList(Of ScriptActionBlock))
-  fullName: LunyScript.Blocks.SequenceBlock.SequenceBlock(System.Collections.Generic.IReadOnlyList<LunyScript.Blocks.ScriptActionBlock>)
-  fullName.vb: LunyScript.Blocks.SequenceBlock.New(System.Collections.Generic.IReadOnlyList(Of LunyScript.Blocks.ScriptActionBlock))
-  nameWithType: SequenceBlock.SequenceBlock(IReadOnlyList<ScriptActionBlock>)
-  nameWithType.vb: SequenceBlock.New(IReadOnlyList(Of ScriptActionBlock))
+- uid: LunyScript.Blocks.SequenceBlock.#ctor(System.Collections.Generic.IReadOnlyList{LunyScript.Blocks.ActionBlock})
+  name: SequenceBlock(IReadOnlyList<ActionBlock>)
+  href: api/LunyScript.Blocks.SequenceBlock.html#LunyScript_Blocks_SequenceBlock__ctor_System_Collections_Generic_IReadOnlyList_LunyScript_Blocks_ActionBlock__
+  commentId: M:LunyScript.Blocks.SequenceBlock.#ctor(System.Collections.Generic.IReadOnlyList{LunyScript.Blocks.ActionBlock})
+  name.vb: New(IReadOnlyList(Of ActionBlock))
+  fullName: LunyScript.Blocks.SequenceBlock.SequenceBlock(System.Collections.Generic.IReadOnlyList<LunyScript.Blocks.ActionBlock>)
+  fullName.vb: LunyScript.Blocks.SequenceBlock.New(System.Collections.Generic.IReadOnlyList(Of LunyScript.Blocks.ActionBlock))
+  nameWithType: SequenceBlock.SequenceBlock(IReadOnlyList<ActionBlock>)
+  nameWithType.vb: SequenceBlock.New(IReadOnlyList(Of ActionBlock))
 - uid: LunyScript.Blocks.SequenceBlock.#ctor*
   name: SequenceBlock
   href: api/LunyScript.Blocks.SequenceBlock.html#LunyScript_Blocks_SequenceBlock__ctor_
@@ -19287,15 +19466,15 @@ references:
   commentId: Overload:LunyScript.Blocks.SequenceBlock.IsEmpty
   fullName: LunyScript.Blocks.SequenceBlock.IsEmpty
   nameWithType: SequenceBlock.IsEmpty
-- uid: LunyScript.Blocks.SequenceBlock.TryCreate(System.Collections.Generic.IReadOnlyList{LunyScript.Blocks.ScriptActionBlock})
-  name: TryCreate(IReadOnlyList<ScriptActionBlock>)
-  href: api/LunyScript.Blocks.SequenceBlock.html#LunyScript_Blocks_SequenceBlock_TryCreate_System_Collections_Generic_IReadOnlyList_LunyScript_Blocks_ScriptActionBlock__
-  commentId: M:LunyScript.Blocks.SequenceBlock.TryCreate(System.Collections.Generic.IReadOnlyList{LunyScript.Blocks.ScriptActionBlock})
-  name.vb: TryCreate(IReadOnlyList(Of ScriptActionBlock))
-  fullName: LunyScript.Blocks.SequenceBlock.TryCreate(System.Collections.Generic.IReadOnlyList<LunyScript.Blocks.ScriptActionBlock>)
-  fullName.vb: LunyScript.Blocks.SequenceBlock.TryCreate(System.Collections.Generic.IReadOnlyList(Of LunyScript.Blocks.ScriptActionBlock))
-  nameWithType: SequenceBlock.TryCreate(IReadOnlyList<ScriptActionBlock>)
-  nameWithType.vb: SequenceBlock.TryCreate(IReadOnlyList(Of ScriptActionBlock))
+- uid: LunyScript.Blocks.SequenceBlock.TryCreate(System.Collections.Generic.IReadOnlyList{LunyScript.Blocks.ActionBlock})
+  name: TryCreate(IReadOnlyList<ActionBlock>)
+  href: api/LunyScript.Blocks.SequenceBlock.html#LunyScript_Blocks_SequenceBlock_TryCreate_System_Collections_Generic_IReadOnlyList_LunyScript_Blocks_ActionBlock__
+  commentId: M:LunyScript.Blocks.SequenceBlock.TryCreate(System.Collections.Generic.IReadOnlyList{LunyScript.Blocks.ActionBlock})
+  name.vb: TryCreate(IReadOnlyList(Of ActionBlock))
+  fullName: LunyScript.Blocks.SequenceBlock.TryCreate(System.Collections.Generic.IReadOnlyList<LunyScript.Blocks.ActionBlock>)
+  fullName.vb: LunyScript.Blocks.SequenceBlock.TryCreate(System.Collections.Generic.IReadOnlyList(Of LunyScript.Blocks.ActionBlock))
+  nameWithType: SequenceBlock.TryCreate(IReadOnlyList<ActionBlock>)
+  nameWithType.vb: SequenceBlock.TryCreate(IReadOnlyList(Of ActionBlock))
 - uid: LunyScript.Blocks.SequenceBlock.TryCreate*
   name: TryCreate
   href: api/LunyScript.Blocks.SequenceBlock.html#LunyScript_Blocks_SequenceBlock_TryCreate_
@@ -23035,15 +23214,15 @@ references:
   fullName.vb: LunyScript.Script.New
   nameWithType: Script.Script
   nameWithType.vb: Script.New
-- uid: LunyScript.Script.AND(LunyScript.Blocks.ScriptConditionBlock[])
-  name: AND(params ScriptConditionBlock[])
-  href: api/LunyScript.Script.html#LunyScript_Script_AND_LunyScript_Blocks_ScriptConditionBlock___
-  commentId: M:LunyScript.Script.AND(LunyScript.Blocks.ScriptConditionBlock[])
-  name.vb: AND(ParamArray ScriptConditionBlock())
-  fullName: LunyScript.Script.AND(params LunyScript.Blocks.ScriptConditionBlock[])
-  fullName.vb: LunyScript.Script.AND(ParamArray LunyScript.Blocks.ScriptConditionBlock())
-  nameWithType: Script.AND(params ScriptConditionBlock[])
-  nameWithType.vb: Script.AND(ParamArray ScriptConditionBlock())
+- uid: LunyScript.Script.AND(LunyScript.Blocks.ConditionBlock[])
+  name: AND(params ConditionBlock[])
+  href: api/LunyScript.Script.html#LunyScript_Script_AND_LunyScript_Blocks_ConditionBlock___
+  commentId: M:LunyScript.Script.AND(LunyScript.Blocks.ConditionBlock[])
+  name.vb: AND(ParamArray ConditionBlock())
+  fullName: LunyScript.Script.AND(params LunyScript.Blocks.ConditionBlock[])
+  fullName.vb: LunyScript.Script.AND(ParamArray LunyScript.Blocks.ConditionBlock())
+  nameWithType: Script.AND(params ConditionBlock[])
+  nameWithType.vb: Script.AND(ParamArray ConditionBlock())
 - uid: LunyScript.Script.AND*
   name: AND
   href: api/LunyScript.Script.html#LunyScript_Script_AND_
@@ -23188,15 +23367,15 @@ references:
   commentId: Overload:LunyScript.Script.GVar
   fullName: LunyScript.Script.GVar
   nameWithType: Script.GVar
-- uid: LunyScript.Script.If(LunyScript.Blocks.ScriptConditionBlock[])
-  name: If(params ScriptConditionBlock[])
-  href: api/LunyScript.Script.html#LunyScript_Script_If_LunyScript_Blocks_ScriptConditionBlock___
-  commentId: M:LunyScript.Script.If(LunyScript.Blocks.ScriptConditionBlock[])
-  name.vb: If(ParamArray ScriptConditionBlock())
-  fullName: LunyScript.Script.If(params LunyScript.Blocks.ScriptConditionBlock[])
-  fullName.vb: LunyScript.Script.If(ParamArray LunyScript.Blocks.ScriptConditionBlock())
-  nameWithType: Script.If(params ScriptConditionBlock[])
-  nameWithType.vb: Script.If(ParamArray ScriptConditionBlock())
+- uid: LunyScript.Script.If(LunyScript.Blocks.ConditionBlock[])
+  name: If(params ConditionBlock[])
+  href: api/LunyScript.Script.html#LunyScript_Script_If_LunyScript_Blocks_ConditionBlock___
+  commentId: M:LunyScript.Script.If(LunyScript.Blocks.ConditionBlock[])
+  name.vb: If(ParamArray ConditionBlock())
+  fullName: LunyScript.Script.If(params LunyScript.Blocks.ConditionBlock[])
+  fullName.vb: LunyScript.Script.If(ParamArray LunyScript.Blocks.ConditionBlock())
+  nameWithType: Script.If(params ConditionBlock[])
+  nameWithType.vb: Script.If(ParamArray ConditionBlock())
 - uid: LunyScript.Script.If*
   name: If
   href: api/LunyScript.Script.html#LunyScript_Script_If_
@@ -23227,12 +23406,12 @@ references:
   commentId: Overload:LunyScript.Script.IsEditor
   fullName: LunyScript.Script.IsEditor
   nameWithType: Script.IsEditor
-- uid: LunyScript.Script.NOT(LunyScript.Blocks.ScriptConditionBlock)
-  name: NOT(ScriptConditionBlock)
-  href: api/LunyScript.Script.html#LunyScript_Script_NOT_LunyScript_Blocks_ScriptConditionBlock_
-  commentId: M:LunyScript.Script.NOT(LunyScript.Blocks.ScriptConditionBlock)
-  fullName: LunyScript.Script.NOT(LunyScript.Blocks.ScriptConditionBlock)
-  nameWithType: Script.NOT(ScriptConditionBlock)
+- uid: LunyScript.Script.NOT(LunyScript.Blocks.ConditionBlock)
+  name: NOT(ConditionBlock)
+  href: api/LunyScript.Script.html#LunyScript_Script_NOT_LunyScript_Blocks_ConditionBlock_
+  commentId: M:LunyScript.Script.NOT(LunyScript.Blocks.ConditionBlock)
+  fullName: LunyScript.Script.NOT(LunyScript.Blocks.ConditionBlock)
+  nameWithType: Script.NOT(ConditionBlock)
 - uid: LunyScript.Script.NOT*
   name: NOT
   href: api/LunyScript.Script.html#LunyScript_Script_NOT_
@@ -23251,15 +23430,15 @@ references:
   commentId: Overload:LunyScript.Script.Name
   fullName: LunyScript.Script.Name
   nameWithType: Script.Name
-- uid: LunyScript.Script.OR(LunyScript.Blocks.ScriptConditionBlock[])
-  name: OR(params ScriptConditionBlock[])
-  href: api/LunyScript.Script.html#LunyScript_Script_OR_LunyScript_Blocks_ScriptConditionBlock___
-  commentId: M:LunyScript.Script.OR(LunyScript.Blocks.ScriptConditionBlock[])
-  name.vb: OR(ParamArray ScriptConditionBlock())
-  fullName: LunyScript.Script.OR(params LunyScript.Blocks.ScriptConditionBlock[])
-  fullName.vb: LunyScript.Script.OR(ParamArray LunyScript.Blocks.ScriptConditionBlock())
-  nameWithType: Script.OR(params ScriptConditionBlock[])
-  nameWithType.vb: Script.OR(ParamArray ScriptConditionBlock())
+- uid: LunyScript.Script.OR(LunyScript.Blocks.ConditionBlock[])
+  name: OR(params ConditionBlock[])
+  href: api/LunyScript.Script.html#LunyScript_Script_OR_LunyScript_Blocks_ConditionBlock___
+  commentId: M:LunyScript.Script.OR(LunyScript.Blocks.ConditionBlock[])
+  name.vb: OR(ParamArray ConditionBlock())
+  fullName: LunyScript.Script.OR(params LunyScript.Blocks.ConditionBlock[])
+  fullName.vb: LunyScript.Script.OR(ParamArray LunyScript.Blocks.ConditionBlock())
+  nameWithType: Script.OR(params ConditionBlock[])
+  nameWithType.vb: Script.OR(ParamArray ConditionBlock())
 - uid: LunyScript.Script.OR*
   name: OR
   href: api/LunyScript.Script.html#LunyScript_Script_OR_
@@ -23407,15 +23586,15 @@ references:
   commentId: Overload:LunyScript.Script.When
   fullName: LunyScript.Script.When
   nameWithType: Script.When
-- uid: LunyScript.Script.While(LunyScript.Blocks.ScriptConditionBlock[])
-  name: While(params ScriptConditionBlock[])
-  href: api/LunyScript.Script.html#LunyScript_Script_While_LunyScript_Blocks_ScriptConditionBlock___
-  commentId: M:LunyScript.Script.While(LunyScript.Blocks.ScriptConditionBlock[])
-  name.vb: While(ParamArray ScriptConditionBlock())
-  fullName: LunyScript.Script.While(params LunyScript.Blocks.ScriptConditionBlock[])
-  fullName.vb: LunyScript.Script.While(ParamArray LunyScript.Blocks.ScriptConditionBlock())
-  nameWithType: Script.While(params ScriptConditionBlock[])
-  nameWithType.vb: Script.While(ParamArray ScriptConditionBlock())
+- uid: LunyScript.Script.While(LunyScript.Blocks.ConditionBlock[])
+  name: While(params ConditionBlock[])
+  href: api/LunyScript.Script.html#LunyScript_Script_While_LunyScript_Blocks_ConditionBlock___
+  commentId: M:LunyScript.Script.While(LunyScript.Blocks.ConditionBlock[])
+  name.vb: While(ParamArray ConditionBlock())
+  fullName: LunyScript.Script.While(params LunyScript.Blocks.ConditionBlock[])
+  fullName.vb: LunyScript.Script.While(ParamArray LunyScript.Blocks.ConditionBlock())
+  nameWithType: Script.While(params ConditionBlock[])
+  nameWithType.vb: Script.While(ParamArray ConditionBlock())
 - uid: LunyScript.Script.While*
   name: While
   href: api/LunyScript.Script.html#LunyScript_Script_While_

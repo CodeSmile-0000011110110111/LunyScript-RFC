@@ -103,7 +103,7 @@ Struct Variable&lt;T&gt;
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly struct Variable&lt;T&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly struct Variable&lt;T&gt; : IEquatable&lt;Variable&lt;T&gt;&gt;</code></pre>
   </div>
 
 
@@ -115,6 +115,12 @@ Struct Variable&lt;T&gt;
   </dl>
 
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Luny.Variable-1.html">Variable</a>&lt;T&gt;&gt;</div>
+    </dd>
+  </dl>
 
 
 
@@ -472,7 +478,7 @@ Struct Variable&lt;T&gt;
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">int</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
   </dl>
 

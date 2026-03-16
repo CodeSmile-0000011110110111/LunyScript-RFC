@@ -97,10 +97,20 @@
 Classes
 </h3>
     <dl class="jumplist">
+      <dt><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a></dt>
+      <dd><p>Abstract base for action blocks that perform an action that may alter game state.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="LunyScript.Blocks.ComputedVariableBlock.html">ComputedVariableBlock</a></dt>
       <dd><p>Abstract base for variable blocks that compute their value on-the-fly from runtime context
 rather than reading from a Table entry. TargetHandle is permanently null, so Set/Add/etc.
 will throw LunyScriptVariableException (&quot;Cannot modify read-only variable&quot;).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="LunyScript.Blocks.ConditionBlock.html">ConditionBlock</a></dt>
+      <dd><p>Abstract base for condition blocks that evaluate to a boolean result.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -118,18 +128,8 @@ will throw LunyScriptVariableException (&quot;Cannot modify read-only variable&q
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a></dt>
-      <dd><p>Abstract base for action blocks that perform an action that may alter game state.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
       <dt><a class="xref" href="LunyScript.Blocks.ScriptBlock.html">ScriptBlock</a></dt>
       <dd><p>Abstract base for all LunyScript blocks.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="LunyScript.Blocks.ScriptConditionBlock.html">ScriptConditionBlock</a></dt>
-      <dd><p>Abstract base for condition blocks that evaluate to a boolean result.</p>
 </dd>
     </dl>
     <dl class="jumplist">

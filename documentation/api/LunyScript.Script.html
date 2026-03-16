@@ -702,28 +702,28 @@ In the future alternative script assignment options will be provided.</p>
 
   <a id="LunyScript_Script_AND_" data-uid="LunyScript.Script.AND*"></a>
 
-  <h3 id="LunyScript_Script_AND_LunyScript_Blocks_ScriptConditionBlock___" data-uid="LunyScript.Script.AND(LunyScript.Blocks.ScriptConditionBlock[])">
-  AND(params ScriptConditionBlock[])
+  <h3 id="LunyScript_Script_AND_LunyScript_Blocks_ConditionBlock___" data-uid="LunyScript.Script.AND(LunyScript.Blocks.ConditionBlock[])">
+  AND(params ConditionBlock[])
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Logical AND: Returns true if all conditions are true.</p>
+  <div class="markdown level1 summary"><p>Logical AND: Returns true if all conditions are true. Requires at least two conditions.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptConditionBlock AND(params ScriptConditionBlock[] conditions)</code></pre>
+    <pre><code class="lang-csharp hljs">public ConditionBlock AND(params ConditionBlock[] conditions)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>conditions</code> <a class="xref" href="LunyScript.Blocks.ScriptConditionBlock.html">ScriptConditionBlock</a>[]</dt>
+    <dt><code>conditions</code> <a class="xref" href="LunyScript.Blocks.ConditionBlock.html">ConditionBlock</a>[]</dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="LunyScript.Blocks.ScriptConditionBlock.html">ScriptConditionBlock</a></dt>
+    <dt><a class="xref" href="LunyScript.Blocks.ConditionBlock.html">ConditionBlock</a></dt>
     <dd></dd>
   </dl>
 
@@ -778,23 +778,23 @@ Users can use regular C# syntax (ie call methods, use loops) to construct comple
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Executes a System.Func&lt;IScriptRuntimeContext, bool&gt; (lambda) or method taking a IScriptRuntimeContext parameter and returns bool.</p>
+  <div class="markdown level1 summary"><p>Executes a <code>System.Func&lt;IScriptRuntimeContext, bool&gt;</code> (lambda) or method taking a IScriptRuntimeContext parameter and returns bool.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptConditionBlock Check(Func&lt;IScriptRuntimeContext, bool&gt; func)</code></pre>
+    <pre><code class="lang-csharp hljs">public ConditionBlock Check(Func&lt;IScriptRuntimeContext, bool&gt; func)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>func</code> <span class="xref">Func</span>&lt;<a class="xref" href="LunyScript.IScriptRuntimeContext.html">IScriptRuntimeContext</a>, <span class="xref">bool</span>&gt;</dt>
+    <dt><code>func</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="LunyScript.IScriptRuntimeContext.html">IScriptRuntimeContext</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="LunyScript.Blocks.ScriptConditionBlock.html">ScriptConditionBlock</a></dt>
+    <dt><a class="xref" href="LunyScript.Blocks.ConditionBlock.html">ConditionBlock</a></dt>
     <dd></dd>
   </dl>
 
@@ -822,23 +822,23 @@ Users can use regular C# syntax (ie call methods, use loops) to construct comple
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Executes a System.Func&lt;bool&gt; (lambda) or parameterless method returning bool.</p>
+  <div class="markdown level1 summary"><p>Executes a <code>System.Func&lt;bool&gt;</code> (lambda) or parameterless method returning bool.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptConditionBlock Check(Func&lt;bool&gt; func)</code></pre>
+    <pre><code class="lang-csharp hljs">public ConditionBlock Check(Func&lt;bool&gt; func)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>func</code> <span class="xref">Func</span>&lt;<span class="xref">bool</span>&gt;</dt>
+    <dt><code>func</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="LunyScript.Blocks.ScriptConditionBlock.html">ScriptConditionBlock</a></dt>
+    <dt><a class="xref" href="LunyScript.Blocks.ConditionBlock.html">ConditionBlock</a></dt>
     <dd></dd>
   </dl>
 
@@ -941,7 +941,7 @@ Starts at 1 and increments by 1 until limit is reached (inclusive).</p>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>numberOfTimes</code> <span class="xref">int</span></dt>
+    <dt><code>numberOfTimes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
   </dl>
 
@@ -980,9 +980,9 @@ If step is negative: starts at limit and decrements by step until 1 is reached.<
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>numberOfTimes</code> <span class="xref">int</span></dt>
+    <dt><code>numberOfTimes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
-    <dt><code>step</code> <span class="xref">int</span></dt>
+    <dt><code>step</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
   </dl>
 
@@ -1004,8 +1004,8 @@ If step is negative: starts at limit and decrements by step until 1 is reached.<
 
   <a id="LunyScript_Script_If_" data-uid="LunyScript.Script.If*"></a>
 
-  <h3 id="LunyScript_Script_If_LunyScript_Blocks_ScriptConditionBlock___" data-uid="LunyScript.Script.If(LunyScript.Blocks.ScriptConditionBlock[])">
-  If(params ScriptConditionBlock[])
+  <h3 id="LunyScript_Script_If_LunyScript_Blocks_ConditionBlock___" data-uid="LunyScript.Script.If(LunyScript.Blocks.ConditionBlock[])">
+  If(params ConditionBlock[])
   
   </h3>
 
@@ -1015,12 +1015,12 @@ Multiple conditions are implicitly AND combined.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IfBlock If(params ScriptConditionBlock[] conditions)</code></pre>
+    <pre><code class="lang-csharp hljs">public IfBlock If(params ConditionBlock[] conditions)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>conditions</code> <a class="xref" href="LunyScript.Blocks.ScriptConditionBlock.html">ScriptConditionBlock</a>[]</dt>
+    <dt><code>conditions</code> <a class="xref" href="LunyScript.Blocks.ConditionBlock.html">ConditionBlock</a>[]</dt>
     <dd></dd>
   </dl>
 
@@ -1042,8 +1042,8 @@ Multiple conditions are implicitly AND combined.</p>
 
   <a id="LunyScript_Script_NOT_" data-uid="LunyScript.Script.NOT*"></a>
 
-  <h3 id="LunyScript_Script_NOT_LunyScript_Blocks_ScriptConditionBlock_" data-uid="LunyScript.Script.NOT(LunyScript.Blocks.ScriptConditionBlock)">
-  NOT(ScriptConditionBlock)
+  <h3 id="LunyScript_Script_NOT_LunyScript_Blocks_ConditionBlock_" data-uid="LunyScript.Script.NOT(LunyScript.Blocks.ConditionBlock)">
+  NOT(ConditionBlock)
   
   </h3>
 
@@ -1052,18 +1052,18 @@ Multiple conditions are implicitly AND combined.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptConditionBlock NOT(ScriptConditionBlock condition)</code></pre>
+    <pre><code class="lang-csharp hljs">public ConditionBlock NOT(ConditionBlock condition)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>condition</code> <a class="xref" href="LunyScript.Blocks.ScriptConditionBlock.html">ScriptConditionBlock</a></dt>
+    <dt><code>condition</code> <a class="xref" href="LunyScript.Blocks.ConditionBlock.html">ConditionBlock</a></dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="LunyScript.Blocks.ScriptConditionBlock.html">ScriptConditionBlock</a></dt>
+    <dt><a class="xref" href="LunyScript.Blocks.ConditionBlock.html">ConditionBlock</a></dt>
     <dd></dd>
   </dl>
 
@@ -1079,28 +1079,28 @@ Multiple conditions are implicitly AND combined.</p>
 
   <a id="LunyScript_Script_OR_" data-uid="LunyScript.Script.OR*"></a>
 
-  <h3 id="LunyScript_Script_OR_LunyScript_Blocks_ScriptConditionBlock___" data-uid="LunyScript.Script.OR(LunyScript.Blocks.ScriptConditionBlock[])">
-  OR(params ScriptConditionBlock[])
+  <h3 id="LunyScript_Script_OR_LunyScript_Blocks_ConditionBlock___" data-uid="LunyScript.Script.OR(LunyScript.Blocks.ConditionBlock[])">
+  OR(params ConditionBlock[])
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Logical OR: Returns true if at least one condition is true.</p>
+  <div class="markdown level1 summary"><p>Logical OR: Returns true if at least one condition is true. Requires at least two conditions.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptConditionBlock OR(params ScriptConditionBlock[] conditions)</code></pre>
+    <pre><code class="lang-csharp hljs">public ConditionBlock OR(params ConditionBlock[] conditions)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>conditions</code> <a class="xref" href="LunyScript.Blocks.ScriptConditionBlock.html">ScriptConditionBlock</a>[]</dt>
+    <dt><code>conditions</code> <a class="xref" href="LunyScript.Blocks.ConditionBlock.html">ConditionBlock</a>[]</dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="LunyScript.Blocks.ScriptConditionBlock.html">ScriptConditionBlock</a></dt>
+    <dt><a class="xref" href="LunyScript.Blocks.ConditionBlock.html">ConditionBlock</a></dt>
     <dd></dd>
   </dl>
 
@@ -1121,23 +1121,23 @@ Multiple conditions are implicitly AND combined.</p>
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Executes a System.Action (lambda) or parameterless method returning void.</p>
+  <div class="markdown level1 summary"><p>Executes a <code>System.Action</code> (lambda) or parameterless method returning void.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptActionBlock Run(Action action)</code></pre>
+    <pre><code class="lang-csharp hljs">public ActionBlock Run(Action action)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>action</code> <span class="xref">Action</span></dt>
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a></dt>
+    <dt><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a></dt>
     <dd></dd>
   </dl>
 
@@ -1153,6 +1153,21 @@ Multiple conditions are implicitly AND combined.</p>
 <li>Prefer to convert &quot;Run&quot; code into a custom IBlock class after its initial development and testing,</li>
 <li>Prefer named methods over lambdas to ensure the block-based code continues to read like intent.</li>
 </ul>
+<pre><code>// A lambda adds notable 'syntax noise':
+On.Ready(Run(() =&gt; LunyLogger.LogInfo(&quot;custom log inline&quot;)));
+
+// Multi-line lambdas are even worse:
+On.Ready(Run(() =&gt; {
+    LunyLogger.LogInfo(&quot;custom log inline&quot;);
+}));
+
+// A named method is much cleaner, and re-usable:
+On.Ready(Run(MyCustomLog));
+
+internal static void MyCustomLog() {
+    LunyLogger.LogInfo(&quot;custom log&quot;);
+}
+</code></pre>
 </div>
 
 
@@ -1165,23 +1180,23 @@ Multiple conditions are implicitly AND combined.</p>
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Executes a System.Action (lambda) or a method that takes a IScriptRuntimeContext parameter and returns void.</p>
+  <div class="markdown level1 summary"><p>Executes a <code>System.Action</code> (lambda) or a method that takes a IScriptRuntimeContext parameter and returns void.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptActionBlock Run(Action&lt;IScriptRuntimeContext&gt; action)</code></pre>
+    <pre><code class="lang-csharp hljs">public ActionBlock Run(Action&lt;IScriptRuntimeContext&gt; action)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>action</code> <span class="xref">Action</span>&lt;<a class="xref" href="LunyScript.IScriptRuntimeContext.html">IScriptRuntimeContext</a>&gt;</dt>
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="LunyScript.IScriptRuntimeContext.html">IScriptRuntimeContext</a>&gt;</dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a></dt>
+    <dt><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a></dt>
     <dd></dd>
   </dl>
 
@@ -1235,8 +1250,8 @@ Multiple conditions are implicitly AND combined.</p>
 
   <a id="LunyScript_Script_While_" data-uid="LunyScript.Script.While*"></a>
 
-  <h3 id="LunyScript_Script_While_LunyScript_Blocks_ScriptConditionBlock___" data-uid="LunyScript.Script.While(LunyScript.Blocks.ScriptConditionBlock[])">
-  While(params ScriptConditionBlock[])
+  <h3 id="LunyScript_Script_While_LunyScript_Blocks_ConditionBlock___" data-uid="LunyScript.Script.While(LunyScript.Blocks.ConditionBlock[])">
+  While(params ConditionBlock[])
   
   </h3>
 
@@ -1246,12 +1261,12 @@ Multiple conditions are implicitly AND combined.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public WhileBlockBuilder While(params ScriptConditionBlock[] conditions)</code></pre>
+    <pre><code class="lang-csharp hljs">public WhileBlockBuilder While(params ConditionBlock[] conditions)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>conditions</code> <a class="xref" href="LunyScript.Blocks.ScriptConditionBlock.html">ScriptConditionBlock</a>[]</dt>
+    <dt><code>conditions</code> <a class="xref" href="LunyScript.Blocks.ConditionBlock.html">ConditionBlock</a>[]</dt>
     <dd></dd>
   </dl>
 

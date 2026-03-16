@@ -114,6 +114,19 @@ unless the scripting symbol LUNYSCRIPT_DEBUG is defined.</p>
 
 
 
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals">ValueType.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode">ValueType.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a>
+    </div>
+  </dd></dl>
 
 
 
@@ -138,7 +151,7 @@ Only breaks when DEBUG or LUNYSCRIPT_DEBUG is defined.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptActionBlock Break(string message = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public ActionBlock Break(string message = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -149,7 +162,7 @@ Only breaks when DEBUG or LUNYSCRIPT_DEBUG is defined.</p>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a></dt>
+    <dt><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a></dt>
     <dd></dd>
   </dl>
 
@@ -175,7 +188,7 @@ Only breaks when DEBUG or LUNYSCRIPT_DEBUG is defined.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptActionBlock Log(VariableBlock variableBlock)</code></pre>
+    <pre><code class="lang-csharp hljs">public ActionBlock Log(VariableBlock variableBlock)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -186,7 +199,7 @@ Only breaks when DEBUG or LUNYSCRIPT_DEBUG is defined.</p>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a></dt>
+    <dt><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a></dt>
     <dd></dd>
   </dl>
 
@@ -212,7 +225,7 @@ Only breaks when DEBUG or LUNYSCRIPT_DEBUG is defined.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptActionBlock Log(string message)</code></pre>
+    <pre><code class="lang-csharp hljs">public ActionBlock Log(string message)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -223,7 +236,7 @@ Only breaks when DEBUG or LUNYSCRIPT_DEBUG is defined.</p>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a></dt>
+    <dt><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a></dt>
     <dd></dd>
   </dl>
 
@@ -250,7 +263,7 @@ Only logs when DEBUG or LUNYSCRIPT_DEBUG is defined, stripped in release builds.
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptActionBlock LogError(string message)</code></pre>
+    <pre><code class="lang-csharp hljs">public ActionBlock LogError(string message)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -261,7 +274,7 @@ Only logs when DEBUG or LUNYSCRIPT_DEBUG is defined, stripped in release builds.
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a></dt>
+    <dt><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a></dt>
     <dd></dd>
   </dl>
 
@@ -287,7 +300,7 @@ Only logs when DEBUG or LUNYSCRIPT_DEBUG is defined, stripped in release builds.
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptActionBlock LogInfo(VariableBlock variableBlock)</code></pre>
+    <pre><code class="lang-csharp hljs">public ActionBlock LogInfo(VariableBlock variableBlock)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -298,7 +311,7 @@ Only logs when DEBUG or LUNYSCRIPT_DEBUG is defined, stripped in release builds.
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a></dt>
+    <dt><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a></dt>
     <dd></dd>
   </dl>
 
@@ -325,7 +338,7 @@ Only logs when DEBUG or LUNYSCRIPT_DEBUG is defined.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptActionBlock LogInfo(string message)</code></pre>
+    <pre><code class="lang-csharp hljs">public ActionBlock LogInfo(string message)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -336,7 +349,7 @@ Only logs when DEBUG or LUNYSCRIPT_DEBUG is defined.</p>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a></dt>
+    <dt><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a></dt>
     <dd></dd>
   </dl>
 
@@ -363,7 +376,7 @@ Only logs when DEBUG or LUNYSCRIPT_DEBUG is defined, stripped in release builds.
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptActionBlock LogWarning(string message)</code></pre>
+    <pre><code class="lang-csharp hljs">public ActionBlock LogWarning(string message)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -374,7 +387,7 @@ Only logs when DEBUG or LUNYSCRIPT_DEBUG is defined, stripped in release builds.
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a></dt>
+    <dt><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a></dt>
     <dd></dd>
   </dl>
 

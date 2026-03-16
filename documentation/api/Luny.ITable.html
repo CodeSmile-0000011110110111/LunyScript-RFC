@@ -104,7 +104,7 @@ Interface ITable
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface ITable</code></pre>
+    <pre><code class="lang-csharp hljs">public interface ITable : IEnumerable&lt;KeyValuePair&lt;string, Variable&gt;&gt;, IEnumerable</code></pre>
   </div>
 
 
@@ -113,6 +113,16 @@ Interface ITable
 
 
 
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator">IEnumerable&lt;KeyValuePair&lt;string, Variable&gt;&gt;.GetEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable.getenumerator">IEnumerable.GetEnumerator()</a>
+    </div>
+  </dd></dl>
 
 
 
@@ -482,7 +492,7 @@ Copy the values if you want to keep them.</p>
 
   <h4 class="section">Event Type</h4>
   <dl class="parameters">
-    <dt><span class="xref">EventHandler</span>&lt;<a class="xref" href="Luny.VariableChangedArgs.html">VariableChangedArgs</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Luny.VariableChangedArgs.html">VariableChangedArgs</a>&gt;</dt>
     <dd></dd>
   </dl>
 

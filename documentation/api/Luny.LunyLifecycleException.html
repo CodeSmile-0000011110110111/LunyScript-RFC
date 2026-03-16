@@ -105,7 +105,7 @@ such as singleton duplication or unexpected adapter removal.</p>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class LunyLifecycleException : LunyException</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class LunyLifecycleException : LunyException, ISerializable</code></pre>
   </div>
 
 
@@ -115,14 +115,60 @@ such as singleton duplication or unexpected adapter removal.</p>
     <dt>Inheritance</dt>
     <dd>
       <div><span class="xref">object</span></div>
-      <div><span class="xref">Exception</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></div>
       <div><a class="xref" href="Luny.LunyException.html">LunyException</a></div>
       <div><span class="xref">LunyLifecycleException</span></div>
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">ISerializable</a></div>
+    </dd>
+  </dl>
 
 
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.getbaseexception">Exception.GetBaseException()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.getobjectdata">Exception.GetObjectData(SerializationInfo, StreamingContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.tostring">Exception.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.gettype">Exception.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.targetsite">Exception.TargetSite</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.message">Exception.Message</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.data">Exception.Data</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.innerexception">Exception.InnerException</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.helplink">Exception.HelpLink</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.source">Exception.Source</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.hresult">Exception.HResult</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.stacktrace">Exception.StackTrace</a>
+    </div>
+  </dd></dl>
 
 
 

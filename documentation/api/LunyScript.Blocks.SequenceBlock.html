@@ -104,7 +104,7 @@ Class SequenceBlock
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class SequenceBlock : ScriptActionBlock, IScriptBlock, ISequenceBlock</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class SequenceBlock : ActionBlock, IScriptBlock, ISequenceBlock</code></pre>
   </div>
 
 
@@ -115,7 +115,7 @@ Class SequenceBlock
     <dd>
       <div><span class="xref">object</span></div>
       <div><a class="xref" href="LunyScript.Blocks.ScriptBlock.html">ScriptBlock</a></div>
-      <div><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a></div>
+      <div><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a></div>
       <div><span class="xref">SequenceBlock</span></div>
     </dd>
   </dl>
@@ -133,7 +133,7 @@ Class SequenceBlock
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html#LunyScript_Blocks_ScriptActionBlock_IsNullOrEmpty_LunyScript_Blocks_ScriptActionBlock___">ScriptActionBlock.IsNullOrEmpty(ScriptActionBlock[])</a>
+      <a class="xref" href="LunyScript.Blocks.ActionBlock.html#LunyScript_Blocks_ActionBlock_IsNullOrEmpty_LunyScript_Blocks_ActionBlock___">ActionBlock.IsNullOrEmpty(ActionBlock[])</a>
     </div>
   </dd></dl>
 
@@ -148,8 +148,8 @@ Class SequenceBlock
 
   <a id="LunyScript_Blocks_SequenceBlock__ctor_" data-uid="LunyScript.Blocks.SequenceBlock.#ctor*"></a>
 
-  <h3 id="LunyScript_Blocks_SequenceBlock__ctor_System_Collections_Generic_IReadOnlyList_LunyScript_Blocks_ScriptActionBlock__" data-uid="LunyScript.Blocks.SequenceBlock.#ctor(System.Collections.Generic.IReadOnlyList{LunyScript.Blocks.ScriptActionBlock})">
-  SequenceBlock(IReadOnlyList&lt;ScriptActionBlock&gt;)
+  <h3 id="LunyScript_Blocks_SequenceBlock__ctor_System_Collections_Generic_IReadOnlyList_LunyScript_Blocks_ActionBlock__" data-uid="LunyScript.Blocks.SequenceBlock.#ctor(System.Collections.Generic.IReadOnlyList{LunyScript.Blocks.ActionBlock})">
+  SequenceBlock(IReadOnlyList&lt;ActionBlock&gt;)
   
   </h3>
 
@@ -157,12 +157,12 @@ Class SequenceBlock
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SequenceBlock(IReadOnlyList&lt;ScriptActionBlock&gt; blocks)</code></pre>
+    <pre><code class="lang-csharp hljs">public SequenceBlock(IReadOnlyList&lt;ActionBlock&gt; blocks)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>blocks</code> <span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a>&gt;</dt>
+    <dt><code>blocks</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -192,7 +192,7 @@ Class SequenceBlock
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;ScriptActionBlock&gt; Blocks { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;ActionBlock&gt; Blocks { get; }</code></pre>
   </div>
 
 
@@ -201,7 +201,7 @@ Class SequenceBlock
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -311,8 +311,8 @@ Class SequenceBlock
 
   <a id="LunyScript_Blocks_SequenceBlock_TryCreate_" data-uid="LunyScript.Blocks.SequenceBlock.TryCreate*"></a>
 
-  <h3 id="LunyScript_Blocks_SequenceBlock_TryCreate_System_Collections_Generic_IReadOnlyList_LunyScript_Blocks_ScriptActionBlock__" data-uid="LunyScript.Blocks.SequenceBlock.TryCreate(System.Collections.Generic.IReadOnlyList{LunyScript.Blocks.ScriptActionBlock})">
-  TryCreate(IReadOnlyList&lt;ScriptActionBlock&gt;)
+  <h3 id="LunyScript_Blocks_SequenceBlock_TryCreate_System_Collections_Generic_IReadOnlyList_LunyScript_Blocks_ActionBlock__" data-uid="LunyScript.Blocks.SequenceBlock.TryCreate(System.Collections.Generic.IReadOnlyList{LunyScript.Blocks.ActionBlock})">
+  TryCreate(IReadOnlyList&lt;ActionBlock&gt;)
   
   </h3>
 
@@ -320,12 +320,12 @@ Class SequenceBlock
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static SequenceBlock TryCreate(IReadOnlyList&lt;ScriptActionBlock&gt; blocks)</code></pre>
+    <pre><code class="lang-csharp hljs">public static SequenceBlock TryCreate(IReadOnlyList&lt;ActionBlock&gt; blocks)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>blocks</code> <span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a>&gt;</dt>
+    <dt><code>blocks</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a>&gt;</dt>
     <dd></dd>
   </dl>
 

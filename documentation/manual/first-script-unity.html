@@ -89,16 +89,16 @@
         <article data-uid="">
 <h1 id="your-first-luny-script-in-unity">Your first Luny Script in Unity</h1>
 
-<p><strong>Goal</strong>: You want to create a controllable capsule as your first &quot;Player&quot; in a blank scene.</p>
+<p><strong>Goal</strong>: You want to create a controllable capsule as your first &quot;Player&quot; in a blank scene, using a regular <a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.html">MonoBehaviour</a> script.</p>
 <h2 id="status-quo-unity">Status Quo: Unity</h2>
-<p>First, let's see what you would currently have to do in Unity:</p>
+<p>What you have to do in Unity to set up player and scene:</p>
 <ul>
 <li><strong>Project</strong>: <code>Right-click: Create -&gt; Scene -&gt; Scene</code>. Name it whatever you like.</li>
 <li><strong>Project</strong>: <code>Right-click: Create -&gt; MonoBehaviour Script</code>. Name it &quot;Player&quot;.</li>
 <li><strong>Hierarchy</strong>: <code>Right-click: 3D Object -&gt; Capsule</code>. Name it &quot;Player&quot;.</li>
 <li><strong>Inspector</strong>: Select &quot;Player&quot;. <code>Inspector: Add Component -&gt; Player</code>.</li>
-<li>You check the Internet for a &quot;simple&quot; Unity 'Player' script and found this:</li>
 </ul>
+<p>Then you check the Internet for a &quot;simple&quot; Unity 'Player' script and found this:</p>
 <pre><code class="lang-csharp">using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -152,9 +152,9 @@ public class Player : MonoBehaviour
     }
 }
 </code></pre>
-<p><strong>It's <em>only</em> 52 lines for something so trivial. 🤯</strong></p>
+<p><strong>It's already 52 lines for something so trivial. 🤯</strong></p>
 <h2 id="with-lunyscript">With LunyScript</h2>
-<p>Let's compare it with the same LunyScript:</p>
+<p>Let's compare this with the same LunyScript:</p>
 <pre><code class="lang-csharp">using LunyScript;
 
 public partial class Player : Script
@@ -169,8 +169,7 @@ public partial class Player : Script
     }
 }
 </code></pre>
-<p><strong>That's 13 lines! Four times less! 😎</strong></p>
-<p>It only gets better from here on. The complexit doesn't scale proportionally, the gap widens the more you script!</p>
+<p><strong>That's 13 lines, four times less! 😎</strong></p>
 
 </article>
 

@@ -89,7 +89,7 @@
         <article data-uid="">
 <h1 id="your-first-luny-script-in-unity">Your first Luny Script in Unity</h1>
 
-<p><strong>Goal</strong>: You want to create a controllable capsule as your first &quot;Player&quot; in a blank scene.</p>
+<p><strong>Goal</strong>: You want to create a controllable capsule as your first &quot;Player&quot; in a blank scene, using LunyScript.</p>
 <h2 id="lunyscript-implementation">LunyScript Implementation</h2>
 <p>The setup process for our LunyScript in Unity:</p>
 <ul>
@@ -112,13 +112,13 @@ public partial class Player : Script
     }
 }
 </code></pre>
-<p><strong>That's just 13 lines! 😎</strong> It's 4 times less than MonoBehaviour, and 2.77 times less than GDScript.</p>
+<p><strong>At 13 lines, it's 4 times less than <a href="first-script-unity.html">MonoBehaviour</a> and 2.77 times less than <a href="first-script-godot.html">GDScript</a>!</strong> 😎</p>
 <p>Enter playmode and try it.</p>
 <h2 id="notes">Notes</h2>
 <p>Inspector assignment of Luny scripts is optional.</p>
 <p>By default, a Luny script will run for any object in the active scene that matches the script's class name.
 A LunyScript class named &quot;Player&quot; will run for the object named &quot;Player&quot;.</p>
-<p>In future there will be options to:</p>
+<p>There will be options to:</p>
 <ul>
 <li>Relax the class name vs object name match:
 <ul>

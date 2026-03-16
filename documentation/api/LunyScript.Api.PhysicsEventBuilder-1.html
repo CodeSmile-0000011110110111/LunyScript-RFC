@@ -121,6 +121,19 @@ Parameters within a filter kind are OR-combined; different kinds are AND-combine
 
 
 
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals">ValueType.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode">ValueType.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a>
+    </div>
+  </dd></dl>
 
 
 
@@ -133,8 +146,8 @@ Parameters within a filter kind are OR-combined; different kinds are AND-combine
 
   <a id="LunyScript_Api_PhysicsEventBuilder_1_Begins_" data-uid="LunyScript.Api.PhysicsEventBuilder`1.Begins*"></a>
 
-  <h3 id="LunyScript_Api_PhysicsEventBuilder_1_Begins_LunyScript_Blocks_ScriptActionBlock___" data-uid="LunyScript.Api.PhysicsEventBuilder`1.Begins(LunyScript.Blocks.ScriptActionBlock[])">
-  Begins(params ScriptActionBlock[])
+  <h3 id="LunyScript_Api_PhysicsEventBuilder_1_Begins_LunyScript_Blocks_ActionBlock___" data-uid="LunyScript.Api.PhysicsEventBuilder`1.Begins(LunyScript.Blocks.ActionBlock[])">
+  Begins(params ActionBlock[])
   
   </h3>
 
@@ -143,12 +156,12 @@ Parameters within a filter kind are OR-combined; different kinds are AND-combine
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PhysicsEventBuilder&lt;CollisionBuilderReady&gt; Begins(params ScriptActionBlock[] blocks)</code></pre>
+    <pre><code class="lang-csharp hljs">public PhysicsEventBuilder&lt;CollisionBuilderReady&gt; Begins(params ActionBlock[] blocks)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>blocks</code> <a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a>[]</dt>
+    <dt><code>blocks</code> <a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a>[]</dt>
     <dd></dd>
   </dl>
 
@@ -170,8 +183,8 @@ Parameters within a filter kind are OR-combined; different kinds are AND-combine
 
   <a id="LunyScript_Api_PhysicsEventBuilder_1_Continues_" data-uid="LunyScript.Api.PhysicsEventBuilder`1.Continues*"></a>
 
-  <h3 id="LunyScript_Api_PhysicsEventBuilder_1_Continues_LunyScript_Blocks_ScriptActionBlock___" data-uid="LunyScript.Api.PhysicsEventBuilder`1.Continues(LunyScript.Blocks.ScriptActionBlock[])">
-  Continues(params ScriptActionBlock[])
+  <h3 id="LunyScript_Api_PhysicsEventBuilder_1_Continues_LunyScript_Blocks_ActionBlock___" data-uid="LunyScript.Api.PhysicsEventBuilder`1.Continues(LunyScript.Blocks.ActionBlock[])">
+  Continues(params ActionBlock[])
   
   </h3>
 
@@ -180,12 +193,12 @@ Parameters within a filter kind are OR-combined; different kinds are AND-combine
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PhysicsEventBuilder&lt;CollisionBuilderReady&gt; Continues(params ScriptActionBlock[] blocks)</code></pre>
+    <pre><code class="lang-csharp hljs">public PhysicsEventBuilder&lt;CollisionBuilderReady&gt; Continues(params ActionBlock[] blocks)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>blocks</code> <a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a>[]</dt>
+    <dt><code>blocks</code> <a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a>[]</dt>
     <dd></dd>
   </dl>
 
@@ -245,8 +258,8 @@ The cooldown is checked before collision predicates; evaluated per event sequenc
 
   <a id="LunyScript_Api_PhysicsEventBuilder_1_Ends_" data-uid="LunyScript.Api.PhysicsEventBuilder`1.Ends*"></a>
 
-  <h3 id="LunyScript_Api_PhysicsEventBuilder_1_Ends_LunyScript_Blocks_ScriptActionBlock___" data-uid="LunyScript.Api.PhysicsEventBuilder`1.Ends(LunyScript.Blocks.ScriptActionBlock[])">
-  Ends(params ScriptActionBlock[])
+  <h3 id="LunyScript_Api_PhysicsEventBuilder_1_Ends_LunyScript_Blocks_ActionBlock___" data-uid="LunyScript.Api.PhysicsEventBuilder`1.Ends(LunyScript.Blocks.ActionBlock[])">
+  Ends(params ActionBlock[])
   
   </h3>
 
@@ -255,12 +268,12 @@ The cooldown is checked before collision predicates; evaluated per event sequenc
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PhysicsEventBuilder&lt;CollisionBuilderReady&gt; Ends(params ScriptActionBlock[] blocks)</code></pre>
+    <pre><code class="lang-csharp hljs">public PhysicsEventBuilder&lt;CollisionBuilderReady&gt; Ends(params ActionBlock[] blocks)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>blocks</code> <a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a>[]</dt>
+    <dt><code>blocks</code> <a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a>[]</dt>
     <dd></dd>
   </dl>
 
@@ -298,7 +311,7 @@ Mutually exclusive with Masked() — Masked() becomes unavailable after calling 
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>layerNames</code> <span class="xref">string</span>[]</dt>
+    <dt><code>layerNames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
     <dd></dd>
   </dl>
 
@@ -336,7 +349,7 @@ Combine with other filter kinds for AND logic across kinds.</p>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>tags</code> <span class="xref">string</span>[]</dt>
+    <dt><code>tags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
     <dd></dd>
   </dl>
 
@@ -373,7 +386,7 @@ Combine with other filter kinds for AND logic across kinds.</p>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>componentTypes</code> <span class="xref">Type</span>[]</dt>
+    <dt><code>componentTypes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a>[]</dt>
     <dd></dd>
   </dl>
 
@@ -410,7 +423,7 @@ Combine with other filter kinds for AND logic across kinds.</p>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>names</code> <span class="xref">string</span>[]</dt>
+    <dt><code>names</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
     <dd></dd>
   </dl>
 
