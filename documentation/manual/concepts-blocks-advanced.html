@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Anatomy of a Luny Script | LunyScript Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Anatomy of a Luny Script | LunyScript Documentation ">
+      
+      
+      <link rel="icon" href="../images/luny-logo-56x56.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <link rel="stylesheet" href="../public/alert.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/CodeSmile-0000011110110111/Luny-Docs/blob/main/manual/concepts-blocks-advanced.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+      <script type="module" src="./../public/gdscript-loader.js"></script>
+      <script src="../public/highlight-custom.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../images/Luny-logo-133x54.png" alt="Script">
+            Script
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="anatomy-of-a-luny-script">Anatomy of a Luny Script</h1>
+
+<p>LunyScript's block-based nature provides scripting opportunities which may not be immediately obvious. We can leverage basic C# functionality to take block-based scripting to the next level.</p>
+<h2 id="methods-returning-blocks">Methods Returning Blocks</h2>
+<p>You can extract the creation of blocks into reusable methods. This also keeps the <code>Build()</code> method clean and readable:</p>
+<pre><code class="lang-csharp">public override void Build(ScriptBuildContext context)
+{
+    On.Enabled(EnableMessages());
+    
+    On.Disabled(DisableMessages());
+}
+
+private ActionBlock[] EnableMessages() =&gt; new[]
+{
+    Debug.Log(&quot;I'm back!&quot;),
+    Debug.Log(&quot;I told you so!&quot;),
+};
+private ActionBlock[] DisableMessages() =&gt; new[]
+{
+    Debug.Log(&quot;I'll be back!&quot;), 
+    Debug.Log(&quot;Nooooo.... (sinks into lava)&quot;),
+};
+</code></pre>
+<p>This adds several syntax elements to the script we wouldn't usually write. Thus this strategy is for advanced users, not something you would teach to absolute beginners right away.</p>
+<h2 id="caution-blocks-outside-runnable-events-wont-run">Caution: Blocks Outside Runnable Events Won't Run</h2>
+<p>Creating a block outside of a block runner will silently discard that block:</p>
+<pre><code class="lang-csharp">public override void Build(ScriptBuildContext context)
+{
+    // Nothing will run this block ... it gets discarded
+    Object.Create(&quot;Enemy&quot;).With(&quot;Assets/Prefabs/Enemy&quot;);
+}
+</code></pre>
+<p>Block instances won't run by themselves. If a block isn't assigned to a &quot;block runner&quot; such a stray block won't run. Block runners are containers that hold on to blocks and execute them at runtime. Most commonly the <code>On.*</code> and <code>When.*</code> event handlers.</p>
+<div class="alert alert-tip">
+<h5>Tip</h5>
+<p>I found a way to detect such 'unused' blocks. This may log a warning or error in the future.</p>
+</div>
+<h2 id="assigning-blocks-to-variables">Assigning Blocks To Variables</h2>
+<p>You can create a block and assign it to a variable, and then use the variable:</p>
+<pre><code class="lang-csharp">public override void Build(ScriptBuildContext context)
+{
+    var createEnemy = Object.Create(&quot;Enemy&quot;).With(&quot;Assets/Prefabs/Enemy&quot;);
+    
+    // this will run the createEnemy block
+    On.Ready(createEnemy);
+}
+</code></pre>
+<p>This also helps to keep the script more readable. It allows you to use the same block in multiple runners:</p>
+<pre><code class="lang-csharp">public override void Build(ScriptBuildContext context)
+{
+    var createEnemy = Object.Create(&quot;Enemy&quot;).With(&quot;Assets/Prefabs/Enemy&quot;);
+    
+    // Caution: this is going to create a looooot of enemies!
+    On.Ready(createEnemy);
+    On.Heartbeat(createEnemy);
+    On.FrameUpdate(createEnemy);
+    On.Destroyed(createEnemy);
+}
+</code></pre>
+<p>A variable can also hold multiple blocks, for instance the <code>ActionBlock[]</code> arrays returned from the methods above can be assigned to a variable and used multiple time, instead of calling the method multiple times.</p>
+<h2 id="re-using-vs-re-creating-blocks">Re-Using vs Re-Creating Blocks</h2>
+<p>There is an important distinction: once a block has been created, you can use it multiple times. But you can no longer modify the block without modifying all uses of that block.</p>
+<p>If you need individual block behaviour (eg different names) you will have to create separate block instances instead. This is what we'll be doing next, but cleverly so.</p>
+<h2 id="using-loops-to-create-blocks">Using Loops To Create Blocks</h2>
+<p><strong>Question</strong>: What if I wanted to create ten enemies, each with a unique name?</p>
+<p><strong>Dumb Answer</strong>: You'll copy-paste the line ten times. &lt;-- This is not maintainable!</p>
+<p><strong>Clever Answer</strong>: You'll use a loop!</p>
+<pre><code class="lang-csharp">public override void Build(ScriptBuildContext context)
+{
+    var prefabPath = &quot;Assets/Prefabs/Enemy&quot;;
+    for (var i = 0; i &lt; 10; i++)
+    {
+        var name = $&quot;Enemy_{i+1}&quot;;
+        var createEnemy = Object.Create(name).With(prefabPath);
+        
+        On.Ready(createEnemy);
+    }
+}
+</code></pre>
+<p>This will instantiate <code>Enemy_1</code> to <code>Enemy_10</code> using the <code>Enemy.prefab</code> asset.</p>
+<h2 id="using-runtime-loops">Using Runtime Loops</h2>
+<p>What if the number of enemies needs to change over time? A wave spawning system.</p>
+<p>This is why LunyScript provides logic flow constructs as blocks themselves, so that we can run the loop at runtime instead of during <code>Build()</code>:</p>
+<pre><code class="lang-csharp">public override void Build(ScriptBuildContext context)
+{
+    // Create ten enemies
+    var createEnemy = Object.Create(&quot;Enemy&quot;).With(prefabPath);
+    On.Enabled(For(10).Do(createEnemy));
+}
+</code></pre>
+<p>This creates 10 enemies every time the object gets enabled. But it doesn't change the number of enemies yet.</p>
+<p>To do that, we use a LunyScript runtime variable holding the current number of enemies to spawn:</p>
+<pre><code class="lang-csharp">public override void Build(ScriptBuildContext context)
+{
+    // Create an increasing number of enemies
+    var enemyCount = Var.Define(&quot;num enemies to spawn&quot;, 3);
+    var createEnemy = Object.Create(&quot;Enemy&quot;).With(prefabPath);
+    On.Enabled(For(enemyCount).Do(createEnemy), enemyCount.Add(2));
+}
+</code></pre>
+<p>Now we initially create 3 enemies, and on ever subsequent enable we'll create two more: 5, 7, 9 and so on.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/CodeSmile-0000011110110111/Luny-Docs/blob/main/manual/concepts-blocks-advanced.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2025-2026 Steffen Itterheim (CodeSmile)
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

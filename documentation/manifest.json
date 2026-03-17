@@ -7349,10 +7349,30 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "manual/concepts-anatomy.md",
+      "source_relative_path": "manual/concepts-anatomy-script.md",
       "output": {
         ".html": {
-          "relative_path": "manual/concepts-anatomy.html"
+          "relative_path": "manual/concepts-anatomy-script.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/concepts-blocks-advanced.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/concepts-blocks-advanced.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/concepts-semantics.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/concepts-semantics.html"
         }
       },
       "version": ""

@@ -147,10 +147,13 @@ Class LunyInputServiceBase
       <a class="xref" href="Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceShutdown">LunyEngineServiceBase.OnServiceShutdown()</a>
     </div>
     <div>
-      <a class="xref" href="Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServicePreUpdate">LunyEngineServiceBase.OnServicePreUpdate()</a>
+      <a class="xref" href="Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceFrameBegins">LunyEngineServiceBase.OnServiceFrameBegins()</a>
     </div>
     <div>
       <a class="xref" href="Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceHeartbeat">LunyEngineServiceBase.OnServiceHeartbeat()</a>
+    </div>
+    <div>
+      <a class="xref" href="Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceFrameLateUpdate">LunyEngineServiceBase.OnServiceFrameLateUpdate()</a>
     </div>
   </dd></dl>
 
@@ -662,18 +665,19 @@ Class LunyInputServiceBase
 
 
 
-  <a id="Luny_Engine_Services_LunyInputServiceBase_OnServiceFrameUpdate_" data-uid="Luny.Engine.Services.LunyInputServiceBase.OnServiceFrameUpdate*"></a>
+  <a id="Luny_Engine_Services_LunyInputServiceBase_OnServiceFrameEnds_" data-uid="Luny.Engine.Services.LunyInputServiceBase.OnServiceFrameEnds*"></a>
 
-  <h3 id="Luny_Engine_Services_LunyInputServiceBase_OnServiceFrameUpdate" data-uid="Luny.Engine.Services.LunyInputServiceBase.OnServiceFrameUpdate">
-  OnServiceFrameUpdate()
+  <h3 id="Luny_Engine_Services_LunyInputServiceBase_OnServiceFrameEnds" data-uid="Luny.Engine.Services.LunyInputServiceBase.OnServiceFrameEnds">
+  OnServiceFrameEnds()
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Clears per-frame transition flags. Called at the start of each frame via OnServicePreUpdate.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void OnServiceFrameUpdate()</code></pre>
+    <pre><code class="lang-csharp hljs">protected override void OnServiceFrameEnds()</code></pre>
   </div>
 
 
@@ -688,19 +692,18 @@ Class LunyInputServiceBase
 
 
 
-  <a id="Luny_Engine_Services_LunyInputServiceBase_OnServicePostUpdate_" data-uid="Luny.Engine.Services.LunyInputServiceBase.OnServicePostUpdate*"></a>
+  <a id="Luny_Engine_Services_LunyInputServiceBase_OnServiceFrameUpdate_" data-uid="Luny.Engine.Services.LunyInputServiceBase.OnServiceFrameUpdate*"></a>
 
-  <h3 id="Luny_Engine_Services_LunyInputServiceBase_OnServicePostUpdate" data-uid="Luny.Engine.Services.LunyInputServiceBase.OnServicePostUpdate">
-  OnServicePostUpdate()
+  <h3 id="Luny_Engine_Services_LunyInputServiceBase_OnServiceFrameUpdate" data-uid="Luny.Engine.Services.LunyInputServiceBase.OnServiceFrameUpdate">
+  OnServiceFrameUpdate()
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Clears per-frame transition flags. Called at the start of each frame via OnServicePreUpdate.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void OnServicePostUpdate()</code></pre>
+    <pre><code class="lang-csharp hljs">protected override void OnServiceFrameUpdate()</code></pre>
   </div>
 
 
