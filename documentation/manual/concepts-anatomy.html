@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Anatomy of a Luny Script | LunyScript Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Anatomy of a Luny Script | LunyScript Documentation ">
+      
+      
+      <link rel="icon" href="../images/luny-logo-56x56.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <link rel="stylesheet" href="../public/alert.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/CodeSmile-0000011110110111/Luny-Docs/blob/main/manual/concepts-anatomy.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+      <script type="module" src="./../public/gdscript-loader.js"></script>
+      <script src="../public/highlight-custom.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../images/Luny-logo-133x54.png" alt="Script">
+            Script
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="anatomy-of-a-luny-script">Anatomy of a Luny Script</h1>
+
+<p>LunyScript is designed to minimize C# syntax exposure while enabling you to leverage the language's full power.</p>
+<h2 id="lunyscript-and-c">LunyScript and C#</h2>
+<p>When you write regular C# code, this code is compiled into 'CPU instructions'. C# has the full breadth and depth of any high-level programming language: full freedom but enormous complexity.</p>
+<p>LunyScript adds guardrails to programming with C#:</p>
+<ul>
+<li>Self-contained, battle-tested, user extensible code blocks - write once, re-use for years to come.</li>
+<li>Runtime failures don't crash, they are logged and use placeholders where possible. That pink cube? A 'missspeled' asset name.</li>
+<li>Expensive operations are optimized, references are cached/pooled. It runs more efficiently than typical beginner-level code.</li>
+<li>Execution is observable without a highly technical code debugger: Visualize code execution, not crafting code visually.</li>
+<li>Invalid or incompatible operations are detected early, avoiding subtle runtime behaviour issues.</li>
+<li>Best practices applied internally to prevent common issues plaguing those without deep field expertise.</li>
+</ul>
+<h2 id="how-to-create-a-luny-script">How to create a Luny Script</h2>
+<p>A Luny script is a C# class which inherits from <code>LunyScript.Script</code>:</p>
+<pre><code class="lang-csharp">public partial class Player : LunyScript.Script
+{
+}
+</code></pre>
+<p>Observations:</p>
+<ul>
+<li>There are no <code>using</code> statements required - though you'll likely need a few eventually.</li>
+<li>The <code>partial</code> keyword will be required to support Roslyn code injection of custom API extensions.</li>
+<li>The above example won't compile: It's missing the implementation of the abstract <code>Build()</code> method.</li>
+</ul>
+<p>This version of the script implements the required <code>Build()</code> method and will compile:</p>
+<pre><code class="lang-csharp">public partial class Player : LunyScript.Script
+{
+    public override void Build(ScriptBuildContext context)
+    {
+        // This Build() method is called once for each object the script runs on.
+    }
+}
+</code></pre>
+<p>The <a class="xref" href="../api/LunyScript.ScriptBuildContext.html"><code>ScriptBuildContext</code></a> has a two-fold use:</p>
+<ul>
+<li>It provides input to the script, for instance Inspector-assigned values and references.</li>
+<li>It provides configurable options to influence how the script is interpreted and executed.</li>
+</ul>
+<h2 id="when-does-build-run">When Does Build() Run?</h2>
+<p>It runs when an object associated with the script is created. This can happen when a scene loads or when instantiating a new object, typically by using a prefab but even primitives and empty objects can run Luny scripts.</p>
+<p>Currently, a Luny script will Build() for objects whose name matches the script's class.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>In the future there will options to directly assign a script, and to pattern match scripts with names, layers, or tags.</p>
+</div>
+<p>To reduce the cost of calling Build() in the middle of play, LunyScript implements a pooling strategy. Objects and their scripts are primarily intended to be re-used instead of re-created. To that end LunyScript will provide a lifecycle (and matching events) that makes pooling feel natural: <code>Create -&gt; [Spawn &lt;=&gt; Despawn] -&gt; Destroy</code>.</p>
+<h2 id="what-happens-when-build-runs">What happens when Build() Runs?</h2>
+<p>Build() is a regular C# method that can run any C# code.</p>
+<p>Primarily you'll be writing block-based code, such as these log statements that run when the object gets enabled and disabled:</p>
+<pre><code class="lang-csharp">public override void Build(ScriptBuildContext context)
+{
+    On.Enabled(Debug.Log(&quot;I'm back!&quot;));
+    
+    On.Disabled(Debug.Log(&quot;I'll be back!&quot;));
+}
+</code></pre>
+<p>To see these logs, change the active checkbox of the object in the Hierarchy during playmode.</p>
+<h2 id="same-event-multiple-blocks">Same Event, Multiple Blocks</h2>
+<p>Contrary to what you might expect, these events are not once-only. You can register multiple sequences of blocks on the same type of event. These will run in the same order they appear in the script. This example complements the dialog:</p>
+<pre><code class="lang-csharp">public override void Build(ScriptBuildContext context)
+{
+    On.Enabled(Debug.Log(&quot;I'm back!&quot;));
+    On.Enabled(Debug.Log(&quot;I told you so!&quot;));
+    
+    On.Disabled(Debug.Log(&quot;I'll be back!&quot;));
+    On.Disabled(Debug.Log(&quot;Nooooo.... (sinks into hotlava)&quot;));
+}
+</code></pre>
+<p>Of course you aren't restricted to one block per event. The alternative way of writing the above is to provide multiple blocks for the same event as a comma-separated list (like method parameters):</p>
+<pre><code class="lang-csharp">public override void Build(ScriptBuildContext context)
+{
+    On.Enabled(Debug.Log(&quot;I'm back!&quot;), Debug.Log(&quot;I told you so!&quot;));
+    
+    On.Disabled(Debug.Log(&quot;I'll be back!&quot;), Debug.Log(&quot;Nooooo.... (sinks into lava)&quot;));
+}
+</code></pre>
+<p>Use whichever version best suits your style and workflow.</p>
+<h2 id="advanced-uses">Advanced Uses</h2>
+<p>Since we are using regular C#, you can also bundle blocks into method calls which provides you with re-usable block sequences and a clean, readable <code>Build()</code> method:</p>
+<pre><code class="lang-csharp">public override void Build(ScriptBuildContext context)
+{
+    On.Enabled(EnableMessages());
+    
+    On.Disabled(DisableMessages());
+}
+
+private ActionBlock[] EnableMessages() =&gt; new[]
+{
+    Debug.Log(&quot;I'm back!&quot;),
+    Debug.Log(&quot;I told you so!&quot;),
+};
+private ActionBlock[] DisableMessages() =&gt; new[]
+{
+    Debug.Log(&quot;I'll be back!&quot;), 
+    Debug.Log(&quot;Nooooo.... (sinks into lava)&quot;),
+};
+</code></pre>
+<h2 id="how-do-blocks-execute-at-runtime">How Do Blocks Execute At Runtime?</h2>
+<ul>
+<li>block based builder pattern</li>
+<li>load-time build vs runtime execution</li>
+<li>utilizing c#
+<ul>
+<li>methods</li>
+<li>loops</li>
+<li></li>
+</ul>
+</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/CodeSmile-0000011110110111/Luny-Docs/blob/main/manual/concepts-anatomy.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2025-2026 Steffen Itterheim (CodeSmile)
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

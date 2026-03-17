@@ -1,0 +1,119 @@
+/* ALERT BOXES - Light/Dark Mode Support */
+
+/* Light Mode Colors */
+[data-bs-theme="light"] {
+    --alert-info-text: #1976d2;
+    --alert-info-bg: #e3f2fd;
+    --alert-info-border: #1976d2;
+    --alert-info-body-bg: #eaf4ff;
+
+    --alert-tip-text: #689f38;
+    --alert-tip-bg: #f1f8e9;
+    --alert-tip-border: #689f38;
+    --alert-tip-body-bg: #f3fbed;
+
+    --alert-warning-text: #f57f17;
+    --alert-warning-bg: #fff3e0;
+    --alert-warning-border: #f57f17;
+    --alert-warning-body-bg: #fff6eb;
+
+    --alert-danger-text: #d32f2f;
+    --alert-danger-bg: #ffebee;
+    --alert-danger-border: #d32f2f;
+    --alert-danger-body-bg: #fff0f0;
+}
+
+/* Dark Mode Colors */
+[data-bs-theme="dark"] {
+    --alert-info-text: #64b5f6;
+    --alert-info-bg: #1e3a5f;
+    --alert-info-border: #64b5f6;
+    --alert-info-body-bg: #223344;
+
+    --alert-tip-text: #9ccc65;
+    --alert-tip-bg: #2a3d1f;
+    --alert-tip-border: #9ccc65;
+    --alert-tip-body-bg: #1f2f1d;
+
+    --alert-warning-text: #ffb74d;
+    --alert-warning-bg: #3d2f1f;
+    --alert-warning-border: #ffb74d;
+    --alert-warning-body-bg: #2f281b;
+
+    --alert-danger-text: #e57373;
+    --alert-danger-bg: #3d1f1f;
+    --alert-danger-border: #e57373;
+    --alert-danger-body-bg: #2f1a1a;
+}
+
+
+/* Alert Base Styling */
+.alert {
+  padding: 0px;
+  color: inherit;
+  border: none;
+  box-shadow: 0px 2px 2px 0px rgba(100, 100, 100, 0.4);
+}
+
+.alert>p {
+  margin-bottom: 0;
+  padding: 10px;
+}
+
+.alert>ul {
+  margin-bottom: 0;
+  padding: 10px 40px;
+}
+
+.alert>h5 {
+  padding: 10px 15px;
+  margin-top: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 4px 4px 0 0;
+}
+
+/* Alert Type-Specific Styling */
+.alert-info {
+  background-color: var(--alert-info-body-bg);
+}
+
+.alert-info>h5 {
+  color: var(--alert-info-text);
+  background-color: var(--alert-info-bg);
+  border-bottom: 4px solid var(--alert-info-border);
+}
+
+.alert-tip {
+  background-color: var(--alert-tip-body-bg);
+}
+
+.alert-tip>h5 {
+  color: var(--alert-tip-text);
+  background-color: var(--alert-tip-bg);
+  border-bottom: 4px solid var(--alert-tip-border);
+}
+
+.alert-tip h5:before {
+  content: "\e162";
+}
+
+.alert-warning {
+  background-color: var(--alert-warning-body-bg);
+}
+
+.alert-warning>h5 {
+  color: var(--alert-warning-text);
+  background-color: var(--alert-warning-bg);
+  border-bottom: 4px solid var(--alert-warning-border);
+}
+
+.alert-danger {
+  background-color: var(--alert-danger-body-bg);
+}
+
+.alert-danger>h5 {
+  color: var(--alert-danger-text);
+  background-color: var(--alert-danger-bg);
+  border-bottom: 4px solid var(--alert-danger-border);
+}

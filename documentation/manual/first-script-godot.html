@@ -10,6 +10,7 @@
       <link rel="icon" href="../images/luny-logo-56x56.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
+      <link rel="stylesheet" href="../public/alert.css">
       <meta name="docfx:navrel" content="../toc.html">
       <meta name="docfx:tocrel" content="toc.html">
       
@@ -276,7 +277,7 @@ That makes Unity's solution 38 <em>actual lines of code</em>.</p>
 
 public partial class Player : Script
 {
-    public override void Build(ScriptContext context)
+    public override void Build(ScriptBuildContext context)
     {
         On.FrameUpdate(
             Transform.MoveBy(Input.Direction(&quot;Move&quot;), 4),
@@ -294,10 +295,8 @@ GDScript is not a portable language and does not handle fluent APIs well.</p>
 </div>
 <h3 id="why-so-many-extra-steps">Why So Many Extra Steps?</h3>
 <p>Compared to Unity, there's an egregious amount of extra steps to be done in the Godot editor before you even get to scripting.</p>
-<p>This is by design. Godot deliberately provides <em>clean slates</em> for everything: no <em>meaningful templates</em> and not even <em>sensible defaults</em>.
-Its user experience also centers on deeply hierarchical user interfaces and abundant modal dialogs.</p>
-<p>While this provides a comparatively consistent UI that's easy to pick up by beginners and non-technical users,
-it comes at the cost of notably heavier UI interactions.</p>
+<p>Godot deliberately provides <em>clean slates</em> for everything: no <em>meaningful templates</em> and often not even <em>sensible defaults</em>. Its user experience also centers on deeply hierarchical user interfaces and abundant modal dialogs. This comes at the cost of more UI interactions.</p>
+<p>On the other hand, Godot's design provides a comparatively consistent UI that's easier to pick up by beginners and non-technical users. It's in stark contrast to Unreal editor's highly complex UI, while Unity is somewhere in between.</p>
 
 </article>
 

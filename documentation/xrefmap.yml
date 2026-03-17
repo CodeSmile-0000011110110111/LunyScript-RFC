@@ -23229,12 +23229,12 @@ references:
   commentId: Overload:LunyScript.Script.AND
   fullName: LunyScript.Script.AND
   nameWithType: Script.AND
-- uid: LunyScript.Script.Build(LunyScript.ScriptContext)
-  name: Build(ScriptContext)
-  href: api/LunyScript.Script.html#LunyScript_Script_Build_LunyScript_ScriptContext_
-  commentId: M:LunyScript.Script.Build(LunyScript.ScriptContext)
-  fullName: LunyScript.Script.Build(LunyScript.ScriptContext)
-  nameWithType: Script.Build(ScriptContext)
+- uid: LunyScript.Script.Build(LunyScript.ScriptBuildContext)
+  name: Build(ScriptBuildContext)
+  href: api/LunyScript.Script.html#LunyScript_Script_Build_LunyScript_ScriptBuildContext_
+  commentId: M:LunyScript.Script.Build(LunyScript.ScriptBuildContext)
+  fullName: LunyScript.Script.Build(LunyScript.ScriptBuildContext)
+  nameWithType: Script.Build(ScriptBuildContext)
 - uid: LunyScript.Script.Build*
   name: Build
   href: api/LunyScript.Script.html#LunyScript_Script_Build_
@@ -26429,6 +26429,72 @@ references:
   fullName.vb: LunyScript.ScriptBlockId.<>
   nameWithType: ScriptBlockId.operator !=
   nameWithType.vb: ScriptBlockId.<>
+- uid: LunyScript.ScriptBuildContext
+  name: ScriptBuildContext
+  href: api/LunyScript.ScriptBuildContext.html
+  commentId: T:LunyScript.ScriptBuildContext
+  fullName: LunyScript.ScriptBuildContext
+  nameWithType: ScriptBuildContext
+- uid: LunyScript.ScriptBuildContext.#ctor
+  name: ScriptBuildContext()
+  href: api/LunyScript.ScriptBuildContext.html#LunyScript_ScriptBuildContext__ctor
+  commentId: M:LunyScript.ScriptBuildContext.#ctor
+  name.vb: New()
+  fullName: LunyScript.ScriptBuildContext.ScriptBuildContext()
+  fullName.vb: LunyScript.ScriptBuildContext.New()
+  nameWithType: ScriptBuildContext.ScriptBuildContext()
+  nameWithType.vb: ScriptBuildContext.New()
+- uid: LunyScript.ScriptBuildContext.#ctor*
+  name: ScriptBuildContext
+  href: api/LunyScript.ScriptBuildContext.html#LunyScript_ScriptBuildContext__ctor_
+  commentId: Overload:LunyScript.ScriptBuildContext.#ctor
+  name.vb: New
+  fullName: LunyScript.ScriptBuildContext.ScriptBuildContext
+  fullName.vb: LunyScript.ScriptBuildContext.New
+  nameWithType: ScriptBuildContext.ScriptBuildContext
+  nameWithType.vb: ScriptBuildContext.New
+- uid: LunyScript.ScriptBuildContext.Data
+  name: Data
+  href: api/LunyScript.ScriptBuildContext.html#LunyScript_ScriptBuildContext_Data
+  commentId: P:LunyScript.ScriptBuildContext.Data
+  fullName: LunyScript.ScriptBuildContext.Data
+  nameWithType: ScriptBuildContext.Data
+- uid: LunyScript.ScriptBuildContext.Data*
+  name: Data
+  href: api/LunyScript.ScriptBuildContext.html#LunyScript_ScriptBuildContext_Data_
+  commentId: Overload:LunyScript.ScriptBuildContext.Data
+  fullName: LunyScript.ScriptBuildContext.Data
+  nameWithType: ScriptBuildContext.Data
+- uid: LunyScript.ScriptBuildContext.Options
+  name: Options
+  href: api/LunyScript.ScriptBuildContext.html#LunyScript_ScriptBuildContext_Options
+  commentId: F:LunyScript.ScriptBuildContext.Options
+  fullName: LunyScript.ScriptBuildContext.Options
+  nameWithType: ScriptBuildContext.Options
+- uid: LunyScript.ScriptBuildData
+  name: ScriptBuildData
+  href: api/LunyScript.ScriptBuildData.html
+  commentId: T:LunyScript.ScriptBuildData
+  fullName: LunyScript.ScriptBuildData
+  nameWithType: ScriptBuildData
+- uid: LunyScript.ScriptBuildData.#ctor
+  name: ScriptBuildData()
+  href: api/LunyScript.ScriptBuildData.html#LunyScript_ScriptBuildData__ctor
+  commentId: M:LunyScript.ScriptBuildData.#ctor
+  name.vb: New()
+  fullName: LunyScript.ScriptBuildData.ScriptBuildData()
+  fullName.vb: LunyScript.ScriptBuildData.New()
+  nameWithType: ScriptBuildData.ScriptBuildData()
+  nameWithType.vb: ScriptBuildData.New()
+- uid: LunyScript.ScriptBuildData.#ctor*
+  name: ScriptBuildData
+  href: api/LunyScript.ScriptBuildData.html#LunyScript_ScriptBuildData__ctor_
+  commentId: Overload:LunyScript.ScriptBuildData.#ctor
+  name.vb: New
+  fullName: LunyScript.ScriptBuildData.ScriptBuildData
+  fullName.vb: LunyScript.ScriptBuildData.New
+  nameWithType: ScriptBuildData.ScriptBuildData
+  nameWithType.vb: ScriptBuildData.New
 - uid: LunyScript.ScriptContext
   name: ScriptContext
   href: api/LunyScript.ScriptContext.html
@@ -26453,24 +26519,48 @@ references:
   fullName.vb: LunyScript.ScriptContext.New
   nameWithType: ScriptContext.ScriptContext
   nameWithType.vb: ScriptContext.New
+- uid: LunyScript.ScriptContext.Data
+  name: Data
+  href: api/LunyScript.ScriptContext.html#LunyScript_ScriptContext_Data
+  commentId: P:LunyScript.ScriptContext.Data
+  fullName: LunyScript.ScriptContext.Data
+  nameWithType: ScriptContext.Data
+- uid: LunyScript.ScriptContext.Data*
+  name: Data
+  href: api/LunyScript.ScriptContext.html#LunyScript_ScriptContext_Data_
+  commentId: Overload:LunyScript.ScriptContext.Data
+  fullName: LunyScript.ScriptContext.Data
+  nameWithType: ScriptContext.Data
 - uid: LunyScript.ScriptContext.Options
   name: Options
   href: api/LunyScript.ScriptContext.html#LunyScript_ScriptContext_Options
   commentId: F:LunyScript.ScriptContext.Options
   fullName: LunyScript.ScriptContext.Options
   nameWithType: ScriptContext.Options
-- uid: LunyScript.ScriptContext.Settings
-  name: Settings
-  href: api/LunyScript.ScriptContext.html#LunyScript_ScriptContext_Settings
-  commentId: P:LunyScript.ScriptContext.Settings
-  fullName: LunyScript.ScriptContext.Settings
-  nameWithType: ScriptContext.Settings
-- uid: LunyScript.ScriptContext.Settings*
-  name: Settings
-  href: api/LunyScript.ScriptContext.html#LunyScript_ScriptContext_Settings_
-  commentId: Overload:LunyScript.ScriptContext.Settings
-  fullName: LunyScript.ScriptContext.Settings
-  nameWithType: ScriptContext.Settings
+- uid: LunyScript.ScriptData
+  name: ScriptData
+  href: api/LunyScript.ScriptData.html
+  commentId: T:LunyScript.ScriptData
+  fullName: LunyScript.ScriptData
+  nameWithType: ScriptData
+- uid: LunyScript.ScriptData.#ctor
+  name: ScriptData()
+  href: api/LunyScript.ScriptData.html#LunyScript_ScriptData__ctor
+  commentId: M:LunyScript.ScriptData.#ctor
+  name.vb: New()
+  fullName: LunyScript.ScriptData.ScriptData()
+  fullName.vb: LunyScript.ScriptData.New()
+  nameWithType: ScriptData.ScriptData()
+  nameWithType.vb: ScriptData.New()
+- uid: LunyScript.ScriptData.#ctor*
+  name: ScriptData
+  href: api/LunyScript.ScriptData.html#LunyScript_ScriptData__ctor_
+  commentId: Overload:LunyScript.ScriptData.#ctor
+  name.vb: New
+  fullName: LunyScript.ScriptData.ScriptData
+  fullName.vb: LunyScript.ScriptData.New
+  nameWithType: ScriptData.ScriptData
+  nameWithType.vb: ScriptData.New
 - uid: LunyScript.ScriptEngine
   name: ScriptEngine
   href: api/LunyScript.ScriptEngine.html
@@ -26663,30 +26753,12 @@ references:
   commentId: T:LunyScript.ScriptOptions
   fullName: LunyScript.ScriptOptions
   nameWithType: ScriptOptions
-- uid: LunyScript.ScriptOptions.PatternMatching
-  name: PatternMatching
-  href: api/LunyScript.ScriptOptions.html#LunyScript_ScriptOptions_PatternMatching
-  commentId: P:LunyScript.ScriptOptions.PatternMatching
-  fullName: LunyScript.ScriptOptions.PatternMatching
-  nameWithType: ScriptOptions.PatternMatching
-- uid: LunyScript.ScriptOptions.PatternMatching*
-  name: PatternMatching
-  href: api/LunyScript.ScriptOptions.html#LunyScript_ScriptOptions_PatternMatching_
-  commentId: Overload:LunyScript.ScriptOptions.PatternMatching
-  fullName: LunyScript.ScriptOptions.PatternMatching
-  nameWithType: ScriptOptions.PatternMatching
-- uid: LunyScript.ScriptOptions.Singleton
-  name: Singleton
-  href: api/LunyScript.ScriptOptions.html#LunyScript_ScriptOptions_Singleton
-  commentId: P:LunyScript.ScriptOptions.Singleton
-  fullName: LunyScript.ScriptOptions.Singleton
-  nameWithType: ScriptOptions.Singleton
-- uid: LunyScript.ScriptOptions.Singleton*
-  name: Singleton
-  href: api/LunyScript.ScriptOptions.html#LunyScript_ScriptOptions_Singleton_
-  commentId: Overload:LunyScript.ScriptOptions.Singleton
-  fullName: LunyScript.ScriptOptions.Singleton
-  nameWithType: ScriptOptions.Singleton
+- uid: LunyScript.ScriptRuntimeOptions
+  name: ScriptRuntimeOptions
+  href: api/LunyScript.ScriptRuntimeOptions.html
+  commentId: T:LunyScript.ScriptRuntimeOptions
+  fullName: LunyScript.ScriptRuntimeOptions
+  nameWithType: ScriptRuntimeOptions
 - uid: LunyScript.ScriptSettings
   name: ScriptSettings
   href: api/LunyScript.ScriptSettings.html
@@ -26741,12 +26813,12 @@ references:
   fullName.vb: LunyScript.SmokeTests.Assert_Runs_OnCreated.New
   nameWithType: Assert_Runs_OnCreated.Assert_Runs_OnCreated
   nameWithType.vb: Assert_Runs_OnCreated.New
-- uid: LunyScript.SmokeTests.Assert_Runs_OnCreated.Build(LunyScript.ScriptContext)
-  name: Build(ScriptContext)
-  href: api/LunyScript.SmokeTests.Assert_Runs_OnCreated.html#LunyScript_SmokeTests_Assert_Runs_OnCreated_Build_LunyScript_ScriptContext_
-  commentId: M:LunyScript.SmokeTests.Assert_Runs_OnCreated.Build(LunyScript.ScriptContext)
-  fullName: LunyScript.SmokeTests.Assert_Runs_OnCreated.Build(LunyScript.ScriptContext)
-  nameWithType: Assert_Runs_OnCreated.Build(ScriptContext)
+- uid: LunyScript.SmokeTests.Assert_Runs_OnCreated.Build(LunyScript.ScriptBuildContext)
+  name: Build(ScriptBuildContext)
+  href: api/LunyScript.SmokeTests.Assert_Runs_OnCreated.html#LunyScript_SmokeTests_Assert_Runs_OnCreated_Build_LunyScript_ScriptBuildContext_
+  commentId: M:LunyScript.SmokeTests.Assert_Runs_OnCreated.Build(LunyScript.ScriptBuildContext)
+  fullName: LunyScript.SmokeTests.Assert_Runs_OnCreated.Build(LunyScript.ScriptBuildContext)
+  nameWithType: Assert_Runs_OnCreated.Build(ScriptBuildContext)
 - uid: LunyScript.SmokeTests.Assert_Runs_OnCreated.Build*
   name: Build
   href: api/LunyScript.SmokeTests.Assert_Runs_OnCreated.html#LunyScript_SmokeTests_Assert_Runs_OnCreated_Build_
@@ -26777,12 +26849,12 @@ references:
   fullName.vb: LunyScript.SmokeTests.Assert_Runs_OnDestroyed.New
   nameWithType: Assert_Runs_OnDestroyed.Assert_Runs_OnDestroyed
   nameWithType.vb: Assert_Runs_OnDestroyed.New
-- uid: LunyScript.SmokeTests.Assert_Runs_OnDestroyed.Build(LunyScript.ScriptContext)
-  name: Build(ScriptContext)
-  href: api/LunyScript.SmokeTests.Assert_Runs_OnDestroyed.html#LunyScript_SmokeTests_Assert_Runs_OnDestroyed_Build_LunyScript_ScriptContext_
-  commentId: M:LunyScript.SmokeTests.Assert_Runs_OnDestroyed.Build(LunyScript.ScriptContext)
-  fullName: LunyScript.SmokeTests.Assert_Runs_OnDestroyed.Build(LunyScript.ScriptContext)
-  nameWithType: Assert_Runs_OnDestroyed.Build(ScriptContext)
+- uid: LunyScript.SmokeTests.Assert_Runs_OnDestroyed.Build(LunyScript.ScriptBuildContext)
+  name: Build(ScriptBuildContext)
+  href: api/LunyScript.SmokeTests.Assert_Runs_OnDestroyed.html#LunyScript_SmokeTests_Assert_Runs_OnDestroyed_Build_LunyScript_ScriptBuildContext_
+  commentId: M:LunyScript.SmokeTests.Assert_Runs_OnDestroyed.Build(LunyScript.ScriptBuildContext)
+  fullName: LunyScript.SmokeTests.Assert_Runs_OnDestroyed.Build(LunyScript.ScriptBuildContext)
+  nameWithType: Assert_Runs_OnDestroyed.Build(ScriptBuildContext)
 - uid: LunyScript.SmokeTests.Assert_Runs_OnDestroyed.Build*
   name: Build
   href: api/LunyScript.SmokeTests.Assert_Runs_OnDestroyed.html#LunyScript_SmokeTests_Assert_Runs_OnDestroyed_Build_
@@ -26813,12 +26885,12 @@ references:
   fullName.vb: LunyScript.SmokeTests.Assert_Runs_OnDisabled.New
   nameWithType: Assert_Runs_OnDisabled.Assert_Runs_OnDisabled
   nameWithType.vb: Assert_Runs_OnDisabled.New
-- uid: LunyScript.SmokeTests.Assert_Runs_OnDisabled.Build(LunyScript.ScriptContext)
-  name: Build(ScriptContext)
-  href: api/LunyScript.SmokeTests.Assert_Runs_OnDisabled.html#LunyScript_SmokeTests_Assert_Runs_OnDisabled_Build_LunyScript_ScriptContext_
-  commentId: M:LunyScript.SmokeTests.Assert_Runs_OnDisabled.Build(LunyScript.ScriptContext)
-  fullName: LunyScript.SmokeTests.Assert_Runs_OnDisabled.Build(LunyScript.ScriptContext)
-  nameWithType: Assert_Runs_OnDisabled.Build(ScriptContext)
+- uid: LunyScript.SmokeTests.Assert_Runs_OnDisabled.Build(LunyScript.ScriptBuildContext)
+  name: Build(ScriptBuildContext)
+  href: api/LunyScript.SmokeTests.Assert_Runs_OnDisabled.html#LunyScript_SmokeTests_Assert_Runs_OnDisabled_Build_LunyScript_ScriptBuildContext_
+  commentId: M:LunyScript.SmokeTests.Assert_Runs_OnDisabled.Build(LunyScript.ScriptBuildContext)
+  fullName: LunyScript.SmokeTests.Assert_Runs_OnDisabled.Build(LunyScript.ScriptBuildContext)
+  nameWithType: Assert_Runs_OnDisabled.Build(ScriptBuildContext)
 - uid: LunyScript.SmokeTests.Assert_Runs_OnDisabled.Build*
   name: Build
   href: api/LunyScript.SmokeTests.Assert_Runs_OnDisabled.html#LunyScript_SmokeTests_Assert_Runs_OnDisabled_Build_
@@ -26849,12 +26921,12 @@ references:
   fullName.vb: LunyScript.SmokeTests.Assert_Runs_OnEnabled.New
   nameWithType: Assert_Runs_OnEnabled.Assert_Runs_OnEnabled
   nameWithType.vb: Assert_Runs_OnEnabled.New
-- uid: LunyScript.SmokeTests.Assert_Runs_OnEnabled.Build(LunyScript.ScriptContext)
-  name: Build(ScriptContext)
-  href: api/LunyScript.SmokeTests.Assert_Runs_OnEnabled.html#LunyScript_SmokeTests_Assert_Runs_OnEnabled_Build_LunyScript_ScriptContext_
-  commentId: M:LunyScript.SmokeTests.Assert_Runs_OnEnabled.Build(LunyScript.ScriptContext)
-  fullName: LunyScript.SmokeTests.Assert_Runs_OnEnabled.Build(LunyScript.ScriptContext)
-  nameWithType: Assert_Runs_OnEnabled.Build(ScriptContext)
+- uid: LunyScript.SmokeTests.Assert_Runs_OnEnabled.Build(LunyScript.ScriptBuildContext)
+  name: Build(ScriptBuildContext)
+  href: api/LunyScript.SmokeTests.Assert_Runs_OnEnabled.html#LunyScript_SmokeTests_Assert_Runs_OnEnabled_Build_LunyScript_ScriptBuildContext_
+  commentId: M:LunyScript.SmokeTests.Assert_Runs_OnEnabled.Build(LunyScript.ScriptBuildContext)
+  fullName: LunyScript.SmokeTests.Assert_Runs_OnEnabled.Build(LunyScript.ScriptBuildContext)
+  nameWithType: Assert_Runs_OnEnabled.Build(ScriptBuildContext)
 - uid: LunyScript.SmokeTests.Assert_Runs_OnEnabled.Build*
   name: Build
   href: api/LunyScript.SmokeTests.Assert_Runs_OnEnabled.html#LunyScript_SmokeTests_Assert_Runs_OnEnabled_Build_
@@ -26885,12 +26957,12 @@ references:
   fullName.vb: LunyScript.SmokeTests.Assert_Runs_OnFrameLateUpdate.New
   nameWithType: Assert_Runs_OnFrameLateUpdate.Assert_Runs_OnFrameLateUpdate
   nameWithType.vb: Assert_Runs_OnFrameLateUpdate.New
-- uid: LunyScript.SmokeTests.Assert_Runs_OnFrameLateUpdate.Build(LunyScript.ScriptContext)
-  name: Build(ScriptContext)
-  href: api/LunyScript.SmokeTests.Assert_Runs_OnFrameLateUpdate.html#LunyScript_SmokeTests_Assert_Runs_OnFrameLateUpdate_Build_LunyScript_ScriptContext_
-  commentId: M:LunyScript.SmokeTests.Assert_Runs_OnFrameLateUpdate.Build(LunyScript.ScriptContext)
-  fullName: LunyScript.SmokeTests.Assert_Runs_OnFrameLateUpdate.Build(LunyScript.ScriptContext)
-  nameWithType: Assert_Runs_OnFrameLateUpdate.Build(ScriptContext)
+- uid: LunyScript.SmokeTests.Assert_Runs_OnFrameLateUpdate.Build(LunyScript.ScriptBuildContext)
+  name: Build(ScriptBuildContext)
+  href: api/LunyScript.SmokeTests.Assert_Runs_OnFrameLateUpdate.html#LunyScript_SmokeTests_Assert_Runs_OnFrameLateUpdate_Build_LunyScript_ScriptBuildContext_
+  commentId: M:LunyScript.SmokeTests.Assert_Runs_OnFrameLateUpdate.Build(LunyScript.ScriptBuildContext)
+  fullName: LunyScript.SmokeTests.Assert_Runs_OnFrameLateUpdate.Build(LunyScript.ScriptBuildContext)
+  nameWithType: Assert_Runs_OnFrameLateUpdate.Build(ScriptBuildContext)
 - uid: LunyScript.SmokeTests.Assert_Runs_OnFrameLateUpdate.Build*
   name: Build
   href: api/LunyScript.SmokeTests.Assert_Runs_OnFrameLateUpdate.html#LunyScript_SmokeTests_Assert_Runs_OnFrameLateUpdate_Build_
@@ -26921,12 +26993,12 @@ references:
   fullName.vb: LunyScript.SmokeTests.Assert_Runs_OnFrameUpdate.New
   nameWithType: Assert_Runs_OnFrameUpdate.Assert_Runs_OnFrameUpdate
   nameWithType.vb: Assert_Runs_OnFrameUpdate.New
-- uid: LunyScript.SmokeTests.Assert_Runs_OnFrameUpdate.Build(LunyScript.ScriptContext)
-  name: Build(ScriptContext)
-  href: api/LunyScript.SmokeTests.Assert_Runs_OnFrameUpdate.html#LunyScript_SmokeTests_Assert_Runs_OnFrameUpdate_Build_LunyScript_ScriptContext_
-  commentId: M:LunyScript.SmokeTests.Assert_Runs_OnFrameUpdate.Build(LunyScript.ScriptContext)
-  fullName: LunyScript.SmokeTests.Assert_Runs_OnFrameUpdate.Build(LunyScript.ScriptContext)
-  nameWithType: Assert_Runs_OnFrameUpdate.Build(ScriptContext)
+- uid: LunyScript.SmokeTests.Assert_Runs_OnFrameUpdate.Build(LunyScript.ScriptBuildContext)
+  name: Build(ScriptBuildContext)
+  href: api/LunyScript.SmokeTests.Assert_Runs_OnFrameUpdate.html#LunyScript_SmokeTests_Assert_Runs_OnFrameUpdate_Build_LunyScript_ScriptBuildContext_
+  commentId: M:LunyScript.SmokeTests.Assert_Runs_OnFrameUpdate.Build(LunyScript.ScriptBuildContext)
+  fullName: LunyScript.SmokeTests.Assert_Runs_OnFrameUpdate.Build(LunyScript.ScriptBuildContext)
+  nameWithType: Assert_Runs_OnFrameUpdate.Build(ScriptBuildContext)
 - uid: LunyScript.SmokeTests.Assert_Runs_OnFrameUpdate.Build*
   name: Build
   href: api/LunyScript.SmokeTests.Assert_Runs_OnFrameUpdate.html#LunyScript_SmokeTests_Assert_Runs_OnFrameUpdate_Build_
@@ -26957,12 +27029,12 @@ references:
   fullName.vb: LunyScript.SmokeTests.Assert_Runs_OnHeartbeat.New
   nameWithType: Assert_Runs_OnHeartbeat.Assert_Runs_OnHeartbeat
   nameWithType.vb: Assert_Runs_OnHeartbeat.New
-- uid: LunyScript.SmokeTests.Assert_Runs_OnHeartbeat.Build(LunyScript.ScriptContext)
-  name: Build(ScriptContext)
-  href: api/LunyScript.SmokeTests.Assert_Runs_OnHeartbeat.html#LunyScript_SmokeTests_Assert_Runs_OnHeartbeat_Build_LunyScript_ScriptContext_
-  commentId: M:LunyScript.SmokeTests.Assert_Runs_OnHeartbeat.Build(LunyScript.ScriptContext)
-  fullName: LunyScript.SmokeTests.Assert_Runs_OnHeartbeat.Build(LunyScript.ScriptContext)
-  nameWithType: Assert_Runs_OnHeartbeat.Build(ScriptContext)
+- uid: LunyScript.SmokeTests.Assert_Runs_OnHeartbeat.Build(LunyScript.ScriptBuildContext)
+  name: Build(ScriptBuildContext)
+  href: api/LunyScript.SmokeTests.Assert_Runs_OnHeartbeat.html#LunyScript_SmokeTests_Assert_Runs_OnHeartbeat_Build_LunyScript_ScriptBuildContext_
+  commentId: M:LunyScript.SmokeTests.Assert_Runs_OnHeartbeat.Build(LunyScript.ScriptBuildContext)
+  fullName: LunyScript.SmokeTests.Assert_Runs_OnHeartbeat.Build(LunyScript.ScriptBuildContext)
+  nameWithType: Assert_Runs_OnHeartbeat.Build(ScriptBuildContext)
 - uid: LunyScript.SmokeTests.Assert_Runs_OnHeartbeat.Build*
   name: Build
   href: api/LunyScript.SmokeTests.Assert_Runs_OnHeartbeat.html#LunyScript_SmokeTests_Assert_Runs_OnHeartbeat_Build_
@@ -26993,12 +27065,12 @@ references:
   fullName.vb: LunyScript.SmokeTests.Assert_Runs_OnReady.New
   nameWithType: Assert_Runs_OnReady.Assert_Runs_OnReady
   nameWithType.vb: Assert_Runs_OnReady.New
-- uid: LunyScript.SmokeTests.Assert_Runs_OnReady.Build(LunyScript.ScriptContext)
-  name: Build(ScriptContext)
-  href: api/LunyScript.SmokeTests.Assert_Runs_OnReady.html#LunyScript_SmokeTests_Assert_Runs_OnReady_Build_LunyScript_ScriptContext_
-  commentId: M:LunyScript.SmokeTests.Assert_Runs_OnReady.Build(LunyScript.ScriptContext)
-  fullName: LunyScript.SmokeTests.Assert_Runs_OnReady.Build(LunyScript.ScriptContext)
-  nameWithType: Assert_Runs_OnReady.Build(ScriptContext)
+- uid: LunyScript.SmokeTests.Assert_Runs_OnReady.Build(LunyScript.ScriptBuildContext)
+  name: Build(ScriptBuildContext)
+  href: api/LunyScript.SmokeTests.Assert_Runs_OnReady.html#LunyScript_SmokeTests_Assert_Runs_OnReady_Build_LunyScript_ScriptBuildContext_
+  commentId: M:LunyScript.SmokeTests.Assert_Runs_OnReady.Build(LunyScript.ScriptBuildContext)
+  fullName: LunyScript.SmokeTests.Assert_Runs_OnReady.Build(LunyScript.ScriptBuildContext)
+  nameWithType: Assert_Runs_OnReady.Build(ScriptBuildContext)
 - uid: LunyScript.SmokeTests.Assert_Runs_OnReady.Build*
   name: Build
   href: api/LunyScript.SmokeTests.Assert_Runs_OnReady.html#LunyScript_SmokeTests_Assert_Runs_OnReady_Build_
@@ -27089,12 +27161,12 @@ references:
   fullName.vb: LunyScript.SmokeTests.CollisionEvents.New
   nameWithType: CollisionEvents.CollisionEvents
   nameWithType.vb: CollisionEvents.New
-- uid: LunyScript.SmokeTests.CollisionEvents.Build(LunyScript.ScriptContext)
-  name: Build(ScriptContext)
-  href: api/LunyScript.SmokeTests.CollisionEvents.html#LunyScript_SmokeTests_CollisionEvents_Build_LunyScript_ScriptContext_
-  commentId: M:LunyScript.SmokeTests.CollisionEvents.Build(LunyScript.ScriptContext)
-  fullName: LunyScript.SmokeTests.CollisionEvents.Build(LunyScript.ScriptContext)
-  nameWithType: CollisionEvents.Build(ScriptContext)
+- uid: LunyScript.SmokeTests.CollisionEvents.Build(LunyScript.ScriptBuildContext)
+  name: Build(ScriptBuildContext)
+  href: api/LunyScript.SmokeTests.CollisionEvents.html#LunyScript_SmokeTests_CollisionEvents_Build_LunyScript_ScriptBuildContext_
+  commentId: M:LunyScript.SmokeTests.CollisionEvents.Build(LunyScript.ScriptBuildContext)
+  fullName: LunyScript.SmokeTests.CollisionEvents.Build(LunyScript.ScriptBuildContext)
+  nameWithType: CollisionEvents.Build(ScriptBuildContext)
 - uid: LunyScript.SmokeTests.CollisionEvents.Build*
   name: Build
   href: api/LunyScript.SmokeTests.CollisionEvents.html#LunyScript_SmokeTests_CollisionEvents_Build_
@@ -27125,12 +27197,12 @@ references:
   fullName.vb: LunyScript.SmokeTests.CoroutineCounter.New
   nameWithType: CoroutineCounter.CoroutineCounter
   nameWithType.vb: CoroutineCounter.New
-- uid: LunyScript.SmokeTests.CoroutineCounter.Build(LunyScript.ScriptContext)
-  name: Build(ScriptContext)
-  href: api/LunyScript.SmokeTests.CoroutineCounter.html#LunyScript_SmokeTests_CoroutineCounter_Build_LunyScript_ScriptContext_
-  commentId: M:LunyScript.SmokeTests.CoroutineCounter.Build(LunyScript.ScriptContext)
-  fullName: LunyScript.SmokeTests.CoroutineCounter.Build(LunyScript.ScriptContext)
-  nameWithType: CoroutineCounter.Build(ScriptContext)
+- uid: LunyScript.SmokeTests.CoroutineCounter.Build(LunyScript.ScriptBuildContext)
+  name: Build(ScriptBuildContext)
+  href: api/LunyScript.SmokeTests.CoroutineCounter.html#LunyScript_SmokeTests_CoroutineCounter_Build_LunyScript_ScriptBuildContext_
+  commentId: M:LunyScript.SmokeTests.CoroutineCounter.Build(LunyScript.ScriptBuildContext)
+  fullName: LunyScript.SmokeTests.CoroutineCounter.Build(LunyScript.ScriptBuildContext)
+  nameWithType: CoroutineCounter.Build(ScriptBuildContext)
 - uid: LunyScript.SmokeTests.CoroutineCounter.Build*
   name: Build
   href: api/LunyScript.SmokeTests.CoroutineCounter.html#LunyScript_SmokeTests_CoroutineCounter_Build_
@@ -27161,12 +27233,12 @@ references:
   fullName.vb: LunyScript.SmokeTests.CoroutineEvery.New
   nameWithType: CoroutineEvery.CoroutineEvery
   nameWithType.vb: CoroutineEvery.New
-- uid: LunyScript.SmokeTests.CoroutineEvery.Build(LunyScript.ScriptContext)
-  name: Build(ScriptContext)
-  href: api/LunyScript.SmokeTests.CoroutineEvery.html#LunyScript_SmokeTests_CoroutineEvery_Build_LunyScript_ScriptContext_
-  commentId: M:LunyScript.SmokeTests.CoroutineEvery.Build(LunyScript.ScriptContext)
-  fullName: LunyScript.SmokeTests.CoroutineEvery.Build(LunyScript.ScriptContext)
-  nameWithType: CoroutineEvery.Build(ScriptContext)
+- uid: LunyScript.SmokeTests.CoroutineEvery.Build(LunyScript.ScriptBuildContext)
+  name: Build(ScriptBuildContext)
+  href: api/LunyScript.SmokeTests.CoroutineEvery.html#LunyScript_SmokeTests_CoroutineEvery_Build_LunyScript_ScriptBuildContext_
+  commentId: M:LunyScript.SmokeTests.CoroutineEvery.Build(LunyScript.ScriptBuildContext)
+  fullName: LunyScript.SmokeTests.CoroutineEvery.Build(LunyScript.ScriptBuildContext)
+  nameWithType: CoroutineEvery.Build(ScriptBuildContext)
 - uid: LunyScript.SmokeTests.CoroutineEvery.Build*
   name: Build
   href: api/LunyScript.SmokeTests.CoroutineEvery.html#LunyScript_SmokeTests_CoroutineEvery_Build_
@@ -27197,12 +27269,12 @@ references:
   fullName.vb: LunyScript.SmokeTests.CoroutineFor.New
   nameWithType: CoroutineFor.CoroutineFor
   nameWithType.vb: CoroutineFor.New
-- uid: LunyScript.SmokeTests.CoroutineFor.Build(LunyScript.ScriptContext)
-  name: Build(ScriptContext)
-  href: api/LunyScript.SmokeTests.CoroutineFor.html#LunyScript_SmokeTests_CoroutineFor_Build_LunyScript_ScriptContext_
-  commentId: M:LunyScript.SmokeTests.CoroutineFor.Build(LunyScript.ScriptContext)
-  fullName: LunyScript.SmokeTests.CoroutineFor.Build(LunyScript.ScriptContext)
-  nameWithType: CoroutineFor.Build(ScriptContext)
+- uid: LunyScript.SmokeTests.CoroutineFor.Build(LunyScript.ScriptBuildContext)
+  name: Build(ScriptBuildContext)
+  href: api/LunyScript.SmokeTests.CoroutineFor.html#LunyScript_SmokeTests_CoroutineFor_Build_LunyScript_ScriptBuildContext_
+  commentId: M:LunyScript.SmokeTests.CoroutineFor.Build(LunyScript.ScriptBuildContext)
+  fullName: LunyScript.SmokeTests.CoroutineFor.Build(LunyScript.ScriptBuildContext)
+  nameWithType: CoroutineFor.Build(ScriptBuildContext)
 - uid: LunyScript.SmokeTests.CoroutineFor.Build*
   name: Build
   href: api/LunyScript.SmokeTests.CoroutineFor.html#LunyScript_SmokeTests_CoroutineFor_Build_
@@ -27233,12 +27305,12 @@ references:
   fullName.vb: LunyScript.SmokeTests.CoroutineTimer.New
   nameWithType: CoroutineTimer.CoroutineTimer
   nameWithType.vb: CoroutineTimer.New
-- uid: LunyScript.SmokeTests.CoroutineTimer.Build(LunyScript.ScriptContext)
-  name: Build(ScriptContext)
-  href: api/LunyScript.SmokeTests.CoroutineTimer.html#LunyScript_SmokeTests_CoroutineTimer_Build_LunyScript_ScriptContext_
-  commentId: M:LunyScript.SmokeTests.CoroutineTimer.Build(LunyScript.ScriptContext)
-  fullName: LunyScript.SmokeTests.CoroutineTimer.Build(LunyScript.ScriptContext)
-  nameWithType: CoroutineTimer.Build(ScriptContext)
+- uid: LunyScript.SmokeTests.CoroutineTimer.Build(LunyScript.ScriptBuildContext)
+  name: Build(ScriptBuildContext)
+  href: api/LunyScript.SmokeTests.CoroutineTimer.html#LunyScript_SmokeTests_CoroutineTimer_Build_LunyScript_ScriptBuildContext_
+  commentId: M:LunyScript.SmokeTests.CoroutineTimer.Build(LunyScript.ScriptBuildContext)
+  fullName: LunyScript.SmokeTests.CoroutineTimer.Build(LunyScript.ScriptBuildContext)
+  nameWithType: CoroutineTimer.Build(ScriptBuildContext)
 - uid: LunyScript.SmokeTests.CoroutineTimer.Build*
   name: Build
   href: api/LunyScript.SmokeTests.CoroutineTimer.html#LunyScript_SmokeTests_CoroutineTimer_Build_
@@ -27992,12 +28064,12 @@ references:
   fullName.vb: LunyScript.SmokeTests.InputTest.New
   nameWithType: InputTest.InputTest
   nameWithType.vb: InputTest.New
-- uid: LunyScript.SmokeTests.InputTest.Build(LunyScript.ScriptContext)
-  name: Build(ScriptContext)
-  href: api/LunyScript.SmokeTests.InputTest.html#LunyScript_SmokeTests_InputTest_Build_LunyScript_ScriptContext_
-  commentId: M:LunyScript.SmokeTests.InputTest.Build(LunyScript.ScriptContext)
-  fullName: LunyScript.SmokeTests.InputTest.Build(LunyScript.ScriptContext)
-  nameWithType: InputTest.Build(ScriptContext)
+- uid: LunyScript.SmokeTests.InputTest.Build(LunyScript.ScriptBuildContext)
+  name: Build(ScriptBuildContext)
+  href: api/LunyScript.SmokeTests.InputTest.html#LunyScript_SmokeTests_InputTest_Build_LunyScript_ScriptBuildContext_
+  commentId: M:LunyScript.SmokeTests.InputTest.Build(LunyScript.ScriptBuildContext)
+  fullName: LunyScript.SmokeTests.InputTest.Build(LunyScript.ScriptBuildContext)
+  nameWithType: InputTest.Build(ScriptBuildContext)
 - uid: LunyScript.SmokeTests.InputTest.Build*
   name: Build
   href: api/LunyScript.SmokeTests.InputTest.html#LunyScript_SmokeTests_InputTest_Build_
@@ -28028,12 +28100,12 @@ references:
   fullName.vb: LunyScript.SmokeTests.InputTransformMove_LunyScript.New
   nameWithType: InputTransformMove_LunyScript.InputTransformMove_LunyScript
   nameWithType.vb: InputTransformMove_LunyScript.New
-- uid: LunyScript.SmokeTests.InputTransformMove_LunyScript.Build(LunyScript.ScriptContext)
-  name: Build(ScriptContext)
-  href: api/LunyScript.SmokeTests.InputTransformMove_LunyScript.html#LunyScript_SmokeTests_InputTransformMove_LunyScript_Build_LunyScript_ScriptContext_
-  commentId: M:LunyScript.SmokeTests.InputTransformMove_LunyScript.Build(LunyScript.ScriptContext)
-  fullName: LunyScript.SmokeTests.InputTransformMove_LunyScript.Build(LunyScript.ScriptContext)
-  nameWithType: InputTransformMove_LunyScript.Build(ScriptContext)
+- uid: LunyScript.SmokeTests.InputTransformMove_LunyScript.Build(LunyScript.ScriptBuildContext)
+  name: Build(ScriptBuildContext)
+  href: api/LunyScript.SmokeTests.InputTransformMove_LunyScript.html#LunyScript_SmokeTests_InputTransformMove_LunyScript_Build_LunyScript_ScriptBuildContext_
+  commentId: M:LunyScript.SmokeTests.InputTransformMove_LunyScript.Build(LunyScript.ScriptBuildContext)
+  fullName: LunyScript.SmokeTests.InputTransformMove_LunyScript.Build(LunyScript.ScriptBuildContext)
+  nameWithType: InputTransformMove_LunyScript.Build(ScriptBuildContext)
 - uid: LunyScript.SmokeTests.InputTransformMove_LunyScript.Build*
   name: Build
   href: api/LunyScript.SmokeTests.InputTransformMove_LunyScript.html#LunyScript_SmokeTests_InputTransformMove_LunyScript_Build_
@@ -28088,12 +28160,12 @@ references:
   fullName.vb: LunyScript.SmokeTests.InputTransformShift_LunyScript.New
   nameWithType: InputTransformShift_LunyScript.InputTransformShift_LunyScript
   nameWithType.vb: InputTransformShift_LunyScript.New
-- uid: LunyScript.SmokeTests.InputTransformShift_LunyScript.Build(LunyScript.ScriptContext)
-  name: Build(ScriptContext)
-  href: api/LunyScript.SmokeTests.InputTransformShift_LunyScript.html#LunyScript_SmokeTests_InputTransformShift_LunyScript_Build_LunyScript_ScriptContext_
-  commentId: M:LunyScript.SmokeTests.InputTransformShift_LunyScript.Build(LunyScript.ScriptContext)
-  fullName: LunyScript.SmokeTests.InputTransformShift_LunyScript.Build(LunyScript.ScriptContext)
-  nameWithType: InputTransformShift_LunyScript.Build(ScriptContext)
+- uid: LunyScript.SmokeTests.InputTransformShift_LunyScript.Build(LunyScript.ScriptBuildContext)
+  name: Build(ScriptBuildContext)
+  href: api/LunyScript.SmokeTests.InputTransformShift_LunyScript.html#LunyScript_SmokeTests_InputTransformShift_LunyScript_Build_LunyScript_ScriptBuildContext_
+  commentId: M:LunyScript.SmokeTests.InputTransformShift_LunyScript.Build(LunyScript.ScriptBuildContext)
+  fullName: LunyScript.SmokeTests.InputTransformShift_LunyScript.Build(LunyScript.ScriptBuildContext)
+  nameWithType: InputTransformShift_LunyScript.Build(ScriptBuildContext)
 - uid: LunyScript.SmokeTests.InputTransformShift_LunyScript.Build*
   name: Build
   href: api/LunyScript.SmokeTests.InputTransformShift_LunyScript.html#LunyScript_SmokeTests_InputTransformShift_LunyScript_Build_
@@ -28532,12 +28604,12 @@ references:
   commentId: Overload:LunyScript.SmokeTests.LunyScriptSmokeTestBase.AssertDidRun
   fullName: LunyScript.SmokeTests.LunyScriptSmokeTestBase.AssertDidRun
   nameWithType: LunyScriptSmokeTestBase.AssertDidRun
-- uid: LunyScript.SmokeTests.LunyScriptSmokeTestBase.Build(LunyScript.ScriptContext)
-  name: Build(ScriptContext)
-  href: api/LunyScript.SmokeTests.LunyScriptSmokeTestBase.html#LunyScript_SmokeTests_LunyScriptSmokeTestBase_Build_LunyScript_ScriptContext_
-  commentId: M:LunyScript.SmokeTests.LunyScriptSmokeTestBase.Build(LunyScript.ScriptContext)
-  fullName: LunyScript.SmokeTests.LunyScriptSmokeTestBase.Build(LunyScript.ScriptContext)
-  nameWithType: LunyScriptSmokeTestBase.Build(ScriptContext)
+- uid: LunyScript.SmokeTests.LunyScriptSmokeTestBase.Build(LunyScript.ScriptBuildContext)
+  name: Build(ScriptBuildContext)
+  href: api/LunyScript.SmokeTests.LunyScriptSmokeTestBase.html#LunyScript_SmokeTests_LunyScriptSmokeTestBase_Build_LunyScript_ScriptBuildContext_
+  commentId: M:LunyScript.SmokeTests.LunyScriptSmokeTestBase.Build(LunyScript.ScriptBuildContext)
+  fullName: LunyScript.SmokeTests.LunyScriptSmokeTestBase.Build(LunyScript.ScriptBuildContext)
+  nameWithType: LunyScriptSmokeTestBase.Build(ScriptBuildContext)
 - uid: LunyScript.SmokeTests.LunyScriptSmokeTestBase.Build*
   name: Build
   href: api/LunyScript.SmokeTests.LunyScriptSmokeTestBase.html#LunyScript_SmokeTests_LunyScriptSmokeTestBase_Build_
@@ -28628,12 +28700,12 @@ references:
   commentId: F:LunyScript.SmokeTests.ObjectCreateTestScript.AutoDestroyObjectName
   fullName: LunyScript.SmokeTests.ObjectCreateTestScript.AutoDestroyObjectName
   nameWithType: ObjectCreateTestScript.AutoDestroyObjectName
-- uid: LunyScript.SmokeTests.ObjectCreateTestScript.Build(LunyScript.ScriptContext)
-  name: Build(ScriptContext)
-  href: api/LunyScript.SmokeTests.ObjectCreateTestScript.html#LunyScript_SmokeTests_ObjectCreateTestScript_Build_LunyScript_ScriptContext_
-  commentId: M:LunyScript.SmokeTests.ObjectCreateTestScript.Build(LunyScript.ScriptContext)
-  fullName: LunyScript.SmokeTests.ObjectCreateTestScript.Build(LunyScript.ScriptContext)
-  nameWithType: ObjectCreateTestScript.Build(ScriptContext)
+- uid: LunyScript.SmokeTests.ObjectCreateTestScript.Build(LunyScript.ScriptBuildContext)
+  name: Build(ScriptBuildContext)
+  href: api/LunyScript.SmokeTests.ObjectCreateTestScript.html#LunyScript_SmokeTests_ObjectCreateTestScript_Build_LunyScript_ScriptBuildContext_
+  commentId: M:LunyScript.SmokeTests.ObjectCreateTestScript.Build(LunyScript.ScriptBuildContext)
+  fullName: LunyScript.SmokeTests.ObjectCreateTestScript.Build(LunyScript.ScriptBuildContext)
+  nameWithType: ObjectCreateTestScript.Build(ScriptBuildContext)
 - uid: LunyScript.SmokeTests.ObjectCreateTestScript.Build*
   name: Build
   href: api/LunyScript.SmokeTests.ObjectCreateTestScript.html#LunyScript_SmokeTests_ObjectCreateTestScript_Build_
@@ -28790,12 +28862,12 @@ references:
   fullName.vb: LunyScript.SmokeTests.Player1.New
   nameWithType: Player1.Player1
   nameWithType.vb: Player1.New
-- uid: LunyScript.SmokeTests.Player1.Build(LunyScript.ScriptContext)
-  name: Build(ScriptContext)
-  href: api/LunyScript.SmokeTests.Player1.html#LunyScript_SmokeTests_Player1_Build_LunyScript_ScriptContext_
-  commentId: M:LunyScript.SmokeTests.Player1.Build(LunyScript.ScriptContext)
-  fullName: LunyScript.SmokeTests.Player1.Build(LunyScript.ScriptContext)
-  nameWithType: Player1.Build(ScriptContext)
+- uid: LunyScript.SmokeTests.Player1.Build(LunyScript.ScriptBuildContext)
+  name: Build(ScriptBuildContext)
+  href: api/LunyScript.SmokeTests.Player1.html#LunyScript_SmokeTests_Player1_Build_LunyScript_ScriptBuildContext_
+  commentId: M:LunyScript.SmokeTests.Player1.Build(LunyScript.ScriptBuildContext)
+  fullName: LunyScript.SmokeTests.Player1.Build(LunyScript.ScriptBuildContext)
+  nameWithType: Player1.Build(ScriptBuildContext)
 - uid: LunyScript.SmokeTests.Player1.Build*
   name: Build
   href: api/LunyScript.SmokeTests.Player1.html#LunyScript_SmokeTests_Player1_Build_
@@ -28841,12 +28913,12 @@ references:
   fullName.vb: LunyScript.SmokeTests.Player2.New
   nameWithType: Player2.Player2
   nameWithType.vb: Player2.New
-- uid: LunyScript.SmokeTests.Player2.Build(LunyScript.ScriptContext)
-  name: Build(ScriptContext)
-  href: api/LunyScript.SmokeTests.Player2.html#LunyScript_SmokeTests_Player2_Build_LunyScript_ScriptContext_
-  commentId: M:LunyScript.SmokeTests.Player2.Build(LunyScript.ScriptContext)
-  fullName: LunyScript.SmokeTests.Player2.Build(LunyScript.ScriptContext)
-  nameWithType: Player2.Build(ScriptContext)
+- uid: LunyScript.SmokeTests.Player2.Build(LunyScript.ScriptBuildContext)
+  name: Build(ScriptBuildContext)
+  href: api/LunyScript.SmokeTests.Player2.html#LunyScript_SmokeTests_Player2_Build_LunyScript_ScriptBuildContext_
+  commentId: M:LunyScript.SmokeTests.Player2.Build(LunyScript.ScriptBuildContext)
+  fullName: LunyScript.SmokeTests.Player2.Build(LunyScript.ScriptBuildContext)
+  nameWithType: Player2.Build(ScriptBuildContext)
 - uid: LunyScript.SmokeTests.Player2.Build*
   name: Build
   href: api/LunyScript.SmokeTests.Player2.html#LunyScript_SmokeTests_Player2_Build_
@@ -28877,12 +28949,12 @@ references:
   fullName.vb: LunyScript.SmokeTests.Player3.New
   nameWithType: Player3.Player3
   nameWithType.vb: Player3.New
-- uid: LunyScript.SmokeTests.Player3.Build(LunyScript.ScriptContext)
-  name: Build(ScriptContext)
-  href: api/LunyScript.SmokeTests.Player3.html#LunyScript_SmokeTests_Player3_Build_LunyScript_ScriptContext_
-  commentId: M:LunyScript.SmokeTests.Player3.Build(LunyScript.ScriptContext)
-  fullName: LunyScript.SmokeTests.Player3.Build(LunyScript.ScriptContext)
-  nameWithType: Player3.Build(ScriptContext)
+- uid: LunyScript.SmokeTests.Player3.Build(LunyScript.ScriptBuildContext)
+  name: Build(ScriptBuildContext)
+  href: api/LunyScript.SmokeTests.Player3.html#LunyScript_SmokeTests_Player3_Build_LunyScript_ScriptBuildContext_
+  commentId: M:LunyScript.SmokeTests.Player3.Build(LunyScript.ScriptBuildContext)
+  fullName: LunyScript.SmokeTests.Player3.Build(LunyScript.ScriptBuildContext)
+  nameWithType: Player3.Build(ScriptBuildContext)
 - uid: LunyScript.SmokeTests.Player3.Build*
   name: Build
   href: api/LunyScript.SmokeTests.Player3.html#LunyScript_SmokeTests_Player3_Build_
@@ -28913,12 +28985,12 @@ references:
   fullName.vb: LunyScript.SmokeTests.Player4.New
   nameWithType: Player4.Player4
   nameWithType.vb: Player4.New
-- uid: LunyScript.SmokeTests.Player4.Build(LunyScript.ScriptContext)
-  name: Build(ScriptContext)
-  href: api/LunyScript.SmokeTests.Player4.html#LunyScript_SmokeTests_Player4_Build_LunyScript_ScriptContext_
-  commentId: M:LunyScript.SmokeTests.Player4.Build(LunyScript.ScriptContext)
-  fullName: LunyScript.SmokeTests.Player4.Build(LunyScript.ScriptContext)
-  nameWithType: Player4.Build(ScriptContext)
+- uid: LunyScript.SmokeTests.Player4.Build(LunyScript.ScriptBuildContext)
+  name: Build(ScriptBuildContext)
+  href: api/LunyScript.SmokeTests.Player4.html#LunyScript_SmokeTests_Player4_Build_LunyScript_ScriptBuildContext_
+  commentId: M:LunyScript.SmokeTests.Player4.Build(LunyScript.ScriptBuildContext)
+  fullName: LunyScript.SmokeTests.Player4.Build(LunyScript.ScriptBuildContext)
+  nameWithType: Player4.Build(ScriptBuildContext)
 - uid: LunyScript.SmokeTests.Player4.Build*
   name: Build
   href: api/LunyScript.SmokeTests.Player4.html#LunyScript_SmokeTests_Player4_Build_
@@ -28949,12 +29021,12 @@ references:
   fullName.vb: LunyScript.SmokeTests.TriggerEvents.New
   nameWithType: TriggerEvents.TriggerEvents
   nameWithType.vb: TriggerEvents.New
-- uid: LunyScript.SmokeTests.TriggerEvents.Build(LunyScript.ScriptContext)
-  name: Build(ScriptContext)
-  href: api/LunyScript.SmokeTests.TriggerEvents.html#LunyScript_SmokeTests_TriggerEvents_Build_LunyScript_ScriptContext_
-  commentId: M:LunyScript.SmokeTests.TriggerEvents.Build(LunyScript.ScriptContext)
-  fullName: LunyScript.SmokeTests.TriggerEvents.Build(LunyScript.ScriptContext)
-  nameWithType: TriggerEvents.Build(ScriptContext)
+- uid: LunyScript.SmokeTests.TriggerEvents.Build(LunyScript.ScriptBuildContext)
+  name: Build(ScriptBuildContext)
+  href: api/LunyScript.SmokeTests.TriggerEvents.html#LunyScript_SmokeTests_TriggerEvents_Build_LunyScript_ScriptBuildContext_
+  commentId: M:LunyScript.SmokeTests.TriggerEvents.Build(LunyScript.ScriptBuildContext)
+  fullName: LunyScript.SmokeTests.TriggerEvents.Build(LunyScript.ScriptBuildContext)
+  nameWithType: TriggerEvents.Build(ScriptBuildContext)
 - uid: LunyScript.SmokeTests.TriggerEvents.Build*
   name: Build
   href: api/LunyScript.SmokeTests.TriggerEvents.html#LunyScript_SmokeTests_TriggerEvents_Build_

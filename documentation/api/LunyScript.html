@@ -10,6 +10,7 @@
       <link rel="icon" href="../images/luny-logo-56x56.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
+      <link rel="stylesheet" href="../public/alert.css">
       <meta name="docfx:navrel" content="../toc.html">
       <meta name="docfx:tocrel" content="toc.html">
       
@@ -117,17 +118,19 @@ Inherit from this class and implement its Build() method to construct script log
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="LunyScript.ScriptContext.html">ScriptContext</a></dt>
-      <dd></dd>
+      <dt><a class="xref" href="LunyScript.ScriptBuildContext.html">ScriptBuildContext</a></dt>
+      <dd><p>Contains design-time <a class="xref" href="LunyScript.ScriptContext.html#LunyScript_ScriptContext_Data">Data</a> and runtime behaviour <a class="xref" href="LunyScript.ScriptContext.html#LunyScript_ScriptContext_Options">Options</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="LunyScript.ScriptBuildData.html">ScriptBuildData</a></dt>
+      <dd><p>Contains design-time data for a script, mainly Inspector-assigned values and references.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="LunyScript.ScriptEngine.html">ScriptEngine</a></dt>
       <dd><p>Public interface for LunyScript</p>
 </dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="LunyScript.ScriptSettings.html">ScriptSettings</a></dt>
-      <dd></dd>
     </dl>
     <h3 id="structs">
 Structs
@@ -145,8 +148,9 @@ Sequential integers for deterministic ordering and debugging.</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="LunyScript.ScriptOptions.html">ScriptOptions</a></dt>
-      <dd></dd>
+      <dt><a class="xref" href="LunyScript.ScriptRuntimeOptions.html">ScriptRuntimeOptions</a></dt>
+      <dd><p>Options that change runtime behaviour of the script.</p>
+</dd>
     </dl>
     <h3 id="interfaces">
 Interfaces

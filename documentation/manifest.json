@@ -5524,6 +5524,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/LunyScript.ScriptBuildContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunyScript.ScriptBuildContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LunyScript.ScriptBuildContext",
+      "Summary": "<p sourcefile=\"api/LunyScript.ScriptBuildContext.yml\" sourcestartlinenumber=\"1\">Contains design-time <a href=\"xref:LunyScript.ScriptContext.Data\" sourcefile=\"api/LunyScript.ScriptBuildContext.yml\" sourcestartlinenumber=\"1\">Data</a> and runtime behaviour <a href=\"xref:LunyScript.ScriptContext.Options\" sourcefile=\"api/LunyScript.ScriptBuildContext.yml\" sourcestartlinenumber=\"1\">Options</a>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunyScript.ScriptBuildData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunyScript.ScriptBuildData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LunyScript.ScriptBuildData",
+      "Summary": "<p sourcefile=\"api/LunyScript.ScriptBuildData.yml\" sourcestartlinenumber=\"1\">Contains design-time data for a script, mainly Inspector-assigned values and references.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/LunyScript.ScriptContext.yml",
       "output": {
         ".html": {
@@ -5534,7 +5562,21 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "LunyScript.ScriptContext",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/LunyScript.ScriptContext.yml\" sourcestartlinenumber=\"1\">Contains design-time <a href=\"xref:LunyScript.ScriptContext.Data\" sourcefile=\"api/LunyScript.ScriptContext.yml\" sourcestartlinenumber=\"1\">Data</a> and runtime behaviour <a href=\"xref:LunyScript.ScriptContext.Options\" sourcefile=\"api/LunyScript.ScriptContext.yml\" sourcestartlinenumber=\"1\">Options</a>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunyScript.ScriptData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunyScript.ScriptData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LunyScript.ScriptData",
+      "Summary": "<p sourcefile=\"api/LunyScript.ScriptData.yml\" sourcestartlinenumber=\"1\">Contains design-time data for a script, mainly Inspector-assigned values and references.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -5576,7 +5618,21 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "LunyScript.ScriptOptions",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/LunyScript.ScriptOptions.yml\" sourcestartlinenumber=\"1\">Options that change runtime behaviour of the script.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunyScript.ScriptRuntimeOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunyScript.ScriptRuntimeOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LunyScript.ScriptRuntimeOptions",
+      "Summary": "<p sourcefile=\"api/LunyScript.ScriptRuntimeOptions.yml\" sourcestartlinenumber=\"1\">Options that change runtime behaviour of the script.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -7293,20 +7349,30 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "manual/first-script-godot.md",
+      "source_relative_path": "manual/concepts-anatomy.md",
       "output": {
         ".html": {
-          "relative_path": "manual/first-script-godot.html"
+          "relative_path": "manual/concepts-anatomy.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "manual/first-script-overview.md",
+      "source_relative_path": "manual/concepts.md",
       "output": {
         ".html": {
-          "relative_path": "manual/first-script-overview.html"
+          "relative_path": "manual/concepts.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/first-script-godot.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/first-script-godot.html"
         }
       },
       "version": ""
@@ -7327,6 +7393,16 @@
       "output": {
         ".html": {
           "relative_path": "manual/first-script.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/getting-started.html"
         }
       },
       "version": ""
