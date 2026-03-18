@@ -104,88 +104,88 @@ The table shows how they map to object lifecycle events in the most popular game
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">On.Created</td>
-<td style="text-align: left;">Awake</td>
-<td style="text-align: left;">_init</td>
-<td style="text-align: left;">InitializeComponent</td>
+<td style="text-align: left;"><code>On.Created</code></td>
+<td style="text-align: left;"><code>Awake</code></td>
+<td style="text-align: left;"><code>_init</code></td>
+<td style="text-align: left;"><code>InitializeComponent</code></td>
 </tr>
 <tr>
-<td style="text-align: left;">On.Ready</td>
-<td style="text-align: left;">Start</td>
-<td style="text-align: left;">_ready</td>
-<td style="text-align: left;">BeginPlay</td>
+<td style="text-align: left;"><code>On.Ready</code></td>
+<td style="text-align: left;"><code>Start</code></td>
+<td style="text-align: left;"><code>_ready</code></td>
+<td style="text-align: left;"><code>BeginPlay</code></td>
 </tr>
 <tr>
-<td style="text-align: left;">On.Enabled</td>
-<td style="text-align: left;">OnEnable</td>
-<td style="text-align: left;">_enter_tree</td>
-<td style="text-align: left;">OnComponentActivated</td>
+<td style="text-align: left;"><code>On.Enabled</code></td>
+<td style="text-align: left;"><code>OnEnable</code></td>
+<td style="text-align: left;"><code>_enter_tree</code></td>
+<td style="text-align: left;"><code>OnComponentActivated</code></td>
 </tr>
 <tr>
-<td style="text-align: left;">On.Disabled</td>
-<td style="text-align: left;">OnDisable</td>
-<td style="text-align: left;">_exit_tree</td>
-<td style="text-align: left;">OnComponentDeactivated</td>
+<td style="text-align: left;"><code>On.Disabled</code></td>
+<td style="text-align: left;"><code>OnDisable</code></td>
+<td style="text-align: left;"><code>_exit_tree</code></td>
+<td style="text-align: left;"><code>OnComponentDeactivated</code></td>
 </tr>
 <tr>
-<td style="text-align: left;">On.Heartbeat</td>
-<td style="text-align: left;">FixedUpdate</td>
-<td style="text-align: left;">_physics_process</td>
-<td style="text-align: left;">TickComponent</td>
+<td style="text-align: left;"><code>On.Heartbeat</code></td>
+<td style="text-align: left;"><code>FixedUpdate</code></td>
+<td style="text-align: left;"><code>_physics_process</code></td>
+<td style="text-align: left;"><code>TickComponent</code></td>
 </tr>
 <tr>
-<td style="text-align: left;">On.FrameUpdate</td>
-<td style="text-align: left;">Update</td>
-<td style="text-align: left;">_process</td>
-<td style="text-align: left;">TickComponent</td>
+<td style="text-align: left;"><code>On.FrameUpdate</code></td>
+<td style="text-align: left;"><code>Update</code></td>
+<td style="text-align: left;"><code>_process</code></td>
+<td style="text-align: left;"><code>TickComponent</code></td>
 </tr>
 <tr>
-<td style="text-align: left;">On.FrameLateUpdate</td>
-<td style="text-align: left;">LateUpdate</td>
+<td style="text-align: left;"><code>On.FrameLateUpdate</code></td>
+<td style="text-align: left;"><code>LateUpdate</code></td>
 <td style="text-align: left;">N/A</td>
-<td style="text-align: left;">TickComponent</td>
+<td style="text-align: left;"><code>TickComponent</code></td>
 </tr>
 <tr>
-<td style="text-align: left;">On.Destroyed</td>
-<td style="text-align: left;">OnDestroy</td>
-<td style="text-align: left;">N/A (manual)</td>
-<td style="text-align: left;">UninitializeComponent</td>
+<td style="text-align: left;"><code>On.Destroyed</code></td>
+<td style="text-align: left;"><code>OnDestroy</code></td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;"><code>UninitializeComponent</code></td>
 </tr>
 <tr>
-<td style="text-align: left;">On.Collision(2D).Started</td>
-<td style="text-align: left;">OnCollisionEnter(2D)</td>
-<td style="text-align: left;">body_entered</td>
-<td style="text-align: left;">OnComponentHit</td>
+<td style="text-align: left;"><code>On.Collision(2D).Started</code></td>
+<td style="text-align: left;"><code>OnCollisionEnter(2D)</code></td>
+<td style="text-align: left;"><code>body_entered</code></td>
+<td style="text-align: left;"><code>OnComponentHit</code></td>
 </tr>
 <tr>
-<td style="text-align: left;">On.Collision(2D).Touching</td>
-<td style="text-align: left;">OnCollisionStay(2D)</td>
-<td style="text-align: left;">N/A (manual)</td>
-<td style="text-align: left;">N/A (manual)</td>
+<td style="text-align: left;"><code>On.Collision(2D).Touching</code></td>
+<td style="text-align: left;"><code>OnCollisionStay(2D)</code></td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
 </tr>
 <tr>
-<td style="text-align: left;">On.Collision(2D).Ended</td>
-<td style="text-align: left;">OnCollisionExit(2D)</td>
-<td style="text-align: left;">body_exited</td>
-<td style="text-align: left;">N/A (manual)</td>
+<td style="text-align: left;"><code>On.Collision(2D).Ended</code></td>
+<td style="text-align: left;"><code>OnCollisionExit(2D)</code></td>
+<td style="text-align: left;"><code>body_exited</code></td>
+<td style="text-align: left;">N/A</td>
 </tr>
 <tr>
-<td style="text-align: left;">On.Trigger(2D).Entered</td>
-<td style="text-align: left;">OnTriggerEnter(2D)</td>
-<td style="text-align: left;">area_entered</td>
-<td style="text-align: left;">OnComponentBeginOverlap</td>
+<td style="text-align: left;"><code>On.Trigger(2D).Entered</code></td>
+<td style="text-align: left;"><code>OnTriggerEnter(2D)</code></td>
+<td style="text-align: left;"><code>area_entered</code></td>
+<td style="text-align: left;"><code>OnComponentBeginOverlap</code></td>
 </tr>
 <tr>
-<td style="text-align: left;">On.Trigger(2D).Overlapping</td>
-<td style="text-align: left;">OnTriggerStay(2D)</td>
-<td style="text-align: left;">N/A (manual)</td>
-<td style="text-align: left;">N/A (manual)</td>
+<td style="text-align: left;"><code>On.Trigger(2D).Overlapping</code></td>
+<td style="text-align: left;"><code>OnTriggerStay(2D)</code></td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
 </tr>
 <tr>
-<td style="text-align: left;">On.Trigger(2D).Exited</td>
-<td style="text-align: left;">OnTriggerExit(2D)</td>
-<td style="text-align: left;">area_exited</td>
-<td style="text-align: left;">OnComponentEndOverlap</td>
+<td style="text-align: left;"><code>On.Trigger(2D).Exited</code></td>
+<td style="text-align: left;"><code>OnTriggerExit(2D)</code></td>
+<td style="text-align: left;"><code>area_exited</code></td>
+<td style="text-align: left;"><code>OnComponentEndOverlap</code></td>
 </tr>
 </tbody>
 </table>
