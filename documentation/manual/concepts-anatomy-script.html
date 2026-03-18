@@ -187,7 +187,7 @@ Events will run their blocks in the same order they appear in the script.</p>
 <p>LunyEngine receives the usual engine lifecycle events (frame processing) and uses them to drive <a class="xref" href="../api/Luny.ILunyEngineObserver.html">engine observers</a> of which LunyScript is but one. This fixes any shortcomings an engine may have. For example, absent lifecycle events like &quot;Late Update&quot; or &quot;Application Quit&quot;.</p>
 <p>For the object events, like OnEnable/OnDestroy, all engine objects are wrapped in a LunyObject instance. This then raises the corresponding events. It does not hook into or piggyback onto existing engine object/node/actor infrastructure to avoid the many, many lifecycle pitfalls this has. Instead, LunyEngine manages the lifetime of engine objects itself. That is how even a Godot Node will run the <code>On.Destroyed</code> event.</p>
 <p>The benefit: LunyScript (and LunyEngine) work exactly the same in any engine. Even event execution order will be deterministic across engines.</p>
-<p>In summary: LunyEngine is an engine on engines:
+<p>In summary:
 <img src="../images/LunyEngine_Engine_On_Engines.jpg" alt="LunyEngine_Engine_On_Engines.jpg"></p>
 
 </article>
