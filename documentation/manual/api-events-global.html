@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-      <title>Luny Semantics Shmemantics | LunyScript Documentation </title>
+      <title>Global Events | LunyScript Documentation </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Luny Semantics Shmemantics | LunyScript Documentation ">
+      <meta name="title" content="Global Events | LunyScript Documentation ">
       
       
       <link rel="icon" href="../images/luny-logo-56x56.png">
@@ -88,118 +88,9 @@
         </div>
 
         <article data-uid="">
-<h1 id="luny-semantics-shmemantics">Luny Semantics Shmemantics</h1>
+<h1 id="global-events">Global Events</h1>
 
-<p>LunyScript and LunyEngine strive to provide consistent, relatable semantics while avoiding terms that are too technical or too vague. But it also borrows semantics from engines where it makes the most sense.</p>
-<p>The idea is to fix game engines' inconsistencies and to more strictly follows C# / .NET naming guidelines in hope of a standardization (long term). Events that already happened use past tense (-ed). Ongoing events use present tense (-ing). Some exceptions: Consistently scheduled events (<code>On.Heartbeat</code>, <code>On.FrameUpdate</code>) and once-only events (<code>On.Ready</code>).</p>
-<h2 id="object-lifecycle-events">Object Lifecycle Events</h2>
-<p>These are the object lifecycle events which can run blocks.
-All object-specific events use the <code>On.*</code> prefix.
-The table shows how they map to object lifecycle events in the most popular game engines:</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;"><strong>LunyScript</strong></th>
-<th style="text-align: left;"><strong>Unity</strong></th>
-<th style="text-align: left;"><strong>Godot</strong></th>
-<th style="text-align: left;"><strong>Unreal</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">On.Created</td>
-<td style="text-align: left;">Awake</td>
-<td style="text-align: left;">_init</td>
-<td style="text-align: left;">InitializeComponent</td>
-</tr>
-<tr>
-<td style="text-align: left;">On.Ready</td>
-<td style="text-align: left;">Start</td>
-<td style="text-align: left;">_ready</td>
-<td style="text-align: left;">BeginPlay</td>
-</tr>
-<tr>
-<td style="text-align: left;">On.Enabled</td>
-<td style="text-align: left;">OnEnable</td>
-<td style="text-align: left;">_enter_tree</td>
-<td style="text-align: left;">OnComponentActivated</td>
-</tr>
-<tr>
-<td style="text-align: left;">On.Disabled</td>
-<td style="text-align: left;">OnDisable</td>
-<td style="text-align: left;">_exit_tree</td>
-<td style="text-align: left;">OnComponentDeactivated</td>
-</tr>
-<tr>
-<td style="text-align: left;">On.Heartbeat</td>
-<td style="text-align: left;">FixedUpdate</td>
-<td style="text-align: left;">_physics_process</td>
-<td style="text-align: left;">TickComponent</td>
-</tr>
-<tr>
-<td style="text-align: left;">On.FrameUpdate</td>
-<td style="text-align: left;">Update</td>
-<td style="text-align: left;">_process</td>
-<td style="text-align: left;">TickComponent</td>
-</tr>
-<tr>
-<td style="text-align: left;">On.FrameLateUpdate</td>
-<td style="text-align: left;">LateUpdate</td>
-<td style="text-align: left;">N/A</td>
-<td style="text-align: left;">TickComponent</td>
-</tr>
-<tr>
-<td style="text-align: left;">On.Destroyed</td>
-<td style="text-align: left;">OnDestroy</td>
-<td style="text-align: left;">N/A (manual)</td>
-<td style="text-align: left;">UninitializeComponent</td>
-</tr>
-<tr>
-<td style="text-align: left;">On.Collision(2D).Started</td>
-<td style="text-align: left;">OnCollisionEnter(2D)</td>
-<td style="text-align: left;">body_entered</td>
-<td style="text-align: left;">OnComponentHit</td>
-</tr>
-<tr>
-<td style="text-align: left;">On.Collision(2D).Continuing</td>
-<td style="text-align: left;">OnCollisionStay(2D)</td>
-<td style="text-align: left;">N/A (manual)</td>
-<td style="text-align: left;">N/A (manual)</td>
-</tr>
-<tr>
-<td style="text-align: left;">On.Collision(2D).Ended</td>
-<td style="text-align: left;">OnCollisionExit(2D)</td>
-<td style="text-align: left;">body_exited</td>
-<td style="text-align: left;">N/A (manual)</td>
-</tr>
-<tr>
-<td style="text-align: left;">On.Trigger(2D).Entered</td>
-<td style="text-align: left;">OnTriggerEnter(2D)</td>
-<td style="text-align: left;">area_entered</td>
-<td style="text-align: left;">OnComponentBeginOverlap</td>
-</tr>
-<tr>
-<td style="text-align: left;">On.Trigger(2D).Staying</td>
-<td style="text-align: left;">OnTriggerStay(2D)</td>
-<td style="text-align: left;">N/A (manual)</td>
-<td style="text-align: left;">N/A (manual)</td>
-</tr>
-<tr>
-<td style="text-align: left;">On.Trigger(2D).Exited</td>
-<td style="text-align: left;">OnTriggerExit(2D)</td>
-<td style="text-align: left;">area_exited</td>
-<td style="text-align: left;">OnComponentEndOverlap</td>
-</tr>
-</tbody>
-</table>
-<div class="NOTE">
-<h5>Note</h5>
-<p>The &quot;heartbeat&quot; may seem unusual. It's where every engine has issues: <code>FixedUpdate</code> .. uh, what is 'fixed' here? Is <code>Update()</code> <em>broken</em>?? And <code>_physics_process</code> is also misleading: it's not just about physics.</p>
-<p>The concept of a heartbeat is simple and relatable: It happens at a steady rate, mostly. But it can also &quot;skip a beat&quot; (not run in a frame), or have an &quot;extra beat&quot;, even &quot;race&quot; (run multiple time per frame).</p>
-</div>
-<h2 id="global-events">Global Events</h2>
-<p>Global (external) events use the <code>When.*</code> prefix, in contrast to the <code>On.*</code> events which target a specific object.
-This list isn't exhaustive or complete but should provide an overview of the most common global events that can run blocks:</p>
+<p>Global (external) events use the <code>When.*</code> prefix, in contrast to the <code>On.*</code> events which target a specific object.</p>
 <table>
 <thead>
 <tr>
@@ -254,92 +145,7 @@ This list isn't exhaustive or complete but should provide an overview of the mos
 </tr>
 </tbody>
 </table>
-<h2 id="lunyengine-observer-events">LunyEngine Observer Events</h2>
-<p>These events are used by implementations of <a class="xref" href="../api/Luny.ILunyEngineObserver.html"><code>ILunyEngineObserver</code></a>. You will probably not write an observer yourself, but you will likely see those methods in code and callstacks.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;"><strong>Event</strong></th>
-<th style="text-align: left;"><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">OnEngineStartup</td>
-<td style="text-align: left;">Application launched, after LunyEngine initialization</td>
-</tr>
-<tr>
-<td style="text-align: left;">OnEngineFrameBegins</td>
-<td style="text-align: left;">Every frame, before Heartbeat/FrameUpdate</td>
-</tr>
-<tr>
-<td style="text-align: left;">OnEngineHeartbeat</td>
-<td style="text-align: left;">Fixed timestep, 0-n times per frame</td>
-</tr>
-<tr>
-<td style="text-align: left;">OnEngineFrameUpdate</td>
-<td style="text-align: left;">Frame update</td>
-</tr>
-<tr>
-<td style="text-align: left;">OnEngineFrameLateUpdate</td>
-<td style="text-align: left;">Runs after frame update</td>
-</tr>
-<tr>
-<td style="text-align: left;">OnEngineFrameEnds</td>
-<td style="text-align: left;">Every frame, after all frame events</td>
-</tr>
-<tr>
-<td style="text-align: left;">OnEngineShutdown</td>
-<td style="text-align: left;">Application quitting</td>
-</tr>
-</tbody>
-</table>
-<h2 id="lunyengine-service-events">LunyEngine Service Events</h2>
-<p>Very similar events are used by implementations of <a class="xref" href="../api/Luny.Engine.Services.LunyEngineServiceBase.html"><code>LunyEngineServiceBase</code></a> providing engine &quot;services&quot; - feature-level APIs.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;"><strong>Event</strong></th>
-<th style="text-align: left;"><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">OnServiceInitialize</td>
-<td style="text-align: left;">Application launched, during LunyEngine initialization</td>
-</tr>
-<tr>
-<td style="text-align: left;">OnServiceStartup</td>
-<td style="text-align: left;">After LunyEngine and all services' initialization</td>
-</tr>
-<tr>
-<td style="text-align: left;">OnServiceFrameBegins</td>
-<td style="text-align: left;">Before frame update</td>
-</tr>
-<tr>
-<td style="text-align: left;">OnServiceHeartbeat</td>
-<td style="text-align: left;">Before object's heartbeat</td>
-</tr>
-<tr>
-<td style="text-align: left;">OnServiceFrameUpdate</td>
-<td style="text-align: left;">Before object's frame update</td>
-</tr>
-<tr>
-<td style="text-align: left;">OnServiceFrameLateUpdate</td>
-<td style="text-align: left;">Before object's frame late update</td>
-</tr>
-<tr>
-<td style="text-align: left;">OnServiceFrameEnds</td>
-<td style="text-align: left;">After frame update completed</td>
-</tr>
-<tr>
-<td style="text-align: left;">OnServiceShutdown</td>
-<td style="text-align: left;">Application quitting</td>
-</tr>
-</tbody>
-</table>
-<p>Services have an additional <code>OnServiceInitialize</code> event for internal setup which is required to complete before <code>OnServiceStartup</code>.
-During <code>OnServiceInitialize</code> the LunyEngine's services may not all be available or fully initialized.</p>
+<p>This list isn't exhaustive or complete but should provide an overview of the most common global events that can run blocks.</p>
 
 </article>
 
