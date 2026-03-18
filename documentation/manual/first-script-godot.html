@@ -222,6 +222,10 @@
 </ul>
 <p>Now you can use these input mappings in your code.</p>
 <p>You could skip the gamepad and joystick setup for now if you prefer, but keep in mind: <strong>players do expect common input devices to be supported!</strong></p>
+<h3 id="why-so-many-extra-steps">Why So Many Extra Steps?</h3>
+<p>Compared to Unity, there's an egregious amount of extra steps to be done in the Godot editor before you even get to scripting with this example.</p>
+<p>Godot deliberately provides <em>clean slates</em> for everything: no <em>meaningful templates</em> and often not even <em>sensible defaults</em>. Its user experience also centers on deeply hierarchical (procedural) user interfaces and an abundance of modal dialogs. This results in a higher number of UI interactions.</p>
+<p>On the other hand, Godot's design provides a comparatively consistent UI that's easier to pick up by beginners and non-technical users. It's in stark contrast to Unreal editor's highly complex UI with many uniquely designed windows. Unity takes the middle ground, approachable but with some complex feature windows.</p>
 <h3 id="the-gdscript">The GDScript</h3>
 <p>With all those editor setup steps out of the way, at least now you need to write <strong>much less code</strong> in GDScript:</p>
 <pre><code class="lang-gdscript">extends Node3D
@@ -251,15 +255,15 @@ func _process(delta: float):
 
     translate(finalMovement)
 </code></pre>
-<p>That's ten lines you're saving compared to the <a href="first-script-unity.html">Unity MonoBehaviour implementation</a>.</p>
-<p>However, the savings derive solely from not declaring the Input map strings as variables. The overall code complexity remains exactly the same.</p>
+<p>That's ten lines you're saving compared to the <a href="first-script-unity.html">Unity MonoBehaviour implementation</a> though the code looks strikingly familiar.</p>
+<p>The savings here derive solely from being able to inline the Input map strings, avoiding the use of fields (class instance variables). The overall code complexity remains exactly the same, with a minor reduction in syntax &quot;noise&quot;.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <blockquote>
-<p>🤔 Hey, wait! This GDScript is 26 lines but Unity's code snippet was 52 lines!</p>
-</blockquote>
-<p>Correct, but in all fairness we should stop counting empty lines, and those with only <code>{</code> or <code>}</code> when directly comparing it to GDScript.
+<p>🤔 Hey, wait! This GDScript is 26 lines but Unity's code snippet was 52 lines!
+Correct, but in all fairness we should stop counting empty lines, and <em>structural lines</em> with only a <code>{</code> or <code>}</code> character in C#.
 That makes Unity's solution 30 and the GDScript version 20 <em>actual lines of code</em>.</p>
+</blockquote>
 </div>
 <h2 id="with-lunyscript">With LunyScript</h2>
 <p>Here's the LunyScript C# implementation once again for reference - identical to its Unity version since Luny scripts represent portable code:</p>
@@ -277,16 +281,12 @@ public partial class Player : Script
     }
 }
 </code></pre>
-<p><strong>At 13 lines, that's still 2.77 times fewer lines than GDScript! 😎</strong></p>
+<p><strong>At 13 lines, that's still 1.5 times fewer lines than GDScript! 😎</strong></p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>LunyScript - once ported to Godot - will remain firmly based in C#.
 GDScript is not a portable language and does not handle fluent APIs well.</p>
 </div>
-<h3 id="why-so-many-extra-steps">Why So Many Extra Steps?</h3>
-<p>Compared to Unity, there's an egregious amount of extra steps to be done in the Godot editor before you even get to scripting.</p>
-<p>Godot deliberately provides <em>clean slates</em> for everything: no <em>meaningful templates</em> and often not even <em>sensible defaults</em>. Its user experience also centers on deeply hierarchical user interfaces and abundant modal dialogs. This comes at the cost of more UI interactions.</p>
-<p>On the other hand, Godot's design provides a comparatively consistent UI that's easier to pick up by beginners and non-technical users. It's in stark contrast to Unreal editor's highly complex UI, while Unity is somewhere in between.</p>
 
 </article>
 

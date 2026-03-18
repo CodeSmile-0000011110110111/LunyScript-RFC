@@ -7379,16 +7379,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "manual/concepts.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/concepts.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "manual/first-script-godot.md",
       "output": {
         ".html": {

@@ -2,3229 +2,3223 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://lunyscript.com/documentation/CHANGELOG.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/README.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Alarm.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Counter.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.ILunyAsset.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.ILunyObject.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.ILunyPath.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.ILunyPathConverter.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.ILunyPrefab.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.ILunyScene.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.LunyAsset.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.LunyAssetId.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.LunyAssetPath.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.LunyAssetRef.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.LunyCollider.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.LunyCollider2D.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.LunyCollision.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.LunyCollision2D.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.LunyCollision2DEvent.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.LunyCollisionEvent.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.LunyInputActionEvent.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.LunyInputActionPhase.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.LunyInputActionType.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.LunyInputUserProfile.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.LunyMath.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.LunyNativeObjectId.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.LunyObject.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.LunyObjectEvent.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.LunyObjectId.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.LunyObjectRef.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.LunyPath.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.LunyPathType.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.LunyPrefab.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.LunyPrimitiveType.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.LunyQuaternion.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.LunyRef-1.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.LunySavePath.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.LunyScene.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.LunySceneEvent.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.LunyTime.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.LunyTransform.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.LunyTransformSpace.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.LunyTrigger2DEvent.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.LunyTriggerEvent.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.LunyVector2.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.LunyVector3.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.NativeEngine.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.VectorUtil.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Bridge.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Diagnostics.ILunyEngineProfiler.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Diagnostics.LunyEngineLifecycleEvents.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Diagnostics.LunyObserverMetrics.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Diagnostics.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Services.ILunyApplicationService.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Services.ILunyAssetService.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Services.ILunyDebugService.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Services.ILunyEditorService.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Services.ILunyEngineService.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Services.ILunyInputService.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Services.ILunyObjectService.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Services.ILunySceneService.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Services.ILunyTimeService.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Services.LunyApplicationServiceBase.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Services.LunyAssetServiceBase.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Services.LunyDebugServiceBase.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Services.LunyEditorServiceBase.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Services.LunyEngineServiceBase.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Services.LunyInputServiceBase.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Services.LunyObjectServiceBase.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Services.LunySceneServiceBase.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Services.LunyTimeServiceBase.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Engine.Services.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Exceptions.LunyBridgeException.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Exceptions.LunyException.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Exceptions.LunyLifecycleException.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Exceptions.LunyServiceException.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Exceptions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.ILunyEngine.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.ILunyEngineLifecycle.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.ILunyEngineNativeAdapter.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.ILunyEngineObserver.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.ILunyLogger.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.ILunyObjectRegistry.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.ILunyObserverRegistry.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.ILunyServiceRegistry.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.ILunyServiceRegistryInternal.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.ITable.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.LogEntry.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.LogLevel.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.LunyBridgeException.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.LunyEngine.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.LunyEngineLifecycleEvents.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.LunyException.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.LunyLifecycleException.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.LunyLogger.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.LunyServiceException.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.LunyTraceLogger.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Number.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Stopwatch.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.SystemDoubleExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.SystemStringExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.SystemTypeExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Table.ScalarVarHandle.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Table.VarHandle-1.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Table.VarHandle.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Table.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Timer.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Unity.Bridge.LunyVectorExt.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Unity.Bridge.UnityCollider.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Unity.Bridge.UnityCollision.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Unity.Bridge.UnityLogger.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Unity.Bridge.UnityPathConverter.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Unity.Bridge.UnityPrefab.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Unity.Bridge.UnityScene.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Unity.Bridge.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Unity.Engine.Bridge.LunyVectorExt.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Unity.Engine.Bridge.UnityCollider.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Unity.Engine.Bridge.UnityCollision.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Unity.Engine.Bridge.UnityLogger.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Unity.Engine.Bridge.UnityPathConverter.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Unity.Engine.Bridge.UnityPrefab.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Unity.Engine.Bridge.UnityScene.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Unity.Engine.Bridge.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Unity.Engine.Services.UnityApplicationService.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Unity.Engine.Services.UnityAssetService.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Unity.Engine.Services.UnityDebugService.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Unity.Engine.Services.UnityEditorService.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Unity.Engine.Services.UnityInputService.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Unity.Engine.Services.UnityObjectService.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Unity.Engine.Services.UnitySceneService.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Unity.Engine.Services.UnityTimeService.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Unity.Engine.Services.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Unity.InputUserExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Unity.Services.UnityApplicationService.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Unity.Services.UnityAssetService.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Unity.Services.UnityDebugService.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Unity.Services.UnityEditorService.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Unity.Services.UnityInputService.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Unity.Services.UnityObjectService.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Unity.Services.UnitySceneService.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Unity.Services.UnityTimeService.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Unity.Services.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Unity.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.UnityEditor.LunyLinkerProcessor.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.UnityEditor.NoteEditor.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.UnityEditor.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Variable-1.ValueType.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Variable-1.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Variable.ValueType.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.Variable.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.VariableChangedArgs.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/Luny.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.CollisionBuilderLayered.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.CollisionBuilderMasked.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.CollisionBuilderReady.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.CollisionBuilderStart.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.ComponentApi.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.CoroutineBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.CoroutineCounterBuilder-1.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.CoroutineCounterBuilderUnitSet.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.CoroutineTimerAmountSet.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.CoroutineTimerBuilder-1.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.CoroutineTimerUnitSet.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.CounterBuilderFinalExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.CounterBuilderWhenExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.DebugApi.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.EditorApi.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.ForBlockBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.ICollisionBuilderLayered.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.ICollisionBuilderMasked.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.ICollisionBuilderReady.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.ICollisionBuilderStart.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.ICollisionBuilderState.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.ICoroutineCounterBuilderState.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.ICoroutineCounterBuilderUnitSet.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.ICoroutineCounterWhen.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.ICoroutineTimerAmountSet.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.ICoroutineTimerBuilderState.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.ICoroutineTimerUnitSet.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.ICoroutineTimerWhen.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.IObjectBuilderCanFinish.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.IObjectBuilderNameSet.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.IObjectBuilderState.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.ITransformBuilderReady.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.ITransformBuilderState.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.InputActionBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.InputAxisBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.InputBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.InputButtonBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.ObjectBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.ObjectBuilderExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.ObjectBuilderNameSet.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.ObjectCreateBuilder-1.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.OnInputEventBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.OnObjectEventBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.PhysicsEventBuilder-1.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.PhysicsEventLayerExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.PrefabBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.SceneApi.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.TimeApi.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.TimerBuilderCounterUnitExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.TimerBuilderFinalExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.TimerBuilderUnitExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.TimerBuilderWhenExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.TransformBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.TransformBuilderReady.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.TransformLookAtBuilder-1.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.TransformLookAtBuilderExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.TransformMoveBuilderExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.TransformPositionBuilder-1.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.TransformRotateBuilderExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.TransformRotationBuilder-1.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.TransformScaleBuilder-1.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.TransformScaleBuilderExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.WhenGlobalEventBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.WhenInputActionBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.WhenInputActionBuilderExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.WhenInputEventBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.WhenSceneEventBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.WhileBlockBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Api.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Blocks.ActionBlock.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Blocks.ComputedVariableBlock.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Blocks.ConditionBlock.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Blocks.ConstantVariableBlock.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Blocks.ControlFlow.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Blocks.ICoroutineBlock.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Blocks.ICounterCoroutineBlock.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Blocks.IScriptBlock.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Blocks.ISequenceBlock.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Blocks.ITimerCoroutineBlock.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Blocks.IfBlock.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Blocks.ScriptActionBlock.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Blocks.ScriptBlock.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Blocks.ScriptConditionBlock.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Blocks.SequenceBlock.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Blocks.TableVariableBlock.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Blocks.TransformInterpolateBlock.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Blocks.TransformInterpolateTowardsObjectBlock.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Blocks.TransformInterpolateTowardsVariableBlock.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Blocks.TransformPositionLerpTowardsObjectBlock.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Blocks.TransformPositionMoveByBlock.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Blocks.TransformPositionMoveRelativeBlock.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Blocks.TransformPositionSetLocalBlock.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Blocks.TransformPositionSetWorldBlock.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Blocks.TransformRotationLerpTowardsObjectBlock.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Blocks.TransformRotationLinearTowardsObjectBlock.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Blocks.TransformRotationLookAtBlock.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Blocks.TransformRotationSetLocalBlock.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Blocks.TransformRotationSetWorldBlock.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Blocks.TransformScaleSetLocalBlock.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Blocks.TransformScaleTowardsBlock.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Blocks.TransformScaleTowardsLerpBlock.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Blocks.VarAccessor.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Blocks.VariableBlock-1.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Blocks.VariableBlock.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Blocks.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.CollisionBuilderLayered.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.CollisionBuilderMasked.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.CollisionBuilderReady.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.CollisionBuilderStart.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ComponentApi.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.CoroutineBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.CoroutineCounterBuilder-1.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.CoroutineCounterBuilderUnitSet.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.CoroutineTimerAmountSet.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.CoroutineTimerBuilder-1.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.CoroutineTimerUnitSet.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.CounterBuilderFinalExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.CounterBuilderWhenExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.DebugApi.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Diagnostics.ScriptBlockMetrics.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Diagnostics.ScriptBlockProfiler.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Diagnostics.ScriptBlockProfilerSnapshot.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Diagnostics.ScriptDebugHooks.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Diagnostics.ScriptExecutionTrace.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Diagnostics.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.EditorApi.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Exceptions.LunyScriptException.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Exceptions.LunyScriptMaxIterationException.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Exceptions.LunyScriptVariableException.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Exceptions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ForBlockBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ICollisionBuilderLayered.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ICollisionBuilderMasked.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ICollisionBuilderReady.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ICollisionBuilderStart.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ICollisionBuilderState.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ICoroutineCounterBuilderState.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ICoroutineCounterBuilderUnitSet.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ICoroutineCounterWhen.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ICoroutineTimerAmountSet.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ICoroutineTimerBuilderState.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ICoroutineTimerUnitSet.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ICoroutineTimerWhen.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.IObjectBuilderCanFinish.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.IObjectBuilderNameSet.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.IObjectBuilderState.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.IScriptDefinition.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.IScriptEngine.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.IScriptRuntimeContext.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ITransformBuilderReady.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ITransformBuilderState.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.InputActionBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.InputAxisBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.InputBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.InputButtonBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.LunyScriptException.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.LunyScriptMaxIterationException.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.LunyScriptVariableException.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ObjectBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ObjectBuilderExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ObjectBuilderNameSet.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ObjectCreateBuilder-1.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.OnInputEventBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.OnObjectEventBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.PhysicsEventBuilder-1.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.PhysicsEventLayerExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.PrefabBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SceneApi.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Script.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.CollisionBuilderLayered.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.CollisionBuilderMasked.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.CollisionBuilderReady.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.CollisionBuilderStart.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.ComponentApi.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.CoroutineBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.CoroutineCounterBuilder-1.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.CoroutineCounterBuilderUnitSet.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.CoroutineTimerAmountSet.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.CoroutineTimerBuilder-1.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.CoroutineTimerUnitSet.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.CounterBuilderFinalExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.CounterBuilderWhenExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.DebugApi.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.EditorApi.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.ForBlockBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.ICollisionBuilderLayered.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.ICollisionBuilderMasked.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.ICollisionBuilderReady.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.ICollisionBuilderStart.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.ICollisionBuilderState.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.ICoroutineCounterBuilderState.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.ICoroutineCounterBuilderUnitSet.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.ICoroutineCounterWhen.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.ICoroutineTimerAmountSet.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.ICoroutineTimerBuilderState.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.ICoroutineTimerUnitSet.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.ICoroutineTimerWhen.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.IObjectBuilderCanFinish.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.IObjectBuilderNameSet.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.IObjectBuilderState.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.ITransformBuilderReady.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.ITransformBuilderState.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.InputActionBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.InputAxisBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.InputBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.InputButtonBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.ObjectBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.ObjectBuilderExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.ObjectBuilderNameSet.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.ObjectCreateBuilder-1.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.OnInputEventBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.OnObjectEventBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.PhysicsEventBuilder-1.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.PhysicsEventLayerExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.PrefabBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.SceneApi.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.TimeApi.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.TimerBuilderCounterUnitExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.TimerBuilderFinalExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.TimerBuilderUnitExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.TimerBuilderWhenExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.TransformBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.TransformBuilderReady.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.TransformLookAtBuilder-1.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.TransformLookAtBuilderExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.TransformMoveBuilderExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.TransformPositionBuilder-1.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.TransformRotateBuilderExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.TransformRotationBuilder-1.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.TransformScaleBuilder-1.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.TransformScaleBuilderExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.WhenGlobalEventBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.WhenInputActionBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.WhenInputActionBuilderExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.WhenInputEventBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.WhenSceneEventBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.WhileBlockBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptApi.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptBlockId.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptBuildContext.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptBuildData.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptContext.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptData.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptEngine.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptId.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptOptions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptRuntimeOptions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.ScriptSettings.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.Assert_Runs_OnCreated.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.Assert_Runs_OnDestroyed.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.Assert_Runs_OnDisabled.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.Assert_Runs_OnEnabled.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.Assert_Runs_OnFrameLateUpdate.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.Assert_Runs_OnFrameUpdate.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.Assert_Runs_OnHeartbeat.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.Assert_Runs_OnReady.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.ChangeMaterialOnContact.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.ChangeMaterialWhenRigidbodySleeps.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.CollisionEvents.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.CoroutineCounter.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.CoroutineEvery.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.CoroutineFor.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.CoroutineTimer.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.Coroutines.CoroutineCounter.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.Coroutines.CoroutineEvery.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.Coroutines.CoroutineFor.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.Coroutines.CoroutineTimer.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.Coroutines.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.Helper.ChangeMaterialOnContact.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.Helper.ChangeMaterialWhenRigidbodySleeps.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.Helper.PhysicsEventLogger.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.Helper.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.Input.InputTest.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.Input.Player1.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.Input.Player2.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.Input.Player3.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.Input.Player4.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.Input.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.InputHelper.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.InputMove.InputTransformMove_LunyScript.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.InputMove.InputTransformShift_LunyScript.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.InputMove.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.InputMoveTests.InputHelper.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.InputMoveTests.InputTransformMove_MonoBehaviour.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.InputMoveTests.InputTransformShift_MonoBehaviour.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.InputMoveTests.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.InputTest.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.InputTransformMove_LunyScript.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.InputTransformMove_MonoBehaviour.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.InputTransformShift_LunyScript.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.InputTransformShift_MonoBehaviour.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.Lifecycle.Assert_Runs_OnCreated.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.Lifecycle.Assert_Runs_OnDestroyed.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.Lifecycle.Assert_Runs_OnDisabled.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.Lifecycle.Assert_Runs_OnEnabled.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.Lifecycle.Assert_Runs_OnFrameLateUpdate.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.Lifecycle.Assert_Runs_OnFrameUpdate.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.Lifecycle.Assert_Runs_OnHeartbeat.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.Lifecycle.Assert_Runs_OnReady.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.Lifecycle.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.LifecycleTestController.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.LunyScriptSmokeTestBase.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.Object.Create.ObjectCreateTestScript.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.Object.Create.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.ObjectCreateTestScript.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.PhysicsEventLogger.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.PhysicsEvents.CollisionEvents.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.PhysicsEvents.TriggerEvents.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.PhysicsEvents.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.Player1.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.Player2.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.Player3.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.Player4.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.TriggerEvents.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.SmokeTests.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.TimeApi.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.TimerBuilderCounterUnitExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.TimerBuilderFinalExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.TimerBuilderUnitExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.TimerBuilderWhenExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.TransformBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.TransformBuilderReady.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.TransformLookAtBuilder-1.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.TransformLookAtBuilderExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.TransformMoveBuilderExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.TransformPositionBuilder-1.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.TransformRotateBuilderExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.TransformRotationBuilder-1.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.TransformScaleBuilder-1.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.TransformScaleBuilderExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Unity.Blocks.Component.ComponentApiExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Unity.Blocks.Component.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Unity.Blocks.ComponentApiExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Unity.Blocks.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Unity.ComponentApiExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.Unity.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.UnityEditor.SmokeTests.GlobalTestSceneSetup.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.UnityEditor.SmokeTests.PrintScriptingSymbols.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.UnityEditor.SmokeTests.TestSceneSetup.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.UnityEditor.SmokeTests.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.WhenGlobalEventBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.WhenInputActionBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.WhenInputActionBuilderExtensions.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.WhenInputEventBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.WhenSceneEventBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.WhileBlockBuilder.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/LunyScript.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/api/index.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/index.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/manual/api-application.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/manual/api-assets.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/manual/api-component.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/manual/api-debug.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/manual/api-events-global.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/manual/api-events-lifecycle.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/manual/api-events.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/manual/api-input-multiplayer.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/manual/api-input.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/manual/api-object-prefab.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/manual/api-object-primitive.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/manual/api-object.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/manual/api-overview.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/manual/api-physics.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/manual/api-scene.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/manual/api-time.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/manual/api-transform-move.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/manual/api-transform-shift.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/manual/api-transform.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/manual/api-variables-arithmetics.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/manual/api-variables-comparisons.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/manual/api-variables-lunytypes.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/manual/api-variables-number.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/manual/api-variables-table.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/manual/api-variables.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/manual/concepts-anatomy-script.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/manual/concepts-blocks-advanced.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/manual/concepts-semantics.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://lunyscript.com/documentation/manual/concepts.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/manual/first-script-godot.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/manual/first-script-unity.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/manual/first-script.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/manual/getting-started.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lunyscript.com/documentation/manual/index.html</loc>
-    <lastmod>2026-03-17T07:42:05+00:00</lastmod>
+    <lastmod>2026-03-18T10:42:29+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
