@@ -124,9 +124,9 @@
 <pre><code class="lang-csharp">public override void Build(ScriptBuildContext context)
 {
     var prefabPath = &quot;Assets/Prefabs/Enemy&quot;;
-    for (var i = 0; i &lt; 10; i++)
+    for (var i = 1; i &lt;= 10; i++)
     {
-        var name = $&quot;Enemy_{i+1}&quot;;
+        var name = &quot;Enemy_&quot; + i;
         var createEnemy = Object.Create(name).With(prefabPath);
         
         On.Ready(createEnemy);
