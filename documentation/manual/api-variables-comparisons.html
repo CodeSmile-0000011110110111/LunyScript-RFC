@@ -90,17 +90,23 @@
         <article data-uid="">
 <h1 id="variable-comparisons">Variable Comparisons</h1>
 
-<p>Script variables can also be compared with literal values and other variables.</p>
+<p>Script variables can be compared with literal values and other variables.</p>
+<h2 id="variables-are-conditions">Variables Are Conditions</h2>
+<p>Variables and their comparison operators are naturally usable in conditions:</p>
+<pre><code class="lang-csharp">var alive = Var.Define(&quot;Is Alive&quot;, true);
+On.Ready(If(alive).Then(Debug.Log(&quot;I live, therefore I must!&quot;)));
+</code></pre>
 <h2 id="operators-only">Operators Only</h2>
-<p>Comparisons can be performed entirely with operators <code>&lt; &lt;= == != &gt;= &gt;</code>. There are no separate comparison methods.</p>
+<p>Comparisons can be performed entirely with operators <code>&lt; &lt;= == != &gt;= &gt; ! ++ --</code>.</p>
 <h2 id="where-to-use-comparisons">Where To Use Comparisons</h2>
-<p>A comparison creates a <a class="xref" href="../api/LunyScript.Blocks.ConditionBlock.html"><code>ConditionBlock</code></a> which evaluates to either <code>true</code> or <code>false</code>.
-Blocks that execute (make changes) are <a class="xref" href="../api/LunyScript.Blocks.ActionBlock.html"><code>ActionBlock</code></a> types.</p>
-<p>Block methods may accept one or the other. The most common blocks accepting a <code>ConditionBlock</code> are:</p>
+<p>Variables and their comparison operators can be used as conditions whereever a <a class="xref" href="../api/LunyScript.Blocks.ConditionBlock.html"><code>ConditionBlock</code></a> is accepted. For example:</p>
 <ul>
 <li><code>If(conditions).Then(actions)</code></li>
 <li><code>While(conditions).Do(actions)</code></li>
-<li>Logical operators: <code>OR(conditions)</code>, <code>AND(conditions)</code>, <code>NOT(conditions)</code></li>
+<li><code>OR(conditions)</code></li>
+<li><code>AND(conditions)</code></li>
+<li><code>NOT(conditions)</code></li>
+<li>...</li>
 </ul>
 <h2 id="numerical-literal-comparison">Numerical Literal Comparison</h2>
 <p>This is true because <code>compare</code>'s value is <code>&gt;= 0.1</code>:</p>
@@ -112,7 +118,7 @@ On.Ready(If(compare &gt;= 0.1)
 );
 </code></pre>
 <h2 id="numerical-variable-comparison">Numerical Variable Comparison</h2>
-<p>This is true because <code>compare</code> is not equal to <code>other</code>:</p>
+<p>This is true because <code>compare</code>'s value is not equal to <code>other</code>'s value:</p>
 <pre><code class="lang-csharp">var compare = Var.Define(&quot;compare&quot;, 0.123456789);
 var other = Var.Define(&quot;other&quot;, 0.1);
 
@@ -131,18 +137,14 @@ On.Ready(If(compare)
 );
 </code></pre>
 <h2 id="boolean-comparison">Boolean Comparison</h2>
-<p>This is true because <code>truth</code> is not false.</p>
-<pre><code class="lang-csharp">var truth = Var.Define(&quot;another fact&quot;, true);
+<p>This example uses the <code>!</code> negation operator and will execute the <code>Else</code> branch because <code>truth</code> is true.</p>
+<pre><code class="lang-csharp">var truth = Var.Define(&quot;a fact&quot;, true);
 
 On.Ready(If(!truth)
-        .Then(Debug.Log($&quot;It's a fact. ({truth.Value})&quot;))
-        .Else(Debug.Log($&quot;It's an alternative fact!! ({truth.Value})&quot;))
+        .Then(Debug.Log($&quot;It's a fact. (True)&quot;))
+        .Else(Debug.Log($&quot;It's an alternative fact!! (False)&quot;))
 );
 </code></pre>
-<div class="NOTE">
-<h5>Note</h5>
-<p>This example uses the <code>!</code> negation operator and will therefore execute the <code>Else</code> branch.</p>
-</div>
 
 </article>
 

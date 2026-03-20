@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-      <title>concepts-control-flow | LunyScript Documentation </title>
+      <title>Control Flow | LunyScript Documentation </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="concepts-control-flow | LunyScript Documentation ">
+      <meta name="title" content="Control Flow | LunyScript Documentation ">
       
       
       <link rel="icon" href="../images/luny-logo-56x56.png">
@@ -88,32 +88,131 @@
         </div>
 
         <article data-uid="">
-<h1 id="concepts-control-flow">concepts-control-flow</h1>
+<h1 id="control-flow">Control Flow</h1>
 
-<h2 id="if--then">If / Then</h2>
+<p>LunyScript has two types of blocks:</p>
 <ul>
-<li><code>If(conditions).Then(actions).ElseIf(conditions).Then(actions).Else(actions)</code></li>
+<li><a class="xref" href="../api/LunyScript.Blocks.ActionBlock.html"><code>ActionBlock</code></a> types execute/run something, typically changing state.</li>
+<li><a class="xref" href="../api/LunyScript.Blocks.ConditionBlock.html"><code>ConditionBlock</code></a> types evaluate a logical expression for being either <code>true</code> or <code>false</code>.</li>
 </ul>
-<h2 id="if--elseif--else">If / ElseIf / Else</h2>
-<ul>
-<li><code>If(conditions).Then(actions).ElseIf(conditions).Then(actions).Else(actions)</code></li>
-</ul>
-<h2 id="while">While</h2>
-<ul>
-<li><code>While(conditions).Do(actions)</code></li>
-</ul>
-<h2 id="for">For</h2>
-<ul>
-<li><code>For(count).Do(actions)</code></li>
-</ul>
-<h2 id="for-with-step">For With Step</h2>
-<ul>
-<li><code>For(count, step).Do(actions)</code></li>
-</ul>
+<p>We use them together to create logic via control flow blocks.</p>
+<h2 id="ifthen">If().Then()</h2>
+<p>The simplemost control flow statement is the <code>If().Then()</code> pattern:</p>
+<pre><code class="lang-csharp">On.Ready(
+    If(Object.IsVisible())
+        .Then(Debug.Log(&quot;potentially visible&quot;))
+);
+</code></pre>
+<h2 id="ifthenelseifthen">If().Then().ElseIf().Then()</h2>
+<p>Of course you can have multiple branches with <code>ElseIf().Then()</code>:</p>
+<pre><code class="lang-csharp">On.Heartbeat(
+    If(Rigidbody.Speed() &lt; 10)
+        .Then(Debug.Log(&quot;going slow&quot;))
+    .ElseIf(Rigidbody.Speed() &lt; 20)
+        .Then(Debug.Log(&quot;running&quot;))
+    .ElseIf(Rigidbody.Speed() &lt; 30)
+        .Then(Debug.Log(&quot;running fast&quot;))
+);
+</code></pre>
+<h2 id="ifthenelseifthenelse">If().Then().ElseIf().Then().Else()</h2>
+<p>You can have a final <code>Else()</code> block which runs when no other branch is true:</p>
+<pre><code class="lang-csharp">On.Heartbeat(
+    If(Rigidbody.Speed() &lt; 10)
+        .Then(Debug.Log(&quot;going slow&quot;))
+    .ElseIf(Rigidbody.Speed() &lt; 20)
+        .Then(Debug.Log(&quot;running&quot;))
+    .ElseIf(Rigidbody.Speed() &lt; 30)
+        .Then(Debug.Log(&quot;running fast&quot;))
+    .Else(Debug.Log(&quot;going really fast&quot;))
+);
+</code></pre>
+<h2 id="whiledo">While().Do()</h2>
+<p>You can execute blocks for as long as conditions are true with the <code>While().Do()</code> pattern:</p>
+<pre><code class="lang-csharp">On.Heartbeat(
+    While(Rigidbody.Speed() &lt; 10)
+        .Do(Rigidbody.AddForce(LunyVector3.one))
+);
+</code></pre>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>It is trivial to create infinite loops with <code>While()</code>. Internally it is safeguarded against potential infinite loops,
+but the editor/build may remain frozen for several seconds. If it happens to you, give it some time.
+Unlike C# infinite loops it will unfreeze eventually. Note: The safeguard is inactive in RELEASE builds.</p>
+</div>
+<h2 id="fordo">For().Do()</h2>
+<p>The <code>For().Do()</code> loop should also seem familiar, except it's simplified to a single numeric value:</p>
+<pre><code class="lang-csharp">On.Ready(
+    For(10)
+        .Do(Debug.Log(&quot;for loop iterating&quot;))
+);
+</code></pre>
+<p>This will log ten times. Note that internally this counts from 1 to 10, just like Lua.</p>
+<p>If you need a custom step other than <code>+1</code> you can specify the step as the second parameter:</p>
+<pre><code class="lang-csharp">On.Ready(
+    For(10, 2)
+        .Do(Debug.Log(&quot;for loop iterating&quot;))
+);
+</code></pre>
+<p>This will log five times because the increment step is 2 (default: 1).</p>
+<h2 id="fordo-backwards">For().Do() Backwards</h2>
+<p>Sometimes, you need to iterate backwards. You can do this by passing a negative step value:</p>
+<pre><code class="lang-csharp">On.Ready(
+    For(10, -1)
+        .Do(Debug.Log(&quot;for loop iterating&quot;))
+);
+</code></pre>
+<p>This will log ten times but will decrement from 10 to 1.</p>
+<div class="alert alert-tip">
+<h5>Tip</h5>
+<p>The loop counter value is useful to use in the actions the <code>For()</code> loop runs. It will be exposed in the future.
+In the meantime you can manually <code>Inc()</code> or <code>Dec()</code> a variable in the <code>Do()</code> block.</p>
+</div>
+<h2 id="loop-with-variables">Loop With Variables</h2>
+<p>What good are loop expressions without variables? Of course you can use variables in <code>For()</code> and <code>While()</code> loops:</p>
+<pre><code class="lang-csharp">var enemyCount = Var.(&quot;enemyCount&quot;, 3);
+On.Enabled(
+    For(enemyCount)
+        .Do(Object.Create(&quot;enemy&quot;).With(&quot;Assets/Prefabs/Enemy&quot;)),
+        
+    limit.Add(3)
+);
+</code></pre>
+<p>This will create three enemies the first time the object gets enabled. The next time it will create six, then nine, and so forth.</p>
 <h2 id="logical-operators">Logical Operators</h2>
-<ul>
-<li>Logical operators: <code>OR(conditions)</code>, <code>AND(conditions)</code>, <code>NOT(conditions)</code></li>
-</ul>
+<p>The default combination of multiple conditions is an implicit <code>AND</code> where all conditions must be true for the check to pass:</p>
+<pre><code class="lang-csharp">On.Ready(
+    If(c1, c2, c3) // all three must be true
+        .Then(Debug.Log(&quot;check passed&quot;))
+);
+</code></pre>
+<p>But sometimes you may need to use other logical expressions ...</p>
+<p>The C# expression <code>c1 &amp;&amp; (c2 || c3)</code> is in plain english <code>c1 AND (c2 OR c3)</code>. Its block equivalent is:</p>
+<pre><code class="lang-csharp">If(c1, OR(c2, c3)).Then(..)
+</code></pre>
+<p>The C# expression <code>c1 || (c2 &amp;&amp; c3)</code> is in plain english <code>c1 OR (c2 AND c3)</code>. Its block equivalent is:</p>
+<pre><code class="lang-csharp">If(OR(c1, AND(c2, c3))).Then(..)
+</code></pre>
+<p>The C# expression <code>!(c1 || (c2 &amp;&amp; c3))</code> is in plain english <code>NOT (c1 OR (c2 AND c3))</code>. Its block equivalent is:</p>
+<pre><code class="lang-csharp">If(NOT(OR(c1, AND(c2, c3)))).Then(..)
+</code></pre>
+<p>As usual, you can pull out those checks into C# variables to keep your blocks readable, and maintainable:</p>
+<pre><code class="lang-csharp">var check = NOT(OR(c1, AND(c2, c3)));
+
+On.Ready(If(check).Then(Debug.Log(&quot;check passed&quot;)));
+</code></pre>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Every logical operator, every additional condition increases <a href="https://en.wikipedia.org/wiki/Cognitive_load">cognitive load</a>!
+One condition is trivial. Two conditions easy. Three conditions take a moment.
+Add NOT, OR, AND in between and repeat the conditions several times, with variations? 😵‍💫🫨🤯</p>
+<p>It's easy to create unmanageable messes with complex logical expressions!
+#1 Rule of Programming: <a href="https://en.wikipedia.org/wiki/KISS_principle">KEEP IT SIMPLE, STUPID!</a> 😊</p>
+</div>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Other logical operators will be added later. I know some of you would love to do intricate logic puzzles.
+That's when you might need to <code>XNOR</code> the <code>NAND</code> out of conditions. 🤓</p>
+</div>
 
 </article>
 

@@ -12,10 +12,10 @@
     --alert-tip-border: #689f38;
     --alert-tip-body-bg: #f3fbed;
 
-    --alert-warning-text: #fbc02d;
-    --alert-warning-bg: #fffde7;
+    --alert-warning-text: #f0b020;
+    --alert-warning-bg: #f8f6da;
     --alert-warning-border: #fbc02d;
-    --alert-warning-body-bg: #fffef0;
+    --alert-warning-body-bg: #fbfae8;
 
     --alert-danger-text: #d32f2f;
     --alert-danger-bg: #ffebee;
@@ -36,9 +36,9 @@
     --alert-tip-body-bg: #1f2f1d;
 
     --alert-warning-text: #ffd54f;
-    --alert-warning-bg: #3d391f;
+    --alert-warning-bg: #403e24;
     --alert-warning-border: #ffd54f;
-    --alert-warning-body-bg: #2f2e1b;
+    --alert-warning-body-bg: #3a3923;
 
     --alert-danger-text: #e57373;
     --alert-danger-bg: #3d1f1f;

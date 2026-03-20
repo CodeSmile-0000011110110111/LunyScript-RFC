@@ -91,7 +91,35 @@
 <h1 id="variable-arithmetics">Variable Arithmetics</h1>
 
 <p>Script variables representing numbers can perform arithmetic operations like Add, Subtract, Multiply, Divide.</p>
-<h2 id="using-operator-methods">Using Operator Methods</h2>
+<h2 id="arithmetics-require-methods">Arithmetics Require Methods</h2>
+<p>Because variables are conditions, arithmetic operations require the use of dedicated methods, such as <code>Add()</code>:</p>
+<pre><code class="lang-csharp">var value1 = Var.Define(&quot;value1&quot;, 2);
+var value2 = Var.Define(&quot;value2&quot;, 3);
+
+On.Ready(value1.Add(value2)); // value1 will be 5
+</code></pre>
+<p>... or <code>Set()</code> when using operator overloads to perform arithmetic operations:</p>
+<pre><code class="lang-csharp">On.Ready(value1.Set(value1 + value2)); // value1 will be 5
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>A variable wouldn't make sense as an <code>ActionBlock</code>: What is supposed to happen when you <em>run a variable</em>?</p>
+</div>
+<h2 id="reusable-arithmetic-operations">Reusable Arithmetic Operations</h2>
+<p>You can also assign arithmetic operations of script variables to C# variables:</p>
+<pre><code class="lang-csharp">var sumOf1And2 = value1 + value2;
+
+On.Ready(value1.Set(sumOf1And2)); // value1 will be 5
+</code></pre>
+<p>The arithmetic operation is performed on the runtime values of the variables, it is not computed instantly:</p>
+<pre><code class="lang-csharp">var sumOf1And2 = value1 + value2; // sumOf1And2 holds the intent to compute the sum, not the sum itself!
+
+On.Ready(value1.Set(sumOf1And2)); // value1 will be 5   (2 + 3)
+On.Ready(value1.Set(sumOf1And2)); // value1 will be 8   (5 + 3)
+On.Ready(value1.Set(sumOf1And2)); // value1 will be 11  (8 + 3)
+</code></pre>
+<p>This repeats the same arithmetic operation but uses different values every time because the value of <code>value1</code> is changed by the operation.</p>
+<h2 id="using-arithmetic-methods">Using Arithmetic Methods</h2>
 <p>Each variable has a set of operator methods where the variable is the 'left-hand' operand.
 The parameter of the method is the 'right-hand' operand.
 The result is stored in the variable, thus changing the 'left-hand' operand's value.</p>
@@ -106,7 +134,7 @@ On.Ready(
     num2.Div(num1),  // num2 changes to: (-1 / -3) = 0.333333333333333
 );
 </code></pre>
-<p>The value of <code>num1</code> changes in lines 1 and 3 while <code>num2</code> changes in lines 2 and 4 where they are the left-hand operand.
+<p>The value of <code>num1</code> changes in the first and third statement while <code>num2</code> changes in statements two and four, where <code>num2</code> is the left-hand operand.
 At the end, <code>num1</code> holds the value <code>-3</code> and <code>num2</code> holds the value <code>0.333333333333333</code>.</p>
 <h2 id="using-operator-overloads">Using Operator Overloads</h2>
 <p>Variables have overloaded operators, so you can also perform arithmetics <em>more naturally</em> using the usual <code>+ - / *</code> operators.
@@ -121,7 +149,8 @@ On.Ready(
 );
 </code></pre>
 <p>This performs the exact same arithmetics as above.</p>
-<p>Since the <code>num1</code> and <code>num2</code> values don't change, we have to repeat certain operations like <code>num1 + num2</code> several times. This is the result of this contrived example, not a general problem. You can simplify the calculation by using an intermediate variable that holds the repeating value:</p>
+<p>Since the <code>num1</code> and <code>num2</code> values don't change, we have to repeat certain operations like <code>num1 + num2</code> several times. This is the result of this contrived example, not a general problem.</p>
+<p>You can simplify the calculation by using an intermediate variable that holds the repeating value:</p>
 <pre><code class="lang-csharp">var num1 = Var.Define(&quot;num1&quot;, 1);
 var num2 = Var.Define(&quot;num2&quot;, 2);
 var three = Var.Define(&quot;intermediate&quot;);
@@ -152,6 +181,12 @@ On.Heartbeat(fact.Toggle(), Debug.Log(fact));
 <h5>Warning</h5>
 <p>If the variable was a number type, it will convert to a Boolean type. Any non-zero number value is considered <code>true</code>. Internally a Boolean variable will set the number value to either 0 (<code>false</code>) or 1 (<code>true</code>).</p>
 </div>
+<h2 id="passing-results-to-actions">Passing Results To Actions</h2>
+<p>You can pass the result of an arithmetic operation to an Action that accepts a number, bool or string value:</p>
+<pre><code class="lang-csharp">On.Ready(Transform.SetLocalScale(value1 + value2)); // Sets uniform scale: (5,5,5)
+</code></pre>
+<p>This will pass the sum of the runtime values of <code>value1</code> and <code>value2</code> to <code>SetLocalScale</code>.
+The variables <code>value1</code> and <code>value2</code> remain unchanged.</p>
 <h2 id="aliases-shmaliases">Aliases Shmaliases</h2>
 <p>The arithmetic operations all use 3-letter abbreviations of the mathematical operations they represent.
 This is primarily to improve readability and making math operations less verbose.</p>
