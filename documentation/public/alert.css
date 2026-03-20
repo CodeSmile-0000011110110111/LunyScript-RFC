@@ -12,10 +12,10 @@
     --alert-tip-border: #689f38;
     --alert-tip-body-bg: #f3fbed;
 
-    --alert-warning-text: #f57f17;
-    --alert-warning-bg: #fff3e0;
-    --alert-warning-border: #f57f17;
-    --alert-warning-body-bg: #fff6eb;
+    --alert-warning-text: #fbc02d;
+    --alert-warning-bg: #fffde7;
+    --alert-warning-border: #fbc02d;
+    --alert-warning-body-bg: #fffef0;
 
     --alert-danger-text: #d32f2f;
     --alert-danger-bg: #ffebee;
@@ -35,10 +35,10 @@
     --alert-tip-border: #9ccc65;
     --alert-tip-body-bg: #1f2f1d;
 
-    --alert-warning-text: #ffb74d;
-    --alert-warning-bg: #3d2f1f;
-    --alert-warning-border: #ffb74d;
-    --alert-warning-body-bg: #2f281b;
+    --alert-warning-text: #ffd54f;
+    --alert-warning-bg: #3d391f;
+    --alert-warning-border: #ffd54f;
+    --alert-warning-body-bg: #2f2e1b;
 
     --alert-danger-text: #e57373;
     --alert-danger-bg: #3d1f1f;

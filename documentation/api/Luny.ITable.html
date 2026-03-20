@@ -104,7 +104,7 @@ Interface ITable
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface ITable : IEnumerable&lt;KeyValuePair&lt;string, Variable&gt;&gt;, IEnumerable</code></pre>
+    <pre><code class="lang-csharp hljs">public interface ITable : IEnumerable&lt;KeyValuePair&lt;String, Variable&gt;&gt;, IEnumerable</code></pre>
   </div>
 
 
@@ -121,7 +121,7 @@ Interface ITable
     <dd>
     <ul>
     <li>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator">IEnumerable&lt;KeyValuePair&lt;string, Variable&gt;&gt;.GetEnumerator()</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator">IEnumerable&lt;KeyValuePair&lt;String, Variable&gt;&gt;.GetEnumerator()</a>
     </li>
     <li>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable.getenumerator">IEnumerable.GetEnumerator()</a>
@@ -143,7 +143,7 @@ Interface ITable
   <a id="Luny_ITable_Item_" data-uid="Luny.ITable.Item*"></a>
 
   <h3 id="Luny_ITable_Item_System_String_" data-uid="Luny.ITable.Item(System.String)">
-  this[string]
+  this[String]
   
   </h3>
 
@@ -151,7 +151,7 @@ Interface ITable
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">Variable this[string key] { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">Variable this[String key] { get; set; }</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -163,7 +163,7 @@ Interface ITable
   </tr>
   <dl class="parameters">
   <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">String</span></dt></td>
     <td style="width: fit-content;white-space: nowrap"><dt><code>key</code></dt></td>
     <td style="width: 99%"><dd></dd></td>
   </tr>
@@ -193,7 +193,7 @@ Interface ITable
   <a id="Luny_ITable_DefineConstant_" data-uid="Luny.ITable.DefineConstant*"></a>
 
   <h3 id="Luny_ITable_DefineConstant_System_String_Luny_Variable_" data-uid="Luny.ITable.DefineConstant(System.String,Luny.Variable)">
-  DefineConstant(string, Variable)
+  DefineConstant(String, Variable)
   
   </h3>
 
@@ -201,7 +201,7 @@ Interface ITable
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">Table.VarHandle DefineConstant(string key, Variable variable)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">Table.VarHandle DefineConstant(String key, Variable variable)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -213,7 +213,7 @@ Interface ITable
   </tr>
   <dl class="parameters">
   <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">String</span></dt></td>
     <td style="width: fit-content;white-space: nowrap"><dt><code>key</code></dt></td>
     <td style="width: 99%"><dd></dd></td>
   </tr>
@@ -244,7 +244,7 @@ Interface ITable
   <a id="Luny_ITable_DefineVariable_" data-uid="Luny.ITable.DefineVariable*"></a>
 
   <h3 id="Luny_ITable_DefineVariable_System_String_Luny_Variable_" data-uid="Luny.ITable.DefineVariable(System.String,Luny.Variable)">
-  DefineVariable(string, Variable)
+  DefineVariable(String, Variable)
   
   </h3>
 
@@ -252,7 +252,7 @@ Interface ITable
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">Table.VarHandle DefineVariable(string key, Variable variable)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">Table.VarHandle DefineVariable(String key, Variable variable)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -264,7 +264,7 @@ Interface ITable
   </tr>
   <dl class="parameters">
   <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">String</span></dt></td>
     <td style="width: fit-content;white-space: nowrap"><dt><code>key</code></dt></td>
     <td style="width: 99%"><dd></dd></td>
   </tr>
@@ -295,7 +295,7 @@ Interface ITable
   <a id="Luny_ITable_GetHandle_" data-uid="Luny.ITable.GetHandle*"></a>
 
   <h3 id="Luny_ITable_GetHandle_System_String_" data-uid="Luny.ITable.GetHandle(System.String)">
-  GetHandle(string)
+  GetHandle(String)
   
   </h3>
 
@@ -303,7 +303,7 @@ Interface ITable
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">Table.VarHandle GetHandle(string key)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">Table.VarHandle GetHandle(String key)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -315,7 +315,7 @@ Interface ITable
   </tr>
   <dl class="parameters">
   <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">String</span></dt></td>
     <td style="width: fit-content;white-space: nowrap"><dt><code>key</code></dt></td>
     <td style="width: 99%"><dd></dd></td>
   </tr>
@@ -341,7 +341,7 @@ Interface ITable
   <a id="Luny_ITable_GetHandle_" data-uid="Luny.ITable.GetHandle*"></a>
 
   <h3 id="Luny_ITable_GetHandle__1_System_String_" data-uid="Luny.ITable.GetHandle``1(System.String)">
-  GetHandle&lt;T&gt;(string)
+  GetHandle&lt;T&gt;(String)
   
   </h3>
 
@@ -349,7 +349,7 @@ Interface ITable
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">Table.VarHandle&lt;T&gt; GetHandle&lt;T&gt;(string key)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">Table.VarHandle&lt;T&gt; GetHandle&lt;T&gt;(String key)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -361,7 +361,7 @@ Interface ITable
   </tr>
   <dl class="parameters">
   <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">String</span></dt></td>
     <td style="width: fit-content;white-space: nowrap"><dt><code>key</code></dt></td>
     <td style="width: 99%"><dd></dd></td>
   </tr>
@@ -392,7 +392,7 @@ Interface ITable
   <a id="Luny_ITable_Get_" data-uid="Luny.ITable.Get*"></a>
 
   <h3 id="Luny_ITable_Get__1_System_String_" data-uid="Luny.ITable.Get``1(System.String)">
-  Get&lt;T&gt;(string)
+  Get&lt;T&gt;(String)
   
   </h3>
 
@@ -400,7 +400,7 @@ Interface ITable
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">T Get&lt;T&gt;(string key)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">T Get&lt;T&gt;(String key)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -412,7 +412,7 @@ Interface ITable
   </tr>
   <dl class="parameters">
   <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">String</span></dt></td>
     <td style="width: fit-content;white-space: nowrap"><dt><code>key</code></dt></td>
     <td style="width: 99%"><dd></dd></td>
   </tr>
@@ -443,7 +443,7 @@ Interface ITable
   <a id="Luny_ITable_Has_" data-uid="Luny.ITable.Has*"></a>
 
   <h3 id="Luny_ITable_Has_System_String_" data-uid="Luny.ITable.Has(System.String)">
-  Has(string)
+  Has(String)
   
   </h3>
 
@@ -451,7 +451,7 @@ Interface ITable
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">bool Has(string key)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">Boolean Has(String key)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -463,7 +463,7 @@ Interface ITable
   </tr>
   <dl class="parameters">
   <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">String</span></dt></td>
     <td style="width: fit-content;white-space: nowrap"><dt><code>key</code></dt></td>
     <td style="width: 99%"><dd></dd></td>
   </tr>
@@ -472,7 +472,7 @@ Interface ITable
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">bool</span></dt>
+    <dt><span class="xref">Boolean</span></dt>
     <dd></dd>
   </dl>
 
@@ -489,7 +489,7 @@ Interface ITable
   <a id="Luny_ITable_Remove_" data-uid="Luny.ITable.Remove*"></a>
 
   <h3 id="Luny_ITable_Remove_System_String_" data-uid="Luny.ITable.Remove(System.String)">
-  Remove(string)
+  Remove(String)
   
   </h3>
 
@@ -497,7 +497,7 @@ Interface ITable
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">bool Remove(string key)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">Boolean Remove(String key)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -509,7 +509,7 @@ Interface ITable
   </tr>
   <dl class="parameters">
   <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">String</span></dt></td>
     <td style="width: fit-content;white-space: nowrap"><dt><code>key</code></dt></td>
     <td style="width: 99%"><dd></dd></td>
   </tr>
@@ -518,7 +518,7 @@ Interface ITable
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">bool</span></dt>
+    <dt><span class="xref">Boolean</span></dt>
     <dd></dd>
   </dl>
 

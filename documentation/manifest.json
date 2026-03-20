@@ -7681,6 +7681,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "manual/api-variables-strings.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/api-variables-strings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "manual/api-variables-table.md",
       "output": {
         ".html": {
@@ -7725,6 +7735,16 @@
       "output": {
         ".html": {
           "relative_path": "manual/concepts-blocks-advanced.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/concepts-control-flow.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/concepts-control-flow.html"
         }
       },
       "version": ""

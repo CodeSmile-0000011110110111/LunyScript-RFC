@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-      <title>(placeholder article) | LunyScript Documentation </title>
+      <title>Variable Arithmetics | LunyScript Documentation </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="(placeholder article) | LunyScript Documentation ">
+      <meta name="title" content="Variable Arithmetics | LunyScript Documentation ">
       
       
       <link rel="icon" href="../images/luny-logo-56x56.png">
@@ -88,8 +88,112 @@
         </div>
 
         <article data-uid="">
-<h1 id="placeholder-article">(placeholder article)</h1>
+<h1 id="variable-arithmetics">Variable Arithmetics</h1>
 
+<p>Script variables representing numbers can perform arithmetic operations like Add, Subtract, Multiply, Divide.</p>
+<h2 id="using-operator-methods">Using Operator Methods</h2>
+<p>Each variable has a set of operator methods where the variable is the 'left-hand' operand.
+The parameter of the method is the 'right-hand' operand.
+The result is stored in the variable, thus changing the 'left-hand' operand's value.</p>
+<p>These are the basic arithmetic operations:</p>
+<pre><code class="lang-csharp">var num1 = Var.Define(&quot;num1&quot;, 1);
+var num2 = Var.Define(&quot;num2&quot;, 2);
+
+On.Ready(
+    num1.Add(num2),  // num1 changes to: (1 + 2) = 3
+    num2.Sub(num1),  // num2 changes to: (2 - 3) = -1
+    num1.Mul(num2),  // num1 changes to: (3 * -1) = -3
+    num2.Div(num1),  // num2 changes to: (-1 / -3) = 0.333333333333333
+);
+</code></pre>
+<p>The value of <code>num1</code> changes in lines 1 and 3 while <code>num2</code> changes in lines 2 and 4 where they are the left-hand operand.
+At the end, <code>num1</code> holds the value <code>-3</code> and <code>num2</code> holds the value <code>0.333333333333333</code>.</p>
+<h2 id="using-operator-overloads">Using Operator Overloads</h2>
+<p>Variables have overloaded operators, so you can also perform arithmetics <em>more naturally</em> using the usual <code>+ - / *</code> operators.
+This requires using the <code>Set()</code> method of a variable to perform the final assignment:</p>
+<pre><code class="lang-csharp">var num1 = Var.Define(&quot;num1&quot;, 1);
+var num2 = Var.Define(&quot;num2&quot;, 2);
+var result = Var.Define(&quot;result&quot;);
+
+On.Ready(
+    result.Set((num2 - (num1 + num2)) / ((num1 + num2) * (num2 - (num1 + num2)))),
+    Debug.Log(result) // prints '0.333333333333333' (same as above)
+);
+</code></pre>
+<p>This performs the exact same arithmetics as above.</p>
+<p>Since the <code>num1</code> and <code>num2</code> values don't change, we have to repeat certain operations like <code>num1 + num2</code> several times. This is the result of this contrived example, not a general problem. You can simplify the calculation by using an intermediate variable that holds the repeating value:</p>
+<pre><code class="lang-csharp">var num1 = Var.Define(&quot;num1&quot;, 1);
+var num2 = Var.Define(&quot;num2&quot;, 2);
+var three = Var.Define(&quot;intermediate&quot;);
+var result = Var.Define(&quot;result&quot;);
+
+On.Ready(
+    three.Set(num1 + num2),
+    result2.Set((num2 - three) / (three * (num2 - three))),
+    Debug.Log(result) // prints '0.333333333333333' (same as above)
+);
+</code></pre>
+<h2 id="increment-and-decrement">Increment and Decrement</h2>
+<p>As a shorthand for <code>Add(1)</code> and <code>Sub(1)</code> there are <code>Inc()</code> increment and <code>Dec()</code> decrement methods.
+We'll use them to count to three (positive and negative) in this example:</p>
+<pre><code class="lang-csharp">var increasing = Var.Define(&quot;inc&quot;);
+var decreasing = Var.Define(&quot;dec&quot;);
+
+On.Heartbeat(If(increasing &lt; 3).Then(increasing.Inc(), decreasing.Dec());
+</code></pre>
+<h2 id="flip-a-boolean">Flip A Boolean</h2>
+<p>Boolean variables can be flipped with the <code>Toggle()</code> method:</p>
+<pre><code class="lang-csharp">var fact = Var.Define(&quot;fact&quot;, false);
+
+On.Heartbeat(fact.Toggle(), Debug.Log(fact));
+</code></pre>
+<p>This will continuously change the value between <code>true</code> and <code>false</code>.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>If the variable was a number type, it will convert to a Boolean type. Any non-zero number value is considered <code>true</code>. Internally a Boolean variable will set the number value to either 0 (<code>false</code>) or 1 (<code>true</code>).</p>
+</div>
+<h2 id="aliases-shmaliases">Aliases Shmaliases</h2>
+<p>The arithmetic operations all use 3-letter abbreviations of the mathematical operations they represent.
+This is primarily to improve readability and making math operations less verbose.</p>
+<p>Aliases are provided for those who like to avoid cryptic abbreviations reminiscent of assembly language.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Operation</th>
+<th style="text-align: left;">Wordy Alias</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>Add</code></td>
+<td style="text-align: left;"><em>(same)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Sub</code></td>
+<td style="text-align: left;"><code>Subtract</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Mul</code></td>
+<td style="text-align: left;"><code>Multiply</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Div</code></td>
+<td style="text-align: left;"><code>Divide</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Inc</code></td>
+<td style="text-align: left;"><code>Increment</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Dec</code></td>
+<td style="text-align: left;"><code>Decrement</code></td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This list is not exhaustive. More advanced arithmetic operations (eg <code>Sqrt</code>, <code>Cos</code>, <code>Exp</code>, <code>Abs</code>) will be added over time.</p>
+</div>
 
 </article>
 

@@ -104,7 +104,7 @@ Class Table
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class Table : ITable, IEnumerable&lt;KeyValuePair&lt;string, Variable&gt;&gt;, IEnumerable</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class Table : ITable, IEnumerable&lt;KeyValuePair&lt;String, Variable&gt;&gt;, IEnumerable</code></pre>
   </div>
 
 
@@ -116,7 +116,7 @@ Class Table
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><span class="xref">object</span></div>
+      <div><span class="xref">Object</span></div>
       <div><span class="xref">Table</span></div>
     </dd>
   </dl>
@@ -125,7 +125,7 @@ Class Table
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="Luny.ITable.html">ITable</a></div>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="Luny.Variable.html">Variable</a>&gt;&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="Luny.Variable.html">Variable</a>&gt;&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
     </dd>
   </dl>
@@ -185,7 +185,7 @@ Class Table
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public int Count { get; }</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public Int32 Count { get; }</code></pre>
   </div>
 
 
@@ -194,7 +194,7 @@ Class Table
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></dt>
     <dd></dd>
   </dl>
 
@@ -208,7 +208,7 @@ Class Table
   <a id="Luny_Table_Item_" data-uid="Luny.Table.Item*"></a>
 
   <h3 id="Luny_Table_Item_System_String_" data-uid="Luny.Table.Item(System.String)">
-  this[string]
+  this[String]
   
   </h3>
 
@@ -217,7 +217,7 @@ Class Table
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public Variable this[string key] { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public Variable this[String key] { get; set; }</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -229,7 +229,7 @@ Class Table
   </tr>
   <dl class="parameters">
   <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">String</span></dt></td>
     <td style="width: fit-content;white-space: nowrap"><dt><code>key</code></dt></td>
     <td style="width: 99%"><dd></dd></td>
   </tr>
@@ -259,7 +259,7 @@ Class Table
   <a id="Luny_Table_DefineConstant_" data-uid="Luny.Table.DefineConstant*"></a>
 
   <h3 id="Luny_Table_DefineConstant_System_String_Luny_Variable_" data-uid="Luny.Table.DefineConstant(System.String,Luny.Variable)">
-  DefineConstant(string, Variable)
+  DefineConstant(String, Variable)
   
   </h3>
 
@@ -268,7 +268,7 @@ Class Table
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public Table.VarHandle DefineConstant(string key, Variable variable)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public Table.VarHandle DefineConstant(String key, Variable variable)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -280,7 +280,7 @@ Class Table
   </tr>
   <dl class="parameters">
   <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">String</span></dt></td>
     <td style="width: fit-content;white-space: nowrap"><dt><code>key</code></dt></td>
     <td style="width: 99%"><dd><p>The constant name.</p>
 </dd></td>
@@ -314,7 +314,7 @@ Class Table
   <a id="Luny_Table_DefineVariable_" data-uid="Luny.Table.DefineVariable*"></a>
 
   <h3 id="Luny_Table_DefineVariable_System_String_Luny_Variable_" data-uid="Luny.Table.DefineVariable(System.String,Luny.Variable)">
-  DefineVariable(string, Variable)
+  DefineVariable(String, Variable)
   
   </h3>
 
@@ -323,7 +323,7 @@ Class Table
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public Table.VarHandle DefineVariable(string key, Variable variable)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public Table.VarHandle DefineVariable(String key, Variable variable)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -335,7 +335,7 @@ Class Table
   </tr>
   <dl class="parameters">
   <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">String</span></dt></td>
     <td style="width: fit-content;white-space: nowrap"><dt><code>key</code></dt></td>
     <td style="width: 99%"><dd></dd></td>
   </tr>
@@ -379,13 +379,13 @@ Class Table
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public IEnumerator&lt;KeyValuePair&lt;string, Variable&gt;&gt; GetEnumerator()</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public IEnumerator&lt;KeyValuePair&lt;String, Variable&gt;&gt; GetEnumerator()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="Luny.Variable.html">Variable</a>&gt;&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="Luny.Variable.html">Variable</a>&gt;&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -402,7 +402,7 @@ Class Table
   <a id="Luny_Table_GetHandle_" data-uid="Luny.Table.GetHandle*"></a>
 
   <h3 id="Luny_Table_GetHandle_System_String_" data-uid="Luny.Table.GetHandle(System.String)">
-  GetHandle(string)
+  GetHandle(String)
   
   </h3>
 
@@ -411,7 +411,7 @@ Class Table
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public Table.VarHandle GetHandle(string key)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public Table.VarHandle GetHandle(String key)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -423,7 +423,7 @@ Class Table
   </tr>
   <dl class="parameters">
   <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">String</span></dt></td>
     <td style="width: fit-content;white-space: nowrap"><dt><code>key</code></dt></td>
     <td style="width: 99%"><dd></dd></td>
   </tr>
@@ -449,7 +449,7 @@ Class Table
   <a id="Luny_Table_GetHandle_" data-uid="Luny.Table.GetHandle*"></a>
 
   <h3 id="Luny_Table_GetHandle__1_System_String_" data-uid="Luny.Table.GetHandle``1(System.String)">
-  GetHandle&lt;T&gt;(string)
+  GetHandle&lt;T&gt;(String)
   
   </h3>
 
@@ -458,7 +458,7 @@ Class Table
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public Table.VarHandle&lt;T&gt; GetHandle&lt;T&gt;(string key)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public Table.VarHandle&lt;T&gt; GetHandle&lt;T&gt;(String key)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -470,7 +470,7 @@ Class Table
   </tr>
   <dl class="parameters">
   <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">String</span></dt></td>
     <td style="width: fit-content;white-space: nowrap"><dt><code>key</code></dt></td>
     <td style="width: 99%"><dd></dd></td>
   </tr>
@@ -501,7 +501,7 @@ Class Table
   <a id="Luny_Table_Get_" data-uid="Luny.Table.Get*"></a>
 
   <h3 id="Luny_Table_Get__1_System_String_" data-uid="Luny.Table.Get``1(System.String)">
-  Get&lt;T&gt;(string)
+  Get&lt;T&gt;(String)
   
   </h3>
 
@@ -510,7 +510,7 @@ Class Table
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public T Get&lt;T&gt;(string key)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public T Get&lt;T&gt;(String key)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -522,7 +522,7 @@ Class Table
   </tr>
   <dl class="parameters">
   <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">String</span></dt></td>
     <td style="width: fit-content;white-space: nowrap"><dt><code>key</code></dt></td>
     <td style="width: 99%"><dd></dd></td>
   </tr>
@@ -553,7 +553,7 @@ Class Table
   <a id="Luny_Table_Has_" data-uid="Luny.Table.Has*"></a>
 
   <h3 id="Luny_Table_Has_System_String_" data-uid="Luny.Table.Has(System.String)">
-  Has(string)
+  Has(String)
   
   </h3>
 
@@ -562,7 +562,7 @@ Class Table
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public bool Has(string key)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public Boolean Has(String key)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -574,7 +574,7 @@ Class Table
   </tr>
   <dl class="parameters">
   <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">String</span></dt></td>
     <td style="width: fit-content;white-space: nowrap"><dt><code>key</code></dt></td>
     <td style="width: 99%"><dd></dd></td>
   </tr>
@@ -583,7 +583,7 @@ Class Table
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">bool</span></dt>
+    <dt><span class="xref">Boolean</span></dt>
     <dd></dd>
   </dl>
 
@@ -600,7 +600,7 @@ Class Table
   <a id="Luny_Table_Remove_" data-uid="Luny.Table.Remove*"></a>
 
   <h3 id="Luny_Table_Remove_System_String_" data-uid="Luny.Table.Remove(System.String)">
-  Remove(string)
+  Remove(String)
   
   </h3>
 
@@ -609,7 +609,7 @@ Class Table
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public bool Remove(string key)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public Boolean Remove(String key)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -621,7 +621,7 @@ Class Table
   </tr>
   <dl class="parameters">
   <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">String</span></dt></td>
     <td style="width: fit-content;white-space: nowrap"><dt><code>key</code></dt></td>
     <td style="width: 99%"><dd></dd></td>
   </tr>
@@ -630,7 +630,7 @@ Class Table
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">bool</span></dt>
+    <dt><span class="xref">Boolean</span></dt>
     <dd></dd>
   </dl>
 
@@ -674,7 +674,7 @@ Class Table
   <a id="Luny_Table_ResetValue_" data-uid="Luny.Table.ResetValue*"></a>
 
   <h3 id="Luny_Table_ResetValue_System_String_" data-uid="Luny.Table.ResetValue(System.String)">
-  ResetValue(string)
+  ResetValue(String)
   
   </h3>
 
@@ -683,7 +683,7 @@ Class Table
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public void ResetValue(string key)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public void ResetValue(String key)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -695,7 +695,7 @@ Class Table
   </tr>
   <dl class="parameters">
   <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">String</span></dt></td>
     <td style="width: fit-content;white-space: nowrap"><dt><code>key</code></dt></td>
     <td style="width: 99%"><dd></dd></td>
   </tr>
@@ -752,13 +752,13 @@ Class Table
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">[ExcludeFromCodeCoverage]
-public override string ToString()</code></pre>
+public override String ToString()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
+    <dt><span class="xref">String</span></dt>
     <dd></dd>
   </dl>
 

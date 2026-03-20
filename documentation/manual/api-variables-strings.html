@@ -2,11 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-      <title>Struct TransformPositionBuilder&lt;T&gt; | LunyScript Documentation </title>
+      <title>String Variables | LunyScript Documentation </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Struct TransformPositionBuilder&lt;T&gt; | LunyScript Documentation ">
+      <meta name="title" content="String Variables | LunyScript Documentation ">
       
-      <meta name="description" content="Fluent builder for Move-Towards blocks. Usage: Transform.MoveTowards(target).Speed(3).Responsiveness(2).LockY() Transform.MoveTowards(target).Speed(3).Lerp() Transform.MoveTowards(target).Speed(3).Slerp()">
+      
       <link rel="icon" href="../images/luny-logo-56x56.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -17,7 +17,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      
+      <meta name="docfx:docurl" content="https://github.com/CodeSmile-0000011110110111/Luny-Docs/blob/main/manual/api-variables-strings.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -42,7 +42,7 @@
 
   </head>
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
@@ -87,122 +87,43 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="LunyScript.Api.TransformPositionBuilder`1">
+        <article data-uid="">
+<h1 id="string-variables">String Variables</h1>
 
+<p>String variables can be <em>added together</em> (concatenated) and tested for equality/inequality.</p>
+<h2 id="adding-strings">Adding Strings</h2>
+<p>Concatenating strings is the only allowed arithmetic operation on string variables.</p>
+<pre><code class="lang-csharp">var str1 = Var.Define(&quot;str1&quot;, &quot;A long, long time ago ...&quot;);
+var str2 = Var.Define(&quot;str2&quot;, &quot; in a galaxy far, far away.&quot;);
 
+On.Ready(str1.Add(str2), Debug.Log(str1));
+</code></pre>
+<p>This will log:</p>
+<blockquote>
+<p><em>A long, long time ago ... in a galaxy far, far away.</em></p>
+</blockquote>
+<h2 id="comparing-strings">Comparing Strings</h2>
+<p>String variables can also be tested for equality and inequality:</p>
+<pre><code class="lang-csharp">var message = Var.Define(&quot;peace&quot;, &quot;We come in peace!&quot;);
 
-  <h1 id="LunyScript_Api_TransformPositionBuilder_1" data-uid="LunyScript.Api.TransformPositionBuilder`1" class="text-break">
-Struct TransformPositionBuilder&lt;T&gt;  
-  </h1>
-
-  <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="LunyScript.html">LunyScript</a>.<a class="xref" href="LunyScript.Api.html">Api</a></dd> / <dt>Assembly</dt><dd>LunyScript.dll</dd></dl>
-  </div>
-
-  <div class="markdown summary"><p>Fluent builder for Move-Towards blocks.
-Usage: Transform.MoveTowards(target).Speed(3).Responsiveness(2).LockY()
-Transform.MoveTowards(target).Speed(3).Lerp()
-Transform.MoveTowards(target).Speed(3).Slerp()</p>
+On.Ready(If(message != &quot;We come in peace!&quot;)
+        .Then(Debug.Log(&quot;You'll leave in pieces!&quot;))
+        .Else(Debug.Log(&quot;Welcome, friends!&quot;))
+);
+</code></pre>
+<h2 id="other-operations-error">Other Operations: ERROR</h2>
+<div class="CAUTION">
+<h5>Caution</h5>
+<p>All other arithmetic operations and comparisons on string variables will be an error.</p>
 </div>
-  <div class="markdown conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly struct TransformPositionBuilder&lt;T&gt; where T : struct, ITransformBuilderState</code></pre>
-  </div>
-
-
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>T</code></dt>
-    <dd></dd>
-  </dl>
-
-  <details>
-  <summary style="display: list-item; font-size: 15px"><i>Expand Details ...</i></summary>
-
-
-
-
-  <dl class="typelist inheritedMembers">
-    <dt>Inherited Members</dt>
-    <dd>
-    <ul>
-    <li>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals">ValueType.Equals(Object)</a>
-    </li>
-    <li>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode">ValueType.GetHashCode()</a>
-    </li>
-    <li>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a>
-    </li>
-    </ul>
-  </dd></dl>
-
-  </details>
-
-
-
-
-
-
-  <h2 class="section" id="operators">Operators
-</h2>
-
-
-  <a id="LunyScript_Api_TransformPositionBuilder_1_op_Implicit_" data-uid="LunyScript.Api.TransformPositionBuilder`1.op_Implicit*"></a>
-
-  <h3 id="LunyScript_Api_TransformPositionBuilder_1_op_Implicit_LunyScript_Api_TransformPositionBuilder__0___LunyScript_Blocks_ActionBlock" data-uid="LunyScript.Api.TransformPositionBuilder`1.op_Implicit(LunyScript.Api.TransformPositionBuilder{`0})~LunyScript.Blocks.ActionBlock">
-  implicit operator ActionBlock(TransformPositionBuilder&lt;T&gt;)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static implicit operator ActionBlock(TransformPositionBuilder&lt;T&gt; b)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <table>
-  <tr>
-  <th>Type</th>
-  <th>Name</th>
-  <th>Description</th>
-  </tr>
-  <dl class="parameters">
-  <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Api.TransformPositionBuilder-1.html">TransformPositionBuilder</a>&lt;T&gt;</dt></td>
-    <td style="width: fit-content;white-space: nowrap"><dt><code>b</code></dt></td>
-    <td style="width: 99%"><dd></dd></td>
-  </tr>
-  </dl>
-  </table>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
 
 </article>
 
         <div class="contribution d-print-none">
+          <a href="https://github.com/CodeSmile-0000011110110111/Luny-Docs/blob/main/manual/api-variables-strings.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
 
       </div>
 

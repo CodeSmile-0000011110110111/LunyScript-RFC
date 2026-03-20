@@ -105,18 +105,37 @@ This is comparable to the <code>protected</code> / <code>private</code> access m
 <p>Prefer to use <code>Var</code>. Use <code>GVar</code> only when you need to read/write same variable in multiple scripts/objects.
 This reduces the risk of accidentally defining identically named global variables for different uses.</p>
 </div>
-<h2 id="define-a-variable-value">Define A Variable Value</h2>
+<h2 id="define-a-script-variable">Define A Script Variable</h2>
 <p>Before use, a variable should be defined. Optionally, an initial value can be set. Otherwise variables default to the value 0.</p>
-<pre><code>var zero = Var.Define(&quot;variable with default value 0&quot;);
-var number = Var.Define(&quot;integer variable&quot;, 123);
+<pre><code class="lang-csharp">var zero = Var.Define(&quot;variable with default value 0&quot;);
+var integer = Var.Define(&quot;integer variable&quot;, 123);
 </code></pre>
-<h2 id="get-or-create-a-variable">Get Or Create A Variable</h2>
+<p>The type of a variable is defined by its initial value:</p>
+<pre><code class="lang-csharp">var number = Var.Define(&quot;integer variable&quot;, 123.456);
+var boolean = Var.Define(&quot;integer variable&quot;, true);
+var text = Var.Define(&quot;integer variable&quot;, &quot;Hello, Goodbye&quot;);
+</code></pre>
+<div class="alert alert-tip">
+<h5>Tip</h5>
+<p>Script variables support duck typing: A variable's type changes based on what you assign to it.</p>
+</div>
+<p>The <a class="xref" href="../api/Luny.Variable.html"><code>Luny.Variable</code></a> type supports these types:</p>
+<ul>
+<li><code>System.String</code></li>
+<li><a class="xref" href="../api/Luny.Number.html"><code>Luny.Number</code></a></li>
+</ul>
+<p>The <a class="xref" href="../api/Luny.Number.html"><code>Luny.Number</code></a> type uses a <code>System.Double</code> as its internal representation, modeled after Lua's established <code>number</code> type. It implicitly converts to/from all integer and floating point types. This avoids compiler warnings/errors (eg &quot;loss of data&quot;) which are largely irrelevant in game scripting.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>A generic <a class="xref" href="../api/Luny.Variable-1.html"><code>Luny.Variable&lt;T&gt;</code></a> type also exists to support any type (eg <a class="xref" href="../api/Luny.Engine.Bridge.LunyVector3.html"><code>Luny.LunyVector3</code></a>). It is planned to be integrated in LunyScript.</p>
+</div>
+<h2 id="access-a-script-variable">Access A Script Variable</h2>
 <p>Index <code>Var</code> or <code>GVar</code> with a variable name to access the variable:</p>
-<pre><code>var theNumber = Var[&quot;integer variable&quot;];
+<pre><code class="lang-csharp">var theNumber = Var[&quot;integer variable&quot;];
 LunyLogger.LogInfo(theNumber.Value == Var[&quot;integer variable&quot;].Value); // logs &quot;true&quot;
 </code></pre>
 <p>This will also work if the variable has not been defined. In this case the returned variable will have a default value of 0:</p>
-<pre><code>// will return a new variable with the value 0 
+<pre><code class="lang-csharp">// will return a new variable with the value 0 
 var newVar = Var[&quot;not defined&quot;];
 </code></pre>
 <div class="alert alert-tip">
@@ -125,7 +144,7 @@ var newVar = Var[&quot;not defined&quot;];
 </div>
 <h2 id="define-a-constant-value">Define A Constant Value</h2>
 <p>Constants disallow changes at runtime, the value can only be set once via the <code>Constant()</code> method:</p>
-<pre><code>var lightspeed = Var.Constant(&quot;speed of light in vacuum (m/s)&quot;, 299792458);
+<pre><code class="lang-csharp">var lightspeed = Var.Constant(&quot;speed of light in vacuum (m/s)&quot;, 299792458);
 </code></pre>
 <p>Other than being read-only, constants and variables function identically.</p>
 <div class="NOTE">
@@ -134,7 +153,7 @@ var newVar = Var[&quot;not defined&quot;];
 </div>
 <h2 id="setting-variable-value-immediately">Setting Variable Value Immediately</h2>
 <p>To set a variable during build time, use <code>SetImmediate()</code>:</p>
-<pre><code>var newVar = Var[&quot;does not exist yet&quot;];
+<pre><code class="lang-csharp">var newVar = Var[&quot;does not exist yet&quot;];
 newVar.SetImmediate(959.697);
 newVar.Set(137.248); // returns a runnable block, won't change value until block runs!
 

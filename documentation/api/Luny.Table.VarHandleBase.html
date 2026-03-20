@@ -115,7 +115,7 @@ Class Table.VarHandleBase
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><span class="xref">object</span></div>
+      <div><span class="xref">Object</span></div>
       <div><span class="xref">Table.VarHandleBase</span></div>
     </dd>
   </dl>
@@ -144,7 +144,7 @@ Class Table.VarHandleBase
   <a id="Luny_Table_VarHandleBase__ctor_" data-uid="Luny.Table.VarHandleBase.#ctor*"></a>
 
   <h3 id="Luny_Table_VarHandleBase__ctor_Luny_Table_System_String_System_Boolean_" data-uid="Luny.Table.VarHandleBase.#ctor(Luny.Table,System.String,System.Boolean)">
-  VarHandleBase(Table, string, bool)
+  VarHandleBase(Table, String, Boolean)
   
   </h3>
 
@@ -152,7 +152,7 @@ Class Table.VarHandleBase
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected VarHandleBase(Table owner, string name, bool isConstant)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected VarHandleBase(Table owner, String name, Boolean isConstant)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -169,12 +169,12 @@ Class Table.VarHandleBase
     <td style="width: 99%"><dd></dd></td>
   </tr>
   <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">String</span></dt></td>
     <td style="width: fit-content;white-space: nowrap"><dt><code>name</code></dt></td>
     <td style="width: 99%"><dd></dd></td>
   </tr>
   <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">bool</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">Boolean</span></dt></td>
     <td style="width: fit-content;white-space: nowrap"><dt><code>isConstant</code></dt></td>
     <td style="width: 99%"><dd></dd></td>
   </tr>
@@ -206,7 +206,7 @@ Class Table.VarHandleBase
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected readonly bool _isConstant</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected readonly Boolean _isConstant</code></pre>
   </div>
 
 
@@ -214,7 +214,7 @@ Class Table.VarHandleBase
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><span class="xref">bool</span></dt>
+    <dt><span class="xref">Boolean</span></dt>
     <dd></dd>
   </dl>
 
@@ -236,7 +236,7 @@ Class Table.VarHandleBase
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected readonly string _name</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected readonly String _name</code></pre>
   </div>
 
 
@@ -244,7 +244,7 @@ Class Table.VarHandleBase
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
+    <dt><span class="xref">String</span></dt>
     <dd></dd>
   </dl>
 
@@ -301,7 +301,7 @@ Class Table.VarHandleBase
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public bool IsConstant { get; }</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public Boolean IsConstant { get; }</code></pre>
   </div>
 
 
@@ -310,7 +310,7 @@ Class Table.VarHandleBase
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><span class="xref">bool</span></dt>
+    <dt><span class="xref">Boolean</span></dt>
     <dd></dd>
   </dl>
 
@@ -332,7 +332,7 @@ Class Table.VarHandleBase
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public string Name { get; }</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public String Name { get; }</code></pre>
   </div>
 
 
@@ -341,7 +341,7 @@ Class Table.VarHandleBase
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
+    <dt><span class="xref">String</span></dt>
     <dd></dd>
   </dl>
 
@@ -367,7 +367,7 @@ Class Table.VarHandleBase
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public bool As&lt;T&gt;(out Table.VarHandle&lt;T&gt; result)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public Boolean As&lt;T&gt;(out Table.VarHandle&lt;T&gt; result)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -388,7 +388,7 @@ Class Table.VarHandleBase
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">bool</span></dt>
+    <dt><span class="xref">Boolean</span></dt>
     <dd></dd>
   </dl>
 

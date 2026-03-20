@@ -115,7 +115,7 @@ Class TriggerEventFilterExtensions
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><span class="xref">object</span></div>
+      <div><span class="xref">Object</span></div>
       <div><span class="xref">TriggerEventFilterExtensions</span></div>
     </dd>
   </dl>
@@ -137,7 +137,7 @@ Class TriggerEventFilterExtensions
   <a id="LunyScript_Api_TriggerEventFilterExtensions_Cooldown_" data-uid="LunyScript.Api.TriggerEventFilterExtensions.Cooldown*"></a>
 
   <h3 id="LunyScript_Api_TriggerEventFilterExtensions_Cooldown__1_LunyScript_Api_TriggerEventBuilder___0__System_Double_" data-uid="LunyScript.Api.TriggerEventFilterExtensions.Cooldown``1(LunyScript.Api.TriggerEventBuilder{``0},System.Double)">
-  Cooldown&lt;T&gt;(TriggerEventBuilder&lt;T&gt;, double)
+  Cooldown&lt;T&gt;(TriggerEventBuilder&lt;T&gt;, Double)
   
   </h3>
 
@@ -147,7 +147,7 @@ The cooldown is checked before trigger predicates; evaluated per event sequence.
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static TriggerEventBuilder&lt;TriggerReady&gt; Cooldown&lt;T&gt;(this TriggerEventBuilder&lt;T&gt; b, double seconds) where T : struct, ITriggerFilterable</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static TriggerEventBuilder&lt;TriggerReady&gt; Cooldown&lt;T&gt;(this TriggerEventBuilder&lt;T&gt; b, Double seconds) where T : struct, ITriggerFilterable</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -164,7 +164,7 @@ The cooldown is checked before trigger predicates; evaluated per event sequence.
     <td style="width: 99%"><dd></dd></td>
   </tr>
   <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">double</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">Double</span></dt></td>
     <td style="width: fit-content;white-space: nowrap"><dt><code>seconds</code></dt></td>
     <td style="width: 99%"><dd></dd></td>
   </tr>
@@ -195,7 +195,7 @@ The cooldown is checked before trigger predicates; evaluated per event sequence.
   <a id="LunyScript_Api_TriggerEventFilterExtensions_Layered_" data-uid="LunyScript.Api.TriggerEventFilterExtensions.Layered*"></a>
 
   <h3 id="LunyScript_Api_TriggerEventFilterExtensions_Layered__1_LunyScript_Api_TriggerEventBuilder___0__System_String___" data-uid="LunyScript.Api.TriggerEventFilterExtensions.Layered``1(LunyScript.Api.TriggerEventBuilder{``0},System.String[])">
-  Layered&lt;T&gt;(TriggerEventBuilder&lt;T&gt;, params string[])
+  Layered&lt;T&gt;(TriggerEventBuilder&lt;T&gt;, params String[])
   
   </h3>
 
@@ -205,7 +205,7 @@ Mutually exclusive with Masked() — Masked() becomes unavailable after calling 
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static TriggerEventBuilder&lt;TriggerLayered&gt; Layered&lt;T&gt;(this TriggerEventBuilder&lt;T&gt; b, params string[] layerNames) where T : struct, ITriggerFilterable</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static TriggerEventBuilder&lt;TriggerLayered&gt; Layered&lt;T&gt;(this TriggerEventBuilder&lt;T&gt; b, params String[] layerNames) where T : struct, ITriggerFilterable</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -222,7 +222,7 @@ Mutually exclusive with Masked() — Masked() becomes unavailable after calling 
     <td style="width: 99%"><dd></dd></td>
   </tr>
   <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>[]</dt></td>
     <td style="width: fit-content;white-space: nowrap"><dt><code>layerNames</code></dt></td>
     <td style="width: 99%"><dd></dd></td>
   </tr>
@@ -253,7 +253,7 @@ Mutually exclusive with Masked() — Masked() becomes unavailable after calling 
   <a id="LunyScript_Api_TriggerEventFilterExtensions_Masked_" data-uid="LunyScript.Api.TriggerEventFilterExtensions.Masked*"></a>
 
   <h3 id="LunyScript_Api_TriggerEventFilterExtensions_Masked__1_LunyScript_Api_TriggerEventBuilder___0__System_Int32_" data-uid="LunyScript.Api.TriggerEventFilterExtensions.Masked``1(LunyScript.Api.TriggerEventBuilder{``0},System.Int32)">
-  Masked&lt;T&gt;(TriggerEventBuilder&lt;T&gt;, int)
+  Masked&lt;T&gt;(TriggerEventBuilder&lt;T&gt;, Int32)
   
   </h3>
 
@@ -263,7 +263,7 @@ Mutually exclusive with Layered() — unavailable after Layered() is called.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static TriggerEventBuilder&lt;TriggerMasked&gt; Masked&lt;T&gt;(this TriggerEventBuilder&lt;T&gt; b, int layerMask) where T : struct, ITriggerFilterable</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static TriggerEventBuilder&lt;TriggerMasked&gt; Masked&lt;T&gt;(this TriggerEventBuilder&lt;T&gt; b, Int32 layerMask) where T : struct, ITriggerFilterable</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -280,7 +280,7 @@ Mutually exclusive with Layered() — unavailable after Layered() is called.</p>
     <td style="width: 99%"><dd></dd></td>
   </tr>
   <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></dt></td>
     <td style="width: fit-content;white-space: nowrap"><dt><code>layerMask</code></dt></td>
     <td style="width: 99%"><dd></dd></td>
   </tr>
@@ -311,7 +311,7 @@ Mutually exclusive with Layered() — unavailable after Layered() is called.</p>
   <a id="LunyScript_Api_TriggerEventFilterExtensions_Masked_" data-uid="LunyScript.Api.TriggerEventFilterExtensions.Masked*"></a>
 
   <h3 id="LunyScript_Api_TriggerEventFilterExtensions_Masked__1_LunyScript_Api_TriggerEventBuilder___0__System_String___" data-uid="LunyScript.Api.TriggerEventFilterExtensions.Masked``1(LunyScript.Api.TriggerEventBuilder{``0},System.String[])">
-  Masked&lt;T&gt;(TriggerEventBuilder&lt;T&gt;, params string[])
+  Masked&lt;T&gt;(TriggerEventBuilder&lt;T&gt;, params String[])
   
   </h3>
 
@@ -321,7 +321,7 @@ Mutually exclusive with Layered() — unavailable after Layered() is called.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static TriggerEventBuilder&lt;TriggerMasked&gt; Masked&lt;T&gt;(this TriggerEventBuilder&lt;T&gt; b, params string[] layerNames) where T : struct, ITriggerFilterable</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static TriggerEventBuilder&lt;TriggerMasked&gt; Masked&lt;T&gt;(this TriggerEventBuilder&lt;T&gt; b, params String[] layerNames) where T : struct, ITriggerFilterable</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -338,7 +338,7 @@ Mutually exclusive with Layered() — unavailable after Layered() is called.</p>
     <td style="width: 99%"><dd></dd></td>
   </tr>
   <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>[]</dt></td>
     <td style="width: fit-content;white-space: nowrap"><dt><code>layerNames</code></dt></td>
     <td style="width: 99%"><dd></dd></td>
   </tr>
@@ -369,7 +369,7 @@ Mutually exclusive with Layered() — unavailable after Layered() is called.</p>
   <a id="LunyScript_Api_TriggerEventFilterExtensions_Tagged_" data-uid="LunyScript.Api.TriggerEventFilterExtensions.Tagged*"></a>
 
   <h3 id="LunyScript_Api_TriggerEventFilterExtensions_Tagged__1_LunyScript_Api_TriggerEventBuilder___0__System_String___" data-uid="LunyScript.Api.TriggerEventFilterExtensions.Tagged``1(LunyScript.Api.TriggerEventBuilder{``0},System.String[])">
-  Tagged&lt;T&gt;(TriggerEventBuilder&lt;T&gt;, params string[])
+  Tagged&lt;T&gt;(TriggerEventBuilder&lt;T&gt;, params String[])
   
   </h3>
 
@@ -379,7 +379,7 @@ Combine with other filter kinds for AND logic across kinds.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static TriggerEventBuilder&lt;TriggerReady&gt; Tagged&lt;T&gt;(this TriggerEventBuilder&lt;T&gt; b, params string[] tags) where T : struct, ITriggerFilterable</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static TriggerEventBuilder&lt;TriggerReady&gt; Tagged&lt;T&gt;(this TriggerEventBuilder&lt;T&gt; b, params String[] tags) where T : struct, ITriggerFilterable</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -396,7 +396,7 @@ Combine with other filter kinds for AND logic across kinds.</p>
     <td style="width: 99%"><dd></dd></td>
   </tr>
   <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>[]</dt></td>
     <td style="width: fit-content;white-space: nowrap"><dt><code>tags</code></dt></td>
     <td style="width: 99%"><dd></dd></td>
   </tr>
@@ -484,7 +484,7 @@ Combine with other filter kinds for AND logic across kinds.</p>
   <a id="LunyScript_Api_TriggerEventFilterExtensions_With_" data-uid="LunyScript.Api.TriggerEventFilterExtensions.With*"></a>
 
   <h3 id="LunyScript_Api_TriggerEventFilterExtensions_With__1_LunyScript_Api_TriggerEventBuilder___0__System_String___" data-uid="LunyScript.Api.TriggerEventFilterExtensions.With``1(LunyScript.Api.TriggerEventBuilder{``0},System.String[])">
-  With&lt;T&gt;(TriggerEventBuilder&lt;T&gt;, params string[])
+  With&lt;T&gt;(TriggerEventBuilder&lt;T&gt;, params String[])
   
   </h3>
 
@@ -493,7 +493,7 @@ Combine with other filter kinds for AND logic across kinds.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static TriggerEventBuilder&lt;TriggerReady&gt; With&lt;T&gt;(this TriggerEventBuilder&lt;T&gt; b, params string[] names) where T : struct, ITriggerFilterable</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static TriggerEventBuilder&lt;TriggerReady&gt; With&lt;T&gt;(this TriggerEventBuilder&lt;T&gt; b, params String[] names) where T : struct, ITriggerFilterable</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -510,7 +510,7 @@ Combine with other filter kinds for AND logic across kinds.</p>
     <td style="width: 99%"><dd></dd></td>
   </tr>
   <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>[]</dt></td>
     <td style="width: fit-content;white-space: nowrap"><dt><code>names</code></dt></td>
     <td style="width: 99%"><dd></dd></td>
   </tr>

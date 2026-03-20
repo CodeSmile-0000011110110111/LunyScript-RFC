@@ -90,27 +90,31 @@
         <article data-uid="">
 <h1 id="using-variables">Using Variables</h1>
 
-<p>Variables and literals can be used interchangeably, with few exceptions (which may be possible oversights).</p>
+<p>Script variables and literals can be used interchangeably, with few exceptions.</p>
 <h2 id="variables-as-block-parameters">Variables As Block Parameters</h2>
-<p>Variables can be passed as parameters to any block that expects either a number, boolean or string type.
-This hinges only on whether the variable converts to the type, eg passing a string variable to a number parameter will fail.</p>
+<p>Variables can be passed as parameters to any block that expects either a number, boolean or string type.</p>
 <p>This will scale the object by a factor of 2x:</p>
-<pre><code>public override void Build(ScriptBuildContext context)
+<pre><code class="lang-csharp">public override void Build(ScriptBuildContext context)
 {
     var scale = Var.Define(&quot;scale&quot;, 2);
     On.Ready(Transform.SetLocalScale(scale));
 }
 </code></pre>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Type conversion still matters. For instance, passing a string variable to a number parameter will be an error,
+as will be performing arithmetics (Add, Sub, Div, Mul) on a variable type that isn't a number.</p>
+</div>
 <h2 id="parameter-variables-reflect-runtime-changes">Parameter Variables Reflect Runtime Changes</h2>
 <p>Variables as block parameters make most sense when their value actually changes at runtime.</p>
 <p>Let's use a variable to scale the object bigger over time:</p>
-<pre><code>public override void Build(ScriptBuildContext context)
+<pre><code class="lang-csharp">public override void Build(ScriptBuildContext context)
 {
-    var scale = Var.Define(&quot;scale&quot;, 0.01);
-    On.FrameUpdate(Transform.SetLocalScale(scale), scale.Add(0.01));
+    var scale = Var.Define(&quot;scale&quot;, 0.1);
+    On.FrameUpdate(Transform.SetLocalScale(scale), scale.Add(0.005));
 }
 </code></pre>
-<p>This object grows bigger and bigger during playmode.</p>
+<p>This object grows bigger and bigger at runtime.</p>
 
 </article>
 

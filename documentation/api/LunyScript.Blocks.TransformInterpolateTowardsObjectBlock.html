@@ -117,7 +117,7 @@ Class TransformInterpolateTowardsObjectBlock
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><span class="xref">object</span></div>
+      <div><span class="xref">Object</span></div>
       <div><a class="xref" href="LunyScript.Blocks.ScriptBlock.html">ScriptBlock</a></div>
       <div><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a></div>
       <div><a class="xref" href="LunyScript.Blocks.TransformInterpolateBlock.html">TransformInterpolateBlock</a></div>
@@ -187,7 +187,7 @@ Class TransformInterpolateTowardsObjectBlock
   <a id="LunyScript_Blocks_TransformInterpolateTowardsObjectBlock__ctor_" data-uid="LunyScript.Blocks.TransformInterpolateTowardsObjectBlock.#ctor*"></a>
 
   <h3 id="LunyScript_Blocks_TransformInterpolateTowardsObjectBlock__ctor_Luny_Engine_Bridge_ILunyObject_System_Double_System_Double_Luny_Engine_Bridge_LunyVector3_System_Double_" data-uid="LunyScript.Blocks.TransformInterpolateTowardsObjectBlock.#ctor(Luny.Engine.Bridge.ILunyObject,System.Double,System.Double,Luny.Engine.Bridge.LunyVector3,System.Double)">
-  TransformInterpolateTowardsObjectBlock(ILunyObject, double, double, LunyVector3, double)
+  TransformInterpolateTowardsObjectBlock(ILunyObject, Double, Double, LunyVector3, Double)
   
   </h3>
 
@@ -195,7 +195,7 @@ Class TransformInterpolateTowardsObjectBlock
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected TransformInterpolateTowardsObjectBlock(ILunyObject target, double speed, double deadZone, LunyVector3 axisLock, double responsiveness)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected TransformInterpolateTowardsObjectBlock(ILunyObject target, Double speed, Double deadZone, LunyVector3 axisLock, Double responsiveness)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -212,12 +212,12 @@ Class TransformInterpolateTowardsObjectBlock
     <td style="width: 99%"><dd></dd></td>
   </tr>
   <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">double</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">Double</span></dt></td>
     <td style="width: fit-content;white-space: nowrap"><dt><code>speed</code></dt></td>
     <td style="width: 99%"><dd></dd></td>
   </tr>
   <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">double</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">Double</span></dt></td>
     <td style="width: fit-content;white-space: nowrap"><dt><code>deadZone</code></dt></td>
     <td style="width: 99%"><dd></dd></td>
   </tr>
@@ -227,7 +227,7 @@ Class TransformInterpolateTowardsObjectBlock
     <td style="width: 99%"><dd></dd></td>
   </tr>
   <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">double</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">Double</span></dt></td>
     <td style="width: fit-content;white-space: nowrap"><dt><code>responsiveness</code></dt></td>
     <td style="width: 99%"><dd></dd></td>
   </tr>
@@ -294,13 +294,13 @@ Class TransformInterpolateTowardsObjectBlock
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected string TowardsObjectToString()</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected String TowardsObjectToString()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
+    <dt><span class="xref">String</span></dt>
     <dd></dd>
   </dl>
 
@@ -327,7 +327,7 @@ Returns false (and skips) when the distance is within the dead zone.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected bool TryGetPositionDelta(IScriptRuntimeContext ctx, out LunyVector3 current, out LunyVector3 maskedTarget)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected Boolean TryGetPositionDelta(IScriptRuntimeContext ctx, out LunyVector3 current, out LunyVector3 maskedTarget)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -358,7 +358,7 @@ Returns false (and skips) when the distance is within the dead zone.</p>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">bool</span></dt>
+    <dt><span class="xref">Boolean</span></dt>
     <dd></dd>
   </dl>
 
@@ -385,7 +385,7 @@ Returns false (and skips) when the direction is zero or the angle is within the 
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected bool TryGetTargetRotation(IScriptRuntimeContext ctx, out LunyQuaternion currentRotation, out LunyQuaternion targetRotation)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected Boolean TryGetTargetRotation(IScriptRuntimeContext ctx, out LunyQuaternion currentRotation, out LunyQuaternion targetRotation)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -416,7 +416,7 @@ Returns false (and skips) when the direction is zero or the angle is within the 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">bool</span></dt>
+    <dt><span class="xref">Boolean</span></dt>
     <dd></dd>
   </dl>
 

@@ -600,13 +600,13 @@ Interface ILunyEngine
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">bool HasService&lt;TService&gt;() where TService : LunyEngineServiceBase</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">Boolean HasService&lt;TService&gt;() where TService : LunyEngineServiceBase</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">bool</span></dt>
+    <dt><span class="xref">Boolean</span></dt>
     <dd></dd>
   </dl>
 
@@ -636,13 +636,13 @@ Interface ILunyEngine
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">bool IsObserverEnabled&lt;T&gt;() where T : ILunyEngineObserver</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">Boolean IsObserverEnabled&lt;T&gt;() where T : ILunyEngineObserver</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">bool</span></dt>
+    <dt><span class="xref">Boolean</span></dt>
     <dd></dd>
   </dl>
 
@@ -664,7 +664,7 @@ Interface ILunyEngine
   <a id="Luny_ILunyEngine_TryGetObject_" data-uid="Luny.ILunyEngine.TryGetObject*"></a>
 
   <h3 id="Luny_ILunyEngine_TryGetObject_System_String_System_String_System_Int32_" data-uid="Luny.ILunyEngine.TryGetObject(System.String,System.String,System.Int32)">
-  TryGetObject(string, string, int)
+  TryGetObject(String, String, Int32)
   
   </h3>
 
@@ -673,7 +673,7 @@ Interface ILunyEngine
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">ILunyObject TryGetObject(string name, string callerFilePath = &quot;&quot;, int callerLineNumber = 0)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">ILunyObject TryGetObject(String name, String callerFilePath = &quot;&quot;, Int32 callerLineNumber = 0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -685,17 +685,17 @@ Interface ILunyEngine
   </tr>
   <dl class="parameters">
   <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">String</span></dt></td>
     <td style="width: fit-content;white-space: nowrap"><dt><code>name</code></dt></td>
     <td style="width: 99%"><dd></dd></td>
   </tr>
   <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">String</span></dt></td>
     <td style="width: fit-content;white-space: nowrap"><dt><code>callerFilePath</code></dt></td>
     <td style="width: 99%"><dd></dd></td>
   </tr>
   <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></dt></td>
     <td style="width: fit-content;white-space: nowrap"><dt><code>callerLineNumber</code></dt></td>
     <td style="width: 99%"><dd></dd></td>
   </tr>
@@ -730,7 +730,7 @@ Interface ILunyEngine
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">bool TryGetService&lt;TService&gt;(out TService service) where TService : LunyEngineServiceBase</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">Boolean TryGetService&lt;TService&gt;(out TService service) where TService : LunyEngineServiceBase</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -751,7 +751,7 @@ Interface ILunyEngine
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">bool</span></dt>
+    <dt><span class="xref">Boolean</span></dt>
     <dd></dd>
   </dl>
 

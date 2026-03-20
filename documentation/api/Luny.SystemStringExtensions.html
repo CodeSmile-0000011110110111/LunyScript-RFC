@@ -115,7 +115,7 @@ Class SystemStringExtensions
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><span class="xref">object</span></div>
+      <div><span class="xref">Object</span></div>
       <div><span class="xref">SystemStringExtensions</span></div>
     </dd>
   </dl>
@@ -137,7 +137,7 @@ Class SystemStringExtensions
   <a id="Luny_SystemStringExtensions_IsValidCSharpIdentifier_" data-uid="Luny.SystemStringExtensions.IsValidCSharpIdentifier*"></a>
 
   <h3 id="Luny_SystemStringExtensions_IsValidCSharpIdentifier_System_String_System_Boolean_System_Boolean_" data-uid="Luny.SystemStringExtensions.IsValidCSharpIdentifier(System.String,System.Boolean,System.Boolean)">
-  IsValidCSharpIdentifier(string, bool, bool)
+  IsValidCSharpIdentifier(String, Boolean, Boolean)
   
   </h3>
 
@@ -147,7 +147,7 @@ It may not catch all edge cases, but 99% of them.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static bool IsValidCSharpIdentifier(this string str, bool allowNamespaces = false, bool allowGenerics = false)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static Boolean IsValidCSharpIdentifier(this String str, Boolean allowNamespaces = false, Boolean allowGenerics = false)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -159,18 +159,18 @@ It may not catch all edge cases, but 99% of them.</p>
   </tr>
   <dl class="parameters">
   <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">String</span></dt></td>
     <td style="width: fit-content;white-space: nowrap"><dt><code>str</code></dt></td>
     <td style="width: 99%"><dd></dd></td>
   </tr>
   <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">bool</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">Boolean</span></dt></td>
     <td style="width: fit-content;white-space: nowrap"><dt><code>allowNamespaces</code></dt></td>
     <td style="width: 99%"><dd><p>Allows '.' as character as well</p>
 </dd></td>
   </tr>
   <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">bool</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">Boolean</span></dt></td>
     <td style="width: fit-content;white-space: nowrap"><dt><code>allowGenerics</code></dt></td>
     <td style="width: 99%"><dd></dd></td>
   </tr>
@@ -179,7 +179,7 @@ It may not catch all edge cases, but 99% of them.</p>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">bool</span></dt>
+    <dt><span class="xref">Boolean</span></dt>
     <dd></dd>
   </dl>
 
@@ -196,7 +196,7 @@ It may not catch all edge cases, but 99% of them.</p>
   <a id="Luny_SystemStringExtensions_ReplaceIllegalCSharpIdentifierChars_" data-uid="Luny.SystemStringExtensions.ReplaceIllegalCSharpIdentifierChars*"></a>
 
   <h3 id="Luny_SystemStringExtensions_ReplaceIllegalCSharpIdentifierChars_System_String_System_Char_" data-uid="Luny.SystemStringExtensions.ReplaceIllegalCSharpIdentifierChars(System.String,System.Char)">
-  ReplaceIllegalCSharpIdentifierChars(string, char)
+  ReplaceIllegalCSharpIdentifierChars(String, Char)
   
   </h3>
 
@@ -206,7 +206,7 @@ If the string matches a known C# keyword, it gets prefixed with '@' to make it a
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static string ReplaceIllegalCSharpIdentifierChars(this string str, char replacement = &#39;_&#39;)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static String ReplaceIllegalCSharpIdentifierChars(this String str, Char replacement = &#39;_&#39;)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -218,12 +218,12 @@ If the string matches a known C# keyword, it gets prefixed with '@' to make it a
   </tr>
   <dl class="parameters">
   <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">String</span></dt></td>
     <td style="width: fit-content;white-space: nowrap"><dt><code>str</code></dt></td>
     <td style="width: 99%"><dd></dd></td>
   </tr>
   <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">Char</a></dt></td>
     <td style="width: fit-content;white-space: nowrap"><dt><code>replacement</code></dt></td>
     <td style="width: 99%"><dd></dd></td>
   </tr>
@@ -232,7 +232,7 @@ If the string matches a known C# keyword, it gets prefixed with '@' to make it a
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
+    <dt><span class="xref">String</span></dt>
     <dd></dd>
   </dl>
 
@@ -249,7 +249,7 @@ If the string matches a known C# keyword, it gets prefixed with '@' to make it a
   <a id="Luny_SystemStringExtensions_SanitizeIdentifier_" data-uid="Luny.SystemStringExtensions.SanitizeIdentifier*"></a>
 
   <h3 id="Luny_SystemStringExtensions_SanitizeIdentifier_System_String_" data-uid="Luny.SystemStringExtensions.SanitizeIdentifier(System.String)">
-  SanitizeIdentifier(string)
+  SanitizeIdentifier(String)
   
   </h3>
 
@@ -258,7 +258,7 @@ If the string matches a known C# keyword, it gets prefixed with '@' to make it a
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static string SanitizeIdentifier(this string identifier)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static String SanitizeIdentifier(this String identifier)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -270,7 +270,7 @@ If the string matches a known C# keyword, it gets prefixed with '@' to make it a
   </tr>
   <dl class="parameters">
   <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">String</span></dt></td>
     <td style="width: fit-content;white-space: nowrap"><dt><code>identifier</code></dt></td>
     <td style="width: 99%"><dd></dd></td>
   </tr>
@@ -279,7 +279,7 @@ If the string matches a known C# keyword, it gets prefixed with '@' to make it a
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
+    <dt><span class="xref">String</span></dt>
     <dd></dd>
   </dl>
 
@@ -296,7 +296,7 @@ If the string matches a known C# keyword, it gets prefixed with '@' to make it a
   <a id="Luny_SystemStringExtensions_ToForwardSlashes_" data-uid="Luny.SystemStringExtensions.ToForwardSlashes*"></a>
 
   <h3 id="Luny_SystemStringExtensions_ToForwardSlashes_System_String_" data-uid="Luny.SystemStringExtensions.ToForwardSlashes(System.String)">
-  ToForwardSlashes(string)
+  ToForwardSlashes(String)
   
   </h3>
 
@@ -305,7 +305,7 @@ If the string matches a known C# keyword, it gets prefixed with '@' to make it a
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static string ToForwardSlashes(this string str)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static String ToForwardSlashes(this String str)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -317,7 +317,7 @@ If the string matches a known C# keyword, it gets prefixed with '@' to make it a
   </tr>
   <dl class="parameters">
   <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">String</span></dt></td>
     <td style="width: fit-content;white-space: nowrap"><dt><code>str</code></dt></td>
     <td style="width: 99%"><dd></dd></td>
   </tr>
@@ -326,7 +326,7 @@ If the string matches a known C# keyword, it gets prefixed with '@' to make it a
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
+    <dt><span class="xref">String</span></dt>
     <dd></dd>
   </dl>
 
