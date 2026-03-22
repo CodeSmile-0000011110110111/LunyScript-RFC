@@ -225,8 +225,8 @@ Everyone else: brace yourselves.</p>
 <p>You could skip the gamepad and joystick setup for now if you prefer, but keep in mind: <strong>players do expect common input devices to be supported!</strong></p>
 <h3 id="why-so-many-extra-steps">Why So Many Extra Steps?</h3>
 <p>Compared to Unity, there's an egregious amount of extra steps to be done in the Godot editor before you even get to scripting.</p>
-<p>Godot deliberately provides <em>clean slates</em> for everything, providing no <em>meaningful templates</em> and lacking <em>sensible defaults</em>. Its user experience centers on <em>deeply hierarchical</em> (procedural) user interfaces and an abundance of <em>modal dialogs</em>. Both together result in higher-than-usual UI interactions.</p>
-<p>While Unreal editor's highly complex UI with many uniquely designed windows will shock beginners and even experienced developers, Godot's design provides a consistent UI experience that's easy to pick up. Thanks to the higher number of <em>successful interactions</em> it is rewarding and it feels productive.</p>
+<p>Godot deliberately provides <em>clean slates</em> for everything, no <em>meaningful templates</em>, and lacks <em>sensible defaults</em>. Its user experience centers on <em>deeply hierarchical</em> (procedural) user interfaces and an abundance of <em>modal dialogs</em>. This results in higher-than-usual UI interactions.</p>
+<p>While Unreal editor's highly complex UI with many uniquely designed windows will shock beginners and challenges even experienced developers, Godot's design provides a consistent UI experience that's easy to pick up. Thanks to the higher number of <em>successful interactions</em> it is rewarding and it feels productive.</p>
 <h3 id="the-gdscript">The GDScript</h3>
 <p>With all those editor setup steps out of the way, at least now you need to write <strong>much less code</strong> in GDScript:</p>
 <pre><code class="lang-gdscript">extends Node3D
@@ -257,7 +257,7 @@ func _process(delta: float):
     translate(finalMovement)
 </code></pre>
 <p>That's <strong>ten lines</strong> you're saving compared to the <a href="first-script-unity.html">Unity MonoBehaviour implementation</a>.</p>
-<p>However, the savings derive solely from inlining the Input map strings, thus avoiding field declarations (instance variables). The code looks strikingly familiar: its complexity remains exactly the same, with a minor reduction in syntax elements (braces, semicolons).</p>
+<p>However, the savings derive solely from inlining the Input map strings, thus avoiding field declarations (instance variables). The code looks strikingly familiar: its complexity remains exactly the same, with only minor syntax reduction (braces, semicolons).</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>| 🤔 Hey, wait! This GDScript is 26 lines but Unity's code snippet was 52 lines!<br>
@@ -280,11 +280,11 @@ public partial class Player : Script
     }
 }
 </code></pre>
-<p><strong>At 7 actual lines of code this Luny script is 65% less code! 😎</strong></p>
+<p><strong>At 7 <em>actual lines of code</em> it is merely a third of the GDScript! 😎</strong></p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>LunyScript, when ported to Godot, will remain in C#.
-GDScript is not a portable language and it does not handle fluent APIs well.</p>
+<p>LunyScript, when ported to Godot, will remain in C#. GDScript is a proprietary language
+that entrenches lock-in - a polar opposite of LunyScript's vision.</p>
 </div>
 
 </article>

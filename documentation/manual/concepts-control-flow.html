@@ -169,12 +169,12 @@ In the meantime you can manually <code>Inc()</code> or <code>Dec()</code> a vari
 </div>
 <h2 id="loop-with-variables">Loop With Variables</h2>
 <p>What good are loop expressions without variables? Of course you can use variables in <code>For()</code> and <code>While()</code> loops:</p>
-<pre><code class="lang-csharp">var enemyCount = Var.(&quot;enemyCount&quot;, 3);
+<pre><code class="lang-csharp">var enemyCount = Var.Define(&quot;enemyCount&quot;, 3);
+var createEnemy = Object.Create(&quot;enemy&quot;).With(&quot;Assets/Prefabs/Enemy&quot;);
+
 On.Enabled(
-    For(enemyCount)
-        .Do(Object.Create(&quot;enemy&quot;).With(&quot;Assets/Prefabs/Enemy&quot;)),
-        
-    limit.Add(3)
+    For(enemyCount).Do(createEnemy),
+    enemyCount.Add(3)
 );
 </code></pre>
 <p>This will create three enemies the first time the object gets enabled. The next time it will create six, then nine, and so forth.</p>
