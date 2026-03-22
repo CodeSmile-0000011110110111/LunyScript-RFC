@@ -113,14 +113,17 @@
     On.Destroyed(createEnemy);
 }
 </code></pre>
-<p>A variable can also hold multiple blocks, for instance the <code>ActionBlock[]</code> arrays returned from the methods above can be assigned to a variable and used multiple times.</p>
+<div class="alert alert-tip">
+<h5>Tip</h5>
+<p>A C# variable can also be assigned an array of blocks. See the <a href="#methods-returning-blocks">Methods Returning Blocks example</a>.</p>
+</div>
 <h2 id="re-using-vs-re-creating-blocks">Re-Using vs Re-Creating Blocks</h2>
 <p>There is an important distinction: once a block has been created, you can use it multiple times. But you can no longer modify the block without modifying all uses of that block.</p>
 <p>If you need individual block behaviour (eg different names) you will have to create separate block instances instead. This is what we'll be doing next, but cleverly so.</p>
 <h2 id="using-loops-to-create-blocks">Using Loops To Create Blocks</h2>
 <p><strong>Question</strong>: What if I wanted to create ten enemies, each with a unique name?</p>
 <p><strong>Dumb Answer</strong>: You'll copy-paste the line ten times. &lt;-- <em>This is not maintainable!</em></p>
-<p><strong>Clever Answer</strong>: You'll use a loop!</p>
+<p><strong>Clever Answer</strong>: You'll use a <code>for</code> loop!</p>
 <pre><code class="lang-csharp">public override void Build(ScriptBuildContext context)
 {
     var prefabPath = &quot;Assets/Prefabs/Enemy&quot;;
@@ -157,6 +160,10 @@
 }
 </code></pre>
 <p>Now we initially create 3 enemies, and on every subsequent enable we'll create two more: 5, 7, 9 and so forth.</p>
+<div class="alert alert-tip">
+<h5>Tip</h5>
+<p>See also the <a href="concepts-control-flow.html">Control Flow page</a> for more details on block-based control flow statements.</p>
+</div>
 <h2 id="methods-returning-blocks">Methods Returning Blocks</h2>
 <p>You can extract the creation of blocks into reusable methods. This also keeps the <code>Build()</code> method clean and readable:</p>
 <pre><code class="lang-csharp">public override void Build(ScriptBuildContext context)

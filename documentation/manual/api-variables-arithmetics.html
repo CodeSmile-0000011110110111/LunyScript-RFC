@@ -183,7 +183,10 @@ On.Heartbeat(fact.Toggle(), Debug.Log(fact));
 </div>
 <h2 id="passing-results-to-actions">Passing Results To Actions</h2>
 <p>You can pass the result of an arithmetic operation to an Action that accepts a number, bool or string value:</p>
-<pre><code class="lang-csharp">On.Ready(Transform.SetLocalScale(value1 + value2)); // Sets uniform scale: (5,5,5)
+<pre><code class="lang-csharp">var value1 = Var.Define(&quot;v1&quot;, 2);
+var value2 = Var.Define(&quot;v2&quot;, 3);
+
+On.Ready(Transform.SetLocalScale(value1 + value2)); // Sets uniform scale: (5,5,5)
 </code></pre>
 <p>This will pass the sum of the runtime values of <code>value1</code> and <code>value2</code> to <code>SetLocalScale</code>.
 The variables <code>value1</code> and <code>value2</code> remain unchanged.</p>
@@ -201,7 +204,7 @@ This is primarily to improve readability and making math operations less verbose
 <tbody>
 <tr>
 <td style="text-align: left;"><code>Add</code></td>
-<td style="text-align: left;"><em>(same)</em></td>
+<td style="text-align: left;"><code>Add</code> (<em>same</em>)</td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>Sub</code></td>
