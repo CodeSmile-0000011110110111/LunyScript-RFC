@@ -7761,40 +7761,40 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "manual/first-install.md",
+      "source_relative_path": "manual/getting-started-first-script-godot.md",
       "output": {
         ".html": {
-          "relative_path": "manual/first-install.html"
+          "relative_path": "manual/getting-started-first-script-godot.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "manual/first-script-godot.md",
+      "source_relative_path": "manual/getting-started-first-script-unity.md",
       "output": {
         ".html": {
-          "relative_path": "manual/first-script-godot.html"
+          "relative_path": "manual/getting-started-first-script-unity.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "manual/first-script-unity.md",
+      "source_relative_path": "manual/getting-started-first-script.md",
       "output": {
         ".html": {
-          "relative_path": "manual/first-script-unity.html"
+          "relative_path": "manual/getting-started-first-script.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "manual/first-script.md",
+      "source_relative_path": "manual/getting-started-install.md",
       "output": {
         ".html": {
-          "relative_path": "manual/first-script.html"
+          "relative_path": "manual/getting-started-install.html"
         }
       },
       "version": ""
