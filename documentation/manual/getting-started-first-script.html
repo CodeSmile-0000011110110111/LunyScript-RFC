@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-      <title>Installation | LunyScript Documentation </title>
+      <title>Your first Luny Script in Unity | LunyScript Documentation </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Installation | LunyScript Documentation ">
+      <meta name="title" content="Your first Luny Script in Unity | LunyScript Documentation ">
       
       
       <link rel="icon" href="../images/luny-logo-56x56.png">
@@ -17,7 +17,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/CodeSmile-0000011110110111/Luny-Docs/blob/main/manual/first-install.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/CodeSmile-0000011110110111/Luny-Docs/blob/main/manual/getting-started-first-script.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -88,24 +88,43 @@
         </div>
 
         <article data-uid="">
-<h1 id="installation">Installation</h1>
+<h1 id="your-first-luny-script-in-unity">Your first Luny Script in Unity</h1>
 
-<div class="WARNING">
-<h5>Warning</h5>
-<p>LunyScript and LunyEngine are in pre-alpha state. The curious may explore the repositories. But it's not ready for any kind of use.
-Therefore there are currently no install instructions.</p>
-</div>
-<h2 id="repositories">Repositories</h2>
-<p>These are the main Unity development repositories:</p>
+<p><strong>Goal</strong>: You want to create a controllable capsule as your first &quot;Player&quot; in a blank scene, using LunyScript.</p>
+<h2 id="lunyscript-implementation">LunyScript Implementation</h2>
+<p>The setup process for our LunyScript in Unity:</p>
 <ul>
-<li><a href="https://github.com/CodeSmile-0000011110110111/LunyScript-UnityPackage">LunyScript Unity npm package repository</a> (pre-alpha)</li>
-<li><a href="https://github.com/CodeSmile-0000011110110111/LunyScript_Examples_Unity">LunyScript Unity Examples Project repository</a> (pre-alpha)</li>
+<li><strong>Project</strong>: <code>Right-click: Create -&gt; Scene -&gt; Scene</code>.</li>
+<li><strong>Project</strong>: <code>Right-click: Create -&gt; Luny Script</code>. Name it &quot;Player&quot;.</li>
+<li><strong>Hierarchy</strong>: <code>Right-click: 3D Object -&gt; Capsule</code>. Name it &quot;Player&quot;.</li>
+<li><strong>Edit</strong> the <code>Player.cs</code> script and add this to its <code>Build()</code> method:</li>
 </ul>
+<pre><code class="lang-csharp">using LunyScript;
+
+public partial class Player : Script
+{
+    public override void Build(ScriptBuildContext context)
+    {
+        On.FrameUpdate(
+            Transform.MoveBy(Input.Direction(&quot;Move&quot;), 4),
+            Transform.MoveUp(Input.Button(&quot;Jump&quot;).Strength, 4),
+            Transform.MoveDown(Input.Button(&quot;Crouch&quot;).Strength, 4)
+        );
+    }
+}
+</code></pre>
+<p><strong>At 13 lines, it is 4 times less than its <a href="getting-started-first-script-unity.html">MonoBehaviour</a> implementation!</strong> 😎</p>
+<p>Enter playmode and try it.</p>
+<h2 id="notes">Notes</h2>
+<p>Inspector assignment of Luny scripts is optional.</p>
+<p>By default, a Luny script will run for any object in the active scene that matches the script's class name.
+A LunyScript class named &quot;Player&quot; will run for the object named &quot;Player&quot;.</p>
+<p>There will be options to directly assign scripts and relax the name matching.</p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/CodeSmile-0000011110110111/Luny-Docs/blob/main/manual/first-install.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/CodeSmile-0000011110110111/Luny-Docs/blob/main/manual/getting-started-first-script.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

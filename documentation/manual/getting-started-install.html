@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-      <title>Your first Luny Script in Unity | LunyScript Documentation </title>
+      <title>Installation | LunyScript Documentation </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Your first Luny Script in Unity | LunyScript Documentation ">
+      <meta name="title" content="Installation | LunyScript Documentation ">
       
       
       <link rel="icon" href="../images/luny-logo-56x56.png">
@@ -17,7 +17,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/CodeSmile-0000011110110111/Luny-Docs/blob/main/manual/first-script-unity.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/CodeSmile-0000011110110111/Luny-Docs/blob/main/manual/getting-started-install.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -88,94 +88,24 @@
         </div>
 
         <article data-uid="">
-<h1 id="your-first-luny-script-in-unity">Your first Luny Script in Unity</h1>
+<h1 id="installation">Installation</h1>
 
-<p><strong>Goal</strong>: You want to create a controllable capsule as your first &quot;Player&quot; in a blank scene, using a regular <a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.html">MonoBehaviour</a> script.</p>
-<h2 id="status-quo-unity-63-lts">Status Quo: Unity 6.3 LTS</h2>
-<p>What you have to do in Unity to set up player and scene:</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>LunyScript and LunyEngine are in pre-alpha state. The curious may explore the repositories. But it's not ready for any kind of use.
+Therefore there are currently no install instructions.</p>
+</div>
+<h2 id="repositories">Repositories</h2>
+<p>These are the main Unity development repositories:</p>
 <ul>
-<li><strong>Project</strong>: <code>Right-click: Create -&gt; Scene -&gt; Scene</code>. Name it whatever you like.</li>
-<li><strong>Project</strong>: <code>Right-click: Create -&gt; MonoBehaviour Script</code>. Name it &quot;Player&quot;.</li>
-<li><strong>Hierarchy</strong>: <code>Right-click: 3D Object -&gt; Capsule</code>. Name it &quot;Player&quot;.</li>
-<li><strong>Inspector</strong>: Select &quot;Player&quot;. <code>Inspector: Add Component -&gt; Player</code>.</li>
+<li><a href="https://github.com/CodeSmile-0000011110110111/LunyScript-UnityPackage">LunyScript Unity npm package repository</a> (pre-alpha)</li>
+<li><a href="https://github.com/CodeSmile-0000011110110111/LunyScript_Examples_Unity">LunyScript Unity Examples Project repository</a> (pre-alpha)</li>
 </ul>
-<p>Then you check the Internet for a &quot;simple&quot; Unity 'Player' script and found this:</p>
-<pre><code class="lang-csharp">using UnityEngine;
-using UnityEngine.InputSystem;
-
-public class Player : MonoBehaviour 
-{
-    private InputAction moveAction;
-    private InputAction jumpAction;
-    private InputAction crouchAction;
-
-    void Awake() 
-    {
-        moveAction = InputSystem.actions.FindAction(&quot;Move&quot;);
-        jumpAction = InputSystem.actions.FindAction(&quot;Jump&quot;);
-        crouchAction = InputSystem.actions.FindAction(&quot;Crouch&quot;);
-    }
-
-    void Update() 
-    {
-        Vector2 rawMoveInput = moveAction.ReadValue&lt;Vector2&gt;();
-        float jumpInputValue = jumpAction.ReadValue&lt;float&gt;();
-        float crouchInputValue = crouchAction.ReadValue&lt;float&gt;();
-
-        float moveX = rawMoveInput.x;
-        float moveZ = rawMoveInput.y;
-
-        Vector3 movementDirection = new Vector3(0, 0, 0);
-        movementDirection.x = moveX;
-        movementDirection.z = moveZ;
-
-        if (jumpInputValue &gt; 0.1f) 
-        {
-            movementDirection.y = 1.0f;
-        }
-        else 
-        {
-            if (crouchInputValue &gt; 0.1f) 
-            {
-                movementDirection.y = -1.0f;
-            }
-            else 
-            {
-                movementDirection.y = 0.0f;
-            }
-        }
-
-        float movementSpeed = 4.0f;
-        float timeStep = Time.deltaTime;
-        Vector3 finalMovement = movementDirection * timeStep * movementSpeed;
-
-        transform.Translate(finalMovement);
-    }
-}
-</code></pre>
-<p><strong>It's already 52 lines for something so trivial. 🤯</strong></p>
-<h2 id="with-lunyscript">With LunyScript</h2>
-<p>Let's compare this with the same LunyScript:</p>
-<pre><code class="lang-csharp">using LunyScript;
-
-public partial class Player : Script
-{
-    public override void Build(ScriptBuildContext context)
-    {
-        On.FrameUpdate(
-            Transform.MoveBy(Input.Direction(&quot;Move&quot;), 4),
-            Transform.MoveUp(Input.Button(&quot;Jump&quot;).Strength, 4),
-            Transform.MoveDown(Input.Button(&quot;Crouch&quot;).Strength, 4)
-        );
-    }
-}
-</code></pre>
-<p><strong>That's 13 lines, four times less! 😎</strong></p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/CodeSmile-0000011110110111/Luny-Docs/blob/main/manual/first-script-unity.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/CodeSmile-0000011110110111/Luny-Docs/blob/main/manual/getting-started-install.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>
