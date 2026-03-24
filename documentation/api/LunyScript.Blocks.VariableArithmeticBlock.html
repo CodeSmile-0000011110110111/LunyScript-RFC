@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class VariableArithmeticBlock | LunyScript Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class VariableArithmeticBlock | LunyScript Documentation ">
+      
+      
+      <link rel="icon" href="../images/luny-logo-56x56.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <link rel="stylesheet" href="../public/alert.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+      <script type="module" src="./../public/gdscript-loader.js"></script>
+      <script src="../public/highlight-custom.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../images/Luny-logo-133x54.png" alt="Script">
+            Script
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="LunyScript.Blocks.VariableArithmeticBlock">
+
+
+
+  <h1 id="LunyScript_Blocks_VariableArithmeticBlock" data-uid="LunyScript.Blocks.VariableArithmeticBlock" class="text-break">
+Class VariableArithmeticBlock  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="LunyScript.html">LunyScript</a>.<a class="xref" href="LunyScript.Blocks.html">Blocks</a></dd> / <dt>Assembly</dt><dd>LunyScript.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class VariableArithmeticBlock : VariableBlock, IScriptBlock</code></pre>
+  </div>
+
+
+
+
+  <details>
+  <summary style="display: list-item; font-size: 15px"><i>Expand Details ...</i></summary>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">Object</span></div>
+      <div><a class="xref" href="LunyScript.Blocks.ScriptBlock.html">ScriptBlock</a></div>
+      <div><a class="xref" href="LunyScript.Blocks.ConditionBlock.html">ConditionBlock</a></div>
+      <div><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></div>
+      <div><span class="xref">VariableArithmeticBlock</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="LunyScript.Blocks.IScriptBlock.html">IScriptBlock</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <ul>
+    <li>
+      <a class="xref" href="LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Evaluate_LunyScript_IScriptRuntimeContext_">VariableBlock.Evaluate(IScriptRuntimeContext)</a>
+    </li>
+    <li>
+      <a class="xref" href="LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Equals_System_Object_">VariableBlock.Equals(Object)</a>
+    </li>
+    <li>
+      <a class="xref" href="LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_GetHashCode">VariableBlock.GetHashCode()</a>
+    </li>
+    <li>
+      <a class="xref" href="LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Set_Luny_Variable_">VariableBlock.Set(Variable)</a>
+    </li>
+    <li>
+      <a class="xref" href="LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Set_LunyScript_Blocks_VariableBlock_">VariableBlock.Set(VariableBlock)</a>
+    </li>
+    <li>
+      <a class="xref" href="LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Add_Luny_Variable_">VariableBlock.Add(Variable)</a>
+    </li>
+    <li>
+      <a class="xref" href="LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Add_LunyScript_Blocks_VariableBlock_">VariableBlock.Add(VariableBlock)</a>
+    </li>
+    <li>
+      <a class="xref" href="LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Sub_Luny_Variable_">VariableBlock.Sub(Variable)</a>
+    </li>
+    <li>
+      <a class="xref" href="LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Sub_LunyScript_Blocks_VariableBlock_">VariableBlock.Sub(VariableBlock)</a>
+    </li>
+    <li>
+      <a class="xref" href="LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Mul_Luny_Variable_">VariableBlock.Mul(Variable)</a>
+    </li>
+    <li>
+      <a class="xref" href="LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Mul_LunyScript_Blocks_VariableBlock_">VariableBlock.Mul(VariableBlock)</a>
+    </li>
+    <li>
+      <a class="xref" href="LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Div_Luny_Variable_">VariableBlock.Div(Variable)</a>
+    </li>
+    <li>
+      <a class="xref" href="LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Div_LunyScript_Blocks_VariableBlock_">VariableBlock.Div(VariableBlock)</a>
+    </li>
+    <li>
+      <a class="xref" href="LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Inc">VariableBlock.Inc()</a>
+    </li>
+    <li>
+      <a class="xref" href="LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Dec">VariableBlock.Dec()</a>
+    </li>
+    <li>
+      <a class="xref" href="LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Toggle">VariableBlock.Toggle()</a>
+    </li>
+    <li>
+      <a class="xref" href="LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Subtract_Luny_Variable_">VariableBlock.Subtract(Variable)</a>
+    </li>
+    <li>
+      <a class="xref" href="LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Subtract_LunyScript_Blocks_VariableBlock_">VariableBlock.Subtract(VariableBlock)</a>
+    </li>
+    <li>
+      <a class="xref" href="LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Multiply_Luny_Variable_">VariableBlock.Multiply(Variable)</a>
+    </li>
+    <li>
+      <a class="xref" href="LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Multiply_LunyScript_Blocks_VariableBlock_">VariableBlock.Multiply(VariableBlock)</a>
+    </li>
+    <li>
+      <a class="xref" href="LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Divide_Luny_Variable_">VariableBlock.Divide(Variable)</a>
+    </li>
+    <li>
+      <a class="xref" href="LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Divide_LunyScript_Blocks_VariableBlock_">VariableBlock.Divide(VariableBlock)</a>
+    </li>
+    <li>
+      <a class="xref" href="LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Increment">VariableBlock.Increment()</a>
+    </li>
+    <li>
+      <a class="xref" href="LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Decrement">VariableBlock.Decrement()</a>
+    </li>
+    <li>
+      <a class="xref" href="LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_ToString">VariableBlock.ToString()</a>
+    </li>
+    </ul>
+  </dd></dl>
+
+  </details>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="LunyScript_Blocks_VariableArithmeticBlock__ctor_" data-uid="LunyScript.Blocks.VariableArithmeticBlock.#ctor*"></a>
+
+  <h3 id="LunyScript_Blocks_VariableArithmeticBlock__ctor_LunyScript_Blocks_VariableBlock_LunyScript_Blocks_VariableBlock_" data-uid="LunyScript.Blocks.VariableArithmeticBlock.#ctor(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)">
+  VariableArithmeticBlock(VariableBlock, VariableBlock)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected VariableArithmeticBlock(VariableBlock left, VariableBlock right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
+  <dl class="parameters">
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>left</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>right</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  </dl>
+  </table>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="LunyScript_Blocks_VariableArithmeticBlock__left" data-uid="LunyScript.Blocks.VariableArithmeticBlock._left">
+  _left
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected readonly VariableBlock _left</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="LunyScript_Blocks_VariableArithmeticBlock__right" data-uid="LunyScript.Blocks.VariableArithmeticBlock._right">
+  _right
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected readonly VariableBlock _right</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2025-2026 Steffen Itterheim (CodeSmile)
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

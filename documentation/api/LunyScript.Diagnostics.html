@@ -122,6 +122,13 @@ Useful for querying performance metrics without blocking the profiler.</p>
 Events and tracing are only invoked when DEBUG or LUNYSCRIPT_DEBUG is defined.</p>
 </dd>
     </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="LunyScript.Diagnostics.ScriptDiagnosticsObserver.html">ScriptDiagnosticsObserver</a></dt>
+      <dd><p>Engine lifecycle observer for diagnostics tooling. Autoloaded by reflection via ILunyEngineObserver discovery.
+Exposes static startup/shutdown events so editor windows and runtime diagnostics tools can track engine lifetime
+without coupling to engine-specific lifecycle methods.</p>
+</dd>
+    </dl>
     <h3 id="structs">
 Structs
 </h3>

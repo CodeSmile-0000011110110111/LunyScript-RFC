@@ -3620,6 +3620,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/LunyScript.Blocks.ScriptVariableBlock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunyScript.Blocks.ScriptVariableBlock.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LunyScript.Blocks.ScriptVariableBlock",
+      "Summary": "<p sourcefile=\"api/LunyScript.Blocks.ScriptVariableBlock.yml\" sourcestartlinenumber=\"1\">Block that holds a reference to a script variable.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/LunyScript.Blocks.SequenceBlock.yml",
       "output": {
         ".html": {
@@ -3914,6 +3928,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/LunyScript.Blocks.VariableArithmeticBlock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunyScript.Blocks.VariableArithmeticBlock.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LunyScript.Blocks.VariableArithmeticBlock",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/LunyScript.Blocks.VariableBlock-1.yml",
       "output": {
         ".html": {
@@ -4205,6 +4233,20 @@
       "IsMRef": true,
       "Title": "LunyScript.Diagnostics.ScriptDebugHooks",
       "Summary": "<p sourcefile=\"api/LunyScript.Diagnostics.ScriptDebugHooks.yml\" sourcestartlinenumber=\"1\">Debugging hooks for execution tracing and breakpoints.\nEvents and tracing are only invoked when DEBUG or LUNYSCRIPT_DEBUG is defined.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunyScript.Diagnostics.ScriptDiagnosticsObserver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunyScript.Diagnostics.ScriptDiagnosticsObserver.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LunyScript.Diagnostics.ScriptDiagnosticsObserver",
+      "Summary": "<p sourcefile=\"api/LunyScript.Diagnostics.ScriptDiagnosticsObserver.yml\" sourcestartlinenumber=\"1\">Engine lifecycle observer for diagnostics tooling. Autoloaded by reflection via ILunyEngineObserver discovery.\nExposes static startup/shutdown events so editor windows and runtime diagnostics tools can track engine lifetime\nwithout coupling to engine-specific lifecycle methods.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -5955,6 +5997,20 @@
       "IsMRef": true,
       "Title": "LunyScript.ScriptSettings",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunyScript.ScriptVariables.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunyScript.ScriptVariables.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LunyScript.ScriptVariables",
+      "Summary": "<p sourcefile=\"api/LunyScript.ScriptVariables.yml\" sourcestartlinenumber=\"1\">Provides access to the script's Variable instances stored in a Table.\nGetter returns a VariableBlock for use in script expressions and conditions.\nSetter performs immediate variable assignment during Build().</p>\n"
     },
     {
       "type": "ManagedReference",

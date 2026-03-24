@@ -1852,24 +1852,24 @@ references:
   commentId: T:Luny.Engine.Bridge.LunyCollisionEvent
   fullName: Luny.Engine.Bridge.LunyCollisionEvent
   nameWithType: LunyCollisionEvent
-- uid: Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionEntered
-  name: OnCollisionEntered
-  href: api/Luny.Engine.Bridge.LunyCollisionEvent.html#Luny_Engine_Bridge_LunyCollisionEvent_OnCollisionEntered
-  commentId: F:Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionEntered
-  fullName: Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionEntered
-  nameWithType: LunyCollisionEvent.OnCollisionEntered
-- uid: Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionExited
-  name: OnCollisionExited
-  href: api/Luny.Engine.Bridge.LunyCollisionEvent.html#Luny_Engine_Bridge_LunyCollisionEvent_OnCollisionExited
-  commentId: F:Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionExited
-  fullName: Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionExited
-  nameWithType: LunyCollisionEvent.OnCollisionExited
-- uid: Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionUpdate
-  name: OnCollisionUpdate
-  href: api/Luny.Engine.Bridge.LunyCollisionEvent.html#Luny_Engine_Bridge_LunyCollisionEvent_OnCollisionUpdate
-  commentId: F:Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionUpdate
-  fullName: Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionUpdate
-  nameWithType: LunyCollisionEvent.OnCollisionUpdate
+- uid: Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionEnded
+  name: OnCollisionEnded
+  href: api/Luny.Engine.Bridge.LunyCollisionEvent.html#Luny_Engine_Bridge_LunyCollisionEvent_OnCollisionEnded
+  commentId: F:Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionEnded
+  fullName: Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionEnded
+  nameWithType: LunyCollisionEvent.OnCollisionEnded
+- uid: Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionStarted
+  name: OnCollisionStarted
+  href: api/Luny.Engine.Bridge.LunyCollisionEvent.html#Luny_Engine_Bridge_LunyCollisionEvent_OnCollisionStarted
+  commentId: F:Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionStarted
+  fullName: Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionStarted
+  nameWithType: LunyCollisionEvent.OnCollisionStarted
+- uid: Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionTouching
+  name: OnCollisionTouching
+  href: api/Luny.Engine.Bridge.LunyCollisionEvent.html#Luny_Engine_Bridge_LunyCollisionEvent_OnCollisionTouching
+  commentId: F:Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionTouching
+  fullName: Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionTouching
+  nameWithType: LunyCollisionEvent.OnCollisionTouching
 - uid: Luny.Engine.Bridge.LunyInputActionEvent
   name: LunyInputActionEvent
   href: api/Luny.Engine.Bridge.LunyInputActionEvent.html
@@ -4657,12 +4657,12 @@ references:
   commentId: F:Luny.Engine.Bridge.LunyTriggerEvent.OnTriggerExited
   fullName: Luny.Engine.Bridge.LunyTriggerEvent.OnTriggerExited
   nameWithType: LunyTriggerEvent.OnTriggerExited
-- uid: Luny.Engine.Bridge.LunyTriggerEvent.OnTriggerUpdate
-  name: OnTriggerUpdate
-  href: api/Luny.Engine.Bridge.LunyTriggerEvent.html#Luny_Engine_Bridge_LunyTriggerEvent_OnTriggerUpdate
-  commentId: F:Luny.Engine.Bridge.LunyTriggerEvent.OnTriggerUpdate
-  fullName: Luny.Engine.Bridge.LunyTriggerEvent.OnTriggerUpdate
-  nameWithType: LunyTriggerEvent.OnTriggerUpdate
+- uid: Luny.Engine.Bridge.LunyTriggerEvent.OnTriggerOverlapping
+  name: OnTriggerOverlapping
+  href: api/Luny.Engine.Bridge.LunyTriggerEvent.html#Luny_Engine_Bridge_LunyTriggerEvent_OnTriggerOverlapping
+  commentId: F:Luny.Engine.Bridge.LunyTriggerEvent.OnTriggerOverlapping
+  fullName: Luny.Engine.Bridge.LunyTriggerEvent.OnTriggerOverlapping
+  nameWithType: LunyTriggerEvent.OnTriggerOverlapping
 - uid: Luny.Engine.Bridge.LunyVector2
   name: LunyVector2
   href: api/Luny.Engine.Bridge.LunyVector2.html
@@ -15125,18 +15125,18 @@ references:
   fullName.vb: Luny.VariableChangedArgs.New
   nameWithType: VariableChangedArgs.VariableChangedArgs
   nameWithType.vb: VariableChangedArgs.New
-- uid: Luny.VariableChangedArgs.Current
-  name: Current
-  href: api/Luny.VariableChangedArgs.html#Luny_VariableChangedArgs_Current
-  commentId: P:Luny.VariableChangedArgs.Current
-  fullName: Luny.VariableChangedArgs.Current
-  nameWithType: VariableChangedArgs.Current
-- uid: Luny.VariableChangedArgs.Current*
-  name: Current
-  href: api/Luny.VariableChangedArgs.html#Luny_VariableChangedArgs_Current_
-  commentId: Overload:Luny.VariableChangedArgs.Current
-  fullName: Luny.VariableChangedArgs.Current
-  nameWithType: VariableChangedArgs.Current
+- uid: Luny.VariableChangedArgs.Handle
+  name: Handle
+  href: api/Luny.VariableChangedArgs.html#Luny_VariableChangedArgs_Handle
+  commentId: P:Luny.VariableChangedArgs.Handle
+  fullName: Luny.VariableChangedArgs.Handle
+  nameWithType: VariableChangedArgs.Handle
+- uid: Luny.VariableChangedArgs.Handle*
+  name: Handle
+  href: api/Luny.VariableChangedArgs.html#Luny_VariableChangedArgs_Handle_
+  commentId: Overload:Luny.VariableChangedArgs.Handle
+  fullName: Luny.VariableChangedArgs.Handle
+  nameWithType: VariableChangedArgs.Handle
 - uid: Luny.VariableChangedArgs.Name
   name: Name
   href: api/Luny.VariableChangedArgs.html#Luny_VariableChangedArgs_Name
@@ -15149,18 +15149,6 @@ references:
   commentId: Overload:Luny.VariableChangedArgs.Name
   fullName: Luny.VariableChangedArgs.Name
   nameWithType: VariableChangedArgs.Name
-- uid: Luny.VariableChangedArgs.Previous
-  name: Previous
-  href: api/Luny.VariableChangedArgs.html#Luny_VariableChangedArgs_Previous
-  commentId: P:Luny.VariableChangedArgs.Previous
-  fullName: Luny.VariableChangedArgs.Previous
-  nameWithType: VariableChangedArgs.Previous
-- uid: Luny.VariableChangedArgs.Previous*
-  name: Previous
-  href: api/Luny.VariableChangedArgs.html#Luny_VariableChangedArgs_Previous_
-  commentId: Overload:Luny.VariableChangedArgs.Previous
-  fullName: Luny.VariableChangedArgs.Previous
-  nameWithType: VariableChangedArgs.Previous
 - uid: Luny.VariableChangedArgs.ToString
   name: ToString()
   href: api/Luny.VariableChangedArgs.html#Luny_VariableChangedArgs_ToString
@@ -16506,21 +16494,21 @@ references:
   fullName.vb: LunyScript.Api.ObjectBuilderExtensions.Clone(Of T)(LunyScript.Api.ObjectCreateBuilder(Of T), System.String)
   nameWithType: ObjectBuilderExtensions.Clone<T>(ObjectCreateBuilder<T>, String)
   nameWithType.vb: ObjectBuilderExtensions.Clone(Of T)(ObjectCreateBuilder(Of T), String)
-- uid: LunyScript.Api.ObjectBuilderExtensions.With*
-  name: With
-  href: api/LunyScript.Api.ObjectBuilderExtensions.html#LunyScript_Api_ObjectBuilderExtensions_With_
-  commentId: Overload:LunyScript.Api.ObjectBuilderExtensions.With
-  fullName: LunyScript.Api.ObjectBuilderExtensions.With
-  nameWithType: ObjectBuilderExtensions.With
-- uid: LunyScript.Api.ObjectBuilderExtensions.With``1(LunyScript.Api.ObjectCreateBuilder{``0},System.String)
-  name: With<T>(ObjectCreateBuilder<T>, String)
-  href: api/LunyScript.Api.ObjectBuilderExtensions.html#LunyScript_Api_ObjectBuilderExtensions_With__1_LunyScript_Api_ObjectCreateBuilder___0__System_String_
-  commentId: M:LunyScript.Api.ObjectBuilderExtensions.With``1(LunyScript.Api.ObjectCreateBuilder{``0},System.String)
-  name.vb: With(Of T)(ObjectCreateBuilder(Of T), String)
-  fullName: LunyScript.Api.ObjectBuilderExtensions.With<T>(LunyScript.Api.ObjectCreateBuilder<T>, System.String)
-  fullName.vb: LunyScript.Api.ObjectBuilderExtensions.With(Of T)(LunyScript.Api.ObjectCreateBuilder(Of T), System.String)
-  nameWithType: ObjectBuilderExtensions.With<T>(ObjectCreateBuilder<T>, String)
-  nameWithType.vb: ObjectBuilderExtensions.With(Of T)(ObjectCreateBuilder(Of T), String)
+- uid: LunyScript.Api.ObjectBuilderExtensions.From*
+  name: From
+  href: api/LunyScript.Api.ObjectBuilderExtensions.html#LunyScript_Api_ObjectBuilderExtensions_From_
+  commentId: Overload:LunyScript.Api.ObjectBuilderExtensions.From
+  fullName: LunyScript.Api.ObjectBuilderExtensions.From
+  nameWithType: ObjectBuilderExtensions.From
+- uid: LunyScript.Api.ObjectBuilderExtensions.From``1(LunyScript.Api.ObjectCreateBuilder{``0},System.String)
+  name: From<T>(ObjectCreateBuilder<T>, String)
+  href: api/LunyScript.Api.ObjectBuilderExtensions.html#LunyScript_Api_ObjectBuilderExtensions_From__1_LunyScript_Api_ObjectCreateBuilder___0__System_String_
+  commentId: M:LunyScript.Api.ObjectBuilderExtensions.From``1(LunyScript.Api.ObjectCreateBuilder{``0},System.String)
+  name.vb: From(Of T)(ObjectCreateBuilder(Of T), String)
+  fullName: LunyScript.Api.ObjectBuilderExtensions.From<T>(LunyScript.Api.ObjectCreateBuilder<T>, System.String)
+  fullName.vb: LunyScript.Api.ObjectBuilderExtensions.From(Of T)(LunyScript.Api.ObjectCreateBuilder(Of T), System.String)
+  nameWithType: ObjectBuilderExtensions.From<T>(ObjectCreateBuilder<T>, String)
+  nameWithType.vb: ObjectBuilderExtensions.From(Of T)(ObjectCreateBuilder(Of T), String)
 - uid: LunyScript.Api.ObjectBuilderNameSet
   name: ObjectBuilderNameSet
   href: api/LunyScript.Api.ObjectBuilderNameSet.html
@@ -19205,6 +19193,60 @@ references:
   fullName.vb: LunyScript.Blocks.ScriptConditionBlock.IsTrue
   nameWithType: ScriptConditionBlock.operator true
   nameWithType.vb: ScriptConditionBlock.IsTrue
+- uid: LunyScript.Blocks.ScriptVariableBlock
+  name: ScriptVariableBlock
+  href: api/LunyScript.Blocks.ScriptVariableBlock.html
+  commentId: T:LunyScript.Blocks.ScriptVariableBlock
+  fullName: LunyScript.Blocks.ScriptVariableBlock
+  nameWithType: ScriptVariableBlock
+- uid: LunyScript.Blocks.ScriptVariableBlock.Name
+  name: Name
+  href: api/LunyScript.Blocks.ScriptVariableBlock.html#LunyScript_Blocks_ScriptVariableBlock_Name
+  commentId: P:LunyScript.Blocks.ScriptVariableBlock.Name
+  fullName: LunyScript.Blocks.ScriptVariableBlock.Name
+  nameWithType: ScriptVariableBlock.Name
+- uid: LunyScript.Blocks.ScriptVariableBlock.Name*
+  name: Name
+  href: api/LunyScript.Blocks.ScriptVariableBlock.html#LunyScript_Blocks_ScriptVariableBlock_Name_
+  commentId: Overload:LunyScript.Blocks.ScriptVariableBlock.Name
+  fullName: LunyScript.Blocks.ScriptVariableBlock.Name
+  nameWithType: ScriptVariableBlock.Name
+- uid: LunyScript.Blocks.ScriptVariableBlock.SetImmediate(Luny.Variable)
+  name: SetImmediate(Variable)
+  href: api/LunyScript.Blocks.ScriptVariableBlock.html#LunyScript_Blocks_ScriptVariableBlock_SetImmediate_Luny_Variable_
+  commentId: M:LunyScript.Blocks.ScriptVariableBlock.SetImmediate(Luny.Variable)
+  fullName: LunyScript.Blocks.ScriptVariableBlock.SetImmediate(Luny.Variable)
+  nameWithType: ScriptVariableBlock.SetImmediate(Variable)
+- uid: LunyScript.Blocks.ScriptVariableBlock.SetImmediate*
+  name: SetImmediate
+  href: api/LunyScript.Blocks.ScriptVariableBlock.html#LunyScript_Blocks_ScriptVariableBlock_SetImmediate_
+  commentId: Overload:LunyScript.Blocks.ScriptVariableBlock.SetImmediate
+  fullName: LunyScript.Blocks.ScriptVariableBlock.SetImmediate
+  nameWithType: ScriptVariableBlock.SetImmediate
+- uid: LunyScript.Blocks.ScriptVariableBlock.ToString
+  name: ToString()
+  href: api/LunyScript.Blocks.ScriptVariableBlock.html#LunyScript_Blocks_ScriptVariableBlock_ToString
+  commentId: M:LunyScript.Blocks.ScriptVariableBlock.ToString
+  fullName: LunyScript.Blocks.ScriptVariableBlock.ToString()
+  nameWithType: ScriptVariableBlock.ToString()
+- uid: LunyScript.Blocks.ScriptVariableBlock.ToString*
+  name: ToString
+  href: api/LunyScript.Blocks.ScriptVariableBlock.html#LunyScript_Blocks_ScriptVariableBlock_ToString_
+  commentId: Overload:LunyScript.Blocks.ScriptVariableBlock.ToString
+  fullName: LunyScript.Blocks.ScriptVariableBlock.ToString
+  nameWithType: ScriptVariableBlock.ToString
+- uid: LunyScript.Blocks.ScriptVariableBlock.Value
+  name: Value
+  href: api/LunyScript.Blocks.ScriptVariableBlock.html#LunyScript_Blocks_ScriptVariableBlock_Value
+  commentId: P:LunyScript.Blocks.ScriptVariableBlock.Value
+  fullName: LunyScript.Blocks.ScriptVariableBlock.Value
+  nameWithType: ScriptVariableBlock.Value
+- uid: LunyScript.Blocks.ScriptVariableBlock.Value*
+  name: Value
+  href: api/LunyScript.Blocks.ScriptVariableBlock.html#LunyScript_Blocks_ScriptVariableBlock_Value_
+  commentId: Overload:LunyScript.Blocks.ScriptVariableBlock.Value
+  fullName: LunyScript.Blocks.ScriptVariableBlock.Value
+  nameWithType: ScriptVariableBlock.Value
 - uid: LunyScript.Blocks.SequenceBlock
   name: SequenceBlock
   href: api/LunyScript.Blocks.SequenceBlock.html
@@ -20255,6 +20297,42 @@ references:
   fullName.vb: LunyScript.Blocks.VarAccessor.this[]
   nameWithType: VarAccessor.this
   nameWithType.vb: VarAccessor.this[]
+- uid: LunyScript.Blocks.VariableArithmeticBlock
+  name: VariableArithmeticBlock
+  href: api/LunyScript.Blocks.VariableArithmeticBlock.html
+  commentId: T:LunyScript.Blocks.VariableArithmeticBlock
+  fullName: LunyScript.Blocks.VariableArithmeticBlock
+  nameWithType: VariableArithmeticBlock
+- uid: LunyScript.Blocks.VariableArithmeticBlock.#ctor(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  name: VariableArithmeticBlock(VariableBlock, VariableBlock)
+  href: api/LunyScript.Blocks.VariableArithmeticBlock.html#LunyScript_Blocks_VariableArithmeticBlock__ctor_LunyScript_Blocks_VariableBlock_LunyScript_Blocks_VariableBlock_
+  commentId: M:LunyScript.Blocks.VariableArithmeticBlock.#ctor(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  name.vb: New(VariableBlock, VariableBlock)
+  fullName: LunyScript.Blocks.VariableArithmeticBlock.VariableArithmeticBlock(LunyScript.Blocks.VariableBlock, LunyScript.Blocks.VariableBlock)
+  fullName.vb: LunyScript.Blocks.VariableArithmeticBlock.New(LunyScript.Blocks.VariableBlock, LunyScript.Blocks.VariableBlock)
+  nameWithType: VariableArithmeticBlock.VariableArithmeticBlock(VariableBlock, VariableBlock)
+  nameWithType.vb: VariableArithmeticBlock.New(VariableBlock, VariableBlock)
+- uid: LunyScript.Blocks.VariableArithmeticBlock.#ctor*
+  name: VariableArithmeticBlock
+  href: api/LunyScript.Blocks.VariableArithmeticBlock.html#LunyScript_Blocks_VariableArithmeticBlock__ctor_
+  commentId: Overload:LunyScript.Blocks.VariableArithmeticBlock.#ctor
+  name.vb: New
+  fullName: LunyScript.Blocks.VariableArithmeticBlock.VariableArithmeticBlock
+  fullName.vb: LunyScript.Blocks.VariableArithmeticBlock.New
+  nameWithType: VariableArithmeticBlock.VariableArithmeticBlock
+  nameWithType.vb: VariableArithmeticBlock.New
+- uid: LunyScript.Blocks.VariableArithmeticBlock._left
+  name: _left
+  href: api/LunyScript.Blocks.VariableArithmeticBlock.html#LunyScript_Blocks_VariableArithmeticBlock__left
+  commentId: F:LunyScript.Blocks.VariableArithmeticBlock._left
+  fullName: LunyScript.Blocks.VariableArithmeticBlock._left
+  nameWithType: VariableArithmeticBlock._left
+- uid: LunyScript.Blocks.VariableArithmeticBlock._right
+  name: _right
+  href: api/LunyScript.Blocks.VariableArithmeticBlock.html#LunyScript_Blocks_VariableArithmeticBlock__right
+  commentId: F:LunyScript.Blocks.VariableArithmeticBlock._right
+  fullName: LunyScript.Blocks.VariableArithmeticBlock._right
+  nameWithType: VariableArithmeticBlock._right
 - uid: LunyScript.Blocks.VariableBlock
   name: VariableBlock
   href: api/LunyScript.Blocks.VariableBlock.html
@@ -21635,6 +21713,54 @@ references:
   commentId: Overload:LunyScript.Diagnostics.ScriptDebugHooks.Traces
   fullName: LunyScript.Diagnostics.ScriptDebugHooks.Traces
   nameWithType: ScriptDebugHooks.Traces
+- uid: LunyScript.Diagnostics.ScriptDiagnosticsObserver
+  name: ScriptDiagnosticsObserver
+  href: api/LunyScript.Diagnostics.ScriptDiagnosticsObserver.html
+  commentId: T:LunyScript.Diagnostics.ScriptDiagnosticsObserver
+  fullName: LunyScript.Diagnostics.ScriptDiagnosticsObserver
+  nameWithType: ScriptDiagnosticsObserver
+- uid: LunyScript.Diagnostics.ScriptDiagnosticsObserver.#ctor
+  name: ScriptDiagnosticsObserver()
+  href: api/LunyScript.Diagnostics.ScriptDiagnosticsObserver.html#LunyScript_Diagnostics_ScriptDiagnosticsObserver__ctor
+  commentId: M:LunyScript.Diagnostics.ScriptDiagnosticsObserver.#ctor
+  name.vb: New()
+  fullName: LunyScript.Diagnostics.ScriptDiagnosticsObserver.ScriptDiagnosticsObserver()
+  fullName.vb: LunyScript.Diagnostics.ScriptDiagnosticsObserver.New()
+  nameWithType: ScriptDiagnosticsObserver.ScriptDiagnosticsObserver()
+  nameWithType.vb: ScriptDiagnosticsObserver.New()
+- uid: LunyScript.Diagnostics.ScriptDiagnosticsObserver.#ctor*
+  name: ScriptDiagnosticsObserver
+  href: api/LunyScript.Diagnostics.ScriptDiagnosticsObserver.html#LunyScript_Diagnostics_ScriptDiagnosticsObserver__ctor_
+  commentId: Overload:LunyScript.Diagnostics.ScriptDiagnosticsObserver.#ctor
+  name.vb: New
+  fullName: LunyScript.Diagnostics.ScriptDiagnosticsObserver.ScriptDiagnosticsObserver
+  fullName.vb: LunyScript.Diagnostics.ScriptDiagnosticsObserver.New
+  nameWithType: ScriptDiagnosticsObserver.ScriptDiagnosticsObserver
+  nameWithType.vb: ScriptDiagnosticsObserver.New
+- uid: LunyScript.Diagnostics.ScriptDiagnosticsObserver.Instance
+  name: Instance
+  href: api/LunyScript.Diagnostics.ScriptDiagnosticsObserver.html#LunyScript_Diagnostics_ScriptDiagnosticsObserver_Instance
+  commentId: P:LunyScript.Diagnostics.ScriptDiagnosticsObserver.Instance
+  fullName: LunyScript.Diagnostics.ScriptDiagnosticsObserver.Instance
+  nameWithType: ScriptDiagnosticsObserver.Instance
+- uid: LunyScript.Diagnostics.ScriptDiagnosticsObserver.Instance*
+  name: Instance
+  href: api/LunyScript.Diagnostics.ScriptDiagnosticsObserver.html#LunyScript_Diagnostics_ScriptDiagnosticsObserver_Instance_
+  commentId: Overload:LunyScript.Diagnostics.ScriptDiagnosticsObserver.Instance
+  fullName: LunyScript.Diagnostics.ScriptDiagnosticsObserver.Instance
+  nameWithType: ScriptDiagnosticsObserver.Instance
+- uid: LunyScript.Diagnostics.ScriptDiagnosticsObserver.OnDiagnosticsShutdown
+  name: OnDiagnosticsShutdown
+  href: api/LunyScript.Diagnostics.ScriptDiagnosticsObserver.html#LunyScript_Diagnostics_ScriptDiagnosticsObserver_OnDiagnosticsShutdown
+  commentId: E:LunyScript.Diagnostics.ScriptDiagnosticsObserver.OnDiagnosticsShutdown
+  fullName: LunyScript.Diagnostics.ScriptDiagnosticsObserver.OnDiagnosticsShutdown
+  nameWithType: ScriptDiagnosticsObserver.OnDiagnosticsShutdown
+- uid: LunyScript.Diagnostics.ScriptDiagnosticsObserver.OnDiagnosticsStartup
+  name: OnDiagnosticsStartup
+  href: api/LunyScript.Diagnostics.ScriptDiagnosticsObserver.html#LunyScript_Diagnostics_ScriptDiagnosticsObserver_OnDiagnosticsStartup
+  commentId: E:LunyScript.Diagnostics.ScriptDiagnosticsObserver.OnDiagnosticsStartup
+  fullName: LunyScript.Diagnostics.ScriptDiagnosticsObserver.OnDiagnosticsStartup
+  nameWithType: ScriptDiagnosticsObserver.OnDiagnosticsStartup
 - uid: LunyScript.Diagnostics.ScriptExecutionTrace
   name: ScriptExecutionTrace
   href: api/LunyScript.Diagnostics.ScriptExecutionTrace.html
@@ -23400,18 +23526,6 @@ references:
   commentId: Overload:LunyScript.Script.On
   fullName: LunyScript.Script.On
   nameWithType: Script.On
-- uid: LunyScript.Script.Owner
-  name: Owner
-  href: api/LunyScript.Script.html#LunyScript_Script_Owner
-  commentId: P:LunyScript.Script.Owner
-  fullName: LunyScript.Script.Owner
-  nameWithType: Script.Owner
-- uid: LunyScript.Script.Owner*
-  name: Owner
-  href: api/LunyScript.Script.html#LunyScript_Script_Owner_
-  commentId: Overload:LunyScript.Script.Owner
-  fullName: LunyScript.Script.Owner
-  nameWithType: Script.Owner
 - uid: LunyScript.Script.Prefab
   name: Prefab
   href: api/LunyScript.Script.html#LunyScript_Script_Prefab
@@ -23457,6 +23571,18 @@ references:
   commentId: Overload:LunyScript.Script.Scene
   fullName: LunyScript.Script.Scene
   nameWithType: Script.Scene
+- uid: LunyScript.Script.Self
+  name: Self
+  href: api/LunyScript.Script.html#LunyScript_Script_Self
+  commentId: P:LunyScript.Script.Self
+  fullName: LunyScript.Script.Self
+  nameWithType: Script.Self
+- uid: LunyScript.Script.Self*
+  name: Self
+  href: api/LunyScript.Script.html#LunyScript_Script_Self_
+  commentId: Overload:LunyScript.Script.Self
+  fullName: LunyScript.Script.Self
+  nameWithType: Script.Self
 - uid: LunyScript.Script.Time
   name: Time
   href: api/LunyScript.Script.html#LunyScript_Script_Time
@@ -26708,6 +26834,60 @@ references:
   fullName.vb: LunyScript.ScriptSettings.New
   nameWithType: ScriptSettings.ScriptSettings
   nameWithType.vb: ScriptSettings.New
+- uid: LunyScript.ScriptVariables
+  name: ScriptVariables
+  href: api/LunyScript.ScriptVariables.html
+  commentId: T:LunyScript.ScriptVariables
+  fullName: LunyScript.ScriptVariables
+  nameWithType: ScriptVariables
+- uid: LunyScript.ScriptVariables.Constant(System.String,Luny.Variable)
+  name: Constant(String, Variable)
+  href: api/LunyScript.ScriptVariables.html#LunyScript_ScriptVariables_Constant_System_String_Luny_Variable_
+  commentId: M:LunyScript.ScriptVariables.Constant(System.String,Luny.Variable)
+  fullName: LunyScript.ScriptVariables.Constant(System.String, Luny.Variable)
+  nameWithType: ScriptVariables.Constant(String, Variable)
+- uid: LunyScript.ScriptVariables.Constant*
+  name: Constant
+  href: api/LunyScript.ScriptVariables.html#LunyScript_ScriptVariables_Constant_
+  commentId: Overload:LunyScript.ScriptVariables.Constant
+  fullName: LunyScript.ScriptVariables.Constant
+  nameWithType: ScriptVariables.Constant
+- uid: LunyScript.ScriptVariables.Define(System.String)
+  name: Define(String)
+  href: api/LunyScript.ScriptVariables.html#LunyScript_ScriptVariables_Define_System_String_
+  commentId: M:LunyScript.ScriptVariables.Define(System.String)
+  fullName: LunyScript.ScriptVariables.Define(System.String)
+  nameWithType: ScriptVariables.Define(String)
+- uid: LunyScript.ScriptVariables.Define(System.String,Luny.Variable)
+  name: Define(String, Variable)
+  href: api/LunyScript.ScriptVariables.html#LunyScript_ScriptVariables_Define_System_String_Luny_Variable_
+  commentId: M:LunyScript.ScriptVariables.Define(System.String,Luny.Variable)
+  fullName: LunyScript.ScriptVariables.Define(System.String, Luny.Variable)
+  nameWithType: ScriptVariables.Define(String, Variable)
+- uid: LunyScript.ScriptVariables.Define*
+  name: Define
+  href: api/LunyScript.ScriptVariables.html#LunyScript_ScriptVariables_Define_
+  commentId: Overload:LunyScript.ScriptVariables.Define
+  fullName: LunyScript.ScriptVariables.Define
+  nameWithType: ScriptVariables.Define
+- uid: LunyScript.ScriptVariables.Item(System.String)
+  name: this[String]
+  href: api/LunyScript.ScriptVariables.html#LunyScript_ScriptVariables_Item_System_String_
+  commentId: P:LunyScript.ScriptVariables.Item(System.String)
+  name.vb: this[](String)
+  fullName: LunyScript.ScriptVariables.this[System.String]
+  fullName.vb: LunyScript.ScriptVariables.this[](System.String)
+  nameWithType: ScriptVariables.this[String]
+  nameWithType.vb: ScriptVariables.this[](String)
+- uid: LunyScript.ScriptVariables.Item*
+  name: this
+  href: api/LunyScript.ScriptVariables.html#LunyScript_ScriptVariables_Item_
+  commentId: Overload:LunyScript.ScriptVariables.Item
+  name.vb: this[]
+  fullName: LunyScript.ScriptVariables.this
+  fullName.vb: LunyScript.ScriptVariables.this[]
+  nameWithType: ScriptVariables.this
+  nameWithType.vb: ScriptVariables.this[]
 - uid: LunyScript.SmokeTests
   name: LunyScript.SmokeTests
   href: api/LunyScript.SmokeTests.html

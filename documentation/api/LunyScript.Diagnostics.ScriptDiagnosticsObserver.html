@@ -2,11 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-      <title>Class VariableChangedArgs | LunyScript Documentation </title>
+      <title>Class ScriptDiagnosticsObserver | LunyScript Documentation </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class VariableChangedArgs | LunyScript Documentation ">
+      <meta name="title" content="Class ScriptDiagnosticsObserver | LunyScript Documentation ">
       
-      
+      <meta name="description" content="Engine lifecycle observer for diagnostics tooling. Autoloaded by reflection via ILunyEngineObserver discovery. Exposes static startup/shutdown events so editor windows and runtime diagnostics tools can track engine lifetime without coupling to engine-specific lifecycle methods.">
       <link rel="icon" href="../images/luny-logo-56x56.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -87,23 +87,26 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Luny.VariableChangedArgs">
+        <article data-uid="LunyScript.Diagnostics.ScriptDiagnosticsObserver">
 
 
 
-  <h1 id="Luny_VariableChangedArgs" data-uid="Luny.VariableChangedArgs" class="text-break">
-Class VariableChangedArgs  
+  <h1 id="LunyScript_Diagnostics_ScriptDiagnosticsObserver" data-uid="LunyScript.Diagnostics.ScriptDiagnosticsObserver" class="text-break">
+Class ScriptDiagnosticsObserver  
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Luny.html">Luny</a></dd> / <dt>Assembly</dt><dd>Luny.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="LunyScript.html">LunyScript</a>.<a class="xref" href="LunyScript.Diagnostics.html">Diagnostics</a></dd> / <dt>Assembly</dt><dd>LunyScript.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Engine lifecycle observer for diagnostics tooling. Autoloaded by reflection via ILunyEngineObserver discovery.
+Exposes static startup/shutdown events so editor windows and runtime diagnostics tools can track engine lifetime
+without coupling to engine-specific lifecycle methods.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class VariableChangedArgs : EventArgs</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class ScriptDiagnosticsObserver : ILunyEngineObserver</code></pre>
   </div>
 
 
@@ -116,22 +119,18 @@ Class VariableChangedArgs
     <dt>Inheritance</dt>
     <dd>
       <div><span class="xref">Object</span></div>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventargs">EventArgs</a></div>
-      <div><span class="xref">VariableChangedArgs</span></div>
+      <div><span class="xref">ScriptDiagnosticsObserver</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Luny.ILunyEngineObserver.html">ILunyEngineObserver</a></div>
     </dd>
   </dl>
 
 
-
-  <dl class="typelist inheritedMembers">
-    <dt>Inherited Members</dt>
-    <dd>
-    <ul>
-    <li>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventargs.empty">EventArgs.Empty</a>
-    </li>
-    </ul>
-  </dd></dl>
 
   </details>
 
@@ -144,10 +143,10 @@ Class VariableChangedArgs
 </h2>
 
 
-  <a id="Luny_VariableChangedArgs__ctor_" data-uid="Luny.VariableChangedArgs.#ctor*"></a>
+  <a id="LunyScript_Diagnostics_ScriptDiagnosticsObserver__ctor_" data-uid="LunyScript.Diagnostics.ScriptDiagnosticsObserver.#ctor*"></a>
 
-  <h3 id="Luny_VariableChangedArgs__ctor" data-uid="Luny.VariableChangedArgs.#ctor">
-  VariableChangedArgs()
+  <h3 id="LunyScript_Diagnostics_ScriptDiagnosticsObserver__ctor" data-uid="LunyScript.Diagnostics.ScriptDiagnosticsObserver.#ctor">
+  ScriptDiagnosticsObserver()
   
   </h3>
 
@@ -155,7 +154,7 @@ Class VariableChangedArgs
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public VariableChangedArgs()</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public ScriptDiagnosticsObserver()</code></pre>
   </div>
 
 
@@ -174,10 +173,10 @@ Class VariableChangedArgs
 </h2>
 
 
-  <a id="Luny_VariableChangedArgs_Handle_" data-uid="Luny.VariableChangedArgs.Handle*"></a>
+  <a id="LunyScript_Diagnostics_ScriptDiagnosticsObserver_Instance_" data-uid="LunyScript.Diagnostics.ScriptDiagnosticsObserver.Instance*"></a>
 
-  <h3 id="Luny_VariableChangedArgs_Handle" data-uid="Luny.VariableChangedArgs.Handle">
-  Handle
+  <h3 id="LunyScript_Diagnostics_ScriptDiagnosticsObserver_Instance" data-uid="LunyScript.Diagnostics.ScriptDiagnosticsObserver.Instance">
+  Instance
   
   </h3>
 
@@ -185,7 +184,7 @@ Class VariableChangedArgs
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public Table.VarHandleBase Handle { get; }</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static ScriptDiagnosticsObserver Instance { get; }</code></pre>
   </div>
 
 
@@ -194,7 +193,7 @@ Class VariableChangedArgs
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="Luny.Table.html">Table</a>.<a class="xref" href="Luny.Table.VarHandleBase.html">VarHandleBase</a></dt>
+    <dt><a class="xref" href="LunyScript.Diagnostics.ScriptDiagnosticsObserver.html">ScriptDiagnosticsObserver</a></dt>
     <dd></dd>
   </dl>
 
@@ -205,65 +204,66 @@ Class VariableChangedArgs
 
 
 
-  <a id="Luny_VariableChangedArgs_Name_" data-uid="Luny.VariableChangedArgs.Name*"></a>
-
-  <h3 id="Luny_VariableChangedArgs_Name" data-uid="Luny.VariableChangedArgs.Name">
-  Name
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public String Name { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">String</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <h2 class="section" id="methods">Methods
+  <h2 class="section" id="events">Events
 </h2>
 
 
-  <a id="Luny_VariableChangedArgs_ToString_" data-uid="Luny.VariableChangedArgs.ToString*"></a>
 
-  <h3 id="Luny_VariableChangedArgs_ToString" data-uid="Luny.VariableChangedArgs.ToString">
-  ToString()
+  <h3 id="LunyScript_Diagnostics_ScriptDiagnosticsObserver_OnDiagnosticsShutdown" data-uid="LunyScript.Diagnostics.ScriptDiagnosticsObserver.OnDiagnosticsShutdown">
+  OnDiagnosticsShutdown
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Fired just before the engine shuts down. Instance is still valid when this fires.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public override String ToString()</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static event Action&lt;ScriptDiagnosticsObserver&gt; OnDiagnosticsShutdown</code></pre>
   </div>
 
 
-  <h4 class="section">Returns</h4>
+
+
+
+
+  <h4 class="section">Event Type</h4>
   <dl class="parameters">
-    <dt><span class="xref">String</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="LunyScript.Diagnostics.ScriptDiagnosticsObserver.html">ScriptDiagnosticsObserver</a>&gt;</dt>
     <dd></dd>
   </dl>
 
 
 
 
+
+
+
+
+  <h3 id="LunyScript_Diagnostics_ScriptDiagnosticsObserver_OnDiagnosticsStartup" data-uid="LunyScript.Diagnostics.ScriptDiagnosticsObserver.OnDiagnosticsStartup">
+  OnDiagnosticsStartup
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Fired when the engine starts up and the singleton Instance becomes valid.
+Subscribe to this event when Instance is null to be notified when diagnostics become available.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static event Action&lt;ScriptDiagnosticsObserver&gt; OnDiagnosticsStartup</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="LunyScript.Diagnostics.ScriptDiagnosticsObserver.html">ScriptDiagnosticsObserver</a>&gt;</dt>
+    <dd></dd>
+  </dl>
 
 
 
