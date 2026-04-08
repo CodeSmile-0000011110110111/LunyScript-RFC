@@ -35,6 +35,6 @@ Next I will focus on tighter editor integration. Being able to see and edit scri
 Also passing Inspector values into scripts.
 
 I'm hopeful that by May I will have a pre-alpha version that can be reviewed and played around with.
-Stay tuned, and to stay up to date, please [join my Patreon (free)](https://www.patreon.com/c/CodeSmile).
+Stay tuned, and to stay up to date, please [join my Patreon (free)](https://www.patreon.com/c/CodeSmile){:target="_blank"}.
 
 PS: Next updates should come more frequently, expect a post at least twice a month!
