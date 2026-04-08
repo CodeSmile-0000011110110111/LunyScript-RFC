@@ -43,3 +43,5 @@ The intention is to make both execution and state of the scripts just as visible
 Stay tuned and up to date 
 by [joining my Patreon (free)](https://www.patreon.com/c/CodeSmile){:target="_blank"} 
 and my [CodeSmile Discord Server](https://discord.gg/EkwNb4rB7W){:target="_blank"}.
+
+And thanks for another **+25 GitHub stars**! [Keep them coming](https://github.com/CodeSmile-0000011110110111/LunyScript-RFC){:target="_blank"}! :)
