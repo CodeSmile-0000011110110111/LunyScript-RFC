@@ -2,7 +2,7 @@
 layout: post
 title: "Dogfood, Excavator, and Analytics"
 date: 2026-04-08
-categories: [milestones]
+categories: [milestones, prototyping]
 tags: [development]
 featured_image: ../media/Excavator1.gif
 ---
