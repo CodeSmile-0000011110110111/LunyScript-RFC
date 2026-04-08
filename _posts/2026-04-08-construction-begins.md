@@ -40,6 +40,8 @@ Here's a script snippet, the part that rotates the bucket via RightStick control
 
 Real excavators use two joysticks and while left/right on the left stick is intuitive to rotate the machine, it takes some getting used to in order to "open/close" the bucket via left/right motion of the right stick.
 
+And then there's the driving. Pull right forward to turn left. Need I say more? Tank drivers do have an advantage here. :)
+
 ## Analytics
 
 I recently added essential analytics windows. The Block Inspector allows you to see the scripts as they run on an object, with status of conditions and variables updating live and indicated by icons: 
@@ -50,7 +52,7 @@ The Variable Inspector provides a live view of the object's local (instance) var
 
 ![variables-inspector.png](/media/posts/2026-04/variables-inspector.png)
 
-Both require a thorough overhaul of the existing APIs (hence the "unknowns") to provide the necessary details, such as the script name and line number. Of course you can double-click an entry and jump directly to the corresponding line.
+Both require a thorough overhaul of the existing APIs (hence the "unknowns") to provide the necessary details, such as the script name and line number. Of course you can double-click an entry and jump directly to the corresponding line. None of this is reflection-based, it's an integral part of the block-based design.
 
 The intention is to make both execution and state of the scripts just as visible and editable at runtime as any Inspector value, without the need for highly technical debugger sessions. Game programming thus becomes much less of a **black box** as it currently is.
 
