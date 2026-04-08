@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: "Excavator & Analytics"
+title: "Dogfood, Excavator, and Analytics"
 date: 2026-04-08
 categories: [milestones]
 tags: [development]
@@ -11,7 +11,7 @@ featured_image: ../media/Excavator1.gif
 
 A controllable excavator built with LunyScript:
 
-![Excavator1.gif](../media/Excavator1.gif)
+![Excavator1.gif](/media/Excavator1.gif)
 
 The asset is from [Synty Studios' Construction Pack](https://syntystore.com/products/polygon-construction-pack){:target="_blank"}.
 
@@ -28,11 +28,11 @@ Focusing on a narrower feature set will enable me to build out a higher quality 
 
 I recently added essential analytics windows. The Block Inspector allows you to see the scripts as they run on an object, with status of conditions and variables updating live and indicated by icons: 
 
-![blocks-inspector.png](../media/posts/2026-04/blocks-inspector.png)
+![blocks-inspector.png](/media/posts/2026-04/blocks-inspector.png)
 
 The Variable Inspector provides a live view of the object's local (instance) variables and the global variables:
 
-![variables-inspector.png](../media/posts/2026-04/variables-inspector.png)
+![variables-inspector.png](/media/posts/2026-04/variables-inspector.png)
 
 Both require a thorough overhaul of the existing APIs (hence the "unknowns") to provide the necessary details, such as the script name and line number. Of course you can double-click an entry and jump directly to the corresponding line.
 
